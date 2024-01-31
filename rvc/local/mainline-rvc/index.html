@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.760050162739">
+
+    <!-- See retype.com -->
+    <meta name="generator" content="Retype 3.5.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Mainline RVC</title>
+    <meta name="title" content="Mainline RVC">
+    <meta name="description" content="Written by Julia Images by Poopmaster Last update: Jan 29, 2024">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="/rvc/local/mainline-rvc/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/rvc/local/mainline-rvc/">
+    <meta property="og:title" content="Mainline RVC">
+    <meta property="og:description" content="Written by Julia Images by Poopmaster Last update: Jan 29, 2024">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="/rvc/local/mainline-rvc/">
+    <meta property="twitter:title" content="Mainline RVC">
+    <meta property="twitter:description" content="Written by Julia Images by Poopmaster Last update: Jan 29, 2024">
+
+    <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
+
+    <link href="../../../img/b.png" rel="icon">
+    <link href="../../../resources/css/retype.css?v=3.5.0.760050162739" rel="stylesheet">
+
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.5.0.760050162739" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.5.0.760050162739" data-turbo-eval="false" defer></script>
+</head>
+<body>
+    <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
+        <div class="absolute bottom-0 left-0 bg-gray-100 dark:bg-dark-800" style="top: 5rem; right: 50%"></div>
+    
+        <header id="docs-site-header" class="sticky top-0 z-30 flex w-full h-16 bg-white border-b border-gray-200 md:h-20 dark:bg-dark-850 dark:border-dark-650">
+            <div class="container relative flex items-center justify-between pr-6 grow md:justify-start">
+                <!-- Mobile menu button skeleton -->
+                <button v-cloak class="skeleton docs-mobile-menu-button flex items-center justify-center shrink-0 overflow-hidden dark:text-white focus:outline-none rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
+                <div v-cloak id="docs-sidebar-toggle"></div>
+        
+                <!-- Logo -->
+                <div class="flex items-center justify-between h-full py-2 md:w-75">
+                    <div class="flex items-center px-2 md:px-6">
+                        <a id="docs-site-logo" href="../../../" class="flex items-center leading-snug text-2xl">
+                            <span class="grow-0 shrink-0 overflow-hidden">
+                                <img class="max-h-10 dark:hidden md:inline-block" src="../../../img/a.png">
+                                <img class="max-h-10 hidden dark:inline-block" src="../../../img/a.png">
+                            </span>
+                        </a>
+                    </div>
+        
+                    <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
+                </div>
+        
+                <div class="flex justify-between md:grow">
+                    <!-- Top Nav -->
+                    <nav class="hidden md:flex">
+                        <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
+                            <li class="mr-6">
+                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://discord.gg/aihub">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
+                                        <g fill="currentColor">
+                                            <path d="M10.97 8.265a1.45 1.45 0 0 0-.487.57.75.75 0 0 1-1.341-.67c.2-.402.513-.826.997-1.148C10.627 6.69 11.244 6.5 12 6.5c.658 0 1.369.195 1.934.619a2.45 2.45 0 0 1 1.004 2.006c0 1.033-.513 1.72-1.027 2.215-.19.183-.399.358-.579.508l-.147.123a4.329 4.329 0 0 0-.435.409v1.37a.75.75 0 1 1-1.5 0v-1.473c0-.237.067-.504.247-.736.22-.28.486-.517.718-.714l.183-.153.001-.001c.172-.143.324-.27.47-.412.368-.355.569-.676.569-1.136a.953.953 0 0 0-.404-.806C12.766 8.118 12.384 8 12 8c-.494 0-.814.121-1.03.265ZM13 17a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/><path d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1ZM2.5 12a9.5 9.5 0 0 0 9.5 9.5 9.5 9.5 0 0 0 9.5-9.5A9.5 9.5 0 0 0 12 2.5 9.5 9.5 0 0 0 2.5 12Z"/>
+                                        </g>
+                                    </svg>
+                                    <span>Need Help?</span>
+                                </a>
+                            </li>
+                            <li class="mr-6">
+                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://forms.gle/5i6hTJRVkXRohvVF9">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
+                                        <g fill="currentColor">
+                                            <path d="M1.5 4.25c0-.966.784-1.75 1.75-1.75h17.5c.966 0 1.75.784 1.75 1.75v12.5a1.75 1.75 0 0 1-1.75 1.75h-9.69l-3.573 3.573A1.458 1.458 0 0 1 5 21.043V18.5H3.25a1.75 1.75 0 0 1-1.75-1.75ZM3.25 4a.25.25 0 0 0-.25.25v12.5c0 .138.112.25.25.25h2.5a.75.75 0 0 1 .75.75v3.19l3.72-3.72a.749.749 0 0 1 .53-.22h10a.25.25 0 0 0 .25-.25V4.25a.25.25 0 0 0-.25-.25Z"/>
+                                        </g>
+                                    </svg>
+                                    <span>Send Feedback</span>
+                                </a>
+                            </li>
+                            <li class="mr-6">
+                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://github.com/Ai-Hub-Central">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
+                                        <g fill="currentColor">
+                                            <symbol id="mark-github-icon-symbol" viewBox="0 0 16 16"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"/></symbol><use xlink:href="#mark-github-icon-symbol" />
+                                        </g>
+                                    </svg>
+                                    <span>GitHub</span>
+                                </a>
+                            </li>
+        
+                        </ul>
+                    </nav>
+        
+                    <!-- Header Right Skeleton -->
+                    <div v-cloak class="flex justify-end grow skeleton">
+        
+                        <!-- Search input mock -->
+                        <div class="relative hidden w-40 lg:block lg:max-w-sm lg:ml-auto">
+                            <div class="absolute flex items-center justify-center h-full pl-3 dark:text-dark-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon-base" width="16" height="16" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 1px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                            </div>
+                            <input class="w-full h-10 placeholder-gray-400 transition-colors duration-200 ease-in bg-gray-200 border border-transparent rounded md:text-sm hover:bg-white hover:border-gray-300 focus:outline-none focus:bg-white focus:border-gray-500 dark:bg-dark-600 dark:border-dark-600 dark:placeholder-dark-400" style="padding: 0.625rem 0.75rem 0.625rem 2rem" type="text" placeholder="Search">
+                        </div>
+        
+                        <!-- Mobile search button -->
+                        <div class="flex items-center justify-center w-10 h-10 lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="20" height="20" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                        </div>
+        
+                        <!-- Dark mode switch placeholder -->
+                        <div class="w-10 h-10 lg:ml-2"></div>
+        
+                        <!-- History button -->
+                        <div class="flex items-center justify-center w-10 h-10" style="margin-right: -0.625rem;">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="22" height="22" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor" ><g ><path d="M12.01 6.01c-.55 0-1 .45-1 1V12a1 1 0 00.4.8l3 2.22a.985.985 0 001.39-.2.996.996 0 00-.21-1.4l-2.6-1.92V7.01c.02-.55-.43-1-.98-1z"></path><path d="M12.01 1.91c-5.33 0-9.69 4.16-10.05 9.4l-.29-.26a.997.997 0 10-1.34 1.48l1.97 1.79c.19.17.43.26.67.26s.48-.09.67-.26l1.97-1.79a.997.997 0 10-1.34-1.48l-.31.28c.34-4.14 3.82-7.41 8.05-7.41 4.46 0 8.08 3.63 8.08 8.09s-3.63 8.08-8.08 8.08c-2.18 0-4.22-.85-5.75-2.4a.996.996 0 10-1.42 1.4 10.02 10.02 0 007.17 2.99c5.56 0 10.08-4.52 10.08-10.08.01-5.56-4.52-10.09-10.08-10.09z"></path></g></g></svg>
+                        </div>
+                    </div>
+        
+                    <div v-cloak class="flex justify-end grow">
+                        <div id="docs-mobile-search-button"></div>
+                        <doc-search-desktop></doc-search-desktop>
+        
+                        <doc-theme-switch class="lg:ml-2"></doc-theme-switch>
+                        <doc-history></doc-history>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <div class="container relative flex bg-white">
+            <!-- Sidebar Skeleton -->
+            <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-gray-100 border-gray-200 sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton dark:bg-dark-800 dark:border-dark-650">
+            
+                <!-- Render this div, if config.showSidebarFilter is `true` -->
+                <div class="flex items-center h-16 px-6">
+                    <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-white border border-gray-200 rounded shadow-none text-sm focus:outline-none focus:border-gray-600 dark:bg-dark-600 dark:border-dark-600" type="text" placeholder="Filter">
+                </div>
+            
+                <div class="pl-6 mt-1 mb-4">
+                    <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                </div>
+            
+                <div class="shrink-0 mt-auto bg-transparent dark:border-dark-650">
+                    <a class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                        <span class="text-xs whitespace-nowrap">Powered by</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Sidebar component -->
+            <doc-sidebar v-cloak>
+                <template #sidebar-footer>
+                    <div class="shrink-0 mt-auto border-t md:bg-transparent md:border-none dark:border-dark-650">
+            
+                        <div class="py-3 px-6 md:hidden border-b dark:border-dark-650">
+                            <nav>
+                                <ul class="flex flex-wrap justify-center items-center">
+                                    <li class="mr-6">
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://discord.gg/aihub">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
+                                                <g fill="currentColor">
+                                                    <path d="M10.97 8.265a1.45 1.45 0 0 0-.487.57.75.75 0 0 1-1.341-.67c.2-.402.513-.826.997-1.148C10.627 6.69 11.244 6.5 12 6.5c.658 0 1.369.195 1.934.619a2.45 2.45 0 0 1 1.004 2.006c0 1.033-.513 1.72-1.027 2.215-.19.183-.399.358-.579.508l-.147.123a4.329 4.329 0 0 0-.435.409v1.37a.75.75 0 1 1-1.5 0v-1.473c0-.237.067-.504.247-.736.22-.28.486-.517.718-.714l.183-.153.001-.001c.172-.143.324-.27.47-.412.368-.355.569-.676.569-1.136a.953.953 0 0 0-.404-.806C12.766 8.118 12.384 8 12 8c-.494 0-.814.121-1.03.265ZM13 17a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/><path d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1ZM2.5 12a9.5 9.5 0 0 0 9.5 9.5 9.5 9.5 0 0 0 9.5-9.5A9.5 9.5 0 0 0 12 2.5 9.5 9.5 0 0 0 2.5 12Z"/>
+                                                </g>
+                                            </svg>
+                                            <span>Need Help?</span>
+                                        </a>
+                                    </li>
+                                    <li class="mr-6">
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://forms.gle/5i6hTJRVkXRohvVF9">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
+                                                <g fill="currentColor">
+                                                    <path d="M1.5 4.25c0-.966.784-1.75 1.75-1.75h17.5c.966 0 1.75.784 1.75 1.75v12.5a1.75 1.75 0 0 1-1.75 1.75h-9.69l-3.573 3.573A1.458 1.458 0 0 1 5 21.043V18.5H3.25a1.75 1.75 0 0 1-1.75-1.75ZM3.25 4a.25.25 0 0 0-.25.25v12.5c0 .138.112.25.25.25h2.5a.75.75 0 0 1 .75.75v3.19l3.72-3.72a.749.749 0 0 1 .53-.22h10a.25.25 0 0 0 .25-.25V4.25a.25.25 0 0 0-.25-.25Z"/>
+                                                </g>
+                                            </svg>
+                                            <span>Send Feedback</span>
+                                        </a>
+                                    </li>
+                                    <li class="mr-6">
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://github.com/Ai-Hub-Central">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
+                                                <g fill="currentColor">
+                                                    <symbol id="mark-github-icon-symbol" viewBox="0 0 16 16"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"/></symbol><use xlink:href="#mark-github-icon-symbol" />
+                                                </g>
+                                            </svg>
+                                            <span>GitHub</span>
+                                        </a>
+                                    </li>
+            
+                                </ul>
+                            </nav>
+                        </div>
+            
+                        <a class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                            <span class="text-xs whitespace-nowrap">Powered by</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                        </a>
+                    </div>
+                </template>
+            </doc-sidebar>
+    
+            <div class="grow min-w-0 dark:bg-dark-850">
+                <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
+                <div class="flex">
+                    <div class="min-w-0 p-4 grow md:px-16">
+                        <main class="relative pb-12 lg:pt-2">
+                            <div class="docs-markdown" id="docs-content">
+                                <!-- Rendered if sidebar right is enabled -->
+                                <div id="docs-sidebar-right-toggle"></div>
+                                <!-- Page content  -->
+<doc-anchor-target id="mainline-rvc" class="break-words">
+    <h1>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#mainline-rvc">#</doc-anchor-trigger>
+        <span>Mainline RVC</span>
+    </h1>
+</doc-anchor-target>
+<p><code v-pre>Written by Julia</code><br />
+<code v-pre>Images by Poopmaster</code><br />
+<code v-pre>Last update: Jan 29, 2024</code></p>
+<hr>
+<doc-anchor-target id="section">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<div class="content-center"><doc-anchor-target id="introduction-">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#introduction-">#</doc-anchor-trigger>
+        <span>Introduction <span class="docs-emoji">&#x1F4DC;</span></span>
+    </h2>
+</doc-anchor-target>
+</div>
+<ul>
+<li><p>Mainline RVC is the base, original, &amp; unmodified version of RVC. Made by the <a href="https://github.com/RVC-Project"><u>RVC-Project</u></a> team.</p>
+</li>
+<li><p>It has less features compared to other <a href="https://aihubdocs.github.io/en/other/glossary/"><u>forks</u></a>, but still has the necessary tools to do a decent job.</p>
+</li>
+<li><p>It&#x27;s specially liked because it&#x27;s a little faster than other forks, as it&#x27;s less bloated in a way.</p>
+</li>
+<li><p>Its actual name is not &quot;Mainline&quot;, but it was given by the public to properly distinguish it from the other versions.<br />
+‎</p>
+</li>
+</ul>
+<doc-anchor-target id="pros-cons">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#pros-cons">#</doc-anchor-trigger>
+        <span>Pros &amp; Cons <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 6a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1Zm1.5 4.5h4v-4h-4Zm8.25-5a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 0 0-1.5h-7.5Zm0 6a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 0 0-1.5h-7.5Zm0 6a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 0 0-1.5h-7.5Zm-2.97-2.53a.75.75 0 0 1 0 1.06l-3.5 3.5a.75.75 0 0 1-1.06 0l-2-2a.75.75 0 1 1 1.06-1.06l1.47 1.47 2.97-2.97a.75.75 0 0 1 1.06 0Z"/></g></g></svg></span>
+    </h3>
+</doc-anchor-target>
+<doc-panel id="tap-to-unfold" collapsed>
+    <template #title><em><strong>Tap to unfold <span class="docs-emoji">&#x1F448;</span></strong></em></template>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5><em>The pros &amp; cons are subjective to the level of experience and needs of the user.</em></h5>
+<p>You might disagree with some of the points made.</p>
+        </div>
+    </div>
+</div>
+<div class="mb-6 overflow-hidden border rounded-md docs-columns dark:border-dark-650" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
+    <div class="flex items-center px-5 py-3 font-medium leading-snug text-gray-900 border-b border-gray-200 dark:border-dark-650 dark:text-white border-r">
+        <span><strong>PROS</strong> <span class="docs-emoji">&#x2714;&#xFE0F;</span></span>
+    </div>
+    <div class="flex items-center px-5 py-3 font-medium leading-snug text-gray-900 border-b border-gray-200 dark:border-dark-650 dark:text-white">
+        <span><strong>CONS</strong> <span class="docs-emoji">&#x274C;</span></span>
+    </div>
+    <div class="px-5 py-3 docs-columns-content border-r border-gray-200 dark:border-dark-650">
+<p class="list-icon">
+<svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M11.75 4.5a.75.75 0 0 1 .75.75V11h5.75a.75.75 0 0 1 0 1.5H12.5v5.75a.75.75 0 0 1-1.5 0V12.5H5.25a.75.75 0 0 1 0-1.5H11V5.25a.75.75 0 0 1 .75-.75Z"/></g></g></svg> Easy to install.<br />
+<svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M11.75 4.5a.75.75 0 0 1 .75.75V11h5.75a.75.75 0 0 1 0 1.5H12.5v5.75a.75.75 0 0 1-1.5 0V12.5H5.25a.75.75 0 0 1 0-1.5H11V5.25a.75.75 0 0 1 .75-.75Z"/></g></g></svg> Simpler to use.<br />
+<svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M11.75 4.5a.75.75 0 0 1 .75.75V11h5.75a.75.75 0 0 1 0 1.5H12.5v5.75a.75.75 0 0 1-1.5 0V12.5H5.25a.75.75 0 0 1 0-1.5H11V5.25a.75.75 0 0 1 .75-.75Z"/></g></g></svg> A bit faster compared w/ forks.</p>
+    </div>
+    <div class="px-5 py-3 docs-columns-content">
+<p><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M4.5 12.75a.75.75 0 0 1 .75-.75h13.5a.75.75 0 0 1 0 1.5H5.25a.75.75 0 0 1-.75-.75Z"/></g></g></svg> Has less features.<br />
+<svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M4.5 12.75a.75.75 0 0 1 .75-.75h13.5a.75.75 0 0 1 0 1.5H5.25a.75.75 0 0 1-.75-.75Z"/></g></g></svg> No <a href="https://aihubdocs.github.io/en/rvc-resources/inference-settings/#pitch-extraction-algorithm"><u>Mangio-Crepe</u></a> algorithm.<br />
+<svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M4.5 12.75a.75.75 0 0 1 .75-.75h13.5a.75.75 0 0 1 0 1.5H5.25a.75.75 0 0 1-.75-.75Z"/></g></g></svg> Manual model upload.</p>
+    </div>
+</div>
+</doc-panel>
+<hr>
+<doc-anchor-target id="section-1">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-1">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<div class="content-center"><doc-anchor-target id="how-to-install--open-">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-install--open-">#</doc-anchor-trigger>
+        <span>How to Install &amp; Open <span class="docs-emoji">&#x1F4E5;</span></span>
+    </h2>
+</doc-anchor-target>
+</div>
+<doc-anchor-target id="section-2">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-2">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<ol>
+<li><p>For <strong>NVIDIA</strong> users, click <a href="https://huggingface.co/lj1995/VoiceConversionWebUI/blob/main/RVC1006Nvidia.7z"><u>here</u></a>.<br />
+For <strong>AMD</strong>/<strong>Intel</strong> users, click <a href="https://huggingface.co/lj1995/VoiceConversionWebUI/blob/main/RVC1006AMD_Intel.7z"><u>here</u></a>.</p>
+</li>
+<li><p>Click the <u><code v-pre>Download</code></u> word. RVC will begin to download.<br />
+‎<br />
+<img src="../mainline-img/4.png" alt="image" width="550" height="auto"><br />
+‎</p>
+</li>
+<li><p>Once it&#x27;s done, unzip the folder.</p>
+</li>
+<li><p>Open RVC&#x27;s folder, find the &quot;<code v-pre>go-web.bat</code>&quot; file and execute it.<br />
+‎<br />
+<img src="../mainline-img/3.png" alt="image" width="550" height="auto"><br />
+‎<br />
+It will then open a console, &amp; after a moment your default web browser with RVC ready to be used.
+‎<br />
+‎<br />
+<img src="../mainline-img/inferencetab.png" alt="image" width="450" height="auto">‎<br />
+‎</p>
+</li>
+<li><p><strong>(Optional)</strong> To access RVC more easily, make a <a href="https://desitsupport4u.des.wa.gov/hc/en-us/articles/360000391674-Create-a-Desktop-Shortcut-for-a-File-or-Folder"><u>shortcut</u></a> of the <code v-pre>go-web</code> file.<br />
+‎</p>
+</li>
+</ol>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5><u> NOTES: </u></h5>
+<p><strong>Don&#x27;t close the console</strong> until you are done using RVC, or it will stop working.<br />
+Depending on your specs it might take longer to open.</p>
+        </div>
+    </div>
+</div>
+<hr>
+<doc-anchor-target id="section-3">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-3">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<div class="content-center"><doc-anchor-target id="how-to-do-inference-">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-do-inference-">#</doc-anchor-trigger>
+        <span>How to do Inference <span class="docs-emoji">&#x1F5E3;&#xFE0F;</span></span>
+    </h2>
+</doc-anchor-target>
+</div>
+<doc-anchor-target id="section-4">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-4">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<doc-anchor-target id="1-upload-voice-model">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#1-upload-voice-model">#</doc-anchor-trigger>
+        <span>1. <u>Upload voice model.</u></span>
+    </h4>
+</doc-anchor-target>
+<ol type="a">
+<li><p>Open RVC&#x27;s folder, go to the <code v-pre>assets</code> folder and put your model&#x27;s <a href="https://aihubdocs.github.io/en/essentials/voice-models--how-to-search-them/#voice-model-files"><u><strong>.PTH</strong></u></a> file inside the <code v-pre>weights</code> folder.<br />
+‎<br />
+<img src="../mainline-img/5.png" alt="image" width="520" height="auto"><br />
+‎</p>
+</li>
+<li><p>Return to the previous folder.<br />
+Put the model&#x27;s <a href="https://aihubdocs.github.io/en/essentials/voice-models--how-to-search-them/#voice-model-files"><u><strong>.INDEX</strong></u></a> file in the <code v-pre>logs</code> folder.</p>
+ <img src="../mainline-img/6.png" alt="image" width="520" height="auto"> 
+</li>
+</ol>
+<hr>
+<doc-anchor-target id="section-5">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-5">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<doc-anchor-target id="2-select-voice-model">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#2-select-voice-model">#</doc-anchor-trigger>
+        <span>2. <u>Select voice model.</u></span>
+    </h4>
+</doc-anchor-target>
+<ol type="a">
+<li><p>In RVC, click the <code v-pre>Refresh voice list and index path</code> button.</p>
+ <img src="../mainline-img/1.png" alt="image" width="400" height="auto"> 
+<p>‎</p>
+</li>
+<li><p>In its left, click <code v-pre>Inferencing voice</code> &amp; select your model.</p>
+ <img src="../mainline-img/7.png" alt="image" width="400" height="auto"> 
+</li>
+</ol>
+<hr>
+<doc-anchor-target id="section-6">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-6">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<doc-anchor-target id="3-select-vocals">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#3-select-vocals">#</doc-anchor-trigger>
+        <span>3. <u>Select vocals.</u></span>
+    </h4>
+</doc-anchor-target>
+<p>In <code v-pre>Enter the path of the audio file</code> paste the <a href="https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2023/09/shift-right-click-copy-as-path.png?q=50&amp;fit=crop&amp;w=767&amp;dpr=1.5"><u>path file</u></a> of your audio.</p>
+<img src="../mainline-img/8.png" alt="image" width="650" height="auto"> 
+<hr>
+<doc-anchor-target id="section-7">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-7">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<doc-anchor-target id="4-modify-settings-optional">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#4-modify-settings-optional">#</doc-anchor-trigger>
+        <span>4. <u>Modify settings.</u> (optional)</span>
+    </h4>
+</doc-anchor-target>
+<p>If you wish, modify the <a href="https://aihubdocs.github.io/en/rvc-resources/inference-settings/"><u>inferece settings</u></a> on display accordingly for better results.</p>
+<hr>
+<doc-anchor-target id="section-8">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-8">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<doc-anchor-target id="5-convert">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#5-convert">#</doc-anchor-trigger>
+        <span>5. <u>Convert.</u></span>
+    </h4>
+</doc-anchor-target>
+<p>Click the long <code v-pre>Convert</code> button at the bottom &amp; it will begin to convert.</p>
+<p>The processing time will mainly depend on your specs, length of audio, &amp; the algorithm picked.</p>
+<hr>
+<doc-anchor-target id="section-9">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-9">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<doc-anchor-target id="6-download-output">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#6-download-output">#</doc-anchor-trigger>
+        <span>6. <u>Download output.</u></span>
+    </h4>
+</doc-anchor-target>
+<p>Once it&#x27;s done processing, a playable audio will pop up in the <code v-pre>Export audio</code> box.<br />
+To download, click the three dots on the right &amp; hit <code v-pre>Download</code>.</p>
+<p><img src="../mainline-img/9.png" alt="image" width="500" height="auto">‎</p>
+<doc-anchor-target id="if-the-voice-glitches-out-click-here">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#if-the-voice-glitches-out-click-here">#</doc-anchor-trigger>
+        <span>If the voice glitches out, click <a href="https://aihubdocs.github.io/en/rvc-resources/artifacting--how-to-fix-it/"><u>here</u></a>.</span>
+    </h4>
+</doc-anchor-target>
+<hr>
+<doc-anchor-target id="section-10">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-10">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<div class="content-center"><doc-anchor-target id="how-to-train-">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-train-">#</doc-anchor-trigger>
+        <span>How to Train <span class="docs-emoji">&#x1F4BE;</span></span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="section-11">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-11">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-yellow-500"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-yellow-500" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M22.48 15.59L14.01 1.45A2.968 2.968 0 0012.16.09c-.78-.19-1.58-.07-2.27.35-.41.25-.76.6-1.01 1.01v.01L.4 15.6c-.83 1.43-.33 3.27 1.1 4.1.45.26.95.4 1.48.4h16.95c.8-.01 1.55-.33 2.11-.9.56-.57.87-1.33.86-2.13a3.04 3.04 0 00-.42-1.48zm-1.87 2.21c-.19.19-.44.3-.69.3H2.99c-.17 0-.34-.05-.49-.13a.992.992 0 01-.37-1.35L10.6 2.48c.08-.14.2-.25.34-.33a.992.992 0 011.37.33l8.46 14.13c.09.15.13.32.13.49 0 .26-.1.51-.29.7z"></path>
+                    <path d="M11.45 12.1c.55 0 1-.45 1-1v-4c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .56.45 1 1 1zM11.46 14.1c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5><u> IMPORTANT NOTES: </u></h5>
+<ul>
+<li>For <strong>AMD/Intel</strong> users, preferably train through the cloud as these GPUs aren&#x27;t compatible for AI training. <a href="https://aihubdocs.github.io/en/rvc/cloud/training/rvc-disconnected/"><u>RVC Disconnected</u></a> &amp; <a href="https://aihubdocs.github.io/en/rvc/cloud/paperspace/"><u>Paperspace</u></a> are the best contenders.</li>
+</ul>
+<p>‎ ‎ • ‎ The training process will be centered around the <strong>Tensorboard</strong>.<br />
+‎ ‎ ‎ ‎ ‎ ‎ If you don&#x27;t know about it, give it a quick read <a href="https://aihubdocs.github.io/en/rvc-resources/epochs-overtraining--tensorboard/"><u>here</u></a> first.</p>
+        </div>
+    </div>
+</div>
+</div>
+<doc-anchor-target id="section-12">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-12">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<div class="content-center"><doc-anchor-target id="-step-1-">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-step-1-">#</doc-anchor-trigger>
+        <span><u> Step 1 </u></span>
+    </h3>
+</doc-anchor-target>
+</div>
+<doc-anchor-target id="section-13">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-13">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<doc-anchor-target id="1-go-to-training-area">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#1-go-to-training-area">#</doc-anchor-trigger>
+        <span>1. <u>Go to training area.</u></span>
+    </h4>
+</doc-anchor-target>
+<p>Open RVC &amp; head over to the <code v-pre>Train</code> tab.<br />
+Here&#x27;s the section of RVC where you set up the training process.</p>
+<img src="../mainline-img/10.png" alt="image" width="" height="auto">   
+<hr>
+<doc-anchor-target id="section-14">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-14">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<doc-anchor-target id="2-name-the-model">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#2-name-the-model">#</doc-anchor-trigger>
+        <span>2. <u>Name the model.</u></span>
+    </h4>
+</doc-anchor-target>
+<p>In <code v-pre>Enter the experiment name</code> you insert a name for your model.<br />
+Don&#x27;t include special characters or spaces.</p>
+<img src="../mainline-img/11.png" alt="image" width="300" height="auto">    
+<p>‎</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-gray-500 dark:bg-dark-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-gray-500 dark:text-dark-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>Example: <code v-pre>ArianaGrande2023</code> and not <code v-pre>Ariana Grande 2023 &gt;.&lt; !</code>.</p>
+        </div>
+    </div>
+</div>
+<hr>
+<doc-anchor-target id="section-15">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-15">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<doc-anchor-target id="3-select-target-sample-rate">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#3-select-target-sample-rate">#</doc-anchor-trigger>
+        <span>3. <u>Select Target Sample Rate.</u></span>
+    </h4>
+</doc-anchor-target>
+<p>In <code v-pre>Target sample rate</code> select the number that matches your datasets&#x27; <a href="https://aihubdocs.github.io/en/rvc-resources/audio-formats--sample-rate/#sample-rate"><u>sample rate</u></a>.<br />
+Inputting an incorrect one might screw up the final quality.</p>
+<img src="../mainline-img/g.png" alt="image" width="" height="auto">         
+<p>‎</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<ul>
+<li><em>If there&#x27;s no <code v-pre>32k</code> option:</em> at the right in the <code v-pre>Version</code> sector, select <code v-pre>v1</code> &amp; select <code v-pre>v2</code> again. Ensure to leave it as <code v-pre>v2</code>.</li>
+</ul>
+<p>‎ ‎ ‎ • ‎ <em>If your sample rate is <strong>44.1k</strong>:</em> select <code v-pre>40k</code>.</p>
+<p>‎ ‎ ‎ • ‎ <em>If it&#x27;s lower than <strong>32k</strong>:</em> select <code v-pre>32k</code>.</p>
+        </div>
+    </div>
+</div>
+<hr>
+<doc-anchor-target id="section-16">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-16">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<div class="content-center"><doc-anchor-target id="-step-2a-">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-step-2a-">#</doc-anchor-trigger>
+        <span><u> Step 2a </u></span>
+    </h3>
+</doc-anchor-target>
+</div>
+<doc-anchor-target id="section-17">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-17">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<doc-anchor-target id="4-select-dataset">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#4-select-dataset">#</doc-anchor-trigger>
+        <span>4. <u>Select dataset.</u></span>
+    </h4>
+</doc-anchor-target>
+<p>In <code v-pre>Enter the path of the training folder</code> paste the <a href="https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2023/09/shift-right-click-copy-as-path.png?q=50&amp;fit=crop&amp;w=767&amp;dpr=1.5"><u>path file</u></a> of your dataset.</p>
+<p>Ensure its folder name doesn&#x27;t include special characters/spaces.</p>
+<img src="../mainline-img/13.png" alt="image" width="" height="auto">  
+<p>‎</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-gray-500 dark:bg-dark-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-gray-500 dark:text-dark-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>If there&#x27;s any text in the bar, delete it beforehand.</p>
+        </div>
+    </div>
+</div>
+<hr>
+<doc-anchor-target id="section-18">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-18">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<doc-anchor-target id="5-process-data">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#5-process-data">#</doc-anchor-trigger>
+        <span>5. <u>Process data.</u></span>
+    </h4>
+</doc-anchor-target>
+<p>Click the <code v-pre>Process Data</code> button on the center.</p>
+<p>RVC will process the previous criteria for the training.<br />
+But also the dataset file, which might take a moment depending on how big it is.</p>
+<img src="../mainline-img/14.png" alt="image" width="450" height="auto">  
+<p>‎</p>
+<p>It&#x27;ll finish when the output box on the right says <code v-pre>end prepocess</code>.</p>
+<img src="../mainline-img/a.png" alt="testijg" width="" height="auto">  
+<hr>
+<doc-anchor-target id="section-19">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-19">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<div class="content-center"><doc-anchor-target id="-step-2b-">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-step-2b-">#</doc-anchor-trigger>
+        <span><u> Step 2b </u></span>
+    </h3>
+</doc-anchor-target>
+</div>
+<doc-anchor-target id="section-20">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-20">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<doc-anchor-target id="6-select-gpus">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#6-select-gpus">#</doc-anchor-trigger>
+        <span>6. <u>Select GPUs.</u></span>
+    </h4>
+</doc-anchor-target>
+<p>In <code v-pre>Enter the GPU index(es)</code> determine which GPU(s) you&#x27;ll use for training, by indicating the index followed by the dash (e.g: <code v-pre>0</code>).</p>
+<img src="../mainline-img/15.png" alt="image" width="" height="auto">  
+<hr>
+<doc-anchor-target id="section-21">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-21">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<doc-anchor-target id="7-select-pitch-extraction-algorithm">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#7-select-pitch-extraction-algorithm">#</doc-anchor-trigger>
+        <span>7. <u>Select pitch extraction algorithm.</u></span>
+    </h4>
+</doc-anchor-target>
+<ol type="a">
+<li><p>At the right select the <code v-pre>Pitch extraction algorithm</code>.<br />
+Use either <code v-pre>RMVPE_GPU</code> or <code v-pre>Crepe</code>, according to your needs.</p>
+<p>Learn more <a href="https://aihubdocs.github.io/en/rvc-resources/inference-settings/"><u>here</u></a>.</p>
+<p><img src="../mainline-img/16.png" alt="image" width="" height="auto"> ‎</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Only use one of the two, as the other algorithms are obsolete.</h5>
+        </div>
+    </div>
+</div>
+</li>
+</ol>
+<doc-anchor-target id="section-22">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-22">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<ol type="a" start="2">
+<li><p>Now click the <code v-pre>Feature extraction</code> button on the right.</p>
+<p><img src="../mainline-img/17.png" alt="image" width="370" height="auto">‎<br />
+‎<br />
+‎<br />
+It&#x27;ll finish when the output says <code v-pre>all-feature-done</code>.</p>
+ <img src="../mainline-img/b.png" alt="image" width="320" height="auto">  
+</li>
+</ol>
+<hr>
+<doc-anchor-target id="section-23">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-23">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<doc-anchor-target id="8-create-index">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#8-create-index">#</doc-anchor-trigger>
+        <span>8. <u>Create .INDEX.</u></span>
+    </h4>
+</doc-anchor-target>
+<p>Press <code v-pre>Train feature index</code> at the bottom center.<br />
+This will create the <a href="https://aihubdocs.github.io/en/essentials/voice-models--how-to-search-them/#voice-model-files"><u>.INDEX</u></a> file.</p>
+<p><img src="../mainline-img/i.png" alt="image" width="250" height="auto">‎<br />
+‎<br />
+It&#x27;ll finish when the outbot box says something like this:</p>
+<img src="../mainline-img/h.png" alt="image" width="270" height="auto"> 
+<hr>
+<doc-anchor-target id="section-24">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-24">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<div class="content-center"><doc-anchor-target id="-step-3-">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-step-3-">#</doc-anchor-trigger>
+        <span><u> Step 3 </u></span>
+    </h3>
+</doc-anchor-target>
+</div>
+<doc-anchor-target id="section-25">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-25">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<doc-anchor-target id="9-select-save-frequency">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#9-select-save-frequency">#</doc-anchor-trigger>
+        <span>9. <u>Select save frequency.</u></span>
+    </h4>
+</doc-anchor-target>
+<p>In <code v-pre>Save frequency</code> you determine at how many <a href="https://aihubdocs.github.io/en/rvc-resources/epochs-overtraining--tensorboard/"><em><u>epochs</u></em></a> the model will saved at.<br />
+If you are a newbie, leave it at <code v-pre>15</code>.</p>
+<ul>
+<li>Think of it as how often RVC will make a &quot;saving checkpoint&quot; file of your model.</li>
+<li>They&#x27;re useful to resume training starting from where you left. You&#x27;ll learn more later.</li>
+<li>Example: with a value of <code v-pre>10</code>, RVC will save the model at every 10 epochs (10, 20, 30, etc.)</li>
+</ul>
+<p>‎<br />
+<img src="../mainline-img/18.png" alt="image" width="" height="auto"></p>
+<hr>
+<doc-anchor-target id="section-26">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-26">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<doc-anchor-target id="10-input-epochs-amount">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#10-input-epochs-amount">#</doc-anchor-trigger>
+        <span>10. <u>Input epochs amount.</u></span>
+    </h4>
+</doc-anchor-target>
+<p>In <code v-pre>Total training epochs</code> you determine the total amount of epochs (training cycles) for training.</p>
+<p>But since we&#x27;ll use TensorBoard, using an arbitrarely large value like <code v-pre>2000</code> is probably enough, to avoid re-training.</p>
+<p>Learn more <a href="https://aihubdocs.github.io/en/rvc-resources/epochs-overtraining--tensorboard/"><u>here</u></a>.</p>
+<img src="../mainline-img/19.png" alt="image" width="" height="auto">  
+<hr>
+<doc-anchor-target id="section-27">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-27">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<doc-anchor-target id="11-select-batch-size">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#11-select-batch-size">#</doc-anchor-trigger>
+        <span>11. <u>Select batch size.</u></span>
+    </h4>
+</doc-anchor-target>
+<p><code v-pre>Batch size per GPU</code> determines the amount of data that will be processed at once while training.</p>
+<p>If you are a newbie leave it at <code v-pre>8</code>.<br />
+If your dataset is short (around 2 minutes or less), use <code v-pre>4</code> instead.</p>
+<img src="../mainline-img/20.png" alt="image" width="" height="auto">  
+<hr>
+<doc-anchor-target id="section-28">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-28">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<doc-anchor-target id="12-launch-tensorboard">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#12-launch-tensorboard">#</doc-anchor-trigger>
+        <span>12. <u>Launch TensorBoard.</u></span>
+    </h4>
+</doc-anchor-target>
+<p>Now before you start training, open  TB.</p>
+<p>If you havent already, start reading <a href="https://aihubdocs.github.io/en/rvc-resources/epochs-overtraining--tensorboard/"><u>here</u></a>.</p>
+<hr>
+<doc-anchor-target id="section-29">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-29">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<doc-anchor-target id="13-begin-training">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#13-begin-training">#</doc-anchor-trigger>
+        <span>13. <u>Begin training.</u></span>
+    </h4>
+</doc-anchor-target>
+<p>Start training the model by clicking <code v-pre>Train model</code>.</p>
+<p>Be sure to keep an eye on  TB &amp; the console.</p>
+<img src="../mainline-img/21.png" alt="image" width="250" height="auto">  
+<hr>
+<doc-anchor-target id="section-30">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-30">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<doc-anchor-target id="14-stop-training">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#14-stop-training">#</doc-anchor-trigger>
+        <span>14. <u>Stop training.</u></span>
+    </h4>
+</doc-anchor-target>
+<p>Once you detect overtraining, stop training by pressing the <code v-pre>Stop training</code> button, located at the bottom, where <code v-pre>Train model</code> used to be.</p>
+<hr>
+<doc-anchor-target id="section-31">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-31">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<doc-anchor-target id="15-gather-models-files">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#15-gather-models-files">#</doc-anchor-trigger>
+        <span>15. <u>Gather model&#x27;s files.</u></span>
+    </h4>
+</doc-anchor-target>
+<ol type="a">
+<li><p>Create a new folder anywhere named as your model.</p>
+</li>
+<li><p>Open RVC&#x27;s folder, go to <code v-pre>logs</code>, and open the folder named with the model.<br />
+Select the <code v-pre>.INDEX</code> named <code v-pre>added_</code> &amp; move it to your newly made folder.</p>
+ <img src="../mainline-img/c.png" alt="image" width="" height="auto">  
+</li>
+</ol>
+<p>‎</p>
+<ol type="a" start="3">
+<li><p>Now go to the <code v-pre>weights</code> folder. Here you&#x27;ll find the &quot;checkpoints&quot;, them being usable models.</p>
+<p>Select the one <strong>closest</strong> to <em><strong>before</strong></em> the overtraining point, and move it to the new folder</p>
+<p>These files will be organized with this format: <strong>modelname_epochnumber_stepnumber.pth</strong><br />
+Example: <code v-pre>kalomaze_e60_s120.pth</code></p>
+<p><img src="../mainline-img/d.png" alt="image" width="" height="auto"> ‎<br />
+‎</p>
+<p>And that&#x27;s all. Have fun with your model.</p>
+<p>To test the model, do a normal <a href="https://aihubdocs.github.io/en/essentials/how-to-make-ai-cover/"><u>inference</u></a> as usual.</p>
+<p>If you were going for a model that hits low/high notes, screams, or other special sounds, ensure your audio sample includes them too.</p>
+</li>
+</ol>
+<hr>
+<doc-anchor-target id="section-32">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-32">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<div class="content-center"><doc-anchor-target id="how-to-re-train">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-re-train">#</doc-anchor-trigger>
+        <span><u>How to Re-Train</u></span>
+    </h3>
+</doc-anchor-target>
+</div>
+<doc-anchor-target id="section-33">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-33">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<p>If the model still needed some training, you don&#x27;t have to train from scratch.<br />
+Here&#x27;s how you do it.</p>
+<ul>
+<li><p>Simply enter the <strong>same settings and criteria</strong> that you previously inserted.<br />
+Model name, sample rate, dataset, batch size, etc.</p>
+</li>
+<li><p>If you have already done it before, you don&#x27;t have to press <code v-pre>Process Data</code> or train the <a href="https://aihubdocs.github.io/en/essentials/voice-models--how-to-search-them/#voice-model-files"><u>.INDEX</u></a> again.</p>
+</li>
+<li><p>If you re-train because you didn&#x27;t put enough epochs before, increase the total epochs.<br />
+Inserting double the amount should be enough.</p>
+</li>
+<li><p>Begin training again &amp; remember to monitor  TB &amp; console like before.</p>
+</li>
+</ul>
+<hr>
+<div class="content-right">
+<div class="mb-6 overflow-hidden border rounded-md docs-columns dark:border-dark-650" style="grid-template-columns: repeat(1, minmax(0, 1fr));">
+    <div class="flex items-center px-5 py-3 font-medium leading-snug text-gray-900 border-b border-gray-200 dark:border-dark-650 dark:text-white">
+        <span><em>Did I miss anything?</em></span>
+    </div>
+    <div class="px-5 py-3 docs-columns-content">
+<p>Send any feedback <a href="https://forms.gle/5i6hTJRVkXRohvVF9"><u>here</u></a> <span class="docs-emoji">&#x1F448;</span></p>
+    </div>
+</div>
+</div>
+
+                                
+                                <!-- Required only on API pages -->
+                                <doc-toolbar-member-filter-no-results></doc-toolbar-member-filter-no-results>
+                            </div>
+                            <footer class="clear-both">
+                            
+                                <nav class="flex mt-14">
+                                    <div class="w-1/2">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../rvc/cloud/paperspace/">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                            <span>
+                                                <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
+                                                <span class="block mt-1">Paperspace</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                            
+                                    <div class="w-1/2">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../rvc/local/mangio-rvc/">
+                                            <span>
+                                                <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
+                                                <span class="block mt-1">Mangio RVC</span>
+                                            </span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                        </a>
+                                    </div>
+                                </nav>
+                            </footer>
+                        </main>
+                
+                        <div class="border-t dark:border-dark-650 pt-6 mb-8">
+                            <footer class="flex flex-wrap items-center justify-between">
+                                <div>
+                                    <ul class="flex flex-wrap items-center text-sm">
+                                    </ul>
+                                </div>
+                                <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright 2024. All rights reserved.</p></div>
+                            </footer>
+                        </div>
+                    </div>
+                
+                    <!-- Rendered if sidebar right is enabled -->
+                    <!-- Sidebar right skeleton-->
+                    <div v-cloak class="fixed top-0 bottom-0 right-0 translate-x-full bg-white border-gray-200 lg:sticky lg:border-l lg:shrink-0 lg:pt-6 lg:transform-none sm:w-1/2 lg:w-64 lg:z-0 md:w-104 sidebar-right skeleton dark:bg-dark-850 dark:border-dark-650">
+                        <div class="pl-5">
+                            <div class="w-32 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                            <div class="w-48 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                            <div class="w-40 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                        </div>
+                    </div>
+                
+                    <!-- User should be able to hide sidebar right -->
+                    <doc-sidebar-right v-cloak></doc-sidebar-right>
+                </div>
+
+            </div>
+        </div>
+    
+        <doc-search-mobile></doc-search-mobile>
+        <doc-back-to-top></doc-back-to-top>
+    </div>
+
+
+    <div id="docs-overlay-target"></div>
+
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Mainline RVC", level: 3, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+</body>
+</html>
