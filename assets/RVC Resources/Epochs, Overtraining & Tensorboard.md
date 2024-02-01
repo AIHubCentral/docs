@@ -106,7 +106,7 @@ Recommended for **first-timers**.
     - First ensure **auto-refresh** is on, so the graphs update constantly.    
 
         Click the gear (:icon-gear:) in the top left corner & turn on **``Reload data``**.      
-    You can always manually refresh with the refresh symbol (🔄) in the top left.  
+    You can always manually refresh with the refresh symbol (🔄) in the top right.  
             
         <img src="../tensorboard-img/2.png" alt="image" width="280" height="auto">
        
