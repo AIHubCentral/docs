@@ -23,23 +23,23 @@ También puedes enviar un issue/pull request a nuestra página de GitHub.
 :::
 ###### ‎
 >{.list-icon}
->#### 🎵 [<u>Cómo Hacer un Cover de IA</u>](http://localhost:5000/gu%C3%ADas-populares/c%C3%B3mo-hacer-un-cover-de-ia/) 
+>#### 🎵 [<u>Cómo Hacer un Cover de IA</u>](https://aihubdocs.github.io/es/gu%C3%ADas-populares/c%C3%B3mo-hacer-un-cover-de-ia/) 
 >{.list-icon}
 > - :icon-chevron-right: ***Punto de inicio para hacer covers de IA, con RVC.***     
 >***  
->#### 💾 [<u>Cómo Hacer Modelos de Voz</u>](http://localhost:5000/gu%C3%ADas-populares/c%C3%B3mo-hacer-modelos-de-voz/) 
+>#### 💾 [<u>Cómo Hacer Modelos de Voz</u>](https://aihubdocs.github.io/es/gu%C3%ADas-populares/c%C3%B3mo-hacer-modelos-de-voz/) 
 >{.list-icon}
 > - :icon-chevron-right:***Fundamentos para entrenar modelos de RVC.***       
 >***  
->#### 🔍 [<u>Modelos de Voz</u>](http://localhost:5000/gu%C3%ADas-populares/modelos-de-voz/) 
+>#### 🔍 [<u>Modelos de Voz</u>](https://aihubdocs.github.io/es/gu%C3%ADas-populares/modelos-de-voz/) 
 >{.list-icon}
 > - :icon-chevron-right: ***Qué son y 4 métodos para buscarlos.***      
 >***
->#### 🤗 [<u>Subir Modelos a Hugging Face</u>](http://localhost:5000/gu%C3%ADas-populares/subir-modelos-a-hugging-face/) 
+>#### 🤗 [<u>Subir Modelos a Hugging Face</u>](https://aihubdocs.github.io/es/gu%C3%ADas-populares/subir-modelos-a-hugging-face/) 
 >{.list-icon}
 > - :icon-chevron-right: ***Tutorial para subir & obtener un link de HF.***        
 >***      
->#### 🏷️ [<u>Rol Model Maker</u>](http://localhost:5000/gu%C3%ADas-populares/rol-model-maker/) 
+>#### 🏷️ [<u>Rol Model Maker</u>](https://aihubdocs.github.io/es/gu%C3%ADas-populares/rol-model-maker/) 
 >{.list-icon}
 > - :icon-chevron-right: ***Procedimiento & reglas para la subida del modelo.***
 !!!

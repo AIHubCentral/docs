@@ -14,7 +14,7 @@
 - ***En este caso***, los modelos de voz son modelos de IA entrenados para **replicar** una voz, y con IA las aplica al audio de entrada.
 
 - Existen una gran cantidad de estos subidos a internet, hechos por el público. Y la mejor manera de hacerlos es con el software **RVC**.       
-Aprende cómo [<u>aquí</u>](http://localhost:5000/gu%C3%ADas-populares/c%C3%B3mo-hacer-un-modelo-de-voz/).      
+Aprende cómo [<u>aquí</u>](https://aihubdocs.github.io/es/gu%C3%ADas-populares/c%C3%B3mo-hacer-un-modelo-de-voz/).      
 ###### ‎   
 ### Archivos de Modelos 
 ==- *Están compuestos por 2 archivos:*        
@@ -91,11 +91,11 @@ Toca los tres puntos y ``Descargar modelo``. Se descargará un archivo .ZIP de e
 <img src="../searchrvcmodels-img/4.png" alt="image" width="600" height="auto">‎               
 ‎                     
 Si necesitas un link de este, usa los otros métodos.        
-Si solo existe en weights.gg, descarga el .ZIP y súbelo a HF. Aprende más <u>[aquí](http://localhost:5000/gu%C3%ADas-populares/subir-modelos-a-hugging-face/)</u>.   
+Si solo existe en weights.gg, descarga el .ZIP y súbelo a HF. Aprende más <u>[aquí](https://aihubdocs.github.io/es/gu%C3%ADas-populares/subir-modelos-a-hugging-face/)</u>.   
 ###### ‎      
 !!! *Acerca de los 'epochs'.*
 Epoch es una unidad de medida de los ciclos de entrenamiento del modelo.        
-Más epochs no equivale a un mejor modelo. Aprende más <U>[aquí](http://localhost:5000/recursos-de-rvc/epochs-sobreentrenar--tensorboard/)</u>.
+Más epochs no equivale a un mejor modelo. Aprende más <U>[aquí](https://aihubdocs.github.io/es/recursos-de-rvc/epochs-sobreentrenar--tensorboard/)</u>.
 !!!
 
 +++ Canal Voice Models     
@@ -181,7 +181,7 @@ Ve al canal de ``#search-models``.
 :::content-center
 ### <u>Descripción</U>
 :::
-- Esta una plataforma en línea gratuita & de código abierto para alojar aplicaciones interactivas de IA, modelos de IA, y <u>[datasets](http://localhost:5000/aislamiento-vocal--datasets/datasets/)</u>.
+- Esta una plataforma en línea gratuita & de código abierto para alojar aplicaciones interactivas de IA, modelos de IA, y <u>[datasets](https://aihubdocs.github.io/es/aislamiento-vocal--datasets/datasets/)</u>.
 - Aquí los usuarios de RVC suelen almacenar sus modelos de voz.
 ***
 ###### ‎
@@ -200,8 +200,8 @@ Si necesitas su link, hazle click derecho y copia el enlace.
     <img src="../searchrvcmodels-img/10.png" alt="image" width="500" height="auto">        
 ###### ‎       
 !!! *En caso de que no haya un .ZIP.*
-Descarga los <u>[archivos correctos](http://localhost:5000/gu%C3%ADas-populares/modelos-de-voz/#archivos-de-modelos)</u> del modelo.     
-Si necesitas su **link** súbelo tu mismo. Aprende [<u>aquí</u>](http://localhost:5000/gu%C3%ADas-populares/subir-modelos-a-hugging-face/).
+Descarga los <u>[archivos correctos](https://aihubdocs.github.io/es/gu%C3%ADas-populares/modelos-de-voz/#archivos-de-modelos)</u> del modelo.     
+Si necesitas su **link** súbelo tu mismo. Aprende [<u>aquí</u>](https://aihubdocs.github.io/es/gu%C3%ADas-populares/subir-modelos-a-hugging-face/).
 !!!
 +++
 ##### ‎ 
@@ -210,7 +210,7 @@ Si necesitas su **link** súbelo tu mismo. Aprende [<u>aquí</u>](http://localho
 - Escoge otro
 - Paga a un model maker y que lo haga por ti         
 
-##### Si te interesa la primera, aprende [<u>aquí</u>](http://localhost:5000/gu%C3%ADas-populares/c%C3%B3mo-hacer-modelos-de-voz/).
+##### Si te interesa la primera, aprende [<u>aquí</u>](https://aihubdocs.github.io/es/gu%C3%ADas-populares/c%C3%B3mo-hacer-modelos-de-voz/).
 
 ***
 :::content-right

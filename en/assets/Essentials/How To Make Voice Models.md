@@ -7,8 +7,9 @@
 ‎
 :   ‎
 :::
-
+:::content-center
 #### Lost in how to make an AI voice model? Here's how.
+:::
 
 - To convert the the voice into your desired person, we'll use the best software for this, <U>**RVC**</u>.   
 

@@ -1,4 +1,4 @@
-``Última actividad: Feb 10, 2024``  
+``Última actividad: Feb 11, 2024``  
 
 ***
 ###### ‎
@@ -13,8 +13,8 @@
 
 - Para usuarios de RVC, **las dos mejores aplicaciones son:** 
     {.list-icon}
-    - ##### :icon-device-desktop: ‎ [<u>Ultimate Vocal Remover 5</u>](http://localhost:5000/aislamiento-vocal--datasets/aislamiento-vocal/#ultimate-vocal-remover-5)       
-    - ##### :icon-cloud: ‎ [<u>MVSEP</u>](http://localhost:5000/aislamiento-vocal--datasets/aislamiento-vocal/#mvsep)
+    - ##### :icon-device-desktop: ‎ [<u>Ultimate Vocal Remover 5</u>](https://aihubdocs.github.io/es/aislamiento-vocal--datasets/aislamiento-vocal/#ultimate-vocal-remover-5)       
+    - ##### :icon-cloud: ‎ [<u>MVSEP</u>](https://aihubdocs.github.io/es/aislamiento-vocal--datasets/aislamiento-vocal/#mvsep)
 ***
 <img src="../uvrmvsep-img/a.jpg" alt="image" width="" height="auto">‎       
 ‎       
@@ -26,10 +26,10 @@
 
 - Tiene una gran cantidad de modelos para extraer básicamente casi todo de un audio/canción.         
            
-- Este es el programa que usuarios de RVC locales usan por defecto, para ya sea limpiar muestras o <u>[datasets](http://localhost:5000/aislamiento-vocal--datasets/datasets/)</u>.
+- Este es el programa que usuarios de RVC locales usan por defecto, para ya sea limpiar muestras o <u>[datasets](https://aihubdocs.github.io/es/aislamiento-vocal--datasets/datasets/)</u>.
 
 !!!warning
-*Requerirás buenas <u>[specs](http://localhost:5000/otro/glosario/#specs)</u> & <u>[GPU](http://localhost:5000/otro/glosario/#gpu)</u> para correrlo efectivamente. Sino, usa **<u>[MVSEP](http://localhost:5000/aislamiento-vocal--datasets/aislamiento-vocal/#mvsep)**</u>.*
+*Requerirás buenas <u>[specs](https://aihubdocs.github.io/es/otro/glosario/#specs)</u> & <u>[GPU](https://aihubdocs.github.io/es/otro/glosario/#gpu)</u> para correrlo efectivamente. Sino, usa **<u>[MVSEP](https://aihubdocs.github.io/es/aislamiento-vocal--datasets/aislamiento-vocal/#mvsep)**</u>.*
 !!!
 ***
 :::content-center
@@ -54,12 +54,13 @@ Asegúrate de marcar `🗹 Create a desktop shortcut` para crear un acceso direc
 ###### ‎       
 ### <u> Cómo Usar</u> ‎ :icon-checklist:
 ###### ‎       
-:::
 !!!success <u>NOTAS:</u>
 Toca [<u>aquí</u>](https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fpmi3ialjjca91.png%3Fwidth%3D1016%26format%3Dpng%26auto%3Dwebp%26s%3D0e75311422270753ebca68fe00eaf9ce6a81218b) para una explicación gráfica en inglés de los botones. Aviso: el post está desactualizado.      
 
-Si te topas con un problema, lee el capítulo <u>[Solución de Problemas](http://localhost:5000/aislamiento-vocal--datasets/aislamiento-vocal/#soluci%C3%B3n-de-problemas--)</u>.
+Si te topas con un problema, lee el capítulo <u>[Solución de Problemas](https://aihubdocs.github.io/es/aislamiento-vocal--datasets/aislamiento-vocal/#soluci%C3%B3n-de-problemas--)</u>.
 !!!
+:::
+
 ###### ‎         
 - ##### Para extraer & limpiar vocales de una <u>canción</u>, lee la guía `Extracción & Limpieza`.
 
@@ -77,15 +78,15 @@ O simplemente arrástralos hacia la casilla.
 .jpg" alt="image" width="300" height="auto">         ‎    
 
 !!!success 
-Para mejores resultados, usa un audio en un [<u>formato sin pérdida</u>](http://localhost:5000/recursos-de-rvc/formato-de-audio--sample-rate//) (**WAV** o **FLAC**), no MP3.
+Para mejores resultados, usa un audio en un [<u>formato sin pérdida</u>](https://aihubdocs.github.io/es/recursos-de-rvc/formato-de-audio--sample-rate//) (**WAV** o **FLAC**), no MP3.
 !!!
 ***
 ###### ‎ 
 #### 2. Selecciona FLAC & GPU Conversion. 
 a. A la derecha podrás seleccionar el formato de salida del audio.       
-Recomendamos `FLAC` siempre. Aprende más [<u>aquí</u>](http://localhost:5000/recursos-de-rvc/formato-de-audio--sample-rate//).    
+Recomendamos `FLAC` siempre. Aprende más [<u>aquí</u>](https://aihubdocs.github.io/es/recursos-de-rvc/formato-de-audio--sample-rate//).    
 
-b. Si tu <u>[GPU](http://localhost:5000/otro/glosario/#gpu)</u> es **compatible con [<u>CUDA</u>](http://localhost:5000/otro/glosario/#cuda)**, activa `GPU Conversion` para un proceso más rápido.    
+b. Si tu <u>[GPU](https://aihubdocs.github.io/es/otro/glosario/#gpu)</u> es **compatible con [<u>CUDA</u>](https://aihubdocs.github.io/es/otro/glosario/#cuda)**, activa `GPU Conversion` para un proceso más rápido.    
 
     <img src="../uvrmvsep-img/e.png" alt="image" width="350" height="auto">‎      
 ‎       
@@ -125,7 +126,7 @@ d. Empieza a procesar.
 ***
 ###### ‎
 #### 5. Extrae vocales principales. 
-Al igual que con la reverb., las vocales suelen incluir <u>[coros](http://localhost:5000/otro/glosario/#coro)</u> también.
+Al igual que con la reverb., las vocales suelen incluir <u>[coros](https://aihubdocs.github.io/es/otro/glosario/#coro)</u> también.
 
 a. Selecciona las vocales sin reverb.   
 
@@ -159,15 +160,15 @@ O simplemente arrástralos hacia la casilla.
 .jpg" alt="image" width="300" height="auto">         ‎    
 
 !!!success 
-Para mejores resultados, usa un audio en un [<u>formato sin pérdida</u>](http://localhost:5000/recursos-de-rvc/formato-de-audio--sample-rate/) (**WAV** o **FLAC**), no MP3.
+Para mejores resultados, usa un audio en un [<u>formato sin pérdida</u>](https://aihubdocs.github.io/es/recursos-de-rvc/formato-de-audio--sample-rate/) (**WAV** o **FLAC**), no MP3.
 !!!
 ***
 ###### ‎ 
 #### 2. Selecciona FLAC & GPU Conversion. 
 a. A la derecha podrás seleccionar el formato de salida del audio.       
-Recomendamos `FLAC` siempre. Aprende más [<u>aquí</u>](http://localhost:5000/recursos-de-rvc/formato-de-audio--sample-rate/).    
+Recomendamos `FLAC` siempre. Aprende más [<u>aquí</u>](https://aihubdocs.github.io/es/recursos-de-rvc/formato-de-audio--sample-rate/).    
 
-b. Si tu <u>[GPU](http://localhost:5000/otro/glosario/#gpu)</u> es **compatible con [<u>CUDA</u>](http://localhost:5000/otro/glosario/#cuda)**, activa `GPU Conversion` para un proceso más rápido.    
+b. Si tu <u>[GPU](https://aihubdocs.github.io/es/otro/glosario/#gpu)</u> es **compatible con [<u>CUDA</u>](https://aihubdocs.github.io/es/otro/glosario/#cuda)**, activa `GPU Conversion` para un proceso más rápido.    
 
     <img src="../uvrmvsep-img/e.png" alt="image" width="350" height="auto">‎      
 ‎       
@@ -180,7 +181,7 @@ a. En `Process Method` selecciona `VR`.
 b. Pon `Window Size` en `320`. (Opcional)     
     Un menor Window Size brindará resultados de mayor **calidad**, pero **tardará** más en procesar.  
 
-b. Ve la <u>[lista de modelos](http://localhost:5000/aislamiento-vocal--datasets/aislamiento-vocal/#mejores-modelos-de-uvr--)</u> & en `Select VR Model` selecciona el modelo según lo que necesites quitar/extraer.        
+b. Ve la <u>[lista de modelos](https://aihubdocs.github.io/es/aislamiento-vocal--datasets/aislamiento-vocal/#mejores-modelos-de-uvr--)</u> & en `Select VR Model` selecciona el modelo según lo que necesites quitar/extraer.        
 ‎       
 Si tienes que quitar más de una cosa, sigue este orden:       
 ``Quita reverb -> Extrae vocales principales -> Quita ruido``      
@@ -257,7 +258,7 @@ Ruido | VR | UVR-DeNoise
 !!! <u>AVISO:</u>
 ***Para usuarios gratis***, solo puedes convertir 1 audio a la vez, y no puedes usar audios de más de 10 minutos. Recórtalo en varios audios si ese es tu caso.
 
-***Si te topas con un problema***, lee el capítulo de <u>[Solución de Problemas](http://localhost:5000/aislamiento-vocal--datasets/aislamiento-vocal/#soluci%C3%B3n-de-problemas---1)</u>.
+***Si te topas con un problema***, lee el capítulo de <u>[Solución de Problemas](https://aihubdocs.github.io/es/aislamiento-vocal--datasets/aislamiento-vocal/#soluci%C3%B3n-de-problemas---1)</u>.
 !!!
 ###### ‎         
 - ##### Para extraer & limpiar vocales de una <u>canción</u>, lee la guía `Extracción & Limpieza`.
@@ -288,7 +289,7 @@ En la casilla del medio, toca `Examinar archivo` & selecciona tu audio. Luego em
 a. En `Tipo de separación`, selecciona `MDX23C`.      
 
 b. En `Codificación de salida` selecciona `FLAC`.      
-Siempre recomendamos usar FLAC. Aprende más [<u>aquí</u>](http://localhost:5000/recursos-de-rvc/formato-de-audio--sample-rate/).
+Siempre recomendamos usar FLAC. Aprende más [<u>aquí</u>](https://aihubdocs.github.io/es/recursos-de-rvc/formato-de-audio--sample-rate/).
 
 c. Cuando el audio termine de cargarse, toca `Separar`
 
@@ -322,7 +323,7 @@ d. Toca `Separar` & luego descarga las vocales sin reverb.
 ***
 ###### ‎
 #### 6. Extrae vocales principales.  
-Al igual que con el reverb., las canciones suelen incluir <u>[coros](http://localhost:5000/otro/glosario/#coro)</u>, que afectan los resultados en RVC.
+Al igual que con el reverb., las canciones suelen incluir <u>[coros](https://aihubdocs.github.io/es/otro/glosario/#coro)</u>, que afectan los resultados en RVC.
 
 a. Ve a la página principal & sube el audio sin reverb.
 
@@ -364,13 +365,13 @@ a. En la casilla del medio, toca `Examinar archivo` & selecciona tu audio. Luego
     <img src="../uvrmvsep-img/j.png" alt="image" width="330" height="auto">‎    
 ‎   
 b. En `Codificación de salida` selecciona `FLAC`.      
-Siempre recomendamos usar FLAC. Aprende más <u>[aquí](http://localhost:5000/recursos-de-rvc/formato-de-audio--sample-rate/)</u>.
+Siempre recomendamos usar FLAC. Aprende más <u>[aquí](https://aihubdocs.github.io/es/recursos-de-rvc/formato-de-audio--sample-rate/)</u>.
 ***
 ###### ‎
 #### 3. Selecciona modelo.  
 a. En `Tipo de separación`, selecciona `Ultimate Vocal Remover 5 HQ`.
 
-b. Ve la <u>[lista de modelos](http://localhost:5000/aislamiento-vocal--datasets/aislamiento-vocal/#mejores-modelos-de-mvsep--)</u> & en `Model Type` selecciona el modelo según lo que necesites quitar/extraer.       
+b. Ve la <u>[lista de modelos](https://aihubdocs.github.io/es/aislamiento-vocal--datasets/aislamiento-vocal/#mejores-modelos-de-mvsep--)</u> & en `Model Type` selecciona el modelo según lo que necesites quitar/extraer.       
 ‎       
     Si tienes que quitar más de una cosa, sigue este orden:       
 ``Quita reverb -> Extrae vocales principales -> Quita ruido``     

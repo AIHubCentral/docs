@@ -34,7 +34,7 @@
 ### :icon-chevron-down:Google Colab
 - Google Colaboratory es un producto de Google que permite a usuarios escribir & ejecutar código de Python arbitrario a través de sitios web.     
 
-- Usuarios de RVC de la nube lo usan principalmente para los ports de RVC, como [<u>AICoverGen NO UI</u>](http://localhost:5000/rvc/en-la-nube/inferencia/aicovergen-no-ui/), [<u>Ilaria RVC</u>](http://localhost:5000/rvc/en-la-nube/inferencia/ilaria-rvc/), & [<u>RVC Disconnected</u>](http://localhost:5000/rvc/en-la-nube/entrenar/rvc-disconnected/).    
+- Usuarios de RVC de la nube lo usan principalmente para los ports de RVC, como [<u>AICoverGen NO UI</u>](https://aihubdocs.github.io/es/rvc/en-la-nube/inferencia/aicovergen-no-ui/), [<u>Ilaria RVC</u>](https://aihubdocs.github.io/es/rvc/en-la-nube/inferencia/ilaria-rvc/), & [<u>RVC Disconnected</u>](https://aihubdocs.github.io/es/rvc/en-la-nube/entrenar/rvc-disconnected/).    
 
 - Su versión gratis es más lenta & con un límite de uso de **6 horas por día**. Cuando termines de gastar el uso, tendrás que esperar 24 horas o usar otra cuenta.
 
@@ -54,18 +54,18 @@
 ***
 ###### ‎       
 ### :icon-chevron-down:Specs
-- Son a las especificaciones de una computadora. Hardware como [<u>GPU</u>](http://localhost:5000/otro/glosario/#gpu), [<u>CPU</u>](http://localhost:5000/otro/glosario/#cpu), RAM, etc.     
+- Son a las especificaciones de una computadora. Hardware como [<u>GPU</u>](https://aihubdocs.github.io/es/otro/glosario/#gpu), [<u>CPU</u>](https://aihubdocs.github.io/es/otro/glosario/#cpu), RAM, etc.     
 - El rendimiento del hardware se co-relaciona directamente con el rendimiento de todo su software.
 ***
 ###### ‎
 ### :icon-chevron-down:Uso en la nube
 - Cualquier software o aplicación que esté almacenado, manejado y disponible por medio de un servidor virtual, y es accedido mediante un navegador web.       
-- Lo opuesto a ejecución [<u>local</u>](http://localhost:5000/otro/glosario/#uso-local).   
+- Lo opuesto a ejecución [<u>local</u>](https://aihubdocs.github.io/es/otro/glosario/#uso-local).   
 ***
 ###### ‎       
 ### :icon-chevron-down:Uso local
 - Un uso de manera local es un proceso que implica ejecutar aplicaciones desde tu propia máquina, usando sus recursos.    
-- Lo opuesto a [<u>uso en la nube</u>](http://localhost:5000/otro/glosario/#uso-en-la-nube).       
+- Lo opuesto a [<u>uso en la nube</u>](https://aihubdocs.github.io/es/otro/glosario/#uso-en-la-nube).       
 ***
 :::content-right
 ``Escrito por Julia & Alex``

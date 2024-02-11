@@ -16,7 +16,7 @@
 
 - RVC (Retrieval-based Voice Conversion) es un software avanzado de IA de clonación de voz. Es gratis y de código abierto.
 
-- Requiere de **buenas [<u>specs</u>](http://localhost:5000/otro/glosario/#specs)** para correrlo efectivamente, aunque también RVC puede ser ejecutado mediante la <u>[nube](http://localhost:5000/otro/glosario/#uso-en-la-nube)</u>, y ser usado en cualquier dispositivo.
+- Requiere de **buenas [<u>specs</u>](https://aihubdocs.github.io/es/otro/glosario/#specs)** para correrlo efectivamente, aunque también RVC puede ser ejecutado mediante la <u>[nube](https://aihubdocs.github.io/es/otro/glosario/#uso-en-la-nube)</u>, y ser usado en cualquier dispositivo.
 
 Tras esta introducción, empecemos con los pasos.        
 ‎
@@ -31,32 +31,32 @@ Tras esta introducción, empecemos con los pasos.
 
 - Para esto, necesitarás un software de **aislamiento vocal**. Para que RVC brinde los mejores resultados, asegúrate de **limpiar** bien las vocales.
 
-- #### [<u>Aprende aquí</u>](http://localhost:5000/aislamiento-vocal--datasets/aislamiento-vocal/). 
+- #### [<u>Aprende aquí</u>](https://aihubdocs.github.io/es/aislamiento-vocal--datasets/aislamiento-vocal/). 
 ***
 ###### ‎
 ### 2. Obtén modelo de voz
-- Aprende de ellos y cómo buscarlos <u>[**aquí**](http://localhost:5000/gu%C3%ADas-populares/modelos-de-voz)</u>.
+- Aprende de ellos y cómo buscarlos <u>[**aquí**](https://aihubdocs.github.io/es/gu%C3%ADas-populares/modelos-de-voz)</u>.
 
-- En caso de que el modelo no exista, toca <u>[**aquí**](http://localhost:5000/gu%C3%ADas-populares/c%C3%B3mo-hacer-un-modelo-de-voz/)</u>.
+- En caso de que el modelo no exista, toca <u>[**aquí**](https://aihubdocs.github.io/es/gu%C3%ADas-populares/c%C3%B3mo-hacer-un-modelo-de-voz/)</u>.
 ***
 ###### ‎
 ### 3. Convierte las vocales    
-- Tras obtener las vocales & modelo, es hora de preparar RVC y hacer [<u>***inferencia***</u>](http://localhost:5000/otro/glosario/#inferencia).    
+- Tras obtener las vocales & modelo, es hora de preparar RVC y hacer [<u>***inferencia***</u>](https://aihubdocs.github.io/es/otro/glosario/#inferencia).    
 
 - Existen bastantes versiones de RVC, pero elegimos las más aptas para principiantes.       
 Escoge según tus necesidades:    
 
     {.list-icon}   
-    - #### :icon-device-desktop: ‎ <u>[Localmente](http://localhost:5000/rvc/local/mainline/)</u> 
+    - #### :icon-device-desktop: ‎ <u>[Localmente](https://aihubdocs.github.io/es/rvc/local/mainline/)</u> 
 
-    - #### :icon-cloud: ‎ <u>[Por la nube](http://localhost:5000/rvc/por-la-nube/inferencia/ilaria-rvc/)</u>
+    - #### :icon-cloud: ‎ <u>[Por la nube](https://aihubdocs.github.io/es/rvc/por-la-nube/inferencia/ilaria-rvc/)</u>
 
 ***
 ###### ‎
 ### 4. Tips de mezcla (extra)
 - ¡Felicidades! Llegaste a la última parte. Ahora toca unir las piezas y mezclar la canción.     
 
-- Eres libre de usar cualquier <u>[EAD](http://localhost:5000/otro/glosario/#ead)</u>, pero recomendamos **FL Studio** o **BandLab**, por ser aptos para principiantes.     
+- Eres libre de usar cualquier <u>[EAD](https://aihubdocs.github.io/es/otro/glosario/#ead)</u>, pero recomendamos **FL Studio** o **BandLab**, por ser aptos para principiantes.     
 Busca uno de sus tutoriales de mezcla en YouTube.
 
 - **Recomendaciones para tu mezcla:**     

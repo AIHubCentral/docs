@@ -11,9 +11,9 @@
 :::
 ###### ‎
 ||| REQUISITOS
-- Archivo <u>[.PTH](http://localhost:5000/gu%C3%ADas-populares/c%C3%B3mo-hacer-modelos-de-voz/)</u> del modelo.        
-- Archivo <u>[.INDEX](http://localhost:5000/gu%C3%ADas-populares/c%C3%B3mo-hacer-modelos-de-voz/)</u> del modelo.       
-- Información general del <u>[modelo](http://localhost:5000/gu%C3%ADas-populares/modelos-de-voz/).</u>
+- Archivo <u>[.PTH](https://aihubdocs.github.io/es/gu%C3%ADas-populares/c%C3%B3mo-hacer-modelos-de-voz/)</u> del modelo.        
+- Archivo <u>[.INDEX](https://aihubdocs.github.io/es/gu%C3%ADas-populares/c%C3%B3mo-hacer-modelos-de-voz/)</u> del modelo.       
+- Información general del <u>[modelo](https://aihubdocs.github.io/es/gu%C3%ADas-populares/modelos-de-voz/).</u>
 - Información general de su proceso de entrenamiento.      
 - Una cuenta de Hugging Face.     
 - Al menos 1 muestra de audio del modelo **<u>SIN MÚSICA</u>**.     
@@ -30,7 +30,7 @@
 :   ‎
 :::
 #### :icon-chevron-down: Contiene archivos faltantes/incorrectos.
-- El archivo .ZIP del modelo tiene que contener el archivo `.INDEX` y `.PTH` correcto. Aprende cuales son <u>[aquí](http://localhost:5000/gu%C3%ADas-populares/modelos-de-voz--c%C3%B3mo-buscarlos/#archivos-de-modelos)</u>.       
+- El archivo .ZIP del modelo tiene que contener el archivo `.INDEX` y `.PTH` correcto. Aprende cuales son <u>[aquí](https://aihubdocs.github.io/es/gu%C3%ADas-populares/modelos-de-voz--c%C3%B3mo-buscarlos/#archivos-de-modelos)</u>.       
 ***
 ###### ‎ 
 #### :icon-chevron-down: El modelo es de baja calidad.
@@ -42,12 +42,12 @@
    - Incapaz de expresar ciertas notas
    - Mal articulado
    - Incapaz de pronunciar palabras en su language objetivo
-   - Con [<u>artifacting</u>](http://localhost:5000/recursos-de-rvc/artifacting/)
+   - Con [<u>artifacting</u>](https://aihubdocs.github.io/es/recursos-de-rvc/artifacting/)
 ***
 ###### ‎ 
 #### :icon-chevron-down: Usaste un algoritmo de extracción obsoleto.
 {.list-icon}
-- :icon-check-circle: Solo se permite **Crepe, Mangio-Crepe**, o **RMVPE**. Aprende de ellos [<u>aquí</u>](http://localhost:5000/recursos-de-rvc/opciones-de-inferencia/#pitch-extraction-algorithm).
+- :icon-check-circle: Solo se permite **Crepe, Mangio-Crepe**, o **RMVPE**. Aprende de ellos [<u>aquí</u>](https://aihubdocs.github.io/es/recursos-de-rvc/opciones-de-inferencia/#pitch-extraction-algorithm).
 
 - :icon-x-circle: Harvest, Dio, Crepe-Tiny, PM, etc. están obsoletos. 
 
@@ -77,7 +77,7 @@
 #### 2. Súbelo a Hugging Face.
 - El ZIP tiene que estar subido en Hugging Face como un repositorio **público** de licencia `openrail`.    
 
-- ##### [<u>Aprende cómo aquí</u>](http://localhost:5000/gu%C3%ADas-populares/subir-modelos-a-hugging-face/).
+- ##### [<u>Aprende cómo aquí</u>](https://aihubdocs.github.io/es/gu%C3%ADas-populares/subir-modelos-a-hugging-face/).
 ***
 ###### ‎
 #### 3. Prepara el post.
@@ -98,10 +98,10 @@
 :     Versión de RVC con la que se entrenó (casi siempre será v2)
 
 **extraction**
-:     <u>[Método de extracción](http://localhost:5000/recursos-de-rvc/epochs-sobreentrenar--tensorboard/)</u> usado.
+:     <u>[Método de extracción](https://aihubdocs.github.io/es/recursos-de-rvc/epochs-sobreentrenar--tensorboard/)</u> usado.
 
 **epochs**
-:     <u>[Epochs](http://localhost:5000/recursos-de-rvc/epochs-sobreentrenar--tensorboard/)</u> totales usados.
+:     <u>[Epochs](https://aihubdocs.github.io/es/recursos-de-rvc/epochs-sobreentrenar--tensorboard/)</u> totales usados.
 
 **link**
 :     Link de descarga de Hugging Face del modelo.

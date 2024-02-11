@@ -5,11 +5,11 @@
 :::content-center
 ## Introducción
 :::
-- AICoverGen NO UI es un port del [<U>fork</U>](http://localhost:5000/otro/glosario/#fork) AICoverGen para [<U>Google Colab</u>](http://localhost:5000/otro/glosario/#google-colab). Cuaderno base hecho por [<u>Ardha27</u>](https://github.com/ardha27).    
+- AICoverGen NO UI es un port del [<U>fork</U>](https://aihubdocs.github.io/es/otro/glosario/#fork) AICoverGen para [<U>Google Colab</u>](https://aihubdocs.github.io/es/otro/glosario/#google-colab). Cuaderno base hecho por [<u>Ardha27</u>](https://github.com/ardha27).    
 
 - Esta versión (**Eddy's Version**) es una mejora del espacio de Colab original, que trae con menos bugs, mejoras y nuevas opciones. Créditos a Eddy & Raid.
 
-- Por su **rápida** <u>[inferencia](http://localhost:5000/otro/glosario/#inferencia)</u>, automática extracción vocal, y el poder subir audios mediante links de YouTube, es considerado uno de los mejores Colab para inferencia en RVC.  
+- Por su **rápida** <u>[inferencia](https://aihubdocs.github.io/es/otro/glosario/#inferencia)</u>, automática extracción vocal, y el poder subir audios mediante links de YouTube, es considerado uno de los mejores Colab para inferencia en RVC.  
 ‎               
 ### Pros & Contras :icon-tasklist:
 ==- ***Abrir***
@@ -30,7 +30,7 @@
 -  Interfaz no buena.  
 -  No hay control de la extracción vocal. Puede dar problemas.
 -  Dicha extracción siempre se ejecuta. Perderás tiempo si insertas vocales limpias. 
--  Poco control de la mezcla & reverb. Conviene usar un <u>[EAD](http://localhost:5000/otro/glosario/#ead)</u>.
+-  Poco control de la mezcla & reverb. Conviene usar un <u>[EAD](https://aihubdocs.github.io/es/otro/glosario/#ead)</u>.
 |||     
 ===               
 ***
@@ -121,7 +121,7 @@ Debajo de este, en ``RVC_DIRNAME`` inserta el nombre que asignaste al modelo ant
 ***     
 ###### ‎   
 #### 6. <u>Modifica opciones.</u> (opcional)        
-Debajo de ``RVC_DIRNAME`` hasta ``Audio Mixing Options`` encontrarás las [<u>opciones de inferencia</u>](http://localhost:5000/recursos-de-rvc/opciones-de-inferencia/).     
+Debajo de ``RVC_DIRNAME`` hasta ``Audio Mixing Options`` encontrarás las [<u>opciones de inferencia</u>](https://aihubdocs.github.io/es/recursos-de-rvc/opciones-de-inferencia/).     
 Modifícalas para mejores resultados si lo deseas.  
 
 
@@ -183,7 +183,7 @@ b. Hazle click derecho, toca `Descargar` & eso será todo.
     Si quieres el audio sin la influencia de `REMIX_MIX_RATE`, usa el que no contenga "mixed" al final.
     !!!
 ###### ‎   
-- #### Si notas que la voz falla, toca [<u>aquí</u>](http://localhost:5000/recursos-de-rvc/artifacting/).
+- #### Si notas que la voz falla, toca [<u>aquí</u>](https://aihubdocs.github.io/es/recursos-de-rvc/artifacting/).
 ***
 ###### ‎   
 :::content-center   

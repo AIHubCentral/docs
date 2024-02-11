@@ -5,7 +5,7 @@
 :::content-center
 ## Introducción
 :::
-- Al hacer [<u>inferencia</u>](http://localhost:5000/otro/glosario/#inferencia) en RVC, te toparás con varios ajustes que puedes modificar. Estos influyen la conversión del audio.
+- Al hacer [<u>inferencia</u>](https://aihubdocs.github.io/es/otro/glosario/#inferencia) en RVC, te toparás con varios ajustes que puedes modificar. Estos influyen la conversión del audio.
 
 - Configurarlos correctamente puede mejorar la calidad del audio de salida significativamente, al igual que reducir artifacting, por lo que recomendamos aprenderlos.  
 
@@ -41,13 +41,13 @@
 :::
 
 ‎    
-#### :icon-chevron-down: También conocido como <u>Index Rate</u>, define el nivel de influencia del [<u>.INDEX</u>](http://localhost:5000/gu%C3%ADas-populares/modelos-de-voz/#archivos-de-modelos) del modelo.
+#### :icon-chevron-down: También conocido como <u>Index Rate</u>, define el nivel de influencia del [<u>.INDEX</u>](https://aihubdocs.github.io/es/gu%C3%ADas-populares/modelos-de-voz/#archivos-de-modelos) del modelo.
 
 - Cuanto más lo subas, más se aplicarán las características del .INDEX.
 
-- Bajarlo puede **minimizar [<u>artifacting</u>](http://localhost:5000/recursos-de-rvc/artifacting/)**.      
+- Bajarlo puede **minimizar [<u>artifacting</u>](https://aihubdocs.github.io/es/recursos-de-rvc/artifacting/)**.      
 ‎  
->Recuerda, si el <u>[dataset](http://localhost:5000/aislamiento-vocal--datasets/datasets/)</u> tenía otros ruidos como ruido de fondo, también habrá ruido en el .INDEX.
+>Recuerda, si el <u>[dataset](https://aihubdocs.github.io/es/aislamiento-vocal--datasets/datasets/)</u> tenía otros ruidos como ruido de fondo, también habrá ruido en el .INDEX.
 
 ***
 :::content-center 
@@ -73,14 +73,14 @@
 
     *** 
     :::content-center 
-    ##### Algunos [<u>forks</u>](http://localhost:5000/otro/glosario/#fork) traen *RMVPE_GPU* & *RMVPE+*. Mismo algoritmo, pero con una modificación:       
+    ##### Algunos [<u>forks</u>](https://aihubdocs.github.io/es/otro/glosario/#fork) traen *RMVPE_GPU* & *RMVPE+*. Mismo algoritmo, pero con una modificación:       
     ###### ‎       
     :::
     **RMVPE GPU**
-    :   Solo para entrenamiento. Usa más potencia del <u>[GPU](http://localhost:5000/otro/glosario/#gpu)</u>, haciéndote entrenar más rápido.
+    :   Solo para entrenamiento. Usa más potencia del <u>[GPU](https://aihubdocs.github.io/es/otro/glosario/#gpu)</u>, haciéndote entrenar más rápido.
 
     **RMVPE+**
-    :   Solo para [inferencia](http://localhost:5000/otro/glosario/#inferencia). Puedes indicar la frecuencia mínima/máxima usable, para reducir distorsiones. Ideal para usuarios avanzados. 
+    :   Solo para [inferencia](https://aihubdocs.github.io/es/otro/glosario/#inferencia). Puedes indicar la frecuencia mínima/máxima usable, para reducir distorsiones. Ideal para usuarios avanzados. 
 
     ===
 
@@ -88,7 +88,7 @@
     ###### ‎    
     - Más lento
     - Tiene una calidad algo mejor
-    - Más propenso al ruido & [<u>artifacting</u>](http://localhost:5000/recursos-de-rvc/artifacting/). Usa RMVPE si no lo puedes solucionar
+    - Más propenso al ruido & [<u>artifacting</u>](https://aihubdocs.github.io/es/recursos-de-rvc/artifacting/). Usa RMVPE si no lo puedes solucionar
     - Recomendado para resultados más **profesionales**.
     ===
 
@@ -132,7 +132,7 @@
 #### :icon-chevron-down: Controla el volumen de salida:
 - Cuanto más cerca esté a ``0``, el volumen del audio de salida **igualará** el de **entrada**. Ideal para disminuir ruidos indeseados.
 
-- Y cuanto más cerca esté a ``1``, **igualará** el audio del [<u>dataset</u>](http://localhost:5000/aislamiento-vocal--datasets/datasets/) que el **modelo** fue entrenado.
+- Y cuanto más cerca esté a ``1``, **igualará** el audio del [<u>dataset</u>](https://aihubdocs.github.io/es/aislamiento-vocal--datasets/datasets/) que el **modelo** fue entrenado.
 
 >Básicamente, déjalo en `0` si quieres que el audio intente conservar su volumen original.
 

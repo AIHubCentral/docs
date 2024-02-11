@@ -9,7 +9,7 @@
 ## Introducción  
 - Paperspace es una plataforma basada en la nube para usar programas de IA, ejecutadas por máquinas virtuales con potentes GPU.
 
-- Es una buena alternativa para entrenar modelos de voz RVC por la nube, ya que es más rápido que <u>[Google Colab](http://localhost:5000/otro/glosario/#google-colab)</u>.
+- Es una buena alternativa para entrenar modelos de voz RVC por la nube, ya que es más rápido que <u>[Google Colab](https://aihubdocs.github.io/es/otro/glosario/#google-colab)</u>.
 
 - Esto hace Paperspace una contraparte muy competente a Colab, si es que no te importa pagar una suscripción mensual.
 ***
@@ -65,7 +65,7 @@ c. Ejecuta la celda `INSTALL EVERYTHING`.
    <img src="../paperspace-img/9.png" alt="image" width="430" height=""> ‎   
 ‎               
 d. Cuando termine de instalarse, ejecuta la de ``START GUI``.
-Y luego ya podrás empezar a usar <u>[Mangio](http://localhost:5000/rvc/local/mangio/)</u>.
+Y luego ya podrás empezar a usar <u>[Mangio](https://aihubdocs.github.io/es/rvc/local/mangio/)</u>.
 
    <img src="../paperspace-img/10.png" alt="image" width="430" height=""> ‎ 
 ‎               

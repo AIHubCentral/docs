@@ -5,9 +5,9 @@
 :::content-center
 ## Introducción
 :::
-- Ilaria RVC es un port de EasyGUI ([<u>Mangio</u>](http://localhost:5000/rvc/local/mangio/)) a [<u>Google Colab</u>](http://localhost:5000/otro/glosario/#google-colab). Hecho por <u>[Ilaria](https://ko-fi.com/ilariaowo)</u>.     
+- Ilaria RVC es un port de EasyGUI ([<u>Mangio</u>](https://aihubdocs.github.io/es/rvc/local/mangio/)) a [<u>Google Colab</u>](https://aihubdocs.github.io/es/otro/glosario/#google-colab). Hecho por <u>[Ilaria](https://ko-fi.com/ilariaowo)</u>.     
 
-- Funciona solo para <u>[inferencia](http://localhost:5000/otro/glosario/#inferencia)</u>, tiene una buena interfaz, enorme velocidad, y las buenas herramientas que Mangio ofrece (como el algoritmo [<u>Mangio-Crepe</u>](http://localhost:5000/recursos-de-rvc/opciones-de-inferencia/#pitch-extraction-algorithm)).
+- Funciona solo para <u>[inferencia](https://aihubdocs.github.io/es/otro/glosario/#inferencia)</u>, tiene una buena interfaz, enorme velocidad, y las buenas herramientas que Mangio ofrece (como el algoritmo [<u>Mangio-Crepe</u>](https://aihubdocs.github.io/es/recursos-de-rvc/opciones-de-inferencia/#pitch-extraction-algorithm)).
 
 - Y por esto es considerado una de las mejores alternativas para hacer inferencia por la nube.      
 ‎               
@@ -35,7 +35,7 @@
 ## Inferencia
 
 !!!success
-Si tienes un problema, lee el capítulo de [<u>Solución de Problemas</u>](http://localhost:5000/rvc/en-la-nube/inferencia/ilaria-rvc/#soluci%C3%B3n-de-problemas-).
+Si tienes un problema, lee el capítulo de [<u>Solución de Problemas</u>](https://aihubdocs.github.io/es/rvc/en-la-nube/inferencia/ilaria-rvc/#soluci%C3%B3n-de-problemas-).
 !!!
 :::
 
@@ -103,7 +103,7 @@ b. Despliega la casilla `Choose the model` & selecciona tu modelo.
 ***
 ###### ‎ 
 #### 7. <u>Ajusta opciones.</u> (opcional)    
-- Si quieres, despliega `Index Settings` & `Advanced Options` para modificar las <u>[Opciones de Inferencia](http://localhost:5000/recursos-de-rvc/opciones-de-inferencia/)</u>, para mejores resultados.   
+- Si quieres, despliega `Index Settings` & `Advanced Options` para modificar las <u>[Opciones de Inferencia](https://aihubdocs.github.io/es/recursos-de-rvc/opciones-de-inferencia/)</u>, para mejores resultados.   
 
     <img src="../ilarvc-img/6.png" alt="image" width="500" height="auto"> ‎                  
       
@@ -136,7 +136,7 @@ b. Despliega la casilla `Choose the model` & selecciona tu modelo.
 #### *`y con un modelo de RVC`*
 ###### ‎
 :::
-1. Primero accede al Gradio. Si no sabes como, sigue los 3 primeros pasos del <u>[capítulo anterior](http://localhost:5000/rvc/en-la-nube/inferencia/ilaria-rvc/#inferencia)</u>.
+1. Primero accede al Gradio. Si no sabes como, sigue los 3 primeros pasos del <u>[capítulo anterior](https://aihubdocs.github.io/es/rvc/en-la-nube/inferencia/ilaria-rvc/#inferencia)</u>.
 ***
 2. Ve a la sección de `IlariaTTS`. 
 
@@ -157,7 +157,7 @@ A la derecha de este, toca los tres puntos & `Descargar`.
      
 ***
 6. Para usar un modelo de voz de RVC, simplemente sube el resultado a Ilaria RVC y conviértelo usando tu modelo. (Opcional)        
-    Si no sabes cómo, lee <u>[aquí](http://localhost:5000/rvc/en-la-nube/inferencia/ilaria-rvc/#inferencia)</u>.
+    Si no sabes cómo, lee <u>[aquí](https://aihubdocs.github.io/es/rvc/en-la-nube/inferencia/ilaria-rvc/#inferencia)</u>.
 
 ***
 ###### ‎
@@ -182,7 +182,7 @@ A la derecha de este, toca los tres puntos & `Descargar`.
 
 ==- *Mi modelo no tiene un link de HF/GD.*
 ###### ‎
-- Tendrás que crear el link tú mismo. Aprende [<u>aquí</u>](http://localhost:5000/gu%C3%ADas-populares/subir-modelos-a-hugging-face/).
+- Tendrás que crear el link tú mismo. Aprende [<u>aquí</u>](https://aihubdocs.github.io/es/gu%C3%ADas-populares/subir-modelos-a-hugging-face/).
 
 ===
 
@@ -192,7 +192,7 @@ A la derecha de este, toca los tres puntos & `Descargar`.
 
     1. **Link es privado:** 
         - Si es de GD, su `Acceso general` tiene que ser `Cualquiera con el link`.
-        - Si es de HF, el repo debe ser `Público`. Aprende más [<u>aquí</u>](http://localhost:5000/gu%C3%ADas-populares/subir-modelos-a-hugging-face/).            
+        - Si es de HF, el repo debe ser `Público`. Aprende más [<u>aquí</u>](https://aihubdocs.github.io/es/gu%C3%ADas-populares/subir-modelos-a-hugging-face/).            
         ‎   
     2. **Link de HF inválido:**
         - Deber ser el link del archivo .ZIP.
@@ -200,12 +200,12 @@ A la derecha de este, toca los tres puntos & `Descargar`.
     ‎       
     3. **Archivos incorrectos:**
         - El modelo tiene que estar comprimido en un archivo **.ZIP**. No .RAR o .7ZIP.
-        - Debe de contener su archivo .PTH e .INDEX correcto. Aprende más [<u>aquí</u>](http://localhost:5000/gu%C3%ADas-populares/subir-modelos-a-hugging-face/).
+        - Debe de contener su archivo .PTH e .INDEX correcto. Aprende más [<u>aquí</u>](https://aihubdocs.github.io/es/gu%C3%ADas-populares/subir-modelos-a-hugging-face/).
 ===
 
 ==- *La voz tiene fallos.*
 ###### ‎
-- Este es un fenómeno llamado "**artifacting**". Aprende cómo solucionarlo [<u>aquí</u>](http://localhost:5000/recursos-de-rvc/artifacting/).
+- Este es un fenómeno llamado "**artifacting**". Aprende cómo solucionarlo [<u>aquí</u>](https://aihubdocs.github.io/es/recursos-de-rvc/artifacting/).
 
 ===
 

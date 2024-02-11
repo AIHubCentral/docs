@@ -33,7 +33,7 @@
 - Que no contenga ruido de fondo, reverb, voces hablando al mismo tiempo, música, distorsión, o pequeños silencios. Aprenderás cómo removerlos en la sección **Limpieza de Datasets**.
 
 #### :icon-chevron-down: Calidad de audio.
-- Es mejor que tenga buena calidad y con un formato <u>[sin pérdida](http://localhost:5000/recursos-de-rvc/formato-de-audio--sample-rate/)</u>, como **WAV** o **FLAC**. No con pérdida como MP3 u OGG. 
+- Es mejor que tenga buena calidad y con un formato <u>[sin pérdida](https://aihubdocs.github.io/es/recursos-de-rvc/formato-de-audio--sample-rate/)</u>, como **WAV** o **FLAC**. No con pérdida como MP3 u OGG. 
 
 #### :icon-chevron-down: Sin silbidos/popping.
 - Adicionalmente, que no incluya silbidos fuertes (pronunciación "S" & "SH" ruidosa), o sonidos "popping" (pronunciación fuerte de la "P").
@@ -42,9 +42,9 @@
 :::content-center
 ## Limpieza de Datasets
 :::  
-1. Primero, elimina los ruidos indeseados anteriormente mencionados con un programa de <u>[aislamiento vocal](http://localhost:5000/aislamiento-vocal--datasets/aislamiento-vocal/)</u>.      
+1. Primero, elimina los ruidos indeseados anteriormente mencionados con un programa de <u>[aislamiento vocal](https://aihubdocs.github.io/es/aislamiento-vocal--datasets/aislamiento-vocal/)</u>.      
 ***     
-2. Tras esto, para remover silencios, distorsión & minimizar (aún más) ruido de fondo, usaremos <u>[**Audacity**](https://www.audacityteam.org/download/)</u>. Un [<u>EAD</u>](http://localhost:5000/otro/glosario/#ead) gratis, simple, y muy liviano.           
+2. Tras esto, para remover silencios, distorsión & minimizar (aún más) ruido de fondo, usaremos <u>[**Audacity**](https://www.audacityteam.org/download/)</u>. Un [<u>EAD</u>](https://aihubdocs.github.io/es/otro/glosario/#ead) gratis, simple, y muy liviano.           
     ‎     
     {.list-icon}  
     #### Paso 1: Puerta de Ruido.   

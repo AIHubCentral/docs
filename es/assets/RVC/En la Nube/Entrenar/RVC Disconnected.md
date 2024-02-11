@@ -5,9 +5,9 @@
 ## Introducción
 :::
 ###### ‎              
-- RVC Disconnected (o *RVC-D*) es un port de <u>[Mangio](http://localhost:5000/recursos-de-rvc/opciones-de-inferencia/#pitch-extraction-algorithm)</u> a [<u>Google Colab</u>](http://localhost:5000/otro/glosario/#google-colab), para exclusivamente entrenar. Notebook hecha por [<u>Kit Lemonfoot</u>](https://huggingface.co/Kit-Lemonfoot).
+- RVC Disconnected (o *RVC-D*) es un port de <u>[Mangio](https://aihubdocs.github.io/es/recursos-de-rvc/opciones-de-inferencia/#pitch-extraction-algorithm)</u> a [<u>Google Colab</u>](https://aihubdocs.github.io/es/otro/glosario/#google-colab), para exclusivamente entrenar. Notebook hecha por [<u>Kit Lemonfoot</u>](https://huggingface.co/Kit-Lemonfoot).
 
-- Es gratis, incluye herramientas necesarias para un modelo de calidad, [<U>TensorBoard</u>](http://localhost:5000/recursos-de-rvc/epochs-sobreentrenar--tensorboard/#tensorboard), y es el espacio de Colab más rápido para entrenar.    
+- Es gratis, incluye herramientas necesarias para un modelo de calidad, [<U>TensorBoard</u>](https://aihubdocs.github.io/es/recursos-de-rvc/epochs-sobreentrenar--tensorboard/#tensorboard), y es el espacio de Colab más rápido para entrenar.    
 
 - Esto lo vuelve el mejor método (gratis) para entrenar modelos de RVC en la nube. El único gran inconveniente es el límite de uso (aunque puedes cambiar a otra cuenta y continuar).      
 ‎       
@@ -28,7 +28,7 @@
 - No puedes dejar entrenar sin supervisión por mucho tiempo.
 - <u>Para usuarios gratis:</u>
     - Es más lento comparando con RVC local. 
-    - No puedes entrenar largos <u>[datasets](http://localhost:5000/aislamiento-vocal--datasets/datasets/)</u> sin tener que pausar el proceso.
+    - No puedes entrenar largos <u>[datasets](https://aihubdocs.github.io/es/aislamiento-vocal--datasets/datasets/)</u> sin tener que pausar el proceso.
 |||
 ===
 ***
@@ -38,7 +38,7 @@
 ## Cómo Entrenar
 ###### ‎ 
 !!!warning <u>IMPORTANTE:</u>
-1.‎ La guía estará centrada en el **<u>[TensorBoard](http://localhost:5000/recursos-de-rvc/epochs-sobreentrenar--tensorboard/#tensorboard)</u>**. Si no lo conoces, primero lee [<u>aquí</u>](http://localhost:5000/recursos-de-rvc/epochs-sobreentrenar--tensorboard/).   
+1.‎ La guía estará centrada en el **<u>[TensorBoard](https://aihubdocs.github.io/es/recursos-de-rvc/epochs-sobreentrenar--tensorboard/#tensorboard)</u>**. Si no lo conoces, primero lee [<u>aquí</u>](https://aihubdocs.github.io/es/recursos-de-rvc/epochs-sobreentrenar--tensorboard/).   
 2. Activa las cookies de terceros de tu navegador, o puede que TB no funcione.
 !!!
 :::
@@ -91,10 +91,10 @@ e. Cuando la celda termine de cargarse, en Google Drive ve a la carpeta ``rvcDis
 :   Si no eres familiar con pretrains, selecciona `original`.
 
 `target_sample_rate`
-:   Inserta la <u>[tasa de muestreo](http://localhost:5000/recursos-de-rvc/formato-de-audio--sample-rate/#sample-rate)</u> de tu dataset. 
+:   Inserta la <u>[tasa de muestreo](https://aihubdocs.github.io/es/recursos-de-rvc/formato-de-audio--sample-rate/#sample-rate)</u> de tu dataset. 
 
 ``pitch_extraction_algorithm``
-:   Selecciona el <u>[algoritmo de extracción](http://localhost:5000/recursos-de-rvc/opciones-de-inferencia/#pitch-extraction-algorithm)</u>. No uses Harvest, está obsoleto.    
+:   Selecciona el <u>[algoritmo de extracción](https://aihubdocs.github.io/es/recursos-de-rvc/opciones-de-inferencia/#pitch-extraction-algorithm)</u>. No uses Harvest, está obsoleto.    
 
 `crepe_hop_length`
 :   Funciona si usas `Mangio-Crepe`. Modifica el Hop Length.
@@ -113,7 +113,7 @@ b. Debajo, ejecuta `Preprocessing`, ``Feature Extraction``, & ``Save preprocesse
 ***
 ###### ‎ 
 ### 5. Entrena el .INDEX 
-a. Ejecuta ``Index Training`` para crear el [<u>.INDEX</u>](http://localhost:5000/gu%C3%ADas-populares/modelos-de-voz/#archivos-de-modelos) del modelo.      
+a. Ejecuta ``Index Training`` para crear el [<u>.INDEX</u>](https://aihubdocs.github.io/es/gu%C3%ADas-populares/modelos-de-voz/#archivos-de-modelos) del modelo.      
 
     <img src="../rvcdisconnected-img/17.png" alt="image" width="450" height="auto">‎        
 ‎       
@@ -130,11 +130,11 @@ b. Para descargarlo, ve a `rvcDisconnected` en Google Drive. Abre la carpeta nom
 - #### <u>Define estos valores:</u>
 
 `save_frequency`
-:   Cada cuantos <u>[epochs](http://localhost:5000/recursos-de-rvc/epochs-sobreentrenar--tensorboard/)</u> se guardará el modelo. Estos son los puntos de guardado (o "checkpoints"). Si eres novato, déjalo en `15`.      
+:   Cada cuantos <u>[epochs](https://aihubdocs.github.io/es/recursos-de-rvc/epochs-sobreentrenar--tensorboard/)</u> se guardará el modelo. Estos son los puntos de guardado (o "checkpoints"). Si eres novato, déjalo en `15`.      
     <u>Ej:</u> con un valor de ``10``, se guardará tras el epoch 10, 20, 30, 40, etc.    
 
 `total_epochs`
-:   Cantidad de <u>[epochs](http://localhost:5000/recursos-de-rvc/epochs-sobreentrenar--tensorboard/)</u> para el modelo. Pero ya que usaremos <u>[TensorBoard](http://localhost:5000/recursos-de-rvc/epochs-sobreentrenar--tensorboard/)</u>, usa un valor arbitrariamente alto como ``2000``.
+:   Cantidad de <u>[epochs](https://aihubdocs.github.io/es/recursos-de-rvc/epochs-sobreentrenar--tensorboard/)</u> para el modelo. Pero ya que usaremos <u>[TensorBoard](https://aihubdocs.github.io/es/recursos-de-rvc/epochs-sobreentrenar--tensorboard/)</u>, usa un valor arbitrariamente alto como ``2000``.
 
 `batch_size`
 :   Usa ``8`` si eres principiante. Pero si tu dataset es pequeño (cerca de 2 minutos o menos), usa ``4``.
@@ -144,7 +144,7 @@ b. Para descargarlo, ve a `rvcDisconnected` en Google Drive. Abre la carpeta nom
 ### 7. Empieza a entrenar   
 - Ejecuta la celda `Training` para empezar el entrenamiento. Ten paciencia, puede que tarde horas.
 
-- El [TensorBoard](http://localhost:5000/recursos-de-rvc/epochs-sobreentrenar--tensorboard/#tensorboard) se abrirá automáticamente tras unos segundos, recuerda monitorearlo.             
+- El [TensorBoard](https://aihubdocs.github.io/es/recursos-de-rvc/epochs-sobreentrenar--tensorboard/#tensorboard) se abrirá automáticamente tras unos segundos, recuerda monitorearlo.             
 
 - La celda te irá mostrando información de los epochs & cuando se realicen los puntos de guardado.      
 ‎
@@ -171,7 +171,7 @@ Ejemplo: ``arianagrande_e60_s120.pth``
 ‎   
 Y eso es todo. Diviértete con tu modelo. Recuerda mover sus archivos a una carpeta nueva para mantenerlo organizado. 
 
-Para testearlo, haz una [<u>inferencia</u>](http://localhost:5000/recursos-de-rvc/opciones-de-inferencia/) como de costumbre.   
+Para testearlo, haz una [<u>inferencia</u>](https://aihubdocs.github.io/es/recursos-de-rvc/opciones-de-inferencia/) como de costumbre.   
 
 
 ***
@@ -193,7 +193,7 @@ Si el entrenamiento finalizó pero aún le faltaba entrenamiento al modelo, no t
     ‎       
 4. Puedes cambiar ``save_frequency``, o aumentar ``total_epochs`` en caso de no haber insertado suficientes anteriormente. 
 
-5. Ejecuta `Training` para reentrenar nuevamente. Recuerda monitorear <u>[TB](http://localhost:5000/recursos-de-rvc/epochs-sobreentrenar--tensorboard/#tensorboard)</u> como antes.
+5. Ejecuta `Training` para reentrenar nuevamente. Recuerda monitorear <u>[TB](https://aihubdocs.github.io/es/recursos-de-rvc/epochs-sobreentrenar--tensorboard/#tensorboard)</u> como antes.
 ***
 ###### ‎
 :::content-center

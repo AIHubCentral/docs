@@ -8,11 +8,11 @@
 
 - "Mainline" es la versión base, original y sin modificar de RVC. Hecho por el equipo de [<u>RVC-Project</u>](https://github.com/RVC-Project).
 
-- Tiene menos opciones comparado con otros [<U>forks</u>](http://localhost:5000/otro/glosario/#fork), pero conserva las herramientas necesarias para hacer un trabajo decente.
+- Tiene menos opciones comparado con otros [<U>forks</u>](https://aihubdocs.github.io/es/otro/glosario/#fork), pero conserva las herramientas necesarias para hacer un trabajo decente.
 
 - Es especialmente querido por ser algo más rápido que otras versiones, al ser más liviano. 
 
-- Su nombre real no es "mainline" (línea principal), el público se lo asignó para distinguirlo bien de las otros <u>[forks](http://localhost:5000/otro/glosario/#fork)</u>.     
+- Su nombre real no es "mainline" (línea principal), el público se lo asignó para distinguirlo bien de las otros <u>[forks](https://aihubdocs.github.io/es/otro/glosario/#fork)</u>.     
 ‎       
 ### Pros & Contras‎ :icon-tasklist:
 ==- ***Abrir***
@@ -23,10 +23,10 @@
 ||| ✔️ **PROS**  
 - Fácil de instalar.                   
 - El más simple de usar.     
-- Más rápido comparado con otros <u>[forks](http://localhost:5000/otro/glosario/#fork)</u>.
+- Más rápido comparado con otros <u>[forks](https://aihubdocs.github.io/es/otro/glosario/#fork)</u>.
 ||| ❌ **CONTRAS** 
 - Tiene menos opciones.     
-- No trae el algoritmo [<u>Mangio-Crepe</u>](http://localhost:5000/recursos-de-rvc/opciones-de-inferencia/#pitch-extraction-algorithm).      
+- No trae el algoritmo [<u>Mangio-Crepe</u>](https://aihubdocs.github.io/es/recursos-de-rvc/opciones-de-inferencia/#pitch-extraction-algorithm).      
 - Subida de modelo manual.
 ||| 
 ===
@@ -64,17 +64,17 @@
 :::content-center
 ## Inferencia ‎:icon-unmute:
 !!!success
-Si te topas con un problema, lee el capítulo <u>[Solución de Problemas](http://localhost:5000/rvc/local/mainline/#soluci%C3%B3n-de-problemas-)</u>.
+Si te topas con un problema, lee el capítulo <u>[Solución de Problemas](https://aihubdocs.github.io/es/rvc/local/mainline/#soluci%C3%B3n-de-problemas-)</u>.
 !!!
 :::
 ###### ‎
 #### 1. Sube el modelo de voz.
-a. Abre la carpeta de RVC. Ve a la carpeta `assets`, y pon el archivo [<u>**.PTH**</u>](http://localhost:5000/gu%C3%ADas-populares/modelos-de-voz/#archivos-de-modelos) del modelo dentro de la carpeta `weights`.       
+a. Abre la carpeta de RVC. Ve a la carpeta `assets`, y pon el archivo [<u>**.PTH**</u>](https://aihubdocs.github.io/es/gu%C3%ADas-populares/modelos-de-voz/#archivos-de-modelos) del modelo dentro de la carpeta `weights`.       
     ‎       
     <img src="../mainline-img/5.png" alt="image" width="520" height="auto">      
 ‎       
        
-b. Regresa a la carpeta anterior y pon el [<u>**.INDEX**</u>](http://localhost:5000/gu%C3%ADas-populares/modelos-de-voz/#archivos-de-modelos) del modelo en la carpeta `logs`.
+b. Regresa a la carpeta anterior y pon el [<u>**.INDEX**</u>](https://aihubdocs.github.io/es/gu%C3%ADas-populares/modelos-de-voz/#archivos-de-modelos) del modelo en la carpeta `logs`.
 
     <img src="../mainline-img/6.png" alt="image" width="520" height="auto"> 
 
@@ -101,13 +101,13 @@ Asegúrate que la ruta no incluya caracteres especiales/espacios.
 ***
 ###### ‎  
 #### 4. Ajusta opciones. (opcional)      
-Si quieres, modifica las [<u>opciones de inferencia</u>](http://localhost:5000/recursos-de-rvc/opciones-de-inferencia/) para mejores resultados.
+Si quieres, modifica las [<u>opciones de inferencia</u>](https://aihubdocs.github.io/es/recursos-de-rvc/opciones-de-inferencia/) para mejores resultados.
 ***
 ###### ‎  
 #### 5. Procesa.
 Presiona en botón largo de ``Convert`` abajo. El audio empezará a convertirse.    
  
-El procesamiento dependerá principalmente de tus <u>[specs](http://localhost:5000/otro/glosario/#specs)</u>, duración del audio & el algoritmo que elegiste.
+El procesamiento dependerá principalmente de tus <u>[specs](https://aihubdocs.github.io/es/otro/glosario/#specs)</u>, duración del audio & el algoritmo que elegiste.
 ***
 ###### ‎  
 #### 6. Descarga el resultado.
@@ -124,9 +124,9 @@ Para descargarlo, toca los tres puntos a la derecha y presiona `Download`.
 ###### ‎  
 :::
 !!!warning <u> NOTAS: </u>
-La guía estará centrada en el uso de **<u>[TensorBoard](http://localhost:5000/recursos-de-rvc/epochs-sobreentrenar--tensorboard/#tensorboard)</u>**. Lee su artículo primero, si aún no lo haz hecho.
+La guía estará centrada en el uso de **<u>[TensorBoard](https://aihubdocs.github.io/es/recursos-de-rvc/epochs-sobreentrenar--tensorboard/#tensorboard)</u>**. Lee su artículo primero, si aún no lo haz hecho.
 
-Si te topas con un problema, lee el capítulo <u>[Solución de Problemas](http://localhost:5000/rvc/local/mainline/#soluci%C3%B3n-de-problemas-)</u>.
+Si te topas con un problema, lee el capítulo <u>[Solución de Problemas](https://aihubdocs.github.io/es/rvc/local/mainline/#soluci%C3%B3n-de-problemas-)</u>.
 !!!
 ###### ‎   
 ###### ‎   
@@ -150,7 +150,7 @@ En `Enter the experiment name` nombra tu modelo. No insertes caracteres especial
 ***
 ###### ‎  
 #### 3. Selecciona tasa de muestreo.
-En `Target sample rate` selecciona la [<u>tasa de muestreo</u>](http://localhost:5000/recursos-de-rvc/formato-de-audio--sample-rate/#sample-rate) de tu <u>[dataset](http://localhost:5000/aislamiento-vocal--datasets/datasets/)</u>.        
+En `Target sample rate` selecciona la [<u>tasa de muestreo</u>](https://aihubdocs.github.io/es/recursos-de-rvc/formato-de-audio--sample-rate/#sample-rate) de tu <u>[dataset](https://aihubdocs.github.io/es/aislamiento-vocal--datasets/datasets/)</u>.        
 Ingresar un valor incorrecto podría arruinar la calidad del modelo.
 
 <img src="../mainline-img/g.png" alt="image" width="" height="auto">         
@@ -163,7 +163,7 @@ Ingresar un valor incorrecto podría arruinar la calidad del modelo.
 :::
 ###### ‎  
 #### 4. Selecciona dataset.
-En `Enter the path of the training folder` pega la [<u>ruta de archivo</u>](https://www.solvetic.com/tutoriales/article/8447-copiar-ruta-archivo-windows-10-ruta-de-acceso/5) de tu <u>[dataset](http://localhost:5000/aislamiento-vocal--datasets/datasets/)</u>.        
+En `Enter the path of the training folder` pega la [<u>ruta de archivo</u>](https://www.solvetic.com/tutoriales/article/8447-copiar-ruta-archivo-windows-10-ruta-de-acceso/5) de tu <u>[dataset](https://aihubdocs.github.io/es/aislamiento-vocal--datasets/datasets/)</u>.        
 Asegúrate que la ruta no incluya caracteres especiales/espacios.
 
 <img src="../mainline-img/13.png" alt="image" width="" height="auto">  
@@ -195,14 +195,14 @@ Finalizará cuando la casilla de `output information` diga ``end preprocess``.
 :::
 ###### ‎     
 #### 6. Selecciona GPUs.
-En `Enter the GPU index(es)` determina qué <u>[GPU](http://localhost:5000/otro/glosario/#gpu)</u>(s) usarás para el entrenamiento, poniendo su índice seguido de un guion (ej: `0`).
+En `Enter the GPU index(es)` determina qué <u>[GPU](https://aihubdocs.github.io/es/otro/glosario/#gpu)</u>(s) usarás para el entrenamiento, poniendo su índice seguido de un guion (ej: `0`).
 
 <img src="../mainline-img/15.png" alt="image" width="" height="auto">  
 
 ***
 ###### ‎  
 #### 7. Selecciona el algoritmo.
-a. A la derecha, selecciona el <u>[algoritmo de extracción](http://localhost:5000/recursos-de-rvc/opciones-de-inferencia/#pitch-extraction-algorithm)</u>.       
+a. A la derecha, selecciona el <u>[algoritmo de extracción](https://aihubdocs.github.io/es/recursos-de-rvc/opciones-de-inferencia/#pitch-extraction-algorithm)</u>.       
 Elige únicamente ``RMVPE_GPU`` o ``Crepe``, ya que el resto están obsoletos.            
 
     <img src="../mainline-img/16.png" alt="image" width="" height="auto"> ‎      
@@ -221,7 +221,7 @@ b. Ahora presiona el botón de `Feature extraction` a la derecha.
 ###### ‎  
 #### 8. Crea el .INDEX.
 Presiona el botón de `Train feature index` del centro.       
-Esto generará el archivo [<u>.INDEX</u>](http://localhost:5000/gu%C3%ADas-populares/modelos-de-voz/#archivos-de-modelos) del modelo.
+Esto generará el archivo [<u>.INDEX</u>](https://aihubdocs.github.io/es/gu%C3%ADas-populares/modelos-de-voz/#archivos-de-modelos) del modelo.
 
 <img src="../mainline-img/i.png" alt="image" width="250" height="auto">‎     
 ‎       
@@ -236,7 +236,7 @@ Terminará cuando el output diga algo así:
 :::
 ###### ‎           
 #### 9. Determina save frequency.
-Define cada cuantos <u>[epochs](http://localhost:5000/recursos-de-rvc/epochs-sobreentrenar--tensorboard/)</u> se guardará el modelo. Los modelos guardados se le conocen como "checkpoints" (puntos de guardado).
+Define cada cuantos <u>[epochs](https://aihubdocs.github.io/es/recursos-de-rvc/epochs-sobreentrenar--tensorboard/)</u> se guardará el modelo. Los modelos guardados se le conocen como "checkpoints" (puntos de guardado).
 
 Si eres novato, dejalo en `15`.    
 
@@ -248,9 +248,9 @@ Ej: con un valor de ``10``, se guardará tras el epoch 10, 20, 30, 40, etc.
 ***
 ###### ‎  
 #### 10. Inserta epochs totales.
-En `Total training epochs` determina la cantidad de <u>[epochs](http://localhost:5000/recursos-de-rvc/epochs-sobreentrenar--tensorboard/)</u> para el modelo.     
+En `Total training epochs` determina la cantidad de <u>[epochs](https://aihubdocs.github.io/es/recursos-de-rvc/epochs-sobreentrenar--tensorboard/)</u> para el modelo.     
 
-Pero ya que usaremos <u>[TensorBoard](http://localhost:5000/recursos-de-rvc/epochs-sobreentrenar--tensorboard/)</u>, usa un valor arbitrariamente alto como ``2000``.
+Pero ya que usaremos <u>[TensorBoard](https://aihubdocs.github.io/es/recursos-de-rvc/epochs-sobreentrenar--tensorboard/)</u>, usa un valor arbitrariamente alto como ``2000``.
 
 <img src="../mainline-img/19.png" alt="image" width="" height="auto">  
 
@@ -259,7 +259,7 @@ Pero ya que usaremos <u>[TensorBoard](http://localhost:5000/recursos-de-rvc/epoc
 #### 11. Selecciona batch size.
 Si no sabes lo que hace, deja `Batch size per GPU` en `8`
     
-Pero si tu <u>[dataset](http://localhost:5000/aislamiento-vocal--datasets/datasets/)</u> es pequeño (alrededor de 2 minutos o menos), usa ``4``.
+Pero si tu <u>[dataset](https://aihubdocs.github.io/es/aislamiento-vocal--datasets/datasets/)</u> es pequeño (alrededor de 2 minutos o menos), usa ``4``.
 
 <img src="../mainline-img/20.png" alt="image" width="" height="auto">  
 
@@ -268,7 +268,7 @@ Pero si tu <u>[dataset](http://localhost:5000/aislamiento-vocal--datasets/datase
 #### 12. Abre TensorBoard.
 Antes de empezar a entrenar, abre TB.     
 
-Si aún no lo haz hecho, aprende acerca de este [<u>aquí</u>](http://localhost:5000/recursos-de-rvc/epochs-sobreentrenar--tensorboard/).
+Si aún no lo haz hecho, aprende acerca de este [<u>aquí</u>](https://aihubdocs.github.io/es/recursos-de-rvc/epochs-sobreentrenar--tensorboard/).
 ***
 ###### ‎  
 #### 13. Empieza a entrenar.
@@ -312,7 +312,7 @@ c. Luego ve a la carpeta ``weights``, y ahí encontrarás los puntos de guardado
     <img src="../mainline-img/d.png" alt="image" width="" height="auto"> ‎  
     ‎       
     Y eso es todo. Diviértete con tu modelo.    
-    Para testearlo, haz una [<u>inferencia</u>](http://localhost:5000/gu%C3%ADas-populares/c%C3%B3mo-hacer-un-cover-de-ia/) como de costumbre.     
+    Para testearlo, haz una [<u>inferencia</u>](https://aihubdocs.github.io/es/gu%C3%ADas-populares/c%C3%B3mo-hacer-un-cover-de-ia/) como de costumbre.     
 
 ***
 ###### ‎   
@@ -324,8 +324,8 @@ Si el entrenamiento finalizó pero aún le faltaba entrenamiento al modelo, no t
 **Sigue este procedimiento:**
 
 - Simplemente inserta exactamente los **mismos datos & criterios** que insertaste previamente.
-Nombre del modelo, tasa de muestreo, <u>[dataset](http://localhost:5000/aislamiento-vocal--datasets/datasets/)</u>, etc.
-No tienes que presionar ``Process Data`` o crear el [<u>.INDEX</u>](http://localhost:5000/gu%C3%ADas-populares/modelos-de-voz/#archivos-de-modelos) devuelta si ya se hizo.
+Nombre del modelo, tasa de muestreo, <u>[dataset](https://aihubdocs.github.io/es/aislamiento-vocal--datasets/datasets/)</u>, etc.
+No tienes que presionar ``Process Data`` o crear el [<u>.INDEX</u>](https://aihubdocs.github.io/es/gu%C3%ADas-populares/modelos-de-voz/#archivos-de-modelos) devuelta si ya se hizo.
 
 - Puedes cambiar el **save frequency**, o aumentar los **epochs** totales en caso de no haber insertado suficientes anteriormente. 
 
@@ -353,15 +353,15 @@ No tienes que presionar ``Process Data`` o crear el [<u>.INDEX</u>](http://local
 
 ==- *La voz tiene fallos.*
 ###### ‎   
-- Este es un fenómeno llamado artifacting. Para solucionarlo, lee <u>[aquí](http://localhost:5000/recursos-de-rvc/artifacting/)</u>.
+- Este es un fenómeno llamado artifacting. Para solucionarlo, lee <u>[aquí](https://aihubdocs.github.io/es/recursos-de-rvc/artifacting/)</u>.
 
 ===
 
 ==- *RVC va lento en mi equipo con AMD/Intel.*  
 ###### ‎   
-- Esto es porque RVC no es compatible con estas <u>[GPUs](http://localhost:5000/otro/glosario/#gpu)</u>, solo con NVIDIA.
+- Esto es porque RVC no es compatible con estas <u>[GPUs](https://aihubdocs.github.io/es/otro/glosario/#gpu)</u>, solo con NVIDIA.
 - Por esto, es más propenso a errores & y usa tu CPU para trabajar, lo que ralentiza mucho el proceso.
-- Para <u>[inferencia](http://localhost:5000/otro/glosario/#inferencia)</u>, te conviene usar <u>[Ilaria RVC](http://localhost:5000/rvc/en-la-nube/inferencia/ilaria-rvc/)</u>. Y para entrenar modelos, <u>[RVC Disconnected](http://localhost:5000/rvc/en-la-nube/entrenar/rvc-disconnected/)</u> o <u>[Paperspace](http://localhost:5000/rvc/en-la-nube/entrenar/paperspace/)</u>.
+- Para <u>[inferencia](https://aihubdocs.github.io/es/otro/glosario/#inferencia)</u>, te conviene usar <u>[Ilaria RVC](https://aihubdocs.github.io/es/rvc/en-la-nube/inferencia/ilaria-rvc/)</u>. Y para entrenar modelos, <u>[RVC Disconnected](https://aihubdocs.github.io/es/rvc/en-la-nube/entrenar/rvc-disconnected/)</u> o <u>[Paperspace](https://aihubdocs.github.io/es/rvc/en-la-nube/entrenar/paperspace/)</u>.
 
 ===
 :::content-right

@@ -5,9 +5,9 @@
 :::content-center
 ## Introducción ‎ :icon-book:
 :::   
-- Mangio es un [<u>fork</u>](http://localhost:5000/otro/glosario/#fork) de RVC, hecho por [Mangio621](https://github.com/Mangio621), [Kalomaze](https://github.com/kalomaze), & [Alexolotl](https://github.com/alexlnkp).
+- Mangio es un [<u>fork</u>](https://aihubdocs.github.io/es/otro/glosario/#fork) de RVC, hecho por [Mangio621](https://github.com/Mangio621), [Kalomaze](https://github.com/kalomaze), & [Alexolotl](https://github.com/alexlnkp).
 
-- Considerado uno de los mejores <u>[forks](http://localhost:5000/otro/glosario/#fork)</u>, principalmente por sus características extras, inclusión de [<u>Mangio-Crepe</u>](http://localhost:5000/recursos-de-rvc/opciones-de-inferencia/#pitch-extraction-algorithm), & su estabilidad.
+- Considerado uno de los mejores <u>[forks](https://aihubdocs.github.io/es/otro/glosario/#fork)</u>, principalmente por sus características extras, inclusión de [<u>Mangio-Crepe</u>](https://aihubdocs.github.io/es/recursos-de-rvc/opciones-de-inferencia/#pitch-extraction-algorithm), & su estabilidad.
 
 - Desafortunadamente, a día de hoy el proyecto está abandonado, así que no esperes actualizaciones de los desarrolladores pronto.     
 
@@ -22,9 +22,9 @@
 - Fácil de instalar.      
 - Incluye Mangio-Crepe.        
 - Buen UI.       
-- Tiene más opciones que [<u>Mainline</u>](http://localhost:5000/rvc/local/mainline/).        
+- Tiene más opciones que [<u>Mainline</u>](https://aihubdocs.github.io/es/rvc/local/mainline/).        
 - Tiene *hybrid training*.        
-- Más ligero en almacenamiento, si instalas la versión de solo [<u>inferencia</u>](http://localhost:5000/otro/glosario/#inferencia).
+- Más ligero en almacenamiento, si instalas la versión de solo [<u>inferencia</u>](https://aihubdocs.github.io/es/otro/glosario/#inferencia).
 ||| ❌ **CONTRAS**    
 - Un poco más lento que Mainline.     
 - Estará desactualizado por mucho tiempo.     
@@ -39,7 +39,7 @@
 :::
 ###### ‎   
 
-1. Para exclusivamente **[<u>inferencia</u>](http://localhost:5000/otro/glosario/#inferencia)**, presiona [<u>aquí</u>](https://huggingface.co/MangioRVC/Mangio-RVC-Huggingface/resolve/main/Mangio-RVC-v23.7.0_INFER.7z).      
+1. Para exclusivamente **[<u>inferencia</u>](https://aihubdocs.github.io/es/otro/glosario/#inferencia)**, presiona [<u>aquí</u>](https://huggingface.co/MangioRVC/Mangio-RVC-Huggingface/resolve/main/Mangio-RVC-v23.7.0_INFER.7z).      
     Para inferencia & **entrenamiento**, presiona [<u>aquí</u>](https://huggingface.co/MangioRVC/Mangio-RVC-Huggingface/resolve/main/Mangio-RVC-v23.7.0_INFER_TRAIN.7z).     
 
 2. Mangio comenzará a descargarse. Cuando termine, descomprime el .ZIP.
@@ -65,16 +65,16 @@
 ## Inferencia :icon-unmute:
 ###### ‎     
 !!!success
-Si te topas con un problema, lee el capítulo [Solución de Problemas](http://localhost:5000/rvc/local/mangio/#soluci%C3%B3n-de-problemas-).
+Si te topas con un problema, lee el capítulo [Solución de Problemas](https://aihubdocs.github.io/es/rvc/local/mangio/#soluci%C3%B3n-de-problemas-).
 !!!
 :::
 ###### ‎    
 #### 1. Sube el modelo de voz.
-a. Abre la carpeta de Mangio y pon el archivo [<u>**.PTH**</u>](http://localhost:5000/gu%C3%ADas-populares/modelos-de-voz/#archivos-de-modelos) del modelo dentro de la carpeta `weights`.
+a. Abre la carpeta de Mangio y pon el archivo [<u>**.PTH**</u>](https://aihubdocs.github.io/es/gu%C3%ADas-populares/modelos-de-voz/#archivos-de-modelos) del modelo dentro de la carpeta `weights`.
 
     <img src="../mangio-img/g.png" alt="image" width="500" height="auto"> 
 ###### ‎       
-b. Y pon su archivo [<u>**.INDEX**</u>](http://localhost:5000/gu%C3%ADas-populares/modelos-de-voz/#archivos-de-modelos) en la carpeta `logs`.
+b. Y pon su archivo [<u>**.INDEX**</u>](https://aihubdocs.github.io/es/gu%C3%ADas-populares/modelos-de-voz/#archivos-de-modelos) en la carpeta `logs`.
 
     <img src="../mangio-img/h.png" alt="image" width="500" height="auto"> 
 ***
@@ -104,13 +104,13 @@ Si hay múltiples audios en dicha dirección, toca `Select audio path from the d
 ***
 ###### ‎  
 #### 4. Ajusta opciones. (opcional)      
-Si quieres, modifique las [<u>opciones de inferencia</u>](http://localhost:5000/recursos-de-rvc/opciones-de-inferencia/) para mejores resultados.
+Si quieres, modifique las [<u>opciones de inferencia</u>](https://aihubdocs.github.io/es/recursos-de-rvc/opciones-de-inferencia/) para mejores resultados.
 ***
 ###### ‎  
 #### 5. Convierte.
 Presiona en botón largo de ``Convert`` abajo. El audio empezará a convertirse.    
  
-El procesamiento dependerá principalmente de tus [specs](http://localhost:5000/otro/glosario/#specs), duración del audio & el algoritmo que elegiste.
+El procesamiento dependerá principalmente de tus [specs](https://aihubdocs.github.io/es/otro/glosario/#specs), duración del audio & el algoritmo que elegiste.
 ***
 ###### ‎  
 #### 6. Obtén el audio de salida.
@@ -127,9 +127,9 @@ Los audios de salida estarán disponible en la carpeta `audio-outputs` de Mangio
 :::
 ###### ‎  
 !!!warning <u> NOTAS:</u>
-La guía estará centrada en el uso de <u>[TensorBoard](http://localhost:5000/recursos-de-rvc/epochs-sobreentrenar--tensorboard/#tensorboard)</u>. Si no eres familiar con este, primero lee [<u>aquí</u>](http://localhost:5000/recursos-de-rvc/epochs-sobreentrenar--tensorboard/).       
+La guía estará centrada en el uso de <u>[TensorBoard](https://aihubdocs.github.io/es/recursos-de-rvc/epochs-sobreentrenar--tensorboard/#tensorboard)</u>. Si no eres familiar con este, primero lee [<u>aquí</u>](https://aihubdocs.github.io/es/recursos-de-rvc/epochs-sobreentrenar--tensorboard/).       
  
-Si te topas con un problema, lee el capítulo [Solución de Problemas](http://localhost:5000/rvc/local/mangio/#soluci%C3%B3n-de-problemas-).        
+Si te topas con un problema, lee el capítulo [Solución de Problemas](https://aihubdocs.github.io/es/rvc/local/mangio/#soluci%C3%B3n-de-problemas-).        
 !!!
 :::
 ###### ‎      
@@ -153,7 +153,7 @@ En `Enter the experiment name` nombra tu modelo. No insertes caracteres especial
 ***
 ###### ‎  
 #### 3. Selecciona tasa de muestreo.
-En `Target sample rate` selecciona la [<u>tasa de muestreo</u>](http://localhost:5000/recursos-de-rvc/formato-de-audio--sample-rate/#sample-rate) de tu <u>[dataset](http://localhost:5000/aislamiento-vocal--datasets/datasets/)</u>.        
+En `Target sample rate` selecciona la [<u>tasa de muestreo</u>](https://aihubdocs.github.io/es/recursos-de-rvc/formato-de-audio--sample-rate/#sample-rate) de tu <u>[dataset](https://aihubdocs.github.io/es/aislamiento-vocal--datasets/datasets/)</u>.        
 Ingresar un valor incorrecto podría arruinar la calidad del modelo.
 
 <img src="../mangio-img/6.png" alt="image" width="" height="auto"> 
@@ -177,7 +177,7 @@ Abre la carpeta de Mangio, ve a la carpeta `datasets` & mueve tu dataset ahí.
 #### 5. Process Data.
 Toca el botón de `Process Data` en el centro.      
 
-RVC procesará los factores previos para el entrenamiento, que podría tomar un momento dependiendo de qué tan grande sea el <u>[dataset](http://localhost:5000/aislamiento-vocal--datasets/datasets/)</u>.
+RVC procesará los factores previos para el entrenamiento, que podría tomar un momento dependiendo de qué tan grande sea el <u>[dataset](https://aihubdocs.github.io/es/aislamiento-vocal--datasets/datasets/)</u>.
 
 <img src="../mangio-img/8.png" alt="image" width="370" height="auto"> 
 
@@ -195,14 +195,14 @@ Finalizará cuando la casilla de `output information` diga ``end preprocess``.
 :::
 ###### ‎  
 #### 6. Selecciona GPUs.
-En `Enter the GPU index(es)` determina qué [GPUs](http://localhost:5000/otro/glosario/#gpu) usarás para el entrenamiento, poniendo su índice seguido de un guión (ej: `0`).
+En `Enter the GPU index(es)` determina qué [GPUs](https://aihubdocs.github.io/es/otro/glosario/#gpu) usarás para el entrenamiento, poniendo su índice seguido de un guión (ej: `0`).
 
 <img src="../mangio-img/9.png" alt="image" width="300" height="auto"> 
 
 ***
 ###### ‎  
 #### 7. <u>Selecciona el algoritmo.</u>
-a. A la derecha selecciona el <u>[algoritmo de extracción](http://localhost:5000/recursos-de-rvc/opciones-de-inferencia/#pitch-extraction-algorithm)</u>.       
+a. A la derecha selecciona el <u>[algoritmo de extracción](https://aihubdocs.github.io/es/recursos-de-rvc/opciones-de-inferencia/#pitch-extraction-algorithm)</u>.       
 Elige únicamente ``RMVPE``, ``Crepe`` o `Mangio-Crepe`, ya que el resto están obsoletos.               
 
     <img src="../mangio-img/10.png" alt="image" width="270" height="auto"> ‎    
@@ -221,7 +221,7 @@ b. Ahora presiona el botón de `Feature extraction` a la derecha.
 ###### ‎  
 #### 8. Crea el .INDEX.
 Presiona el botón de `Train feature index` del centro.       
-Esto generará el archivo [<u>.INDEX</u>](http://localhost:5000/gu%C3%ADas-populares/modelos-de-voz/#archivos-de-modelos) del modelo.
+Esto generará el archivo [<u>.INDEX</u>](https://aihubdocs.github.io/es/gu%C3%ADas-populares/modelos-de-voz/#archivos-de-modelos) del modelo.
 
 <img src="../mangio-img/11.png" alt="image" width="280" height="auto"> ‎       
 ‎       
@@ -236,7 +236,7 @@ Terminará cuando el output ponga `Successful index Construction`.
 :::
 ###### ‎         
 #### 9. Determina save frequency.
-Define cada cuantos <u>[epochs](http://localhost:5000/recursos-de-rvc/epochs-sobreentrenar--tensorboard/)</u> se guardará el modelo. Los modelos guardados se le conocen como "checkpoints" (puntos de guardado).
+Define cada cuantos <u>[epochs](https://aihubdocs.github.io/es/recursos-de-rvc/epochs-sobreentrenar--tensorboard/)</u> se guardará el modelo. Los modelos guardados se le conocen como "checkpoints" (puntos de guardado).
 
 Si eres novato, dejalo en `15`.    
 
@@ -247,9 +247,9 @@ Ej: con un valor de ``10``, se guardará tras el epoch 10, 20, 30, 40, etc.
 ***
 ###### ‎  
 #### 10. Inserta epochs totales.
-En `Total training epochs` determina la cantidad de [epochs](http://localhost:5000/recursos-de-rvc/epochs-sobreentrenar--tensorboard/) para el modelo.     
+En `Total training epochs` determina la cantidad de [epochs](https://aihubdocs.github.io/es/recursos-de-rvc/epochs-sobreentrenar--tensorboard/) para el modelo.     
 
-Pero ya que usaremos [TensorBoard](http://localhost:5000/recursos-de-rvc/epochs-sobreentrenar--tensorboard/), usa un valor arbitrariamente alto como ``2000``.
+Pero ya que usaremos [TensorBoard](https://aihubdocs.github.io/es/recursos-de-rvc/epochs-sobreentrenar--tensorboard/), usa un valor arbitrariamente alto como ``2000``.
 
 <img src="../mangio-img/13.png" alt="image" width="250" height="auto">
 
@@ -258,7 +258,7 @@ Pero ya que usaremos [TensorBoard](http://localhost:5000/recursos-de-rvc/epochs-
 #### 11. Selecciona batch size.
 Si no sabes lo que hace, déjalo `Batch size per GPU` en `8`
     
-Pero si tu <u>[dataset](http://localhost:5000/aislamiento-vocal--datasets/datasets/)</u> es pequeño (alrededor de 2 minutos o menos), usa ``4``.
+Pero si tu <u>[dataset](https://aihubdocs.github.io/es/aislamiento-vocal--datasets/datasets/)</u> es pequeño (alrededor de 2 minutos o menos), usa ``4``.
 
 <img src="../mangio-img/14.png" alt="image" width="250" height="auto"> 
 
@@ -267,7 +267,7 @@ Pero si tu <u>[dataset](http://localhost:5000/aislamiento-vocal--datasets/datase
 #### 12. Abre TensorBoard.
 Antes de empezar a entrenar, abre TB.     
 
-Si aún no lo haz hecho, empieza a leer [<u>aquí</u>](http://localhost:5000/recursos-de-rvc/epochs-sobreentrenar--tensorboard/).
+Si aún no lo haz hecho, empieza a leer [<u>aquí</u>](https://aihubdocs.github.io/es/recursos-de-rvc/epochs-sobreentrenar--tensorboard/).
 ***
 ###### ‎  
 #### 13. Empieza a entrenar.
@@ -313,7 +313,7 @@ c. Luego ve a la carpeta ``weights``, y ahí encontrarás los puntos de guardado
     <img src="../mangio-img/f.png" alt="image" width="500" height="auto">‎      
     ‎       
     Y eso es todo. Diviértete con tu modelo.    
-    Para testearlo, haz una [<u>inferencia</u>](http://localhost:5000/gu%C3%ADas-populares/c%C3%B3mo-hacer-un-cover-de-ia/) como de costumbre.   
+    Para testearlo, haz una [<u>inferencia</u>](https://aihubdocs.github.io/es/gu%C3%ADas-populares/c%C3%B3mo-hacer-un-cover-de-ia/) como de costumbre.   
 ***
 ###### ‎   
 :::content-center
@@ -324,8 +324,8 @@ Si el entrenamiento finalizó pero aún le faltaba entrenamiento al modelo, no t
 **Sigue este procedimiento:**
 
 - Simplemente inserta exactamente los **mismos datos & criterios** que insertaste previamente.
-Nombre del modelo, tasa de muestreo, <u>[dataset](http://localhost:5000/aislamiento-vocal--datasets/datasets/)</u>, etc.
-No tienes que presionar ``Process Data`` o crear el [<u>.INDEX</u>](http://localhost:5000/gu%C3%ADas-populares/modelos-de-voz/#archivos-de-modelos) devuelta si ya se hizo.
+Nombre del modelo, tasa de muestreo, <u>[dataset](https://aihubdocs.github.io/es/aislamiento-vocal--datasets/datasets/)</u>, etc.
+No tienes que presionar ``Process Data`` o crear el [<u>.INDEX</u>](https://aihubdocs.github.io/es/gu%C3%ADas-populares/modelos-de-voz/#archivos-de-modelos) devuelta si ya se hizo.
 
 - Puedes cambiar el **save frequency**, o aumentar los **epochs** totales en caso de no haber insertado suficientes anteriormente. 
 
@@ -351,15 +351,15 @@ No tienes que presionar ``Process Data`` o crear el [<u>.INDEX</u>](http://local
 
 ==- *La voz tiene fallos.*
 ###### ‎   
-- Este es un fenómeno llamado artifacting. Para solucionarlo, lee [aquí](http://localhost:5000/recursos-de-rvc/artifacting/).
+- Este es un fenómeno llamado artifacting. Para solucionarlo, lee [aquí](https://aihubdocs.github.io/es/recursos-de-rvc/artifacting/).
 
 ===
 
 ==- *RVC va lento en mi equipo con AMD/Intel.*  
 ###### ‎   
-- Esto es porque RVC no es compatible con estas [GPUs](http://localhost:5000/otro/glosario/#gpu), solo con NVIDIA.
+- Esto es porque RVC no es compatible con estas [GPUs](https://aihubdocs.github.io/es/otro/glosario/#gpu), solo con NVIDIA.
 - Por esto, es más propenso a errores & y usa tu CPU para trabajar, lo que ralentiza mucho el proceso.
-- Para [inferencia](http://localhost:5000/otro/glosario/#inferencia), te conviene usar [Ilaria RVC](http://localhost:5000/rvc/en-la-nube/inferencia/ilaria-rvc/). Y para entrenar modelos, [RVC Disconnected](http://localhost:5000/rvc/en-la-nube/entrenar/rvc-disconnected/) o [Paperspace](http://localhost:5000/rvc/en-la-nube/entrenar/paperspace/).
+- Para [inferencia](https://aihubdocs.github.io/es/otro/glosario/#inferencia), te conviene usar [Ilaria RVC](https://aihubdocs.github.io/es/rvc/en-la-nube/inferencia/ilaria-rvc/). Y para entrenar modelos, [RVC Disconnected](https://aihubdocs.github.io/es/rvc/en-la-nube/entrenar/rvc-disconnected/) o [Paperspace](https://aihubdocs.github.io/es/rvc/en-la-nube/entrenar/paperspace/).
 
 ===
 

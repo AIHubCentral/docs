@@ -8,7 +8,7 @@
 - Selecciona el archivo ``.PTH`` & ``.INDEX`` correcto, y [<u>comprímelos</u>](https://support.microsoft.com/es-es/windows/comprimir-y-descomprimir-archivos-8d28fa72-f2f9-712f-67df-f80cf89fd4e5#:~:text=Para%20comprimir%20un%20archivo%20o%20una%20carpeta&text=Mantenga%20presionado%20o%20haga%20clic,nombre%20en%20la%20misma%20ubicaci%C3%B3n) en un archivo **.ZIP**.       
 Asegúrate de que sea .ZIP. No .RAR o .7ZIP.
 
-- Si no estás seguro de cuales son los correctos, toca <u>[aquí](http://localhost:5000/gu%C3%ADas-populares/modelos-de-voz--c%C3%B3mo-buscarlos/#archivos-de-modelos)</u>.
+- Si no estás seguro de cuales son los correctos, toca <u>[aquí](https://aihubdocs.github.io/es/gu%C3%ADas-populares/modelos-de-voz--c%C3%B3mo-buscarlos/#archivos-de-modelos)</u>.
 ***
 ###### ‎ 
 #### 2. <u>Inicia sesión.</u>

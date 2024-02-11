@@ -14,7 +14,7 @@
 
 - RVC (Retrieval-based Voice Conversion) es un software avanzado de IA de clonación de voz. Es gratis y de código abierto.
 
-- Requiere de **buenas [<u>specs</u>](http://localhost:5000/otro/glosario/#specs) & <u>[GPU](http://localhost:5000/otro/glosario/#gpu)</u>** (específicamente NVIDIA) para entrenar efectivamente, aunque también RVC puede ser ejecutado mediante la <u>[nube](http://localhost:5000/otro/glosario/#uso-en-la-nube)</u>, y ser usado en cualquier dispositivo.    
+- Requiere de **buenas [<u>specs</u>](https://aihubdocs.github.io/es/otro/glosario/#specs) & <u>[GPU](https://aihubdocs.github.io/es/otro/glosario/#gpu)</u>** (específicamente NVIDIA) para entrenar efectivamente, aunque también RVC puede ser ejecutado mediante la <u>[nube](https://aihubdocs.github.io/es/otro/glosario/#uso-en-la-nube)</u>, y ser usado en cualquier dispositivo.    
 
 Ahora, empecemos con los pasos. Ten en cuenta que no será un proceso instantáneo, recuerda tener paciencia.
 ***
@@ -29,7 +29,7 @@ Ahora, empecemos con los pasos. Ten en cuenta que no será un proceso instantán
 
 - Tener un dataset **limpio** es crucial para buenos resultados, así que tomate el tiempo de remover los ruidos indeseados.        
        
-- #### [<u>Aprende más aquí</u>](http://localhost:5000/aislamiento-vocal--datasets/datasets/).
+- #### [<u>Aprende más aquí</u>](https://aihubdocs.github.io/es/aislamiento-vocal--datasets/datasets/).
 ***
 ###### ‎ 
 ### 2. Prepara RVC
@@ -38,14 +38,14 @@ Ahora, empecemos con los pasos. Ten en cuenta que no será un proceso instantán
 - Existen bastantes versiones de RVC, pero elegimos las más aptas para principiantes.
 Escoge según tus necesidades:    
 
-    #### :icon-device-desktop: ‎ <u>[Localmente](http://localhost:5000/rvc/local/mainline/)</u> 
+    #### :icon-device-desktop: ‎ <u>[Localmente](https://aihubdocs.github.io/es/rvc/local/mainline/)</u> 
 
-    #### :icon-cloud: ‎ <u>[Por la Nube](http://localhost:5000/rvc/por-la-nube/entrenar/rvc-disconnected/)</u>
+    #### :icon-cloud: ‎ <u>[Por la Nube](https://aihubdocs.github.io/es/rvc/por-la-nube/entrenar/rvc-disconnected/)</u>
 
 ***
 ###### ‎ 
 ### 3. Entrena el modelo
-- Antes de que empieces, te avisamos que las guías de entrenamiento están orientadas al uso  de <u>[TensorBoard](http://localhost:5000/recursos-de-rvc/epochs-sobreentrenar--tensorboard/)</u>. Dale una leída rápida antes de comenzar el entrenamiento.     
+- Antes de que empieces, te avisamos que las guías de entrenamiento están orientadas al uso  de <u>[TensorBoard](https://aihubdocs.github.io/es/recursos-de-rvc/epochs-sobreentrenar--tensorboard/)</u>. Dale una leída rápida antes de comenzar el entrenamiento.     
 
 - Ahora ve & comienza a entrenar tu modelo. ¡Suerte & recuerda ser paciente!
 ***

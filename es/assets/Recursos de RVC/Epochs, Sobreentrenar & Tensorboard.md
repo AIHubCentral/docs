@@ -7,7 +7,7 @@
 :::     
 - "Epoch" es una unidad de medida de los ciclos entrenamiento de un modelo de IA.   
 
-- En otras palabras, la cantidad de veces que el modelo recorrió el <u>[dataset](http://localhost:5000/aislamiento-vocal--datasets/datasets/)</u> y aprendió de este.         
+- En otras palabras, la cantidad de veces que el modelo recorrió el <u>[dataset](https://aihubdocs.github.io/es/aislamiento-vocal--datasets/datasets/)</u> y aprendió de este.         
 ###### ‎ 
 #### *:icon-chevron-right: " ¿Cuántos epochs debería usar para mi dataset? "*
 - No hay manera de saber la cantidad correcta previo al entrenamiento. Depende del tamaño, longitud & calidad del dataset.    
@@ -24,7 +24,7 @@
 ## Sobreentrenar
 :::
 ###### ‎       
-- En el campo de la IA, es cuando un modelo de IA aprende demasiado bien su <u>[dataset](http://localhost:5000/aislamiento-vocal--datasets/datasets/)</u>, hasta que se centra mucho en el &  comienza a replicar datos indeseados.
+- En el campo de la IA, es cuando un modelo de IA aprende demasiado bien su <u>[dataset](https://aihubdocs.github.io/es/aislamiento-vocal--datasets/datasets/)</u>, hasta que se centra mucho en el &  comienza a replicar datos indeseados.
 
 - El modelo desempeña muy bien cuando le das información que contenía el dataset, pero mal con datos nuevos, porque perdió su capacidad de replicar cualquier cosa que se desvíe del dataset.
 
@@ -39,14 +39,14 @@
 ###### ‎
 - TensorBoard es una herramienta que para visualizar & medir el entrenamiento de un modelo de IA, mediante gráficos y métricas.
 
-- Es especialmente útil para determinar cuándo dejar de entrenar un modelo de voz, ya que puedes detectar cuando el punto de [<u>sobreentrenamiento</u>](http://localhost:5000/recursos-de-rvc/epochs-sobreentrenar--tensorboard/#what-is-overtraining) empieza.    
+- Es especialmente útil para determinar cuándo dejar de entrenar un modelo de voz, ya que puedes detectar cuando el punto de [<u>sobreentrenamiento</u>](https://aihubdocs.github.io/es/recursos-de-rvc/epochs-sobreentrenar--tensorboard/#what-is-overtraining) empieza.    
 
 - Y por esto, TB es la herramienta más conveniente de usuarios de RVC para perfeccionar un modelo de voz.     
 ***
 ###### ‎
 ### :icon-chevron-down: Instalar & Abrir
 !!!success
-Si usas [<u>RVC Disconnected</u>](http://localhost:5000/rvc/en-la-nube/entrenar/rvc-disconnected/), ignora esto, ya que se abre por si solo.
+Si usas [<u>RVC Disconnected</u>](https://aihubdocs.github.io/es/rvc/en-la-nube/entrenar/rvc-disconnected/), ignora esto, ya que se abre por si solo.
 !!!
 ###### ‎       
 1. Descarga este archivo & muévelo dentro de la carpeta de RVC. Asegúrate que la ruta de la carpeta no contenga espacios/caracteres especiales.   

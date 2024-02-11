@@ -46,7 +46,7 @@ Convertir un audio con pérdida a uno sin pérdida no restaurará la calidad per
 
 ###### ‎ 
 ### Determinar Sample Rate
-- Al entrenar en RVC, tendrás que insertar el **target sample rate** correspondiente a la tasa de muestreo de tu <u>[dataset](http://localhost:5000/aislamiento-vocal--datasets/datasets/)</u>.       
+- Al entrenar en RVC, tendrás que insertar el **target sample rate** correspondiente a la tasa de muestreo de tu <u>[dataset](https://aihubdocs.github.io/es/aislamiento-vocal--datasets/datasets/)</u>.       
 - Insertar uno incorrecto afectará la calidad final.      
 - Para saber el número, usaremos **Ilaria Audio Analyzer**.        
     ***
