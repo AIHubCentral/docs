@@ -16,6 +16,12 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+        with:
+          path: en
+
+      - uses: actions/checkout@v3
+        with:
+          path: es
 
       - uses: retypeapp/action-build@latest
 
