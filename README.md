@@ -4,7 +4,7 @@
 - This is a documentation of various AI tools, mostly <u>[RVC](https://docs.aihub.wtf/essentials/whats-rvc/)</u>-related apps. Made by members of [<u>**AI HUB**</u>](https://discord.gg/aihub).
 
 - <ins>Topics include</ins>: model training, inference, audio-isolation, datasets, TensorBoard, & more.
-- Both locally and through the cloud
+- Both locally and through the cloud.
 
 - Verified by experts.
 
