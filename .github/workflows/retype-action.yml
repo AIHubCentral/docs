@@ -1,5 +1,4 @@
 name: Publish Retype powered website to GitHub Pages
-
 on:
   workflow_dispatch:
   push:
@@ -7,42 +6,19 @@ on:
       - main
 
 jobs:
-  publish-en:
-    name: Publish to en branch
+  publish:
+    name: Publish to retype branch
+
     runs-on: ubuntu-latest
+
     permissions:
       contents: write
+
     steps:
-      - name: Checkout en branch
-        uses: actions/checkout@v3
-        with:
-          path: en
+      - uses: actions/checkout@v3
 
-      - name: Build en branch
-        uses: retypeapp/action-build@latest
+      - uses: retypeapp/action-build@latest
 
-      - name: Deploy to GitHub Pages (en)
-        uses: retypeapp/action-github-pages@latest
+      - uses: retypeapp/action-github-pages@latest
         with:
           update-branch: true
-          folder: en
-
-  publish-es:
-    name: Publish to es branch
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - name: Checkout es branch
-        uses: actions/checkout@v3
-        with:
-          path: es
-
-      - name: Build es branch
-        uses: retypeapp/action-build@latest
-
-      - name: Deploy to GitHub Pages (es)
-        uses: retypeapp/action-github-pages@latest
-        with:
-          update-branch: true
-          folder: es
