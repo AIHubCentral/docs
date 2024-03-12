@@ -3,9 +3,10 @@
 ## Introduction
 - This is a documentation of various AI tools, mostly <u>[RVC](https://docs.aihub.wtf/essentials/whats-rvc/)</u>-related apps. Made by members of [<u>**AI HUB**</u>](https://discord.gg/aihub).
 
-- <ins>Topics include</ins>: model training, inference, audio isolation, datasets, TensorBoard, & more.
+- <ins>Topics include</ins>: model training, inference, audio-isolation, datasets, TensorBoard, & more.
+- Both locally and through the cloud
 
-- Verified by the experts, either locally or through the cloud.
+- Verified by experts.
 
 ## Contributions
 - We appreciate any **feedback**, big or small. You can directly **contact us** in <u>[AI Hub](https://discord.gg/aihub)</u>: **@eddycrack864** - **@ailen2091**
