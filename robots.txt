@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ai-hub-central.github.io/en/sitemap.xml.gz
+Sitemap: /sitemap.xml.gz
