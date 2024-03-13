@@ -16,7 +16,7 @@ order: 6000
 
 - RVC is designed to work with voices only, so to get the best results the sample must be **clean**, with no undesired noises.
 
-- #### <u>[Learn how](https://docs.aihub.wtf/rvc/rvc/resources/vocal-isolation/)</u>.
+- #### <u>[Learn how](https://docs.aihub.wtf/rvc/resources/vocal-isolation/)</u>.
 ***
 ###### ‎
 ### 2. Get voice model

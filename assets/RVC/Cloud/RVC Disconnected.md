@@ -173,7 +173,7 @@ But if your dataset is small (around 2 minutes or less), use ``4``.
 
     <img src="../rvcdisconnected-img/22.png" alt="image" width="330" height="auto">‎        
 ‎       
-3. Once your GPU runtime resets, begin the <u>[retraining](https://docs.aihub.wtf/rvc/rvc/cloud/rvc-disconnected/#resuming-)</U> procedure.
+3. Once your GPU runtime resets, begin the <u>[retraining](https://docs.aihub.wtf/rvc/cloud/rvc-disconnected/#resuming-)</U> procedure.
 
 - After exporting, you are free to resume training until runtime is exhausted or close the session.
 ***

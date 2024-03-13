@@ -33,7 +33,7 @@ Remember that the cleaner your input audio is, the better the results.
 - Avoid using lossy ones like MP3 or OGG.
 ‎   
 #### 2. If doing inference:
-- Remove undesired noises with an <u>[vocal isolation</u>](https://docs.aihub.wtf/rvc/rvc/resources/vocal-isolation/) software.
+- Remove undesired noises with an <u>[vocal isolation</u>](https://docs.aihub.wtf/rvc/resources/vocal-isolation/) software.
 
 - Lowering the <u>[search feature ratio</u>](https://docs.aihub.wtf/rvc/resources/inference-settings/) can also minimize this issue.
 

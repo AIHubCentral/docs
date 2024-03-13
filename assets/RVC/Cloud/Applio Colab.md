@@ -316,7 +316,7 @@ i. <u>[TB](https://docs.aihub.wtf/rvc/resources/epochs--tensorboard/#tensorboard
 ‎       
 ii. If after around 2:30 hours of training you don't detect <u>[OT](https://docs.aihub.wtf/rvc/resources/epochs--tensorboard/#overtraining)</u> <u>[download the model](https://docs.aihub.wtf/rvc/cloud/applio-colab/#c-get-the-pth)</u> of the lowest point, in case it's already OT, and the <u>[.INDEX](https://docs.aihub.wtf/rvc/cloud/applio-colab/#b-get-the-index)</u>.     
 ‎    
-iii. Then once your GPU runtime resets, begin the <u>[retraining](https://docs.aihub.wtf/rvc/rvc/cloud/applio-colab/#5-resuming)</U> procedure.       
+iii. Then once your GPU runtime resets, begin the <u>[retraining](https://docs.aihub.wtf/rvc/cloud/applio-colab/#5-resuming)</U> procedure.       
 ***
 !!!warning While training, you might get disconnected if you:    
 - <u>[Stay AFK](https://rentry.org/colab_workarounds)</u> for a long time.     

@@ -48,7 +48,7 @@ order: 4000
 :::content-center
 ## Cleaning
 :::
-1. First, clean the undesired noises explained before using a <u>[vocal isolation](https://docs.aihub.wtf/rvc/rvc/resources/vocal-isolation/)</u> software.     
+1. First, clean the undesired noises explained before using a <u>[vocal isolation](https://docs.aihub.wtf/rvc/resources/vocal-isolation/)</u> software.     
 ***   
 2. Then, to remove silences, distortion & minimize (even more) noise, we'll use tools from <u>[Audacity</u>](https://www.audacityteam.org/download/). A free, simple & very light-weighted <u>[DAW](https://docs.aihub.wtf/extra/glossary/#daw)</u>.            
     ‎     

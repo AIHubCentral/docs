@@ -16,7 +16,7 @@ order: 5000
 
 - The goal is to get an audio sample with clean vocals, which is what RVC needs to give the most accurate & quality results.
 
-- For RVC users, the best app is Ultimate Vocal Remover 5 (or **UVR**). It can be used either <u>[locally](https://docs.aihub.wtf/extra/glossary/#local-running)</u> or through the <u>[cloud](https://docs.aihub.wtf/rvc/rvc/resources/vocal-isolation/#cloud-uvr-)</u>. 
+- For RVC users, the best app is Ultimate Vocal Remover 5 (or **UVR**). It can be used either <u>[locally](https://docs.aihub.wtf/extra/glossary/#local-running)</u> or through the <u>[cloud](https://docs.aihub.wtf/rvc/resources/vocal-isolation/#cloud-uvr-)</u>. 
 ***
 <img src="../uvrmvsep-img/3.jpg" alt="image" width="" height="auto">‎       
 
@@ -24,7 +24,7 @@ order: 5000
 :::content-center
 ## Local UVR
 !!!warning 
-*You'll require great specs & GPU to run it effectively. Otherwise, use the <u>[cloud version](https://docs.aihub.wtf/rvc/rvc/resources/vocal-isolation/#cloud-uvr)</u>.*
+*You'll require great specs & GPU to run it effectively. Otherwise, use the <u>[cloud version](https://docs.aihub.wtf/rvc/resources/vocal-isolation/#cloud-uvr)</u>.*
 !!!
 :::
 ‎ 
@@ -137,7 +137,7 @@ a. In **Process Method** select `VR`.
 b. Set **Window Size** to ``320``. (optional)        
 Lower Window Size yield a higher output **quality**, but will take **longer** to process.   
 ‎   
-b. Check the <u>[model list](https://docs.aihub.wtf/rvc/rvc/resources/vocal-isolation/#best-models)</u>. In **Select VR Model** pick the one according to what you need to remove.         
+b. Check the <u>[model list](https://docs.aihub.wtf/rvc/resources/vocal-isolation/#best-models)</u>. In **Select VR Model** pick the one according to what you need to remove.         
 ‎       
 If you need to remove multiple noises, follow this pipeline for the best results:   
 ``Remove instrumental -> Remove reverb -> Extract main vocals -> Remove noise``  
@@ -187,7 +187,7 @@ Click the `Start processing` button at the bottom. And that will be all.
 
 ==- *I can't remove some of the backing vocals.*
 ###### ‎
-- Run the audio through MDX23C or DeNoise. Modify the <u>[Aggression Setting](https://docs.aihub.wtf/rvc/rvc/resources/vocal-isolation/#uvr-extracted-too-little-too-much)</u> if necessary.
+- Run the audio through MDX23C or DeNoise. Modify the <u>[Aggression Setting](https://docs.aihub.wtf/rvc/resources/vocal-isolation/#uvr-extracted-too-little-too-much)</u> if necessary.
 ===
 
 ==- *I couldn't find my answer.*
@@ -211,7 +211,7 @@ Click the `Start processing` button at the bottom. And that will be all.
 ###### ‎       
 #### 1. Set up Colab
 ###### ‎ 
-a. First access the Colab space <u>[here](https://colab.research.google.com/github/Eddycrack864/Music-Source-Separation-Universal-Colab/blob/main/Music_Source_Separation_Universal_Colab.ipynb)</u>. This Colab only uses **WAV** audios. If yours isn't, convert it to WAV or use <u>[MVSEP](https://docs.aihub.wtf/rvc/rvc/resources/vocal-isolation/#mvsep)</u>.     
+a. First access the Colab space <u>[here](https://colab.research.google.com/github/Eddycrack864/Music-Source-Separation-Universal-Colab/blob/main/Music_Source_Separation_Universal_Colab.ipynb)</u>. This Colab only uses **WAV** audios. If yours isn't, convert it to WAV or use <u>[MVSEP](https://docs.aihub.wtf/rvc/resources/vocal-isolation/#mvsep)</u>.     
 ‎       
 b. Then **Log in** to your Google account.      
 ‎   
@@ -309,7 +309,7 @@ Lower Window Size yield a higher output **quality**, but will take **longer** to
 ‎ 
 #### 4. Select model
 ###### ‎  
-d. Check the <u>[model list](https://docs.aihub.wtf/rvc/rvc/resources/vocal-isolation/#best-models)</u> & in **CHOOSE VR MODEL** pick the one according to what you need to remove.    
+d. Check the <u>[model list](https://docs.aihub.wtf/rvc/resources/vocal-isolation/#best-models)</u> & in **CHOOSE VR MODEL** pick the one according to what you need to remove.    
 ‎       
 If you need to remove multiple noises, follow this pipeline for the best results:   
 ``Remove instrumental -> Remove reverb -> Extract main vocals -> Remove noise``  
@@ -385,7 +385,7 @@ b. Playable audios will then appear in the output boxes below. To download the o
 ***
 - MVSEP is a website for isolating vocals, that works similarly as UVR.
 
-- The <u>[UVR Colab](https://docs.aihub.wtf/rvc/rvc/resources/vocal-isolation/#cloud-uvr)</u> is much faster & convenient for this task. Use MVSEP if you run out of GPU runtime or feel lazy to convert your audio to WAV.
+- The <u>[UVR Colab](https://docs.aihub.wtf/rvc/resources/vocal-isolation/#cloud-uvr)</u> is much faster & convenient for this task. Use MVSEP if you run out of GPU runtime or feel lazy to convert your audio to WAV.
 
 - For free users, you can't convert audios in batches or longer than 10 minutes. If that's your case, trim it into different pieces.
 ***
@@ -480,7 +480,7 @@ We recommend selecting FLAC from now on. Learn more <u>[here</u>](https://docs.a
 ###### ‎
 a. In **Separation Type**, select `Ultimate Vocal Remover 5 HQ`.      
 ‎     
-b. Check the <u>[model list](https://docs.aihub.wtf/rvc/rvc/resources/vocal-isolation/#best-models)</u>. In `Select VR Model` pick the one according to what you need to remove.         
+b. Check the <u>[model list](https://docs.aihub.wtf/rvc/resources/vocal-isolation/#best-models)</u>. In `Select VR Model` pick the one according to what you need to remove.         
 ‎       
 If you need to remove multiple noises, follow this pipeline for the best results:       
 ``Remove instrumental -> Remove reverb -> Extract main vocals -> Remove noise`` 
