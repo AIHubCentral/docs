@@ -12,13 +12,13 @@ order: 2000
 :::
 
 
-- The AICoverGen Colabs are a port of the AICoverGen RVC <u>[fork</u>](https://aihubdocs.github.io/en/essentials/whats-rvc/#forks) to <u>[Google Colab</u>](https://aihubdocs.github.io/en/extra/glossary/#google-colab).
+- The AICoverGen Colabs are a port of the AICoverGen RVC <u>[fork</u>](https://docs.aihub.wtf/essentials/whats-rvc/#forks) to <u>[Google Colab</u>](https://docs.aihub.wtf/extra/glossary/#google-colab).
 
 - These are ideal for users who want '***quick & dirty***' AI covers, as the whole process of inputting audio, vocal isolation & song mixing is automated. 
 
-- The pitch control is limiting & inconvenient, so if you want a Colab with more control over it, use <u>[Ilaria RVC](https://aihubdocs.github.io/en/rvc/cloud/ilaria-rvc/)</u> instead.     
+- The pitch control is limiting & inconvenient, so if you want a Colab with more control over it, use <u>[Ilaria RVC](https://docs.aihub.wtf/rvc/cloud/ilaria-rvc/)</u> instead.     
 
-- ##### The two versions of the port are: <u>[AICoverGen NO UI](https://aihubdocs.github.io/en/rvc/cloud/aicovergen/#aicovergen-no-ui)</u> and <u>[AICoverGen UI](https://aihubdocs.github.io/en/rvc/cloud/aicovergen/#aicovergen-ui)</u>.
+- ##### The two versions of the port are: <u>[AICoverGen NO UI](https://docs.aihub.wtf/rvc/cloud/aicovergen/#aicovergen-no-ui)</u> and <u>[AICoverGen UI](https://docs.aihub.wtf/rvc/cloud/aicovergen/#aicovergen-ui)</u>.
                
 ***
 ###### ‎  
@@ -83,7 +83,7 @@ It'll be done when you see a check symbol (✔️) on the corner.
 ###### ‎  
 ### <u>Inference</u> :icon-unmute:
 #### 1. Download model      
-a. Go to **Model Download Function** cell. Paste the <u>[model's link](https://aihubdocs.github.io/en/essentials/voice-models/#how-to-search-voice-models)</u> in the **url** bar.     
+a. Go to **Model Download Function** cell. Paste the <u>[model's link](https://docs.aihub.wtf/essentials/voice-models/#how-to-search-voice-models)</u> in the **url** bar.     
 
 b. In **dir_name** name the model. Don't include spaces/special characters.        
            
@@ -141,7 +141,7 @@ Downloaded models will be saved until the Colab session ends.
 ***     
 ###### ‎   
 #### 4. Modify settings (optional)        
-- Below **RVC_DIRNAME** until **Audio Mixing Options** you'll find the <u>[inference settings</u>](https://aihubdocs.github.io/en/rvc/resources/inference-settings/).     
+- Below **RVC_DIRNAME** until **Audio Mixing Options** you'll find the <u>[inference settings</u>](https://docs.aihub.wtf/rvc/resources/inference-settings/).     
 Tweak them accordingly for better results if you wish.
 
     <img src="../aicovergennoui-img/3.png" alt="image" width="270" height="auto">‎      
@@ -198,7 +198,7 @@ The other audios are the stems. Download them too if you wish.
     <img src="../aicovergennoui-img/10.png" alt="image" width="550" height="auto">‎   
 
 ###### ‎  
-- #### If the voice glitches out, click <u>[here</u>](https://aihubdocs.github.io/en/rvc/resources/artifacting/).
+- #### If the voice glitches out, click <u>[here</u>](https://docs.aihub.wtf/rvc/resources/artifacting/).
 
 
 ***
@@ -212,7 +212,7 @@ The other audios are the stems. Download them too if you wish.
 
 - It's characterized & preferred due to its intuitive UI, ideal for beginners.
 
-- But on the downside, it may be more buggy, so consider using the <u>[NO UI version](https://aihubdocs.github.io/en/rvc/cloud/aicovergen/#aicovergen-no-ui)</u> if issues arise.     
+- But on the downside, it may be more buggy, so consider using the <u>[NO UI version](https://docs.aihub.wtf/rvc/cloud/aicovergen/#aicovergen-no-ui)</u> if issues arise.     
 ‎          
 #### Pros & Cons :icon-tasklist:
 ==- *Learn more*
@@ -277,7 +277,7 @@ The other audios are the stems. Download them too if you wish.
 #### 1. Upload model
 - You can upload it using **its link** or **manually** inputting its files.   
     +++ :icon-link: ‎ Link
-    a. Go to the **Download model** tab & paste the <u>[model link](https://aihubdocs.github.io/en/essentials/voice-models/#how-to-search-voice-models)</u> in the bar.
+    a. Go to the **Download model** tab & paste the <u>[model link](https://docs.aihub.wtf/essentials/voice-models/#how-to-search-voice-models)</u> in the bar.
 
     b. Name it in **Name your model**. Don't introduce spaces/special characters.
 
@@ -314,7 +314,7 @@ The other audios are the stems. Download them too if you wish.
 ***
 ###### ‎  
 #### 4. Modify settings (optional)
-- Unfold **Voice conversion options** to modify the <u>[inference settings](https://aihubdocs.github.io/en/rvc/resources/inference-settings/)</u> for better results.
+- Unfold **Voice conversion options** to modify the <u>[inference settings](https://docs.aihub.wtf/rvc/resources/inference-settings/)</u> for better results.
 
 ***
 ###### ‎  
@@ -343,12 +343,12 @@ The other audios are the stems. Download them too if you wish.
 
     <img src="..\aicovergenui-img\stems.png" alt="image" width="470">‎    
 ‎    
-- #### If the voice glitches out, click <u>[here](https://aihubdocs.github.io/en/rvc/resources/inference-settings/)</u>.
+- #### If the voice glitches out, click <u>[here](https://docs.aihub.wtf/rvc/resources/inference-settings/)</u>.
 
 ***
 ###### ‎
 :::content-center
 #### `You have reached the end.`
 
-[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](http://aihubdocs.github.io/en/#contributions)
+[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.aihub.wtf/rvc/#contributions)
 :::

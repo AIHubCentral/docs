@@ -59,7 +59,7 @@ order: 1000
 
 - GPT-So-VITS is made for **TTS only**, so it's also best to remove any singing/muffly voice parts.
 
-- #### <u>[Learn how to clean datasets](https://aihubdocs.github.io/en/rvc/resources/datasets/)</u>.
+- #### <u>[Learn how to clean datasets](https://docs.aihub.wtf/rvc/resources/datasets/)</u>.
 ***
 ###### ‎
 #### 2. Audio Slicer
@@ -217,5 +217,5 @@ e. Fill the **Inference text** & set the **Inference language**, then click ``St
 :::content-center
 #### `You have reached the end.`
 
-[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](http://aihubdocs.github.io/en/#contributions)
+[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.aihub.wtf/rvc/#contributions)
 :::

@@ -10,7 +10,7 @@ order: 1000
 :::content-center
 ## Introduction
 :::
-- When doing [<u>inference</u>](https://aihubdocs.github.io/en/extra/glossary/#inference)</u> in RVC, you'll come across to quite a few options that you can tweak, that influence the conversion process.
+- When doing [<u>inference</u>](https://docs.aihub.wtf/extra/glossary/#inference)</u> in RVC, you'll come across to quite a few options that you can tweak, that influence the conversion process.
 
 - Configuring them accordingly can improve the output quality by a lot, as well as reduce artifacting, so we highly recommend learning them.   
 
@@ -45,13 +45,13 @@ order: 1000
 :::
 ‎    
 
-#### :icon-chevron-down: Also known as <u>Index Rate</u>, it determines the level of influence of model's [<u>.INDEX</u>](https://aihubdocs.github.io/en/essentials/voice-models/#voice-model-files) file:
+#### :icon-chevron-down: Also known as <u>Index Rate</u>, it determines the level of influence of model's [<u>.INDEX</u>](https://docs.aihub.wtf/essentials/voice-models/#voice-model-files) file:
 
 - Higher values will apply more of the .INDEX's characteristics.   
 
-- Lowering it can **reduce [<u>artifacting</u>](https://aihubdocs.github.io/en/rvc/resources/datasets/)**.      
+- Lowering it can **reduce [<u>artifacting</u>](https://docs.aihub.wtf/rvc/resources/datasets/)**.      
      
->Remember, if the <u>[dataset](https://aihubdocs.github.io/en/rvc/resources/datasets/)</u> had other sounds like background noise, there will be noise in the .INDEX too.
+>Remember, if the <u>[dataset](https://docs.aihub.wtf/rvc/resources/datasets/)</u> had other sounds like background noise, there will be noise in the .INDEX too.
 
 ***
 ###### ‎
@@ -74,7 +74,7 @@ order: 1000
     - Usually sounds a little harsh   
     - Should be your **go-to** algorithm, due to its convenience       
     ***
-    Some <u>[forks](https://aihubdocs.github.io/en/essentials/whats-rvc/#forks)</u> include **RMVPE_GPU** & **RMVPE+**. Same algorithm, but with a modification:         
+    Some <u>[forks](https://docs.aihub.wtf/essentials/whats-rvc/#forks)</u> include **RMVPE_GPU** & **RMVPE+**. Same algorithm, but with a modification:         
 
     <u>**RMVPE GPU**</u>:
     :   Training only. Uses more GPU power, making you train faster.
@@ -88,7 +88,7 @@ order: 1000
     ###### ‎    
     - Slower
     - Has higher quality
-    - More prone to noise & <u>[artifacting</u>](https://aihubdocs.github.io/en/rvc/resources/artifacting/). Switch to RMVPE if you can't fix it
+    - More prone to noise & <u>[artifacting</u>](https://docs.aihub.wtf/rvc/resources/artifacting/). Switch to RMVPE if you can't fix it
     - Only use it with high quality datasets/samples
     - Recommended for more **realistic** results
     ===
@@ -132,7 +132,7 @@ order: 1000
 #### :icon-chevron-down: Also known as <u>Remix Mix Rate</u>, controls the loudness of the output:
 - The closer to ``0``, the more the output will **match** the **loudness** of the **input** audio.
 
-- The closer to ``1``, the more it will match the loudness of the [<u>dataset</u>](https://aihubdocs.github.io/en/rvc/resources/datasets/) the **model** was trained on.
+- The closer to ``1``, the more it will match the loudness of the [<u>dataset</u>](https://docs.aihub.wtf/rvc/resources/datasets/) the **model** was trained on.
 
 >Basically, leave it at 0 if you want the audio to try to keep its original volume.
 ***
@@ -155,5 +155,5 @@ order: 1000
 :::content-center
 #### `You have reached the end.`
 
-[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](http://aihubdocs.github.io/en/#contributions)
+[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.aihub.wtf/rvc/#contributions)
 :::

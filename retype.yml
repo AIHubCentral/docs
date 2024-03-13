@@ -1,7 +1,7 @@
 input: ./assets
 output: .retype
 
-url: #
+url: https://docs.aihub.wtf/
 
 branding:
   title:
@@ -14,10 +14,10 @@ links:
   link: https://discord.gg/aihub
   icon: question
 - text: Report Issues
-  link: http://aihubdocs.github.io/en/#contributions
+  link: https://docs.aihub.wtf/#contributions
   icon: stop
 - text: GitHub
-  link: https://github.com/AIHubDocs
+  link: https://github.com/AIHubCentral/docs
   icon: mark-github
 
 footer:
@@ -26,4 +26,5 @@ footer:
 integrations:
   googleAnalytics:
     id: G-36D5RK6Y12
+
 favicon: ../assets/img/b.png

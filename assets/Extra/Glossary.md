@@ -58,7 +58,7 @@ order: 3000
 ### :icon-chevron-down:Cloud-based
 - Any software or application that's stored, managed, and available through the provider's virtual servers, and is accessed through a web browser.        
 
-- The opposite of <u>[local running</u>](https://aihubdocs.github.io/en/extra/glossary/#local-running).       
+- The opposite of <u>[local running</u>](https://docs.aihub.wtf/extra/glossary/#local-running).       
 
 ***
 
@@ -116,7 +116,7 @@ order: 3000
 ### :icon-chevron-down:Local running
 - Running locally is a process that involves running apps in your own machine, using its resources.       
 
-- The opposite of <u>[cloud-based](https://aihubdocs.github.io/en/extra/glossary/#cloud-based)</u>.    
+- The opposite of <u>[cloud-based](https://docs.aihub.wtf/extra/glossary/#cloud-based)</u>.    
 
 ***
 
@@ -158,20 +158,20 @@ Converting a lossy audio to a lossless one won't restore the lost quality.
 ***
 ###### ‎       
 ### :icon-chevron-down:Specs
-- It refers to a computer's specifications. Hardware like <u>[GPU</u>](https://aihubdocs.github.io/en/extra/glossary/#gpu), CPU, RAM, etc.     
+- It refers to a computer's specifications. Hardware like <u>[GPU</u>](https://docs.aihub.wtf/extra/glossary/#gpu), CPU, RAM, etc.     
 
 - The performance of the hardware of a computer directly correlates to the performance of all its software.
 
 ***
 ###### ‎       
 ### :icon-chevron-down:0 Shot Training
-- Doing <u>[inference](http://aihubdocs.github.io/en/extra/glossary/#inference)</u> on an AI model without explicitly training on it. 
+- Doing <u>[inference](https://docs.aihub.wtf/rvc/extra/glossary/#inference)</u> on an AI model without explicitly training on it. 
 
 - It's faster but with less quality, and you won't be able to save the model.
 
 - For example, in TTS you do inference by cloning a voice with an audio, a data it hasn't seen before.
 
-- Different from making a dataset & doing the long training process, based on lots of criteria such as <u>[epochs](https://aihubdocs.github.io/en/rvc/resources/epochs--tensorboard/)</u>. 
+- Different from making a dataset & doing the long training process, based on lots of criteria such as <u>[epochs](https://docs.aihub.wtf/rvc/resources/epochs--tensorboard/)</u>. 
 
 - In some cases you can do it on GPU, some in CPU.
 
@@ -180,5 +180,5 @@ Converting a lossy audio to a lossless one won't restore the lost quality.
 :::content-center
 #### `You have reached the end.`
 
-[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](http://aihubdocs.github.io/en/#contributions)
+[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.aihub.wtf/rvc/#contributions)
 :::

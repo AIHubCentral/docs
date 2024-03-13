@@ -10,9 +10,9 @@ order: 2000
 :::content-center
 ## Introduction ‎ :icon-book:
 :::   
-- Mangio RVC is a <u>[fork</u>](https://aihubdocs.github.io/en/essentials/whats-rvc/#forks) of RVC, [Mangio621](https://github.com/Mangio621), [Kalomaze](https://github.com/kalomaze), & [Alexolotl](https://github.com/alexlnkp)
+- Mangio RVC is a <u>[fork</u>](https://docs.aihub.wtf/essentials/whats-rvc/#forks) of RVC, [Mangio621](https://github.com/Mangio621), [Kalomaze](https://github.com/kalomaze), & [Alexolotl](https://github.com/alexlnkp)
 
-- Considered one of the best forks out there. Mainly because of it's extra features, inclusion of <u>[Mangio-Crepe](https://aihubdocs.github.io/en/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u>, & its stability.
+- Considered one of the best forks out there. Mainly because of it's extra features, inclusion of <u>[Mangio-Crepe](https://docs.aihub.wtf/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u>, & its stability.
 
 - The project nowadays is a little abandoned, so don't expect many updates from the developers soon, unfortunately.     
 
@@ -26,9 +26,9 @@ order: 2000
 - Easy to install.      
 - Includes Mangio-Crepe algorithm.        
 - Nicer UI.       
-- More features than <u>[Mainline</u>](https://aihubdocs.github.io/en/rvc/local/mainline/).        
+- More features than <u>[Mainline</u>](https://docs.aihub.wtf/rvc/local/mainline/).        
 - Has hybrid training.        
-- Lighter storage-wise if you install the <u>[inference</u>](https://aihubdocs.github.io/en/extra/glossary/#inference)</u>)-only version.
+- Lighter storage-wise if you install the <u>[inference</u>](https://docs.aihub.wtf/extra/glossary/#inference)</u>)-only version.
 ||| ❌ **CONS** 
 - A little slower than Mainline, since it's more bloated.     
 - Will likely remain with no updates for a long time.      
@@ -43,7 +43,7 @@ order: 2000
 :::
 ###### ‎   
 
-1. For exclusively <u>[**inferencing**](https://aihubdocs.github.io/en/extra/glossary/#inference)</u>, click <u>[here</u>](https://huggingface.co/MangioRVC/Mangio-RVC-Huggingface/resolve/main/Mangio-RVC-v23.7.0_INFER.7z).      
+1. For exclusively <u>[**inferencing**](https://docs.aihub.wtf/extra/glossary/#inference)</u>, click <u>[here</u>](https://huggingface.co/MangioRVC/Mangio-RVC-Huggingface/resolve/main/Mangio-RVC-v23.7.0_INFER.7z).      
     For both inferencing **& training**, click <u>[here</u>](https://huggingface.co/MangioRVC/Mangio-RVC-Huggingface/resolve/main/Mangio-RVC-v23.7.0_INFER_TRAIN.7z).     
 
 2. Once it's done downloading, unzip the folder.
@@ -69,12 +69,12 @@ order: 2000
 ## Inference :icon-unmute:
 ###### ‎       
 !!!success
-If you encounter an issue, be sure to read the <u>[Troubleshooting](https://aihubdocs.github.io/en/rvc/local/mangio/#troubleshooting-)</u> chapter.
+If you encounter an issue, be sure to read the <u>[Troubleshooting](https://docs.aihub.wtf/rvc/local/mangio/#troubleshooting-)</u> chapter.
 !!!
 :::
 ###### ‎    
 #### 1. Upload voice model.
-a. Open Mangio's folder & put your model's <u>[**.PTH**](https://aihubdocs.github.io/en/essentials/voice-models/#voice-model-files)</u> file inside the `weights` folder.
+a. Open Mangio's folder & put your model's <u>[**.PTH**](https://docs.aihub.wtf/essentials/voice-models/#voice-model-files)</u> file inside the `weights` folder.
 
     <img src="../mangio-img/g.png" alt="image" width="500" height="auto"> 
 ###### ‎       
@@ -108,7 +108,7 @@ If there are multiple audios in said path, click `Select audio path from the dro
 ***
 ###### ‎  
 #### 4. Modify settings. (optional)      
-If you wish, modify the <u>[inference settings](https://aihubdocs.github.io/en/rvc/resources/inference-settings/)</u> on display accordingly for better results.
+If you wish, modify the <u>[inference settings](https://docs.aihub.wtf/rvc/resources/inference-settings/)</u> on display accordingly for better results.
 ***
 ###### ‎  
 #### 5. Convert.
@@ -130,9 +130,9 @@ Your output audios will be located in Mangio's `audio-outputs` folder.
 ## Training :icon-dependabot:
 ###### ‎     
 !!!warning <u> NOTES: </u>
-The training guide will be centered around using <u>[TensorBoard](https://aihubdocs.github.io/en/rvc/resources/epochs--tensorboard/#tensorboard)</u>. Read about it first if you haven't already.      
+The training guide will be centered around using <u>[TensorBoard](https://docs.aihub.wtf/rvc/resources/epochs--tensorboard/#tensorboard)</u>. Read about it first if you haven't already.      
 
-If you encounter an issue, be sure to read the <u>[Troubleshooting](https://aihubdocs.github.io/en/rvc/local/mangio/#troubleshooting-)</u> chapter.
+If you encounter an issue, be sure to read the <u>[Troubleshooting](https://docs.aihub.wtf/rvc/local/mangio/#troubleshooting-)</u> chapter.
 !!!
 :::
 ###### ‎    
@@ -157,7 +157,7 @@ In `Enter the experiment name` you insert a name for your model. Don't include s
 
 ###### ‎  
 #### 3. Select Target Sample Rate.
-In `Target sample rate` select the number that matches your dataset's [<u>sample rate</u>](https://aihubdocs.github.io/en/rvc/resources/datasets/#sample-rate).        
+In `Target sample rate` select the number that matches your dataset's [<u>sample rate</u>](https://docs.aihub.wtf/rvc/resources/datasets/#sample-rate).        
 Inputting an incorrect one might screw up the final quality.
 
 <img src="../mangio-img/6.png" alt="image" width="" height="auto">         
@@ -206,7 +206,7 @@ In `Enter the GPU index(es)` determine which GPU(s) you'll use for training, by 
 ***
 ###### ‎  
 #### 7. Select pitch extraction algorithm.
-a. At the right select the <u>[**Pitch extraction algorithm**](https://aihubdocs.github.io/en/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u>.       
+a. At the right select the <u>[**Pitch extraction algorithm**](https://docs.aihub.wtf/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u>.       
 Only use ``RMVPE``, ``Crepe`` or `Mangio-Crepe`, as the rest are obsolete.            
 
     <img src="../mangio-img/10.png" alt="image" width="270" height="auto"> 
@@ -225,7 +225,7 @@ b. Now click the `Feature extraction` button on the right.
 ###### ‎  
 #### 8. Create .INDEX file.
 Now click the `Train feature index` button on the bottom.         
-This will create the <u>[.INDEX</u>](https://aihubdocs.github.io/en/essentials/voice-models/#voice-model-files) file.       
+This will create the <u>[.INDEX</u>](https://docs.aihub.wtf/essentials/voice-models/#voice-model-files) file.       
 
 <img src="../mangio-img/11.png" alt="image" width="280" height="auto"> 
 
@@ -242,7 +242,7 @@ It'll finish when the output box says `Successful index Construction`.
 :::
 ###### ‎         
 #### 9. Select save frequency.
-Frequency of the <u>[saving checkpoints](https://aihubdocs.github.io/en/extra/glossary/#checkpoints)</u>, based on the <u>[epochs](https://aihubdocs.github.io/en/rvc/resources/epochs--tensorboard/)</u>.       
+Frequency of the <u>[saving checkpoints](https://docs.aihub.wtf/extra/glossary/#checkpoints)</u>, based on the <u>[epochs](https://docs.aihub.wtf/rvc/resources/epochs--tensorboard/)</u>.       
 
 If you are a newbie, simply leave it at `15`.    
     
@@ -254,9 +254,9 @@ E.g: with a value of ``10``, they will be saved after the epoch 10, 20, 30, etc.
 ***
 ###### ‎  
 #### 10. Input epochs amount.
-In `Total training epochs` you determine the total amount of <u>[epochs](https://aihubdocs.github.io/en/rvc/resources/epochs--tensorboard/)</u> (training cycles) for the model.     
+In `Total training epochs` you determine the total amount of <u>[epochs](https://docs.aihub.wtf/rvc/resources/epochs--tensorboard/)</u> (training cycles) for the model.     
 
-But since we'll use <u>[TensorBoard](https://aihubdocs.github.io/en/rvc/resources/epochs--tensorboard/#tensorboard)</u>, use an arbitrarily large value like `2000`.
+But since we'll use <u>[TensorBoard](https://docs.aihub.wtf/rvc/resources/epochs--tensorboard/#tensorboard)</u>, use an arbitrarily large value like `2000`.
 
 
 <img src="../mangio-img/13.png" alt="image" width="250" height="auto">
@@ -276,7 +276,7 @@ If your dataset is short (around 2 minutes or less), use ``4`` instead.
 #### 12. Launch TensorBoard.
 Now before you start training, open TB.     
 
-If you haven't already, start reading about it here <u><u>[here</u>](https://aihubdocs.github.io/en/rvc/resources/epochs--tensorboard/#tensorboard)</u>.
+If you haven't already, start reading about it here <u><u>[here</u>](https://docs.aihub.wtf/rvc/resources/epochs--tensorboard/#tensorboard)</u>.
 ***
 ###### ‎  
 #### 13. Begin training.
@@ -322,7 +322,7 @@ c. Now go to the ``weights`` folder. Here you'll find the model's checkpoints.
     ‎      
 
     And that's all. Have fun with your model.   
-    To test the model, do a normal <u>[inference</u>](https://aihubdocs.github.io/en/essentials/how-to-make-ai-cover/) as usual.
+    To test the model, do a normal <u>[inference</u>](https://docs.aihub.wtf/essentials/how-to-make-ai-cover/) as usual.
 ***
 ###### ‎   
 :::content-center
@@ -357,13 +357,13 @@ If the training finished but the model still needed training, you don't have to 
 
 ==- *The voice glitches out.*
 ###### ‎   
-- This a phenomenon called artifacting. To fix it, read <u>[here](https://aihubdocs.github.io/en/rvc/resources/artifacting/)</u>.
+- This a phenomenon called artifacting. To fix it, read <u>[here](https://docs.aihub.wtf/rvc/resources/artifacting/)</u>.
 
 ===
 
 ==- *I couldn't find my answer.*
 ###### ‎   
-- Report your issue <u>[here](http://aihubdocs.github.io/en/#contributions)</u>.
+- Report your issue <u>[here](https://docs.aihub.wtf/rvc/#contributions)</u>.
 ===
 
 ***
@@ -371,5 +371,5 @@ If the training finished but the model still needed training, you don't have to 
 :::content-center
 #### `You have reached the end.`
 
-[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](http://aihubdocs.github.io/en/#contributions)
+[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.aihub.wtf/rvc/#contributions)
 :::

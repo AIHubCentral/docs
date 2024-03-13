@@ -14,13 +14,13 @@ order: 5000
 :::content-center
 ## Introduction ‎
 :::
-- Applio is a <u>[fork](https://aihubdocs.github.io/en/essentials/whats-rvc/#forks)</u> of <u>[Mangio](https://aihubdocs.github.io/en/rvc/local/mangio/)</u> developed by the <u>[IA Hispano</u>](https://github.com/IAHispano)</u> team.
+- Applio is a <u>[fork](https://docs.aihub.wtf/essentials/whats-rvc/#forks)</u> of <u>[Mangio](https://docs.aihub.wtf/rvc/local/mangio/)</u> developed by the <u>[IA Hispano</u>](https://github.com/IAHispano)</u> team.
 
 - It's liked for its great **UI** & **lots** of extra features, such as TTS (with RVC models too), plugins, automatic model upload, customizable theme & more.
 
 - Because of its user-friendly experience & active development, it's considered to be one of the best forks.     
 
-- As this cloud version is hosted in <u>[Google Colab](https://aihubdocs.github.io/en/extra/glossary/#google-colab)</u>, remember that you have a runtime of 4 hours.       
+- As this cloud version is hosted in <u>[Google Colab](https://docs.aihub.wtf/extra/glossary/#google-colab)</u>, remember that you have a runtime of 4 hours.       
 ‎         
 #### Pros & Cons :icon-tasklist:
 ==- *Learn more*
@@ -90,13 +90,13 @@ Then log in to your Google account.
 :::content-center
 ## Inference :icon-unmute:   
 !!!success
-Be sure to read the <u>[Troubleshooting](https://aihubdocs.github.io/en/rvc/cloud/applio-colab/#troubleshooting)</u> chapter if any issue arises.
+Be sure to read the <u>[Troubleshooting](https://docs.aihub.wtf/rvc/cloud/applio-colab/#troubleshooting)</u> chapter if any issue arises.
 !!!
 :::
 ###### ‎   
 #### 1. Upload voice model.
 - Go to the **Download** tab.       
-You have two ways of uploading it: through <u>[**its link**](https://aihubdocs.github.io/en/essentials/voice-models/#how-to-search-voice-models)</u> or **manually** inputting its files.
+You have two ways of uploading it: through <u>[**its link**](https://docs.aihub.wtf/essentials/voice-models/#how-to-search-voice-models)</u> or **manually** inputting its files.
 
     +++ Link
     a. Go to the **Download** tab & paste the link in the `Model Link` bar.     
@@ -156,7 +156,7 @@ b. Select the model in the ``Voice Model`` & `Index File` dropdown.
 
 ‎  
 #### 4. Modify settings. (optional)      
--  Unfold `Advanced Settings` if you wish to modify the <u>[inference settings](https://aihubdocs.github.io/en/rvc/resources/inference-settings/)</u> for better results.
+-  Unfold `Advanced Settings` if you wish to modify the <u>[inference settings](https://docs.aihub.wtf/rvc/resources/inference-settings/)</u> for better results.
 
     <img src="..\appliocolab-img/3-advanced.png" alt="image" width="550">‎   
 ***
@@ -213,7 +213,7 @@ iv. Then paste it on the `Dataset Path` bar.
 ###### ‎     
 ##### c. Sampling Rate
 ###### ‎    
-- Select your dataset's sample rate. If you don't know the amount, click <u>[here](https://aihubdocs.github.io/en/rvc/cloud/applio-colab/#extra)</u>.
+- Select your dataset's sample rate. If you don't know the amount, click <u>[here](https://docs.aihub.wtf/rvc/cloud/applio-colab/#extra)</u>.
 
     <img src="..\appliocolab-img\4-samplerate.png" alt="image" width="300">‎  
 
@@ -233,7 +233,7 @@ iv. Then paste it on the `Dataset Path` bar.
 ###### ‎    
 ##### a. Pitch extraction algorithm
 ###### ‎  
-- Select the <u>[algorithm](https://aihubdocs.github.io/en/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u> you want. Use either ``Crepe`` or ``RMVPE``, as the rest are outdated.
+- Select the <u>[algorithm](https://docs.aihub.wtf/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u> you want. Use either ``Crepe`` or ``RMVPE``, as the rest are outdated.
 
     <img src="..\appliocolab-img\4-f0.png" alt="image" width="400">
 
@@ -241,7 +241,7 @@ iv. Then paste it on the `Dataset Path` bar.
 ###### ‎  
 ##### b. Hop Length (optional)
 ###### ‎  
-- If you chose ``Crepe``, you can modify its <u>[hop length](https://aihubdocs.github.io/en/rvc/resources/inference-settings/#mangio-crepe)</u>.
+- If you chose ``Crepe``, you can modify its <u>[hop length](https://docs.aihub.wtf/rvc/resources/inference-settings/#mangio-crepe)</u>.
 
     <img src="..\appliocolab-img\4-hoplength.png" alt="image" width="900">
 
@@ -268,7 +268,7 @@ It'll finish when it says `extracted successfully`.
 ###### ‎  
 ##### b. Save Every Epoch
 ###### ‎  
-- Frequency of the <u>[saving checkpoints](https://aihubdocs.github.io/en/extra/glossary/#checkpoints)</u>, based on the <u>[epochs](https://aihubdocs.github.io/en/rvc/resources/epochs--tensorboard/)</u>.    
+- Frequency of the <u>[saving checkpoints](https://docs.aihub.wtf/extra/glossary/#checkpoints)</u>, based on the <u>[epochs](https://docs.aihub.wtf/rvc/resources/epochs--tensorboard/)</u>.    
 ‎   
 - If you are a newbie, simply leave it at `15`.              
 
@@ -280,9 +280,9 @@ It'll finish when it says `extracted successfully`.
 ###### ‎  
 ##### c. Total Epoch
 ###### ‎  
-- Input the total amount of <u>[epochs](https://aihubdocs.github.io/en/rvc/resources/epochs--tensorboard/)</u> (training cycles) for the model.     
+- Input the total amount of <u>[epochs](https://docs.aihub.wtf/rvc/resources/epochs--tensorboard/)</u> (training cycles) for the model.     
 ‎   
-- But since we'll use <u>[TensorBoard](https://aihubdocs.github.io/en/rvc/resources/epochs--tensorboard/#tensorboard)</u>, use an arbitrarily large value like `1000`
+- But since we'll use <u>[TensorBoard](https://docs.aihub.wtf/rvc/resources/epochs--tensorboard/#tensorboard)</u>, use an arbitrarily large value like `1000`
 
     <img src="..\appliocolab-img\4-epoch.png" alt="image" width="420">‎   
 
@@ -290,7 +290,7 @@ It'll finish when it says `extracted successfully`.
 ###### ‎  
 ##### d. Generate Index
 ###### ‎  
-- Click `Generate Index`. This will create the model's <u>[.INDEX](https://aihubdocs.github.io/en/essentials/voice-models/#voice-model-files)</u> file.
+- Click `Generate Index`. This will create the model's <u>[.INDEX](https://docs.aihub.wtf/essentials/voice-models/#voice-model-files)</u> file.
 ***
 ###### ‎  
 ##### e. Start Training
@@ -307,22 +307,22 @@ ii.  Press `Start Training` below to begin the training process.
 ###### ‎  
 ##### f. Monitor training 
 ###### ‎  
-i. <u>[TB](https://aihubdocs.github.io/en/rvc/resources/epochs--tensorboard/#tensorboard)</u> will be available in the Colab. Remember to monitor it, as well as the cell's logs just in case.             
+i. <u>[TB](https://docs.aihub.wtf/rvc/resources/epochs--tensorboard/#tensorboard)</u> will be available in the Colab. Remember to monitor it, as well as the cell's logs just in case.             
 
     The latter will show you errors if they happen, and information about the epochs & checkpoints.   
 ‎  
     <img src="..\appliocolab-img\4-logs.png" alt="image" width="800">‎   
 ‎  
 ‎       
-ii. If after around 2:30 hours of training you don't detect <u>[OT](https://aihubdocs.github.io/en/rvc/resources/epochs--tensorboard/#overtraining)</u> <u>[download the model](https://aihubdocs.github.io/en/rvc/cloud/applio-colab/#c-get-the-pth)</u> of the lowest point, in case it's already OT, and the <u>[.INDEX](https://aihubdocs.github.io/en/rvc/cloud/applio-colab/#b-get-the-index)</u>.     
+ii. If after around 2:30 hours of training you don't detect <u>[OT](https://docs.aihub.wtf/rvc/resources/epochs--tensorboard/#overtraining)</u> <u>[download the model](https://docs.aihub.wtf/rvc/cloud/applio-colab/#c-get-the-pth)</u> of the lowest point, in case it's already OT, and the <u>[.INDEX](https://docs.aihub.wtf/rvc/cloud/applio-colab/#b-get-the-index)</u>.     
 ‎    
-iii. Then once your GPU runtime resets, begin the <u>[retraining](http://aihubdocs.github.io/en/rvc/cloud/applio-colab/#5-resuming)</U> procedure.       
+iii. Then once your GPU runtime resets, begin the <u>[retraining](https://docs.aihub.wtf/rvc/rvc/cloud/applio-colab/#5-resuming)</U> procedure.       
 ***
 !!!warning While training, you might get disconnected if you:    
 - <u>[Stay AFK](https://rentry.org/colab_workarounds)</u> for a long time.     
 - Disconnect from your Internet.       
 - Don't solve the captchas that (might) pop up occasionally.    
-- Run out of <u>[GPU runtime](http://aihubdocs.github.io/en/extra/glossary/#google-colab)</u>. 
+- Run out of <u>[GPU runtime](https://docs.aihub.wtf/rvc/extra/glossary/#google-colab)</u>. 
 !!!
 ===
 
@@ -351,7 +351,7 @@ ii. Download the **.INDEX** named ``added_``.
 ###### ‎  
 ##### c. Get the PTH
 ###### ‎  
-i. In said folder you'll also find all the <u>[checkpoints](https://aihubdocs.github.io/en/extra/glossary/#checkpoints)</u>.         
+i. In said folder you'll also find all the <u>[checkpoints](https://docs.aihub.wtf/extra/glossary/#checkpoints)</u>.         
 ‎  
 ii. Select the one **closest** to ***before*** the overtraining point, and move it to the new folder.
 
@@ -366,7 +366,7 @@ ii. Select the one **closest** to ***before*** the overtraining point, and move 
         <img src="../appliocolab-img/4-step.png" alt="image" width="600" height="auto">‎  
     ‎          
     ‎    
-iii. And that's all, have fun with your model. To test it, do a normal <u>[inference</u>](https://aihubdocs.github.io/en/rvc/local/applio/#inference-) as usual.
+iii. And that's all, have fun with your model. To test it, do a normal <u>[inference</u>](https://docs.aihub.wtf/rvc/local/applio/#inference-) as usual.
 
 ===
 
@@ -386,7 +386,7 @@ iii. And that's all, have fun with your model. To test it, do a normal <u>[infer
  ‎  
         <img src="../appliocolab-img/4-autobackup.png" alt="image" width="600" height="auto">   
  ‎  
-4. Begin training again & remember to monitor <u>[TB</u>](https://aihubdocs.github.io/en/rvc/resources/epochs--tensorboard/#tensorboard) as before.  
+4. Begin training again & remember to monitor <u>[TB</u>](https://docs.aihub.wtf/rvc/resources/epochs--tensorboard/#tensorboard) as before.  
 ===
 
 ###### ‎  
@@ -398,9 +398,9 @@ iii. And that's all, have fun with your model. To test it, do a normal <u>[infer
 ###### ‎  
 - Applio is also known for having one TTS tool by default, with **plenty** of voices to choose for.
 
-- You can also use it with **RVC models** & apply the <u>[inference settings](https://aihubdocs.github.io/en/rvc/resources/inference-settings/)</u> if you wish.
+- You can also use it with **RVC models** & apply the <u>[inference settings](https://docs.aihub.wtf/rvc/resources/inference-settings/)</u> if you wish.
 
-- Additionally, you can download the **Eleven Labs** TTS <u>[plugin](https://aihubdocs.github.io/en/rvc/cloud/applio-colab/#plugins)</u>.       
+- Additionally, you can download the **Eleven Labs** TTS <u>[plugin](https://docs.aihub.wtf/rvc/cloud/applio-colab/#plugins)</u>.       
 ***
 ###### ‎  
 #### <u>Instructions:</u>
@@ -411,11 +411,11 @@ iii. And that's all, have fun with your model. To test it, do a normal <u>[infer
 ***   
 ###### ‎   
 
-2. If you want to use an RVC model, <u>[download it](https://aihubdocs.github.io/en/rvc/cloud/applio-colab/#1-upload-voice-model)</u>, go to **TTS**, click `Refresh` & select it in **Voice Model** & **Index File**.
+2. If you want to use an RVC model, <u>[download it](https://docs.aihub.wtf/rvc/cloud/applio-colab/#1-upload-voice-model)</u>, go to **TTS**, click `Refresh` & select it in **Voice Model** & **Index File**.
 
    <img src="../appliocolab-img/5-vm.png" alt="image" width="600" height="auto">‎    
 ‎             
-- To modify the <u>[inference settings](https://aihubdocs.github.io/en/rvc/resources/inference-settings/)</u> or the output folder for the TTS/RVC audio, unfold `Advanced Settings`.
+- To modify the <u>[inference settings](https://docs.aihub.wtf/rvc/resources/inference-settings/)</u> or the output folder for the TTS/RVC audio, unfold `Advanced Settings`.
 
 ***
 ###### ‎      
@@ -441,7 +441,7 @@ iii. And that's all, have fun with your model. To test it, do a normal <u>[infer
 ###### ‎  
 - Applio has an **Extra** menu, containing an **audio analyzer**, originally made by <u>[Ilaria](https://ko-fi.com/ilariaowo)</u>.
 
-- Making it convenient for determining the <u>[sample rate](https://aihubdocs.github.io/en/rvc/resources/datasets/#sample-rate)</u> of datasets when training models.
+- Making it convenient for determining the <u>[sample rate](https://docs.aihub.wtf/rvc/resources/datasets/#sample-rate)</u> of datasets when training models.
 
 - It also contains the **model fusion** tool, ideal for advanced users.
 
@@ -533,23 +533,23 @@ If the frequencies don't reach the top of the spectrogram, see at which number p
 
 ==- *The voice glitches out.*
 ###### ‎   
-- This a phenomenon called artifacting. To fix it, read <u>[here](https://aihubdocs.github.io/en/rvc/resources/artifacting/)</u>.
+- This a phenomenon called artifacting. To fix it, read <u>[here](https://docs.aihub.wtf/rvc/resources/artifacting/)</u>.
 
 ===
 
 ==- *Cannot connect to GPU backend.*
 ###### ‎   
-- You have exhausted the <u>[GPU runtime](http://aihubdocs.github.io/en/extra/glossary/#google-colab)</u> of Colab.
+- You have exhausted the <u>[GPU runtime](https://docs.aihub.wtf/rvc/extra/glossary/#google-colab)</u> of Colab.
 ===
 
 ==- *I couldn't find my answer.*
 ###### ‎   
-- Report your issue <u>[here](http://aihubdocs.github.io/en/#contributions)</u>.
+- Report your issue <u>[here](https://docs.aihub.wtf/rvc/#contributions)</u>.
 ===
 ***
 ###### ‎
 :::content-center
 #### `You have reached the end.`
 
-[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](http://aihubdocs.github.io/en/#contributions)
+[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.aihub.wtf/rvc/#contributions)
 :::

@@ -38,7 +38,7 @@ order: 4000
 - Ensure there isn't background noise, reverb, overlapping voices, music, distortion, or small silences. You'll learn more in the **Cleaning** section below.   
 ‎   
 #### :icon-chevron-down: Audio quality.
-- The higher the audio quality, the better. If possible have it in a <u>[lossless](https://aihubdocs.github.io/en/extra/glossary/#lossless-formats)</u> format like **WAV** or **FLAC**, not a lossy one like MP3.   
+- The higher the audio quality, the better. If possible have it in a <u>[lossless](https://docs.aihub.wtf/extra/glossary/#lossless-formats)</u> format like **WAV** or **FLAC**, not a lossy one like MP3.   
 ‎   
 #### :icon-chevron-down: No sibilance/popping.
 - Additionally, don't include harsh sibilance (loud "S" & "SH" pronunciation) or popping sounds (loud "P" sound).   
@@ -48,9 +48,9 @@ order: 4000
 :::content-center
 ## Cleaning
 :::
-1. First, clean the undesired noises explained before using a <u>[vocal isolation](http://aihubdocs.github.io/en/rvc/resources/vocal-isolation/)</u> software.     
+1. First, clean the undesired noises explained before using a <u>[vocal isolation](https://docs.aihub.wtf/rvc/rvc/resources/vocal-isolation/)</u> software.     
 ***   
-2. Then, to remove silences, distortion & minimize (even more) noise, we'll use tools from <u>[Audacity</u>](https://www.audacityteam.org/download/). A free, simple & very light-weighted <u>[DAW](https://aihubdocs.github.io/en/extra/glossary/#daw)</u>.            
+2. Then, to remove silences, distortion & minimize (even more) noise, we'll use tools from <u>[Audacity</u>](https://www.audacityteam.org/download/). A free, simple & very light-weighted <u>[DAW](https://docs.aihub.wtf/extra/glossary/#daw)</u>.            
     ‎     
 
     {.list-icon}  
@@ -162,5 +162,5 @@ order: 4000
 :::content-center
 #### `You have reached the end.`
 
-[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](http://aihubdocs.github.io/en/#contributions)
+[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.aihub.wtf/rvc/#contributions)
 :::

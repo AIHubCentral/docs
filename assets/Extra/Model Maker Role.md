@@ -14,8 +14,8 @@ order: 1000
 :::
 ###### ‎
 ||| <u> REQUIREMENTS </u>
-- Model's <u>[**.PTH**](https://aihubdocs.github.io/en/essentials/voice-models/#voice-model-files)</u> file.        
-- Model's <u>[**.INDEX**](https://aihubdocs.github.io/en/essentials/voice-models/#voice-model-files)</u> file.      
+- Model's <u>[**.PTH**](https://docs.aihub.wtf/essentials/voice-models/#voice-model-files)</u> file.        
+- Model's <u>[**.INDEX**](https://docs.aihub.wtf/essentials/voice-models/#voice-model-files)</u> file.      
 - General information about the model.
 - General information about its training process.      
 - A Hugging Face account.     
@@ -33,7 +33,7 @@ order: 1000
 :   ‎
 :::
 #### :icon-chevron-right: It lacks the correct files.
-- The .ZIP file must contain both the **correct** `.INDEX` & `.PTH` file. Learn about them <u>[here](https://aihubdocs.github.io/en/essentials/voice-models/#voice-model-files)</u>.
+- The .ZIP file must contain both the **correct** `.INDEX` & `.PTH` file. Learn about them <u>[here](https://docs.aihub.wtf/essentials/voice-models/#voice-model-files)</u>.
 ***
 ###### ‎ 
 #### :icon-chevron-right: Model is low quality.
@@ -45,12 +45,12 @@ order: 1000
    - Incapable of hitting certain notes.
    - With slurred speech.
    - Unable of pronouncing words correctly in its intended language.
-   - With <u>[artifacting](https://aihubdocs.github.io/en/rvc/resources/artifacting/)</u>.
+   - With <u>[artifacting](https://docs.aihub.wtf/rvc/resources/artifacting/)</u>.
 ***
 ###### ‎ 
 #### :icon-chevron-right: An outdated extraction method was used.
 {.list-icon}
-- :icon-check-circle: Only **Mangio-Crepe** & **RMVPE** are allowed. Learn about them <u>[here](https://aihubdocs.github.io/en/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u>
+- :icon-check-circle: Only **Mangio-Crepe** & **RMVPE** are allowed. Learn about them <u>[here](https://docs.aihub.wtf/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u>
 
 - :icon-x-circle: Harvest, Dio, Crepe-Tiny, PM, etc. are obsolete.
 
@@ -83,7 +83,7 @@ order: 1000
 #### Step 2: Upload it.
 - The ZIP must be stored in Hugging Face in a **public** repo of `openrail` license.    
 
-- Learn how <u>[here</u>](https://aihubdocs.github.io/en/essentials/voice-models/#uploading-to-hugging-face).
+- Learn how <u>[here</u>](https://docs.aihub.wtf/essentials/voice-models/#uploading-to-hugging-face).
 ***
 ###### ‎
 #### Step 3: Prepare the submission.
@@ -104,10 +104,10 @@ order: 1000
 :     Version of RVC it was trained on (will almost always be v2).
 
 **extraction**
-:     The <u>[extraction method](https://aihubdocs.github.io/en/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u> you used.
+:     The <u>[extraction method](https://docs.aihub.wtf/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u> you used.
 
 **epochs**
-:     Total <u>[epochs](https://aihubdocs.github.io/en/rvc/resources/epochs--tensorboard/)</u> amount.
+:     Total <u>[epochs](https://docs.aihub.wtf/rvc/resources/epochs--tensorboard/)</u> amount.
 
 **link**
 :     Its download link from Hugging Face.
@@ -148,5 +148,5 @@ You can attach more samples when you repost the model to ``#voice-models``.
 :::content-center
 #### `You have reached the end.`
 
-[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](http://aihubdocs.github.io/en/#contributions)
+[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.aihub.wtf/rvc/#contributions)
 :::

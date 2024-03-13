@@ -10,9 +10,9 @@ order: 6000
 :::content-center
 ## Introduction :icon-book:
 :::
-- Ilaria RVC is a port of EasyGUI (<u>[Mangio</u>](https://aihubdocs.github.io/en/rvc/local/mangio/)) to <u>[Google Colab</u>](https://aihubdocs.github.io/en/extra/glossary/#google-colab). Made by <u>[Ilaria](https://ko-fi.com/ilariaowo)</u>.     
+- Ilaria RVC is a port of EasyGUI (<u>[Mangio</u>](https://docs.aihub.wtf/rvc/local/mangio/)) to <u>[Google Colab</u>](https://docs.aihub.wtf/extra/glossary/#google-colab). Made by <u>[Ilaria](https://ko-fi.com/ilariaowo)</u>.     
 
-- Works for <u>[inferencing](https://aihubdocs.github.io/en/extra/glossary/#inference)</u> only, has a pretty UI, huge speed, & the great tools that Mangio has (such as <u>[Mangio-Crepe](https://aihubdocs.github.io/en/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u> algorithm).
+- Works for <u>[inferencing](https://docs.aihub.wtf/extra/glossary/#inference)</u> only, has a pretty UI, huge speed, & the great tools that Mangio has (such as <u>[Mangio-Crepe](https://docs.aihub.wtf/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u> algorithm).
 
 - And for this it's considered one of the best alternatives for doing inference through the cloud.       
 ‎               
@@ -39,7 +39,7 @@ order: 6000
 ## Inference :icon-unmute:
 #### [`See video tutorial`](https://www.youtube.com/watch?v=wh4cLMLLkj0)
 !!!info
-If any issues arises, read the <u>[Troubleshooting</u>](https://aihubdocs.github.io/en/rvc/cloud/ilaria-rvc/#troubleshooting-) chapter.
+If any issues arises, read the <u>[Troubleshooting</u>](https://docs.aihub.wtf/rvc/cloud/ilaria-rvc/#troubleshooting-) chapter.
 !!!
 :::
 
@@ -84,7 +84,7 @@ Otherwise you'll have to start again.
 - <img src="../ilarvc-img/3.png" alt="image" width="450" height="auto">
 a. In the Gradio, go to the ``Download Voice Models`` tab.     
 
-b. Paste the <u>[link of the model](https://aihubdocs.github.io/en/essentials/voice-models/#how-to-search-voice-models)</u> in the `Hugging Face Link` bar. It must be a public link from either **Hugging Face**/**Google Drive**.
+b. Paste the <u>[link of the model](https://docs.aihub.wtf/essentials/voice-models/#how-to-search-voice-models)</u> in the `Hugging Face Link` bar. It must be a public link from either **Hugging Face**/**Google Drive**.
 
 c. In `Name of the model`, insert a name for it. Don't include spaces/special characters.
 
@@ -108,7 +108,7 @@ b. Unfold the `Choose the model` dropdown & select your model.
 ***
 ###### ‎ 
 #### 7. <u>Adjust settings.</u> (optional)    
-- If you wish, you can modify the <u>[inference settings</u>](https://aihubdocs.github.io/en/rvc/resources/inference-settings/#pitch-extraction-algorithm) in `Index Settings` & `Advanced Options` for better results.   
+- If you wish, you can modify the <u>[inference settings</u>](https://docs.aihub.wtf/rvc/resources/inference-settings/#pitch-extraction-algorithm) in `Index Settings` & `Advanced Options` for better results.   
 Tap them to unfold.      
 
     <img src="../ilarvc-img/6.png" alt="image" width="500" height="auto"> ‎                  
@@ -142,7 +142,7 @@ Tap them to unfold.
 #### *`and with an RVC model`*
 ###### ‎
 :::
-1. First access the Gradio. If you don't know how, follow the first three steps of the <u>[previous chapter](https://aihubdocs.github.io/en/rvc/cloud/ilaria-rvc/#inference)</u>.
+1. First access the Gradio. If you don't know how, follow the first three steps of the <u>[previous chapter](https://docs.aihub.wtf/rvc/cloud/ilaria-rvc/#inference)</u>.
 ***
 2. Go to the `IlariaTTS` section. 
 
@@ -163,7 +163,7 @@ At the right press the three dots & then `Download`.
      
 ***
 6. To use an RVC model, simply upload the output to Ilaria RVC & convert it using your model. (Optional)        
-    If you don't know, learn <u>[here](https://aihubdocs.github.io/en/rvc/cloud/ilaria-rvc/#inference)</u>.
+    If you don't know, learn <u>[here](https://docs.aihub.wtf/rvc/cloud/ilaria-rvc/#inference)</u>.
 
 ***
 ###### ‎
@@ -188,7 +188,7 @@ At the right press the three dots & then `Download`.
 
 ==- *My model doesn't have a link from HF/GD.*
 ###### ‎
-- You'll have to create the link yourself. Learn how <u>[here</u>](https://aihubdocs.github.io/en/essentials/voice-models/#uploading-to-hugging-face).
+- You'll have to create the link yourself. Learn how <u>[here</u>](https://docs.aihub.wtf/essentials/voice-models/#uploading-to-hugging-face).
 ===
 
 ==- *I can't download my model.* 
@@ -197,7 +197,7 @@ At the right press the three dots & then `Download`.
 
     1. **Link is private:** 
         - If it's from GD, ensure the `General access` is set as `Anyone with the link`.
-        - If it's from HF, ensure the repo is set as `Public`. Learn more <u><u>[here</u>](https://aihubdocs.github.io/en/essentials/voice-models/#uploading-to-hugging-face)</u>.            
+        - If it's from HF, ensure the repo is set as `Public`. Learn more <u><u>[here</u>](https://docs.aihub.wtf/essentials/voice-models/#uploading-to-hugging-face)</u>.            
         ‎   
     2. **Invalid HF link:**
         - The HF link must contain the word "**.zip**".
@@ -205,27 +205,27 @@ At the right press the three dots & then `Download`.
     ‎       
     3. **Incorrect files:**
         - The model must be zipped in a **.ZIP** file. Not .RAR or .7ZIP.
-        - It must contain its correct .PTH & .INDEX files. Learn more <u>[here](https://aihubdocs.github.io/en/essentials/voice-models/#voice-model-files)</u>.
+        - It must contain its correct .PTH & .INDEX files. Learn more <u>[here](https://docs.aihub.wtf/essentials/voice-models/#voice-model-files)</u>.
 ===
 
 ==- *The voice glitches out.*
 ###### ‎
-- This is an anomaly called "**artifacting**". Learn how to fix it <u><u>[here</u>](https://aihubdocs.github.io/en/rvc/resources/artifacting/)</u>.
+- This is an anomaly called "**artifacting**". Learn how to fix it <u><u>[here</u>](https://docs.aihub.wtf/rvc/resources/artifacting/)</u>.
 ===
 
 ==- *Cannot connect to GPU backend.*
 ###### ‎   
-- You have exhausted the <u>[GPU runtime](http://aihubdocs.github.io/en/extra/glossary/#google-colab)</u> of Colab.
+- You have exhausted the <u>[GPU runtime](https://docs.aihub.wtf/rvc/extra/glossary/#google-colab)</u> of Colab.
 ===
 
 ==- *I couldn't find my answer.*
 ###### ‎   
-- Report your issue <u>[here](http://aihubdocs.github.io/en/#contributions)</u>.
+- Report your issue <u>[here](https://docs.aihub.wtf/rvc/#contributions)</u>.
 ===
 ***
 ###### ‎
 :::content-center
 #### `You have reached the end.`
 
-[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](http://aihubdocs.github.io/en/#contributions)
+[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.aihub.wtf/rvc/#contributions)
 :::
