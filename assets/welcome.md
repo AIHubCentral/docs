@@ -24,7 +24,7 @@ icon: home-fill
 ###### ‎
 #### :icon-chevron-right: 🎵 <u>[How to Make AI Cover](https://docs.aihub.wtf/essentials/how-to-make-ai-cover/)</u>
 ***
-#### :icon-chevron-right: :icon-rocket: ‎ <u>[How to Make Voice Models](https://docs.aihub.wtf/rvc/essentials/how-to-make-voice-models/)</u>
+#### :icon-chevron-right: :icon-rocket: ‎ <u>[How to Make Voice Models](https://docs.aihub.wtf/essentials/how-to-make-voice-models/)</u>
 ***
 #### :icon-chevron-right: 💾 <u>[Voice Models](https://docs.aihub.wtf/essentials/voice-models/)</u>
 ***
