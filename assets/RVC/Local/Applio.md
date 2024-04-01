@@ -15,7 +15,7 @@ order: 5000
 :::content-center
 ## Introduction ‎
 :::
-- Applio is a <u>[fork](https://docs.aihub.wtf/essentials/whats-rvc/#forks)</u> of <u>[Mangio](https://docs.aihub.wtf/rvc/local/mangio/)</u> developed by the <u>[IA Hispano</u>](https://github.com/IAHispano)</u> team.
+- Applio is a ultimate voice cloning tool developed by the <u>[IA Hispano</u>](https://github.com/IAHispano)</u> team.
 
 - It's liked for its great **UI** & **lots** of extra features, such as TTS (with RVC models too), plugins, automatic model upload, customizable theme & more.
 
