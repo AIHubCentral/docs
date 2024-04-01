@@ -3,7 +3,7 @@ icon: chevron-right
 order: 5000
 ---
 
-``Last update: Mar 8, 2024``
+``Last update: Apr 01, 2024``
 
 ***
 :::content-center
@@ -35,8 +35,8 @@ order: 5000
 - Has Mangio-Crepe
 - User-friendly UI
 - TensorBoard included
+- It is the fastest compared to all other forks
 ||| ❌ **CONS** 
-- A little slower compared w/ forks
 - More unstable
 ||| 
 ===
@@ -46,7 +46,7 @@ order: 5000
 ## Download :icon-download:
 :::
 ###### ‎
-1. Easiest way to download it is by going to their Hugging Face repo <u>[here](https://huggingface.co/IAHispano/Applio/blob/main/Compiled/ApplioV3.0.8.zip)</u>, and click [ :icon-download: **download** ] on the right.
+1. Easiest way to download it is by going to their Hugging Face repo <u>[here](https://huggingface.co/IAHispano/Applio/tree/main/Compiled)</u>, and click [ :icon-download: **download** ] on the right.
 
     <img src="..\applio-img\2-localappliodl.png" alt="image" width="400">
 
