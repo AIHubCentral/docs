@@ -36,7 +36,7 @@ order: 5000
 - Has Mangio-Crepe
 - User-friendly UI
 - TensorBoard included
-- Extra features(plugins, model fusion, etc)
+- Extra features, (plugins, model fusion, etc)
 ||| ❌ **CONS** 
 - Usage limit for free users
 ||| 
