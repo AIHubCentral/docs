@@ -53,7 +53,7 @@ order: 5000
 - Don't put it in a folder with privileged access.
 - Don't run the run-install.bat as an administrator.
 - Make sure the path does not contain any spaces or special characters.
-- Desactivate your antivirus and firewall to avoid missing dependencies.
+- Deactivate your antivirus and firewall to avoid missing dependencies.
 !!!
 ***
 1. Easiest way to download it is by going to their Hugging Face repo <u>[here](https://huggingface.co/IAHispano/Applio/tree/main/Compiled)</u>, and click [ :icon-download: **download** ] on the right.
