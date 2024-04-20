@@ -3,7 +3,7 @@ icon: chevron-right
 order: 5000
 ---
 
-``Last update: Mar 10, 2024``
+``Last update: Apr 01, 2024``
 
 ***
 :::content-center
@@ -14,7 +14,7 @@ order: 5000
 :::content-center
 ## Introduction ‎
 :::
-- Applio is a <u>[fork](https://docs.aihub.wtf/essentials/whats-rvc/#forks)</u> of <u>[Mangio](https://docs.aihub.wtf/rvc/local/mangio/)</u> developed by the <u>[IA Hispano</u>](https://github.com/IAHispano)</u> team.
+- Applio is a VITS-based Voice Conversion Tool developed by the <u>[IA Hispano</u>](https://github.com/IAHispano)</u> team.
 
 - It's liked for its great **UI** & **lots** of extra features, such as TTS (with RVC models too), plugins, automatic model upload, customizable theme & more.
 
@@ -29,13 +29,15 @@ order: 5000
 ||| ✔️ **PROS** 
 - Very complete
 - Has an active development
+- Currently stable
+- Very fast
 - TTS features            
 - Automatic model upload
 - Has Mangio-Crepe
 - User-friendly UI
+- TensorBoard included
+- Extra features(plugins, model fusion, etc)
 ||| ❌ **CONS** 
-- A little slower compared w/ forks
-- More unstable
 - Usage limit for free users
 ||| 
 ===

@@ -3,7 +3,7 @@ icon: chevron-right
 order: 5000
 ---
 
-``Last update: Mar 8, 2024``
+``Last update: Apr 01, 2024``
 
 ***
 :::content-center
@@ -15,7 +15,7 @@ order: 5000
 :::content-center
 ## Introduction ‎
 :::
-- Applio is a <u>[fork](https://docs.aihub.wtf/essentials/whats-rvc/#forks)</u> of <u>[Mangio](https://docs.aihub.wtf/rvc/local/mangio/)</u> developed by the <u>[IA Hispano</u>](https://github.com/IAHispano)</u> team.
+- Applio is a VITS-based Voice Conversion Tool developed by the <u>[IA Hispano</u>](https://github.com/IAHispano)</u> team.
 
 - It's liked for its great **UI** & **lots** of extra features, such as TTS (with RVC models too), plugins, automatic model upload, customizable theme & more.
 
@@ -30,15 +30,17 @@ order: 5000
 ||| ✔️ **PROS** 
 - Very complete
 - Has an active development
+- Currently stable
+- Very fast
 - TTS features            
 - Automatic model upload
 - Has Mangio-Crepe
 - User-friendly UI
 - TensorBoard included
+- Extra features(plugins, model fusion, etc)
 ||| ❌ **CONS** 
-- A little slower compared w/ forks
-- More unstable
-||| 
+- Issues using it with external drives
+|||
 ===
 ***
 ###### ‎
@@ -46,7 +48,15 @@ order: 5000
 ## Download :icon-download:
 :::
 ###### ‎
-1. Easiest way to download it is by going to their Hugging Face repo <u>[here](https://huggingface.co/IAHispano/Applio/blob/main/Compiled/ApplioV3.0.8.zip)</u>, and click [ :icon-download: **download** ] on the right.
+!!!warning Before Downloading:
+- Make sure that you place Applio inside a folder on C drive.
+- Don't put it in a folder with privileged access.
+- Don't run the run-install.bat as an administrator.
+- Make sure the path does not contain any spaces or special characters.
+- Desactivate your antivirus and firewall to avoid missing dependencies.
+!!!
+***
+1. Easiest way to download it is by going to their Hugging Face repo <u>[here](https://huggingface.co/IAHispano/Applio/tree/main/Compiled)</u>, and click [ :icon-download: **download** ] on the right.
 
     <img src="..\applio-img\2-localappliodl.png" alt="image" width="400">
 
