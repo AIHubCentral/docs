@@ -39,7 +39,7 @@ order: 5000
 - TensorBoard included
 - Extra features(plugins, model fusion, etc)
 ||| ❌ **CONS** 
-- Issues using it with external drives
+- Issues when downloading it in external drives
 |||
 ===
 ***
