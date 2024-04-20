@@ -133,7 +133,7 @@ If you're curious about the epochs, <u>[you can learn more here](https://docs.ai
 ***
 ###### ‎
 #### 4. Download       
-- Click on ``Download model``. It will download a .ZIP file of it.     
+- Click on ``Download model``. This will download a .ZIP file of it.     
 ‎  
 <img src="../searchrvcmodels-img/applio-web-4.png" alt="image" width="600" height="auto">‎                          
 ‎   
