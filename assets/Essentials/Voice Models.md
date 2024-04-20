@@ -128,7 +128,7 @@ If you get models from different years, remember, the person's voice changes ove
     <img src="../searchrvcmodels-img/applio-web-3.png" alt="image" width="1000" height="auto">
 
 !!!success
-If you're curious about the epochs, <u>[learn more here](https://docs.aihub.wtf/rvc/resources/epochs--tensorboard/)</u>.
+If you're curious about the epochs, <u>[you can learn more here](https://docs.aihub.wtf/rvc/resources/epochs--tensorboard/)</u>.
 !!!
 ***
 ###### ‎
