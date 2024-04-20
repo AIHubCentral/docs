@@ -101,7 +101,7 @@ If you're curious about the epochs, <u>[learn more here](https://docs.aihub.wtf/
 <img src="../searchrvcmodels-img/applio-web-2.png" alt="image" width="350" height="auto">           
 :::
 
-- This a website where people can upload voice models.
+- This is a website where people can upload voice models.
 - Access guides, the HF space, and the Applio API featuring 21k+ free models.
 - Share, favorite, and integrate with Applio (RVC) for direct model downloads to your PC.
 - User-friendly UI
@@ -116,7 +116,6 @@ If you're curious about the epochs, <u>[learn more here](https://docs.aihub.wtf/
       
     <img src="../searchrvcmodels-img/applio-web-1.png" alt="image" width="1000" height="auto"> ‎    
 ‎   
-
 !!!
 If you get models from different years, remember, the person's voice changes overtime.
 !!!
