@@ -37,9 +37,9 @@ order: 5000
 - Has Mangio-Crepe
 - User-friendly UI
 - TensorBoard included
-- Extra features(plugins, model fusion, etc)
+- Extra features, (plugins, model fusion, etc)
 ||| ❌ **CONS** 
-- Issues when downloading it in external drives
+- Issues when downloading to external drives
 |||
 ===
 ***
@@ -56,7 +56,7 @@ order: 5000
 - Deactivate your antivirus and firewall to avoid missing dependencies.
 !!!
 ***
-1. Easiest way to download it is by going to their Hugging Face repo <u>[here](https://huggingface.co/IAHispano/Applio/tree/main/Compiled)</u>, and click [ :icon-download: **download** ] on the right.
+1. The easiest way to download Applio is by going to Applio's <u>[Hugging Face repo](https://huggingface.co/IAHispano/Applio/tree/main/Compiled)</u>, and clicking the [ :icon-download: **download** ] button on the right-hand side.
 
     <img src="..\applio-img\2-localappliodl.png" alt="image" width="400">
 
