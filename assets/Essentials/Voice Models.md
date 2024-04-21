@@ -6,7 +6,7 @@ order: 3000
 
 # :icon-dependabot: Voice Models
 
-``Last update: Mar 8, 2024``        
+``Last update: Apr 01, 2024``        
 
 ‎
 :   ‎
@@ -43,12 +43,13 @@ As people sometimes upload them incorrectly.
 ###### ‎
 :::content-center
 ## How to Search Models
-#### *``Four methods to find one online.``*
+#### *``Five methods to find one online.``*
 :::
 ###### ‎  
 !!!
 **Reminder:** Models from **kits.ai** can't be downloaded.
 !!!           
+
 +++ weights.gg   
 :::content-center  
 <img src="../searchrvcmodels-img/1.png" alt="image" width="300" height="auto">           
@@ -94,6 +95,50 @@ If you're curious about the epochs, <u>[learn more here](https://docs.aihub.wtf/
 - If you need a link for it, use the other methods.     
 
 - If it only exists in weights.gg, download the .ZIP & <u>[upload it to HF](https://docs.aihub.wtf/essentials/voice-models/#uploading-to-hugging-face)</u>.  
+
++++ applio.org   
+:::content-center  
+<img src="../searchrvcmodels-img/applio-web-2.png" alt="image" width="350" height="auto">           
+:::
+
+- This is a website where people can upload voice models.
+- Access guides, the HF space, and the Applio API featuring 21k+ free models.
+- Share, favorite, and integrate with Applio (RVC) for direct model downloads to your PC.
+- User-friendly UI
+***
+###### ‎
+#### 1. Log in (Optional)
+- Access the website <u>[here</u>](https://applio.org/models) & login by clicking the icon on the top right corner.
+***
+###### ‎
+#### 2. Search
+- Type the name of the model in the ``Search`` bar & click a result.     
+      
+    <img src="../searchrvcmodels-img/applio-web-1.png" alt="image" width="1000" height="auto"> ‎    
+‎   
+!!!
+If you get models from different years, remember, the person's voice changes overtime.
+!!!
+***
+###### ‎
+#### 3. Evaluate model (optional)      
+- Check the description, likes or tags, this can give you a slight idea of how good the model is.
+- This step is especially useful if you get multiple results from the same model.
+
+    <img src="../searchrvcmodels-img/applio-web-3.png" alt="image" width="1000" height="auto">
+
+!!!success
+If you're curious about the epochs, <u>[you can learn more here](https://docs.aihub.wtf/rvc/resources/epochs--tensorboard/)</u>.
+!!!
+***
+###### ‎
+#### 4. Download       
+- Click on ``Download model``. This will download a .ZIP file of it.     
+‎  
+<img src="../searchrvcmodels-img/applio-web-4.png" alt="image" width="600" height="auto">‎                          
+‎   
+- If you need a link for it, use the other methods.     
+
 
 +++ Voice Models channel     
 :::content-center
