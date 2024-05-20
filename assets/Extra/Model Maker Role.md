@@ -4,7 +4,7 @@ icon: chevron-right
 order: 1000
 ---
 
-``Last update: Mar 7, 2024``
+``Last update: May 20, 2024``
 ***
 ###### ‎ 
 :::content-center
@@ -37,35 +37,35 @@ order: 1000
 ***
 ###### ‎ 
 #### :icon-chevron-right: Model is low quality.
-- <u>**A bad model sounds:**</u>       
+- <u>**A bad model:**</u>       
 
-   - Scratchy/screechy.
-   - Muffled.
-   - Inaccurate to the source.
-   - Incapable of hitting certain notes.
-   - With slurred speech.
-   - Unable of pronouncing words correctly in its intended language.
-   - With <u>[artifacting](https://docs.aihub.wtf/rvc/resources/artifacting/)</u>.
+   - Sounds scratchy/screechy.
+   - Has a muffled sound.
+   - Sounds inaccurate to the source.
+   - Is incapable of hitting certain notes.
+   - Has slurred speech.
+   - Is unable of pronouncing words correctly in its intended language.
+   - Has <u>[artifacting](https://docs.aihub.wtf/rvc/resources/artifacting/)</u>.
 ***
 ###### ‎ 
 #### :icon-chevron-right: An outdated extraction method was used.
 {.list-icon}
-- :icon-check-circle: Only **Mangio-Crepe** & **RMVPE** are allowed. Learn about them <u>[here](https://docs.aihub.wtf/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u>
+- :icon-check-circle: Only **Crepe, **Mangio-Crepe** & **RMVPE** are allowed. Learn about them <u>[here](https://docs.aihub.wtf/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u>
 
 - :icon-x-circle: Harvest, Dio, Crepe-Tiny, PM, etc. are obsolete.
 
 ***
 ###### ‎ 
-#### :icon-chevron-right: The audio demo has an instrumental.
-- Don't include **ANY** music on the audio demo, even if it's not copyrighted. This is due to:
+#### :icon-chevron-right: The audio demo contains instrumental.
+- Don't include **ANY** music in the audio demo, even if it's not copyrighted. This is due to:
   
      - Concerns over copyright.
-     - In many cases, the music can "hide" the flaws of the voice models, making it harder to judge the quality of the model.
+     - In many cases, the music can "hide" the flaws of the voice model, making it harder to judge its quality.
 ***
 #### :icon-chevron-right: The audio demo is altered.
-- Don't add reverb, equalize, or alter the demo in any way, as that won't be a faithful representation of the model. It must be the raw, unmodified output from RVC.
+- Don't add reverb, equalize, or alter the demo in any way, as it won't be a faithful representation of the model. It must be the raw, unmodified output from the inference.
 
-- Trimming silences at the beginning/end of the audio is valid. :icon-check-circle: 
+- Trimming silences at the beginning/end of the audio demo is allowed. :icon-check-circle: 
 ###### ‎  
 ***
 ###### ‎
@@ -81,7 +81,7 @@ order: 1000
 ***
 ###### ‎
 #### Step 2: Upload it.
-- The ZIP must be stored in Hugging Face in a **public** repo of `openrail` license.    
+- The ZIP must be stored in a Hugging Face **public** repository of `openrail` license.    
 
 - Learn how <u>[here</u>](https://docs.aihub.wtf/essentials/voice-models/#uploading-to-hugging-face).
 ***
@@ -97,11 +97,11 @@ order: 1000
 #### ``Now fill up the information about your model:``  
 :::
 
-**modelname**
+**model-name**
 :     Its name.   
 
-**rvc**
-:     Version of RVC it was trained on (will almost always be v2).
+**technology**
+:     The technology used for its training.
 
 **extraction**
 :     The <u>[extraction method](https://docs.aihub.wtf/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u> you used.
@@ -113,10 +113,10 @@ order: 1000
 :     Its download link from Hugging Face.
 
 **image**
-:     Image of what it represents (person/character).   
+:     An image of what it represents (person/character).   
 
 **demo**
-:     Audio sample of it talking/singing.
+:     An audio sample of it talking/singing.
 
 **note** 
 :   Optional. Add more context about the model if you want.
@@ -131,13 +131,13 @@ You can attach more samples when you repost the model to ``#voice-models``.
 - Once you are done filling the information, send the message.    
 
 - If everything went fine, your submission will be added to the queue & the bot will send a confirmation message, containing your **submission ID**.    
-<u>**With the ID you can:**</u>        
+<u>**With this ID, you can:**</u>        
    - Check your submission's number in queue with the command ``/queue`` followed by the ID. (e.g ``/queue 251``).        
    - Cancel your submission with the command ``/cancel`` followed by the ID.    
 ‎     
-- Now wait for a **Model QC** (quality checker) to verify your model. You'll be notified once it has been reviewed.   
+- Now, wait for a **QC** (quality checker) to verify your model. You'll be notified once it has been reviewed.   
 
-- If your model gets approved, the bot will notify you with something like this:    
+- If your model gets approved, the bot will notify you with a message like this:    
 
    <img src="../modelmaker-img/approved.png" alt="image" width="" height="auto">‎     
 ‎    
