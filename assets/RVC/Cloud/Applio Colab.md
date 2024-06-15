@@ -85,17 +85,6 @@ Then log in to your Google account.
 
     <img src="..\appliocolab-img\2-url.png" alt="image" width="430">‎
 
-In case the **public URL** doesn't show up, there might be a problem with Gradio, you can check if it's down <u>[here</u>](https://status.gradio.app/)</u>.
-
-- To fix this, instead of waiting until Gradio is back online, just check the **share_tunnel*** checkbox on the Start Applio cell.
-
-    <img src="..\appliocolab-img\2-start-share-tunnel.png" alt="image" width="430">
-‎ 
-- This way, Applio will use **localtunnel**, copy paste the **Password IP** (Don't worry, it's the Google PC's IP, not yours lol), then open the **Share Link** and paste it.
-
-    <img src="..\appliocolab-img\2-start-share-tunnel-link.png" alt="image" width="430">
-    
-
 !!!warning Don't close Colab until you're done using it, or it will stop working.     
 !!! 
 ***
@@ -533,6 +522,23 @@ If the frequencies don't reach the top of the spectrogram, see at which number p
 ## Troubleshooting
 :::
 ###### ‎ 
+==- *There's no public URL.*
+###### ‎   
+
+- In case the **public URL** doesn't show up, there might be a problem with <u>[Gradio</u>](https://docs.aihub.wtf/extra/glossary/#gradio)</u>, you can check if it's down <u>[here</u>](https://status.gradio.app/)</u>.
+
+- To fix this, instead of waiting until Gradio is back online, just check the **share_tunnel*** checkbox on the Start Applio cell.
+
+    <img src="..\appliocolab-img\2-start-share-tunnel.png" alt="image" width="430">
+‎ 
+- This way, Applio will use <u>[localtunnel</u>](https://docs.aihub.wtf/extra/glossary/#localtunnel), copy paste the **Password IP** (Don't worry, it's the Google PC's IP, not yours).
+
+- Then open the **Share Link** and paste it in Tunnel Password, finally click Submit.
+
+    <img src="..\appliocolab-img\2-start-share-tunnel-link-localtunnel.png" alt="image" width="430">
+
+===
+
 ==- *There's no option for my sample rate.*
 ###### ‎   
 
