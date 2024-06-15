@@ -83,8 +83,19 @@ Then log in to your Google account.
 ‎     
 - Then open the **public URL**.
 
-    <img src="..\appliocolab-img\2-url.png" alt="image" width="430">‎   
-‎       
+    <img src="..\appliocolab-img\2-url.png" alt="image" width="430">‎
+
+In case the **public URL** doesn't show up, there might be a problem with Gradio, you can check if it's down <u>[here</u>](https://status.gradio.app/)</u>.
+
+- To fix this, instead of waiting until Gradio is back online, just check the **share_tunnel*** checkbox on the Start Applio cell.
+
+    <img src="..\appliocolab-img\2-start-share-tunnel.png" alt="image" width="430">
+‎ 
+- This way, Applio will use **localtunnel**, copy paste the **Password IP** (Don't worry, it's the Google PC's IP, not yours lol), then open the **Share Link** and paste it.
+
+    <img src="..\appliocolab-img\2-start-share-tunnel-link.png" alt="image" width="430">
+    
+
 !!!warning Don't close Colab until you're done using it, or it will stop working.     
 !!! 
 ***
