@@ -87,12 +87,22 @@ order: 3000
 - It's a copy of a main GitHub project. It aims to make a different version of the project with improvements, changes & new features.       
 ***
 ###### ‎
+### :icon-chevron-down:Gradio
+- Gradio is an open-source Python package that allows developers to quickly build demos or web applications **UI (Interfaces)** for your machine learning models, APIs.       
+
+- It's used also for the RVC Interface
+  
+- It got a **Local URL** which is the one that is running locally on the machine, and then the **Public Share Link**, which is a tunnel that exposes the Local URL so the one used for example in the Google Colabs, powered by their Share API, that sometimes goes down, you can check its status <u>[here](https://status.gradio.app/)</u>.
+
+***
+###### ‎
 ### :icon-chevron-down:Google Colab
 - Google Colaboratory is a product of Google that allows anybody to write & execute arbitrary python code through websites.       
 
 - It's free version is slower & with a usage time of their GPUs of around **3 hours a day**. Once you exhaust it, you'll have to wait 12 - 24 hours.
 
-- Learn how to bypass their limitations <u>[here](https://rentry.org/colab_workarounds)</u>.
+- Learn how to bypass their limitations <u>[here](https://docs.google.com/document/d/1Pr-AZndodmWgsbOeuHQU4IrgbatFgYc1ChOq_ZAf_5s/edit?usp=sharing)</u>.
+
 ***
 ###### ‎       
 ### :icon-chevron-down:GPU
@@ -150,6 +160,14 @@ Converting a lossy audio to a lossless one won't restore the lost quality.
 - So by getting rid of some data (in this case, quality), they achieve a smaller file size.       
 
 - Common lossy formats are **MP3**, OGG, OPUS, M4A, etc.
+
+***
+###### ‎ 
+### :icon-chevron-down:Localtunnel
+
+- Localtunnel is made to easily share a web service on your local development machine.
+
+- It's used for example in Google Colabs to **expose the Local URL** so that users on Cloud can access the program.
 
 ***
 ###### ‎       
