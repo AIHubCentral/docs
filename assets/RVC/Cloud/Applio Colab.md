@@ -321,7 +321,7 @@ ii. If after around 2:30 hours of training you don't detect <u>[OT](https://docs
 iii. Then once your GPU runtime resets, begin the <u>[retraining](https://docs.aihub.wtf/rvc/cloud/applio-colab/#5-resuming)</U> procedure.       
 ***
 !!!warning While training, you might get disconnected if you:    
-- <u>[Stay AFK](https://rentry.org/colab_workarounds)</u> for a long time.     
+- <u>[Stay AFK](https://docs.google.com/document/d/1Pr-AZndodmWgsbOeuHQU4IrgbatFgYc1ChOq_ZAf_5s/edit?usp=sharing)</u> for a long time.     
 - Disconnect from your Internet.       
 - Don't solve the captchas that (might) pop up occasionally.    
 - Run out of <u>[GPU runtime](https://docs.aihub.wtf/rvc/extra/glossary/#google-colab)</u>. 
