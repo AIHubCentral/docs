@@ -531,9 +531,9 @@ If the frequencies don't reach the top of the spectrogram, see at which number p
 
     <img src="..\appliocolab-img\2-start-share-tunnel.png" alt="image" width="430">
 ‎ 
-- This way, Applio will use <u>[localtunnel</u>](https://docs.aihub.wtf/extra/glossary/#localtunnel), copy paste the **Password IP** (Don't worry, it's the Google PC's IP, not yours).
+- Applio will use <u>[localtunnel</u>](https://docs.aihub.wtf/extra/glossary/#localtunnel) instead of the Gradio Public Share Link now, copy paste the **Password IP** (Don't worry, it's the Google PC's IP, not yours).
 
-- Then open the **Share Link** and paste it in Tunnel Password, finally click Submit.
+- Then open the **Share Link** given by the colab and paste the "Password IP" in "Tunnel Password", finally click Submit.
 
     <img src="..\appliocolab-img\2-start-share-tunnel-link-localtunnel.png" alt="image" width="430">
 
