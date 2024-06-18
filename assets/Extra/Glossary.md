@@ -88,11 +88,9 @@ order: 3000
 ***
 ###### ‎
 ### :icon-chevron-down:Gradio
-- Gradio is an open-source Python package that allows developers to quickly build demos or web applications **UI (Interfaces)** for your machine learning models, APIs.       
-
-- It's used also for the RVC Interface
+- Gradio is an open-source Python packag that makes it easy for developers to create user-friendly web interfaces for machine learning models and other applications, such as RVC.
   
-- It got a **Local URL** which is the one that is running locally on the machine, and then the **Public Share Link**, which is a tunnel that exposes the Local URL so the one used for example in the Google Colabs, powered by their Share API, that sometimes goes down, you can check its status <u>[here](https://status.gradio.app/)</u>.
+- It deploys the program on a Local URL, which is the one running locally on the machine, and a Public Share Link, which is a tunnel that exposes the Local URL. The Public Share Link is used, for example, in Google Colabs, powered by their Share API. Sometimes, the Share API goes down, you can check its status <u>[here](https://status.gradio.app/)</u>.
 
 ***
 ###### ‎
@@ -165,9 +163,9 @@ Converting a lossy audio to a lossless one won't restore the lost quality.
 ###### ‎ 
 ### :icon-chevron-down:Localtunnel
 
-- Localtunnel is made to easily share a web service on your local development machine.
+- Localtunnel is a tunnel made to expose a local url (like http://localhost:3000).
 
-- It's used for example in Google Colabs to **expose the Local URL** so that users on Cloud can access the program.
+- It's used in Google Colabs to **expose the Local URL** so that users on Cloud can access the program.
 
 ***
 ###### ‎       
