@@ -33,7 +33,7 @@ order: 6000
     {.list-icon}   
     - #### :icon-device-desktop: ‎ <u>[Locally](https://docs.aihub.wtf/rvc/local/mainline/)</u>
 
-    - #### :icon-cloud: ‎ <u>[On the cloud](https://docs.aihub.wtf/rvc/cloud/ilaria-rvc/)</u>        
+    - #### :icon-cloud: ‎ <u>[On the cloud](https://docs.aihub.wtf/rvc/cloud/applio-colab/)</u>        
 ###### ‎
 !!!warning
 For local users, first ensure you meet the <u>[minimum requirements](https://docs.aihub.wtf/essentials/whats-rvc/#what-are-the-requirements-for-rvc-locally/)</u>.

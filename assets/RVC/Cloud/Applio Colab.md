@@ -3,7 +3,7 @@ icon: chevron-right
 order: 5000
 ---
 
-``Last update: Apr 01, 2024``
+``Last update: June 15, 2024``
 
 ***
 :::content-center
@@ -83,8 +83,8 @@ Then log in to your Google account.
 ‎     
 - Then open the **public URL**.
 
-    <img src="..\appliocolab-img\2-url.png" alt="image" width="430">‎   
-‎       
+    <img src="..\appliocolab-img\2-url.png" alt="image" width="430">‎
+
 !!!warning Don't close Colab until you're done using it, or it will stop working.     
 !!! 
 ***
@@ -321,7 +321,7 @@ ii. If after around 2:30 hours of training you don't detect <u>[OT](https://docs
 iii. Then once your GPU runtime resets, begin the <u>[retraining](https://docs.aihub.wtf/rvc/cloud/applio-colab/#5-resuming)</U> procedure.       
 ***
 !!!warning While training, you might get disconnected if you:    
-- <u>[Stay AFK](https://rentry.org/colab_workarounds)</u> for a long time.     
+- <u>[Stay AFK](https://docs.google.com/document/d/1Pr-AZndodmWgsbOeuHQU4IrgbatFgYc1ChOq_ZAf_5s/edit?usp=sharing)</u> for a long time.     
 - Disconnect from your Internet.       
 - Don't solve the captchas that (might) pop up occasionally.    
 - Run out of <u>[GPU runtime](https://docs.aihub.wtf/rvc/extra/glossary/#google-colab)</u>. 
@@ -522,6 +522,23 @@ If the frequencies don't reach the top of the spectrogram, see at which number p
 ## Troubleshooting
 :::
 ###### ‎ 
+==- *There's no public URL.*
+###### ‎   
+
+- In case the **public URL** doesn't show up, there might be a problem with <u>[Gradio</u>](https://docs.aihub.wtf/extra/glossary/#gradio)</u>, you can check if it's down <u>[here</u>](https://status.gradio.app/)</u>.
+
+- To fix this, instead of waiting until Gradio is back online, just check the **share_tunnel*** checkbox on the Start Applio cell.
+
+    <img src="..\appliocolab-img\2-start-share-tunnel.png" alt="image" width="430">
+‎ 
+- Applio will use <u>[localtunnel</u>](https://docs.aihub.wtf/extra/glossary/#localtunnel) instead of the Gradio Public Share Link now, copy paste the **Password IP** (Don't worry, it's the Google PC's IP, not yours).
+
+- Then open the **Share Link** given by the colab and paste the "Password IP" in "Tunnel Password", finally click Submit.
+
+    <img src="..\appliocolab-img\2-start-share-tunnel-link-localtunnel.png" alt="image" width="430">
+
+===
+
 ==- *There's no option for my sample rate.*
 ###### ‎   
 

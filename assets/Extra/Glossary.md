@@ -3,7 +3,7 @@ icon: chevron-right
 order: 3000
 ---
 
-``Last update: Mar 8, 2024``
+``Last update: June 15, 2024``
 ***
 :::content-center
 
@@ -87,12 +87,20 @@ order: 3000
 - It's a copy of a main GitHub project. It aims to make a different version of the project with improvements, changes & new features.       
 ***
 ###### ‎
+### :icon-chevron-down:Gradio
+- Gradio is an open-source Python packag that makes it easy for developers to create user-friendly web interfaces for machine learning models and other applications, such as RVC.
+  
+- It deploys the program on a Local URL, which is the one running locally on the machine, and a Public Share Link, which is a tunnel that exposes the Local URL. The Public Share Link is used, for example, in Google Colabs, powered by their Share API. Sometimes, the Share API goes down, you can check its status <u>[here](https://status.gradio.app/)</u>.
+
+***
+###### ‎
 ### :icon-chevron-down:Google Colab
 - Google Colaboratory is a product of Google that allows anybody to write & execute arbitrary python code through websites.       
 
 - It's free version is slower & with a usage time of their GPUs of around **3 hours a day**. Once you exhaust it, you'll have to wait 12 - 24 hours.
 
-- Learn how to bypass their limitations <u>[here](https://rentry.org/colab_workarounds)</u>.
+- Learn how to bypass their limitations <u>[here](https://docs.google.com/document/d/1Pr-AZndodmWgsbOeuHQU4IrgbatFgYc1ChOq_ZAf_5s/edit?usp=sharing)</u>.
+
 ***
 ###### ‎       
 ### :icon-chevron-down:GPU
@@ -150,6 +158,14 @@ Converting a lossy audio to a lossless one won't restore the lost quality.
 - So by getting rid of some data (in this case, quality), they achieve a smaller file size.       
 
 - Common lossy formats are **MP3**, OGG, OPUS, M4A, etc.
+
+***
+###### ‎ 
+### :icon-chevron-down:Localtunnel
+
+- Localtunnel is a tunnel made to expose a local url (like http://localhost:3000).
+
+- It's used in Google Colabs to **expose the Local URL** so that users on Cloud can access the program.
 
 ***
 ###### ‎       
