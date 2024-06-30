@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.771064732456">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.773083147258">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -14,7 +14,7 @@
     <!-- Primary Meta Tags -->
     <title>Applio Colab</title>
     <meta name="title" content="Applio Colab">
-    <meta name="description" content="Last update: Apr 01, 2024">
+    <meta name="description" content="Last update: June 15, 2024">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://docs.aihub.wtf/rvc/cloud/applio-colab/">
@@ -23,22 +23,22 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.aihub.wtf/rvc/cloud/applio-colab/">
     <meta property="og:title" content="Applio Colab">
-    <meta property="og:description" content="Last update: Apr 01, 2024">
+    <meta property="og:description" content="Last update: June 15, 2024">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.aihub.wtf/rvc/cloud/applio-colab/">
     <meta property="twitter:title" content="Applio Colab">
-    <meta property="twitter:description" content="Last update: Apr 01, 2024">
+    <meta property="twitter:description" content="Last update: June 15, 2024">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../../img/b.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.5.0.771064732456" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.5.0.773083147258" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.5.0.771064732456" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.5.0.773083147258" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.5.0.771064732456" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.5.0.773083147258" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -230,7 +230,7 @@
         <span>Applio Colab</span>
     </h1>
 </doc-anchor-target>
-<p><code v-pre>Last update: Apr 01, 2024</code></p>
+<p><code v-pre>Last update: June 15, 2024</code></p>
 <hr>
 <div class="content-center"><img src="..\appliocolab-img\banner.png" alt="image" width="600">
 </div>
@@ -398,8 +398,7 @@ Then log in to your Google account.</li>
 </ol>
 <ul>
 <li><p>Then open the <strong>public URL</strong>.</p>
-<p><img src="..\appliocolab-img\2-url.png" alt="image" width="430">‎<br />
-‎</p>
+<p><img src="..\appliocolab-img\2-url.png" alt="image" width="430">‎</p>
 </li>
 </ul>
 <div class="flex mb-6">
@@ -987,7 +986,7 @@ It&#x27;ll finish when it says <code v-pre>extracted successfully</code>.</p>
         <div class="pr-5 ml-3 w-full">
             <h5>While training, you might get disconnected if you:</h5>
 <ul>
-<li><u><a href="https://rentry.org/colab_workarounds">Stay AFK</a></u> for a long time.</li>
+<li><u><a href="https://docs.google.com/document/d/1Pr-AZndodmWgsbOeuHQU4IrgbatFgYc1ChOq_ZAf_5s/edit?usp=sharing">Stay AFK</a></u> for a long time.</li>
 <li>Disconnect from your Internet.</li>
 <li>Don&#x27;t solve the captchas that (might) pop up occasionally.</li>
 <li>Run out of <u><a href="https://docs.aihub.wtf/rvc/extra/glossary/#google-colab">GPU runtime</a></u>.</li>
@@ -1453,11 +1452,35 @@ Example: <code v-pre>arianagrande_60e.pth</code><br />
         <span>‎</span>
     </h6>
 </doc-anchor-target>
-<doc-panel id="there-s-no-option-for-my-sample-rate" collapsed>
-    <template #title><em>There&#x27;s no option for my sample rate.</em></template>
+<doc-panel id="there-s-no-public-url" collapsed>
+    <template #title><em>There&#x27;s no public URL.</em></template>
 <doc-anchor-target id="section-71">
     <h6>
         <doc-anchor-trigger class="header-anchor-trigger" to="#section-71">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<ul>
+<li><p>In case the <strong>public URL</strong> doesn&#x27;t show up, there might be a problem with <u><a href="https://docs.aihub.wtf/extra/glossary/#gradio">Gradio</u></a></u>, you can check if it&#x27;s down <u><a href="https://status.gradio.app/">here</u></a></u>.</p>
+</li>
+<li><p>To fix this, instead of waiting until Gradio is back online, just check the <strong>share_tunnel</strong>* checkbox on the Start Applio cell.</p>
+  <img src="..\appliocolab-img\2-start-share-tunnel.png" alt="image" width="430">
+</li>
+</ul>
+<p>‎</p>
+<ul>
+<li><p>Applio will use <u><a href="https://docs.aihub.wtf/extra/glossary/#localtunnel">localtunnel</u></a> instead of the Gradio Public Share Link now, copy paste the <strong>Password IP</strong> (Don&#x27;t worry, it&#x27;s the Google PC&#x27;s IP, not yours).</p>
+</li>
+<li><p>Then open the <strong>Share Link</strong> given by the colab and paste the &quot;Password IP&quot; in &quot;Tunnel Password&quot;, finally click Submit.</p>
+  <img src="..\appliocolab-img\2-start-share-tunnel-link-localtunnel.png" alt="image" width="430">
+</li>
+</ul>
+</doc-panel>
+<doc-panel id="there-s-no-option-for-my-sample-rate" collapsed>
+    <template #title><em>There&#x27;s no option for my sample rate.</em></template>
+<doc-anchor-target id="section-72">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-72">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1471,9 +1494,9 @@ Example: <code v-pre>arianagrande_60e.pth</code><br />
 </doc-panel>
 <doc-panel id="the-voice-glitches-out" collapsed>
     <template #title><em>The voice glitches out.</em></template>
-<doc-anchor-target id="section-72">
+<doc-anchor-target id="section-73">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-72">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-73">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1483,9 +1506,9 @@ Example: <code v-pre>arianagrande_60e.pth</code><br />
 </doc-panel>
 <doc-panel id="cannot-connect-to-gpu-backend" collapsed>
     <template #title><em>Cannot connect to GPU backend.</em></template>
-<doc-anchor-target id="section-73">
+<doc-anchor-target id="section-74">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-73">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-74">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1495,9 +1518,9 @@ Example: <code v-pre>arianagrande_60e.pth</code><br />
 </doc-panel>
 <doc-panel id="i-couldn-t-find-my-answer" collapsed>
     <template #title><em>I couldn&#x27;t find my answer.</em></template>
-<doc-anchor-target id="section-74">
+<doc-anchor-target id="section-75">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-74">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-75">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1506,9 +1529,9 @@ Example: <code v-pre>arianagrande_60e.pth</code><br />
 </ul>
 </doc-panel>
 <hr>
-<doc-anchor-target id="section-75">
+<doc-anchor-target id="section-76">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-75">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-76">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
