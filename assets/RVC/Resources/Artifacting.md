@@ -9,7 +9,7 @@ order: 2000
 ###### ‎ 
 ### Introduction        
 In RVC, artifacting refers to an anomaly where the output voice sounds "robotic" & glitchy.     
-This occurs after the <u>[inference](https://docs.aihub.wtf/extra/glossary/#inference)</u> or model training process.     
+This occurs after the <u>[inference](https://docs.ai-hub.wtf/extra/glossary/#inference)</u> or model training process.     
 ***
 ###### ‎ 
 ### Causes    
@@ -28,24 +28,24 @@ Remember that the cleaner your input audio is, the better the results.
 ###### ‎ 
 ### Solutions    
 #### 1. Use a lossless format:
-- If possible, it's best if your audio is in a <u>[lossless format](https://docs.aihub.wtf/extra/glossary/#lossless-formats)</u> like **WAV** or **FLAC**, preserving its original quality.
+- If possible, it's best if your audio is in a <u>[lossless format](https://docs.ai-hub.wtf/extra/glossary/#lossless-formats)</u> like **WAV** or **FLAC**, preserving its original quality.
 
 - Avoid using lossy ones like MP3 or OGG.
 ‎   
 #### 2. If doing inference:
-- Remove undesired noises with an <u>[vocal isolation</u>](https://docs.aihub.wtf/rvc/resources/vocal-isolation/) software.
+- Remove undesired noises with an <u>[vocal isolation</u>](https://docs.ai-hub.wtf/rvc/resources/vocal-isolation/) software.
 
-- Lowering the <u>[search feature ratio</u>](https://docs.aihub.wtf/rvc/resources/inference-settings/) can also minimize this issue.
+- Lowering the <u>[search feature ratio</u>](https://docs.ai-hub.wtf/rvc/resources/inference-settings/) can also minimize this issue.
 
-- If breathing sounds produce it, lower the <u>[Protection](https://docs.aihub.wtf/rvc/resources/inference-settings/)</u> value.
+- If breathing sounds produce it, lower the <u>[Protection](https://docs.ai-hub.wtf/rvc/resources/inference-settings/)</u> value.
 ‎   
 #### 3. If training models:
-- Ensure to <u>[clean your dataset](https://docs.aihub.wtf/rvc/resources/datasets/#cleaning-datasets)</u> properly, this includes removing silences and distortions.
+- Ensure to <u>[clean your dataset](https://docs.ai-hub.wtf/rvc/resources/datasets/#cleaning-datasets)</u> properly, this includes removing silences and distortions.
 
 ***
 ###### ‎
 :::content-center
 #### `You have reached the end.`
 
-[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.aihub.wtf/rvc/#contributions)
+[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.ai-hub.wtf/rvc/#contributions)
 :::

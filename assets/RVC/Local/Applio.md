@@ -21,7 +21,7 @@ order: 5000
 
 - Because of its user-friendly experience & active development, it's considered to be one of the best forks.     
 
-- It also has a <u>[cloud version](https://colab.research.google.com/github/iahispano/applio/blob/master/assets/Applio.ipynb)</u>, in case you don't meet the <u>[requirements](https://docs.aihub.wtf/essentials/whats-rvc/#what-are-the-requirements-for-rvc-locally/)</u> to run it locally.     
+- It also has a <u>[cloud version](https://colab.research.google.com/github/iahispano/applio/blob/master/assets/Applio.ipynb)</u>, in case you don't meet the <u>[requirements](https://docs.ai-hub.wtf/essentials/whats-rvc/#what-are-the-requirements-for-rvc-locally/)</u> to run it locally.     
 ‎      
 #### Pros & Cons :icon-tasklist:
 ==- *Learn more*
@@ -77,14 +77,14 @@ order: 5000
 :::content-center
 ## Inference :icon-unmute:   
 !!!success
-If you encounter an issue, be sure to read the <u>[Troubleshooting](https://docs.aihub.wtf/rvc/local/mainline/#troubleshooting-)</u> chapter.
+If you encounter an issue, be sure to read the <u>[Troubleshooting](https://docs.ai-hub.wtf/rvc/local/mainline/#troubleshooting-)</u> chapter.
 !!!
 :::
 ###### ‎  
 ###### ‎   
 #### 1. Upload voice model.
 - Go to the **Download** tab.       
-You have two ways of uploading it: through <u>[**its link**](https://docs.aihub.wtf/essentials/voice-models/#how-to-search-voice-models)</u> or **manually** inputting its files.
+You have two ways of uploading it: through <u>[**its link**](https://docs.ai-hub.wtf/essentials/voice-models/#how-to-search-voice-models)</u> or **manually** inputting its files.
 
     +++ Link
     a. Go to the **Download** tab & paste the link of the model in the `Model Link` bar. It must be from Hugging Face or Google Drive.        
@@ -140,7 +140,7 @@ b. Select your model in the ``Voice Model`` dropdown.
 
 ‎  
 #### 4. Modify settings. (optional)      
--  Unfold `Advanced Settings` if you wish to modify the <u>[inference settings](https://docs.aihub.wtf/rvc/resources/inference-settings/)</u> for better results, or to determine the output folder.
+-  Unfold `Advanced Settings` if you wish to modify the <u>[inference settings](https://docs.ai-hub.wtf/rvc/resources/inference-settings/)</u> for better results, or to determine the output folder.
 
     <img src="..\applio-img/3-advanced.png" alt="image" width="600">‎   
 ***
@@ -160,8 +160,8 @@ b. Once it's done, you can hear the results in the **Export Audio** box below.
 ## Training :icon-dependabot:
 ###### ‎   
 !!!warning
-The training guide will be centered around using <u>[TensorBoard](https://docs.aihub.wtf/rvc/resources/epochs--tensorboard/#tensorboard)</u>. Read about it first if you haven't already.      
-If you encounter an issue, be sure to read the <u>[Troubleshooting](https://docs.aihub.wtf/rvc/local/mainline/#troubleshooting-)</u> chapter.
+The training guide will be centered around using <u>[TensorBoard](https://docs.ai-hub.wtf/rvc/resources/epochs--tensorboard/#tensorboard)</u>. Read about it first if you haven't already.      
+If you encounter an issue, be sure to read the <u>[Troubleshooting](https://docs.ai-hub.wtf/rvc/local/mainline/#troubleshooting-)</u> chapter.
 !!!
 :::
 ###### ‎     
@@ -188,7 +188,7 @@ Don't include spaces/special characters.
 ###### ‎     
 ##### c. Sampling Rate
 ###### ‎    
-- Select your dataset's sample rate. If you don't know the amount, click <u>[here](https://docs.aihub.wtf/rvc/local/applio/#extra)</u>.
+- Select your dataset's sample rate. If you don't know the amount, click <u>[here](https://docs.ai-hub.wtf/rvc/local/applio/#extra)</u>.
 
     <img src="..\applio-img\4-samplerate.png" alt="image" width="300">‎  
 
@@ -208,7 +208,7 @@ Don't include spaces/special characters.
 ###### ‎    
 ##### a. Pitch extraction algorithm
 ###### ‎  
-- Select the <u>[algorithm](https://docs.aihub.wtf/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u> you want. Use either ``Crepe`` or ``RMVPE``, as the rest are outdated.
+- Select the <u>[algorithm](https://docs.ai-hub.wtf/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u> you want. Use either ``Crepe`` or ``RMVPE``, as the rest are outdated.
 
     <img src="..\applio-img\4-f0.png" alt="image" width="400">
 
@@ -216,7 +216,7 @@ Don't include spaces/special characters.
 ###### ‎  
 ##### b. Hop Length (optional)
 ###### ‎  
-- If you chose ``Crepe``, you can modify its <u>[hop length](https://docs.aihub.wtf/rvc/resources/inference-settings/#mangio-crepe)</u>.
+- If you chose ``Crepe``, you can modify its <u>[hop length](https://docs.ai-hub.wtf/rvc/resources/inference-settings/#mangio-crepe)</u>.
 
     <img src="..\applio-img\4-hoplength.png" alt="image" width="900">
 
@@ -243,7 +243,7 @@ It'll finish when it says `extracted successfully`.
 ###### ‎  
 ##### b. Save Every Epoch
 ###### ‎  
-- Frequency of the <u>[saving checkpoints](https://docs.aihub.wtf/extra/glossary/#checkpoints)</u>, based on the <u>[epochs](https://docs.aihub.wtf/rvc/resources/epochs--tensorboard/)</u>.      
+- Frequency of the <u>[saving checkpoints](https://docs.ai-hub.wtf/extra/glossary/#checkpoints)</u>, based on the <u>[epochs](https://docs.ai-hub.wtf/rvc/resources/epochs--tensorboard/)</u>.      
 ‎   
 - If you are a newbie, simply leave it at `15`.              
 
@@ -255,9 +255,9 @@ It'll finish when it says `extracted successfully`.
 ###### ‎  
 ##### c. Total Epoch
 ###### ‎  
-- Input the total amount of <u>[epochs](https://docs.aihub.wtf/rvc/resources/epochs--tensorboard/)</u> (training cycles) for the model.     
+- Input the total amount of <u>[epochs](https://docs.ai-hub.wtf/rvc/resources/epochs--tensorboard/)</u> (training cycles) for the model.     
 ‎   
-- But since we'll use <u>[TensorBoard](https://docs.aihub.wtf/rvc/resources/epochs--tensorboard/#tensorboard)</u>, use an arbitrarily large value like `1000`
+- But since we'll use <u>[TensorBoard](https://docs.ai-hub.wtf/rvc/resources/epochs--tensorboard/#tensorboard)</u>, use an arbitrarily large value like `1000`
 
     <img src="..\applio-img\4-epoch.png" alt="image" width="420">‎   
 ***
@@ -271,14 +271,14 @@ It'll finish when it says `extracted successfully`.
 ###### ‎  
 ##### e. Generate Index
 ###### ‎  
-- Click `Generate Index`. This will create the model's <u>[.INDEX](https://docs.aihub.wtf/essentials/voice-models/#voice-model-files)</u> file.
+- Click `Generate Index`. This will create the model's <u>[.INDEX](https://docs.ai-hub.wtf/essentials/voice-models/#voice-model-files)</u> file.
 ***
 ###### ‎  
 ##### f. Start Training
 ###### ‎  
 - Press `Start Training` to begin the training process.     
 ‎   
-- To open <u>[TB](https://docs.aihub.wtf/rvc/resources/epochs--tensorboard/#tensorboard)</u>, execute `run-tensorboard` in Applio's folder. Remember to monitor it, as well as the console just in case.           
+- To open <u>[TB](https://docs.ai-hub.wtf/rvc/resources/epochs--tensorboard/#tensorboard)</u>, execute `run-tensorboard` in Applio's folder. Remember to monitor it, as well as the console just in case.           
 ‎   
 - The latter will show you errors if they happen, and information about the epochs & checkpoints.   
 
@@ -311,7 +311,7 @@ iii. Select the **.INDEX** named ``added_`` & move it to your newly made folder.
 ###### ‎  
 ##### c. Get the PTH
 ###### ‎  
-i. In said folder you'll also find all the <u>[checkpoints](https://docs.aihub.wtf/extra/glossary/#checkpoints)</u>.         
+i. In said folder you'll also find all the <u>[checkpoints](https://docs.ai-hub.wtf/extra/glossary/#checkpoints)</u>.         
 ‎  
 ii. Select the one **closest** to ***before*** the overtraining point, and move it to the new folder.
 
@@ -320,7 +320,7 @@ ii. Select the one **closest** to ***before*** the overtraining point, and move 
 
 ‎  
     ‎            
-iii. And that's all, have fun with your model. To test it, do a normal <u>[inference</u>](https://docs.aihub.wtf/rvc/local/applio/#inference-) as usual.
+iii. And that's all, have fun with your model. To test it, do a normal <u>[inference</u>](https://docs.ai-hub.wtf/rvc/local/applio/#inference-) as usual.
 
 ===
 
@@ -344,9 +344,9 @@ iii. And that's all, have fun with your model. To test it, do a normal <u>[infer
 ###### ‎  
 - Applio is also known for having one TTS tool by default, with **plenty** of voices to choose for.
 
-- You can also use it with **RVC models** & apply the <u>[inference settings](https://docs.aihub.wtf/rvc/resources/inference-settings/)</u> if you wish.
+- You can also use it with **RVC models** & apply the <u>[inference settings](https://docs.ai-hub.wtf/rvc/resources/inference-settings/)</u> if you wish.
 
-- Aditionally, you can download the **Eleven Labs** TTS <u>[plugin](https://docs.aihub.wtf/rvc/local/applio/#plugins)</u>.       
+- Aditionally, you can download the **Eleven Labs** TTS <u>[plugin](https://docs.ai-hub.wtf/rvc/local/applio/#plugins)</u>.       
 ***
 ###### ‎  
 #### <u>Instructions:</u>
@@ -357,11 +357,11 @@ iii. And that's all, have fun with your model. To test it, do a normal <u>[infer
 ***   
 ###### ‎   
 
-2. If you want to use an RVC model, <u>[download it](https://docs.aihub.wtf/rvc/local/applio/#1-upload-voice-model)</u>, go to **TTS**, click `Refresh` & select it in **Voice Model** & **Index File**.
+2. If you want to use an RVC model, <u>[download it](https://docs.ai-hub.wtf/rvc/local/applio/#1-upload-voice-model)</u>, go to **TTS**, click `Refresh` & select it in **Voice Model** & **Index File**.
 
    <img src="../applio-img/5-vm.png" alt="image" width="600" height="auto">‎    
 ‎             
-- To modify the <u>[inference settings](https://docs.aihub.wtf/rvc/resources/inference-settings/)</u> or the output folder for the TTS/RVC audio, unfold `Advanced Settings`.
+- To modify the <u>[inference settings](https://docs.ai-hub.wtf/rvc/resources/inference-settings/)</u> or the output folder for the TTS/RVC audio, unfold `Advanced Settings`.
 
 ***
 ###### ‎      
@@ -481,13 +481,13 @@ Then you'll be able to see the plugin in the **Plugins** tab.
 
 ==- *The voice glitches out.*
 ###### ‎   
-- This a phenomenon called artifacting. To fix it, read <u>[here](https://docs.aihub.wtf/rvc/resources/artifacting/)</u>.
+- This a phenomenon called artifacting. To fix it, read <u>[here](https://docs.ai-hub.wtf/rvc/resources/artifacting/)</u>.
 
 ===
 
 ==- *I couldn't find my answer.*
 ###### ‎   
-- Report your issue <u>[here](https://docs.aihub.wtf/rvc/#contributions)</u>.
+- Report your issue <u>[here](https://docs.ai-hub.wtf/rvc/#contributions)</u>.
 ===
 
 ***
@@ -495,5 +495,5 @@ Then you'll be able to see the plugin in the **Plugins** tab.
 :::content-center
 #### `You have reached the end.`
 
-[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.aihub.wtf/rvc/#contributions)
+[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.ai-hub.wtf/rvc/#contributions)
 :::

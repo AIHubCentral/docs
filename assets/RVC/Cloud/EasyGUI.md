@@ -11,7 +11,7 @@ visibility: private
 ## Introduction
 :::
 
-- The EasyGUI Colab is a port of the custom layout of <u>[Mainline](https://docs.aihub.wtf/rvc/local/mainline/)</u> made by <u>[Rejekts](https://ko-fi.com/rejekts)</u>, named as the Colab.
+- The EasyGUI Colab is a port of the custom layout of <u>[Mainline](https://docs.ai-hub.wtf/rvc/local/mainline/)</u> made by <u>[Rejekts](https://ko-fi.com/rejekts)</u>, named as the Colab.
 
 - Its strongest points are its active maintenance & that it holds the simplicity of Mainline.
 
@@ -28,7 +28,7 @@ visibility: private
 - Feature to save model to HF
 ||| ❌ **CONS** 
 - Has less features    
-- No <u>[Mangio-Crepe</u>](https://docs.aihub.wtf/rvc/resources/inference-settings/#pitch-extraction-algorithm) 
+- No <u>[Mangio-Crepe</u>](https://docs.ai-hub.wtf/rvc/resources/inference-settings/#pitch-extraction-algorithm) 
 - Usage limit for free users
 ||| 
 ===
@@ -91,7 +91,7 @@ b. Then open the **public url**.
 ### Inference 
 
 #### 1. Download model
-a. Go to the **Download Model** tab & paste the <u>[model link](https://docs.aihub.wtf/essentials/voice-models/#how-to-search-voice-models)</u> in the upper bar.
+a. Go to the **Download Model** tab & paste the <u>[model link](https://docs.ai-hub.wtf/essentials/voice-models/#how-to-search-voice-models)</u> in the upper bar.
 
     <img src="..\easygui-img\ui-i-modellink.png" alt="image" width="450">‎      
 ‎   
@@ -120,7 +120,7 @@ b. Once it's done uploading, click `Refresh` again.
 ***
 ###### ‎  
 #### 4. Modify settings (optional)
-- If you wish, modify the [inference settings](https://docs.aihub.wtf/rvc/resources/artifacting/) for better results. Unfold the **General settings** menu to see more.
+- If you wish, modify the [inference settings](https://docs.ai-hub.wtf/rvc/resources/artifacting/) for better results. Unfold the **General settings** menu to see more.
 
 - The **Index Rate** is in the **Auto-detect index path** bar, and **Pitch** is on the right of `Refresh`.
 
@@ -148,7 +148,7 @@ b. First set a name for your model in **Enter the experiment name**.
 ***
 ###### ‎
 #### 2. Target sample rate
-- Select your dataset's <u>[sample rate](https://docs.aihub.wtf/rvc/resources/datasets/#sample-rate)</u>.
+- Select your dataset's <u>[sample rate](https://docs.ai-hub.wtf/rvc/resources/datasets/#sample-rate)</u>.
 
     <img src="..\easygui-img\ui-t-samplerate.png" alt="image" width="300">‎ 
 
@@ -172,16 +172,16 @@ b. Once it's done uploading, press **Process Data**. It'll finish when the logs 
 ***
 ###### ‎    
 #### 5. Total training epochs
-- Input the total amount of <u>[epochs](https://docs.aihub.wtf/rvc/resources/epochs--tensorboard/)</u> (training cycles) for the model.
+- Input the total amount of <u>[epochs](https://docs.ai-hub.wtf/rvc/resources/epochs--tensorboard/)</u> (training cycles) for the model.
 
-- But since we'll use <u>[TensorBoard](https://docs.aihub.wtf/rvc/resources/epochs--tensorboard/#tensorboard)</u>, use an arbitrarily large value like `1000`
+- But since we'll use <u>[TensorBoard](https://docs.ai-hub.wtf/rvc/resources/epochs--tensorboard/#tensorboard)</u>, use an arbitrarily large value like `1000`
 
     <img src="..\easygui-img\ui-t-epochs.png" alt="image" width="420">‎
 
 ***
 ###### ‎
 #### 6. Save frequency
-- Rate at which the model will be saved, based on the <u>[epochs](https://docs.aihub.wtf/rvc/resources/epochs--tensorboard/)</u>. The saved models are known as the "checkpoints".    
+- Rate at which the model will be saved, based on the <u>[epochs](https://docs.ai-hub.wtf/rvc/resources/epochs--tensorboard/)</u>. The saved models are known as the "checkpoints".    
 
 - If you are a newbie, leave it at `15`.  
 
@@ -278,7 +278,7 @@ b. Paste it in the **input_path** & **save_as** bars.
 ***
 ###### ‎
 #### 4. Modify settings (optional)
-- Modify the <u>[inference settings](https://docs.aihub.wtf/rvc/resources/inference-settings/)</u> for better results if you wish.
+- Modify the <u>[inference settings](https://docs.ai-hub.wtf/rvc/resources/inference-settings/)</u> for better results if you wish.
 
 
 ***
@@ -326,7 +326,7 @@ iii. Paste the path in the **dataset_folder** bar. Then run the **STEP 1** cell.
 ###### ‎
 ‎ ‎ ‎ ‎ <img src="..\easygui-img\3-step2.png" alt="image" width="390">‎   
 ‎       
-i. Select the **RMVPE_GPU** <u>[algorithm](https://docs.aihub.wtf/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u>.     
+i. Select the **RMVPE_GPU** <u>[algorithm](https://docs.ai-hub.wtf/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u>.     
     Only use that one, as PM & Harvest are obsolete, and normal RMVPE is slower in this case.     
 ‎   
 ii. Then run the cell.      
@@ -339,7 +339,7 @@ ii. Then run the cell.
 ###### ‎
 ##### a. Train index
 ###### ‎
-i. Run the **STEP 3** to generate the <u>[.INDEX](https://docs.aihub.wtf/essentials/voice-models/#voice-model-files)</u> of the model.
+i. Run the **STEP 3** to generate the <u>[.INDEX](https://docs.ai-hub.wtf/essentials/voice-models/#voice-model-files)</u> of the model.
 
 ii. To download it, open the file explorer & go to RVC, logs, and in your model's folder right-click the INDEX named **added_** & press `Download`.
 
@@ -352,15 +352,15 @@ ii. To download it, open the file explorer & go to RVC, logs, and in your model'
 - The name you assigned the model previously.
 
 ##### b. Save frequency
-- Frequency of the <u>[saving checkpoints](https://docs.aihub.wtf/extra/glossary/#checkpoints)</u>, based on the <u>[epochs](https://docs.aihub.wtf/rvc/resources/epochs--tensorboard/)</u>.   
+- Frequency of the <u>[saving checkpoints](https://docs.ai-hub.wtf/extra/glossary/#checkpoints)</u>, based on the <u>[epochs](https://docs.ai-hub.wtf/rvc/resources/epochs--tensorboard/)</u>.   
 
 - If you are a newbie, simply leave it at `15`.        
 
 - E.g: with a value of ``10``, they will be saved after the epoch 10, 20, 30, etc.     
 
 ##### c. Epochs
-- Total amount of <u>[epochs](https://docs.aihub.wtf/rvc/resources/epochs--tensorboard/)</u> for the model.
-- But since we'll use <u>[TensorBoard](https://docs.aihub.wtf/rvc/resources/epochs--tensorboard/#tensorboard)</u>, use an arbitrarily large number like ``2000``.
+- Total amount of <u>[epochs](https://docs.ai-hub.wtf/rvc/resources/epochs--tensorboard/)</u> for the model.
+- But since we'll use <u>[TensorBoard](https://docs.ai-hub.wtf/rvc/resources/epochs--tensorboard/#tensorboard)</u>, use an arbitrarily large number like ``2000``.
 
 ##### d. Batch size
 - If you are a newbie, leave it at `8`. If your dataset is smaller (around 2 minutes or less) use `4` instead.
@@ -368,7 +368,7 @@ ii. To download it, open the file explorer & go to RVC, logs, and in your model'
 ##### e. Start training
 i. Begin training by running said cell. All the training files will be stored in your GD storage, so 
 
-ii. <u>[TB](https://docs.aihub.wtf/rvc/resources/epochs--tensorboard/#tensorboard)</u> will open in a momment. Remember to monitor it, as well as the cell's logs just in case.     
+ii. <u>[TB](https://docs.ai-hub.wtf/rvc/resources/epochs--tensorboard/#tensorboard)</u> will open in a momment. Remember to monitor it, as well as the cell's logs just in case.     
 
     The latter will show you errors if they happen, and information about the epochs & checkpoints.   
 
@@ -379,7 +379,7 @@ ii. <u>[TB](https://docs.aihub.wtf/rvc/resources/epochs--tensorboard/#tensorboar
 - <u>[Stay AFK](https://docs.google.com/document/d/1Pr-AZndodmWgsbOeuHQU4IrgbatFgYc1ChOq_ZAf_5s/edit?usp=sharing)</u> for a long time.     
 - Disconnect from your Internet.       
 - Don't solve the captchas that (might) pop up occasionally.    
-- Run out of <u>[GPU runtime](https://docs.aihub.wtf/rvc/extra/glossary/#google-colab)</u>. 
+- Run out of <u>[GPU runtime](https://docs.ai-hub.wtf/rvc/extra/glossary/#google-colab)</u>. 
 !!!
 
 - If the session ends due to exhausting GPU runtime, don't worry, if you followed the [Setting Up]() procedure, all the training files will be stored in your GD storage.
@@ -397,5 +397,5 @@ ii. <u>[TB](https://docs.aihub.wtf/rvc/resources/epochs--tensorboard/#tensorboar
 :::content-center
 #### `You have reached the end.`
 
-[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.aihub.wtf/rvc/#contributions)
+[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.ai-hub.wtf/rvc/#contributions)
 :::
