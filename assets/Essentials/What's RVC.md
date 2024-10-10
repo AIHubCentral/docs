@@ -14,7 +14,7 @@ visibility:
 
 - It was designed for desktop, requiring great **specs** to run it effectively, specially **GPU** for training models (specifically **NVIDIA**).
 
-- Though it can be executed through the <u>[cloud](https://docs.aihub.wtf/extra/glossary/#cloud-based)</u> & be used in **any** device, in case you don't meet the previous requirement.        
+- Though it can be executed through the <u>[cloud](https://docs.ai-hub.wtf/extra/glossary/#cloud-based)</u> & be used in **any** device, in case you don't meet the previous requirement.        
 ‎       
 ***
 ## Forks :icon-repo-forked:
@@ -23,7 +23,7 @@ visibility:
 
 - RVC has quite a few forks made by the community, each one meeting different **needs** for the user, and with its pros & cons.     
 
-- These are the main ones, along with their <u>[cloud-based](https://docs.aihub.wtf/extra/glossary/#cloud-based)</u> counterparts:       
+- These are the main ones, along with their <u>[cloud-based](https://docs.ai-hub.wtf/extra/glossary/#cloud-based)</u> counterparts:       
 
     {.list-icon}
     - #### :icon-chevron-right: <u>[Mainline](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI)</u> (Original RVC)
@@ -50,12 +50,12 @@ visibility:
 ==- *What's the best fork?*
 ###### ‎       
 - As explained before, it depends on your needs. It's best to try them yourself.
-- For **local** users, <u>[Mainline](https://docs.aihub.wtf/rvc/local/mainline/)</u> is a great starting point. For **cloud** users, the <u>[Applio Colab](https://docs.aihub.wtf/rvc/cloud/applio-colab/)</u>.
+- For **local** users, <u>[Mainline](https://docs.ai-hub.wtf/rvc/local/mainline/)</u> is a great starting point. For **cloud** users, the <u>[Applio Colab](https://docs.ai-hub.wtf/rvc/cloud/applio-colab/)</u>.
 ===
 
 ==- *What are the requirements for RVC locally?*
 ###### ‎      
-> The minimum specs vary depending if it's for training models or <u>[inference](https://docs.aihub.wtf/extra/glossary/#inference)</u>.
+> The minimum specs vary depending if it's for training models or <u>[inference](https://docs.ai-hub.wtf/extra/glossary/#inference)</u>.
 +++ Training
 **SPEC** | **REQUIREMENT** | 
 :---: | :---: | :---: |
@@ -86,20 +86,20 @@ Storage | 6 GB
 ###### ‎  
 - You can, but it's not recommended, as they aren't compatible with AI software.
 - Therefore RVC will be more prone to errors & rely on your CPU, slowing down the process significantly.
-- So it's more convenient using RVC through the <u>[cloud](https://docs.aihub.wtf/extra/glossary/#cloud-based)</u>.
+- So it's more convenient using RVC through the <u>[cloud](https://docs.ai-hub.wtf/extra/glossary/#cloud-based)</u>.
 === 
 
 ==- *How long does it take to train?*
 ###### ‎      
 - The total time depends on a lot of factors, like dataset length, batch size, pretrains, specs, etc.
 
-- A 10 min <u>[dataset](https://docs.aihub.wtf/rvc/resources/datasets/)</u> with <u>[RMVPE](https://docs.aihub.wtf/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u> may take around 1 to 2 hours.
+- A 10 min <u>[dataset](https://docs.ai-hub.wtf/rvc/resources/datasets/)</u> with <u>[RMVPE](https://docs.ai-hub.wtf/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u> may take around 1 to 2 hours.
 === 
 
 ==- *Can I run it on a Mac?*
 ###### ‎      
 - Yes, on Macs of recent generations.
-- But you can only do <u>[inference](https://docs.aihub.wtf/extra/glossary/#inference)</u> & it's a little unstable.  
+- But you can only do <u>[inference](https://docs.ai-hub.wtf/extra/glossary/#inference)</u> & it's a little unstable.  
 ===
 
 ==- *Do I need internet to use it?*
@@ -113,5 +113,5 @@ Storage | 6 GB
 :::content-center
 #### `You have reached the end.`
 
-[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.aihub.wtf/rvc/#contributions)
+[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.ai-hub.wtf/rvc/#contributions)
 :::

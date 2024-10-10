@@ -122,5 +122,5 @@ On the other hand, on Colab, it might take around 7 hours (without considering t
 :::content-center
 #### `You have reached the end.`
 
-[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.aihub.wtf/rvc/#contributions)
+[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.ai-hub.wtf/rvc/#contributions)
 :::

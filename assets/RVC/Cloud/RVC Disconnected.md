@@ -10,9 +10,9 @@ order: 3000
 ## Introduction :icon-book:
 :::
 ###### ‎              
-- RVC Disconnected (or RVC-D) is a port of <u>[Mangio](https://docs.aihub.wtf/rvc/local/mangio/)</u> to <u>[Google Colab</u>](https://docs.aihub.wtf/extra/glossary/#google-colab), for exclusively training. Notebook made by <u>[Kit Lemonfoot</u>](https://huggingface.co/Kit-Lemonfoot).
+- RVC Disconnected (or RVC-D) is a port of <u>[Mangio](https://docs.ai-hub.wtf/rvc/local/mangio/)</u> to <u>[Google Colab</u>](https://docs.ai-hub.wtf/extra/glossary/#google-colab), for exclusively training. Notebook made by <u>[Kit Lemonfoot</u>](https://huggingface.co/Kit-Lemonfoot).
 
-- It's free, includes all the necessary tools for a quality model, the <u>[TensorBoard</u>](https://docs.aihub.wtf/rvc/resources/epochs--tensorboard/#tensorboard), & it's the fastest Colab space for training.    
+- It's free, includes all the necessary tools for a quality model, the <u>[TensorBoard</u>](https://docs.ai-hub.wtf/rvc/resources/epochs--tensorboard/#tensorboard), & it's the fastest Colab space for training.    
 
 - Making it the go-to method for training for cloud RVC users. Pretty much the only big downside is the time limit (but you can switch to another account & continue).      
 ‎       
@@ -42,7 +42,7 @@ order: 3000
 
 ###### ‎ 
 !!!warning WARNING:
-1.‎ The guide is centered around the <u>[TensorBoard](https://docs.aihub.wtf/rvc/resources/epochs--tensorboard/#tensorboard)</u>. Read it first if you haven't already.    
+1.‎ The guide is centered around the <u>[TensorBoard](https://docs.ai-hub.wtf/rvc/resources/epochs--tensorboard/#tensorboard)</u>. Read it first if you haven't already.    
 2. Turn on <u>[third-party cookies</u>](https://cleeng.zendesk.com/hc/en-us/articles/360009526800-How-to-enable-third-party-cookies-on-my-browser-), or TB might not work.
 !!!
 :::
@@ -97,13 +97,13 @@ a. Go to the `Set Training Variables` cell.
 :   If you aren't familiar with pretrains, select `original`.
 
 `target_sample_rate`
-:   Select your dataset's <u>[sample rate</u>](https://docs.aihub.wtf/rvc/resources/datasets/#sample-rate).
+:   Select your dataset's <u>[sample rate</u>](https://docs.ai-hub.wtf/rvc/resources/datasets/#sample-rate).
 
 ``pitch_extraction_algorithm``
-:   The <u>[extraction method](https://docs.aihub.wtf/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u>. Don't use Harvest, as it's obsolete.        
+:   The <u>[extraction method](https://docs.ai-hub.wtf/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u>. Don't use Harvest, as it's obsolete.        
 
 `crepe_hop_length`
-:   If you chose `Mangio-Crepe`, this defines the <u>[Hop Length](https://docs.aihub.wtf/rvc/resources/inference-settings/#mangio-crepe)</u>.
+:   If you chose `Mangio-Crepe`, this defines the <u>[Hop Length](https://docs.ai-hub.wtf/rvc/resources/inference-settings/#mangio-crepe)</u>.
 
 ***
 ###### ‎ 
@@ -120,7 +120,7 @@ b. Below, execute **Preprocessing, Feature Extraction**, & **Save preprocessed d
 ***
 ###### ‎ 
 #### 3. Train Index  
-a. Run **Index Training** to create the model's <u>[.INDEX</u>](https://docs.aihub.wtf/essentials/voice-models/#voice-model-files) file.      
+a. Run **Index Training** to create the model's <u>[.INDEX</u>](https://docs.ai-hub.wtf/essentials/voice-models/#voice-model-files) file.      
 
     <img src="../rvcdisconnected-img/17.png" alt="image" width="450" height="auto">‎        
 ‎       
@@ -137,11 +137,11 @@ b. To download it, in GD open `rvcDisconnected` & the folder named after the mod
 - #### <u>Define these values:</u>
 
 `save_frequency`
-:   Frequency of the <u>[saving checkpoints](https://docs.aihub.wtf/extra/glossary/#checkpoints)</u>, based on the <u>[epochs](https://docs.aihub.wtf/rvc/resources/epochs--tensorboard/)</u>. If you're a newbie, simply leave it at `15`.      
+:   Frequency of the <u>[saving checkpoints](https://docs.ai-hub.wtf/extra/glossary/#checkpoints)</u>, based on the <u>[epochs](https://docs.ai-hub.wtf/rvc/resources/epochs--tensorboard/)</u>. If you're a newbie, simply leave it at `15`.      
 <u>E.g:</u> with a value of ``10``, it will be saved after the epoch 10, 20, 30, etc.   
 
 `total_epochs`
-:   The total amount of <u>[epochs](https://docs.aihub.wtf/rvc/resources/epochs--tensorboard/)</u> for the model. But since we'll use <u>[TensorBoard](https://docs.aihub.wtf/rvc/resources/epochs--tensorboard/#tensorboard)</u>, use an arbitrarily large number like ``2000``.
+:   The total amount of <u>[epochs](https://docs.ai-hub.wtf/rvc/resources/epochs--tensorboard/)</u> for the model. But since we'll use <u>[TensorBoard](https://docs.ai-hub.wtf/rvc/resources/epochs--tensorboard/#tensorboard)</u>, use an arbitrarily large number like ``2000``.
 
 `batch_size`
 :   Use ``8`` if you are a newbie.
@@ -150,7 +150,7 @@ But if your dataset is small (around 2 minutes or less), use ``4``.
 ***
 ###### ‎ 
 #### 5. Begin training
-- Execute the **Training** cell to begin training. <u>[TB](https://docs.aihub.wtf/rvc/resources/epochs--tensorboard/#tensorboard)</u> will open up after a few seconds, & the graphs will take a minute to appear.         
+- Execute the **Training** cell to begin training. <u>[TB](https://docs.ai-hub.wtf/rvc/resources/epochs--tensorboard/#tensorboard)</u> will open up after a few seconds, & the graphs will take a minute to appear.         
 ‎    
 - Remember to monitor it, as well as the cell's logs. The latter will show you errors if they happen, and information about the epochs & checkpoints.         
 ‎       
@@ -158,7 +158,7 @@ But if your dataset is small (around 2 minutes or less), use ``4``.
    - <u>[Stay AFK](https://docs.google.com/document/d/1Pr-AZndodmWgsbOeuHQU4IrgbatFgYc1ChOq_ZAf_5s/edit?usp=sharing)</u> for a long time.     
    - Disconnect from your Internet.       
    - Don't solve the captchas that (might) pop up occasionally.    
-   - Run out of <u>[GPU runtime](https://docs.aihub.wtf/rvc/extra/glossary/#google-colab)</u>.     
+   - Run out of <u>[GPU runtime](https://docs.ai-hub.wtf/rvc/extra/glossary/#google-colab)</u>.     
 
 ***
 ###### ‎ 
@@ -173,7 +173,7 @@ But if your dataset is small (around 2 minutes or less), use ``4``.
 
     <img src="../rvcdisconnected-img/22.png" alt="image" width="330" height="auto">‎        
 ‎       
-3. Once your GPU runtime resets, begin the <u>[retraining](https://docs.aihub.wtf/rvc/cloud/rvc-disconnected/#resuming-)</U> procedure.
+3. Once your GPU runtime resets, begin the <u>[retraining](https://docs.ai-hub.wtf/rvc/cloud/rvc-disconnected/#resuming-)</U> procedure.
 
 - After exporting, you are free to resume training until runtime is exhausted or close the session.
 ***
@@ -184,7 +184,7 @@ a. When you're very sure of overtraining, you can stop training by pressing the 
 b. Click the folder symbol on the left.     
 (For mobile users: tap the three lines on the top left & `Show file browser`)     
 
-    Open the ``Mangio-RVC-Fork`` folder, then `weights`. You'll find the <u>[checkpoints](https://docs.aihub.wtf/extra/glossary/#checkpoints)</u>.    
+    Open the ``Mangio-RVC-Fork`` folder, then `weights`. You'll find the <u>[checkpoints](https://docs.ai-hub.wtf/extra/glossary/#checkpoints)</u>.    
 
     <img src="../rvcdisconnected-img/20.png" alt="image" width="210" height="auto">‎    
 ‎   
@@ -193,7 +193,7 @@ c. Right-click the one that's **closest** to ***before*** the overtraining point
     The models will be organized with this format: **Name_Epoch_Step.pth**.       
     E.g: `arianagrande_e60_s120.pth`    
 ‎   
-d. And that's all. To test it, do a normal <u>[inference](https://docs.aihub.wtf/essentials/how-to-make-ai-cover/)</u> as usual.
+d. And that's all. To test it, do a normal <u>[inference](https://docs.ai-hub.wtf/essentials/how-to-make-ai-cover/)</u> as usual.
 
 ***
 :::content-center
@@ -222,12 +222,12 @@ d. And that's all. To test it, do a normal <u>[inference](https://docs.aihub.wtf
 ***
 4. You can change the **save frequency** or increase the **total epochs**, in case you didn't input enough before.
 ***
-5. Run the **Training** cell to retrain. Remember to monitor <u>[TB</u>](https://docs.aihub.wtf/rvc/resources/epochs--tensorboard/#tensorboard) as before.       
+5. Run the **Training** cell to retrain. Remember to monitor <u>[TB</u>](https://docs.ai-hub.wtf/rvc/resources/epochs--tensorboard/#tensorboard) as before.       
 
 ***
 ###### ‎
 :::content-center
 #### `You have reached the end.`
 
-[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.aihub.wtf/rvc/#contributions)
+[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.ai-hub.wtf/rvc/#contributions)
 :::

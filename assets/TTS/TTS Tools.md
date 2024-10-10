@@ -10,7 +10,7 @@ order: 2000
 ***
 - TTS is an abbreviation of Text To Speech, an AI that converts any given text into vocal speech.
 
-- The ones listed here offer a decent variety of features & options, such as <u>[model training](https://docs.aihub.wtf/extra/glossary/#model-training)</u>, <u>[fine-tuning](https://docs.aihub.wtf/extra/glossary/#fine-tuning)</u>, <u>[0 shot training](https://docs.aihub.wtf/extra/glossary/#0-shot-training)</u>, or being <u>[mixed with RVC](https://ominous-waffle-r44vr6g95vvj2wqrx-5000.app.github.dev/other-ai/tts-tools/#rvc-forks)</u>.
+- The ones listed here offer a decent variety of features & options, such as <u>[model training](https://docs.ai-hub.wtf/extra/glossary/#model-training)</u>, <u>[fine-tuning](https://docs.ai-hub.wtf/extra/glossary/#fine-tuning)</u>, <u>[0 shot training](https://docs.ai-hub.wtf/extra/glossary/#0-shot-training)</u>, or being <u>[mixed with RVC](https://ominous-waffle-r44vr6g95vvj2wqrx-5000.app.github.dev/other-ai/tts-tools/#rvc-forks)</u>.
 
 - Here's an index of the best TTS tools out there:    
 ‎
@@ -27,19 +27,19 @@ order: 2000
 - It’s characterized by its great ability to express **emotions** & non-speech sounds.
 - Examples are laughter, laughs, sighs, gasps, clearing throat, hesitations ( - or … ), emphasis of words, etc.
 
-- It can be used both <u>[locally](https://docs.aihub.wtf/extra/glossary/#local-running)</u> or in the <u>[cloud](https://docs.aihub.wtf/rvc/extra/glossary/#cloud-based)</u>:
+- It can be used both <u>[locally](https://docs.ai-hub.wtf/extra/glossary/#local-running)</u> or in the <u>[cloud](https://docs.ai-hub.wtf/rvc/extra/glossary/#cloud-based)</u>:
 
   +++ :icon-device-desktop: ‎ LOCAL
   
   {.list-icon}
   - :icon-book: [Official Guide](https://github.com/suno-ai/bark)
-  - :icon-repo-forked: [Fixed Fork](https://github.com/Nick088Official/bark-gui-fix) (with UI & [fine-tuning](https://docs.aihub.wtf/extra/glossary/#fine-tuning))
+  - :icon-repo-forked: [Fixed Fork](https://github.com/Nick088Official/bark-gui-fix) (with UI & [fine-tuning](https://docs.ai-hub.wtf/extra/glossary/#fine-tuning))
   - :icon-rocket: [Voice Cloning](https://github.com/KevinWang676/Bark-Voice-Cloning/tree/main)
 
   +++ :icon-cloud: ‎ CLOUD
 
   - [Bark TTS Colab](https://colab.research.google.com/github/Nick088Official/Easier-Bark-TTS-Google-Colab/blob/main/Easier_Bark_TTS.ipynb)
-  - [GUI Version](https://colab.research.google.com/github/Nick088Official/bark-gui-fix-google-colab/blob/main/Bark_GUI_Fix.ipynb) (with [fine-tuning](https://docs.aihub.wtf/extra/glossary/#fine-tuning))
+  - [GUI Version](https://colab.research.google.com/github/Nick088Official/bark-gui-fix-google-colab/blob/main/Bark_GUI_Fix.ipynb) (with [fine-tuning](https://docs.ai-hub.wtf/extra/glossary/#fine-tuning))
   - [0 Shot Voice Cloning](https://colab.research.google.com/github/Nick088Official/Easier-Bark-Voice-Cloning-Google-Colab/blob/main/Bark_Voice_Cloning.ipynb)
   - [Official HF Space](https://huggingface.co/spaces/suno/bark)
   - [0 Shot Voice Cloning HF Space](https://huggingface.co/spaces/kevinwang676/Bark-with-Voice-Cloning)
@@ -51,7 +51,7 @@ order: 2000
 ***
 - This is Microsoft Edge TTS, which is good **quality**, multilingual & works great on long sentences. 
 
-- It can only be used online via their API, through their web browser, a HF/Colab space or **mixed with <u>[RVC](https://docs.aihub.wtf/rvc/essentials/whats-rvc/)</u>**.
+- It can only be used online via their API, through their web browser, a HF/Colab space or **mixed with <u>[RVC](https://docs.ai-hub.wtf/rvc/essentials/whats-rvc/)</u>**.
 
   +++ :icon-globe: ‎ BROWSER
   1. [Download the browser.](https://www.microsoft.com/en-us/edge/download?ch=1&form=MA13FJ)
@@ -102,9 +102,9 @@ order: 2000
   - 🤗 [Hugging Face](https://huggingface.co/spaces/Nick088/Edge-TTS)
 
   +++ :icon-dependabot: RVC FORKS
-  - [Ilaria RVC](https://docs.aihub.wtf/rvc/cloud/ilaria-rvc/#tts-) 
-  - [Applio Colab](https://docs.aihub.wtf/rvc/cloud/applio-colab/#tts)
-  - [Local Applio](https://docs.aihub.wtf/rvc/local/applio/)   
+  - [Ilaria RVC](https://docs.ai-hub.wtf/rvc/cloud/ilaria-rvc/#tts-) 
+  - [Applio Colab](https://docs.ai-hub.wtf/rvc/cloud/applio-colab/#tts)
+  - [Local Applio](https://docs.ai-hub.wtf/rvc/local/applio/)   
   ‎
   !!!
   These being mixed with RVC means it generates the speech & runs the output through RVC, applying the voice model.
@@ -115,7 +115,7 @@ order: 2000
 ***
 - StyleTTS 2 aims to achieve human-level TTS synthesis only in English.   
 ‎   
-- It works better on full sentences, is both available locally & online, and you can [fine-tune](https://docs.aihub.wtf/extra/glossary/#fine-tuning) it with your own dataset.    
+- It works better on full sentences, is both available locally & online, and you can [fine-tune](https://docs.ai-hub.wtf/extra/glossary/#fine-tuning) it with your own dataset.    
 ‎   
 - It has 2 versions:   
 ‎       
@@ -264,5 +264,5 @@ order: 2000
 :::content-center
 #### `You have reached the end.`
 
-[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.aihub.wtf/rvc/#contributions)
+[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.ai-hub.wtf/rvc/#contributions)
 :::
