@@ -49,7 +49,7 @@ a. If you wish to install a custom pretrain go to the 'Download Custom Pretrains
    <img src="../mainline-img/1.png" alt="image" width="600" height="auto"> 
 
    
-b. If the pretrain you want isn't there fo to the top left and click '+ Code'.
+b. If the pretrain you want isn't there go to the top left and click '+ Code'.
 
    <img src="../mainline-img/2.png" alt="image" width="600" height="auto">     
   
