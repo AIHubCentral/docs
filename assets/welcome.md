@@ -2,7 +2,7 @@
 icon: home-fill
 ---
 # :icon-home-fill: Home
-``Last update: Mar 10, 2024``         
+``Last update: Oct 21, 2024``         
 ***
 :::content-center
 <img src=".\img\a.png" alt="image" width="345" height="auto">
@@ -53,8 +53,8 @@ icon: home-fill
 
 ## Credits :icon-heart:
 - **Lead by:** Julia & Eddy
-- **General Help:** Poopmaster Raid, Light, Faze Masta, Alexolotl, Delik
-- **Reviewing:** Faze Masta, Alexolotl, SimplCup, Delik, Litsa
+- **General Help:** Poopmaster Raid, Light, Faze Masta, Alexolotl, Delik, Razer
+- **Reviewing:** Faze Masta, Alexolotl, SimplCup, Delik, Litsa, Lyery, Razer
 - **OG Guides:** Litsa, Angetyde, LollenApe, Faze Masta, MrM0dz, FDG, Eddy, Julia, Nick
 - **Backend:** Eddy & Yui
 - **Branding:** Grvyscale & Cthulhu
@@ -62,10 +62,5 @@ icon: home-fill
 ###### ‎     
 ## To-Do :icon-checklist:
 
-- EasyGUI
-- Advanced training
-- Advanced dataset cleaning
-- Pretrains
-- Kaggle
-
+- Nothing :smile:
 ***

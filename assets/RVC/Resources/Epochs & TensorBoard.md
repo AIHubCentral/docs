@@ -143,13 +143,30 @@ For <u>[RVC Disconnected</u>](https://docs.ai-hub.wtf/rvc/cloud/rvc-disconnected
 - Use the model that was **closest** to ***before*** the OT point.      
     For more information, check the guide for your RVC in this website.
 
-+++ Advanced Guide
-:::content-center
-‎   
-:icon-alert: ~ ***Work in progress.*** ~ :icon-alert:
-:::
-+++
++++ Advanced Guide ‎     
+#### :icon-chevron-down: <u>Other Graphs</u>
+***
+The other graphs within RVC are:
 
+1. `FM` (Feature Matching): FM shows how well the model is able to recreate the features of the audio (lower is better).
+
+2. `KL` (Kullback-Leibler): Kl shows how similar the audio sounds to the source (lower is better).
+
+3. `Mel`: Mel shows how well the model can recreate the mel spectrogram (lower is better).
+
+4. `Grad_g`: This shows how well the model is capable of making new stuff (lower is better).
+
+5. `d/total`: This shows the discriminator's average loss. The discriminator tells the difference between what's Ai generated and what's not (lower is better).
+
+***
+#### :icon-chevron-down: <u>Mel Images</u>
+***
+- While looking through the Tensor Board you may come across `slice/mel_gen` and `slice/mel_org`. 
+     - `slice/mel_gen` Is an image of a mel spectrogram that the generator created in attempt to make it match `mel_org`.
+     <img src="../tensorboard-img/mel_gen.png" alt="image" width="700" height="700">‎ 
+
+     - `slice/mel_org` Is an image of a mel spectrogram view of audio from your dataset. 
+     <img src="../tensorboard-img/mel_og.png" alt="image" width="700" height="700">‎ 
 ***
 ###### ‎
 :::content-center

@@ -26,6 +26,8 @@ order: 1000
 
 3. Aditionally, you can pay hourly for **faster** GPU's instead of using the free ones by default.    
 This is optional, the paid plans are fast enough.
+
+4. Paperspace is the most unsupported cloud platform to use RVC on, so it is advisable that you use some other cloud service.
 ***
 ###### ‎   
 ## How to Use   

@@ -1,7 +1,7 @@
 input: ./assets
 output: .retype
 
-url: https://docs.ai-hub.wtf/
+url: # https://docs.ai-hub.wtf/
 
 branding:
   title:
