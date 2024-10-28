@@ -79,6 +79,12 @@ ZeroGPU HuggingFace Spaces have a quota per account, if you aren’t signed in y
 - Login so you get more quota
 - Wait
 - Pay to be an HuggingFace PRO Member to get X5 times more quota
+***
+#### No GPU is currently available for you after 60 seconds:
+As all ZeroGPU Spaces share this hardware, there might be times where ZeroGPU is busy, if you ever go through this error, you just need to wait a bit and retry.
+***
+#### The file is too large. You can only download files up to 500 MB in size:
+Ilaria RVC Zero got a limit for the Model Upload Size, if you run into this either use another model.
 
 ===
 

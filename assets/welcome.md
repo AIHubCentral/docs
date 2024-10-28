@@ -30,7 +30,7 @@ icon: home-fill
 ***
 #### :icon-chevron-right: :icon-info: ‎ [<u>What's RVC](https://docs.ai-hub.wtf/essentials/whats-rvc/)</u>
 ***
-#### :icon-chevron-right: 🍏 [<u>Applio Guide](https://docs.ai-hub.wtf/rvc/local/applio/)</u> - New!
+#### :icon-chevron-right: 🍏 [<u>Applio Guide](https://docs.ai-hub.wtf/rvc/local/applio/)</u>
 
 !!!
 ***
