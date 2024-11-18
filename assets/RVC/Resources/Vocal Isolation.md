@@ -16,7 +16,9 @@ order: 5000
 
 - The goal is to get an audio sample with clean vocals, which is what RVC needs to give the most accurate & quality results.
 
-- For RVC users, the best app is Ultimate Vocal Remover 5 (or **UVR**). It can be used either <u>[locally](https://docs.ai-hub.wtf/extra/glossary/#local-running)</u> or through the <u>[cloud](https://docs.ai-hub.wtf/rvc/resources/vocal-isolation/#cloud-uvr-)</u>. 
+- For RVC users, the best app is Ultimate Vocal Remover 5 (or **UVR**). It can be used either <u>[locally](https://docs.ai-hub.wtf/extra/glossary/#local-running)</u> or through the <u>[cloud](https://docs.ai-hub.wtf/rvc/resources/vocal-isolation/#cloud-uvr-)</u>.
+
+- If you want to remove noise manually to avoid ai artifacts you can use RX 11, which is mentioned in this guide. 
 ***
 <img src="../uvrmvsep-img/3.jpg" alt="image" width="" height="auto">‎       
 
@@ -24,7 +26,7 @@ order: 5000
 :::content-center
 ## Local UVR
 !!!warning 
-*You'll require great specs & GPU to run it effectively. Otherwise, use the <u>[cloud version](https://docs.ai-hub.wtf/rvc/resources/vocal-isolation/#cloud-uvr)</u>.*
+*You'll require great specs & GPU to run it effectively. Otherwise, use either the <u>[google colab version](https://docs.ai-hub.wtf/rvc/resources/vocal-isolation/#cloud-uvr)</u> or the hugging face space.*
 !!!
 :::
 ‎ 
@@ -32,7 +34,7 @@ order: 5000
 
 ### Installation :icon-download:
 *** 
-1. Go to their <u>[official website</u>](https://ultimatevocalremover.com/) & press `Download UVR`. 
+1. Go to their <u>[official website</u>](https://ultimatevocalremover.com/) & press `Download UVR`. And if you want to use BS Roformer you are going to need to install [this](https://github.com/TRvlvr/model_repo/releases/download/uvr_update_patches/UVR_Patch_4_14_24_18_7_BETA_full_Roformer.exe).
 
     <img src="../uvrmvsep-img/1.jpg" alt="image" width="" height="auto">   
 
@@ -82,7 +84,7 @@ b. If your GPU is **compatible with <u>[CUDA](https://docs.ai-hub.wtf/extra/glos
 ‎
 #### 3. Extract vocals. 
 ###### ‎  
-a. In **CHOOSE PROCESS METHOD** select `MDX-Net`, and select the `MDX23C` model.   
+a. In **CHOOSE PROCESS METHOD** select `MDX-Net`, and select either the `BS Roformer-Viper-X 1296` or `MDX23C` model.   
 
     <img src="../uvrmvsep-img/5.jpg" alt="image" width="250" height="auto">‎      
 ###### ‎  
@@ -187,7 +189,7 @@ Click the `Start processing` button at the bottom. And that will be all.
 
 ==- *I can't remove some of the backing vocals.*
 ###### ‎
-- Run the audio through MDX23C or DeNoise. Modify the <u>[Aggression Setting](https://docs.ai-hub.wtf/rvc/resources/vocal-isolation/#uvr-extracted-too-little-too-much)</u> if necessary.
+- Run the audio through BVE. Modify the <u>[Aggression Setting](https://docs.ai-hub.wtf/rvc/resources/vocal-isolation/#uvr-extracted-too-little-too-much)</u> if necessary.
 ===
 
 ==- *I couldn't find my answer.*
@@ -197,6 +199,65 @@ Click the `Start processing` button at the bottom. And that will be all.
 
 ***
 ###### ‎ 
+###### ‎ 
+:::content-center
+## X-Minus Pro
+‎ 
+:   ‎ 
+:::
+
+### How to Use :icon-checklist:
+
+***
+
+!!!warning
+Most of the extraction model are behind a pay wall.
+!!!
+
+==- *Extrating Vocals From Songs* 🎶
+###### 
+#### 1. Choose a Separator
+######
+a. First go to <u>[X-minus's website](https://x-minus.pro)</u> and click the "Vocal Remover" at the top right. 
+
+<img src="../x-minus-img/1.png" alt="image" width="600" height="auto"> 
+
+b. Then select "Music and vocals" and choose "Bs Roformer"
+  
+<img src="../x-minus-img/2.png" alt="image" width="600" height="auto">
+
+***
+#### 2. Upload Your Audio File
+
+c. Then click "select a file" and choose a audio file, or you can drag and drop a file. And when it's done it will look like this: 
+
+<img src="../x-minus-img/3.png" alt="image" width="600" height="auto">
+
+d. You can now click "Vocals" to download the vocals and "Other" to download the instrumentals.
+
+===
+
+==- *Cleaning Vocals* 🗣️
+######
+#### 1. Choose a De-Noiser
+######
+a.  In "De-Noise" select "Mel-Roformer De-Noise". You can also check the [model list](https://docs.ai-hub.wtf/rvc/resources/vocal-isolation/#best-models) to see what is the best model for your needs.
+
+<img src="../x-minus-img/4.png" alt="image" width="600" height="auto">
+
+***
+#### 2. Upload Your Audio File
+
+c. Then click "select a file" and choose a audio file, or you can drag and drop a file. And when it's done it will look like this: 
+
+<img src="../x-minus-img/3.png" alt="image" width="600" height="auto">
+
+d. You can now click "Vocals" to download the vocals and "Other" to download the instrumentals.
+
+===
+
+
+
 ###### ‎ 
 :::content-center
 ## Cloud UVR
@@ -257,7 +318,7 @@ b. Download the result located in the output folder.
 ===
 
 ==- *Cleaning Vocals* 🗣️ 
-###### ‎ 
+#####  ‎  ‎ 
 #### 1. Set up Colab
 ###### ‎
 a. Access the Colab space <u>[here](https://colab.research.google.com/github/Eddycrack864/Ultimate-Vocal-Remover-5.6-for-Google-Colab/blob/main/Ultimate_Vocal_Remover_5_6_for_Google_Colab.ipynb)</u> & **Log in** to your Google account. Credits to <u>[Eddy](https://github.com/Eddycrack864)</u> for the Colab.         
@@ -368,13 +429,111 @@ b. Playable audios will then appear in the output boxes below. To download the o
 
 ***
 
+######
+:::content-center
+## UVR Zero GPU 
+:::
+***
+###### ‎  
+######
+
+## How to use :icon-checklist:
+
+***
+
+==- Extract vocals
 ###### ‎
 
-:::content-center 
+Access the space <u>[here](https://huggingface.co/spaces/TheStinger/UVR5_UI)</u>, you don't need an account to use this.           
+    
+#### 2. Select vocals & options
+###### ‎  
+a. Tap the **Input Audio** box & select your audio, or simply drag & drop.     
+‎        
+<img src="../hugging-img/1.png" alt="image" width="1000" height="auto">‎           
+‎       
+‎       
+b. Once it's done uploading, in **CHOOSE PROCESS METHOD**, select ``BS/Mel Roformer``. Under that you can change **Segment Size** and **Overlap**, the defaults are fine.   
 ‎   
-<img src="../uvrmvsep-img/8.png" alt="image" width="400" height="auto">
+<img src="../hugging-img/2.png" alt="image" width="1000" height="auto">‎              
 
-###### ‎       
+‎ 
+#### 3. Select model
+###### ‎  
+d. Check the <u>[model list](https://docs.ai-hub.wtf/rvc/resources/vocal-isolation/#best-models)</u> & in **CHOOSE MODEL** pick the one according to what you need to remove.    
+‎       
+If you need to remove multiple noises, follow this pipeline for the best results:   
+``Remove instrumental -> Remove reverb -> Extract main vocals -> Remove noise``  
+‎  
+#### 4. Start Processing
+###### ‎  
+a. Click **Spererate!** below. Wait a moment for the audio to process.       
+‎       
+b. Playable audios will then appear in the output boxes below. To download the output, click the little download icon in the top right.            
+     
+- If you're extracting lead vocals, remember to download the backing ones if you wish to keep them.     
+===
+
+!!!success
+*If an issue arises, read the **Troubleshooting** chapter.*
+!!!
+***
+
+###### ‎  
+###### ‎  
+
+### Troubleshooting :icon-tools:
+***
+==- *UVR extracted too little/too much.*
+###### ‎
+- Modify the `Aggression Setting` value on the right. 
+- This determines the depth of the extraction. Only the VR method has it.
+- A higher value will deepen the extraction, and a lower one will soften it.
+- Each audio is different, so you'll have to test the ideal value.
+===
+
+==- *I can't remove some of the backing vocals.*
+- Run the audio through BVE. Modify the Aggression Setting if necessary.
+===
+
+==- *I couldn't find my answer.*
+###### ‎   
+- Report your issue <u>[here](https://docs.ai-hub.wtf/rvc/#contributions)</u>.
+===
+
+==- Errors
+#### GPU task aborted:
+ZeroGPU HuggingFace Spaces have a max inference time duration, it’s the time it takes to do an Inference (use the model, not the time of your audio file itself), on default it’s around 1 minute which is what Ilaria RVC uses. You need to retry with a shorter audio, you could also split your audio.
+***
+#### You have exceeded your GPU quota ( NUMBER s left vs. 60s requested). Sign-up on Hugging Face to get more quotas or retry in Hour:Minutes:Seconds
+ZeroGPU HuggingFace Spaces have a quota per account, if you aren’t signed in you will get less quota so it’s better to login for more quota. You could get the ‘Sign-up’ part even if you are logged in. The ZeroGPU Quota can’t be seen but it isn’t unlimited. You can either:
+- Login so you get more quota
+- Wait
+- Pay to be an HuggingFace PRO Member to get X5 times more quota
+
+===
+
+***
+
+###### ‎
+###### ‎ 
+:::content-center
+## RX 11
+:::
+‎ 
+:   ‎ 
+
+### Installation :icon-download:
+*** 
+1. Go to their <u>[official website</u>](https://www.izotope.com/en/shop/rx-11-advanced/?srsltid=AfmBOor--irjtR7Bsl08_bPj-7UMUGd49tYy9C_U2iXOAupjQ74Mat_s) & buy it or sail the seven seas and find a treasure box which contains RX 11. 
+***
+###### ‎ 
+### Usage 
+2. To use RX 11 it is **STONGLY** recommended that you read this <u>[guide](https://rentry.co/RVC-dataset-RX11)</u> on RX 11.
+***
+
+###### ‎  
+:::content-center     
 ## MVSEP
 :::
 ‎      
@@ -417,7 +576,7 @@ a. Click `Browse File` & select your audio, or simply drag & drop. The audio wil
 ‎
 #### 3. Extract vocals.
 ###### ‎
-a. In **Separation type** select `MDX23C`     
+a. In **Separation type** select `BS Roformer`     
 ‎     
 b. In **Output encoding** select `FLAC`.          
 We recommend selecting FLAC from now on. Learn more <u>[here</u>](https://docs.ai-hub.wtf/extra/glossary/#lossless-formats).        
@@ -478,9 +637,9 @@ We recommend selecting FLAC from now on. Learn more <u>[here</u>](https://docs.a
 ‎
 #### 3. Select model.  
 ###### ‎
-a. In **Separation Type**, select `Ultimate Vocal Remover 5 HQ`.      
+a. In **Separation Type**, select `DeNoise by aufr33`.      
 ‎     
-b. Check the <u>[model list](https://docs.ai-hub.wtf/rvc/resources/vocal-isolation/#best-models)</u>. In `Select VR Model` pick the one according to what you need to remove.         
+b. Check the <u>[model list](https://docs.ai-hub.wtf/rvc/resources/vocal-isolation/#best-models)</u>. Pick the one according to what you need to remove.         
 ‎       
 If you need to remove multiple noises, follow this pipeline for the best results:       
 ``Remove instrumental -> Remove reverb -> Extract main vocals -> Remove noise`` 
@@ -512,7 +671,7 @@ If you wish to keep the backing vocals stem, remember to download it too.
 ***
 ==- *MVSEP extracted too much/too little.*
 ###### ‎ 
-- Using the **Separation Type** of `Ultimate Vocal Remover HQ`, you can modify the `Aggressiveness` value. 
+- Using the **Separation Type** of `DeNoise by aufr33`, you can modify the `Aggressiveness`. 
 This determines the depth of the extraction.
 - A higher value will deepen the extraction, and a lower one will soften it.
 - Each audio is different, so you'll have to test the ideal value.
@@ -520,7 +679,7 @@ This determines the depth of the extraction.
 
 ==- *I can't remove some of the backing vocals.*
 ###### ‎ 
-- Try running the audio through MDX23C or DeNoise. Modify the Aggression Setting if necessary.
+- Try running the audio through MelBand Karaoke or BVE. Modify the Aggression Setting if necessary.
 ===
 
 ==- *I couldn't find my answer.*
@@ -539,7 +698,7 @@ This determines the depth of the extraction.
 +++ UVR
 Extraction | Process Method | Model
 :---: | :---: | :---:
-Vocals/Instrumental | MDX-Net | MDX23C
+Vocals/Instrumental | MDX-Net | BS Roformer-Viper-X 1296 / 1297
 Reverb | VR | UVR-DeEcho-DeReverb
 Main Vocals | VR | UVR-BVE-4B_SN-44100-1
 Noise | VR | UVR-DeNoise 
@@ -547,10 +706,18 @@ Noise | VR | UVR-DeNoise
 +++ MVSEP
 Extraction | Separation Type | Model
 :---: | :---: | :---:
-Vocals/Instrumental | MDX23C | - 
-Reverb | Ultimate Vocal Remover 5 HQ | UVR-DeEcho-DeReverb
-Main Vocals | Ultimate Vocal Remover 5 HQ | UVR-BVE-4B_SN-44100-1
-Noise | Ultimate Vocal Remover 5 HQ | UVR-DeNoise
+Vocals/Instrumental | BS Roformer | ver 2024.08
+Reverb | Reverb Removal | Reverb removal by anvuew (BS Roformer)
+Main Vocals | MelBand Karaoke | Extract from vocals
+Noise | DeNoise by aufr33  | Aggresive 
+
++++ X-Minus
+Extraction | Model
+:---: | :---: 
+Music and Vocals | BS Roformer
+De-Reverb | MDX23C (De-Reverb)
+Extract Backing Vocals | UVR BVE 2 
+De-Noise | Mel Roformer De-Noise 
 
 +++
 ***

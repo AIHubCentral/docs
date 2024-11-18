@@ -4,7 +4,7 @@ order: 2000
 visibility:
 ---
 
-``Last update: Mar 1, 2024``
+``Last update: Oct 21, 2024``
 
 ***
 
@@ -12,7 +12,7 @@ visibility:
 ***
 - RVC (*Retrieval-Based Voice Conversion*) is an advanced AI **voice cloning** software, developed by the <u>[RVC-Project team](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI)</u>. It's considered the best **free & open-source** one to date.
 
-- It was designed for desktop, requiring great **specs** to run it effectively, specially **GPU** for training models (specifically **NVIDIA**).
+- It was designed for desktop, requiring great **specs** to run it effectively, specially **GPU** for training models.
 
 - Though it can be executed through the <u>[cloud](https://docs.ai-hub.wtf/extra/glossary/#cloud-based)</u> & be used in **any** device, in case you don't meet the previous requirement.        
 ‎       
@@ -27,15 +27,18 @@ visibility:
 
     {.list-icon}
     - #### :icon-chevron-right: <u>[Mainline](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI)</u> (Original RVC)
+        - ##### :icon-cloud: <u> [Mainline Kaggle](https://www.kaggle.com/code/hinabl/mainline)</u>
+         - ##### :icon-cloud: <u>[Mainline Colab](https://colab.research.google.com/github/hinabl/RVC-Online/blob/main/Mainline_Colab_Full.ipynb)</u>
+         - ##### :icon-cloud: <u>[Ilaria RVC Zero](https://huggingface.co/spaces/TheStinger/Ilaria_RVC)</u> (Inference only)
     ###### ‎    
     {.list-icon}
     - #### :icon-repo-forked: <u>[Applio](https://applio.org/)</u>
         - ##### :icon-cloud: <u>[Applio Colab](https://colab.research.google.com/github/iahispano/applio/blob/master/assets/Applio.ipynb)</u>
+        - ##### :icon-cloud: <u>[Applio Kaggle](https://www.kaggle.com/code/deiant/applio)</u>
     ###### ‎   
     {.list-icon}
     - #### :icon-repo-forked: <u>[Mangio](https://github.com/Mangio621/Mangio-RVC-Fork)</u>
         - ##### :icon-cloud: <u>[RVC Disconnected](https://colab.research.google.com/drive/1XIPCP9ken63S7M6b5ui1b36Cs17sP-NS#scrollTo=ZodNcumpg-JM)</u>
-        - ##### :icon-cloud: <u>[Ilaria RVC](https://colab.research.google.com/drive/16LkwvFZeudTpUOsE_6bMjOq2qkxFo8Hr?usp=sharing)</u>
     ###### ‎  
     {.list-icon} 
     - #### :icon-repo-forked: <u>[AICoverGen](https://github.com/SociallyIneptWeeb/AICoverGen)</u>     
@@ -50,7 +53,7 @@ visibility:
 ==- *What's the best fork?*
 ###### ‎       
 - As explained before, it depends on your needs. It's best to try them yourself.
-- For **local** users, <u>[Mainline](https://docs.ai-hub.wtf/rvc/local/mainline/)</u> is a great starting point. For **cloud** users, the <u>[Applio Colab](https://docs.ai-hub.wtf/rvc/cloud/applio-colab/)</u>.
+- For **local** users, <u>[Mainline](https://docs.ai-hub.wtf/rvc/local/mainline/)</u> is a great starting point. For **cloud** users you can use either the <u>[Applio Colab](https://docs.ai-hub.wtf/rvc/cloud/applio-colab/)</u> or <u>[mainline kaggle](https://docs.ai-hub.wtf/rvc/cloud/kaggle/)</u>.
 ===
 
 ==- *What are the requirements for RVC locally?*
@@ -82,11 +85,11 @@ Storage | 6 GB
 
 === 
 
-==- *Can I use it on my Intel/AMD GPU?*
+==- *Can I use it on my AMD GPU?*
 ###### ‎  
-- You can, but it's not recommended, as they aren't compatible with AI software.
-- Therefore RVC will be more prone to errors & rely on your CPU, slowing down the process significantly.
+- You can, but it's going to be slower, as they don't have CUDA cores.
 - So it's more convenient using RVC through the <u>[cloud](https://docs.ai-hub.wtf/extra/glossary/#cloud-based)</u>.
+- If you're willing to use a slower version you can go ahead and follow this guide on how to get zluda working with <u>[Applio](https://docs.applio.org/getting-started/installation#amd-gpu-support-windows)</u>.
 === 
 
 ==- *How long does it take to train?*

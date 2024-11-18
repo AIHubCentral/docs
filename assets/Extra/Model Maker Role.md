@@ -4,7 +4,7 @@ icon: chevron-right
 order: 1000
 ---
 
-``Last update: May 20, 2024``
+``Last update: October 20, 2024``
 ***
 ###### ‎ 
 :::content-center
@@ -14,12 +14,12 @@ order: 1000
 :::
 ###### ‎
 ||| <u> REQUIREMENTS </u>
-- Model's <u>[**.PTH**](https://docs.ai-hub.wtf/essentials/voice-models/#voice-model-files)</u> file.        
-- Model's <u>[**.INDEX**](https://docs.ai-hub.wtf/essentials/voice-models/#voice-model-files)</u> file.      
+- Model's **.PTH** file.        
+- Model's **.INDEX** file.      
 - General information about the model.
 - General information about its training process.      
 - A Hugging Face account.     
-- At least 1 audio sample of the model **<u>WITH NO MUSIC</u>**.     
+- At least 1 raw audio sample of the model **<u>WITH NO MUSIC</u>**.     
 |||
 :::
 
@@ -27,13 +27,20 @@ order: 1000
 :::content-center
 ###### ‎ 
 ## Things to Avoid :icon-x:
-##### ``This will disqualify your post``
+##### ``These will disqualify your post``
 :::
 ‎
 :   ‎
 :::
 #### :icon-chevron-right: It lacks the correct files.
-- The .ZIP file must contain both the **correct** `.INDEX` & `.PTH` file. Learn about them <u>[here](https://docs.ai-hub.wtf/essentials/voice-models/#voice-model-files)</u>.
+- The .ZIP file must contain both the **correct** `.INDEX` & `.PTH` file.
+
+- The correct .index is the one named `added_`. 
+     - The added index contains the voice's accent and speech manor.
+
+- The correct .pth is the one that has your model's name, for example: `TylerSwift_e60_s120.pth` 
+     - The .pth contains the actual model and pitch data. 
+     
 ***
 ###### ‎ 
 #### :icon-chevron-right: Model is low quality.
@@ -46,11 +53,12 @@ order: 1000
    - Has slurred speech.
    - Is unable of pronouncing words correctly in its intended language.
    - Has <u>[artifacting](https://docs.ai-hub.wtf/rvc/resources/artifacting/)</u>.
+   - Has noise.
 ***
 ###### ‎ 
 #### :icon-chevron-right: An outdated extraction method was used.
 {.list-icon}
-- :icon-check-circle: Only **Crepe, **Mangio-Crepe** & **RMVPE** are allowed. Learn about them <u>[here](https://docs.ai-hub.wtf/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u>
+- :icon-check-circle: Only **Mangio-Crepe** & **RMVPE** are allowed. Learn about them <u>[here](https://docs.ai-hub.wtf/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u>
 
 - :icon-x-circle: Harvest, Dio, Crepe-Tiny, PM, etc. are obsolete.
 
@@ -68,26 +76,15 @@ order: 1000
 - Trimming silences at the beginning/end of the audio demo is allowed. :icon-check-circle: 
 ###### ‎  
 ***
-###### ‎
-:::content-center
-## Steps
-‎
-:   ‎
-:::
-#### Step 1: Zip the model.
-- Gather the **.PTH** & **.INDEX** file and <u>[zip</u>](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-8d28fa72-f2f9-712f-67df-f80cf89fd4e5) them into a ``.ZIP`` file.
-         
-- It must be a **.ZIP** file, not .7ZIP or .RAR.
-***
-###### ‎
-#### Step 2: Upload it.
-- The ZIP must be stored in a Hugging Face **public** repository of `openrail` license.    
+#### :icon-chevron-right: Is a robotic or non-human voice.
+- Robotic, sound effect and drum models will also be rejected, because with these types of voices it is difficult to determine if you know how to clean a dataset properly.
 
-- Learn how <u>[here</u>](https://docs.ai-hub.wtf/essentials/voice-models/#uploading-to-hugging-face).
+- However once you get model maker you will be able to post robotic, sound effect or drum models.
+###### ‎  
 ***
 ###### ‎
 #### Step 3: Prepare the submission.
-- Once your model is ready, head over to the **#get-model-maker** channel.  
+- Once your model is ready, head over to the **#be-model-maker** channel.  
 
 - Type the `/submit` command of **QCBot** and click the command.       
 

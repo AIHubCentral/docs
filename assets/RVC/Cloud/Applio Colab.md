@@ -441,7 +441,7 @@ iii. And that's all, have fun with your model. To test it, do a normal <u>[infer
 ## Extra
 :::
 ###### ‎  
-- Applio has an **Extra** menu, containing an **audio analyzer**, originally made by <u>[Ilaria](https://ko-fi.com/ilariaowo)</u>.
+- Applio has an **Extra** menu, containing an **audio analyzer**, **F0 Curve** and **Model Information**.
 
 - Making it convenient for determining the <u>[sample rate](https://docs.ai-hub.wtf/rvc/resources/datasets/#sample-rate)</u> of datasets when training models.
 
