@@ -43,7 +43,7 @@ For local users, first ensure you meet the <u>[minimum requirements](https://doc
 :::
 ‎  
 :::content-right
-[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.ai-hub.wtf/rvc/#contributions)
+[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.ai-hub.wtf/rvc/contributions/)
 ::: 
 ‎  
 ***
