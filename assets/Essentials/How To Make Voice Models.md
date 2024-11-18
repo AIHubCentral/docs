@@ -33,7 +33,7 @@ For local users, first ensure you meet the <u>[minimum requirements](https://doc
 ***
 ###### ‎ 
 ### 3. Train the model
-- Before you start training, we inform you that the training guides are oriented around using <u>[TensorBoard](https://docs.ai-hub.wtf/rvc/resources/epochs--tensorboard/#tensorboard)</u>. Read about it & install it after setting up RVC.
+- Before you start training, we inform you that the training guides are oriented around using <u>[TensorBoard](https://docs.ai-hub.wtf/rvc/resources/epochs-tensorboard/#tensorboard)</u>. Read about it & install it after setting up RVC.
 
 - Good luck & remember to be patient! As this won't be an instant process.
 
