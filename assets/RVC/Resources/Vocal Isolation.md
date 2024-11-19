@@ -272,123 +272,53 @@ d. You can now click "Vocals" to download the vocals and "Other" to download the
 ###### ‎       
 #### 1. Set up Colab
 ###### ‎ 
-a. First access the Colab space <u>[here](https://colab.research.google.com/github/Eddycrack864/Music-Source-Separation-Universal-Colab/blob/main/Music_Source_Separation_Universal_Colab.ipynb)</u>. This Colab only uses **WAV** audios. If yours isn't, convert it to WAV or use <u>[MVSEP](https://docs.ai-hub.wtf/rvc/resources/vocal-isolation/#mvsep)</u>.     
+1. First access the Colab space <u>[here](https://colab.research.google.com/github/jarredou/Music-Source-Separation-Training-Colab-Inference/blob/main/Music_Source_Separation_Training_(Colab_Inference).ipynb)</u>.   
 ‎       
-b. Then **Log in** to your Google account.      
+2. Then **Log in** to your Google account.      
 ‎   
-c. Execute the **Setup** cell by pressing the play button :icon-play:. Grant all the permissions.   
+3. Execute the **Gdrive Connection** cell by pressing the play button :icon-play:. Grant all the permissions.   
 ‎   
-    <img src="../uvrmvsep-img/3-setup.png" alt="image" width="350" height="auto">‎   
+    <img src="../clouduvr-img/1.png" alt="image" width="270" height="auto">‎   
 ‎   
-- It'll finish once the logs say "Ready!".     
+- It'll finish once the logs say `Mounted at /content/drive`
 ‎   
-    <img src="../uvrmvsep-img/3-check.png" alt="image" width="200" height="auto">
+
+5. Then run the **Install** cell. 
+
+    <img src="../clouduvr-img/3.png" alt="image" width="270" height="auto">
+
+- Once it's done it will look like this: 
+
+    <img src="../clouduvr-img/4.png" alt="image" width="600" height="auto">
 
 ***
 
 ‎  
 #### 2. Set up folders
 ###### ‎ 
-- In Google Drive, make two folders, named **Separar** & **Vocales**.       
+- In Google Drive, make two folders, named **input** & **output**.       
 ‎       
-    <img src="../uvrmvsep-img/3-folders.png" alt="image" width="370" height="auto">     
+    <img src="../clouduvr-img/2.png" alt="image" width="600" height="auto">     
 ‎     
 ‎     
-- Name them as you want, as long as the input/output folders match the paths.      
-‎       
-    <img src="../uvrmvsep-img/3-paths.png" alt="image" width="400" height="auto">
 ***
 ‎  
 #### 3. Separate
 ###### ‎   
-a. Select the ``MDX23C 8KFFT InstVoc HQ 2`` model & run the **Separation** cell.     
+a. Select your model of choice and run the **Separation** cell. You can look <u>[here](https://docs.ai-hub.wtf/rvc/resources/vocal-isolation/#best-models)</u> for the best models
+
 ‎   
-    <img src="../uvrmvsep-img/3-model.png" alt="image" width="320" height="auto">‎   
-‎       
-‎   
+    <img src="../clouduvr-img/5.png" alt="image" width="500" height="auto">‎   
+‎         
+!!!
+These are the best settings: 
+- Overlap: 16
+- Chunk Size: 485100
+!!!
 b. Download the result located in the output folder.
 ***
-‎
-#### 4. Clean vocals
-###### ‎    
-- Usually songs include reverb & backing vocals. These **negatively** impact the results in RVC.    
-‎   
-- So if the output has any undesired noises, follow the procedure on **Cleaning Vocals**.     
-‎  
 ===
 
-==- *Cleaning Vocals* 🗣️ 
-#####  ‎  ‎ 
-#### 1. Set up Colab
-###### ‎
-a. Access the Colab space <u>[here](https://colab.research.google.com/github/Eddycrack864/Ultimate-Vocal-Remover-5.6-for-Google-Colab/blob/main/Ultimate_Vocal_Remover_5_6_for_Google_Colab.ipynb)</u> & **Log in** to your Google account. Credits to <u>[Eddy](https://github.com/Eddycrack864)</u> for the Colab.         
-‎   
-b. Execute the **Install** cell. This will take around 5 - 10 minutes.     
-‎   
-<img src="../uvrmvsep-img/3-install.png" alt="image" width="270" height="auto">‎  
-‎    
-- It'll finish once the logs say "Installation Completed".      
-‎    
-<img src="../uvrmvsep-img/3-installdone.png" alt="image" width="270" height="auto">‎    
-
-***
-‎ 
-#### 2. Run UI
-###### ‎ 
-a. Then below run the **WebUI** cell. This will take around 3 minutes.      
-***For advanced users***, tick `VIP_MODELS` if you wish to use them.        
-‎    
-<img src="../uvrmvsep-img/3-webui.png" alt="image" width="310" height="auto">‎    
-‎      
-‎    
-b. Open the **public URL**. That **Gradio** link contains the UVR app.      
-‎       
-    <img src="../uvrmvsep-img/20.png" alt="image" width="425" height="auto">‎  
-###### ‎  
-!!!warning 
-Don't close **Colab** until you're done using it, and don't press buttons continuously too **quickly**, as it may cause errors.         
-!!!
-***
-‎    
-#### 3. Select vocals & options
-###### ‎  
-a. Tap the **Input Audio** box & select your audio, or simply drag & drop.     
-‎        
-    <img src="../uvrmvsep-img/21.png" alt="image" width="425" height="auto">‎           
-‎       
-‎       
-b. Once it's done uploading, in **CHOOSE PROCESS METHOD**, select ``VR Arc``.       
-‎   
-<img src="../uvrmvsep-img/22.png" alt="image" width="600" height="auto">‎       
-‎       
-‎       
-c. On the left, tick `GPU Conversion` & set **WINDOW SIZE** to `320`.       
-Lower Window Size yield a higher output **quality**, but will take **longer** to process.       
-‎    
-<img src="../uvrmvsep-img/3-options.png" alt="image" width="300" height="auto">‎ 
-*** 
-‎ 
-#### 4. Select model
-###### ‎  
-d. Check the <u>[model list](https://docs.ai-hub.wtf/rvc/resources/vocal-isolation/#best-models)</u> & in **CHOOSE VR MODEL** pick the one according to what you need to remove.    
-‎       
-If you need to remove multiple noises, follow this pipeline for the best results:   
-``Remove instrumental -> Remove reverb -> Extract main vocals -> Remove noise``  
-***
-‎  
-#### 5. Start Processing
-###### ‎  
-a. Click **Start Processing** below. Wait a moment for the audio to process.       
-‎       
-b. Playable audios will then appear in the output boxes below. To download the output, click the three dots on the right and `Download`.            
-     
-- If you're extracting lead vocals, remember to download the backing ones if you wish to keep them.    
-
-!!!success 
-**TIP:** To **test** models/options more efficiently, tick **Sample Mode** to only process 30 seconds of your sample.
-!!!  
-
-===
 
 !!!success
 *If an issue arises, read the **Troubleshooting** chapter.*
@@ -400,23 +330,6 @@ b. Playable audios will then appear in the output boxes below. To download the o
 
 ### Troubleshooting :icon-tools:
 ***
-==- *UVR extracted too little/too much.*
-###### ‎
-- Modify the `Aggression Setting` value on the right. 
-- This determines the depth of the extraction. Only the VR method has it.
-- A higher value will deepen the extraction, and a lower one will soften it.
-- Each audio is different, so you'll have to test the ideal value.
-===
-
-==- *I can't remove some of the backing vocals.*
-- Run the audio through MDX23C or DeNoise. Modify the Aggression Setting if necessary.
-===
-
-==- *I get a red error message.*
-- This is normal. Try repeating your action.
-- If it persists, reload the Gradio page.
-===
-
 ==- *Cannot connect to GPU backend.*
 ###### ‎   
 - You have exhausted the <u>[GPU runtime](https://docs.ai-hub.wtf/rvc/extra/glossary/#google-colab)</u> of Colab.
@@ -699,25 +612,34 @@ This determines the depth of the extraction.
 Extraction | Process Method | Model
 :---: | :---: | :---:
 Vocals/Instrumental | MDX-Net | BS Roformer-Viper-X 1296 / 1297
-Reverb | VR | UVR-DeEcho-DeReverb
-Main Vocals | VR | UVR-BVE-4B_SN-44100-1
-Noise | VR | UVR-DeNoise 
+De-Reverb | VR | UVR-DeEcho-DeReverb
+Extract Backing Vocals | VR | UVR-BVE-4B_SN-44100-1
+De-Noise | VR | UVR-DeNoise 
 
 +++ MVSEP
 Extraction | Separation Type | Model
 :---: | :---: | :---:
 Vocals/Instrumental | BS Roformer | ver 2024.08
-Reverb | Reverb Removal | Reverb removal by anvuew (BS Roformer)
-Main Vocals | MelBand Karaoke | Extract from vocals
-Noise | DeNoise by aufr33  | Aggresive 
+De-Reverb | Reverb Removal | Reverb removal by anvuew (BS Roformer)
+Extract Backing Vocals | MelBand Karaoke | Extract from vocals
+De-Noise | DeNoise by aufr33  | Aggresive 
 
 +++ X-Minus
 Extraction | Model
 :---: | :---: 
-Music and Vocals | BS Roformer
+Vocals/Instrumental | BS Roformer
 De-Reverb | MDX23C (De-Reverb)
 Extract Backing Vocals | UVR BVE 2 
 De-Noise | Mel Roformer De-Noise 
+
++++ Cloud UVR
+Extraction | Model
+:---: | :---: 
+Vocals | INST-VOC-Mel-Roformer duality v1
+Instrumental | INST-Mel-Roformer v1
+De-Reverb | DE-REVERB-MDX23C
+Extract Backing Vocals | KARAOKE-MelBand-Roformer 
+De-Noise | DENOISE-MelBand-Roformer-2 
 
 +++
 ***
