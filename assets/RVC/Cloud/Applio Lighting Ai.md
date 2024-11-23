@@ -28,7 +28,6 @@ order: 2000
 - Takes some time to set up.      
 - Needs a phone number.
 - Low GPU time depending on what GPU you choose.
-- Phone number verification
 - 2-3 Day verification wait time.
  
 |||
@@ -49,7 +48,7 @@ b. Make sure you verify yourself with a phone number. Once you've done that you 
 <img src="../lighting.ai/2.png" alt="image" width="400">‎   
 
 !!!danger
-You will need to wait 2-3 days to become fully verified 
+You will need to wait 2-3 business days to become fully verified 
 !!!
 
 c. Once you are verified Lighting Ai will send you a email that conatins this: 
