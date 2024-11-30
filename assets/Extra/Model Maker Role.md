@@ -18,7 +18,7 @@ order: 1000
 - Model's **.INDEX** file.      
 - General information about the model.
 - General information about its training process.      
-- A Hugging Face account.     
+- A Hugging Face or Weights.gg account.     
 - At least 1 raw audio sample of the model **<u>WITH NO MUSIC</u>**.     
 |||
 :::
@@ -84,11 +84,11 @@ order: 1000
 ***
 ###### ‎
 #### Step 3: Prepare the submission.
-- Once your model is ready, head over to the **#be-model-maker** channel.  
+- Once your model is ready, head over to the **#model-maker-role** channel.  
 
-- Type the `/submit` command of **QCBot** and click the command.       
+- Click the `Submit Model` button.    
 
-<img src="../modelmaker-img/submit.png" alt="image" width="600" height="auto">‎               
+<img src="../modelmaker-img/1.png" alt="image" width="600" height="auto">‎               
 ‎     
 :::content-center
 #### ``Now fill up the information about your model:``  
@@ -107,10 +107,7 @@ order: 1000
 :     Total <u>[epochs](https://docs.ai-hub.wtf/rvc/resources/epochs--tensorboard/)</u> amount.
 
 **link**
-:     Its download link from Hugging Face.
-
-**image**
-:     An image of what it represents (person/character).   
+:     Its download link from Hugging Face or Weights. 
 
 **demo**
 :     An audio sample of it talking/singing.
@@ -125,12 +122,9 @@ You can attach more samples when you repost the model to ``#voice-models``.
 ***
 ###### ‎
 #### Step 4: Send submission.
-- Once you are done filling the information, send the message.    
+- Once you are done filling the information it will send your model to get QCed   
 
-- If everything went fine, your submission will be added to the queue & the bot will send a confirmation message, containing your **submission ID**.    
-<u>**With this ID, you can:**</u>        
-   - Check your submission's number in queue with the command ``/queue`` followed by the ID. (e.g ``/queue 251``).        
-   - Cancel your submission with the command ``/cancel`` followed by the ID.    
+   <img src="../modelmaker-img/submitted.png" alt="image" width="" height="auto">‎ 
 ‎     
 - Now, wait for a **QC** (quality checker) to verify your model. You'll be notified once it has been reviewed.   
 

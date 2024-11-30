@@ -135,33 +135,19 @@ order: 4000
 
 - While training in RVC, you'll have to set the **target sample rate** as your dataset's. This value affects the final quality.  
    
-- ##### A simple way to determine it is with the <ins>Ilaria Audio Analyzer</ins> tool:  
+- ##### A simple way to determine it is with <ins>Spek</ins>:  
 
     - ##### STEP 1:   
-        Enter the HF space <u>[here</u>](https://huggingface.co/spaces/TheStinger/Ilaria_Audio_Analyzer).        
+        Download and install Spek <u>[here</u>](https://www.spek.cc/p/download).        
     ***
     - ##### STEP 2:   
-        Press the upload box & select your audio. Or just drag & drop. Then use it's done uploading, click `Create Spectrogram and Get Info`.  
+        Open spek and just drag & drop audio into it. 
 
-        <img src="../audioformats-img/1.png" alt="image" width="500" height="auto">‎   
-    ***
-    - ##### STEP 3:     
-        In ``Samples per second`` you'll see the audio's full sample rate. Insert that value in RVC.
-
-        <img src="../audioformats-img/2.png" alt="image" width="400" height="auto">   
-
-    ***
+        <img src="../audioformats-img/3.png" alt="image" width="500" height="auto">‎   
 
     !!!danger <u>WARNING:</u>   
-    If the frequencies don't reach the top of the spectrogram, see at which number peaks & multiply it by <U>**2**</u>.
+    If the frequencies don't reach the top of the spectrogram, see at which number peaks & multiply it by <U>**2**</u>. Here it reached 20 kHz. **Doubling** it gives 40kHz. Therefore the ideal target sample rate would be ``40k``
     !!!
-
-    ###### ‎
-    {.list-icon}
-    - #### <u>Example:</u>
-        <img src="../audioformats-img/3.png" alt="image" width="480" height="auto">‎    
-    ‎
-    >Here it reached 20 kHz. **Doubling** it gives 40kHz. Therefore the ideal target sample rate would be ``40k`` 
 
 ***
 ###### ‎

@@ -123,7 +123,7 @@ To download, click the three dots on the right & hit `Download`.
 ## Training :icon-dependabot:
 ###### ‎   
 !!!warning <u> NOTES: </u>
-The training guide will be centered around using [TensorBoard](https://docs.ai-hub.wtf/rvc/resources/epochs--tensorboard/#tensorboard). Read about it first if you haven't already.      
+The training guide will be centered around using [TensorBoard](https://docs.ai-hub.wtf/rvc/resources/epochs-tensorboard/#tensorboard). Read about it first if you haven't already.      
 
 If you encounter an issue, be sure to read the <u>[Troubleshooting](https://docs.ai-hub.wtf/rvc/local/mainline/#troubleshooting-)</u> chapter.
 !!!
@@ -235,7 +235,7 @@ It'll finish when the output box says something like this:
 :::
 ###### ‎           
 #### 9. Select save frequency.
-Frequency of the <u>[saving checkpoints](https://docs.ai-hub.wtf/extra/glossary/#checkpoints)</u>, based on the <u>[epochs](https://docs.ai-hub.wtf/rvc/resources/epochs--tensorboard/)</u>.        
+Frequency of the <u>[saving checkpoints](https://docs.ai-hub.wtf/extra/glossary/#checkpoints)</u>, based on the <u>[epochs](https://docs.ai-hub.wtf/rvc/resources/epochs-tensorboard/)</u>.        
 
 If you are a newbie, simply leave it at `15`.        
     
@@ -247,9 +247,9 @@ E.g: with a value of ``10``, they will be saved after the epoch 10, 20, 30, etc.
 ***
 ###### ‎  
 #### 10. Input epochs amount.
-In `Total training epochs` you determine the total amount of <u>[epochs](https://docs.ai-hub.wtf/rvc/resources/epochs--tensorboard/)</u> (training cycles) for the model.     
+In `Total training epochs` you determine the total amount of <u>[epochs](https://docs.ai-hub.wtf/rvc/resources/epochs-tensorboard/)</u> (training cycles) for the model.     
 
-But since we'll use [TensorBoard](https://docs.ai-hub.wtf/rvc/resources/epochs--tensorboard/#tensorboard), use an arbitrarily large value like `2000`.
+But since we'll use [TensorBoard](https://docs.ai-hub.wtf/rvc/resources/epochs-tensorboard/#tensorboard), use an arbitrarily large value like `2000`.
 
 <img src="../mainline-img/19.png" alt="image" width="" height="auto">  
 
@@ -267,7 +267,7 @@ If your dataset is short (around 2 minutes or less), use ``4`` instead.
 #### 12. Launch TensorBoard.
 Now before you start training, open TB.     
 
-If you haven't already, start reading about it here <u><u>[here</u>](https://docs.ai-hub.wtf/rvc/resources/epochs--tensorboard/#tensorboard)</u>.
+If you haven't already, start reading about it here <u><u>[here</u>](https://docs.ai-hub.wtf/rvc/resources/epochs-tensorboard/#tensorboard)</u>.
 ***
 ###### ‎  
 #### 13. Begin training.

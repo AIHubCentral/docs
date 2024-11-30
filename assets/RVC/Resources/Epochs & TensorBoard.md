@@ -162,10 +162,10 @@ The other graphs within RVC are:
 #### :icon-chevron-down: <u>Mel Images</u>
 ***
 - While looking through the Tensor Board you may come across `slice/mel_gen` and `slice/mel_org`. 
-     - `slice/mel_gen` Is an image of a mel spectrogram that the generator created in attempt to make it match `mel_org`.
+     - `slice/mel_gen` Is a mel spectrogram view of audio that the generator created in attempt to make it match `mel_org`.
      <img src="../tensorboard-img/mel_gen.png" alt="image" width="700" height="700">‎ 
 
-     - `slice/mel_org` Is an image of a mel spectrogram view of audio from your dataset. 
+     - `slice/mel_org` Is a mel spectrogram view of audio from your dataset. 
      <img src="../tensorboard-img/mel_og.png" alt="image" width="700" height="700">‎ 
 ***
 ###### ‎
