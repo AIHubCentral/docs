@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.785267118367">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.786320724510">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.6.0">
@@ -34,11 +34,11 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../../img/b.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.6.0.785267118367" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.6.0.786320724510" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.6.0.785267118367" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.6.0.786320724510" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.6.0.785267118367" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.6.0.786320724510" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -515,10 +515,10 @@
 </li>
 <li><p>While training in RVC, you&#x27;ll have to set the <strong>target sample rate</strong> as your dataset&#x27;s. This value affects the final quality.</p>
 </li>
-<li><doc-anchor-target id="a-simple-way-to-determine-it-is-with-the-ilaria-audio-analyzer-tool">
+<li><doc-anchor-target id="a-simple-way-to-determine-it-is-with-spek">
     <h5>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#a-simple-way-to-determine-it-is-with-the-ilaria-audio-analyzer-tool">#</doc-anchor-trigger>
-        <span>A simple way to determine it is with the <ins>Ilaria Audio Analyzer</ins> tool:</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#a-simple-way-to-determine-it-is-with-spek">#</doc-anchor-trigger>
+        <span>A simple way to determine it is with <ins>Spek</ins>:</span>
     </h5>
 </doc-anchor-target>
 <ul>
@@ -528,7 +528,7 @@
         <span>STEP 1:</span>
     </h5>
 </doc-anchor-target>
-Enter the HF space <u><a href="https://huggingface.co/spaces/TheStinger/Ilaria_Audio_Analyzer">here</u></a>.</li>
+Download and install Spek <u><a href="https://www.spek.cc/p/download">here</u></a>.</li>
 </ul>
 <hr>
 <ul>
@@ -538,23 +538,10 @@ Enter the HF space <u><a href="https://huggingface.co/spaces/TheStinger/Ilaria_A
         <span>STEP 2:</span>
     </h5>
 </doc-anchor-target>
-<p>Press the upload box &amp; select your audio. Or just drag &amp; drop. Then use it&#x27;s done uploading, click <code v-pre>Create Spectrogram and Get Info</code>.</p>
-<p><img src="../audioformats-img/1.png" alt="image" width="500" height="auto">‎</p>
+<p>Open spek and just drag &amp; drop audio into it.</p>
+<p><img src="../audioformats-img/3.png" alt="image" width="500" height="auto">‎</p>
 </li>
 </ul>
-<hr>
-<ul>
-<li><doc-anchor-target id="step-3">
-    <h5>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#step-3">#</doc-anchor-trigger>
-        <span>STEP 3:</span>
-    </h5>
-</doc-anchor-target>
-<p>In <code v-pre>Samples per second</code> you&#x27;ll see the audio&#x27;s full sample rate. Insert that value in RVC.</p>
-  <img src="../audioformats-img/2.png" alt="image" width="400" height="auto">   
-</li>
-</ul>
-<hr>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-red-500"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
@@ -568,35 +555,16 @@ Enter the HF space <u><a href="https://huggingface.co/spaces/TheStinger/Ilaria_A
         </div>
         <div class="pr-5 ml-3 w-full">
             <h5><u>WARNING:</u></h5>
-<p>If the frequencies don&#x27;t reach the top of the spectrogram, see at which number peaks &amp; multiply it by <U><strong>2</strong></u>.</p>
+<p>If the frequencies don&#x27;t reach the top of the spectrogram, see at which number peaks &amp; multiply it by <U><strong>2</strong></u>. Here it reached 20 kHz. <strong>Doubling</strong> it gives 40kHz. Therefore the ideal target sample rate would be <code v-pre>40k</code></p>
         </div>
     </div>
 </div>
-<doc-anchor-target id="section-10">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-10">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
-<ul class="list-icon">
-<li><doc-anchor-target id="example">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#example">#</doc-anchor-trigger>
-        <span><u>Example:</u></span>
-    </h4>
-</doc-anchor-target>
-<img src="../audioformats-img/3.png" alt="image" width="480" height="auto">‎<br />
-‎</li>
-</ul>
-<blockquote>
-<p>Here it reached 20 kHz. <strong>Doubling</strong> it gives 40kHz. Therefore the ideal target sample rate would be <code v-pre>40k</code></p>
-</blockquote>
 </li>
 </ul>
 <hr>
-<doc-anchor-target id="section-11">
+<doc-anchor-target id="section-10">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-11">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-10">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>

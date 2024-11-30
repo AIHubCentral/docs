@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.785267118367">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.786320724510">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.6.0">
@@ -34,11 +34,11 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../img/b.png" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.6.0.785267118367" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.6.0.786320724510" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.6.0.785267118367" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.6.0.786320724510" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.6.0.785267118367" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.6.0.786320724510" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -267,7 +267,7 @@
 <li>Model&#x27;s <strong>.INDEX</strong> file.</li>
 <li>General information about the model.</li>
 <li>General information about its training process.</li>
-<li>A Hugging Face account.</li>
+<li>A Hugging Face or Weights.gg account.</li>
 <li>At least 1 raw audio sample of the model <strong><u>WITH NO MUSIC</u></strong>.</li>
 </ul>
     </div>
@@ -436,12 +436,12 @@
     </h4>
 </doc-anchor-target>
 <ul>
-<li><p>Once your model is ready, head over to the <strong>#be-model-maker</strong> channel.</p>
+<li><p>Once your model is ready, head over to the <strong>#model-maker-role</strong> channel.</p>
 </li>
-<li><p>Type the <code v-pre>/submit</code> command of <strong>QCBot</strong> and click the command.</p>
+<li><p>Click the <code v-pre>Submit Model</code> button.</p>
 </li>
 </ul>
-<p><img src="../modelmaker-img/submit.png" alt="image" width="600" height="auto">‎<br />
+<p><img src="../modelmaker-img/1.png" alt="image" width="600" height="auto">‎<br />
 ‎</p>
 <div class="content-center"><doc-anchor-target id="now-fill-up-the-information-about-your-model">
     <h4>
@@ -461,9 +461,7 @@
 <dt><strong>epochs</strong></dt>
 <dd>Total <u><a href="https://docs.ai-hub.wtf/rvc/resources/epochs--tensorboard/">epochs</a></u> amount.</dd>
 <dt><strong>link</strong></dt>
-<dd>Its download link from Hugging Face.</dd>
-<dt><strong>image</strong></dt>
-<dd>An image of what it represents (person/character).</dd>
+<dd>Its download link from Hugging Face or Weights.</dd>
 <dt><strong>demo</strong></dt>
 <dd>An audio sample of it talking/singing.</dd>
 <dt><strong>note</strong> </dt>
@@ -500,15 +498,9 @@
     </h4>
 </doc-anchor-target>
 <ul>
-<li><p>Once you are done filling the information, send the message.</p>
-</li>
-<li><p>If everything went fine, your submission will be added to the queue &amp; the bot will send a confirmation message, containing your <strong>submission ID</strong>.<br />
-<u><strong>With this ID, you can:</strong></u></p>
-<ul>
-<li>Check your submission&#x27;s number in queue with the command <code v-pre>/queue</code> followed by the ID. (e.g <code v-pre>/queue 251</code>).</li>
-<li>Cancel your submission with the command <code v-pre>/cancel</code> followed by the ID.<br />
-‎</li>
-</ul>
+<li><p>Once you are done filling the information it will send your model to get QCed</p>
+<p><img src="../modelmaker-img/submitted.png" alt="image" width="" height="auto">‎
+‎</p>
 </li>
 <li><p>Now, wait for a <strong>QC</strong> (quality checker) to verify your model. You&#x27;ll be notified once it has been reviewed.</p>
 </li>
