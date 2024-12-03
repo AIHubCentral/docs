@@ -19,9 +19,7 @@ order: 4000
 :::content-center
 ## Length
 :::
-- For beginners we recommend sticking with **15 minutes**, or **30**+ minutes of diverse audio if you want it very high quality and natural sounding.        
-
-- If you wish to go for more, keep in mind, usually anything further than 45 minutes isn't necessary.      
+- For beginners we recommend sticking with **15 minutes**, or **40+** minutes of diverse audio if you want it natural sounding. Just remember quality over quantity.           
 
 - The dataset can be just a single audio file or it can be split into multiple files to help prevent mode collapses.  
 
