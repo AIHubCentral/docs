@@ -72,10 +72,12 @@ The second way being:
 ***
 ###### ‎ 
 ### Problems        
-However there are a plethora of problems in making a pretrain which are:
-1. Harmonic distortion. This is when the harmonics of the voice start mirroring. This occurs when you train any pretrain, so far there is no known fix for this. 
+However there are a several of problems in making a pretrain which are:
+1. Harmonic distortion. This is when the harmonics of the voice start mirroring. This occurs when you train any pretrain. 
 2. Noise. If your pretrain is trained with noise it will add this to any model you train with it. 
-3. 8k Line. This occurs when training a model from scratch. This is a bug related to RVC and there is no known fix.
+3. 8k Line. This occurs when training a model from scratch.
+
+But thanks to the efforts of noobies he has fixed both the harmonic distortion and the 8k line in the 3.2.8 version of applio. 
 ***
 ###### ‎ 
 ### Misc        
@@ -130,5 +132,5 @@ A: There is no "best pretrain" it all depends on your needs and what you're ok w
 :::content-center
 #### `You have reached the end.`
 
-[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.ai-hub.wtf/rvc/contributions/)
+[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.ai-hub.wtf/contributions/)
 :::

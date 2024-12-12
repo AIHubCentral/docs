@@ -35,6 +35,7 @@ visibility:
     - #### :icon-repo-forked: <u>[Applio](https://applio.org/)</u>
         - ##### :icon-cloud: <u>[Applio Colab](https://colab.research.google.com/github/iahispano/applio/blob/master/assets/Applio.ipynb)</u>
         - ##### :icon-cloud: <u>[Applio Kaggle](https://www.kaggle.com/code/deiant/applio)</u>
+        - ##### :icon-cloud: <u>[Applio Lighting Ai](https://lightning.ai/guilhermecardoso1/studios/applio-latest?section=all&query=applio)</u>
     ###### ‎   
     {.list-icon}
     - #### :icon-repo-forked: <u>[Mangio](https://github.com/Mangio621/Mangio-RVC-Fork)</u>
@@ -80,7 +81,6 @@ Storage | 6 GB
 !!! NOTES:
 - For inference, the storage requirement varies depending on the fork. It can be around 5 to 9 GB
 - If you don't meet these requirements, it's more convenient to use RVC on the cloud.
-- Regarding GPUs, RVC is only compatible with NVIDIA. Learn below why.
 !!!
 
 === 
@@ -116,5 +116,5 @@ Storage | 6 GB
 :::content-center
 #### `You have reached the end.`
 
-[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.ai-hub.wtf/rvc/contributions/)
+[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.ai-hub.wtf/contributions/)
 :::
