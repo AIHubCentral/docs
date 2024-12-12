@@ -72,7 +72,8 @@ order: 1000
     - Fast        
     - Decent quality       
     - Usually sounds a little harsh   
-    - Should be your **go-to** algorithm, due to its convenience       
+    - Should be your **go-to** algorithm, due to its convenience      
+    - Better with harmonic-rich voices / fuller voices 
     ***
     Some <u>[forks](https://docs.ai-hub.wtf/essentials/whats-rvc/#forks)</u> include **RMVPE_GPU** & **RMVPE+**. Same algorithm, but with a modification:         
 
@@ -84,23 +85,16 @@ order: 1000
 
     ===
 
-    ==- *Crepe*
-    ###### ‎    
-    - Slower
-    - Has higher quality
-    - More prone to noise & <u>[artifacting</u>](https://docs.ai-hub.wtf/rvc/resources/artifacting/). Switch to RMVPE if you can't fix it
-    - Only use it with high quality datasets/samples
-    - Recommended for more **realistic** results
-    ===
-
     ==- *Mangio-Crepe*
     ###### ‎  
     - It's crepe, but you can adjust its **hop_length**
     - It determines the time it takes the voice to hit a note
     - The lower the value, the more detailed results you'll get, but will take longer to process
     - Useful when the audio/model performs drastic note shifts
+    - If you have really clean audio use this over RMVPE
+    - Better with soft, whspery and feminine timbres
     ###### ‎ 
-    >Lowering it too much might lead to voice cracks.
+    >Lowering it too much might lead to voice cracks so it's recommended to not lower it below 64.
 
     ===
 >They also work the same for training models.

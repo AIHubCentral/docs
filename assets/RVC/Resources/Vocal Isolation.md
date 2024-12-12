@@ -633,13 +633,8 @@ Extract Backing Vocals | UVR BVE 2
 De-Noise | Mel Roformer De-Noise 
 
 +++ Cloud UVR
-Extraction | Model
-:---: | :---: 
-Vocals | INST-VOC-Mel-Roformer duality v1
-Instrumental | INST-Mel-Roformer v1
-De-Reverb | DE-REVERB-MDX23C
-Extract Backing Vocals | KARAOKE-MelBand-Roformer 
-De-Noise | DENOISE-MelBand-Roformer-2 
+The best model for this change a lot so it's best you look <u>[here](https://docs.google.com/spreadsheets/d/1pPEJpu4tZjTkjPh_F5YjtIyHq8v0SxLnBydfUBUNlbI/edit?usp=sharing)</u>, but as of `12/12/2024` these are the best: 
+<img src="../clouduvr-img/6.png" alt="image" width="900" height="auto">‎
 
 +++
 ***

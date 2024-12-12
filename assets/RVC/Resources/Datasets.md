@@ -17,7 +17,7 @@ order: 4000
 ***
 ###### ‎
 :::content-center
-## Length
+## Length & Variety
 :::
 - For beginners we recommend sticking with **15 minutes**, or **40+** minutes of diverse audio if you want it natural sounding. Just remember quality over quantity.           
 
@@ -41,7 +41,7 @@ order: 4000
 - The higher the audio quality, the better. If possible have it in a <u>[lossless](https://docs.ai-hub.wtf/extra/glossary/#lossless-formats)</u> format like **WAV** or **FLAC**, not a lossy one like MP3.   
 ‎   
 #### :icon-chevron-down: No sibilance/popping.
-- Additionally, don't include harsh sibilance (loud "S" & "SH" pronunciation) or popping sounds (loud "P" sound).   
+- Additionally, don't include harsh sibilance (loud "S" & "SH" pronunciation) or popping sounds (loud "P" sound) if you have a short dataset, because these will make the sibilants harsh or robotic but if you have a longer dataset (30+ minutes) you can leave them untouched and be fine.   
 ‎  
 #### :icon-chevron-down: No Audio Damage.
 - The most inportant part of a clean dataset, if your audio is damaged RVC will struggle with it causing mode collapses and make it overall sound worse so make sure your audio isn't damged.  

@@ -3,7 +3,7 @@ icon: chevron-right
 order: 2000
 ---
 
-``Last update: Mar 4, 2024``
+``Last update: Dec 12, 2024``
 ***
 
 ## Introduction :icon-book:
@@ -17,8 +17,46 @@ order: 2000
 ***
 ## ElevenLabs/11Labs
 ***
-- <u>[ElevenLabs](https://elevenlabs.io/)</u> is a **freemium** service (only one in this guide) that offers TTS, training TTS models & translating videos from different languages.    
+- <u>[ElevenLabs](https://elevenlabs.io/)</u> is a **freemium** service that offers TTS, training TTS models & translating videos from different languages.    
 ‎
+***
+## Fish Speech
+- Fish speech is a 0shot multilingual TTS model created by <u>[Fish Audio](https://fish.audio)</u>. 
+
+- This is one of the best 0shot TTS as of now, it rarely hallucinates.
+
+- It can be used either locally or on the cloud.
+
+ +++ :icon-device-desktop: ‎ LOCAL
+ - :icon-repo-forked: <u>[Offical github repo](https://github.com/fishaudio/fish-speech)</u>
+
+ +++ :icon-cloud: ‎ CLOUD
+
+- :icon-rocket: <u>[Offical site](https://fish.audio/)</u>
+- :icon-rocket: <u>[HuggingFace Space](https://huggingface.co/spaces/fishaudio/fish-speech-1)</u>
+
+ +++
+
+***
+## F5 TTS
+- F5 is the best 0shot TTS model.
+
+- F5 gives fairly high quality outputs that rarely hallucinate.
+
+- But it is limited with issue like: Reading to fast = you are using a reference audio that is more the six seconds long or 100 characters. Hallucinates on low voices.
+
+- It can be used either locally or on the cloud.
+
+ +++ :icon-device-desktop: ‎ LOCAL
+ - :icon-repo-forked: <u>[Offical github repo](https://github.com/SWivid/F5-TTS)</u>
+
+ +++ :icon-cloud: ‎ CLOUD
+
+- :icon-rocket: <u>[HuggingFace Space](https://huggingface.co/spaces/mrfakename/E2-F5-TTS)</u>
+
+ +++
+
+
 ***
 ## Bark TTS
 ***

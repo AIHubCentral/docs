@@ -54,7 +54,7 @@ visibility:
 ==- *What's the best fork?*
 ###### ‎       
 - As explained before, it depends on your needs. It's best to try them yourself.
-- For **local** users, <u>[Mainline](https://docs.ai-hub.wtf/rvc/local/mainline/)</u> is a great starting point. For **cloud** users you can use either the <u>[Applio Colab](https://docs.ai-hub.wtf/rvc/cloud/applio-colab/)</u> or <u>[mainline kaggle](https://docs.ai-hub.wtf/rvc/cloud/kaggle/)</u>.
+- For **local** users, <u>[Applio](https://docs.ai-hub.wtf/rvc/local/applio/)</u> is a great starting point. For **cloud** users you can use either the <u>[Applio Colab](https://docs.ai-hub.wtf/rvc/cloud/applio-colab/)</u> or <u>[mainline kaggle](https://docs.ai-hub.wtf/rvc/cloud/kaggle/)</u>.
 ===
 
 ==- *What are the requirements for RVC locally?*

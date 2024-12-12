@@ -3,7 +3,7 @@ icon: chevron-right
 order: 6000
 ---
 
-``Last update: Feb 10, 2024``   
+``Last update: Dec 12, 2024``   
 ***
 ###### ‎
 :::content-center
@@ -146,27 +146,45 @@ For <u>[RVC Disconnected</u>](https://docs.ai-hub.wtf/rvc/cloud/rvc-disconnected
 +++ Advanced Guide ‎     
 #### :icon-chevron-down: <u>Other Graphs</u>
 ***
-The other graphs within RVC are:
 
-1. `FM` (Feature Matching): FM shows how well the model is able to recreate the features of the audio (lower is better).
+#### `FM` Feature Matching: 
+FM shows how well the generator is able to make synthetic data that has similar features to the dataset.
 
-2. `KL` (Kullback-Leibler): Kl shows how similar the audio sounds to the source (lower is better).
+If the graph is decreasing that indicates that the generator is able to make audio that has similar features to the dataset.
+***
 
-3. `Mel`: Mel shows how well the model can recreate the mel spectrogram (lower is better).
+#### `KL` Kullback-Leibler: 
+KL makes the generator create similar distribution of latest variables to real data. The KL loss ensures that the generator is not just memorizing real data but it's learning to capture the underlying patterns in the data. 
 
-4. `Grad_g`: This shows how well the model is capable of making new stuff (lower is better).
+If the graph is decreasing that shows that the generator is making audio with similar distribution of latent variables to real data.
+***
 
-5. `d/total`: This shows the discriminator's average loss. The discriminator tells the difference between what's Ai generated and what's not (lower is better).
+#### `Mel` Mel Spectrogram: 
+ The mel spectrogram loss compares both the real and synthetic mel spectrograms. This loss encourages the generator to produce audio that sounds similar to the dataset.
+
+ If the graph is decreasing that shows that the generator is producing audio with similar spectral distribution to the dataset.
+***
+
+#### `d/total` Discriminator Loss: 
+d/total shows how well the discriminator is able to differentiate between real and generated audio. 
+
+If the graph is decreasing that means the discriminator is becoming better at distinguishing between real and synthetic data which usually means that the generator is producing realistic audio. 
+***
 
 ***
 #### :icon-chevron-down: <u>Mel Images</u>
 ***
-- While looking through the Tensor Board you may come across `slice/mel_gen` and `slice/mel_org`. 
-     - `slice/mel_gen` Is a mel spectrogram view of audio that the generator created in attempt to make it match `mel_org`.
-     <img src="../tensorboard-img/mel_gen.png" alt="image" width="700" height="700">‎ 
+ While looking through the Tensor Board you may come across `slice/mel_gen` and `slice/mel_org`. 
+***
+#### slice/mel_gen: 
+Is a mel spectrogram view of audio that the generator created in attempt to make it match `mel_org`.
+<img src="../tensorboard-img/mel_gen.png" alt="image" width="700" height="700">‎ 
 
-     - `slice/mel_org` Is a mel spectrogram view of audio from your dataset. 
-     <img src="../tensorboard-img/mel_og.png" alt="image" width="700" height="700">‎ 
+***
+
+#### slice/mel_org:
+Is a mel spectrogram view of audio from your dataset. 
+<img src="../tensorboard-img/mel_og.png" alt="image" width="700" height="700">‎ 
 ***
 ###### ‎
 :::content-center
