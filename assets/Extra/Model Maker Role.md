@@ -126,7 +126,12 @@ You can attach more samples when you repost the model to ``#voice-models``.
 
    <img src="../modelmaker-img/submitted.png" alt="image" width="" height="auto">‎ 
 ‎     
-- Now, wait for a **QC** (quality checker) to verify your model. You'll be notified once it has been reviewed.   
+- Now, wait for a **QC** (quality checker) to verify your model. You'll be notified once it has been reviewed.
+
+- If you made a mistake in your submission or you want to change something you can cancel your submission by clicking on the cancel button that is attatched to the message you get when you send a submission.
+
+  <img src="../modelmaker-img/2.png" alt="image" width="600">‎
+
 
 - If your model gets approved, the bot will notify you with a message like this:    
 

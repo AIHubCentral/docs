@@ -64,7 +64,7 @@ visibility:
 **SPEC** | **REQUIREMENT** | 
 :---: | :---: | :---: |
 Operating System | Windows 10 | 
-GPU | NVIDIA RTX 2060ti | 
+GPU | NVIDIA RTX 2060ti / AMD RX5700 | 
 RAM | 16GB
 Storage | 30 GB
 

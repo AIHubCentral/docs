@@ -8,10 +8,9 @@ icon: code-of-conduct
 
 
 ## Contributions :icon-code-of-conduct:
-- We'll appreciate any **feedback**, big or small. You can directly **contact us** in <u>[AI Hub](https://discord.gg/aihub)</u>: **@eddycrack864** - **@ailen2091**
-- Leave **suggestions** in the <u>[#suggestions](https://discord.com/channels/1159260121998827560/1159516963014451302)</u> channel. To **report issues**, use <u>[#help-forum](https://discord.com/channels/1159260121998827560/1192011222023950368)</u>.
-
-- You can send an issues to our <u>[GitHub repo](https://github.com/AIHubDocs)</u>.
+- We'll appreciate any **feedback**, big or small. If you wish to contact anyone who worked on this you can find them in <u>[AI Hub](https://discord.gg/aihub)</u>.
+- Leave **suggestions** in the <u>[#suggestions](https://discord.com/channels/1159260121998827560/1159516963014451302)</u> channel. 
+- To **report issues** use <u>[#help-forum](https://discord.com/channels/1159260121998827560/1192011222023950368)</u>. You can also send issues to our <u>[GitHub repo](https://github.com/AIHubDocs)</u>.
 
 - If you would like to add to this doc please make a pull request in the <u>[GitHub repo](https://github.com/AIHubDocs)</u>. 
 

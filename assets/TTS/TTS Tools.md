@@ -16,8 +16,8 @@ order: 2000
 ‎
 ***
 ## ElevenLabs/11Labs
-***
-- <u>[ElevenLabs](https://elevenlabs.io/)</u> is a **freemium** service that offers TTS, training TTS models & translating videos from different languages.    
+- <u>[ElevenLabs](https://elevenlabs.io/)</u> is a **freemium** service that offers TTS, training TTS models & translating videos from different languages.  
+
 ‎
 ***
 ## Fish Speech

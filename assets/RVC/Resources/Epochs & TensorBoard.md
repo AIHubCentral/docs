@@ -151,18 +151,24 @@ For <u>[RVC Disconnected</u>](https://docs.ai-hub.wtf/rvc/cloud/rvc-disconnected
 FM shows how well the generator is able to make synthetic data that has similar features to the dataset.
 
 If the graph is decreasing that indicates that the generator is able to make audio that has similar features to the dataset.
+
+> you can think of this as how well the model can match timbral, spetial, temporal characteristics. 
 ***
 
 #### `KL` Kullback-Leibler: 
 KL makes the generator create similar distribution of latest variables to real data. The KL loss ensures that the generator is not just memorizing real data but it's learning to capture the underlying patterns in the data. 
 
 If the graph is decreasing that shows that the generator is making audio with similar distribution of latent variables to real data.
+
+> You can think of this as how well it can replicate the speakers style. 
 ***
 
 #### `Mel` Mel Spectrogram: 
  The mel spectrogram loss compares both the real and synthetic mel spectrograms. This loss encourages the generator to produce audio that sounds similar to the dataset.
 
  If the graph is decreasing that shows that the generator is producing audio with similar spectral distribution to the dataset.
+
+ > you can think of this as clarity / fidelity.
 ***
 
 #### `d/total` Discriminator Loss: 

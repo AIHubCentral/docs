@@ -92,7 +92,7 @@ order: 1000
     - The lower the value, the more detailed results you'll get, but will take longer to process
     - Useful when the audio/model performs drastic note shifts
     - If you have really clean audio use this over RMVPE
-    - Better with soft, whspery and feminine timbres
+    - Better with soft, whspery or voices with feminine timbres
     ###### ‎ 
     >Lowering it too much might lead to voice cracks so it's recommended to not lower it below 64.
 
