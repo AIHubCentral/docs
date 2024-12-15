@@ -35,6 +35,7 @@ visibility:
     - #### :icon-repo-forked: <u>[Applio](https://applio.org/)</u>
         - ##### :icon-cloud: <u>[Applio Colab](https://colab.research.google.com/github/iahispano/applio/blob/master/assets/Applio.ipynb)</u>
         - ##### :icon-cloud: <u>[Applio Kaggle](https://www.kaggle.com/code/deiant/applio)</u>
+        - ##### :icon-cloud: <u>[Applio Lighting Ai](https://lightning.ai/guilhermecardoso1/studios/applio-latest?section=all&query=applio)</u>
     ###### ‎   
     {.list-icon}
     - #### :icon-repo-forked: <u>[Mangio](https://github.com/Mangio621/Mangio-RVC-Fork)</u>
@@ -53,7 +54,7 @@ visibility:
 ==- *What's the best fork?*
 ###### ‎       
 - As explained before, it depends on your needs. It's best to try them yourself.
-- For **local** users, <u>[Mainline](https://docs.ai-hub.wtf/rvc/local/mainline/)</u> is a great starting point. For **cloud** users you can use either the <u>[Applio Colab](https://docs.ai-hub.wtf/rvc/cloud/applio-colab/)</u> or <u>[mainline kaggle](https://docs.ai-hub.wtf/rvc/cloud/kaggle/)</u>.
+- For **local** users, <u>[Applio](https://docs.ai-hub.wtf/rvc/local/applio/)</u> is a great starting point. For **cloud** users you can use either the <u>[Applio Colab](https://docs.ai-hub.wtf/rvc/cloud/applio-colab/)</u> or <u>[mainline kaggle](https://docs.ai-hub.wtf/rvc/cloud/kaggle/)</u>.
 ===
 
 ==- *What are the requirements for RVC locally?*
@@ -63,7 +64,7 @@ visibility:
 **SPEC** | **REQUIREMENT** | 
 :---: | :---: | :---: |
 Operating System | Windows 10 | 
-GPU | NVIDIA RTX 2060ti | 
+GPU | NVIDIA RTX 2060ti / AMD RX5700 | 
 RAM | 16GB
 Storage | 30 GB
 
@@ -80,7 +81,6 @@ Storage | 6 GB
 !!! NOTES:
 - For inference, the storage requirement varies depending on the fork. It can be around 5 to 9 GB
 - If you don't meet these requirements, it's more convenient to use RVC on the cloud.
-- Regarding GPUs, RVC is only compatible with NVIDIA. Learn below why.
 !!!
 
 === 
@@ -116,5 +116,5 @@ Storage | 6 GB
 :::content-center
 #### `You have reached the end.`
 
-[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.ai-hub.wtf/rvc/contributions/)
+[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.ai-hub.wtf/contributions/)
 :::
