@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.786320724510">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.787613803598">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.6.0">
@@ -14,7 +14,7 @@
     <!-- Primary Meta Tags -->
     <title>Epochs &amp; TensorBoard</title>
     <meta name="title" content="Epochs & TensorBoard">
-    <meta name="description" content="Last update: Feb 10, 2024">
+    <meta name="description" content="Last update: Dec 12, 2024">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://docs.ai-hub.wtf/rvc/resources/epochs-tensorboard/">
@@ -23,22 +23,22 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.ai-hub.wtf/rvc/resources/epochs-tensorboard/">
     <meta property="og:title" content="Epochs & TensorBoard">
-    <meta property="og:description" content="Last update: Feb 10, 2024">
+    <meta property="og:description" content="Last update: Dec 12, 2024">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.ai-hub.wtf/rvc/resources/epochs-tensorboard/">
     <meta property="twitter:title" content="Epochs & TensorBoard">
-    <meta property="twitter:description" content="Last update: Feb 10, 2024">
+    <meta property="twitter:description" content="Last update: Dec 12, 2024">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../../img/b.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.6.0.786320724510" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.6.0.787613803598" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.6.0.786320724510" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.6.0.787613803598" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.6.0.786320724510" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.6.0.787613803598" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -230,7 +230,7 @@
         <span>Epochs &amp; TensorBoard</span>
     </h1>
 </doc-anchor-target>
-<p><code v-pre>Last update: Feb 10, 2024</code></p>
+<p><code v-pre>Last update: Dec 12, 2024</code></p>
 <hr>
 <doc-anchor-target id="section">
     <h6>
@@ -552,19 +552,51 @@ For more information, check the guide for your RVC in this website.</p>
     </h4>
 </doc-anchor-target>
 <hr>
-<p>The other graphs within RVC are:</p>
-<ol>
-<li><p><code v-pre>FM</code> (Feature Matching): FM shows how well the model is able to recreate the features of the audio (lower is better).</p>
-</li>
-<li><p><code v-pre>KL</code> (Kullback-Leibler): Kl shows how similar the audio sounds to the source (lower is better).</p>
-</li>
-<li><p><code v-pre>Mel</code>: Mel shows how well the model can recreate the mel spectrogram (lower is better).</p>
-</li>
-<li><p><code v-pre>Grad_g</code>: This shows how well the model is capable of making new stuff (lower is better).</p>
-</li>
-<li><p><code v-pre>d/total</code>: This shows the discriminator&#x27;s average loss. The discriminator tells the difference between what&#x27;s Ai generated and what&#x27;s not (lower is better).</p>
-</li>
-</ol>
+<doc-anchor-target id="fm-feature-matching">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#fm-feature-matching">#</doc-anchor-trigger>
+        <span><code v-pre>FM</code> Feature Matching:</span>
+    </h4>
+</doc-anchor-target>
+<p>FM shows how well the generator is able to make synthetic data that has similar features to the dataset.</p>
+<p>If the graph is decreasing that indicates that the generator is able to make audio that has similar features to the dataset.</p>
+<blockquote>
+<p>you can think of this as how well the model can match timbral, spetial, temporal characteristics.</p>
+</blockquote>
+<hr>
+<doc-anchor-target id="kl-kullback-leibler">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#kl-kullback-leibler">#</doc-anchor-trigger>
+        <span><code v-pre>KL</code> Kullback-Leibler:</span>
+    </h4>
+</doc-anchor-target>
+<p>KL makes the generator create similar distribution of latest variables to real data. The KL loss ensures that the generator is not just memorizing real data but it&#x27;s learning to capture the underlying patterns in the data.</p>
+<p>If the graph is decreasing that shows that the generator is making audio with similar distribution of latent variables to real data.</p>
+<blockquote>
+<p>You can think of this as how well it can replicate the speakers style.</p>
+</blockquote>
+<hr>
+<doc-anchor-target id="mel-mel-spectrogram">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#mel-mel-spectrogram">#</doc-anchor-trigger>
+        <span><code v-pre>Mel</code> Mel Spectrogram:</span>
+    </h4>
+</doc-anchor-target>
+<p>The mel spectrogram loss compares both the real and synthetic mel spectrograms. This loss encourages the generator to produce audio that sounds similar to the dataset.</p>
+<p>If the graph is decreasing that shows that the generator is producing audio with similar spectral distribution to the dataset.</p>
+<blockquote>
+<p>you can think of this as clarity / fidelity.</p>
+</blockquote>
+<hr>
+<doc-anchor-target id="dtotal-discriminator-loss">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#dtotal-discriminator-loss">#</doc-anchor-trigger>
+        <span><code v-pre>d/total</code> Discriminator Loss:</span>
+    </h4>
+</doc-anchor-target>
+<p>d/total shows how well the discriminator is able to differentiate between real and generated audio.</p>
+<p>If the graph is decreasing that means the discriminator is becoming better at distinguishing between real and synthetic data which usually means that the generator is producing realistic audio.</p>
+<hr>
 <hr>
 <doc-anchor-target id="-mel-images">
     <h4>
@@ -573,18 +605,25 @@ For more information, check the guide for your RVC in this website.</p>
     </h4>
 </doc-anchor-target>
 <hr>
-<ul>
-<li>While looking through the Tensor Board you may come across <code v-pre>slice/mel_gen</code> and <code v-pre>slice/mel_org</code>.
-<ul>
-<li><p><code v-pre>slice/mel_gen</code> Is a mel spectrogram view of audio that the generator created in attempt to make it match <code v-pre>mel_org</code>.
+<p>While looking through the Tensor Board you may come across <code v-pre>slice/mel_gen</code> and <code v-pre>slice/mel_org</code>.</p>
+<hr>
+<doc-anchor-target id="slicemel_gen">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#slicemel_gen">#</doc-anchor-trigger>
+        <span>slice/mel_gen:</span>
+    </h4>
+</doc-anchor-target>
+<p>Is a mel spectrogram view of audio that the generator created in attempt to make it match <code v-pre>mel_org</code>.
 <img src="../tensorboard-img/mel_gen.png" alt="image" width="700" height="700">‎</p>
-</li>
-<li><p><code v-pre>slice/mel_org</code> Is a mel spectrogram view of audio from your dataset.
+<hr>
+<doc-anchor-target id="slicemel_org">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#slicemel_org">#</doc-anchor-trigger>
+        <span>slice/mel_org:</span>
+    </h4>
+</doc-anchor-target>
+<p>Is a mel spectrogram view of audio from your dataset.
 <img src="../tensorboard-img/mel_og.png" alt="image" width="700" height="700">‎</p>
-</li>
-</ul>
-</li>
-</ul>
 <hr>
 <doc-anchor-target id="section-12">
     <h6>
@@ -598,7 +637,7 @@ For more information, check the guide for your RVC in this website.</p>
         <span><code v-pre>You have reached the end.</code></span>
     </h4>
 </doc-anchor-target>
-<p><a href="https://docs.ai-hub.wtf/rvc/contributions/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-8 px-4 text-base rounded-full">
+<p><a href="https://docs.ai-hub.wtf/contributions/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-8 px-4 text-base rounded-full">
     <span>Report Issues</span>
     <span><svg xmlns="http://www.w3.org/2000/svg" class="mb-px inline-flex ml-2" width="22" height="22" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M1.513 1.96a1.374 1.374 0 0 1 1.499-.21l19.335 9.215a1.147 1.147 0 0 1 0 2.07L3.012 22.25a1.374 1.374 0 0 1-1.947-1.46L2.49 12 1.065 3.21a1.375 1.375 0 0 1 .448-1.25Zm2.375 10.79-1.304 8.042L21.031 12 2.584 3.208l1.304 8.042h7.362a.75.75 0 0 1 0 1.5Z"/></g></svg></span>
 </a></p>
