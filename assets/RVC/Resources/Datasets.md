@@ -71,7 +71,8 @@ order: 4000
 <img src="../datasets-img/norm.png" alt="image" width="420" height="auto"> 
 
 > LUFS are used over db because hifigan needs perceptual quality and db doesnt offer that.
-#### Step 4: Export.
+***
+#### Step 3: Export.
 - On the upper right corner go to File and click ``Export Audio``.       
     ‎   
     <img src="../datasets-img/4.png" alt="image" width="370" height="auto"> 
@@ -87,6 +88,26 @@ order: 4000
         ###### ‎    
 
         <img src="../datasets-img/5.png" alt="image" width="650" height="auto">
+
+***
+#### Step 4: Slice Audio (Optional)
+- Download this: [!file](../datasets-img/split_audio.py)
+- Then place it in Applio's root folder. Then type `cmd` into the top bar where it shows your location.
+
+<img src="../datasets-img/cmd.png" alt="image" width="420" height="auto">
+‎  
+
+- Then type this into the cmd line `python split_audio.py wavfilelocationhere exportfolderhere sampleratehere 5 0.5`.
+    - for example it would look something like this `python split_audio.py C:\Users\dawnm\Downloads\dataset.wav C:\Users\dawnm\Desktop\split\ 32000 5 0.5`.
+
+> If you get an error saying something is missing simply type `pip install librosa numpy scipy tqdm`. 
+
+- Then once it's done go into the folder where you told it to export all of the slices to, then copy / cut all of the files there are place them into your dataset folder. 
+
+!!!danger
+If you use this method you **have** to disable the slicer and post processing in Applio.
+!!!
+
 
 ***
 
