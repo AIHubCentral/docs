@@ -128,7 +128,7 @@ For <u>[RVC Disconnected</u>](https://docs.ai-hub.wtf/rvc/cloud/rvc-disconnected
 
 - You'll detect **OT** (overtraining) when the graph hits the **lowest point**, then stay **flat**/**rising** indefinitely.  
     ‎       
-     **<u>Example of OT for hours:</u>**
+     **<u>Example of OT:</u>**
         
     <img src="../tensorboard-img/10.png" alt="image" width="370" height="auto">‎     
     ‎    
@@ -136,12 +136,17 @@ For <u>[RVC Disconnected</u>](https://docs.ai-hub.wtf/rvc/cloud/rvc-disconnected
 
 - If it reaches a low point, let it run for **longer** until it's **very clear** it's OT.
 
-- When you detect OT, zoom in & place your mouse over the **lowest point**. Note down the ``Step`` number.
+- When you detect OT go into the search bar and look for `mel`, 
 
-    <img src="../tensorboard-img/8.png" alt="image" width="400" height="auto">‎    
+    <img src="../tensorboard-img/mel.png" alt="image" width="500" height="auto">‎
 
-- Use the model that was **closest** to ***before*** the OT point.      
-    For more information, check the guide for your RVC in this website.
+- Then zoom out & lower the smoothening to 0. Then look for low points named local minima.
+
+    <img src="../tensorboard-img/min.png" alt="image" width="600" height="auto">‎    
+
+- Then over your mouse over the local minimas and take note of the step counts. Find all of the epochs connected to those step counts and then use them all to find the one that sounds best to you.
+
+> If you want you can just use the lowest mel point.
 
 +++ Advanced Guide ‎     
 #### :icon-chevron-down: <u>Other Graphs</u>
@@ -181,7 +186,6 @@ If the graph is decreasing that means the discriminator is becoming better at di
 #### :icon-chevron-down: <u>Mel Images</u>
 ***
  While looking through the Tensor Board you may come across `slice/mel_gen` and `slice/mel_org`. 
-***
 #### slice/mel_gen: 
 Is a mel spectrogram view of audio that the generator created in attempt to make it match `mel_org`.
 <img src="../tensorboard-img/mel_gen.png" alt="image" width="700" height="700">‎ 
@@ -192,6 +196,10 @@ Is a mel spectrogram view of audio that the generator created in attempt to make
 Is a mel spectrogram view of audio from your dataset. 
 <img src="../tensorboard-img/mel_og.png" alt="image" width="700" height="700">‎ 
 ***
+##### This is an example of what a mode collapse looks like:
+<img src="../tensorboard-img/mode.png" alt="image" width="700" height="700">‎ 
+
+
 ###### ‎
 :::content-center
 #### `You have reached the end.`

@@ -40,53 +40,39 @@ order: 4000
 #### :icon-chevron-down: Audio quality.
 - The higher the audio quality, the better. If possible have it in a <u>[lossless](https://docs.ai-hub.wtf/extra/glossary/#lossless-formats)</u> format like **WAV** or **FLAC**, not a lossy one like MP3.   
 ‎   
-#### :icon-chevron-down: No sibilance/popping.
-- Additionally, don't include harsh sibilance (loud "S" & "SH" pronunciation) or popping sounds (loud "P" sound) if you have a short dataset, because these will make the sibilants harsh or robotic but if you have a longer dataset (30+ minutes) you can leave them untouched and be fine.   
+#### :icon-chevron-down: No harsh sibilance/popping.
+- Additionally, don't include harsh sibilance (loud "S" & "SH" pronunciation) or popping sounds (loud "P" sound) 
+    - Robotic sibilances are due to your dataset being short. You can fix this by making your dataset larger
+    - Harsh sibilances are due to your dataset having harsh sibilants. You can fix this by de-essing or making your dataset larger
 ‎  
 #### :icon-chevron-down: No Audio Damage.
-- The most inportant part of a clean dataset, if your audio is damaged RVC will struggle with it causing mode collapses and make it overall sound worse so make sure your audio isn't damged.  
+- The most inportant part of a clean dataset, if your audio is damaged RVC will struggle with it causing it to overall sound worse because RVC will create synthetic data and try to learn from it, so make sure your audio isn't damged.  
 ‎   
 ***
 ###### ‎
 :::content-center
 ## Cleaning
 :::
-1. First, clean the undesired noises explained before using a <u>[vocal isolation](https://docs.ai-hub.wtf/rvc/resources/vocal-isolation/)</u> software.     
-***   
-2. Then, to remove silences we'll use the free version of [Renegate](https://www.auburnsounds.com/products/Renegate.html) and <u>[Audacity</u>](https://www.audacityteam.org/download/) as our daw.            
-    ‎     
+- First, clean the undesired noises explained before using a <u>[vocal isolation](https://docs.ai-hub.wtf/rvc/resources/vocal-isolation/)</u> software.     
+*** 
 
-    {.list-icon}  
-    #### Step 1: Noise Gate.   
-    - First input your dataset by dragging the audio file into the your daw of choice, for this example we will use Audacity.     
+#### Step 1: Truncating Silence.   
 
-    - Press CTRL + A to select the whole audio.       
-
-    - Navigate to the ``Effect`` menu at the top, go to `Renegate` and click it.
-
-    - Use these values & apply the changes:      
-    ‎       
- <img src="../datasets-img/img-1.png" alt="image" width="600" height="auto">
-
-    ***
-    ###### ‎
-    #### Step 2: Truncating Silence.    
-
-    - Go to Effects -> Special -> Truncate Silence     
-    - Use the following values:         
+- Go to Effects -> Special -> Truncate Silence     
+- Use the following values:         
     ‎  
-    <img src="../datasets-img/6.png" alt="image" width="420" height="auto">    
+    <img src="../datasets-img/trunc.png" alt="image" width="420" height="auto">    
     ***
     ‎
-    #### Step 3: Audio Normalization. (Optional)    
-    - Go go to Effects -> Volume and Compression -> Normalization
+    #### Step 2: Audio Normalization.    
+    - Go go to Effects -> Volume and Compression -> Loudness Normalization
     - Use these values:     
 ‎       
-<img src="../datasets-img/3.png" alt="image" width="420" height="auto">  
+<img src="../datasets-img/norm.png" alt="image" width="420" height="auto"> 
 
-    ‎
-    #### Step 4: Export.
-    - On the upper right corner go to File and click ``Export Audio``.       
+> LUFS are used over db because hifigan needs perceptual quality and db doesnt offer that.
+#### Step 4: Export.
+- On the upper right corner go to File and click ``Export Audio``.       
     ‎   
     <img src="../datasets-img/4.png" alt="image" width="370" height="auto"> 
     ‎       
