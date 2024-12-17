@@ -196,8 +196,14 @@ Is a mel spectrogram view of audio that the generator created in attempt to make
 Is a mel spectrogram view of audio from your dataset. 
 <img src="../tensorboard-img/mel_og.png" alt="image" width="700" height="700">‎ 
 ***
-##### This is an example of what a mode collapse looks like:
+#### Spotting Mode Collapses:
+Another way of spotting is by using the Mel images as shown above. 
+
+- A mode collapses is when RVC trys to learn silence. Here is an example of what the mel image looks like when RVC grabs a silent segment or a mute file. 
+
 <img src="../tensorboard-img/mode.png" alt="image" width="700" height="700">‎ 
+
+***
 
 
 ###### ‎

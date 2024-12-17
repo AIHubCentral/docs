@@ -23,10 +23,12 @@ order: 3000
 
 ||| ✔️ **PROS** 
 - All of the pros of Applio.                   
-- Configurable learning-rate warmup.
-- Configurable moving average loss. 
-- Ranger2020 optimizer.
-- More graphs
+- Supports MRF HiFi-GAN
+- Supports RefineGAN
+- Has a Warmup Phase option
+- Uses the Ranger2020 optimizer
+- Avg running loss
+- 44.1k Sample rate support
 ||| ❌ **CONS** 
 - More complicated.     
 - Doesn't have a precompiled version.      
