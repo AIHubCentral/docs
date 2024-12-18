@@ -192,6 +192,13 @@ Converting a lossy audio to a lossless one won't restore the lost quality.
 - In some cases you can do it on GPU, some in CPU.
 
 ***
+###### ‎       
+### :icon-chevron-down:Optim
+- It is a shorter way to say optimizer.
+
+- A optimizer is an algorithm used to minimize the loss function during the training of neural networks. It helps adjust the model's weights and biases.
+
+***
 ###### ‎
 :::content-center
 #### `You have reached the end.`

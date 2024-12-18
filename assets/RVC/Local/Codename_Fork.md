@@ -3,7 +3,7 @@ icon: chevron-right
 order: 3000
 ---
 
-``Last update: Dec 16, 2024``
+``Last update: Dec 17, 2024``
 ***
 ###### ‎
 :::content-center
@@ -30,8 +30,7 @@ order: 3000
 - Avg running loss
 - 44.1k Sample rate support
 ||| ❌ **CONS** 
-- More complicated.     
-- Doesn't have a precompiled version.      
+- More complicated features.     
 ||| 
 ===
 ***
@@ -39,17 +38,17 @@ order: 3000
 :::content-center
 ## Downloading :icon-download:
 :::
-1. Go to the github repo <u>[here](https://github.com/codename0og/codename-rvc-fork-3)</u>. Then go to the top right and click the green code button and then copy the link under https. 
+1. Go to the github repo <u>[here](https://github.com/codename0og/codename-rvc-fork-3)</u>. Then find the releases tab and click it. 
+
     ‎
-    <img src="../codename-img/1.png" alt="image" width="300" height="auto"> 
+    <img src="../codename-img/rel.png" alt="image" width="500" height="auto"> 
     ‎
-2. Then go into your C drive and create a folder (you can name it anything) and go into it and then type cmd into the bar at the top.
+2. Click on the zip file and download it. Then go into your C drive and extract it.
 
-<img src="../codename-img/cmd.png" alt="image" width="300" height="auto"> 
+<img src="../codename-img/zip.png" alt="image" width="800" height="auto"> 
 
-3. Type `git clone https://github.com/codename0og/codename-rvc-fork-3.git` and hit enter.
 
-4. Go into the codename fork folder and run the `INSTALLATION.bat` file then once it's done run `go-fork.bat`.
+3. Go into the codename fork folder and run the `run-install.bat` file then once it's done run `go-fork.bat`.
 ***
 ###### ‎
 :::content-center
@@ -87,9 +86,11 @@ In the training section you can find the avg running loss settings.
 
 - The avg running loss averages the loss per X steps / mini-batches. This is a better indicator for per epoch performence.
 
+- To use the avg loss you need to know the total number of steps per epochs, you can train one epoch to find the step count. Choosing an averaging factor depends on the user, however Codename recommends experimenting with a window that accounts for around 23% to 32% of total steps in an epoch. If you choose to not use 23-32% of total steps be sure that the logging frequency isn't to small because the losses can vary a ton and it can end up confusing you, and make sure for big loss frequency it isn't to big because it may smoothen the noise to much and not give you accurate results.   
+
 ***
 ### Ranger2020  Optimizer:
-This fork uses the Ranger2020 optimizer (optim) as the default optim instead of the AdamW optim. The Ranger2020 optim is much more complex optim that combines multiple techniques from other optims to be able to provide a more stable and faster convergence then other optims. 
+This fork uses the Ranger2020 <u>[optim](https://docs.ai-hub.wtf/extra/glossary/#Optim)</u> as the default optim instead of the AdamW optim. The Ranger2020 optim is much more complex optim that combines multiple techniques from other optims to be able to provide a more stable and faster convergence then other optims. 
 
 - The three key components are:
    - **RAdam:** An adaptive learning rate method that dynamically adjusts the learning rate based on the variance of the gradients.
