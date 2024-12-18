@@ -86,7 +86,7 @@ In the training section you can find the avg running loss settings.
 
 - The avg running loss averages the loss per X steps / mini-batches. This is a better indicator for per epoch performence.
 
-- To use the avg loss you need to know the total number of steps per epochs, you can train one epoch to find the step count. Choosing an averaging factor depends on the user, however Codename recommends experimenting with a window that accounts for around 23% to 32% of total steps in an epoch. If you choose to not use 23-32% of total steps be sure that the logging frequency isn't to small because the losses can vary a ton and it can end up confusing you, and make sure for big loss frequency it isn't to big because it may smoothen the noise to much and not give you accurate results.   
+- To use the avg loss you need to know the total number of steps per epochs, you can train one epoch to find the step count. Choosing an averaging factor depends on the user, however Codename recommends experimenting with a window that accounts for around 15% to 25% of total steps in an epoch. If you choose to not use 15-25% of total steps be sure that the logging frequency isn't to small because the losses can vary a ton and it can end up confusing you, and make sure for big loss frequency it isn't to big because it may smoothen the noise to much and not give you accurate results.   
 
 ***
 ### Ranger2020  Optimizer:
