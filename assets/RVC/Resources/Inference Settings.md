@@ -61,11 +61,11 @@ order: 1000
 :::
 ‎ 
 
-#### :icon-chevron-down: Also known as <u>f0</u>, they're the algorithms for converting the vocals.        
+#### :icon-chevron-down: They're the algorithms for converting the vocals.        
 
 - Each one works in its own way, and has its pros & cons.       
 
-- As the majority of them are obsolete, we'll focus on the 3 best ones: **RMVPE**, **Crepe**, & **Mangio-Crepe**.
+- As the majority of them are obsolete, we'll focus on the 2 best ones: **RMVPE** and **Mangio-Crepe**.
 
     ==- *RMVPE*
     ###### ‎       
