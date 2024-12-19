@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.787613803598">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.787886787573">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.6.0">
@@ -34,11 +34,11 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../../img/b.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.6.0.787613803598" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.6.0.787886787573" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.6.0.787613803598" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.6.0.787886787573" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.6.0.787613803598" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.6.0.787886787573" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -527,7 +527,7 @@ You can always manually refresh with the refresh symbol (<span class="docs-emoji
 </li>
 <li><p>You&#x27;ll detect <strong>OT</strong> (overtraining) when the graph hits the <strong>lowest point</strong>, then stay <strong>flat</strong>/<strong>rising</strong> indefinitely.<br />
 ‎<br />
-<strong><u>Example of OT for hours:</u></strong></p>
+<strong><u>Example of OT:</u></strong></p>
 <p><img src="../tensorboard-img/10.png" alt="image" width="370" height="auto">‎<br />
 ‎</p>
 </li>
@@ -535,13 +535,18 @@ You can always manually refresh with the refresh symbol (<span class="docs-emoji
 </li>
 <li><p>If it reaches a low point, let it run for <strong>longer</strong> until it&#x27;s <strong>very clear</strong> it&#x27;s OT.</p>
 </li>
-<li><p>When you detect OT, zoom in &amp; place your mouse over the <strong>lowest point</strong>. Note down the <code v-pre>Step</code> number.</p>
-<p><img src="../tensorboard-img/8.png" alt="image" width="400" height="auto">‎</p>
+<li><p>When you detect OT go into the search bar and look for <code v-pre>mel</code>,</p>
+<p><img src="../tensorboard-img/mel.png" alt="image" width="500" height="auto">‎</p>
 </li>
-<li><p>Use the model that was <strong>closest</strong> to <em><strong>before</strong></em> the OT point.<br />
-For more information, check the guide for your RVC in this website.</p>
+<li><p>Then zoom out &amp; lower the smoothening to 0. Then look for low points named local minima.</p>
+<p><img src="../tensorboard-img/min.png" alt="image" width="600" height="auto">‎</p>
+</li>
+<li><p>Then over your mouse over the local minimas and take note of the step counts. Find all of the epochs connected to those step counts and then use them all to find the one that sounds best to you.</p>
 </li>
 </ul>
+<blockquote>
+<p>If you want you can just use the lowest mel point.</p>
+</blockquote>
 </doc-tab>
 <doc-tab v-cloak id="advanced-guide">
 <template #title>Advanced Guide ‎</template>
@@ -606,7 +611,6 @@ For more information, check the guide for your RVC in this website.</p>
 </doc-anchor-target>
 <hr>
 <p>While looking through the Tensor Board you may come across <code v-pre>slice/mel_gen</code> and <code v-pre>slice/mel_org</code>.</p>
-<hr>
 <doc-anchor-target id="slicemel_gen">
     <h4>
         <doc-anchor-trigger class="header-anchor-trigger" to="#slicemel_gen">#</doc-anchor-trigger>
@@ -624,6 +628,18 @@ For more information, check the guide for your RVC in this website.</p>
 </doc-anchor-target>
 <p>Is a mel spectrogram view of audio from your dataset.
 <img src="../tensorboard-img/mel_og.png" alt="image" width="700" height="700">‎</p>
+<hr>
+<doc-anchor-target id="spotting-mode-collapses">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#spotting-mode-collapses">#</doc-anchor-trigger>
+        <span>Spotting Mode Collapses:</span>
+    </h4>
+</doc-anchor-target>
+<p>Another way of spotting is by using the Mel images as shown above.</p>
+<ul>
+<li>A mode collapses is when RVC trys to learn silence. Here is an example of what the mel image looks like when RVC grabs a silent segment or a mute file.</li>
+</ul>
+<p><img src="../tensorboard-img/mode.png" alt="image" width="700" height="700">‎</p>
 <hr>
 <doc-anchor-target id="section-12">
     <h6>
