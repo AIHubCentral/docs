@@ -3,7 +3,7 @@ icon: chevron-right
 order: 5000
 ---
 
-``Last update: Feb 29, 2024``  
+``Last update: Dec 17, 2024``  
 
 ***
 ###### ‎
@@ -34,7 +34,7 @@ order: 5000
 
 ### Installation :icon-download:
 *** 
-1. Go to their <u>[official website</u>](https://ultimatevocalremover.com/) & press `Download UVR`. And if you want to use BS Roformer you are going to need to install [this](https://github.com/TRvlvr/model_repo/releases/download/uvr_update_patches/UVR_Patch_4_14_24_18_7_BETA_full_Roformer.exe).
+1. Go to their <u>[official website</u>](https://ultimatevocalremover.com/) & press `Download UVR`. And if you want to use BS Roformer you are going to need to install [this](https://github.com/Anjok07/ultimatevocalremovergui/releases/download/v5.6/UVR_12_8_24_23_30_BETA_rofo_full_install.exe).
 
     <img src="../uvrmvsep-img/1.jpg" alt="image" width="" height="auto">   
 
@@ -312,7 +312,7 @@ a. Select your model of choice and run the **Separation** cell. You can look <u>
 ‎         
 !!!
 These are the best settings: 
-- Overlap: 16
+- Overlap: 8
 - Chunk Size: 485100
 !!!
 b. Download the result located in the output folder.

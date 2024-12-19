@@ -58,31 +58,6 @@ order: 2000
 
 
 ***
-## Bark TTS
-***
-
-- Bark is a **multilingual** TTS model created by <u>[Suno AI](https://www.suno.ai/)</u>. 
-- It’s characterized by its great ability to express **emotions** & non-speech sounds.
-- Examples are laughter, laughs, sighs, gasps, clearing throat, hesitations ( - or … ), emphasis of words, etc.
-
-- It can be used both <u>[locally](https://docs.ai-hub.wtf/extra/glossary/#local-running)</u> or in the <u>[cloud](https://docs.ai-hub.wtf/rvc/extra/glossary/#cloud-based)</u>:
-
-  +++ :icon-device-desktop: ‎ LOCAL
-  
-  {.list-icon}
-  - :icon-book: [Official Guide](https://github.com/suno-ai/bark)
-  - :icon-repo-forked: [Fixed Fork](https://github.com/Nick088Official/bark-gui-fix) (with UI & [fine-tuning](https://docs.ai-hub.wtf/extra/glossary/#fine-tuning))
-  - :icon-rocket: [Voice Cloning](https://github.com/KevinWang676/Bark-Voice-Cloning/tree/main)
-
-  +++ :icon-cloud: ‎ CLOUD
-
-  - [Bark TTS Colab](https://colab.research.google.com/github/Nick088Official/Easier-Bark-TTS-Google-Colab/blob/main/Easier_Bark_TTS.ipynb)
-  - [GUI Version](https://colab.research.google.com/github/Nick088Official/bark-gui-fix-google-colab/blob/main/Bark_GUI_Fix.ipynb) (with [fine-tuning](https://docs.ai-hub.wtf/extra/glossary/#fine-tuning))
-  - [0 Shot Voice Cloning](https://colab.research.google.com/github/Nick088Official/Easier-Bark-Voice-Cloning-Google-Colab/blob/main/Bark_Voice_Cloning.ipynb)
-  - [Official HF Space](https://huggingface.co/spaces/suno/bark)
-  - [0 Shot Voice Cloning HF Space](https://huggingface.co/spaces/kevinwang676/Bark-with-Voice-Cloning)
-    - For training you'll need a paid GPU. Otherwise you can only TTS.
-  +++    
 ###### ‎
 ***
 ## Edge TTS
@@ -148,45 +123,7 @@ order: 2000
   These being mixed with RVC means it generates the speech & runs the output through RVC, applying the voice model.
   !!!    
 ###### ‎
-***
-## StyleTTS2
-***
-- StyleTTS 2 aims to achieve human-level TTS synthesis only in English.   
-‎   
-- It works better on full sentences, is both available locally & online, and you can [fine-tune](https://docs.ai-hub.wtf/extra/glossary/#fine-tuning) it with your own dataset.    
-‎   
-- It has 2 versions:   
-‎       
-  - <u>**LJSpeech**</u>:     
-  Its dataset should only be of **single-speaker** recordings. Suitable for training models with a consistent voice.      
-  ‎   
-  - <u>**LibriTTS**</u>:    
-  Its dataset can be of **multispeaker** recordings. Allows StyleTTS 2 to adapt to different voices.    
-‎   
-+++ :icon-device-desktop: LOCAL
-{.list-icon}
-- :icon-book: [Official StyleTTS2 Guide](https://github.com/yl4579/StyleTTS2)
-
-+++ :icon-cloud: ONLINE
-- [LJSpeech Colab](https://colab.research.google.com/github/yl4579/StyleTTS2/blob/main/Colab/StyleTTS2_Demo_LJSpeech.ipynb)
-- [LibriTTS Colab](https://colab.research.google.com/github/yl4579/StyleTTS2/blob/main/Colab/StyleTTS2_Demo_LibriTTS.ipynb)
-- [StyleTTS2 Finetuning Colab](https://colab.research.google.com/github/yl4579/StyleTTS2/blob/main/Colab/StyleTTS2_Finetune_Demo.ipynb)     
-- [StyleTTS2 HF Space](https://huggingface.co/spaces/styletts2/styletts2) (Duplicate the space to skip queue. Without GPU you can only infer)
-+++    
-###### ‎
-***
-## Tortoise TTS
-***
-- Expressive but a little slow. Available both locally & online.
-
-+++ :icon-device-desktop: LOCAL
-{.list-icon}
-- :icon-repo: [Official Github Repository](https://github.com/neonbjb/tortoise-tts)
-
-+++ :icon-cloud: ONLINE
-- [Colab Space](https://colab.research.google.com/github/Nick088Official/Easier-Tortoise-TTS-Google-Colab/blob/main/Easier_Tortoise_TTS.ipynb)
-- [HF Space](https://huggingface.co/spaces/Manmay/tortoise-tts)
-+++    
+***  
 ###### ‎
 ***
 ## XTTS2
@@ -227,28 +164,6 @@ order: 2000
 - [Official HF Space](https://huggingface.co/spaces/myshell-ai/OpenVoice)
 +++    
 ###### ‎
-
-***
-## MetaVoice-1B
-***
-- MetaVoice-1B is a 1.2B parameter base model, trained on **100k hours** of speech for TTS.   
-‎   
-- It has been built with the following priorities:
-  - Emotional speech rhythm and tone in English.
-  - Zero-shot cloning for American & British voices, with 30s reference audio.    
-‎     
-- Available both locally & online:
-
-+++ :icon-device-desktop: LOCAL
-{.list-icon}
-- :icon-repo: [Model Github Repo](https://github.com/metavoiceio/metavoice-src) 
-
-+++ :icon-cloud: ONLINE
-- [TTS with 0 Shot Training Demo](https://ttsdemo.themetavoice.xyz/) | [Easier Version](https://colab.research.google.com/github/Nick088Official/Easier-MetaVoice-1B-Google-Colab/blob/main/Easier_MetaVoice_1B.ipynb)
-- [TTS with 0 Shot Training HF Space](https://huggingface.co/spaces/mrfakename/MetaVoice-1B-v0.1)
-- [Freemium MetaVoice Studio](https://colab.research.google.com/github/Nick088Official/Easier-MetaVoice-1B-Google-Colab/blob/main/Easier_MetaVoice_1B.ipynb) (Only premade voices)
-+++    
-###### ‎
 ***
 ## MeloTTS
 ***
@@ -282,22 +197,6 @@ order: 2000
 +++ :icon-cloud: ONLINE
 - [Colab Space](https://colab.research.google.com/github/RVC-Boss/GPT-SoVITS/blob/main/colab_webui.ipynb#scrollTo=4oRGUzkrk8C7) (with fine-tuning, inference & UI)
 +++    
-###### ‎
-***
-## gTTS
-***
-- It's **Google Text To Speech**, which is the same one used in **Google Translate**.   
-‎     
-- It has **very few voices** in different languages, is a little **robotic** & doesn’t let you choose the gender of the voice (except in the Colab, but it's not that great).   
-‎    
-- It can be used only online (API):
-‎     
-  - [Colab Space](https://colab.research.google.com/github/Nick088Official/gTTS-Google-Colab/blob/main/gTTS.ipynb)
-  - [HF Space](https://huggingface.co/spaces/Nick088/gTTS)
-  - [Official Guide](https://github.com/pndurette/gTTS)
-  - [Google Translate](https://translate.google.com/)
-
-***
 ###### ‎
 :::content-center
 #### `You have reached the end.`
