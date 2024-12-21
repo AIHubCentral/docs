@@ -35,7 +35,7 @@ order: 4000
 - Vocals must be clear, hit low/high notes, & pronounce every vowel correctly.      
 ‎   
 #### :icon-chevron-down: Clean vocals.
-- Ensure there isn't background noise, reverb, overlapping voices, music, distortion, or small silences. You'll learn more in the **Cleaning** section below.   
+- Ensure there very loud background noise ( Quiet background noise is fine ), reverb, overlapping voices, music, distortion, or small silences. You'll learn more in the **Cleaning** section below.   
 ‎   
 #### :icon-chevron-down: Audio quality.
 - The higher the audio quality, the better. If possible have it in a <u>[lossless](https://docs.ai-hub.wtf/extra/glossary/#lossless-formats)</u> format like **WAV** or **FLAC**, not a lossy one like MP3.   
@@ -106,6 +106,9 @@ order: 4000
 
 !!!danger
 If you use this method you **have** to disable the slicer and post processing in Applio.
+
+<img src="../datasets-img/8.png" alt="image" width="1100" height="auto">
+
 !!!
 
 

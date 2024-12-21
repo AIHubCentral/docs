@@ -66,17 +66,15 @@ visibility:
 +++ Training
 **SPEC** | **REQUIREMENT** | 
 :---: | :---: | :---: |
-Operating System | Windows 10 | 
 GPU | NVIDIA RTX 2060ti / AMD RX5700 | 
-RAM | 16GB
+RAM | 6GB
 Storage | 30 GB
 
 +++ Inference
 **SPEC** | **REQUIREMENT** | 
-:---: | :---: | :---: |
-Operating System | Windows 10 | 
-GPU | NVIDIA GTX 1050ti | 
-RAM | 8GB
+:---: | :---: | :---: | 
+GPU | NVIDIA GTX 1050ti / AMD RX5700 | 
+RAM | 6GB
 Storage | 6 GB 
 
 +++
