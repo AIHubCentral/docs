@@ -97,22 +97,13 @@ order: 4000
 <img src="../datasets-img/cmd.png" alt="image" width="420" height="auto">
 ‎  
 
-3. Then type this into the cmd line `python split_audio.py wavfilelocationhere exportfolderhere sampleratehere 5 0.5`.
-    - for example it would look something like this `python split_audio.py C:\Users\dawnm\Downloads\dataset.wav C:\Users\dawnm\Desktop\split\ 32000 5 0.5`.
+3. Then type this into the cmd line `python split_audio.py wavfilelocationhere exportfolderhere sampleratehere 3 0.3`.
+    - for example it would look something like this `python split_audio.py C:\Users\dawnm\Downloads\dataset.wav C:\Users\dawnm\Desktop\split\ 32000 3 0.3`.
 
 > If you get an error saying something is missing simply type `pip install librosa numpy scipy tqdm`. 
 
 4. Then once it's done go into the folder where you told it to export all of the slices to, then copy / cut all of the files there are place them into your dataset folder. 
 
-
-5. Once you are preprocessing your dataset **have** to disable the slicer and post processing in Applio.
-
-<img src="../datasets-img/8.png" alt="image" width="1100" height="auto">
-
-
-6. After you feature extract go into `\logs\model-name` and file find `filelist.txt`, open it and then hit `ctrl + f` then type in `mute` and delete all the lines that have mute in it.
-
-<img src="../datasets-img/mute.png" alt="image" width="1100" height="auto">
 
 
 
