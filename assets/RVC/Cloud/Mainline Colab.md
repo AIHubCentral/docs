@@ -9,7 +9,7 @@ order: 7000
              
 - Mainline colab is a port of <u>[mainline RVC](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI)</u> to <u>[Google Colab</u>](https://docs.ai-hub.wtf/extra/glossary/#google-colab), for exclusively training.
 
-- It's free, includes all the necessary tools for a quality model, the <u>[TensorBoard</u>](https://docs.ai-hub.wtf/rvc/resources/epochs--tensorboard/#tensorboard).   
+- It's free, includes all the necessary tools for a quality model, the <u>[TensorBoard</u>](https://docs.ai-hub.wtf/rvc/resources/training/#tensorboard).   
      
 ‎       
 #### Pros & Cons :icon-tasklist:

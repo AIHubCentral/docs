@@ -12,7 +12,7 @@ order: 3000
 ###### ‎              
 - RVC Disconnected (or RVC-D) is a port of <u>[Mangio](https://docs.ai-hub.wtf/rvc/local/mangio/)</u> to <u>[Google Colab</u>](https://docs.ai-hub.wtf/extra/glossary/#google-colab), for exclusively training. Notebook made by <u>[Kit Lemonfoot</u>](https://huggingface.co/Kit-Lemonfoot).
 
-- It's free, includes all the necessary tools for a quality model, the <u>[TensorBoard</u>](https://docs.ai-hub.wtf/rvc/resources/epochs-tensorboard/#tensorboard), & it's the fastest Colab space for training.    
+- It's free, includes all the necessary tools for a quality model, the <u>[TensorBoard</u>](https://docs.ai-hub.wtf/rvc/resources/training/#tensorboard), & it's the fastest Colab space for training.    
 
 - Making it the go-to method for training for cloud RVC users. Pretty much the only big downside is the time limit (but you can switch to another account & continue).      
 ‎       
@@ -42,7 +42,7 @@ order: 3000
 
 ###### ‎ 
 !!!warning WARNING:
-1.‎ The guide is centered around the <u>[TensorBoard](https://docs.ai-hub.wtf/rvc/resources/epochs-tensorboard/#tensorboard)</u>. Read it first if you haven't already.    
+1.‎ The guide is centered around the <u>[TensorBoard](https://docs.ai-hub.wtf/rvc/resources/training/#tensorboard)</u>. Read it first if you haven't already.    
 2. Turn on <u>[third-party cookies</u>](https://cleeng.zendesk.com/hc/en-us/articles/360009526800-How-to-enable-third-party-cookies-on-my-browser-), or TB might not work.
 !!!
 :::
@@ -97,7 +97,7 @@ a. Go to the `Set Training Variables` cell.
 :   If you aren't familiar with pretrains, select `original`.
 
 `target_sample_rate`
-:   Select your dataset's <u>[sample rate</u>](https://docs.ai-hub.wtf/rvc/resources/datasets/#sample-rate).
+:   Select your dataset's <u>[sample rate</u>](https://docs.ai-hub.wtf/rvc/resources/dataset-making/#preparing-the-dataset).
 
 ``pitch_extraction_algorithm``
 :   The <u>[extraction method](https://docs.ai-hub.wtf/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u>. Don't use Harvest, as it's obsolete.        
@@ -137,11 +137,11 @@ b. To download it, in GD open `rvcDisconnected` & the folder named after the mod
 - #### <u>Define these values:</u>
 
 `save_frequency`
-:   Frequency of the <u>[saving checkpoints](https://docs.ai-hub.wtf/extra/glossary/#checkpoints)</u>, based on the <u>[epochs](https://docs.ai-hub.wtf/rvc/resources/epochs-tensorboard/)</u>. If you're a newbie, simply leave it at `15`.      
+:   Frequency of the <u>[saving checkpoints](https://docs.ai-hub.wtf/extra/glossary/#checkpoints)</u>, based on the <u>[epochs](https://docs.ai-hub.wtf/rvc/resources/training/#epochs--overtraining)</u>. If you're a newbie, simply leave it at `15`.      
 <u>E.g:</u> with a value of ``10``, it will be saved after the epoch 10, 20, 30, etc.   
 
 `total_epochs`
-:   The total amount of <u>[epochs](https://docs.ai-hub.wtf/rvc/resources/epochs-tensorboard/)</u> for the model. But since we'll use <u>[TensorBoard](https://docs.ai-hub.wtf/rvc/resources/epochs-tensorboard/#tensorboard)</u>, use an arbitrarily large number like ``2000``.
+:   The total amount of <u>[epochs](https://docs.ai-hub.wtf/rvc/resources/training/#epochs--overtraining)</u> for the model. But since we'll use <u>[TensorBoard](https://docs.ai-hub.wtf/rvc/resources/training/#tensorboard)</u>, use an arbitrarily large number like ``2000``.
 
 `batch_size`
 :   Use ``8`` if you are a newbie.
@@ -150,7 +150,7 @@ But if your dataset is small (around 2 minutes or less), use ``4``.
 ***
 ###### ‎ 
 #### 5. Begin training
-- Execute the **Training** cell to begin training. <u>[TB](https://docs.ai-hub.wtf/rvc/resources/epochs-tensorboard/#tensorboard)</u> will open up after a few seconds, & the graphs will take a minute to appear.         
+- Execute the **Training** cell to begin training. <u>[TB](https://docs.ai-hub.wtf/rvc/resources/training/#tensorboard)</u> will open up after a few seconds, & the graphs will take a minute to appear.         
 ‎    
 - Remember to monitor it, as well as the cell's logs. The latter will show you errors if they happen, and information about the epochs & checkpoints.         
 ‎       
@@ -222,7 +222,7 @@ d. And that's all. To test it, do a normal <u>[inference](https://docs.ai-hub.wt
 ***
 4. You can change the **save frequency** or increase the **total epochs**, in case you didn't input enough before.
 ***
-5. Run the **Training** cell to retrain. Remember to monitor <u>[TB</u>](https://docs.ai-hub.wtf/rvc/resources/epochs-tensorboard/#tensorboard) as before.       
+5. Run the **Training** cell to retrain. Remember to monitor <u>[TB</u>](https://docs.ai-hub.wtf/rvc/resources/training/#tensorboard) as before.       
 
 ***
 ###### ‎

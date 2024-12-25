@@ -97,7 +97,7 @@ Storage | 6 GB
 ###### ‎      
 - The total time depends on a lot of factors, like dataset length, batch size, pretrains, specs, etc.
 
-- A 10 min <u>[dataset](https://docs.ai-hub.wtf/rvc/resources/datasets/)</u> with <u>[RMVPE](https://docs.ai-hub.wtf/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u> may take around 1 to 2 hours.
+- A 10 min <u>[dataset](https://docs.ai-hub.wtf/rvc/resources/dataset-making/)</u> with <u>[RMVPE](https://docs.ai-hub.wtf/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u> may take around 1 to 2 hours.
 === 
 
 ==- *Can I run it on a Mac?*

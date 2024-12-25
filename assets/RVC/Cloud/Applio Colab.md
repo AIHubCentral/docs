@@ -270,7 +270,7 @@ It'll finish when it says `extracted successfully`.
 ###### ‎  
 ##### b. Save Every Epoch
 ###### ‎  
-- Frequency of the <u>[saving checkpoints](https://docs.ai-hub.wtf/extra/glossary/#checkpoints)</u>, based on the <u>[epochs](https://docs.ai-hub.wtf/rvc/resources/epochs--tensorboard/)</u>.    
+- Frequency of the <u>[saving checkpoints](https://docs.ai-hub.wtf/extra/glossary/#checkpoints)</u>, based on the <u>[epochs](https://docs.ai-hub.wtf/rvc/resources/training/#epochs--overtraining)</u>.    
 ‎   
 - If you are a newbie, simply leave it at `15`.              
 
@@ -282,9 +282,9 @@ It'll finish when it says `extracted successfully`.
 ###### ‎  
 ##### c. Total Epoch
 ###### ‎  
-- Input the total amount of <u>[epochs](https://docs.ai-hub.wtf/rvc/resources/epochs--tensorboard/)</u> (training cycles) for the model.     
+- Input the total amount of <u>[epochs](https://docs.ai-hub.wtf/rvc/resources/training/#tensorboard)</u> (training cycles) for the model.     
 ‎   
-- But since we'll use <u>[TensorBoard](https://docs.ai-hub.wtf/rvc/resources/epochs--tensorboard/#tensorboard)</u>, use an arbitrarily large value like `1000`
+- But since we'll use <u>[TensorBoard](https://docs.ai-hub.wtf/rvc/resources/training/#tensorboard)</u>, use an arbitrarily large value like `1000`
 
     <img src="..\appliocolab-img\4-epoch.png" alt="image" width="420">‎   
 
@@ -309,14 +309,14 @@ ii.  Press `Start Training` below to begin the training process.
 ###### ‎  
 ##### f. Monitor training 
 ###### ‎  
-i. <u>[TB](https://docs.ai-hub.wtf/rvc/resources/epochs--tensorboard/#tensorboard)</u> will be available in the Colab. Remember to monitor it, as well as the cell's logs just in case.             
+i. <u>[TB](https://docs.ai-hub.wtf/rvc/resources/training/#tensorboard)</u> will be available in the Colab. Remember to monitor it, as well as the cell's logs just in case.             
 
     The latter will show you errors if they happen, and information about the epochs & checkpoints.   
 ‎  
     <img src="..\appliocolab-img\4-logs.png" alt="image" width="800">‎   
 ‎  
 ‎       
-ii. If after around 2:30 hours of training you don't detect <u>[OT](https://docs.ai-hub.wtf/rvc/resources/epochs--tensorboard/#overtraining)</u> <u>[download the model](https://docs.ai-hub.wtf/rvc/cloud/applio-colab/#c-get-the-pth)</u> of the lowest point, in case it's already OT, and the <u>[.INDEX](https://docs.ai-hub.wtf/rvc/cloud/applio-colab/#b-get-the-index)</u>.     
+ii. If after around 2:30 hours of training you don't detect <u>[OT](https://docs.ai-hub.wtf/rvc/resources/training/#usage-guide)</u> <u>[download the model](https://docs.ai-hub.wtf/rvc/cloud/applio-colab/#c-get-the-pth)</u> of the lowest point, in case it's already OT, and the <u>[.INDEX](https://docs.ai-hub.wtf/rvc/cloud/applio-colab/#b-get-the-index)</u>.     
 ‎    
 iii. Then once your GPU runtime resets, begin the <u>[retraining](https://docs.ai-hub.wtf/rvc/cloud/applio-colab/#5-resuming)</U> procedure.       
 ***
@@ -388,7 +388,7 @@ iii. And that's all, have fun with your model. To test it, do a normal <u>[infer
  ‎  
         <img src="../appliocolab-img/4-autobackup.png" alt="image" width="600" height="auto">   
  ‎  
-4. Begin training again & remember to monitor <u>[TB</u>](https://docs.ai-hub.wtf/rvc/resources/epochs--tensorboard/#tensorboard) as before.  
+4. Begin training again & remember to monitor <u>[TB</u>]https://docs.ai-hub.wtf/rvc/resources/training/#tensorboard) as before.  
 ===
 
 ###### ‎  
@@ -443,7 +443,7 @@ iii. And that's all, have fun with your model. To test it, do a normal <u>[infer
 ###### ‎  
 - Applio has an **Extra** menu, containing an **audio analyzer**, **F0 Curve** and **Model Information**.
 
-- Making it convenient for determining the <u>[sample rate](https://docs.ai-hub.wtf/rvc/resources/datasets/#sample-rate)</u> of datasets when training models.
+- Making it convenient for determining the <u>[sample rate](https://docs.ai-hub.wtf/rvc/resources/dataset-making/#preparing-the-dataset)</u> of datasets when training models.
 
 - It also contains the **model fusion** tool, ideal for advanced users.
 
@@ -552,7 +552,7 @@ If the frequencies don't reach the top of the spectrogram, see at which number p
 
 ==- *The voice glitches out.*
 ###### ‎   
-- This a phenomenon called artifacting. To fix it, read <u>[here](https://docs.ai-hub.wtf/rvc/resources/artifacting/)</u>.
+- This a phenomenon called artifacting. To fix it, read <u>[here](https://docs.ai-hub.wtf/rvc/resources/dataset-making/#artifacts)</u>.
 
 ===
 
