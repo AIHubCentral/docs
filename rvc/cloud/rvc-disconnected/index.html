@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.788459047824">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.788462387256">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.6.0">
@@ -34,11 +34,11 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../../img/b.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.6.0.788459047824" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.6.0.788462387256" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.6.0.788459047824" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.6.0.788462387256" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.6.0.788459047824" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.6.0.788462387256" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -254,7 +254,7 @@
 <ul>
 <li><p>RVC Disconnected (or RVC-D) is a port of <u><a href="https://docs.ai-hub.wtf/rvc/local/mangio/">Mangio</a></u> to <u><a href="https://docs.ai-hub.wtf/extra/glossary/#google-colab">Google Colab</u></a>, for exclusively training. Notebook made by <u><a href="https://huggingface.co/Kit-Lemonfoot">Kit Lemonfoot</u></a>.</p>
 </li>
-<li><p>It&#x27;s free, includes all the necessary tools for a quality model, the <u><a href="https://docs.ai-hub.wtf/rvc/resources/epochs-tensorboard/#tensorboard">TensorBoard</u></a>, &amp; it&#x27;s the fastest Colab space for training.</p>
+<li><p>It&#x27;s free, includes all the necessary tools for a quality model, the <u><a href="https://docs.ai-hub.wtf/rvc/resources/training/#tensorboard">TensorBoard</u></a>, &amp; it&#x27;s the fastest Colab space for training.</p>
 </li>
 <li><p>Making it the go-to method for training for cloud RVC users. Pretty much the only big downside is the time limit (but you can switch to another account &amp; continue).<br />
 ‎</p>
@@ -347,7 +347,7 @@
         </div>
         <div class="pr-5 ml-3 w-full">
             <h5>WARNING:</h5>
-<p>1.‎ The guide is centered around the <u><a href="https://docs.ai-hub.wtf/rvc/resources/epochs-tensorboard/#tensorboard">TensorBoard</a></u>. Read it first if you haven&#x27;t already.<br />
+<p>1.‎ The guide is centered around the <u><a href="https://docs.ai-hub.wtf/rvc/resources/training/#tensorboard">TensorBoard</a></u>. Read it first if you haven&#x27;t already.<br />
 2. Turn on <u><a href="https://cleeng.zendesk.com/hc/en-us/articles/360009526800-How-to-enable-third-party-cookies-on-my-browser-">third-party cookies</u></a>, or TB might not work.</p>
         </div>
     </div>
@@ -472,7 +472,7 @@
 <dt><code v-pre>pretrain_type</code></dt>
 <dd>If you aren&#x27;t familiar with pretrains, select <code v-pre>original</code>.</dd>
 <dt><code v-pre>target_sample_rate</code></dt>
-<dd>Select your dataset&#x27;s <u><a href="https://docs.ai-hub.wtf/rvc/resources/datasets/#sample-rate">sample rate</u></a>.</dd>
+<dd>Select your dataset&#x27;s <u><a href="https://docs.ai-hub.wtf/rvc/resources/dataset-making/#preparing-the-dataset">sample rate</u></a>.</dd>
 <dt><code v-pre>pitch_extraction_algorithm</code></dt>
 <dd>The <u><a href="https://docs.ai-hub.wtf/rvc/resources/inference-settings/#pitch-extraction-algorithm">extraction method</a></u>. Don&#x27;t use Harvest, as it&#x27;s obsolete.</dd>
 <dt><code v-pre>crepe_hop_length</code></dt>
@@ -551,10 +551,10 @@ Example: <code v-pre>kalomaze.zip</code></p>
 </ul>
 <dl>
 <dt><code v-pre>save_frequency</code></dt>
-<dd>Frequency of the <u><a href="https://docs.ai-hub.wtf/extra/glossary/#checkpoints">saving checkpoints</a></u>, based on the <u><a href="https://docs.ai-hub.wtf/rvc/resources/epochs-tensorboard/">epochs</a></u>. If you&#x27;re a newbie, simply leave it at <code v-pre>15</code>.<br />
+<dd>Frequency of the <u><a href="https://docs.ai-hub.wtf/extra/glossary/#checkpoints">saving checkpoints</a></u>, based on the <u><a href="https://docs.ai-hub.wtf/rvc/resources/training/#epochs--overtraining">epochs</a></u>. If you&#x27;re a newbie, simply leave it at <code v-pre>15</code>.<br />
 <u>E.g:</u> with a value of <code v-pre>10</code>, it will be saved after the epoch 10, 20, 30, etc.</dd>
 <dt><code v-pre>total_epochs</code></dt>
-<dd>The total amount of <u><a href="https://docs.ai-hub.wtf/rvc/resources/epochs-tensorboard/">epochs</a></u> for the model. But since we&#x27;ll use <u><a href="https://docs.ai-hub.wtf/rvc/resources/epochs-tensorboard/#tensorboard">TensorBoard</a></u>, use an arbitrarily large number like <code v-pre>2000</code>.</dd>
+<dd>The total amount of <u><a href="https://docs.ai-hub.wtf/rvc/resources/training/#epochs--overtraining">epochs</a></u> for the model. But since we&#x27;ll use <u><a href="https://docs.ai-hub.wtf/rvc/resources/training/#tensorboard">TensorBoard</a></u>, use an arbitrarily large number like <code v-pre>2000</code>.</dd>
 <dt><code v-pre>batch_size</code></dt>
 <dd>Use <code v-pre>8</code> if you are a newbie.
 But if your dataset is small (around 2 minutes or less), use <code v-pre>4</code>.</dd>
@@ -573,7 +573,7 @@ But if your dataset is small (around 2 minutes or less), use <code v-pre>4</code
     </h4>
 </doc-anchor-target>
 <ul>
-<li>Execute the <strong>Training</strong> cell to begin training. <u><a href="https://docs.ai-hub.wtf/rvc/resources/epochs-tensorboard/#tensorboard">TB</a></u> will open up after a few seconds, &amp; the graphs will take a minute to appear.<br />
+<li>Execute the <strong>Training</strong> cell to begin training. <u><a href="https://docs.ai-hub.wtf/rvc/resources/training/#tensorboard">TB</a></u> will open up after a few seconds, &amp; the graphs will take a minute to appear.<br />
 ‎</li>
 <li>Remember to monitor it, as well as the cell&#x27;s logs. The latter will show you errors if they happen, and information about the epochs &amp; checkpoints.<br />
 ‎</li>
@@ -714,7 +714,7 @@ E.g: <code v-pre>arianagrande_e60_s120.pth</code><br />
 </ol>
 <hr>
 <ol start="5">
-<li>Run the <strong>Training</strong> cell to retrain. Remember to monitor <u><a href="https://docs.ai-hub.wtf/rvc/resources/epochs-tensorboard/#tensorboard">TB</u></a> as before.</li>
+<li>Run the <strong>Training</strong> cell to retrain. Remember to monitor <u><a href="https://docs.ai-hub.wtf/rvc/resources/training/#tensorboard">TB</u></a> as before.</li>
 </ol>
 <hr>
 <doc-anchor-target id="section-19">

@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.788459047824">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.788462387256">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.6.0">
@@ -34,11 +34,11 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../../img/b.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.6.0.788459047824" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.6.0.788462387256" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.6.0.788459047824" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.6.0.788462387256" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.6.0.788459047824" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.6.0.788462387256" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -848,7 +848,7 @@ It&#x27;ll finish when it says <code v-pre>extracted successfully</code>.</p>
     </h6>
 </doc-anchor-target>
 <ul>
-<li><p>Frequency of the <u><a href="https://docs.ai-hub.wtf/extra/glossary/#checkpoints">saving checkpoints</a></u>, based on the <u><a href="https://docs.ai-hub.wtf/rvc/resources/epochs--tensorboard/">epochs</a></u>.<br />
+<li><p>Frequency of the <u><a href="https://docs.ai-hub.wtf/extra/glossary/#checkpoints">saving checkpoints</a></u>, based on the <u><a href="https://docs.ai-hub.wtf/rvc/resources/training/#epochs--overtraining">epochs</a></u>.<br />
 ‎</p>
 </li>
 <li><p>If you are a newbie, simply leave it at <code v-pre>15</code>.</p>
@@ -879,10 +879,10 @@ It&#x27;ll finish when it says <code v-pre>extracted successfully</code>.</p>
     </h6>
 </doc-anchor-target>
 <ul>
-<li><p>Input the total amount of <u><a href="https://docs.ai-hub.wtf/rvc/resources/epochs--tensorboard/">epochs</a></u> (training cycles) for the model.<br />
+<li><p>Input the total amount of <u><a href="https://docs.ai-hub.wtf/rvc/resources/training/#tensorboard">epochs</a></u> (training cycles) for the model.<br />
 ‎</p>
 </li>
-<li><p>But since we&#x27;ll use <u><a href="https://docs.ai-hub.wtf/rvc/resources/epochs--tensorboard/#tensorboard">TensorBoard</a></u>, use an arbitrarily large value like <code v-pre>1000</code></p>
+<li><p>But since we&#x27;ll use <u><a href="https://docs.ai-hub.wtf/rvc/resources/training/#tensorboard">TensorBoard</a></u>, use an arbitrarily large value like <code v-pre>1000</code></p>
 <p><img src="..\appliocolab-img\4-epoch.png" alt="image" width="420">‎</p>
 </li>
 </ul>
@@ -958,14 +958,14 @@ It&#x27;ll finish when it says <code v-pre>extracted successfully</code>.</p>
     </h6>
 </doc-anchor-target>
 <ol type="i">
-<li><p><u><a href="https://docs.ai-hub.wtf/rvc/resources/epochs--tensorboard/#tensorboard">TB</a></u> will be available in the Colab. Remember to monitor it, as well as the cell&#x27;s logs just in case.</p>
+<li><p><u><a href="https://docs.ai-hub.wtf/rvc/resources/training/#tensorboard">TB</a></u> will be available in the Colab. Remember to monitor it, as well as the cell&#x27;s logs just in case.</p>
 <p>The latter will show you errors if they happen, and information about the epochs &amp; checkpoints.<br />
 ‎<br />
 <img src="..\appliocolab-img\4-logs.png" alt="image" width="800">‎<br />
 ‎<br />
 ‎</p>
 </li>
-<li><p>If after around 2:30 hours of training you don&#x27;t detect <u><a href="https://docs.ai-hub.wtf/rvc/resources/epochs--tensorboard/#overtraining">OT</a></u> <u><a href="https://docs.ai-hub.wtf/rvc/cloud/applio-colab/#c-get-the-pth">download the model</a></u> of the lowest point, in case it&#x27;s already OT, and the <u><a href="https://docs.ai-hub.wtf/rvc/cloud/applio-colab/#b-get-the-index">.INDEX</a></u>.<br />
+<li><p>If after around 2:30 hours of training you don&#x27;t detect <u><a href="https://docs.ai-hub.wtf/rvc/resources/training/#usage-guide">OT</a></u> <u><a href="https://docs.ai-hub.wtf/rvc/cloud/applio-colab/#c-get-the-pth">download the model</a></u> of the lowest point, in case it&#x27;s already OT, and the <u><a href="https://docs.ai-hub.wtf/rvc/cloud/applio-colab/#b-get-the-index">.INDEX</a></u>.<br />
 ‎</p>
 </li>
 <li><p>Then once your GPU runtime resets, begin the <u><a href="https://docs.ai-hub.wtf/rvc/cloud/applio-colab/#5-resuming">retraining</a></U> procedure.</p>
@@ -1121,7 +1121,7 @@ Example: <code v-pre>arianagrande_60e.pth</code><br />
 ‎</li>
 </ul>
 <ol start="4">
-<li>Begin training again &amp; remember to monitor <u><a href="https://docs.ai-hub.wtf/rvc/resources/epochs--tensorboard/#tensorboard">TB</u></a> as before.</li>
+<li>Begin training again &amp; remember to monitor <u>[TB</u>]https://docs.ai-hub.wtf/rvc/resources/training/#tensorboard) as before.</li>
 </ol>
 </doc-panel>
 <doc-anchor-target id="section-47">
@@ -1250,7 +1250,7 @@ Example: <code v-pre>arianagrande_60e.pth</code><br />
 <ul>
 <li><p>Applio has an <strong>Extra</strong> menu, containing an <strong>audio analyzer</strong>, <strong>F0 Curve</strong> and <strong>Model Information</strong>.</p>
 </li>
-<li><p>Making it convenient for determining the <u><a href="https://docs.ai-hub.wtf/rvc/resources/datasets/#sample-rate">sample rate</a></u> of datasets when training models.</p>
+<li><p>Making it convenient for determining the <u><a href="https://docs.ai-hub.wtf/rvc/resources/dataset-making/#preparing-the-dataset">sample rate</a></u> of datasets when training models.</p>
 </li>
 <li><p>It also contains the <strong>model fusion</strong> tool, ideal for advanced users.</p>
 </li>
@@ -1501,7 +1501,7 @@ Example: <code v-pre>arianagrande_60e.pth</code><br />
     </h6>
 </doc-anchor-target>
 <ul>
-<li>This a phenomenon called artifacting. To fix it, read <u><a href="https://docs.ai-hub.wtf/rvc/resources/artifacting/">here</a></u>.</li>
+<li>This a phenomenon called artifacting. To fix it, read <u><a href="https://docs.ai-hub.wtf/rvc/resources/dataset-making/#artifacts">here</a></u>.</li>
 </ul>
 </doc-panel>
 <doc-panel id="cannot-connect-to-gpu-backend" collapsed>
