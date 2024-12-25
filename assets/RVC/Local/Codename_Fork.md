@@ -29,6 +29,10 @@ order: 3000
 - Uses the Ranger2020 optimizer
 - Avg running loss
 - 44.1k Sample rate support
+- Mel similarity metric
+- SoX resampler
+- Checkpointing
+- Improved inplace
 ||| ❌ **CONS** 
 - More complicated features.     
 ||| 
@@ -96,6 +100,12 @@ This fork uses the Ranger2020 <u>[optim](https://docs.ai-hub.wtf/extra/glossary/
    - **RAdam:** An adaptive learning rate method that dynamically adjusts the learning rate based on the variance of the gradients.
    - **LookAhead:** A method that improves convergence by interpolating between the current weights and a set of "lookahead" weights.
    - **Gradient Centralization:** A technique that normalizes gradients to stabilize training and potentially improve generalization.
+
+***
+### Checkpointing:
+Checkpointing reduces the vram usage, requirement of computation and training speed by 20-30 percent. Enable it If you're an user of a 4GB GPU or if you intend to use a bigger batch size than your gpu can handle. 
+
+<img src="../codename-img/check.png" alt="image" width="800" height="auto">
 
 ***
 ### Upcoming Features:
