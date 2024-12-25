@@ -79,6 +79,8 @@ ZeroGPU HuggingFace Spaces have a quota per account, if you aren’t signed in y
 - Login so you get more quota
 - Wait
 - Pay to be an HuggingFace PRO Member to get X5 times more quota
+
+You can find your ZeroGPU quota <u>[here](https://huggingface.co/settings/billing)</u>
 ***
 #### No GPU is currently available for you after 60 seconds:
 As all ZeroGPU Spaces share this hardware, there might be times where ZeroGPU is busy, if you ever go through this error, you just need to wait a bit and retry.
