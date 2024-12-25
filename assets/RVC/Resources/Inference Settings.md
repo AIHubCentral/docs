@@ -49,7 +49,7 @@ order: 100
 
 - Higher values will apply more of the .INDEX's characteristics.   
 
-- Lowering it can **reduce [<u>artifacting</u>](https://docs.ai-hub.wtf/rvc/resources/datasets/)**.      
+- Lowering it can **reduce [<u>artifacting</u>](https://docs.ai-hub.wtf/rvc/resources/dataset-making/#artifacts)**.      
      
 >Remember, if the <u>[dataset](https://docs.ai-hub.wtf/rvc/resources/datasets/)</u> had other sounds like background noise, there will be noise in the .INDEX too.
 
@@ -126,7 +126,7 @@ order: 100
 #### :icon-chevron-down: Also known as <u>Remix Mix Rate</u>, controls the loudness of the output:
 - The closer to ``0``, the more the output will **match** the **loudness** of the **input** audio.
 
-- The closer to ``1``, the more it will match the loudness of the [<u>dataset</u>](https://docs.ai-hub.wtf/rvc/resources/datasets/) the **model** was trained on.
+- The closer to ``1``, the more it will match the loudness of the [<u>dataset</u>](https://docs.ai-hub.wtf/rvc/resources/dataset-making/) the **model** was trained on.
 
 >Basically, leave it at 0 if you want the audio to try to keep its original volume.
 ***

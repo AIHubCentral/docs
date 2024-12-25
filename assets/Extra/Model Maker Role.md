@@ -52,7 +52,7 @@ order: 1000
    - Is incapable of hitting certain notes.
    - Has slurred speech.
    - Is unable of pronouncing words correctly in its intended language.
-   - Has <u>[artifacting](https://docs.ai-hub.wtf/rvc/resources/artifacting/)</u>.
+   - Has <u>[artifacting](https://docs.ai-hub.wtf/rvc/resources/dataset-making/#artifacts)</u>.
    - Has noise.
 ***
 ###### ‎ 
@@ -104,7 +104,7 @@ order: 1000
 :     The <u>[extraction method](https://docs.ai-hub.wtf/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u> you used.
 
 **epochs**
-:     Total <u>[epochs](https://docs.ai-hub.wtf/rvc/resources/epochs--tensorboard/)</u> amount.
+:     Total <u>[epochs](https://docs.ai-hub.wtf/rvc/resources/training/#tensorboard)</u> amount.
 
 **link**
 :     Its download link from Hugging Face or Weights. 

@@ -105,7 +105,7 @@ a. Find the Tensor board icon on the right side bar and click it.
 
 <img src="../lighting.ai/10.png" alt="image" width="500">‎
 
-b. Once you've done that it will open the Tensor board. To learn how to use it go <u>[here](https://docs.ai-hub.wtf/rvc/resources/epochs-tensorboard/#usage-guide)</u>
+b. Once you've done that it will open the Tensor board. To learn how to use it go <u>[here](https://docs.ai-hub.wtf/rvc/resources/training/#usage-guide)</u>
 ***
 
 #### 4. Opening the notebook.
