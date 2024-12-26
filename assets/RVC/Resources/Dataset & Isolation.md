@@ -58,8 +58,9 @@ order: 2000
 - The most inportant part of a clean dataset, if your audio is damaged RVC will struggle with it causing it to overall sound worse because RVC will create synthetic data and try to learn from it, so make sure your audio isn't damged.  
 ‎   
 ***
-
-## Artifacts        
+:::content-center
+## Artifacts 
+:::       
 In RVC, artifacting refers to an anomaly where the output voice sounds "robotic" & glitchy.     
 This occurs after the <u>[inference](https://docs.ai-hub.wtf/extra/glossary/#inference)</u> or model training process.     
 #### Causes    
@@ -121,7 +122,7 @@ Remember that the cleaner your input audio is, the better the results.
 
 ### Installation :icon-download:
 *** 
-1. Go to their <u>[official website</u>](https://ultimatevocalremover.com/) & press `Download UVR`. And if you want to use BS Roformer you are going to need to install <u>[this](https://github.com/Anjok07/ultimatevocalremovergui/releases/download/v5.6/UVR_12_8_24_23_30_BETA_rofo_full_install.exe)</u>.
+1. Go to their <u>[official website</u>](https://ultimatevocalremover.com/) & press `Download UVR`. And if you want to use BS / Mel Roformer you are going to need to install <u>[this](https://github.com/Anjok07/ultimatevocalremovergui/releases/download/v5.6/UVR_12_8_24_23_30_BETA_rofo_full_install.exe)</u>.
 
     <img src="../uvrmvsep-img/1.jpg" alt="image" width="" height="auto">   
 
@@ -252,10 +253,10 @@ Click the `Start processing` button at the bottom. And that will be all.
 
 Extraction | Process Method | Model
 :---: | :---: | :---:
-Vocals/Instrumental | MDX-Net | BS Roformer-Viper-X 1296 / 1297
-De-Reverb | VR | UVR-DeEcho-DeReverb
-Extract Backing Vocals | VR | UVR-BVE-4B_SN-44100-1
-De-Noise | VR | UVR-DeNoise 
+Vocals/Instrumental | MDX-Net | Unwa's big mel roformer beta 4
+De-Reverb | VR | Anvuew mel dereverb v2
+Extract Backing Vocals | VR | Mel roformer karaoke
+De-Noise | VR | Mel denoiser 
 
 ‎
 ### Troubleshooting :icon-tools:
@@ -569,7 +570,8 @@ If you wish to keep the backing vocals stem, remember to download it too.
 
 Extraction | Separation Type | Model
 :---: | :---: | :---:
-Vocals/Instrumental | MelBand Roformer | ver 2024.10
+Vocals | MelBand Roformer | unwa big beta v5e
+Instrumental | MelBand Roformer | unwa instrumental v1e
 De-Reverb | Reverb Removal | Reverb removal by anvuew V2 (MelRoformer)
 Extract Backing Vocals | MelBand Karaoke | Extract from vocals
 De-Noise | DeNoise by aufr33  | Aggresive
@@ -658,7 +660,7 @@ De-Noise | Mel Roformer De-Noise
 ## Preparing the dataset
 :::
 
-#### Step 1: Find the Sample Rate
+### Step 1: Find the Sample Rate
 :::
 - This is a unit in that defines the total amount of **samples** (data) that can **fit** within **1 second** of an audio. They are measured in kilohertz (kHz).
 
@@ -679,12 +681,12 @@ De-Noise | Mel Roformer De-Noise
     If the frequencies don't reach the top of the spectrogram, see at which number peaks & multiply it by <U>**2**</u>. Here it reached 20 kHz. **Doubling** it gives 40kHz. Therefore the ideal target sample rate would be ``40k``
     !!!
 ***
-#### Step 2: Truncating Silence.   
+### Step 2: Truncating Silence 
 
 - Go to Effects -> Special -> Truncate Silence     
 - Use the following values:         
     ‎  
-    <img src="../datasets-img/trunc.png" alt="image" width="420" height="auto">    
+    <img src="../datasets-img/truncnew.png" alt="image" width="420" height="auto">    
     ***
     ‎
     #### Step 2: Audio Normalization.    
@@ -695,7 +697,7 @@ De-Noise | Mel Roformer De-Noise
 
 > LUFS are used over db because hifigan needs perceptual quality and db doesnt offer that.
 ***
-#### Step 3: Export.
+### Step 3: Export
 - On the upper right corner go to File and click ``Export Audio``.       
     ‎   
     <img src="../datasets-img/4.png" alt="image" width="370" height="auto"> 
@@ -713,7 +715,7 @@ De-Noise | Mel Roformer De-Noise
         <img src="../datasets-img/5.png" alt="image" width="650" height="auto">
 
 ***
-#### Step 4: Manual Audio Slicing (Optional)
+### Step 4: Manual Audio Slicing (Optional)
 - Download this: [!file](../datasets-img/split_audio.py)
 - Then place it in Applio's root folder. Then type `cmd` into the top bar where it shows your location.
 
