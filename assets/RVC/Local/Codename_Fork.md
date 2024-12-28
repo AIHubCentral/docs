@@ -3,7 +3,7 @@ icon: chevron-right
 order: 3000
 ---
 
-``Last update: Dec 17, 2024``
+``Last update: Dec 27, 2024``
 ***
 ###### ‎
 :::content-center
@@ -26,7 +26,7 @@ order: 3000
 - Supports MRF HiFi-GAN
 - Supports RefineGAN
 - Has a Warmup Phase option
-- Uses the Ranger2020 optimizer
+- Uses the RAdam optimizer
 - Avg running loss
 - 44.1k Sample rate support
 - Mel similarity metric
@@ -69,13 +69,13 @@ Under Training there is the option to use 44.1k as your trainng sample rate, how
 - In the training section you are given the option to choose your vocoder
     - HiFi-GAN: the default vocoder for RVC.
     - MRF HiFi-GAN: a version of HiFi-GAN with MRF instead of MPD and new loss functions. This has higher fidelity but **only** works with this fork and the MRF branch of Applio.
-    - RefineGAN: an entirely new GAN which is in a very experimental phase, this is for for devs only.
+    - RefineGAN: an entirely new GAN which is in a experimental phase.
 
 <img src="../codename-img/voco.png" alt="image" width="500" height="auto"> 
 
 ***
 ### Warmup Phase:
-In the training section there is an option to enable a warmup phase and a slider to choose how long it lasts.
+In the training section there is an option to enable a warmup phase and a slider to choose how long it lasts. **Do not use this with RAdam since RAdam does this on its own.**
 
 <img src="../codename-img/warm.png" alt="image" width="1000" height="auto"> 
 
@@ -84,22 +84,19 @@ In the training section there is an option to enable a warmup phase and a slider
 
 ***
 ### Avg Running Loss:
-In the training section you can find the avg running loss settings.
-
-<img src="../codename-img/avg.png" alt="image" width="1200" height="auto"> 
-
-- The avg running loss averages the loss per X steps / mini-batches. This is a better indicator for per epoch performence.
-
-- To use the avg loss you need to know the total number of steps per epochs, you can train one epoch to find the step count. Choosing an averaging factor depends on the user, however Codename recommends experimenting with a window that accounts for around 15% to 25% of total steps in an epoch. If you choose to not use 15-25% of total steps be sure that the logging frequency isn't to small because the losses can vary a ton and it can end up confusing you, and make sure for big loss frequency it isn't to big because it may smoothen the noise to much and not give you accurate results.   
+While training it logs the average loss per epoch as the standard loss and rolling average loss over 5 epochs to evaluate general trends and the model's performance over time. 
 
 ***
-### Ranger2020  Optimizer:
-This fork uses the Ranger2020 <u>[optim](https://docs.ai-hub.wtf/extra/glossary/#Optim)</u> as the default optim instead of the AdamW optim. The Ranger2020 optim is much more complex optim that combines multiple techniques from other optims to be able to provide a more stable and faster convergence then other optims. 
+### RAdam  Optimizer:
+This fork uses the RAdam (Rectified Adam) <u>[optim](https://docs.ai-hub.wtf/extra/glossary/#Optim)</u> as the default optim instead of the AdamW optim.
 
-- The three key components are:
-   - **RAdam:** An adaptive learning rate method that dynamically adjusts the learning rate based on the variance of the gradients.
-   - **LookAhead:** A method that improves convergence by interpolating between the current weights and a set of "lookahead" weights.
-   - **Gradient Centralization:** A technique that normalizes gradients to stabilize training and potentially improve generalization.
+- Some of its key features are:
+    - Automatically adapts the learning rate and warmup.
+    - Requires less hyperparameter tuning.
+    - More stable training.
+    - Better generalization.
+    - Minimal computational overhead.
+
 
 ***
 ### Checkpointing:
@@ -115,7 +112,6 @@ Checkpointing reduces the vram usage, requirement of computation and training sp
 - Custom gradient norm value ( from the ui level )
 - Ability to delay / headstart the Generator or Discriminator.
 - More warmup options ( Cosine anneal and so on ).
-- Toggleable mute files.
 - And more...
 
 ***
