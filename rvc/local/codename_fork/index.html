@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.788546402324">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.788679025663">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.6.0">
@@ -14,7 +14,7 @@
     <!-- Primary Meta Tags -->
     <title>Codename Fork</title>
     <meta name="title" content="Codename Fork">
-    <meta name="description" content="Last update: Dec 17, 2024">
+    <meta name="description" content="Last update: Dec 27, 2024">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://docs.ai-hub.wtf/rvc/local/codename_fork/">
@@ -23,22 +23,22 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.ai-hub.wtf/rvc/local/codename_fork/">
     <meta property="og:title" content="Codename Fork">
-    <meta property="og:description" content="Last update: Dec 17, 2024">
+    <meta property="og:description" content="Last update: Dec 27, 2024">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.ai-hub.wtf/rvc/local/codename_fork/">
     <meta property="twitter:title" content="Codename Fork">
-    <meta property="twitter:description" content="Last update: Dec 17, 2024">
+    <meta property="twitter:description" content="Last update: Dec 27, 2024">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../../img/b.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.6.0.788546402324" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.6.0.788679025663" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.6.0.788546402324" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.6.0.788679025663" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.6.0.788546402324" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.6.0.788679025663" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -230,7 +230,7 @@
         <span>Codename Fork</span>
     </h1>
 </doc-anchor-target>
-<p><code v-pre>Last update: Dec 17, 2024</code></p>
+<p><code v-pre>Last update: Dec 27, 2024</code></p>
 <hr>
 <doc-anchor-target id="section">
     <h6>
@@ -291,7 +291,7 @@
 <li>Supports MRF HiFi-GAN</li>
 <li>Supports RefineGAN</li>
 <li>Has a Warmup Phase option</li>
-<li>Uses the Ranger2020 optimizer</li>
+<li>Uses the RAdam optimizer</li>
 <li>Avg running loss</li>
 <li>44.1k Sample rate support</li>
 <li>Mel similarity metric</li>
@@ -369,7 +369,7 @@
 <ul>
 <li>HiFi-GAN: the default vocoder for RVC.</li>
 <li>MRF HiFi-GAN: a version of HiFi-GAN with MRF instead of MPD and new loss functions. This has higher fidelity but <strong>only</strong> works with this fork and the MRF branch of Applio.</li>
-<li>RefineGAN: an entirely new GAN which is in a very experimental phase, this is for for devs only.</li>
+<li>RefineGAN: an entirely new GAN which is in a experimental phase.</li>
 </ul>
 </li>
 </ul>
@@ -381,7 +381,7 @@
         <span>Warmup Phase:</span>
     </h3>
 </doc-anchor-target>
-<p>In the training section there is an option to enable a warmup phase and a slider to choose how long it lasts.</p>
+<p>In the training section there is an option to enable a warmup phase and a slider to choose how long it lasts. <strong>Do not use this with RAdam since RAdam does this on its own.</strong></p>
 <img src="../codename-img/warm.png" alt="image" width="1000" height="auto"> 
 <ul>
 <li>The warmup phase is where the learning rate (lr) linearly increased for a certain amount of epochs, this can be used to prevent large destabilizing updates in the early stages of training.
@@ -397,28 +397,23 @@
         <span>Avg Running Loss:</span>
     </h3>
 </doc-anchor-target>
-<p>In the training section you can find the avg running loss settings.</p>
-<img src="../codename-img/avg.png" alt="image" width="1200" height="auto"> 
-<ul>
-<li><p>The avg running loss averages the loss per X steps / mini-batches. This is a better indicator for per epoch performence.</p>
-</li>
-<li><p>To use the avg loss you need to know the total number of steps per epochs, you can train one epoch to find the step count. Choosing an averaging factor depends on the user, however Codename recommends experimenting with a window that accounts for around 15% to 25% of total steps in an epoch. If you choose to not use 15-25% of total steps be sure that the logging frequency isn&#x27;t to small because the losses can vary a ton and it can end up confusing you, and make sure for big loss frequency it isn&#x27;t to big because it may smoothen the noise to much and not give you accurate results.</p>
-</li>
-</ul>
+<p>While training it logs the average loss per epoch as the standard loss and rolling average loss over 5 epochs to evaluate general trends and the model&#x27;s performance over time.</p>
 <hr>
-<doc-anchor-target id="ranger2020--optimizer">
+<doc-anchor-target id="radam--optimizer">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#ranger2020--optimizer">#</doc-anchor-trigger>
-        <span>Ranger2020  Optimizer:</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#radam--optimizer">#</doc-anchor-trigger>
+        <span>RAdam  Optimizer:</span>
     </h3>
 </doc-anchor-target>
-<p>This fork uses the Ranger2020 <u><a href="https://docs.ai-hub.wtf/extra/glossary/#Optim">optim</a></u> as the default optim instead of the AdamW optim. The Ranger2020 optim is much more complex optim that combines multiple techniques from other optims to be able to provide a more stable and faster convergence then other optims.</p>
+<p>This fork uses the RAdam (Rectified Adam) <u><a href="https://docs.ai-hub.wtf/extra/glossary/#Optim">optim</a></u> as the default optim instead of the AdamW optim.</p>
 <ul>
-<li>The three key components are:
+<li>Some of its key features are:
 <ul>
-<li><strong>RAdam:</strong> An adaptive learning rate method that dynamically adjusts the learning rate based on the variance of the gradients.</li>
-<li><strong>LookAhead:</strong> A method that improves convergence by interpolating between the current weights and a set of &quot;lookahead&quot; weights.</li>
-<li><strong>Gradient Centralization:</strong> A technique that normalizes gradients to stabilize training and potentially improve generalization.</li>
+<li>Automatically adapts the learning rate and warmup.</li>
+<li>Requires less hyperparameter tuning.</li>
+<li>More stable training.</li>
+<li>Better generalization.</li>
+<li>Minimal computational overhead.</li>
 </ul>
 </li>
 </ul>
@@ -445,7 +440,6 @@
 <li>Custom gradient norm value ( from the ui level )</li>
 <li>Ability to delay / headstart the Generator or Discriminator.</li>
 <li>More warmup options ( Cosine anneal and so on ).</li>
-<li>Toggleable mute files.</li>
 <li>And more...</li>
 </ul>
 <hr>
