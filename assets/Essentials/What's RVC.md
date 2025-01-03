@@ -66,14 +66,13 @@ visibility:
 +++ Training
 **SPEC** | **REQUIREMENT** | 
 :---: | :---: | :---: |
-GPU | NVIDIA RTX 2060ti / AMD RX5700 | 
+GPU | NVIDIA RTX 1060 / AMD RX5700 | 
 RAM | 6GB
 Storage | 30 GB
 
 +++ Inference
 **SPEC** | **REQUIREMENT** | 
 :---: | :---: | :---: | 
-GPU | NVIDIA GTX 1050ti / AMD RX5700 | 
 RAM | 6GB
 Storage | 6 GB 
 

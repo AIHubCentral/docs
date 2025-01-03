@@ -48,13 +48,19 @@ order: 1000
 :::
 ### Batch Size
 
-- A batch size is the number of training examples used in one iteration before updaing the model's parameters.
+A batch size is the number of training examples used in one iteration before updaing the model's parameters. Usually a batch size of 8 is the best for most models.
 
-- A smaller batch size ( Less then 8 ) is better for smaller datasets, uses less memory, updates parameters more and has noisy gradients.
-
-- A larger batch size ( More then 8 ) is better for large datasets ( over an hour ) uses more memory, has smooth gradients and trains faster. 
-
-- Usually a batch size of 8 is the best for most models with a dataset of around 30 minutes, anything less it is advisable that you use a smaller batch size and for a dataset of 1 hour or more you should increase the batch size.
+- Smaller batch size:
+    - Promotes noisier, less stable gradients.
+    - More suitable when your dataset is small, less diverse or repetitive.
+    - Can lead to instability / divergence or noisy as hell graphs.
+    - Generalization might be improved.
+‎ 
+- Bigger batch size:
+    - Promotes smoother, more stable gradients.
+    - Can beneficial in cases where your dataset is big and diverse.
+    - Can lead to early overtraining or flat / ' stuck ' graphs.
+    - Generalization might be worsened
 
 ***
 ### Precision 
@@ -111,30 +117,171 @@ Pretrains are an integral part of making a model, they are basically models that
 ***
 ###### ‎ 
 ### Where do i find Pretrains?       
-You can find all of the community made pretrains in the "pretrain-models" channel in AI HUB. 
 
-Here is a quick list of all publicly available pretrains: 
+You can find all of the community made pretrains in the "pretrain-models" channel in <u>[AI HUB](https://discord.gg/aihub)</u>. 
 
-Name   | 32k Download | 40k Downaload | 48k Download
----    | ---
-DMR V1 by Razer | [32k](https://huggingface.co/Razer112/DMR_Pretrain/tree/main) | - | - 
-Itaila V1.0 by Ilaria | [32k](https://huggingface.co/TheStinger/itaila/tree/main) | - | - 
-IMA by Loren85 | [32k](https://huggingface.co/Loren85/IMA-TEST-V1/tree/main) | - | - 
-KLM 4.1 by SeoulStreamingStation | [32k](https://huggingface.co/SeoulStreamingStation/KLM4.1/tree/main) | - | [48k](https://huggingface.co/SeoulStreamingStation/KLM4.1/tree/main) 
-KLM 4.2 by SeoulStreamingStation | - | [40k](https://huggingface.co/SeoulStreamingStation/KLM4.2_TestVersion/tree/main) | - 
-KLM BeatzForge by SeoulStreamingStation | [32k](https://huggingface.co/SeoulStreamingStation/KLM_BEATMASTER/tree/main) | - | [48k](https://huggingface.co/SeoulStreamingStation/KLM_BEATMASTER/tree/main) 
-Nanashi V1.7 by shiromiya | [32k](https://huggingface.co/shiromiya/nanashi-pretrain/tree/main/v1.7) | - | - 
-Nanashi Anime v1 by shiromiya | [32k](https://huggingface.co/shiromiya/nanashi-pretrain/tree/main/v1_anime) | - | - 
-Ov2 Super by SimplCup | [32k](https://huggingface.co/poiqazwsx/Ov2Super32kfix/tree/main) | [40k](https://huggingface.co/ORVC/Ov2Super/tree/main) | [48k](https://huggingface.co/ORVC/Ov2Super/tree/main) 
-RIN_E3 by MUSTAR | - | [40k](https://huggingface.co/MUSTAR/RIN_E3/tree/main) | - 
-Rigel by MUSTAR | [32k](https://huggingface.co/MUSTAR/Rigel-rvc-base-pretrained-model/tree/main/Rigel_32k_Base_and_FineTuned/FineTuned-model_32k_fp32) | [40k](https://huggingface.co/MUSTAR/Rigel-rvc-base-pretrained-model/tree/main/Rigel_40k_Base_and_FineTuned/FineTuned-model_40k/Alpha) | - 
-SingerPreTrain by Sztef | [32k](https://huggingface.co/Sztef/SingerPreTrained/tree/main/update) | - | - 
-Snowie by MUSTAR | - | [40k](https://huggingface.co/MUSTAR/SnowyRuPretrain_EnP_40k/tree/main) | [48k](https://huggingface.co/MUSTAR/SnowyRuPretrain_EnP_48k/tree/main) 
-SnowieV3 X RIN_E3 by MUSTAR | - | [40k](https://huggingface.co/MUSTAR/SnowieV3.1-X-RinE3-40K/tree/main) | - 
-SnowieV3.1 by MUSTAR | [32k](https://huggingface.co/MUSTAR/SnowieV3.1-32k/tree/main) | [40k](https://huggingface.co/MUSTAR/SnowieV3.1-40k/tree/main) | [48k](https://huggingface.co/MUSTAR/SnowieV3.1-48k/tree/main) 
-TITAN by blaise-tk | [32k](https://huggingface.co/blaise-tk/TITAN/tree/main/models/medium/32k/pretrained) | [40k](https://huggingface.co/blaise-tk/TITAN/tree/main/models/medium/40k/pretrained) | [48k](https://huggingface.co/blaise-tk/TITAN/tree/main/models/medium/48k/pretrained) 
-UKA by PlasmaTi | [32k](https://huggingface.co/Plasmati/Pretrains/tree/main) | - | - 
+Here is a list of all publicly available pretrains: 
 
+||| DMR V1 by Razer
+This is a fine-tuned based on the original RVC V2 pretrained and made with a 11.3 hour dataset aimed towards e-girl, soft male/female and deep male/female voices. This model was trained with Mangio-Crepe/Crepe (Applio) therefore it is advisable to use this extraction algorithm with a 128 hop length or below and have a clean dataset due to the sensitivity to noise of this algorithm.
+
+- **32k Download:**
+    -  <u>[**D Download**](https://huggingface.co/Razer112/DMR_Pretrain/resolve/main/D_DMR-V1.pth?download=true)</u>
+    -  <u>[**G Download**](https://huggingface.co/Razer112/DMR_Pretrain/resolve/main/G_DMR-V1.pth?download=true)</u> 
+||| 
+||| GuideVocalPretrain by Essid
+GuideVocalPretrain is a fine-tuned pretrain based on the original pretrain. This contains 58 hours of Korean speech with the goal being to improve Korean speech.  
+
+- **48k Download:**
+    - <u> [**D Download**](https://huggingface.co/Essid/GuideVocalPretrain/resolve/main/D_GuideVocalPretrain.pth?download=true)</u> 
+    - <u> [**G Download**](https://huggingface.co/Essid/GuideVocalPretrain/resolve/main/G_GuideVocalPretrain.pth?download=true)</u> 
+|||
+||| Itaila V1.0 by Ilaria
+This is a fine-tuned pretrain based on the original pretrains and was made with 10 hours of Italian speech. Itaila was made to improve Italian speech.
+
+- **32k Download:**
+    - <u>[**D Download**](https://huggingface.co/TheStinger/itaila/resolve/main/ItaIla_32k_D.pth?download=true)</u>
+    - <u>[**G Download**](https://huggingface.co/TheStinger/itaila/resolve/main/ItaIla_32k_G.pth?download=true)</u>
+|||
+||| IMA by Loren85
+This is a fine-tuned pretrain based on the original pretrains and was made with 2 hours of robotic speech which aims to make robotic voices better.
+
+- **32k Download:**
+    - <u>[**D Download**](https://huggingface.co/Loren85/IMA-TEST-V1/resolve/main/D_2333333.pth?download=true)</u>
+    - <u>[**G Download**](https://huggingface.co/Loren85/IMA-TEST-V1/resolve/main/G_2333333.pth?download=true)</u>
+|||
+||| KLM 4.1 by SeoulStreamingStation
+KLM 4.1 is a fine-tuned based on KLM V7 pretrained and made with around 100 hours dataset (Korean vocal/speech, Japanese vocal/speech and English speech), so it will work better with those languages. Unlike typical pretrained models KLM is a pretrained model created to make vocal guides using short voice recordings from a studio, this means that even with short dataset high pitch information it is possible to implement high-pitched sounds but it is sensitive to noise so it is recommended to use it with high quality datasets
+
+- **32k Download:**
+    - <u>[**D Download**](https://huggingface.co/SeoulStreamingStation/KLM4.1/resolve/main/D_KLM41_32k.pth?download=true)</u>
+    - <u>[**G Download**](https://huggingface.co/SeoulStreamingStation/KLM4.1/resolve/main/G_KLM41_32k.pth?download=true)</u>
+‎ 
+- **48k Download:**
+    - <u>[**D Download**](https://huggingface.co/SeoulStreamingStation/KLM4.1/resolve/main/D_KLM41_48k.pth?download=true)</u>
+    - <u>[**G Download**](https://huggingface.co/SeoulStreamingStation/KLM4.1/resolve/main/G_KLM41_48k.pth?download=true)</u>
+|||
+||| KLM 4.2 by SeoulStreamingStation
+KLM 4.2 maintains the same highly extensive pitch range as before and was developed to be able to handle high-pitched vocal inference even without having the corresponding vocal data of the model you wish to generate. KLM 4.2 was trained with 146 hours of data which mostly contains Korean, Japanese and some English.
+
+- **32k Download:**
+    - <u>[**D Download**](https://huggingface.co/SeoulStreamingStation/KLM4.2/resolve/main/D_KLM42_32k_x10.pth?download=true)</u>
+    - <u>[**G Download**](https://huggingface.co/SeoulStreamingStation/KLM4.2/resolve/main/G_KLM42_32k_x10.pth?download=true)</u>
+
+|||
+||| KLM BeatzForge by SeoulStreamingStation
+This is a fine-tuned pretrain based on the original pretrain that improves drum models. 
+
+- **32k Download:**
+    - <u>[**D Download**](https://huggingface.co/SeoulStreamingStation/KLM_BEATMASTER/resolve/main/D_BeatzForge_V2_32k.pth?download=true)</u>
+    - <u>[**G Download**](https://huggingface.co/SeoulStreamingStation/KLM_BEATMASTER/resolve/main/G_BeatzForge_V2_32k.pth?download=true)</u>
+|||
+||| Nanashi V1.7 by shiromiya
+Nanashi V1.7 is a fine-tuned based on TITAN pretrained and made with 11 hours of Brazilian music, so it will work better with this language but it can work with other languages without any problems, like TITAN, it allows models to be trained with few epochs and handles the noise better.
+
+- **32k Download:**
+    - <u>[**D Download**](https://huggingface.co/shiromiya/nanashi-pretrain/resolve/main/v1.7/D_nanashi_v1_7.pth?download=true)</u>
+    - <u>[**G Download**](https://huggingface.co/shiromiya/nanashi-pretrain/resolve/main/v1.7/G_nanashi_v1_7.pth?download=true)</u>
+|||
+||| Nanashi Anime v1 by shiromiya
+This is a fine-tuned pretrain based off of the original pretrain which aims to improve anime-style speech. This was train with 11 hours of speech.
+
+- **32k Download:**
+    - <u>[**D Download**](https://huggingface.co/shiromiya/nanashi-pretrain/resolve/main/v1_anime/normal/D_nanashi_anime_384e.pth?download=true)</u>
+    - <u>[**G Download**](https://huggingface.co/shiromiya/nanashi-pretrain/resolve/main/v1_anime/normal/G_nanashi_anime_384e.pth?download=true)</u>
+|||
+||| Nezox V1 by noxty
+Nezox is a fine-tuned pretrain based on the original pretrain. This pretrain contains 43 hours of Indonesian speech with the goal of the pretrain to make Indonesian speech better. 
+
+- **32k Download:**
+    - <u>[**D Download**](https://huggingface.co/theNeofr/Nezox/resolve/main/Nezox_32k_D.pth?download=true)</u>
+    - <u>[**G Download**](https://huggingface.co/theNeofr/Nezox/resolve/main/Nezox_32k_G.pth?download=true)</u>
+|||
+||| OV2 Super by SimplCup
+Ov2Super is a fine-tuned based on the original RVC V2 pretrained and made with 30 minutes dataset, works well for small datasets and English language, this pretrained was trained on a precisely chosen clean speech and singing dataset, with bright and emotional voices. Additionally, it allows models to train with very few epochs compared to regular pretrains.
+
+- **32k Download:**
+    - <u>[**D Download**](https://huggingface.co/poiqazwsx/Ov2Super32kfix/resolve/main/f0Ov2Super32kD.pth?download=true)</u>
+    - <u>[**G Download**](https://huggingface.co/poiqazwsx/Ov2Super32kfix/resolve/main/f0Ov2Super32kG.pth?download=true)</u>
+- **40k Download:**
+    - <u>[**D Download**](https://huggingface.co/ORVC/Ov2Super/resolve/main/f0Ov2Super40kD.pth?download=true)</u>
+    - <u>[**G Download**](https://huggingface.co/ORVC/Ov2Super/resolve/main/f0Ov2Super40kG.pth?download=true)</u>
+|||
+||| RIN_E3 by MUSTAR
+This pretrain is made from scratch with a 140 hour dataset. It is suggested to use this with high quality datasets due to its sensitivity to noise.
+
+- **40k Download:**
+    - <u>[**D Download**](https://huggingface.co/MUSTAR/RIN_E3/resolve/main/RIN_E3_D.pth?download=true)</u>
+    - <u>[**G Download**](https://huggingface.co/MUSTAR/RIN_E3/resolve/main/RIN_E3_G.pth?download=true)</u>
+|||
+||| Rigel by MUSTAR
+Rigel is a fine-tuned pretrain based on Rigel Base. Rigel Base has 1921 of speech from most langauges, Rigel fine-tuned has 102 of high quality speech also from a ton of langauges. The goal of this pretrain is to be a better base then the original pretrain.
+
+- **Base 32k Download:**
+    - <u>[**D Download**](https://huggingface.co/MUSTAR/Rigel-rvc-base-pretrained-model/resolve/main/Rigel_32k_Base_and_FineTuned/Base-model_32k_fp32/D_Rigel_32k_3890220.pth?download=true)</u>
+    - <u>[**G Download**](https://huggingface.co/MUSTAR/Rigel-rvc-base-pretrained-model/resolve/main/Rigel_32k_Base_and_FineTuned/Base-model_32k_fp32/G_Rigel_32k_3890220.pth?download=true)</u>
+- **Fine-Tuned 32k Download:**
+    - <u>[**D Download**](https://huggingface.co/MUSTAR/Rigel-rvc-base-pretrained-model/resolve/main/Rigel_32k_Base_and_FineTuned/FineTuned-model_32k_fp32/D_Rigel_32k_fp32_2854856.pth?download=true)</u>
+    - <u>[**G Download**](https://huggingface.co/MUSTAR/Rigel-rvc-base-pretrained-model/resolve/main/Rigel_32k_Base_and_FineTuned/FineTuned-model_32k_fp32/G_Rigel_32k_fp32_2854856.pth?download=true)</u>
+
+|||
+||| SingerPreTrain by Sztef
+SingerPetrain is a fine-tuned based on Ov2 Super pretrained and made with 14 hours dataset (English singers). It is most suitable for training singers but it works for everything, the vocal range dataset is c1 to db7 so it works well with bass, baritone, tenor, alto, mezzo-soprano, soprano voices.
+
+- **32k Download:**
+    - <u>[**D Download**](https://huggingface.co/Sztef/SingerPreTrained/resolve/main/update/f0D_SingerPreTrain.pth?download=true)</u>
+    - <u>[**G Download**](https://huggingface.co/Sztef/SingerPreTrained/resolve/main/update/f0G_SingerPreTrain.pth?download=true)</u>
+|||
+||| Snowie by MUSTAR
+Snowie is a fine-tuned pretrain based on the original pretrain. This pretrain's goal is to improve Russian speech without effecting English speech. This was trained with 21 hours of Russian speech.
+
+- **40k Download:**
+    - <u>[**D Download**](https://huggingface.co/MUSTAR/SnowyRuPretrain_EnP_40k/resolve/main/D_Snowie_RuPretrain_EnP.pth?download=true)</u>
+    - <u>[**G Download**](https://huggingface.co/MUSTAR/SnowyRuPretrain_EnP_40k/resolve/main/G_Snowie_RuPretrain_EnP.pth?download=true)</u>
+- **48k Download:**
+    - <u>[**D Download**](https://huggingface.co/MUSTAR/SnowyRuPretrain_EnP_48k/resolve/main/D_Snowie_Rupretrain_48k_V1.2.pth?download=true)</u>
+    - <u>[**G Download**](https://huggingface.co/MUSTAR/SnowyRuPretrain_EnP_48k/resolve/main/G_Snowie_Rupretrain_48k_V1.2.pth?download=true)</u>
+|||
+||| SnowieV3 X RIN_E3 by MUSTAR
+SnowieV3 X RIN_E3 continues the training with Snowie dataset and then finetuned with additional data, so it will work better with English, Russian and Japanese language and also helps models of other languages to pronounce them well.
+
+- **40k Download:**
+    - <u>[**D Download**](https://huggingface.co/MUSTAR/SnowieV3.1-X-RinE3-40K/resolve/main/D_Snowie-X-Rin_40k.pth?download=true)</u>
+    - <u>[**G Download**](https://huggingface.co/MUSTAR/SnowieV3.1-X-RinE3-40K/resolve/main/G_Snowie-X-Rin_40k.pth?download=true)</u>
+|||
+||| SnowieV3.1 by MUSTAR
+SnowieV3.1 is a fine-tuned based on Snowie base pretrained (not publicly available) and made with 58 hours dataset (Russian and Japanese), so it will work better with those languages and also helps models of other languages to pronounce them well. 
+
+- **32k Download:**
+    - <u>[**D Download**](https://huggingface.co/MUSTAR/SnowieV3.1-32k/resolve/main/D_SnowieV3.1_32k.pth?download=true)</u>
+    - <u>[**G Download**](https://huggingface.co/MUSTAR/SnowieV3.1-32k/resolve/main/G_SnowieV3.1_32k.pth?download=true)</u>
+- **40k Download:**
+    - <u>[**D Download**](https://huggingface.co/MUSTAR/SnowieV3.1-40k/resolve/main/D_SnowieV3.1_40k.pth?download=true)</u>
+    - <u>[**G Download**](https://huggingface.co/MUSTAR/SnowieV3.1-40k/resolve/main/G_SnowieV3.1_40k.pth?download=true)</u>
+- **48k Download:**
+    - <u>[**D Download**](https://huggingface.co/MUSTAR/SnowieV3.1-48k/resolve/main/D_SnowieV3.1_48k.pth?download=true)</u>
+    - <u>[**G Download**](https://huggingface.co/MUSTAR/SnowieV3.1-48k/resolve/main/G_SnowieV3.1_48k.pth?download=true)</u>
+|||
+||| TITAN by blaise-tk
+TITAN is a fine-tuned based on the original RVC V2 pretrained, leveraging an 11.15-hours dataset sourced from Expresso. It gives cleaner results compared to the original pretrained, also handles the accent and noise better due to its robustness, being able to generate high quality results. Like Ov2 Super, it allows models to be trained with few epochs.
+
+- **32k Download:**
+    - <u>[**D Download**](https://huggingface.co/blaise-tk/TITAN/resolve/main/models/medium/32k/pretrained/D-f032k-TITAN-Medium.pth?download=true)</u>
+    - <u>[**G Download**](https://huggingface.co/blaise-tk/TITAN/resolve/main/models/medium/32k/pretrained/G-f032k-TITAN-Medium.pth?download=true)</u>
+- **40k Download:**
+    - <u>[**D Download**](https://huggingface.co/blaise-tk/TITAN/resolve/main/models/medium/40k/pretrained/D-f040k-TITAN-Medium.pth?download=true)</u>
+    - <u>[**G Download**](https://huggingface.co/blaise-tk/TITAN/resolve/main/models/medium/40k/pretrained/G-f040k-TITAN-Medium.pth?download=true)</u>
+- **48k Download:**
+    - <u>[**D Download**](https://huggingface.co/blaise-tk/TITAN/resolve/main/models/medium/48k/pretrained/D-f048k-TITAN-Medium.pth?download=true)</u>
+    - <u>[**G Download**](https://huggingface.co/blaise-tk/TITAN/resolve/main/models/medium/48k/pretrained/G-f048k-TITAN-Medium.pth?download=true)</u>
+|||
+||| UKA by PlasmaTi
+UKA is a fine-tuned pretrain based on the original pretrain. This pretrain has 8 hours of english speech all containing the British accent. 
+
+- **32k Download:**
+    - <u>[**D Download**](https://huggingface.co/Plasmati/Pretrains/resolve/main/UKA-Pretrain-D.pth?download=true)</u>
+    - <u>[**G Download**](https://huggingface.co/Plasmati/Pretrains/resolve/main/UKA-Pretrain-G.pth?download=true)</u>
+|||
 ***
 ###### ‎ 
 ### How do i make Pretrain?      
