@@ -52,7 +52,7 @@ order: 1000
    - Is incapable of hitting certain notes.
    - Has slurred speech.
    - Is unable of pronouncing words correctly in its intended language.
-   - Has <u>[artifacting](https://docs.ai-hub.wtf/rvc/resources/dataset-making/#artifacts)</u>.
+   - Has <u>[artifacting](https://docs.ai-hub.wtf/rvc/resources/dataset-isolation/#artifacts)</u>.
    - Has noise.
 ***
 ###### ‎ 

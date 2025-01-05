@@ -321,20 +321,7 @@ To make a pretrain you are going to need a pretty good GPU, because without one 
      - A10, T4
      - 4060 (Ti) (8/16gb)
      - 3060 (Ti)
-
-+++ Batch Size
-Batch size refers to the amount of samples used in one iteration. Batching is used to improve performence by using parallel processing instead of individual sample processing.
-
-For RVC this means it can influence how well temporal dependencies are captured. A small batch size like 4 and below won't capture the variability in the audio, while a high batch size like 16 and above might smooth out these variations too much causing bad graphs.
-
-Low Batch Size:
-- Pros: Less memory consumption, better generalization, less prone to overtraining.
-- Cons: Slower training due to reduced parallelism, potentially less stable gradient updates.
-
-High Batch Size:
-- Pros: Faster training due to increased parallelism, more stable gradient updates, potentially better convergence.
-- Cons: Higher memory requirements, might lead to overtraining if the dataset is small.
-
+     
 +++ Q&A
 Q: What is the best pretrain? 
 

@@ -149,7 +149,7 @@ In `Enter the experiment name` you insert a name for your model. Don't include s
 
 ###### ‎  
 #### 3. Select Target Sample Rate.
-In `Target sample rate` select the number that matches your datasets' <u>[sample rate</u>](https://docs.ai-hub.wtf/rvc/resources/dataset-making/#preparing-the-dataset).        
+In `Target sample rate` select the number that matches your datasets' <u>[sample rate</u>](https://docs.ai-hub.wtf/rvc/resources/dataset-isolation/#step-1-find-the-sample-rate).        
 Inputting an incorrect one might screw up the final quality.
 
 <img src="../mainline-img/g.png" alt="image" width="" height="auto">         
@@ -348,7 +348,7 @@ If the training finished but the model still needed training, you don't have to 
 
 ==- *The voice glitches out.*
 ###### ‎   
-- This a phenomenon called artifacting. To fix it, read <u>[here](https://docs.ai-hub.wtf/rvc/resources/dataset-making/#artifacts)</u>.
+- This a phenomenon called artifacting. To fix it, read <u>[here](https://docs.ai-hub.wtf/rvc/resources/dataset-isolation/#artifacts)</u>.
 
 ===
 

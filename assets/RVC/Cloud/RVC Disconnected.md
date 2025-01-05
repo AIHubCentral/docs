@@ -97,7 +97,7 @@ a. Go to the `Set Training Variables` cell.
 :   If you aren't familiar with pretrains, select `original`.
 
 `target_sample_rate`
-:   Select your dataset's <u>[sample rate</u>](https://docs.ai-hub.wtf/rvc/resources/dataset-making/#preparing-the-dataset).
+:   Select your dataset's <u>[sample rate</u>](https://docs.ai-hub.wtf/rvc/resources/dataset-isolation/#step-1-find-the-sample-rate).
 
 ``pitch_extraction_algorithm``
 :   The <u>[extraction method](https://docs.ai-hub.wtf/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u>. Don't use Harvest, as it's obsolete.        

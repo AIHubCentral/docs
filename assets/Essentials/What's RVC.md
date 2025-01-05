@@ -57,7 +57,7 @@ visibility:
 ==- *What's the best fork?*
 ###### ‎       
 - As explained before, it depends on your needs. It's best to try them yourself.
-- For **local** users, <u>[Applio](https://docs.ai-hub.wtf/rvc/local/applio/)</u> is a great starting point. For **cloud** users you can use either the <u>[Applio Colab](https://docs.ai-hub.wtf/rvc/cloud/applio-colab/)</u> or <u>[mainline kaggle](https://docs.ai-hub.wtf/rvc/cloud/kaggle/)</u>.
+- For **local** users, <u>[Applio](https://docs.ai-hub.wtf/rvc/local/applio/)</u> is a great starting point. For **cloud** users you can use either the <u>[Applio Colab](https://docs.ai-hub.wtf/rvc/cloud/applio-colab/)</u> or <u>[mainline kaggle](https://docs.ai-hub.wtf/rvc/cloud/mainline-kaggle/)</u>.
 ===
 
 ==- *What are the requirements for RVC locally?*
@@ -96,7 +96,7 @@ Storage | 6 GB
 ###### ‎      
 - The total time depends on a lot of factors, like dataset length, batch size, pretrains, specs, etc.
 
-- A 10 min <u>[dataset](https://docs.ai-hub.wtf/rvc/resources/dataset-making/)</u> with <u>[RMVPE](https://docs.ai-hub.wtf/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u> may take around 1 to 2 hours.
+- A 10 min <u>[dataset](https://docs.ai-hub.wtf/rvc/resources/dataset-isolation/)</u> with <u>[RMVPE](https://docs.ai-hub.wtf/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u> may take around 1 to 2 hours.
 === 
 
 ==- *Can I run it on a Mac?*

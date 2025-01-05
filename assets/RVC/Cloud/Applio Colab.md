@@ -443,7 +443,7 @@ iii. And that's all, have fun with your model. To test it, do a normal <u>[infer
 ###### ‎  
 - Applio has an **Extra** menu, containing an **audio analyzer**, **F0 Curve** and **Model Information**.
 
-- Making it convenient for determining the <u>[sample rate](https://docs.ai-hub.wtf/rvc/resources/dataset-making/#preparing-the-dataset)</u> of datasets when training models.
+- Making it convenient for determining the <u>[sample rate](https://docs.ai-hub.wtf/rvc/resources/dataset-isolation/#step-1-find-the-sample-rate)</u> of datasets when training models.
 
 - It also contains the **model fusion** tool, ideal for advanced users.
 
@@ -552,7 +552,7 @@ If the frequencies don't reach the top of the spectrogram, see at which number p
 
 ==- *The voice glitches out.*
 ###### ‎   
-- This a phenomenon called artifacting. To fix it, read <u>[here](https://docs.ai-hub.wtf/rvc/resources/dataset-making/#artifacts)</u>.
+- This a phenomenon called artifacting. To fix it, read <u>[here](https://docs.ai-hub.wtf/rvc/resources/dataset-isolation/#artifacts)</u>.
 
 ===
 
