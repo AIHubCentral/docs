@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.789242473055">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.789360550341">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.6.0">
@@ -34,11 +34,11 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../../img/b.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.6.0.789242473055" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.6.0.789360550341" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.6.0.789242473055" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.6.0.789360550341" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.6.0.789242473055" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.6.0.789360550341" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -900,21 +900,6 @@ The second way being:</li>
 <li>3060 (Ti)</li>
 </ul>
 </li>
-</ul>
-</doc-tab>
-<doc-tab v-cloak id="batch-size">
-<template #title>Batch Size</template>
-<p>Batch size refers to the amount of samples used in one iteration. Batching is used to improve performence by using parallel processing instead of individual sample processing.</p>
-<p>For RVC this means it can influence how well temporal dependencies are captured. A small batch size like 4 and below won&#x27;t capture the variability in the audio, while a high batch size like 16 and above might smooth out these variations too much causing bad graphs.</p>
-<p>Low Batch Size:</p>
-<ul>
-<li>Pros: Less memory consumption, better generalization, less prone to overtraining.</li>
-<li>Cons: Slower training due to reduced parallelism, potentially less stable gradient updates.</li>
-</ul>
-<p>High Batch Size:</p>
-<ul>
-<li>Pros: Faster training due to increased parallelism, more stable gradient updates, potentially better convergence.</li>
-<li>Cons: Higher memory requirements, might lead to overtraining if the dataset is small.</li>
 </ul>
 </doc-tab>
 <doc-tab v-cloak id="q-a">
