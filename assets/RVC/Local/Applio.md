@@ -491,7 +491,7 @@ Then you'll be able to see the plugin in the **Plugins** tab.
 
 ==- *The voice glitches out.*
 ###### ‎   
-- This a phenomenon called artifacting. To fix it, read <u>[here](https://docs.ai-hub.wtf/rvc/resources/dataset-making/#artifacts)</u>.
+- This a phenomenon called artifacting. To fix it, read <u>[here](https://docs.ai-hub.wtf/rvc/resources/dataset-isolation/#artifacts)</u>.
 
 ===
 
