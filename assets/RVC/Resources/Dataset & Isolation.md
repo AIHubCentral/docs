@@ -103,7 +103,7 @@ Remember that the cleaner your input audio is, the better the results.
 
 - The goal is to get an audio sample with clean and natural vocals, which is what RVC needs to give the most accurate & quality results.
 
-- For RVC users, the best app is Ultimate Vocal Remover 5 (or **UVR**). It can be used either <u>[locally](https://docs.ai-hub.wtf/extra/glossary/#local-running)</u> or through the <u>[cloud](https://docs.ai-hub.wtf/rvc/resources/vocal-isolation/#cloud-uvr-)</u>.
+- For RVC users, the best app is Ultimate Vocal Remover 5 (or **UVR**). It can be used either <u>[locally](https://docs.ai-hub.wtf/extra/glossary/#local-running)</u> or through the <u>[cloud]https://docs.ai-hub.wtf/rvc/resources/dataset-isolation/#cloud-uvr)</u>.
 
 - If you want to remove noise manually to avoid ai artifacts you can use RX 11, which is mentioned in this guide. 
 
@@ -114,7 +114,7 @@ Remember that the cleaner your input audio is, the better the results.
 :::content-center
 ## Local UVR
 !!!warning 
-*You'll require great specs & GPU to run it effectively. Otherwise, use either the <u>[google colab version](https://docs.ai-hub.wtf/rvc/resources/vocal-isolation/#cloud-uvr)</u> or the Huggingface space.*
+*You'll require great specs & GPU to run it effectively. Otherwise, use either the <u>[google colab version](https://docs.ai-hub.wtf/rvc/resources/dataset-isolation/#cloud-uvr)</u> or the Huggingface space.*
 !!!
 :::
 ‎ 
@@ -449,7 +449,7 @@ ZeroGPU HuggingFace Spaces have a quota per account, if you aren’t signed in y
 ***
 - MVSEP is a website for isolating vocals, that works similarly as UVR.
 
-- The <u>[UVR Colab](https://docs.ai-hub.wtf/rvc/resources/vocal-isolation/#cloud-uvr)</u> is much faster & convenient for this task. Use MVSEP if you run out of GPU runtime or feel lazy to convert your audio to WAV.
+- The <u>[UVR Colab](https://docs.ai-hub.wtf/rvc/resources/dataset-isolation/#cloud-uvr)</u> is much faster & convenient for this task. Use MVSEP if you run out of GPU runtime or feel lazy to convert your audio to WAV.
 
 - For free users, you can't convert audios in batches or longer than 10 minutes. If that's your case, trim it into different pieces.
 
@@ -546,7 +546,7 @@ We recommend selecting FLAC from now on. Learn more <u>[here</u>](https://docs.a
 ###### ‎
 a. In **Separation Type**, select `DeNoise by aufr33`.      
 ‎     
-b. Check the <u>[model list](https://docs.ai-hub.wtf/rvc/resources/vocal-isolation/#best-models)</u>. Pick the one according to what you need to remove.         
+b. Check the <u>[model list](https://docs.ai-hub.wtf/rvc/resources/dataset-isolation/#best-models)</u>. Pick the one according to what you need to remove.         
 ‎       
 If you need to remove multiple noises, follow this pipeline for the best results:       
 ``Remove instrumental -> Remove reverb -> Extract main vocals -> Remove noise`` 

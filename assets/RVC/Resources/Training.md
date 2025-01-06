@@ -91,7 +91,7 @@ FP means floating point.
 ## Pretrains
 :::
 
-Pretrains are an integral part of making a model, they are basically models that have been trained with many different types of voices, genders, ages, languages, manor of speech and are much longer then normal models. The objective of pretrains is to reduce training time and increase the quality of your model.
+Pretrains are an integral part of making a model, they are basically models that have been trained with many different types of voices, genders, ages, languages, manor of speech and are much longer then normal models. The objective of pretrains is to reduce training time and increase the quality of your model. To make a model without a pretrain you would need several hours of data to make anything decent. 
 
  <img src="../pretrain-img/pretrain.png" alt="image" width="1000" height="auto">
 
