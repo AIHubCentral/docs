@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.789360550341">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.789499129494">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.6.0">
@@ -34,11 +34,11 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../../img/b.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.6.0.789360550341" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.6.0.789499129494" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.6.0.789360550341" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.6.0.789499129494" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.6.0.789360550341" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.6.0.789499129494" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -426,7 +426,7 @@ This occurs after the <u><a href="https://docs.ai-hub.wtf/extra/glossary/#infere
 </li>
 <li><p>The goal is to get an audio sample with clean and natural vocals, which is what RVC needs to give the most accurate &amp; quality results.</p>
 </li>
-<li><p>For RVC users, the best app is Ultimate Vocal Remover 5 (or <strong>UVR</strong>). It can be used either <u><a href="https://docs.ai-hub.wtf/extra/glossary/#local-running">locally</a></u> or through the <u><a href="https://docs.ai-hub.wtf/rvc/resources/vocal-isolation/#cloud-uvr-">cloud</a></u>.</p>
+<li><p>For RVC users, the best app is Ultimate Vocal Remover 5 (or <strong>UVR</strong>). It can be used either <u><a href="https://docs.ai-hub.wtf/extra/glossary/#local-running">locally</a></u> or through the <u>[cloud]https://docs.ai-hub.wtf/rvc/resources/dataset-isolation/#cloud-uvr)</u>.</p>
 </li>
 <li><p>If you want to remove noise manually to avoid ai artifacts you can use RX 11, which is mentioned in this guide.</p>
 </li>
@@ -453,7 +453,7 @@ This occurs after the <u><a href="https://docs.ai-hub.wtf/extra/glossary/#infere
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p><em>You&#x27;ll require great specs &amp; GPU to run it effectively. Otherwise, use either the <u><a href="https://docs.ai-hub.wtf/rvc/resources/vocal-isolation/#cloud-uvr">google colab version</a></u> or the Huggingface space.</em></p>
+<p><em>You&#x27;ll require great specs &amp; GPU to run it effectively. Otherwise, use either the <u><a href="https://docs.ai-hub.wtf/rvc/resources/dataset-isolation/#cloud-uvr">google colab version</a></u> or the Huggingface space.</em></p>
         </div>
     </div>
 </div>
@@ -1280,7 +1280,7 @@ If you need to remove multiple noises, follow this pipeline for the best results
 <ul>
 <li><p>MVSEP is a website for isolating vocals, that works similarly as UVR.</p>
 </li>
-<li><p>The <u><a href="https://docs.ai-hub.wtf/rvc/resources/vocal-isolation/#cloud-uvr">UVR Colab</a></u> is much faster &amp; convenient for this task. Use MVSEP if you run out of GPU runtime or feel lazy to convert your audio to WAV.</p>
+<li><p>The <u><a href="https://docs.ai-hub.wtf/rvc/resources/dataset-isolation/#cloud-uvr">UVR Colab</a></u> is much faster &amp; convenient for this task. Use MVSEP if you run out of GPU runtime or feel lazy to convert your audio to WAV.</p>
 </li>
 <li><p>For free users, you can&#x27;t convert audios in batches or longer than 10 minutes. If that&#x27;s your case, trim it into different pieces.</p>
 </li>
@@ -1542,7 +1542,7 @@ We recommend selecting FLAC from now on. Learn more <u><a href="https://docs.ai-
 <ol type="a">
 <li>In <strong>Separation Type</strong>, select <code v-pre>DeNoise by aufr33</code>.<br />
 ‎</li>
-<li>Check the <u><a href="https://docs.ai-hub.wtf/rvc/resources/vocal-isolation/#best-models">model list</a></u>. Pick the one according to what you need to remove.<br />
+<li>Check the <u><a href="https://docs.ai-hub.wtf/rvc/resources/dataset-isolation/#best-models">model list</a></u>. Pick the one according to what you need to remove.<br />
 ‎<br />
 If you need to remove multiple noises, follow this pipeline for the best results:<br />
 <code v-pre>Remove instrumental -&gt; Remove reverb -&gt; Extract main vocals -&gt; Remove noise</code></li>
