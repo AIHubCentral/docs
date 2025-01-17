@@ -103,7 +103,7 @@ Remember that the cleaner your input audio is, the better the results.
 
 - The goal is to get an audio sample with clean and natural vocals, which is what RVC needs to give the most accurate & quality results.
 
-- For RVC users, the best app is Ultimate Vocal Remover 5 (or **UVR**). It can be used either <u>[locally](https://docs.ai-hub.wtf/extra/glossary/#local-running)</u> or through the <u>[cloud]https://docs.ai-hub.wtf/rvc/resources/dataset-isolation/#cloud-uvr)</u>.
+- For RVC users, the best app is Ultimate Vocal Remover 5 (or **UVR**). It can be used either <u>[locally](https://docs.ai-hub.wtf/extra/glossary/#local-running)</u> or through the <u>[cloud](https://docs.ai-hub.wtf/rvc/resources/dataset-isolation/#cloud-uvr)</u>.
 
 - If you want to remove noise manually to avoid ai artifacts you can use RX 11, which is mentioned in this guide. 
 
