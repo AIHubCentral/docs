@@ -15,7 +15,7 @@ order: 5000
 
 - For the best results, having a **clean** dataset is crucial, so take the time to remove any undesired noises.
        
-- #### <u>[Learn how</u>](https://docs.ai-hub.wtf/rvc/resources/datasets/).
+- #### <u>[Learn how</u>](https://docs.aihub.gg/rvc/resources/dataset-isolation/).
 ***
 ###### ‎ 
 ### 2. Set up RVC
