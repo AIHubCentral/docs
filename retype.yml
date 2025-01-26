@@ -1,7 +1,7 @@
 input: ./assets
 output: .retype
 
-url: https://docs.ai-hub.wtf/
+url: https://docs.aihub.gg/
 
 branding:
   title:
@@ -14,7 +14,7 @@ links:
   link: https://discord.gg/aihub
   icon: question
 - text: Report Issues
-  link: https://docs.ai-hub.wtf/#contributions
+  link: https://docs.aihub.gg/#contributions
   icon: stop
 - text: GitHub
   link: https://github.com/AIHubCentral/docs
