@@ -38,11 +38,11 @@ visibility:
         - ##### :icon-cloud: <u>[Applio Lighting Ai](https://lightning.ai/guilhermecardoso1/studios/applio-latest?section=all&query=applio)</u>
     ###### ‎ 
     {.list-icon} 
-    - #### :icon-repo-forked: <u>[Codename Fork](https://github.com/codename0og/codename-rvc-fork-3)</u> (New)
+    - #### :icon-repo-forked: <u>[Codename Fork](https://github.com/codename0og/codename-rvc-fork-3)</u>
     ###### ‎   
     {.list-icon}
     - #### :icon-repo-forked: <u>[Mangio](https://github.com/Mangio621/Mangio-RVC-Fork)</u>
-        - ##### :icon-cloud: <u>[RVC Disconnected](https://colab.research.google.com/drive/1XIPCP9ken63S7M6b5ui1b36Cs17sP-NS#scrollTo=ZodNcumpg-JM)</u>
+        
     ###### ‎  
     {.list-icon} 
     - #### :icon-repo-forked: <u>[AICoverGen](https://github.com/SociallyIneptWeeb/AICoverGen)</u>     
