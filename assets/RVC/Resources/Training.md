@@ -39,7 +39,7 @@ order: 1000
 
 - Overtraining also know as overfitting is where the model doesn't actually learn the underlying patterns of the data and memorizes them instead. 
 
-- A sign of overfitting is when the sibilances are super robotic or when the graphs in the Tensorboard are going up.
+- Some signs of overfitting are when the sibilances are robotic or when the graphs in the Tensorboard are going up.
 
 
 ***
@@ -129,6 +129,13 @@ This is a fine-tuned based on the original RVC V2 pretrained and made with a 11.
     -  <u>[**D Download**](https://huggingface.co/Razer112/DMR_Pretrain/resolve/main/D_DMR-V1.pth?download=true)</u>
     -  <u>[**G Download**](https://huggingface.co/Razer112/DMR_Pretrain/resolve/main/G_DMR-V1.pth?download=true)</u> 
 ||| 
+||| DMR V2 by Razer
+This is a fine-tuned based on the original RVC V2 pretrained and made with 22 hours of dataset aimed towards e-girl, soft male/female and deep male/female voices.
+
+- **32k Download:**
+    -  <u>[**D Download**](https://huggingface.co/Razer112/DMR_Pretrain/resolve/main/D_DMR-V2.pth?download=true)</u>
+    -  <u>[**G Download**](https://huggingface.co/Razer112/DMR_Pretrain/resolve/main/G_DMR-V2.pth?download=true)</u> 
+|||
 ||| GuideVocalPretrain by Essid
 GuideVocalPretrain is a fine-tuned pretrain based on the original pretrain. This contains 58 hours of Korean speech with the goal being to improve Korean speech.  
 
@@ -167,6 +174,20 @@ KLM 4.2 maintains the same highly extensive pitch range as before and was develo
 - **32k Download:**
     - <u>[**D Download**](https://huggingface.co/SeoulStreamingStation/KLM4.2/resolve/main/D_KLM42_32k_x10.pth?download=true)</u>
     - <u>[**G Download**](https://huggingface.co/SeoulStreamingStation/KLM4.2/resolve/main/G_KLM42_32k_x10.pth?download=true)</u>
+
+|||
+||| KLM 4 by SeoulStreamingStation
+KLM 4 is the final HiFi-GAN pretrain that is going to be made by SSS. This version of klm is like all of the others but it follows the original structure of training and contains noise in the dataset so it can handle it better. This was trained with 800 hours of data, with a large portion of it being in Korean.
+
+- **32k Download:**
+    - <u>[**D Download**](https://huggingface.co/SeoulStreamingStation/KLM49_HFG/resolve/main/D_KLM_HFG_32k.pth?download=true)</u>
+    - <u>[**G Download**](https://huggingface.co/SeoulStreamingStation/KLM49_HFG/resolve/main/G_KLM_HFG_32k.pth?download=true)</u>
+- **40k Download:**
+    - <u>[**D Download**](https://huggingface.co/SeoulStreamingStation/KLM49_HFG/resolve/main/D_KLM_HFG_40k.pth?download=true)</u>
+    - <u>[**G Download**](https://huggingface.co/SeoulStreamingStation/KLM49_HFG/resolve/main/G_KLM_HFG_40k.pth?download=true)</u>
+- **48k Download:**
+    - <u>[**D Download**](https://huggingface.co/SeoulStreamingStation/KLM49_HFG/resolve/main/D_KLM_HFG_48k.pth?download=true)</u>
+    - <u>[**G Download**](https://huggingface.co/SeoulStreamingStation/KLM49_HFG/resolve/main/G_KLM_HFG_48k.pth?download=true)</u>
 
 |||
 ||| KLM BeatzForge by SeoulStreamingStation
@@ -327,6 +348,41 @@ Q: What is the best pretrain?
 
 A: There is no "best pretrain" it all depends on your needs and what you're ok with sacrificing to get those benefits.  
 +++
+
+***
+:::content-center
+## Vocoders
+:::
+
+-   In Applio and Codenames Fork you are given the choice between three vocoders:
+    - HiFi-GAN
+    - MRF HiFi-GAN
+    - RefineGAN
+
+Each of these are different in fidelity and require their own pretrains to use.
+
+### HiFI-GAN
+
+The first vocoder choice is HiFi-GAN the original GAN used in RVC which is combatible with all version of RVC and forks. HiFI-GAN is pretty basic and has muddy high ends.
+
+### MRF HiFI-GAN
+
+The second choice is MRF HiFI-GAN, this is a modfied version of HiFi-GAN with MRF instead of MPD, new loss functions and non-simplified version of the resolution block. 
+
+- Pros:
+    - Higher fidelity
+    - 44.1k Training
+- Cons:
+    - Only a slight upgrade from Hifi-GAN
+    - Not many pretrains for it
+
+### RefineGAN
+
+The third and final choice is RefineGAN, this is an entirely different GAN then HiFi. This GAN uses noise to fill in the gaps and has a different resolution block.
+
+- Pros:
+    - Higher fidelity and quality
+    - 44.1k Training
 
 ***
 :::content-center
