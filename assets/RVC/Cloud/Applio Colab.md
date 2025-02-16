@@ -77,13 +77,15 @@ Then log in to your Google account.
 
 ***
 ###### ‎
-5. Execute **Start Applio**.
+5. Select your sharing method then execute **Start Applio**. 
 
-    <img src="..\appliocolab-img\2-start.png" alt="image" width="300">‎     
+<img src="..\appliocolab-img\start-applio.png" alt="image" width="550">‎  
 ‎     
 - Then open the **public URL**.
 
     <img src="..\appliocolab-img\2-url.png" alt="image" width="430">‎
+
+- If you select **ngrok** put your ngrok token, which can be found <u>[here](https://dashboard.ngrok.com/get-started/your-authtoken)</u> in the text box.
 
 !!!warning Don't close Colab until you're done using it, or it will stop working.     
 !!! 

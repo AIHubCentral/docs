@@ -44,7 +44,7 @@ order: 1000
 
 ***
 :::content-center
-## Batch Size & Precision
+## Batch Size
 :::
 ### Batch Size
 
@@ -61,30 +61,6 @@ A batch size is the number of training examples used in one iteration before upd
     - Can beneficial in cases where your dataset is big and diverse.
     - Can lead to early overtraining or flat / ' stuck ' graphs.
     - Generalization might be worsened
-
-***
-### Precision 
-
-In RVC there are currently two precisions, FP16 and FP32. There is barely an audiable difference between the two so it is up to you on what precision setting you want to use. 
-
-!!!
-FP means floating point. 
-!!!
-
-||| **FP16's Pros:**
-- Faster then fp32
-- Less VRAM needed
-||| **FP16's Cons:**
-- Exploding gradients
-- Lots of NaNs
-- Unable to train from scratch
-||| **FP32 Pros:**
-- More stable gradients
-- No NaNs
-||| **FP32 Cons:**
-- Slower then fp16
-- Requires more VRAM
-|||
 
 ***
 :::content-center
@@ -456,7 +432,7 @@ For <u>[RVC Disconnected</u>](https://docs.ai-hub.wtf/rvc/cloud/rvc-disconnected
     ‎       
     <img src="../tensorboard-img/18.png" alt="image" width="240" height="auto">‎      
 ‎       
-- In the search bar, type "**g/total**". This will be the graph you'll monitor.        
+- In the search bar, type "**g/total**" then look for the avg graph. This will be the graph you'll monitor.        
     ‎   
         <img src="../tensorboard-img/19.png" alt="image" width="390" height="auto">‎        
 ‎    
@@ -484,17 +460,15 @@ For <u>[RVC Disconnected</u>](https://docs.ai-hub.wtf/rvc/cloud/rvc-disconnected
 
 - If it reaches a low point, let it run for **longer** until it's **very clear** it's OT.
 
-- When you detect OT go into the search bar and look for `mel`, 
+- Then zoom out & lower the smoothening. Then in the avg graph look for low points around where it started to overtrain.
 
-    <img src="../tensorboard-img/mel.png" alt="image" width="500" height="auto">‎
+- Then over your mouse over these low points and take note of the step counts. Since this is using the avg graphs you may not find the exact epoch connected to the step count so just choose the closest point.
 
-- Then zoom out & lower the smoothening to 0. Then look for low points named local minima.
+    <img src="../tensorboard-img/avg.png" alt="image" width="1000" height="auto">‎ 
 
-    <img src="../tensorboard-img/min.png" alt="image" width="600" height="auto">‎    
+- As you can see in the image above there is an area with several low points, so in this scenario you would try several epochs in that area to find the best sounding epoch.
 
-- Then over your mouse over the local minimas and take note of the step counts. Find all of the epochs connected to those step counts and then use them all to find the one that sounds best to you.
-
-> If you want you can just use the lowest mel point.
+> If you want you can just use the lowest avg g/total point.
 
 +++ Advanced Guide ‎     
 #### :icon-chevron-down: <u>Other Graphs</u>
