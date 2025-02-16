@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.792365696592">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.793060589332">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.6.0">
@@ -34,11 +34,11 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../../img/b.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.6.0.792365696592" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.6.0.793060589332" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.6.0.792365696592" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.6.0.793060589332" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.6.0.792365696592" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.6.0.793060589332" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -300,20 +300,20 @@
 <ul>
 <li><p>Overtraining also know as overfitting is where the model doesn&#x27;t actually learn the underlying patterns of the data and memorizes them instead.</p>
 </li>
-<li><p>A sign of overfitting is when the sibilances are super robotic or when the graphs in the Tensorboard are going up.</p>
+<li><p>Some signs of overfitting are when the sibilances are robotic or when the graphs in the Tensorboard are going up.</p>
 </li>
 </ul>
 <hr>
-<div class="content-center"><doc-anchor-target id="batch-size--precision">
+<div class="content-center"><doc-anchor-target id="batch-size">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#batch-size--precision">#</doc-anchor-trigger>
-        <span>Batch Size &amp; Precision</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#batch-size">#</doc-anchor-trigger>
+        <span>Batch Size</span>
     </h2>
 </doc-anchor-target>
 </div>
-<doc-anchor-target id="batch-size">
+<doc-anchor-target id="batch-size-1">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#batch-size">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#batch-size-1">#</doc-anchor-trigger>
         <span>Batch Size</span>
     </h3>
 </doc-anchor-target>
@@ -337,70 +337,6 @@
 </ul>
 </li>
 </ul>
-<hr>
-<doc-anchor-target id="precision">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#precision">#</doc-anchor-trigger>
-        <span>Precision</span>
-    </h3>
-</doc-anchor-target>
-<p>In RVC there are currently two precisions, FP16 and FP32. There is barely an audiable difference between the two so it is up to you on what precision setting you want to use.</p>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
-    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>FP means floating point.</p>
-        </div>
-    </div>
-</div>
-<div class="mb-6 overflow-hidden border rounded-md docs-columns dark:border-dark-650" style="grid-template-columns: repeat(4, minmax(0, 1fr));">
-    <div class="flex items-center px-5 py-3 font-medium leading-snug text-gray-900 border-b border-gray-200 dark:border-dark-650 dark:text-white border-r">
-        <span><strong>FP16&#x27;s Pros:</strong></span>
-    </div>
-    <div class="flex items-center px-5 py-3 font-medium leading-snug text-gray-900 border-b border-gray-200 dark:border-dark-650 dark:text-white border-r">
-        <span><strong>FP16&#x27;s Cons:</strong></span>
-    </div>
-    <div class="flex items-center px-5 py-3 font-medium leading-snug text-gray-900 border-b border-gray-200 dark:border-dark-650 dark:text-white border-r">
-        <span><strong>FP32 Pros:</strong></span>
-    </div>
-    <div class="flex items-center px-5 py-3 font-medium leading-snug text-gray-900 border-b border-gray-200 dark:border-dark-650 dark:text-white">
-        <span><strong>FP32 Cons:</strong></span>
-    </div>
-    <div class="px-5 py-3 docs-columns-content border-r border-gray-200 dark:border-dark-650">
-<ul>
-<li>Faster then fp32</li>
-<li>Less VRAM needed</li>
-</ul>
-    </div>
-    <div class="px-5 py-3 docs-columns-content border-r border-gray-200 dark:border-dark-650">
-<ul>
-<li>Exploding gradients</li>
-<li>Lots of NaNs</li>
-<li>Unable to train from scratch</li>
-</ul>
-    </div>
-    <div class="px-5 py-3 docs-columns-content border-r border-gray-200 dark:border-dark-650">
-<ul>
-<li>More stable gradients</li>
-<li>No NaNs</li>
-</ul>
-    </div>
-    <div class="px-5 py-3 docs-columns-content">
-<ul>
-<li>Slower then fp16</li>
-<li>Requires more VRAM</li>
-</ul>
-    </div>
-</div>
 <hr>
 <div class="content-center"><doc-anchor-target id="pretrains">
     <h2>
@@ -478,6 +414,22 @@
 <ul>
 <li><u><a href="https://huggingface.co/Razer112/DMR_Pretrain/resolve/main/D_DMR-V1.pth?download=true"><strong>D Download</strong></a></u></li>
 <li><u><a href="https://huggingface.co/Razer112/DMR_Pretrain/resolve/main/G_DMR-V1.pth?download=true"><strong>G Download</strong></a></u></li>
+</ul>
+</li>
+</ul>
+    </div>
+</div>
+<div class="mb-6 overflow-hidden border rounded-md docs-columns dark:border-dark-650" style="grid-template-columns: repeat(1, minmax(0, 1fr));">
+    <div class="flex items-center px-5 py-3 font-medium leading-snug text-gray-900 border-b border-gray-200 dark:border-dark-650 dark:text-white">
+        <span>DMR V2 by Razer</span>
+    </div>
+    <div class="px-5 py-3 docs-columns-content">
+<p>This is a fine-tuned based on the original RVC V2 pretrained and made with 22 hours of dataset aimed towards e-girl, soft male/female and deep male/female voices.</p>
+<ul>
+<li><strong>32k Download:</strong>
+<ul>
+<li><u><a href="https://huggingface.co/Razer112/DMR_Pretrain/resolve/main/D_DMR-V2.pth?download=true"><strong>D Download</strong></a></u></li>
+<li><u><a href="https://huggingface.co/Razer112/DMR_Pretrain/resolve/main/G_DMR-V2.pth?download=true"><strong>G Download</strong></a></u></li>
 </ul>
 </li>
 </ul>
@@ -565,6 +517,34 @@
 <ul>
 <li><u><a href="https://huggingface.co/SeoulStreamingStation/KLM4.2/resolve/main/D_KLM42_32k_x10.pth?download=true"><strong>D Download</strong></a></u></li>
 <li><u><a href="https://huggingface.co/SeoulStreamingStation/KLM4.2/resolve/main/G_KLM42_32k_x10.pth?download=true"><strong>G Download</strong></a></u></li>
+</ul>
+</li>
+</ul>
+    </div>
+</div>
+<div class="mb-6 overflow-hidden border rounded-md docs-columns dark:border-dark-650" style="grid-template-columns: repeat(1, minmax(0, 1fr));">
+    <div class="flex items-center px-5 py-3 font-medium leading-snug text-gray-900 border-b border-gray-200 dark:border-dark-650 dark:text-white">
+        <span>KLM 4 by SeoulStreamingStation</span>
+    </div>
+    <div class="px-5 py-3 docs-columns-content">
+<p>KLM 4 is the final HiFi-GAN pretrain that is going to be made by SSS. This version of klm is like all of the others but it follows the original structure of training and contains noise in the dataset so it can handle it better. This was trained with 800 hours of data, with a large portion of it being in Korean.</p>
+<ul>
+<li><strong>32k Download:</strong>
+<ul>
+<li><u><a href="https://huggingface.co/SeoulStreamingStation/KLM49_HFG/resolve/main/D_KLM_HFG_32k.pth?download=true"><strong>D Download</strong></a></u></li>
+<li><u><a href="https://huggingface.co/SeoulStreamingStation/KLM49_HFG/resolve/main/G_KLM_HFG_32k.pth?download=true"><strong>G Download</strong></a></u></li>
+</ul>
+</li>
+<li><strong>40k Download:</strong>
+<ul>
+<li><u><a href="https://huggingface.co/SeoulStreamingStation/KLM49_HFG/resolve/main/D_KLM_HFG_40k.pth?download=true"><strong>D Download</strong></a></u></li>
+<li><u><a href="https://huggingface.co/SeoulStreamingStation/KLM49_HFG/resolve/main/G_KLM_HFG_40k.pth?download=true"><strong>G Download</strong></a></u></li>
+</ul>
+</li>
+<li><strong>48k Download:</strong>
+<ul>
+<li><u><a href="https://huggingface.co/SeoulStreamingStation/KLM49_HFG/resolve/main/D_KLM_HFG_48k.pth?download=true"><strong>D Download</strong></a></u></li>
+<li><u><a href="https://huggingface.co/SeoulStreamingStation/KLM49_HFG/resolve/main/G_KLM_HFG_48k.pth?download=true"><strong>G Download</strong></a></u></li>
 </ul>
 </li>
 </ul>
@@ -909,6 +889,67 @@ The second way being:</li>
 </doc-tab>
 </doc-tabs>
 <hr>
+<div class="content-center"><doc-anchor-target id="vocoders">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#vocoders">#</doc-anchor-trigger>
+        <span>Vocoders</span>
+    </h2>
+</doc-anchor-target>
+</div>
+<ul>
+<li>In Applio and Codenames Fork you are given the choice between three vocoders:
+<ul>
+<li>HiFi-GAN</li>
+<li>MRF HiFi-GAN</li>
+<li>RefineGAN</li>
+</ul>
+</li>
+</ul>
+<p>Each of these are different in fidelity and require their own pretrains to use.</p>
+<doc-anchor-target id="hifi-gan">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#hifi-gan">#</doc-anchor-trigger>
+        <span>HiFI-GAN</span>
+    </h3>
+</doc-anchor-target>
+<p>The first vocoder choice is HiFi-GAN the original GAN used in RVC which is combatible with all version of RVC and forks. HiFI-GAN is pretty basic and has muddy high ends.</p>
+<doc-anchor-target id="mrf-hifi-gan">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#mrf-hifi-gan">#</doc-anchor-trigger>
+        <span>MRF HiFI-GAN</span>
+    </h3>
+</doc-anchor-target>
+<p>The second choice is MRF HiFI-GAN, this is a modfied version of HiFi-GAN with MRF instead of MPD, new loss functions and non-simplified version of the resolution block.</p>
+<ul>
+<li>Pros:
+<ul>
+<li>Higher fidelity</li>
+<li>44.1k Training</li>
+</ul>
+</li>
+<li>Cons:
+<ul>
+<li>Only a slight upgrade from Hifi-GAN</li>
+<li>Not many pretrains for it</li>
+</ul>
+</li>
+</ul>
+<doc-anchor-target id="refinegan">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#refinegan">#</doc-anchor-trigger>
+        <span>RefineGAN</span>
+    </h3>
+</doc-anchor-target>
+<p>The third and final choice is RefineGAN, this is an entirely different GAN then HiFi. This GAN uses noise to fill in the gaps and has a different resolution block.</p>
+<ul>
+<li>Pros:
+<ul>
+<li>Higher fidelity and quality</li>
+<li>44.1k Training</li>
+</ul>
+</li>
+</ul>
+<hr>
 <div class="content-center"><doc-anchor-target id="tensorboard">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#tensorboard">#</doc-anchor-trigger>
@@ -1078,7 +1119,7 @@ You can always manually refresh with the refresh symbol (<span class="docs-emoji
 </li>
 </ol>
 </li>
-<li>In the search bar, type &quot;<strong>g/total</strong>&quot;. This will be the graph you&#x27;ll monitor.<br />
+<li>In the search bar, type &quot;<strong>g/total</strong>&quot; then look for the avg graph. This will be the graph you&#x27;ll monitor.<br />
 ‎<br />
 <img src="../tensorboard-img/19.png" alt="image" width="390" height="auto">‎<br />
 ‎<br />
@@ -1116,17 +1157,16 @@ You can always manually refresh with the refresh symbol (<span class="docs-emoji
 </li>
 <li><p>If it reaches a low point, let it run for <strong>longer</strong> until it&#x27;s <strong>very clear</strong> it&#x27;s OT.</p>
 </li>
-<li><p>When you detect OT go into the search bar and look for <code v-pre>mel</code>,</p>
-<p><img src="../tensorboard-img/mel.png" alt="image" width="500" height="auto">‎</p>
+<li><p>Then zoom out &amp; lower the smoothening. Then in the avg graph look for low points around where it started to overtrain.</p>
 </li>
-<li><p>Then zoom out &amp; lower the smoothening to 0. Then look for low points named local minima.</p>
-<p><img src="../tensorboard-img/min.png" alt="image" width="600" height="auto">‎</p>
+<li><p>Then over your mouse over these low points and take note of the step counts. Since this is using the avg graphs you may not find the exact epoch connected to the step count so just choose the closest point.</p>
+<p><img src="../tensorboard-img/avg.png" alt="image" width="1000" height="auto">‎</p>
 </li>
-<li><p>Then over your mouse over the local minimas and take note of the step counts. Find all of the epochs connected to those step counts and then use them all to find the one that sounds best to you.</p>
+<li><p>As you can see in the image above there is an area with several low points, so in this scenario you would try several epochs in that area to find the best sounding epoch.</p>
 </li>
 </ul>
 <blockquote>
-<p>If you want you can just use the lowest mel point.</p>
+<p>If you want you can just use the lowest avg g/total point.</p>
 </blockquote>
 </doc-tab>
 <doc-tab v-cloak id="advanced-guide">
