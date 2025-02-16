@@ -51,8 +51,8 @@ order: 2000
 ‎   
 #### :icon-chevron-down: No harsh sibilance/popping.
 - Additionally, don't include harsh sibilance (loud "S" & "SH" pronunciation) or popping sounds (loud "P" sound) 
-    - Robotic sibilances are due to your dataset being short. You can fix this by making your dataset larger
-    - Harsh sibilances are due to your dataset having harsh sibilants. You can fix this by de-essing or making your dataset larger
+    - Robotic sibilances are due to your dataset being short or they are overfitted. You can fix this by making your dataset larger or by choosing an epoch where the sibilants aren't overfitted.
+    - Harsh sibilances are due to your dataset having harsh sibilants. You can fix this by de-essing or making your dataset larger.
 ‎  
 #### :icon-chevron-down: No Audio Damage.
 - The most inportant part of a clean dataset, if your audio is damaged RVC will struggle with it causing it to overall sound worse because RVC will create synthetic data and try to learn from it, so make sure your audio isn't damged.  
@@ -689,7 +689,7 @@ De-Noise | Mel Roformer De-Noise
     <img src="../datasets-img/truncnew.png" alt="image" width="420" height="auto">    
     ***
     ‎
-    #### Step 2: Audio Normalization.    
+    #### Step 2: Audio Normalization. (Optional)  
     - Go go to Effects -> Volume and Compression -> Loudness Normalization
     - Use these values:     
 ‎       
@@ -708,7 +708,14 @@ De-Noise | Mel Roformer De-Noise
 
         - **Format**: ``FLAC``    
         - **Bit depth**: ``24 bit``
-        - **Level**: ``8``       
+        - **Level**: ``8``   
+
+    ‎
+
+    - Or these values:
+
+        - **Format**: ``WAV``
+        - **Encoding**: ``32-Bit Float``
 
         ###### ‎    
 

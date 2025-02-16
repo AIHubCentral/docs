@@ -1,0 +1,558 @@
+---
+icon: chevron-right
+order: 4000
+---
+``Last update: Feb 16, 2025``
+## 1. System & Hardware Requirements
+
+- Windows 10 or Later
+
+- macOS 12 Monterey or later. With Apple Silicon or Intel CPU
+
+- Any Linux Distro
+
+and
+
+- At least 6GB of RAM
+
+- At least 6GB of free disk storage
+
+***
+##### For GPU-conversion
+
+TLDR: Make sure you have Nvidia RTX 20xx or AMD Radeon RX 5xxx or better. GTX 10xx or RX 580 will also work, but may run into issues with games and higher delay. If you have an iGPU (mostly AMD Radeon Graphics or Vega) use online hosted alternative instead.
+
+
+ Long answer:
+
+`Minimum:`
+
+- An integrated graphics card: AMD Radeon Vega 7 (with AMD Ryzen 5 5600G) or later; with 2GB VRAM (in FP32 mode), ~1GB VRAM (in FP16 mode, if supported). But this is NOT recommended at all and we will most likely not recommend you to download the voice changer with iGPUs.
+
+- A dedicated graphics card: Nvidia GeForce GTX 900 Series or later, or AMD Radeon RX 400 series or later, or Intel Arc A300 series or later.
+
+`Recommended:`
+
+- A dedicated graphics card Nvidia GeForce RTX 20 Series or later, or AMD Radeon RX 5000 series or later, or Intel Arc A500 series or later.
+
+***
+##### For CPU-conversion
+
+TLDR: don't bother. You can't run games, discord usage might be the only thing that will work decently, but you might potentially damage your CPU. People with no GPU usually have old CPU's, so delay will be high too. Not worth it.
+
+`Minimum:`
+- Intel Core i5-4690K or AMD FX-6300.
+
+`Recommended:`
+- Intel Core i5-10400F or AMD Ryzen 5 1600X.
+
+!!!warning CPU-Conversion is not recommended at all
+If you plan on playing games at the same, do not use CPU-conversion. With CPU, the delay will be massive and your PC will not run smoothly at all. If you have a higher-end CPU you can make it work, but those that have higher end CPUs most likely also have higher end GPUs, so you should be using your GPU if possible.
+!!!
+
+***
+
+## 2. Download
+
+- Download based on your GPU. You don't know what GPU you have? Open Task Manager > Performance tab and check for your GPU0 and GPU1 names. Prioritize the Nvidia one if you have one, else use the other.
+
+<img src="../wokada-img/Capture.png" alt="image" width="600" height="auto">
+
+####
+!!!
+Use Online Hosted if you have an integrated GPU (AMD Radeon Graphics ; AMD Radeon Vega ; Intel UHD) and if you do not have a GPU at all
+!!!
+***
+### NVIDIA Download
+- The lastest version as of December 7th 2024 is: <u>[nvidia-b2332 (click here to download)](https://huggingface.co/Shadicti/deiteris-Fork/blob/main/voice-changer-windows-nvidia-b2332.zip)</u>
+
+!!!danger
+If you have a GTX 700 card or below, use AMD/Intel version instead.
+!!!
+
+***
+### AMD, INTEL and CPU
+- The lastest version as of December 7th 2024 is: <u>[dml-b2332 (click here to download)](https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-windows-amd64-dml.zip)</u>
+
+!!!danger
+Intel UHD Graphics do NOT work at this point in time. Use Online Alternative.
+!!!
+
+***
+### Linux Install
+- For NVIDIA, you need to download both these files:
+
+https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-linux-amd64-cuda.tar.gz.aa
+
+https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-linux-amd64-cuda.tar.gz.ab
+
+- For AMD, you need to download both these files:
+
+https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-linux-amd64-rocm.tar.gz.aa
+
+https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-linux-amd64-rocm.tar.gz.ab
+
+
+Install `portaudio` with `sudo yum -y install portaudio`. Installation of CUDA Toolkit or AMD **HIP SDK is NOT REQUIRED**. All other necessary libraries are bundled with the application.
+I'm not sure about the capabilities of UI tar archive extractors, but you can extract these archive parts with the following command that will merge them and extract: `cat voice-changer-linux-amd64-cuda.tar.gz.* | tar xzf -` (change **cuda** to **rocm** if necessary).
+
+### Mac Install
+- The lastest version as of December 7th 2024 is: <u>[arm-b2332 (click here to download)](https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-macos-arm64-cpu.tar.gz)</u>
+
+!!!
+For Apple Silicon (Apple M1, etc.) users.
+!!!
+
+- The lastest version as of December 7th 2024 is: <u>[macos-amd-b2332 (click here to download)](https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-macos-amd64-cpu.tar.gz)</u>
+
+!!!
+For Apple Intel users.
+!!!
+
+### Cloud Alternatives
+#### Colab
+
+Go <u>[here](https://colab.research.google.com/github/deiteris/voice-changer/blob/master-custom/Colab_RealtimeVoiceChanger.ipynb)</u>
+
+Then run all the needed cells one by one, create an ngrok account which is for free. After you started "server ngrok", an URL will be created - you open that URL, and that's where the voice changer will be on.
+
+***
+#### Kaggle
+
+Go <u>[here](https://www.kaggle.com/code/suneku/voice-changer-public)</u>
+
+It has a rough tutorial included, needs cell phone number verification and longer to set up, but once you have it, it is worth it. On Kaggle there should be an option to import from Colab, which would be the fastest way to set it up
+
+***
+## 3. Virtual Audio Cable Download
+
+#### A Virtual Audio Cable (VAC) is what you need to use the voice changer on Discord & Games.
+
+!!! For Windows
+Download this: <u>[VAC Lite (Virtual-Audio-Cable by Muzychenko)](https://software.muzychenko.net/freeware/vac470lite.zip)</u>
+!!!
+
+- Run `setup64`, not 64a, after extracting the zip to a new folder
+
+- After installing the Virtual Cable, it changes your default audio system. Click **Yes** when it asks you to open the audio device settings (or press WIN+R, type "mmsys.cpl" if you closed it already), and change your **Recording** and **Playback** devices back to your usual devices. Same for communications device aswell (right click -> set as default communication device)
+
+!!! For Mac
+Download either: 
+<u>[Blackhole Virtual Audio Cable](https://existential.audio/blackhole)</u>
+or
+<u>[VB-Audio](https://vb-audio.com/Cable)</u>
+!!!
+
+***
+
+## 4. Opening
+***
+### Opening on Windows
+- First Make sure you have <u>[7zip](https://www.7-zip.org/)</u> or <u>[WinRAR](https://www.win-rar.com/download.html)</u> for extracting / unzipping.
+
+- After the download, you extract the zip file. You open the folders until you see an exe application called `MMVCServerSIO` and run that.
+
+- If nothing opens after a while of codes loading in, then open a browser and type in `http://127.0.0.1:18888/`. This is a local URL, it runs on the WebUI.
+
+***
+### Opening on Mac
+- Double click the voice-changer-macos-arm64-cpu.tar.gz file. The voice changer will unpack and the MMVCServerSIO folder will appear.
+
+- Open the extracted MMVCServerSIO folder.
+
+- Double-click `MMVCServerSIO` to run the voice changer.
+
+!!! Apple quarantine stops you from running the voice changer
+You do not get a popup notification for this, so if it does not open or says "Pytorch is damaged", do the following:
+
+1. Open the Terminal
+
+2. Run the following command: `xattr -dr com.apple.quarantine <PUT IN THE PATH TO YOUR MMVCServerSIO FOLDER HERE>`
+For example, if you extracted the voice changer to your desktop, the command may look as follows: `xattr -dr com.apple.quarantine ~/Desktop/MMVCServerSIO`
+
+3. Now, open the extracted MMVCServerSIO folder and run `MMVCServerSIO` to run the voice changer.
+!!!
+!!!warning
+If nothing opens, then open a browser and type in `http://127.0.0.1:18888/`. This is a local URL, it runs on the WebUI.
+!!!
+***
+### Opening on Multi PC Setups
+- Create a file named `.env` on the same folder where `MMVCServerSIO.exe` is located. Open it up with a notepad, copy paste the settings from the <u>[GitHub link](https://github.com/deiteris/voice-changer/issues/180#issuecomment-2359166278)</u>.
+
+- After that, you create another file with the file extension ending `.bat`, open it up with a notepad, copy paste what is needed in there again from the <u>[GitHub link](https://github.com/deiteris/voice-changer/issues/180#issuecomment-2359166278)</u>. 
+
+
+- Now run the bat file. After it starts, you should be able to open the link. For example, if you specified `HOST=192.168.0.1` and `ALLOWED_ORIGINS='["https://192.168.0.1:18888"]')`, you should be able to open `https://192.168.0.1:18888` in your browser and use the voice changer UI from other machines in your local network.
+***
+## 5. Voice models
+***
+### Adding Models
+
+<img src="../wokada-img/Voicemodel.png" alt="image" width="430" height="auto">
+
+#####
+
+- Click on `Edit` on the small blue square located around the the top left side
+- Pick any slot you want, click `upload`
+- Only RVC models will work. If you have a gpt-sovits one or any other, they will not work.
+- Select `Type: RVC`, then `select file` on the `Model` slot and upload your `.pth` file.
+- No need for an `Index` file, but you can upload it. This controls the accent of the voice model
+***
+### Deleting Models
+
+If you wish to delete a model, you can overwrite the slot with a new model. If you insist on fully emptying a slot for whatever reason, head over to the `model_dir` folder, open the folder of the slot number you want to delete, and delete the model from that folder
+
+***
+## 6. Audio Setup
+***
+### Discord & Games
+
+On the voice changer app wokada, you select:
+
+- Input: Your microphone
+- Output: Virtual Cable
+- Monitor (if you wish to hear the voice changer on your headphones aswell): Your headphones
+
+On discord and games, you select:
+
+- Input: Virtual Cable
+- Output: Your headphones
+
+For Linux, read the Virtual Cable step
+
+### Client and Server Setup
+
+Audio: `CLIENT`
+
+- Uses MME (normal audio processed through windows. You use this automatically with every application)
+- You can use the boxes echo, sup1, sup2 using this
+***
+Audio: `SERVER`
+
+- Use S.R. 48000
+- I recommend using [Windows WASAPI] on all prefixes for less delay, because this uses your audio devices (e.g. microphone) directly, before processing through windows.
+- Both Input and Output has to be the same (Windows WASAPI), you can't use MME for input and then Windows WASAPI for Output. You may also use [ASIO](https://rentry.co/lessdelayasio).
+- You can not use the in-built noise suppressions in this mode
+***
+
+ASIO > WASAPI > MME as a general thumbrule (this also affects delay)
+
+Sometimes Client does not work, then use SERVER with prefix "MME" or "Windows WASAPI". You can not use the in-built noise suppression and echo fix if you use SERVER.
+
+***
+## 7. Settings
+***
+### Settings Explained
+***
+- `PASSTHRU button:` Sends your actual voice and not the voice changer through the virtual cable. You want this to be GLOWING GREEN or GREY (grey for dark mode users) for the voice changer to work.
+
+- `F0 det:` Pitch algorithm. **Don't use crepe because a youtube tutorial guy told you to**, recommended settings are down below on this guide.
+
+- `Chunk:` Controls the delay (lower number means less delay, but please check out the recommended settings for what your GPU is capable of).
+
+- `Extra:` Controls voice model quality. 2.7s is the max, anything above is not worth it and can cause issues for no benefit.
+***
+#### `VOL:`
+- `in:` This raises the microphone volume before it goes into the voice changer (Recommended to leave it on the default or if needed, not to go too high, else it increases background noise and makes the voice sound worse).
+
+- `OUT:` Raising voice changer volume on the output.
+
+- `MON:` Increases volume of your headphones that you set on "mon" if you selected to hear yourself with the voice changer.
+***
+- `Pitch:` This is the pitch. Going into negative will make it lower pitch, going higher will make it higher pitch. If you have a male voice using a female voice, aim for 10 - 14, this depends on your voice, try around those numbers until you find a sweet spot.
+
+- `Formant Shift:` Alters harmonic frequencies and changes the voice timbre without affecting the pitch
+
+- `Index:` This controls the accent of the voice model. In most cases, using Index on Realtime Voice Changer can add an autotune-like sound. If you have a heavy foreign accent, you may use this at a low rate. Beware, this increases CPU/GPU usage
+***
+- `In. Sens:` microphone threshold, increasing this will cause less background noise to get picked up if it's a problem
+
+- `Sup2:` Noise suppression on your microphone.
+
+- `Sup1:` Noise suppression but weaker, not recommended to use this at all, because it barely has any impact whilst reportedly, making the voice inconsistent
+
+- `Echo:` if you experience echo issues despite having sup2, In. Sens to the right and having lowered your windows system value, then this will help you as a last resort
+***
+### Finding my Best Settings
+First start with 500 ms, check what number your perf is and go closer to that number but not lower.
+
+Example: if your perf is 200, go down to 250 with your chunk. Chunk affects perf value, and Extra as well.
+
+<img src="../wokada-img/greem.png" alt="image" width="170" height="auto">
+
+If your perf value is green, your selected chunk is stable. You can experiment and go down in chunk for less delay, or increase extra for more quality (would not recommend to go above 2.7s extra. Anything above uses more resource for no clear benefit).
+
+<img src="../wokada-img/yellow.png" alt="image" width="170" height="auto">
+
+If your perf value is yellow, your selected chunk is enough, but audio may be unstable if you run other processes at the same time. Operation in this range will also incur high GPU usage. Increasing Chunk size or reducing Extra is recommended.
+
+<img src="../wokada-img/red.png" alt="image" width="170" height="auto">
+
+If your perf value is red, the voice changer is unstable. Increase chunk size or reduce Extra.
+
+***
+### Best Settings
+***
++++ NVIDIA
+
+||| GPU
+:::content-left
+RTX xx90 (e.g. 3090)
+
+RTX xx80 Ti (e.g.3080 Ti)
+
+RTX xx80 (e.g. 3080)
+
+RTX xx70 Ti (e.g. 3070 Ti)
+
+RTX xx70 (e.g. 3070)
+
+RTX xx60 Ti (e.g. 3060 Ti)
+
+RTX xx60 (e.g. 3060)
+
+RTX xx50 (e.g. 3050)
+
+GTX 16xx-series
+
+GTX 10xx-series
+
+GTX 900-series
+
+MX 330
+:::
+||| Max Settings
+:::content-center
+30 - 60 ms chunk + 2.7s extra
+
+30 - 60 ms chunk + 2.7s extra
+
+100 - 120 + 2.7s extra
+
+50 - 80 ms chunk + 2.7s extra
+
+50 - 80 ms chunk + 2.7s extra
+
+50 - 90 ms chunk + 2.7s extra
+
+60 - 90 ms chunk + 2.7s extra
+
+110 - 130 ms chunk + 2.7s extra
+
+140 - 180 ms chunk + 2.7s extra
+
+200 ms chunk + 2.0s extra
+
+250 ms chunk + 1.0s extra
+
+500 ms chunk + 0.6s extra
+:::
+||| For gaming
+:::content-right
+perf number + 40 ms chunk
+
+perf number + 40 ms chunk
+
+perf number + 40 ms chunk
+
+perf number + 40 ms chunk
+
+perf number + 40 ms chunk
+
+perf number + 40 ms chunk
+
+perf number + 50 ms chunk
+
+perf number + 60 ms chunk
+
+perf number + 60 ms chunk
+
+perf number + 80 ms chunk
+
+perf number + 80 ms chunk
+
+perf number + 100 ms chunk
+:::
+|||
+
++++ AMD
+||| GPU
+:::content-left
+7xxx XT cards
+
+6xxx XT cards
+
+5xxx XT cards
+
+7xxx cards
+
+6xxx cards
+
+5xxx cards
+
+RX 6600M
+
+RX 580
+
+RX 570
+
+RX 560
+:::
+||| Max Settings
+:::content-center
+60 - 80 ms + 2.7s extra
+
+70 - 100 ms + 2.7s extra
+
+80 - 120 ms + 2.7s extra
+
+*bugged* 256 ms + 2.7s extra
+
+128 ms + 2.7s extra
+
+140 - 200ms + 2.0s extra
+
+128ms + 2.7s extra
+
+perf number + 60 ms chunk
+
+perf number + 60 ms chunk
+
+perf number + 60 ms chunk
+:::
+||| For gaming
+:::content-right
+perf number + 40 ms chunk
+
+perf number + 40 ms chunk
+
+perf number + 40 ms chunk
+
+perf number + 60 ms chunk
+
+perf number + 60 ms chunk
+
+perf number + 60 ms chunk
+
+perf number + 60 ms chunk
+
+perf number + 60 ms chunk
+
+perf number + 60 ms chunk
+
+perf number + 80 ms chunk
+:::
+|||
++++ AMD iGPU
+||| GPU
+:::content-left
+AMD Radeon(TM) Graphics (with Ryzen 7 5800H)
+
+AMD Radeon RX Vega 10 (with Ryzen 7 3700U)
+
+AMD Radeon RX Vega 8 (with Ryzen 3 3200G)
+:::
+||| Chunk + Extra
+256 ms + 2.7s extra
+
+600 ms + 0.6s extra
+
+700 ms + 1.0s extra
+|||
++++ Mac & CPU's
+||| Mac and CPU
+Mac M1
+
+Mac M1 Air
+
+Mac M2
+
+Mac M2 Air
+
+Ryzen 7 5800x
+||| F0 + Chunk + Extra
+fcpe ; for chunk check the perf number and add 50 to it ; 1.0s extra
+
+fcpe + 230ms + 2.7s extra
+
+rmvpe_onnx + 650ms + 1.0s extra
+
+fcpe ; for chunk check the perf number and add 50 to it ; 2.7s extra
+
+rmvpe_onnx + 260 ms + 0.6s extra
+|||
++++ 
+***
+## Extra
+***
+### Models to try
+
+- You will need to connect your account to <u>[weights.gg](http://weights.gg/)</u> to be able to download these models
+    - Click on the 3 dots (...) on weights.gg models, then Download model.
+
+**Female:**
+
+[Duckus Egirl voice made by lusbert](https://www.weights.gg/models/clroz1aic012sjmfug54yft0u)
+
+[Psych2Go voice made by dan](https://huggingface.co/legitdark/psych2go-By-Dan/resolve/main/psych2go-By-Dan.zip)
+
+**Male:**
+
+[Bob Ross voice made by dieseldog34](https://www.weights.gg/models/clm72t7ra0qqhcctc4zyax181)
+
+[Markiplier voice made by hobqueer](https://www.weights.gg/models/clm72nuvi0c8scctcvzrckuqp)
+***
+### Reduce more Delay 
+
+!!! Reducing more delay with WASAPI guide
+https://rentry.co/LessDelayWasapi
+!!!
+
+!!! Reducing more delay with ASIO guide. This can slightly decrease more delay but more to set up
+https://rentry.co/lessdelayasio
+!!!
+***
+## Help
+***
+After you start the program for the first time and it finished downloading files: if it says Failed to download or verify: ... followed by "Press Enter to continue" at the end, then the pretrain download failed. This can happen randomly. Here is what you will need to do:
+!!! Fix
+Go to the "pretrain" folder in the MMVCServerSIO folder.
+Delete everything inside it if there is anything.
+
+Download ALL THE FILES from this drive:
+https://drive.google.com/drive/folders/1OFfM9rmxCZkiYjxoK_yzhRbcXpt0TiJ0?usp=drive_link
+
+Copy paste everything from this Google Drive inside the pretrain folder.
+
+Then run MMVCServerSIO.exe again, this time it should work
+!!!
+***
+### Troubleshooting
+***
+There is an in-depth section on troubleshooting, please check out <u>[Troubleshooting on Github](https://github.com/deiteris/voice-changer/blob/master-custom/README.md#troubleshooting)</u>
+***
+### Crackle Fix
+Open Task Manager > Details
+
+Right click `audiodg.exe` and set priority to `High`
+
+Right click `audiodg.exe` again > set affinity > uncheck everything except CPU 2 (only ✅ CPU 2, turn off the rest)
+
+With a program called ProcessLasso you can automate this to always be active, since Windows resets these sometimes.
+***
+### Discord Crackle Fix
+Make sure to do the Crackle Fixes in this step before doing this to see if it fixes your issue
+
+If the voice sounds fine in the app AND it sounds fine in games, but ONLY sounds weird on discord, then:
+
+- Turn off Echo Cancellation
+- Turn off Noise Suppression (sometimes causes issues, maybe not. Check for yourself)
+***
+
+
+###### ‎
+:::content-center
+#### `You have reached the end.`
+
+[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.ai-hub.wtf/contributions/)
+:::

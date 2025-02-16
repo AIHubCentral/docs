@@ -147,6 +147,42 @@ order: 2000
 +++    
 ###### ‎
 ***
+## Zonos
+***
+- 0 Shot TTS with great emotion controls
+
+- Can be used with English, French, German, Chinese and Japanese
+
+- Can be used locally or online
+
++++ :icon-device-desktop: LOCAL
+- [Official Github Repo](https://github.com/Zyphra/Zonos)
+
++++ :icon-cloud: ONLINE
+- [Offical Playground](https://playground.zyphra.com/audio)
+- [HuggingFace Space](https://huggingface.co/spaces/Steveeeeeeen/Zonos)
++++
+###### ‎
+***
+## Kokoro-TTS
+***
+- CLI TTS
+
+- Only has premade voices
+
+- Voice bleeding for English, British English French, Itailian, Japanese and Chinese
+
+- Not the best emotion control
+
++++ :icon-device-desktop: LOCAL
+- [Official Github Repo](https://github.com/nazdridoy/kokoro-tts)
+
++++ :icon-cloud: ONLINE
+- [Offical HuggingFace Space](https://huggingface.co/spaces/hexgrad/Kokoro-TTS)
++++
+
+###### ‎
+***
 ## OpenVoice
 ***
 - Has Versatile Instant Voice Cloning (aka 0 Shot Training)
@@ -163,6 +199,26 @@ order: 2000
 - [Official Demo Part 2 Colab](https://colab.research.google.com/github/myshell-ai/OpenVoice/blob/main/demo_part2.ipynb)
 - [Official HF Space](https://huggingface.co/spaces/myshell-ai/OpenVoice)
 +++    
+###### ‎
+***
+## Piper
+***
+- Fast TTS
+
+- Great multilingual support
+
+- Works for almost all languages
+
+- Decent quality
+
++++ :icon-device-desktop: LOCAL
+- [Official Github Repo](https://github.com/rhasspy/piper)
+
++++ :icon-cloud: ONLINE
+- [Github Repo with Colabs](https://github.com/rmcpantoja/piper/tree/master/notebooks) (For training and inference)
+- [Several HuggingFace Spaces for each Language](https://huggingface.co/spaces?q=piper+tts)
++++
+
 ###### ‎
 ***
 ## MeloTTS
