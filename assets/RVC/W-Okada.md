@@ -14,6 +14,8 @@ order: 4000
 
 - This guide will be about the Deiteris fork since it has better preformence and quality.
 
+- RVC does **NOT** mean realtime voice changer.
+
 
 ***
 ## 1. System & Hardware Requirements
