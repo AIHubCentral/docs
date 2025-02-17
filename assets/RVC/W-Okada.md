@@ -16,7 +16,6 @@ order: 4000
 
 
 ***
-``Last update: Feb 16, 2025``
 ## 1. System & Hardware Requirements
 
 - Windows 10 or Later
