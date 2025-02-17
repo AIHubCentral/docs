@@ -1,8 +1,21 @@
 ---
-icon: chevron-right
+icon: broadcast
 order: 4000
 ---
 ``Last update: Feb 16, 2025``
+***
+:::content-center
+## Introduction
+:::
+
+- W-Okada is a voice changer that uses RVC for its conversion.
+
+- There are two versions of this voice changer, the <u>[offical mainline](https://github.com/w-okada/voice-changer)</u> one and the <u>[Deiteris fork](https://github.com/deiteris/voice-changer)</u>.  
+
+- This guide will be about the Deiteris fork since it has better preformence and quality.
+
+
+***
 ## 1. System & Hardware Requirements
 
 - Windows 10 or Later
@@ -56,7 +69,7 @@ If you plan on playing games at the same, do not use CPU-conversion. With CPU, t
 
 - Download based on your GPU. You don't know what GPU you have? Open Task Manager > Performance tab and check for your GPU0 and GPU1 names. Prioritize the Nvidia one if you have one, else use the other.
 
-<img src="../wokada-img/Capture.png" alt="image" width="600" height="auto">
+<img src="../wokada-img/cap.png" alt="image" width="600" height="auto">
 
 ####
 !!!
@@ -188,7 +201,7 @@ If nothing opens, then open a browser and type in `http://127.0.0.1:18888/`. Thi
 ***
 ### Adding Models
 
-<img src="../wokada-img/Voicemodel.png" alt="image" width="430" height="auto">
+<img src="../wokada-img/edit.png" alt="image" width="430" height="auto">
 
 #####
 
