@@ -62,11 +62,12 @@ a. Go to <u>[Hina's mainline notebook](https://www.kaggle.com/code/hinabl/mainli
    
 b. Under session settings in the sidebar turn on "internet". Make sure persistance is on for both files and varibles.
 
-   <img src="../kaggle-img/kaggle-Internet.png" alt="image" width="450" height="auto">     
+   <img src="../kaggle-img/kaggle-internet.png" alt="image" width="450" height="auto">     
   
 c. Turn on T4 X2 GPUs in accelerator.           
 
    <img src="../kaggle-img/kaggle-gpu.png" alt="image" width="" height=""> 
+
 d: (Optional) Turn on headless mode so you can run so you can run the GPU on all sessions and save your progress. Go to the top right and click "Save version" then open the advanced dropdown.
 
 <img src="../kaggle-img/kaggle-pers.png" alt="image" width="" height=""> 
