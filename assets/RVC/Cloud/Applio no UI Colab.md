@@ -52,7 +52,7 @@ a. Start by accessing the colab <u>[here](https://colab.research.google.com/gith
 
 b. Then run the `Installation` cell to install all the requirements.
 
-<img src="../applioNoUI-img/NoUI_1.png" alt="image" width="800" height="">
+<img src="../applioNoUI-img/one.png" alt="image" width="800" height="">
 
 ***
 ###### ‎   
@@ -64,7 +64,7 @@ b. Then run the `Installation` cell to install all the requirements.
 
 3. Type in the path to your dataset into `dataset_path`. 
 
-<img src="../applioNoUI-img/2.png" alt="image" width="1200" height="">
+<img src="../applioNoUI-img/two.png" alt="image" width="1200" height="">
 ‎ 
 
 4. Select your <u>[sample rate](https://docs.aihub.gg/rvc/resources/dataset-isolation/#step-1-find-the-sample-rate)</u>.
@@ -76,7 +76,7 @@ b. Then run the `Installation` cell to install all the requirements.
 
 2. If you chose Crepe set your hop length to 32, 64 or 128. If you chose RMVPE ignore this option.
 
-<img src="../applioNoUI-img/3.png" alt="image" width="1500" height="">
+<img src="../applioNoUI-img/three.png" alt="image" width="1500" height="">
 ‎ 
 
 3. Run the cell. 
@@ -92,7 +92,7 @@ b. Then run the `Installation` cell to install all the requirements.
 
 5. Turn on `save_only_latest`.
 
-<img src="../applioNoUI-img/4.png" alt="image" width="1000" height="">
+<img src="../applioNoUI-img/four.png" alt="image" width="1000" height="">
 ‎
 
 6. Run the cell to start training!
@@ -107,7 +107,7 @@ b. Then run the `Installation` cell to install all the requirements.
 
 4. Run the final cell.
 
-<img src="../applioNoUI-img/5.png" alt="image" width="1000" height="">
+<img src="../applioNoUI-img/five.png" alt="image" width="1000" height="">
 ‎ 
 
 5. Then run the training cell again.
