@@ -65,12 +65,12 @@ b. Verify your acount with a phone number so you can turn on the "internet" opti
 #### 2. <u>Clone Notebook</u>
 a. Go to <u>[Applio's notebook](https://www.kaggle.com/code/deiant/applio)</u> and click "Copy and Edit"
 
-   <img src="../applio-kaggle-img/Applio.png" alt="image" width="1000" height="auto"> 
+   <img src="../applio-kaggle-img/applio.png" alt="image" width="1000" height="auto"> 
 
    
 b. Under session settings in the sidebar turn on "internet". Make sure persistance is on for both files and varibles.
 
-   <img src="../applio-kaggle-img/kaggle-Internet.png" alt="image" width="450" height="auto">     
+   <img src="../applio-kaggle-img/kaggle-internet.png" alt="image" width="450" height="auto">     
   
 c. Turn on T4 X2 GPUs in accelerator.           
 
@@ -128,7 +128,7 @@ b. Now run the last cell which is:
 
 a. Click on the Applio URL link to open Applio's UI, click the Tensorboard Url link to open the Tensorboard and click File Url to open the file manager.
 
-   <img src="../applio-kaggle-img/URLs.png" alt="image" width="800" height=""> 
+   <img src="../applio-kaggle-img/urls.png" alt="image" width="800" height=""> 
 
 ‎
 
