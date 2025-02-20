@@ -19,7 +19,7 @@ order: 4000
 ## Installation
 ###### ‎  
 #### 1. <u>Installation Cells</u>
-a. Starting from the top run the first cell:
+a. Click <u>[here](https://colab.research.google.com/github/deiteris/voice-changer/blob/master-custom/Colab_RealtimeVoiceChanger.ipynb)</u> to access the colab. Then starting from the top run the first cell:
 
    <img src="../colab-img/colab1.png" alt="image" width="900" height=""> 
 
