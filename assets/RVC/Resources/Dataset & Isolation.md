@@ -122,7 +122,7 @@ Remember that the cleaner your input audio is, the better the results.
 
 ### Installation :icon-download:
 *** 
-1. Go to their <u>[official website</u>](https://ultimatevocalremover.com/) & press `Download UVR`. And if you want to use BS / Mel Roformer you are going to need to install <u>[this](https://github.com/Anjok07/ultimatevocalremovergui/releases/download/v5.6/UVR_12_8_24_23_30_BETA_rofo_full_install.exe)</u>.
+1. Go to their <u>[official website</u>](https://ultimatevocalremover.com/) & press `Download UVR`. If you want to use BS / Mel Roformer you are going to need to install <u>[this](https://github.com/Anjok07/ultimatevocalremovergui/releases/download/v5.6/UVR_1_15_25_22_30_BETA_full.exe)</u>.
 
     <img src="../uvrmvsep-img/1.jpg" alt="image" width="" height="auto">   
 
