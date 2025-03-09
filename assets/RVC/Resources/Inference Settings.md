@@ -85,7 +85,7 @@ order: 100
 
     ===
 
-    ==- *Mangio-Crepe*
+    ==- *Mangio-Crepe / Crepe (In Applio)*
     ###### ‎  
     - It's crepe, but you can adjust its **hop_length**
     - It determines the time it takes the voice to hit a note
