@@ -16,8 +16,7 @@ order: 2000
 
 - This are ideal for users who want '***quick & dirty***' AI covers, as the whole process of inputting audio, vocal isolation & song mixing is automated. 
   
-
-- ##### The two versions of this AI Cover maker which are: <u>[AICoverGen Colab](uwu)</u> and <u>[AICoverGen Kaggle](owo)</u>.
+- ##### There are two versions this AI Cover maker which are: <u>[AICoverMaker Colab](https://docs.aihub.gg/rvc/cloud/aicovermaker/#aicovermaker-colab)</u> and <u>[AICoverMaker Kaggle](https://docs.aihub.gg/rvc/cloud/aicovermaker/#aicovermaker-kaggle)</u>.
                
 ***
 ###### ‎  
