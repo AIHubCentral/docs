@@ -479,7 +479,7 @@ FM shows how well the generator is able to make synthetic data that has similar 
 
 If the graph is decreasing that indicates that the generator is able to make audio that has similar features to the dataset.
 
-> you can think of this as how well the model can match timbral, spetial, temporal characteristics. 
+> you can think of this as how well the model can match timbral, spatial and temporal characteristics. 
 ***
 
 #### `KL` Kullback-Leibler: 
@@ -504,6 +504,18 @@ d/total shows how well the discriminator is able to differentiate between real a
 If the graph is decreasing that means the discriminator is becoming better at distinguishing between real and synthetic data which usually means that the generator is producing realistic audio. 
 ***
 
+#### `grad_norm_g` Gradient norm for the generator: 
+grad_norm_g shows the magnitude of gradients during training. If the gradients are becoming too large (over 1,000 for fintuning) that can cause some training instabilities and if they are becoming small that can lead to slow learning.
+
+> If you're fintuning it's best if the gradients don't go above 1,000. 
+***
+
+#### `grad_norm_d` Gradient norm for the discriminator: 
+grad_norm_d shows the magnitude of gradients during training. If the gradients are becoming too large (over 100 for fintuning) that can cause some training instabilities and if they are becoming small that can lead to slow learning.
+
+> If you're fintuning it's best if the gradients don't go above 100. 
+***
+
 ***
 #### :icon-chevron-down: <u>Mel Images</u>
 ***
@@ -519,6 +531,14 @@ Is a mel spectrogram view of audio from your dataset.
 <img src="../tensorboard-img/mel_og.png" alt="image" width="700" height="700">‎ 
 
 ***
+#### :icon-chevron-down: <u>Poor Generalization</u>
+***
+Another way to tell if a model is overtraining is if the model is unable to produce clear high end harmonics.
+
+<img src="../tensorboard-img/overtrained.png" alt="image" width="1000" height="700">‎
+
+This image is a bit extreme but it gives you a good idea. If you notice your model is poorly creating high end harmonics try using a model several epochs back.
+
 +++
 
 
