@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.795064180360">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.796845812367">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.6.0">
@@ -34,11 +34,11 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../../img/b.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.6.0.795064180360" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.6.0.796845812367" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.6.0.795064180360" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.6.0.796845812367" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.6.0.795064180360" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.6.0.796845812367" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -1187,7 +1187,7 @@ You can always manually refresh with the refresh symbol (<span class="docs-emoji
 <p>FM shows how well the generator is able to make synthetic data that has similar features to the dataset.</p>
 <p>If the graph is decreasing that indicates that the generator is able to make audio that has similar features to the dataset.</p>
 <blockquote>
-<p>you can think of this as how well the model can match timbral, spetial, temporal characteristics.</p>
+<p>you can think of this as how well the model can match timbral, spatial and temporal characteristics.</p>
 </blockquote>
 <hr>
 <doc-anchor-target id="kl-kullback-leibler">
@@ -1223,6 +1223,28 @@ You can always manually refresh with the refresh symbol (<span class="docs-emoji
 <p>d/total shows how well the discriminator is able to differentiate between real and generated audio.</p>
 <p>If the graph is decreasing that means the discriminator is becoming better at distinguishing between real and synthetic data which usually means that the generator is producing realistic audio.</p>
 <hr>
+<doc-anchor-target id="grad_norm_g-gradient-norm-for-the-generator">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#grad_norm_g-gradient-norm-for-the-generator">#</doc-anchor-trigger>
+        <span><code v-pre>grad_norm_g</code> Gradient norm for the generator:</span>
+    </h4>
+</doc-anchor-target>
+<p>grad_norm_g shows the magnitude of gradients during training. If the gradients are becoming too large (over 1,000 for fintuning) that can cause some training instabilities and if they are becoming small that can lead to slow learning.</p>
+<blockquote>
+<p>If you&#x27;re fintuning it&#x27;s best if the gradients don&#x27;t go above 1,000.</p>
+</blockquote>
+<hr>
+<doc-anchor-target id="grad_norm_d-gradient-norm-for-the-discriminator">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#grad_norm_d-gradient-norm-for-the-discriminator">#</doc-anchor-trigger>
+        <span><code v-pre>grad_norm_d</code> Gradient norm for the discriminator:</span>
+    </h4>
+</doc-anchor-target>
+<p>grad_norm_d shows the magnitude of gradients during training. If the gradients are becoming too large (over 100 for fintuning) that can cause some training instabilities and if they are becoming small that can lead to slow learning.</p>
+<blockquote>
+<p>If you&#x27;re fintuning it&#x27;s best if the gradients don&#x27;t go above 100.</p>
+</blockquote>
+<hr>
 <hr>
 <doc-anchor-target id="-mel-images">
     <h4>
@@ -1250,6 +1272,16 @@ You can always manually refresh with the refresh symbol (<span class="docs-emoji
 <p>Is a mel spectrogram view of audio from your dataset.
 <img src="../tensorboard-img/mel_og.png" alt="image" width="700" height="700">‎</p>
 <hr>
+<doc-anchor-target id="-poor-generalization">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-poor-generalization">#</doc-anchor-trigger>
+        <span><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M5.22 8.22a.749.749 0 0 0 0 1.06l6.25 6.25a.749.749 0 0 0 1.06 0l6.25-6.25a.749.749 0 1 0-1.06-1.06L12 13.939 6.28 8.22a.749.749 0 0 0-1.06 0Z"/></g></g></svg> <u>Poor Generalization</u></span>
+    </h4>
+</doc-anchor-target>
+<hr>
+<p>Another way to tell if a model is overtraining is if the model is unable to produce clear high end harmonics.</p>
+<p><img src="../tensorboard-img/overtrained.png" alt="image" width="1000" height="700">‎</p>
+<p>This image is a bit extreme but it gives you a good idea. If you notice your model is poorly creating high end harmonics try using a model several epochs back.</p>
 </doc-tab>
 </doc-tabs>
 <div class="content-center"><doc-anchor-target id="you-have-reached-the-end">
