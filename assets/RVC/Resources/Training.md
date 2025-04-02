@@ -22,13 +22,13 @@ order: 1000
 
 - In other words, the amount of times the model went over its <u>[dataset](https://docs.ai-hub.wtf/rvc/resources/datasets/)</u> and learned from it.         
 #### *:icon-chevron-right: How many epochs should I use for my dataset?*
-- There isn't a way to know the right amount previous to training. It depends on the size, length & quality of the dataset.
+- **There isn't a way to know the right amount previous to training.** It depends on the length, quality and diversity of the dataset.
 
 - If you aim towards a quality model, it's not convenient to input a semi-arbitrary amount of epochs, as it makes it prone to underfitting/overtraining. (explained later)
 
-- So it's best to use TensorBoard. WIth it you can determine **exactly** for how long you should train. (explained later)  
+- So it's best to use TensorBoard. With it you can determine **exactly** for how long you should train. (explained later)  
 #### *:icon-chevron-right: Do more epochs equal a better model?*
-- It doesn't, since using a disproportionate amount will overtrain the model, which will affect the quality of it.                 
+- **No it doesn't**, since using a disproportionate amount will overtrain the model, which will affect the quality of it.                 
 - In the field of AI, is when an AI model learns its <u>[dataset](https://docs.ai-hub.wtf/rvc/resources/datasets/)</u> too well, to the point where it centers too much around it & starts replicating undesired data.
 
 - The model performs very well with data of the dataset, but poorly with new data, as it has lost its ability to replicate anything that deviates from it.
@@ -39,27 +39,25 @@ order: 1000
 
 - Overtraining also know as overfitting is where the model doesn't actually learn the underlying patterns of the data and memorizes them instead. 
 
-- Some signs of overfitting are when the sibilances are robotic or when the graphs in the Tensorboard are going up.
+- Some signs of overfitting are when the sibilances are robotic, when the graphs in the Tensorboard are going up or when the model is unable to produce high end harmonics.
 
 
 ***
 :::content-center
 ## Batch Size
 :::
-### Batch Size
-
-A batch size is the number of training examples used in one iteration before updaing the model's parameters. Usually a batch size of 8 is the best for most models.
+A batch size is the number of training examples used in one iteration before updaing the model's parameters. For 30+ minutes of data batchsize 8 is recommended and for less than 30 minutes batchsize 4 is recommended.
 
 - Smaller batch size:
     - Promotes noisier, less stable gradients.
     - More suitable when your dataset is small, less diverse or repetitive.
-    - Can lead to instability / divergence or noisy as hell graphs.
+    - Can lead to instability / divergence or noisy graphs.
     - Generalization might be improved.
 ‎ 
 - Bigger batch size:
     - Promotes smoother, more stable gradients.
     - Can beneficial in cases where your dataset is big and diverse.
-    - Can lead to early overtraining or flat / ' stuck ' graphs.
+    - Can lead to early overtraining or flat / 'stuck' graphs.
     - Generalization might be worsened
 
 ***

@@ -29,7 +29,7 @@ order: 2000
     - Removing repeated words. ( If you want you can be extreme you can do this and remove every single repeated word that's fine, but generally there is no need to do this. )
     - Include speech in many ranges and pitches. 
     - Longer datasets.
-    - Expressive speech
+    - Expressive speech.
 ***
  ‎
 :::content-center
@@ -705,40 +705,12 @@ De-Noise | Mel Roformer De-Noise
     ‎              
 
     - And finally, introduce these values:  
-
-        - **Format**: ``FLAC``    
-        - **Bit depth**: ``24 bit``
-        - **Level**: ``8``   
-
-    ‎
-
-    - Or these values:
-
         - **Format**: ``WAV``
         - **Encoding**: ``32-Bit Float``
 
         ###### ‎    
 
-        <img src="../datasets-img/5.png" alt="image" width="650" height="auto">
-
-***
-### Step 4: Manual Audio Slicing (Optional)
-- Download this: [!file](../datasets-img/split_audio.py)
-- Then place it in Applio's root folder. Then type `cmd` into the top bar where it shows your location.
-
-<img src="../datasets-img/cmd.png" alt="image" width="420" height="auto">
-‎  
-
-- Then type this into the cmd line `python split_audio.py wavfilelocationhere exportfolderhere sampleratehere 3 0.3`.
-    - for example it would look something like this `python split_audio.py C:\Users\dawnm\Downloads\dataset.wav C:\Users\dawnm\Desktop\split\ 32000 3 0.3`.
-
-> If you get an error saying something is missing simply type `pip install librosa numpy scipy tqdm`. 
-
-- Then once it's done go into the folder where you told it to export all of the slices to, then copy / cut all of the files there are place them into your dataset folder. 
-
-!!!danger
-If you use this method you **have** to disable the slicer and post processing in Applio.
-!!!
+        <img src="../datasets-img/settings-wav.png" alt="image" width="650" height="auto">
 
 ***
 :::content-center

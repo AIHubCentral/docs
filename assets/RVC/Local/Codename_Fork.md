@@ -68,7 +68,7 @@ Under Training there is the option to use 44.1k as your trainng sample rate, how
 ### MRF HifiGAN & RefineGAN:
 - In the training section you are given the option to choose your vocoder
     - HiFi-GAN: the default vocoder for RVC.
-    - MRF HiFi-GAN: a version of HiFi-GAN with MRF instead of MPD and new loss functions. This has higher fidelity but **only** works with this fork and the MRF branch of Applio.
+    - MRF HiFi-GAN: a version of HiFi-GAN with MRF instead of MPD and new loss functions. This has higher fidelity but **only** works with this fork and the latest non-precompiled version Applio.
     - RefineGAN: an entirely new GAN which is in a experimental phase.
 
 <img src="../codename-img/voco.png" alt="image" width="500" height="auto"> 
