@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.796845812367">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.796926643640">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.6.0">
@@ -34,11 +34,11 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../../img/b.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.6.0.796845812367" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.6.0.796926643640" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.6.0.796845812367" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.6.0.796926643640" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.6.0.796845812367" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.6.0.796926643640" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -268,11 +268,11 @@
     </h4>
 </doc-anchor-target>
 <ul>
-<li><p>There isn&#x27;t a way to know the right amount previous to training. It depends on the size, length &amp; quality of the dataset.</p>
+<li><p><strong>There isn&#x27;t a way to know the right amount previous to training.</strong> It depends on the length, quality and diversity of the dataset.</p>
 </li>
 <li><p>If you aim towards a quality model, it&#x27;s not convenient to input a semi-arbitrary amount of epochs, as it makes it prone to underfitting/overtraining. (explained later)</p>
 </li>
-<li><p>So it&#x27;s best to use TensorBoard. WIth it you can determine <strong>exactly</strong> for how long you should train. (explained later)</p>
+<li><p>So it&#x27;s best to use TensorBoard. With it you can determine <strong>exactly</strong> for how long you should train. (explained later)</p>
 </li>
 </ul>
 <doc-anchor-target id="do-more-epochs-equal-a-better-model">
@@ -282,7 +282,7 @@
     </h4>
 </doc-anchor-target>
 <ul>
-<li><p>It doesn&#x27;t, since using a disproportionate amount will overtrain the model, which will affect the quality of it.</p>
+<li><p><strong>No it doesn&#x27;t</strong>, since using a disproportionate amount will overtrain the model, which will affect the quality of it.</p>
 </li>
 <li><p>In the field of AI, is when an AI model learns its <u><a href="https://docs.ai-hub.wtf/rvc/resources/datasets/">dataset</a></u> too well, to the point where it centers too much around it &amp; starts replicating undesired data.</p>
 </li>
@@ -300,7 +300,7 @@
 <ul>
 <li><p>Overtraining also know as overfitting is where the model doesn&#x27;t actually learn the underlying patterns of the data and memorizes them instead.</p>
 </li>
-<li><p>Some signs of overfitting are when the sibilances are robotic or when the graphs in the Tensorboard are going up.</p>
+<li><p>Some signs of overfitting are when the sibilances are robotic, when the graphs in the Tensorboard are going up or when the model is unable to produce high end harmonics.</p>
 </li>
 </ul>
 <hr>
@@ -311,19 +311,13 @@
     </h2>
 </doc-anchor-target>
 </div>
-<doc-anchor-target id="batch-size-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#batch-size-1">#</doc-anchor-trigger>
-        <span>Batch Size</span>
-    </h3>
-</doc-anchor-target>
-<p>A batch size is the number of training examples used in one iteration before updaing the model&#x27;s parameters. Usually a batch size of 8 is the best for most models.</p>
+<p>A batch size is the number of training examples used in one iteration before updaing the model&#x27;s parameters. For 30+ minutes of data batchsize 8 is recommended and for less than 30 minutes batchsize 4 is recommended.</p>
 <ul>
 <li>Smaller batch size:
 <ul>
 <li>Promotes noisier, less stable gradients.</li>
 <li>More suitable when your dataset is small, less diverse or repetitive.</li>
-<li>Can lead to instability / divergence or noisy as hell graphs.</li>
+<li>Can lead to instability / divergence or noisy graphs.</li>
 <li>Generalization might be improved.
 ‎</li>
 </ul>
@@ -332,7 +326,7 @@
 <ul>
 <li>Promotes smoother, more stable gradients.</li>
 <li>Can beneficial in cases where your dataset is big and diverse.</li>
-<li>Can lead to early overtraining or flat / &#x27; stuck &#x27; graphs.</li>
+<li>Can lead to early overtraining or flat / &#x27;stuck&#x27; graphs.</li>
 <li>Generalization might be worsened</li>
 </ul>
 </li>
