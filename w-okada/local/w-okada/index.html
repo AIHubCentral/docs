@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.796926643640">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.797200515831">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.6.0">
@@ -14,7 +14,7 @@
     <!-- Primary Meta Tags -->
     <title>W Okada</title>
     <meta name="title" content="W Okada">
-    <meta name="description" content="Last update: Feb 16, 2025">
+    <meta name="description" content="Last update: April 5, 2025">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://docs.aihub.gg/w-okada/local/w-okada/">
@@ -23,22 +23,22 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.aihub.gg/w-okada/local/w-okada/">
     <meta property="og:title" content="W Okada">
-    <meta property="og:description" content="Last update: Feb 16, 2025">
+    <meta property="og:description" content="Last update: April 5, 2025">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.aihub.gg/w-okada/local/w-okada/">
     <meta property="twitter:title" content="W Okada">
-    <meta property="twitter:description" content="Last update: Feb 16, 2025">
+    <meta property="twitter:description" content="Last update: April 5, 2025">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../../img/b.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.6.0.796926643640" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.6.0.797200515831" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.6.0.796926643640" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.6.0.797200515831" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.6.0.796926643640" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.6.0.797200515831" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -230,7 +230,7 @@
         <span>W Okada</span>
     </h1>
 </doc-anchor-target>
-<p><code v-pre>Last update: Feb 16, 2025</code></p>
+<p><code v-pre>Last update: April 5, 2025</code></p>
 <hr>
 <div class="content-center"><doc-anchor-target id="introduction">
     <h2>
@@ -250,26 +250,33 @@
 </li>
 </ul>
 <hr>
-<doc-anchor-target id="1-system--hardware-requirements">
+<doc-anchor-target id="is-the-w-okada-deiteris-fork-safe">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#is-the-w-okada-deiteris-fork-safe">#</doc-anchor-trigger>
+        <span>Is The W-Okada Deiteris Fork Safe?</span>
+    </h4>
+</doc-anchor-target>
+<p>RVC Models are PyTorch Models, a Python library used for AI.
+PyTorch uses serialization via Pythons&#x27; Pickle Module, converting the model to a file.
+Since pickle can execute arbitrary code when loading a model, it could be theoretically used for malware, but Wokada Deiteris Fork has a <strong>built-in feature to prevent code execution along the model.</strong>
+Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/security-pickle#hubs-security-scanner">Security Scanner</a></u></strong> which scans for any unsafe pickle exploits and uses also ClamAV for scanning dangerous files.</p>
+<hr>
+<doc-anchor-target id="system--hardware-requirements">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#1-system--hardware-requirements">#</doc-anchor-trigger>
-        <span>1. System &amp; Hardware Requirements</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#system--hardware-requirements">#</doc-anchor-trigger>
+        <span>System &amp; Hardware Requirements</span>
     </h2>
 </doc-anchor-target>
+<hr>
 <ul>
-<li><p>Windows 10 or Later</p>
-</li>
-<li><p>macOS 12 Monterey or later. With Apple Silicon or Intel CPU</p>
-</li>
-<li><p>Any Linux Distro</p>
-</li>
+<li>Windows 10 or Later</li>
+<li>macOS 12 Monterey or later. With Apple Silicon or Intel CPU</li>
+<li>Any Linux Distro</li>
 </ul>
 <p>and</p>
 <ul>
-<li><p>At least 6GB of RAM</p>
-</li>
-<li><p>At least 6GB of free disk storage</p>
-</li>
+<li>At least 6GB of RAM</li>
+<li>At least 6GB of free disk storage</li>
 </ul>
 <hr>
 <doc-anchor-target id="for-gpu-conversion">
@@ -325,161 +332,11 @@
     </div>
 </div>
 <hr>
-<doc-anchor-target id="2-download">
+<doc-anchor-target id="online-alternatives-colabkaggle">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#2-download">#</doc-anchor-trigger>
-        <span>2. Download</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#online-alternatives-colabkaggle">#</doc-anchor-trigger>
+        <span>Online Alternatives [Colab/Kaggle]</span>
     </h2>
-</doc-anchor-target>
-<ul>
-<li>Download based on your GPU. You don&#x27;t know what GPU you have? Open Task Manager &gt; Performance tab and check for your GPU0 and GPU1 names. Prioritize the Nvidia one if you have one, else use the other.</li>
-</ul>
-<img src="../wokada-img/cap.png" alt="image" width="600" height="auto">
-<doc-anchor-target id="section">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section">#</doc-anchor-trigger>
-        <span></span>
-    </h4>
-</doc-anchor-target>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
-    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>Use Online Hosted if you have an integrated GPU (AMD Radeon Graphics ; AMD Radeon Vega ; Intel UHD) and if you do not have a GPU at all</p>
-        </div>
-    </div>
-</div>
-<hr>
-<doc-anchor-target id="nvidia-download">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#nvidia-download">#</doc-anchor-trigger>
-        <span>NVIDIA Download</span>
-    </h3>
-</doc-anchor-target>
-<ul>
-<li>The lastest version as of December 7th 2024 is: <u><a href="https://huggingface.co/Shadicti/deiteris-Fork/blob/main/voice-changer-windows-nvidia-b2332.zip">nvidia-b2332 (click here to download)</a></u></li>
-</ul>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-red-500"></div>
-    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-red-500" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M21.71 6.15L15.85.29c-.19-.18-.44-.29-.71-.29H6.86c-.27 0-.52.11-.71.29L.29 6.15c-.18.19-.29.44-.29.71v8.28c0 .27.11.52.29.71l5.86 5.86c.19.18.44.29.71.29h8.28c.27 0 .52-.11.71-.29l5.86-5.86a.99.99 0 00.29-.71V6.86c0-.27-.11-.52-.29-.71zM20 14.73L14.73 20H7.27L2 14.73V7.27L7.27 2h7.45L20 7.27v7.46z"></path>
-                    <path d="M11 12c.55 0 1-.45 1-1V7c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .55.45 1 1 1zM11.01 14c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>If you have a GTX 700 card or below, use AMD/Intel version instead.</p>
-        </div>
-    </div>
-</div>
-<hr>
-<doc-anchor-target id="amd-intel-and-cpu">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#amd-intel-and-cpu">#</doc-anchor-trigger>
-        <span>AMD, INTEL and CPU</span>
-    </h3>
-</doc-anchor-target>
-<ul>
-<li>The lastest version as of December 7th 2024 is: <u><a href="https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-windows-amd64-dml.zip">dml-b2332 (click here to download)</a></u></li>
-</ul>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-red-500"></div>
-    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-red-500" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M21.71 6.15L15.85.29c-.19-.18-.44-.29-.71-.29H6.86c-.27 0-.52.11-.71.29L.29 6.15c-.18.19-.29.44-.29.71v8.28c0 .27.11.52.29.71l5.86 5.86c.19.18.44.29.71.29h8.28c.27 0 .52-.11.71-.29l5.86-5.86a.99.99 0 00.29-.71V6.86c0-.27-.11-.52-.29-.71zM20 14.73L14.73 20H7.27L2 14.73V7.27L7.27 2h7.45L20 7.27v7.46z"></path>
-                    <path d="M11 12c.55 0 1-.45 1-1V7c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .55.45 1 1 1zM11.01 14c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>Intel UHD Graphics do NOT work at this point in time. Use Online Alternative.</p>
-        </div>
-    </div>
-</div>
-<hr>
-<doc-anchor-target id="linux-install">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#linux-install">#</doc-anchor-trigger>
-        <span>Linux Install</span>
-    </h3>
-</doc-anchor-target>
-<ul>
-<li>For NVIDIA, you need to download both these files:</li>
-</ul>
-<p><a href="https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-linux-amd64-cuda.tar.gz.aa">https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-linux-amd64-cuda.tar.gz.aa</a></p>
-<p><a href="https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-linux-amd64-cuda.tar.gz.ab">https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-linux-amd64-cuda.tar.gz.ab</a></p>
-<ul>
-<li>For AMD, you need to download both these files:</li>
-</ul>
-<p><a href="https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-linux-amd64-rocm.tar.gz.aa">https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-linux-amd64-rocm.tar.gz.aa</a></p>
-<p><a href="https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-linux-amd64-rocm.tar.gz.ab">https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-linux-amd64-rocm.tar.gz.ab</a></p>
-<p>Install <code v-pre>portaudio</code> with <code v-pre>sudo yum -y install portaudio</code>. Installation of CUDA Toolkit or AMD <strong>HIP SDK is NOT REQUIRED</strong>. All other necessary libraries are bundled with the application.
-I&#x27;m not sure about the capabilities of UI tar archive extractors, but you can extract these archive parts with the following command that will merge them and extract: <code v-pre>cat voice-changer-linux-amd64-cuda.tar.gz.* | tar xzf -</code> (change <strong>cuda</strong> to <strong>rocm</strong> if necessary).</p>
-<doc-anchor-target id="mac-install">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#mac-install">#</doc-anchor-trigger>
-        <span>Mac Install</span>
-    </h3>
-</doc-anchor-target>
-<ul>
-<li>The lastest version as of December 7th 2024 is: <u><a href="https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-macos-arm64-cpu.tar.gz">arm-b2332 (click here to download)</a></u></li>
-</ul>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
-    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>For Apple Silicon (Apple M1, etc.) users.</p>
-        </div>
-    </div>
-</div>
-<ul>
-<li>The lastest version as of December 7th 2024 is: <u><a href="https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-macos-amd64-cpu.tar.gz">macos-amd-b2332 (click here to download)</a></u></li>
-</ul>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
-    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>For Apple Intel users.</p>
-        </div>
-    </div>
-</div>
-<doc-anchor-target id="cloud-alternatives">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#cloud-alternatives">#</doc-anchor-trigger>
-        <span>Cloud Alternatives</span>
-    </h3>
 </doc-anchor-target>
 <doc-anchor-target id="colab">
     <h4>
@@ -499,10 +356,10 @@ I&#x27;m not sure about the capabilities of UI tar archive extractors, but you c
 <p>Go <u><a href="https://www.kaggle.com/code/suneku/voice-changer-public">here</a></u></p>
 <p>It has a rough tutorial included, needs cell phone number verification and longer to set up, but once you have it, it is worth it. On Kaggle there should be an option to import from Colab, which would be the fastest way to set it up</p>
 <hr>
-<doc-anchor-target id="3-virtual-audio-cable-download">
+<doc-anchor-target id="virtual-audio-cable">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#3-virtual-audio-cable-download">#</doc-anchor-trigger>
-        <span>3. Virtual Audio Cable Download</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#virtual-audio-cable">#</doc-anchor-trigger>
+        <span>Virtual Audio Cable</span>
     </h2>
 </doc-anchor-target>
 <doc-anchor-target id="a-virtual-audio-cable-vac-is-what-you-need-to-use-the-voice-changer-on-discord--games">
@@ -557,12 +414,117 @@ or
     </div>
 </div>
 <hr>
-<doc-anchor-target id="4-opening">
+<doc-anchor-target id="windows">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#4-opening">#</doc-anchor-trigger>
-        <span>4. Opening</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#windows">#</doc-anchor-trigger>
+        <span>Windows</span>
     </h2>
 </doc-anchor-target>
+<ul>
+<li>Download based on your GPU. You don&#x27;t know what GPU you have? Open Task Manager &gt; Performance tab and check for your GPU0 and GPU1 names. Prioritize the Nvidia one if you have one, else use the other.</li>
+</ul>
+<img src="../wokada-img/cap.png" alt="image" width="600" height="auto">
+<doc-anchor-target id="section">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section">#</doc-anchor-trigger>
+        <span></span>
+    </h4>
+</doc-anchor-target>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>Use Online Hosted if you have an integrated GPU (AMD Radeon Graphics ; AMD Radeon Vega ; Intel UHD) and if you do not have a GPU at all</p>
+        </div>
+    </div>
+</div>
+<hr>
+<doc-anchor-target id="download-nvidia-on-windows">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#download-nvidia-on-windows">#</doc-anchor-trigger>
+        <span>Download NVIDIA on Windows</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li>The lastest version as of December 7th 2024 is: <u><a href="https://huggingface.co/Shadicti/deiteris-Fork/blob/main/voice-changer-windows-nvidia-b2332.zip">nvidia-b2332 (click here to download)</a></u></li>
+</ul>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-red-500"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-red-500" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M21.71 6.15L15.85.29c-.19-.18-.44-.29-.71-.29H6.86c-.27 0-.52.11-.71.29L.29 6.15c-.18.19-.29.44-.29.71v8.28c0 .27.11.52.29.71l5.86 5.86c.19.18.44.29.71.29h8.28c.27 0 .52-.11.71-.29l5.86-5.86a.99.99 0 00.29-.71V6.86c0-.27-.11-.52-.29-.71zM20 14.73L14.73 20H7.27L2 14.73V7.27L7.27 2h7.45L20 7.27v7.46z"></path>
+                    <path d="M11 12c.55 0 1-.45 1-1V7c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .55.45 1 1 1zM11.01 14c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>If you have a GTX 700 card or below, use AMD/Intel version instead.</p>
+        </div>
+    </div>
+</div>
+<hr>
+<doc-anchor-target id="download-nvidia-rtx-5000-series-on-windows">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#download-nvidia-rtx-5000-series-on-windows">#</doc-anchor-trigger>
+        <span>Download NVIDIA RTX 5000-series on Windows</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li>NVIDIA RTX-5000 series, the newest release of GPU&#x27;s, require a separate download. You do not need it if you have an older GPU, follow the normal Nvidia link in that case. <u><a href="https://github.com/IllIlIlIllIl/voice-changer/releases/tag/b2335">nvidia-5000-Series (click here to download)</a></u></li>
+</ul>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-red-500"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-red-500" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M21.71 6.15L15.85.29c-.19-.18-.44-.29-.71-.29H6.86c-.27 0-.52.11-.71.29L.29 6.15c-.18.19-.29.44-.29.71v8.28c0 .27.11.52.29.71l5.86 5.86c.19.18.44.29.71.29h8.28c.27 0 .52-.11.71-.29l5.86-5.86a.99.99 0 00.29-.71V6.86c0-.27-.11-.52-.29-.71zM20 14.73L14.73 20H7.27L2 14.73V7.27L7.27 2h7.45L20 7.27v7.46z"></path>
+                    <path d="M11 12c.55 0 1-.45 1-1V7c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .55.45 1 1 1zM11.01 14c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>Download all 3 files, then extract the .zip file, it will automatically extract ALL 3 FILES into one. Then open the <code v-pre>MMVCServerSIO</code> folder and run <code v-pre>MMVCServerSIO.exe</code> (or called <code v-pre>MMVCServerSIO</code> if you don&#x27;t have extensions activated).</p>
+        </div>
+    </div>
+</div>
+<hr>
+<doc-anchor-target id="download-amd-intel-and-cpu-on-windows">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#download-amd-intel-and-cpu-on-windows">#</doc-anchor-trigger>
+        <span>Download AMD, INTEL and CPU on Windows</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li>The lastest version as of December 7th 2024 is: <u><a href="https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-windows-amd64-dml.zip">dml-b2332 (click here to download)</a></u></li>
+</ul>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-red-500"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-red-500" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M21.71 6.15L15.85.29c-.19-.18-.44-.29-.71-.29H6.86c-.27 0-.52.11-.71.29L.29 6.15c-.18.19-.29.44-.29.71v8.28c0 .27.11.52.29.71l5.86 5.86c.19.18.44.29.71.29h8.28c.27 0 .52-.11.71-.29l5.86-5.86a.99.99 0 00.29-.71V6.86c0-.27-.11-.52-.29-.71zM20 14.73L14.73 20H7.27L2 14.73V7.27L7.27 2h7.45L20 7.27v7.46z"></path>
+                    <path d="M11 12c.55 0 1-.45 1-1V7c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .55.45 1 1 1zM11.01 14c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>Intel UHD Graphics do NOT work at this point in time. Use Online Alternative.</p>
+        </div>
+    </div>
+</div>
 <hr>
 <doc-anchor-target id="opening-on-windows">
     <h3>
@@ -577,6 +539,33 @@ or
 </li>
 <li><p>If nothing opens after a while of codes loading in, then open a browser and type in <code v-pre>http://127.0.0.1:18888/</code>. This is a local URL, it runs on the WebUI.</p>
 </li>
+</ul>
+<hr>
+<doc-anchor-target id="mac">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#mac">#</doc-anchor-trigger>
+        <span>Mac</span>
+    </h2>
+</doc-anchor-target>
+<hr>
+<doc-anchor-target id="download-mac-silicon">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#download-mac-silicon">#</doc-anchor-trigger>
+        <span>Download Mac Silicon</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li>The lastest version as of December 7th 2024 is: <u><a href="https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-macos-arm64-cpu.tar.gz">arm-b2332 (click here to download)</a></u></li>
+</ul>
+<hr>
+<doc-anchor-target id="download-mac-intel">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#download-mac-intel">#</doc-anchor-trigger>
+        <span>Download Mac Intel</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li>The lastest version as of December 7th 2024 is: <u><a href="https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-macos-amd64-cpu.tar.gz">macos-amd-b2332 (click here to download)</a></u></li>
 </ul>
 <hr>
 <doc-anchor-target id="opening-on-mac">
@@ -637,11 +626,30 @@ For example, if you extracted the voice changer to your desktop, the command may
     </div>
 </div>
 <hr>
+<doc-anchor-target id="linux">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#linux">#</doc-anchor-trigger>
+        <span>Linux</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>For NVIDIA, you need to download both these files:</li>
+</ul>
+<p><a href="https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-linux-amd64-cuda.tar.gz.aa">https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-linux-amd64-cuda.tar.gz.aa</a></p>
+<p><a href="https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-linux-amd64-cuda.tar.gz.ab">https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-linux-amd64-cuda.tar.gz.ab</a></p>
+<ul>
+<li>For AMD, you need to download both these files:</li>
+</ul>
+<p><a href="https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-linux-amd64-rocm.tar.gz.aa">https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-linux-amd64-rocm.tar.gz.aa</a></p>
+<p><a href="https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-linux-amd64-rocm.tar.gz.ab">https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-linux-amd64-rocm.tar.gz.ab</a></p>
+<p>Install <code v-pre>portaudio</code> with <code v-pre>sudo yum -y install portaudio</code>. Installation of CUDA Toolkit or AMD <strong>HIP SDK is NOT REQUIRED</strong>. All other necessary libraries are bundled with the application.
+I&#x27;m not sure about the capabilities of UI tar archive extractors, but you can extract these archive parts with the following command that will merge them and extract: <code v-pre>cat voice-changer-linux-amd64-cuda.tar.gz.* | tar xzf -</code> (change <strong>cuda</strong> to <strong>rocm</strong> if necessary).</p>
+<hr>
 <doc-anchor-target id="opening-on-multi-pc-setups">
-    <h3>
+    <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#opening-on-multi-pc-setups">#</doc-anchor-trigger>
-        <span>Opening on Multi PC Setups</span>
-    </h3>
+        <span>Opening on Multi-PC Setups</span>
+    </h2>
 </doc-anchor-target>
 <ul>
 <li><p>Create a file named <code v-pre>.env</code> on the same folder where <code v-pre>MMVCServerSIO.exe</code> is located. Open it up with a notepad, copy paste the settings from the <u><a href="https://github.com/deiteris/voice-changer/issues/180#issuecomment-2359166278">GitHub link</a></u>.</p>
@@ -652,10 +660,10 @@ For example, if you extracted the voice changer to your desktop, the command may
 </li>
 </ul>
 <hr>
-<doc-anchor-target id="5-voice-models">
+<doc-anchor-target id="voice-models">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#5-voice-models">#</doc-anchor-trigger>
-        <span>5. Voice models</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#voice-models">#</doc-anchor-trigger>
+        <span>Voice Models</span>
     </h2>
 </doc-anchor-target>
 <hr>
@@ -688,10 +696,10 @@ For example, if you extracted the voice changer to your desktop, the command may
 </doc-anchor-target>
 <p>If you wish to delete a model, you can overwrite the slot with a new model. If you insist on fully emptying a slot for whatever reason, head over to the <code v-pre>model_dir</code> folder, open the folder of the slot number you want to delete, and delete the model from that folder</p>
 <hr>
-<doc-anchor-target id="6-audio-setup">
+<doc-anchor-target id="audio-setup">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#6-audio-setup">#</doc-anchor-trigger>
-        <span>6. Audio Setup</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#audio-setup">#</doc-anchor-trigger>
+        <span>Audio Setup</span>
     </h2>
 </doc-anchor-target>
 <hr>
@@ -713,6 +721,7 @@ For example, if you extracted the voice changer to your desktop, the command may
 <li>Output: Your headphones</li>
 </ul>
 <p>For Linux, read the Virtual Cable step</p>
+<hr>
 <doc-anchor-target id="client-and-server-setup">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#client-and-server-setup">#</doc-anchor-trigger>
@@ -735,13 +744,6 @@ For example, if you extracted the voice changer to your desktop, the command may
 <hr>
 <p>ASIO &gt; WASAPI &gt; MME as a general thumbrule (this also affects delay)</p>
 <p>Sometimes Client does not work, then use SERVER with prefix &quot;MME&quot; or &quot;Windows WASAPI&quot;. You can not use the in-built noise suppression and echo fix if you use SERVER.</p>
-<hr>
-<doc-anchor-target id="7-settings">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#7-settings">#</doc-anchor-trigger>
-        <span>7. Settings</span>
-    </h2>
-</doc-anchor-target>
 <hr>
 <doc-anchor-target id="settings-explained">
     <h3>
@@ -796,10 +798,33 @@ For example, if you extracted the voice changer to your desktop, the command may
 </li>
 </ul>
 <hr>
-<doc-anchor-target id="finding-my-best-settings">
+<doc-anchor-target id="settings">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#settings">#</doc-anchor-trigger>
+        <span>Settings</span>
+    </h2>
+</doc-anchor-target>
+<hr>
+<doc-anchor-target id="advanced-settings">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#finding-my-best-settings">#</doc-anchor-trigger>
-        <span>Finding my Best Settings</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#advanced-settings">#</doc-anchor-trigger>
+        <span>Advanced Settings</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li>Protocol: sio</li>
+<li>Crossfade length: 0.1 or 0.15 (0.1 for fastest voice, 0.15 for improved quality but increases delay by 50 ms. It is NOT recommended to go below 0.1)</li>
+<li>SilenceFront: kinda useless, doesn&#x27;t matter what you select here. On to reduce GPU usage when you are not speaking into the microphone by a few percentages</li>
+<li>Force FP32 mode: on (THIS IS OFF BY DEFAULT! Turning this on improves stability. Increases VRAM usage by 200 MB)</li>
+<li>Disable JIT compilation: off for faster loading speed of the program, on for slightly better performance (10-15 ms) for Nvidia only)</li>
+<li>Convert to ONNX: No for Nvidia, Maybe for AMD/Intel GPUs. It is generally not needed anymore, but it may help AMD/Intel GPUs slightly</li>
+<li>Protect: 0.5 for normal usage, 0.33 if you use index. Index is not recommended to use at all but keep this in mind</li>
+</ul>
+<hr>
+<doc-anchor-target id="finding-my-own-settings-for-chunk">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#finding-my-own-settings-for-chunk">#</doc-anchor-trigger>
+        <span>Finding my own settings for Chunk</span>
     </h3>
 </doc-anchor-target>
 <p>First start with 500 ms, check what number your perf is and go closer to that number but not lower.</p>
@@ -811,13 +836,12 @@ For example, if you extracted the voice changer to your desktop, the command may
 <img src="../wokada-img/red.png" alt="image" width="170" height="auto">
 <p>If your perf value is red, the voice changer is unstable. Increase chunk size or reduce Extra.</p>
 <hr>
-<doc-anchor-target id="best-settings">
+<doc-anchor-target id="known-working-settings-for-chunk-and-extra">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#best-settings">#</doc-anchor-trigger>
-        <span>Best Settings</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#known-working-settings-for-chunk-and-extra">#</doc-anchor-trigger>
+        <span>Known working settings for Chunk and Extra</span>
     </h3>
 </doc-anchor-target>
-<hr>
 <doc-tabs>
 <doc-tab v-cloak id="nvidia">
 <template #title>NVIDIA</template>
@@ -980,32 +1004,58 @@ For example, if you extracted the voice changer to your desktop, the command may
 </doc-tab>
 </doc-tabs>
 <hr>
-<doc-anchor-target id="extra">
+<doc-anchor-target id="extras">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#extra">#</doc-anchor-trigger>
-        <span>Extra</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#extras">#</doc-anchor-trigger>
+        <span>Extras</span>
     </h2>
 </doc-anchor-target>
 <hr>
-<doc-anchor-target id="models-to-try">
+<doc-anchor-target id="information">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#models-to-try">#</doc-anchor-trigger>
-        <span>Models to try</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#information">#</doc-anchor-trigger>
+        <span>Information</span>
     </h3>
 </doc-anchor-target>
-<ul>
-<li>You will need to connect your account to <u><a href="http://weights.gg/">weights.gg</a></u> to be able to download these models
-<ul>
-<li>Click on the 3 dots (...) on weights.gg models, then Download model.</li>
-</ul>
-</li>
-</ul>
-<p><strong>Female:</strong></p>
-<p><a href="https://www.weights.gg/models/clroz1aic012sjmfug54yft0u">Duckus Egirl voice made by lusbert</a></p>
-<p><a href="https://huggingface.co/legitdark/psych2go-By-Dan/resolve/main/psych2go-By-Dan.zip">Psych2Go voice made by dan</a></p>
-<p><strong>Male:</strong></p>
-<p><a href="https://www.weights.gg/models/clm72t7ra0qqhcctc4zyax181">Bob Ross voice made by dieseldog34</a></p>
-<p><a href="https://www.weights.gg/models/clm72nuvi0c8scctcvzrckuqp">Markiplier voice made by hobqueer</a></p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>What&#x27;s the best choice for AMD users?</h5>
+<p>This fork is a lot better for AMD GPU&#x27;s compared to the original w-okada. On the original it requires converting models to onnx models which is annoying, requires more CPU and GPU resources, has a lot more delay and other little inconveniences/bugs.</p>
+<p>Example: AMD RX 6650 XT lowest latency is 298 ms chunk on original w-okada. On this fork lowest latency is around 60 - 80 ms chunk</p>
+        </div>
+    </div>
+</div>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Which is better for NVIDIA mainline w-okada or Deiteris&#x27; fork?</h5>
+<p>Deiteris&#x27; fork is better for NVIDIA users who normally use the prebuilt w-okada version, because this version uses GPU accelerated extra compared to the original which uses CPU.</p>
+<p>For the RTX GPUs the delay performance differences are minimal, but quality performance is better. For older cards like GTX or MX, this fork performs better in all aspects.</p>
+<p>Example: NVIDIA RTX 3070 on prebuilt w-okada reaches 170 - 213 ms chunk latency. On manually set up environment of w-okada reaches 42 ms chunk latency. On this fork it can reach 30 - 38 ms chunk latency, depending on the extra set. Keep in mind these are settings tested to the max, without a video game or intense operations running in the background</p>
+        </div>
+    </div>
+</div>
 <hr>
 <doc-anchor-target id="reduce-more-delay">
     <h3>
@@ -1050,6 +1100,26 @@ For example, if you extracted the voice changer to your desktop, the command may
     </div>
 </div>
 <hr>
+<doc-anchor-target id="models-to-try">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#models-to-try">#</doc-anchor-trigger>
+        <span>Models to try</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li>You will need to connect your account to <u><a href="http://weights.gg/">weights.gg</a></u> to be able to download these models
+<ul>
+<li>Click on the 3 dots (...) on weights.gg models, then Download model.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Female:</strong></p>
+<p><a href="https://www.weights.gg/models/clroz1aic012sjmfug54yft0u">Duckus Egirl voice made by lusbert</a></p>
+<p><a href="https://huggingface.co/legitdark/psych2go-By-Dan/resolve/main/psych2go-By-Dan.zip">Psych2Go voice made by dan</a></p>
+<p><strong>Male:</strong></p>
+<p><a href="https://www.weights.gg/models/clm72t7ra0qqhcctc4zyax181">Bob Ross voice made by dieseldog34</a></p>
+<p><a href="https://www.weights.gg/models/clm72nuvi0c8scctcvzrckuqp">Markiplier voice made by hobqueer</a></p>
+<hr>
 <doc-anchor-target id="help">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#help">#</doc-anchor-trigger>
@@ -1081,16 +1151,6 @@ Delete everything inside it if there is anything.</p>
         </div>
     </div>
 </div>
-<hr>
-<doc-anchor-target id="troubleshooting">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#troubleshooting">#</doc-anchor-trigger>
-        <span>Troubleshooting</span>
-    </h3>
-</doc-anchor-target>
-<hr>
-<p>There is an in-depth section on troubleshooting, please check out <u><a href="https://github.com/deiteris/voice-changer/blob/master-custom/README.md#troubleshooting">Troubleshooting on Github</a></u></p>
-<hr>
 <doc-anchor-target id="crackle-fix">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#crackle-fix">#</doc-anchor-trigger>
@@ -1100,7 +1160,9 @@ Delete everything inside it if there is anything.</p>
 <p>Open Task Manager &gt; Details</p>
 <p>Right click <code v-pre>audiodg.exe</code> and set priority to <code v-pre>High</code></p>
 <p>Right click <code v-pre>audiodg.exe</code> again &gt; set affinity &gt; uncheck everything except CPU 2 (only <span class="docs-emoji">&#x2705;</span> CPU 2, turn off the rest)</p>
-<p>With a program called ProcessLasso you can automate this to always be active, since Windows resets these sometimes.</p>
+<p>With a program called ProcessLasso you can automate this to always be active, since Windows resets these sometimes.
+Or you can open up CMD/Powershell (or make a bat file) and type in:</p>
+<p><code v-pre>powershell &quot;ForEach($PROCESS in GET-PROCESS audiodg) { $PROCESS.ProcessorAffinity=4; $PROCESS.PriorityClass='High' }&quot;</code></p>
 <hr>
 <doc-anchor-target id="discord-crackle-fix">
     <h3>
@@ -1114,6 +1176,46 @@ Delete everything inside it if there is anything.</p>
 <li>Turn off Echo Cancellation</li>
 <li>Turn off Noise Suppression (sometimes causes issues, maybe not. Check for yourself)</li>
 </ul>
+<hr>
+<doc-anchor-target id="faq">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#faq">#</doc-anchor-trigger>
+        <span>FAQ</span>
+    </h2>
+</doc-anchor-target>
+<hr>
+<doc-anchor-target id="why-does-it-run-in-a-browser-and-not-its-own-window">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#why-does-it-run-in-a-browser-and-not-its-own-window">#</doc-anchor-trigger>
+        <span>Why does it run in a browser and not it&#x27;s own window?</span>
+    </h3>
+</doc-anchor-target>
+<p>Because it uses a Web User Interface (WebUI) coded in JavaScript &amp; TypeScript, the majority of AI programs are designed to run on the browser since it can be used both on cloud and locally (on your pc), and it can also resolve some performance issues. The original wokada also ran on a WebUI, just that it made it&#x27;s own window</p>
+<hr>
+<doc-anchor-target id="what-browser-should-i-use">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#what-browser-should-i-use">#</doc-anchor-trigger>
+        <span>What browser should I use?</span>
+    </h3>
+</doc-anchor-target>
+<p>It&#x27;s better you try and test, some people had issues on Chrome, some others on Firefox, it might depend on the settings you use and also Java/Type Script having issues. The browser that usually is reported by most people to have issues is OperaGX, which is why we don&#x27;t suggest it much</p>
+<hr>
+<doc-anchor-target id="why-are-most-youtube-video-tutorials-old-is-there-going-to-be-an-updated-one">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#why-are-most-youtube-video-tutorials-old-is-there-going-to-be-an-updated-one">#</doc-anchor-trigger>
+        <span>Why are most YouTube (Video) Tutorials old? Is there going to be an updated one?</span>
+    </h3>
+</doc-anchor-target>
+<p>YouTube Tutorials take way more time to make, and get outdated easily in this case, as AI progresses fast and continues to change in better, with more different settings and versions. Written guides are easier to update, since you don&#x27;t have to remake an entire video. It&#x27;s unknown if we will ever release a video since they easily get outdated, but if we will, it will be linked inside of this guide.</p>
+<hr>
+<doc-anchor-target id="do-i-need-an-extremely-expensive-mic-for-good-quality">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#do-i-need-an-extremely-expensive-mic-for-good-quality">#</doc-anchor-trigger>
+        <span>Do I need an extremely expensive mic for good quality?</span>
+    </h3>
+</doc-anchor-target>
+<p>We had a conversation about this in <a href="https://discord.com/channels/1159260121998827560/1159290161683767298/1352325982689951765">https://discord.com/channels/1159260121998827560/1159290161683767298/1352325982689951765</a> &amp; <a href="https://discord.com/channels/1159260121998827560/1159290161683767298/1356265862704926907">https://discord.com/channels/1159260121998827560/1159290161683767298/1356265862704926907</a>,
+RVC works by downsampling your audio voice to 16khz because f0 estimators only works at that sample rate, after that the model outputs the results using it&#x27;s original sample rate (without any upscaling). So there won&#x27;t be the need of having a super extremely expensive, a decent one should do the job.</p>
 <hr>
 <doc-anchor-target id="section-2">
     <h6>
