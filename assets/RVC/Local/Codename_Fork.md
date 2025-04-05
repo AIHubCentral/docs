@@ -16,6 +16,15 @@ order: 3000
 
 - This guide will be only talking about the new features since everything else has been covered in the <u>[Applio guide](https://docs.ai-hub.wtf/rvc/local/applio/)</u>.
 
+***
+#### Are RVC Models Safe?
+
+RVC Models are PyTorch Models, a Python library used for AI.
+PyTorch uses serialization via Pythons' Pickle Module, converting the model to a file.
+Since pickle can execute arbitrary code when loading a model, it could be theoretically used for malware, but this fork has a **built-in feature to prevent code execution along the model.**
+Also, **HuggingFace has a <u>[Security Scanner](https://huggingface.co/docs/hub/security-pickle#hubs-security-scanner)</u>** which scans for any unsafe pickle exploits and uses also ClamAV for scanning dangerous files.
+***
+
 #### Pros & Cons :icon-tasklist:
 ==- ***Unfold***
 !!! *The pros & cons are subjective to your necessities.*        

@@ -2,7 +2,7 @@
 icon: chevron-right
 order: 4000
 ---
-``Last update: Feb 16, 2025``
+``Last update: April 5, 2025``
 ***
 :::content-center
 ## Introduction
@@ -16,20 +16,27 @@ order: 4000
 
 - RVC does **NOT** mean realtime voice changer.
 
+***
+#### Is The W-Okada Deiteris Fork Safe?
+
+RVC Models are PyTorch Models, a Python library used for AI.
+PyTorch uses serialization via Pythons' Pickle Module, converting the model to a file.
+Since pickle can execute arbitrary code when loading a model, it could be theoretically used for malware, but Wokada Deiteris Fork has a **built-in feature to prevent code execution along the model.**
+Also, **HuggingFace has a <u>[Security Scanner](https://huggingface.co/docs/hub/security-pickle#hubs-security-scanner)</u>** which scans for any unsafe pickle exploits and uses also ClamAV for scanning dangerous files.
 
 ***
-## 1. System & Hardware Requirements
+
+## System & Hardware Requirements
+
+***
 
 - Windows 10 or Later
-
 - macOS 12 Monterey or later. With Apple Silicon or Intel CPU
-
 - Any Linux Distro
 
 and
 
 - At least 6GB of RAM
-
 - At least 6GB of free disk storage
 
 ***
@@ -67,64 +74,9 @@ If you plan on playing games at the same, do not use CPU-conversion. With CPU, t
 
 ***
 
-## 2. Download
 
-- Download based on your GPU. You don't know what GPU you have? Open Task Manager > Performance tab and check for your GPU0 and GPU1 names. Prioritize the Nvidia one if you have one, else use the other.
+## Online Alternatives [Colab/Kaggle]
 
-<img src="../wokada-img/cap.png" alt="image" width="600" height="auto">
-
-####
-!!!
-Use Online Hosted if you have an integrated GPU (AMD Radeon Graphics ; AMD Radeon Vega ; Intel UHD) and if you do not have a GPU at all
-!!!
-***
-### NVIDIA Download
-- The lastest version as of December 7th 2024 is: <u>[nvidia-b2332 (click here to download)](https://huggingface.co/Shadicti/deiteris-Fork/blob/main/voice-changer-windows-nvidia-b2332.zip)</u>
-
-!!!danger
-If you have a GTX 700 card or below, use AMD/Intel version instead.
-!!!
-
-***
-### AMD, INTEL and CPU
-- The lastest version as of December 7th 2024 is: <u>[dml-b2332 (click here to download)](https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-windows-amd64-dml.zip)</u>
-
-!!!danger
-Intel UHD Graphics do NOT work at this point in time. Use Online Alternative.
-!!!
-
-***
-### Linux Install
-- For NVIDIA, you need to download both these files:
-
-https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-linux-amd64-cuda.tar.gz.aa
-
-https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-linux-amd64-cuda.tar.gz.ab
-
-- For AMD, you need to download both these files:
-
-https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-linux-amd64-rocm.tar.gz.aa
-
-https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-linux-amd64-rocm.tar.gz.ab
-
-
-Install `portaudio` with `sudo yum -y install portaudio`. Installation of CUDA Toolkit or AMD **HIP SDK is NOT REQUIRED**. All other necessary libraries are bundled with the application.
-I'm not sure about the capabilities of UI tar archive extractors, but you can extract these archive parts with the following command that will merge them and extract: `cat voice-changer-linux-amd64-cuda.tar.gz.* | tar xzf -` (change **cuda** to **rocm** if necessary).
-
-### Mac Install
-- The lastest version as of December 7th 2024 is: <u>[arm-b2332 (click here to download)](https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-macos-arm64-cpu.tar.gz)</u>
-
-!!!
-For Apple Silicon (Apple M1, etc.) users.
-!!!
-
-- The lastest version as of December 7th 2024 is: <u>[macos-amd-b2332 (click here to download)](https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-macos-amd64-cpu.tar.gz)</u>
-
-!!!
-For Apple Intel users.
-!!!
-
-### Cloud Alternatives
 #### Colab
 
 Go <u>[here](https://colab.research.google.com/github/deiteris/voice-changer/blob/master-custom/Colab_RealtimeVoiceChanger.ipynb)</u>
@@ -139,7 +91,8 @@ Go <u>[here](https://www.kaggle.com/code/suneku/voice-changer-public)</u>
 It has a rough tutorial included, needs cell phone number verification and longer to set up, but once you have it, it is worth it. On Kaggle there should be an option to import from Colab, which would be the fastest way to set it up
 
 ***
-## 3. Virtual Audio Cable Download
+
+## Virtual Audio Cable
 
 #### A Virtual Audio Cable (VAC) is what you need to use the voice changer on Discord & Games.
 
@@ -160,17 +113,71 @@ or
 
 ***
 
-## 4. Opening
+## Windows
+
+- Download based on your GPU. You don't know what GPU you have? Open Task Manager > Performance tab and check for your GPU0 and GPU1 names. Prioritize the Nvidia one if you have one, else use the other.
+
+<img src="../wokada-img/cap.png" alt="image" width="600" height="auto">
+
+####
+!!!
+Use Online Hosted if you have an integrated GPU (AMD Radeon Graphics ; AMD Radeon Vega ; Intel UHD) and if you do not have a GPU at all
+!!!
+***
+
+### Download NVIDIA on Windows
+
+- The lastest version as of December 7th 2024 is: <u>[nvidia-b2332 (click here to download)](https://huggingface.co/Shadicti/deiteris-Fork/blob/main/voice-changer-windows-nvidia-b2332.zip)</u>
+
+!!!danger
+If you have a GTX 700 card or below, use AMD/Intel version instead.
+!!!
+
+***
+### Download NVIDIA RTX 5000-series on Windows
+
+- NVIDIA RTX-5000 series, the newest release of GPU's, require a separate download. You do not need it if you have an older GPU, follow the normal Nvidia link in that case. <u>[nvidia-5000-Series (click here to download)](https://github.com/IllIlIlIllIl/voice-changer/releases/tag/b2335)</u>
+
+!!!danger
+Download all 3 files, then extract the .zip file, it will automatically extract ALL 3 FILES into one. Then open the `MMVCServerSIO` folder and run `MMVCServerSIO.exe` (or called `MMVCServerSIO` if you don't have extensions activated).
+!!!
+
+***
+### Download AMD, INTEL and CPU on Windows
+
+- The lastest version as of December 7th 2024 is: <u>[dml-b2332 (click here to download)](https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-windows-amd64-dml.zip)</u>
+
+!!!danger
+Intel UHD Graphics do NOT work at this point in time. Use Online Alternative.
+!!!
+
 ***
 ### Opening on Windows
+
 - First Make sure you have <u>[7zip](https://www.7-zip.org/)</u> or <u>[WinRAR](https://www.win-rar.com/download.html)</u> for extracting / unzipping.
 
 - After the download, you extract the zip file. You open the folders until you see an exe application called `MMVCServerSIO` and run that.
 
 - If nothing opens after a while of codes loading in, then open a browser and type in `http://127.0.0.1:18888/`. This is a local URL, it runs on the WebUI.
 
+
+***
+## Mac
+
+
+***
+### Download Mac Silicon
+
+- The lastest version as of December 7th 2024 is: <u>[arm-b2332 (click here to download)](https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-macos-arm64-cpu.tar.gz)</u>
+
+***
+### Download Mac Intel
+
+- The lastest version as of December 7th 2024 is: <u>[macos-amd-b2332 (click here to download)](https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-macos-amd64-cpu.tar.gz)</u>
+
 ***
 ### Opening on Mac
+
 - Double click the voice-changer-macos-arm64-cpu.tar.gz file. The voice changer will unpack and the MMVCServerSIO folder will appear.
 
 - Open the extracted MMVCServerSIO folder.
@@ -190,17 +197,41 @@ For example, if you extracted the voice changer to your desktop, the command may
 !!!warning
 If nothing opens, then open a browser and type in `http://127.0.0.1:18888/`. This is a local URL, it runs on the WebUI.
 !!!
+
 ***
-### Opening on Multi PC Setups
+## Linux
+
+- For NVIDIA, you need to download both these files:
+
+https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-linux-amd64-cuda.tar.gz.aa
+
+https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-linux-amd64-cuda.tar.gz.ab
+
+- For AMD, you need to download both these files:
+
+https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-linux-amd64-rocm.tar.gz.aa
+
+https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-linux-amd64-rocm.tar.gz.ab
+
+
+Install `portaudio` with `sudo yum -y install portaudio`. Installation of CUDA Toolkit or AMD **HIP SDK is NOT REQUIRED**. All other necessary libraries are bundled with the application.
+I'm not sure about the capabilities of UI tar archive extractors, but you can extract these archive parts with the following command that will merge them and extract: `cat voice-changer-linux-amd64-cuda.tar.gz.* | tar xzf -` (change **cuda** to **rocm** if necessary).
+
+
+***
+## Opening on Multi-PC Setups
+
 - Create a file named `.env` on the same folder where `MMVCServerSIO.exe` is located. Open it up with a notepad, copy paste the settings from the <u>[GitHub link](https://github.com/deiteris/voice-changer/issues/180#issuecomment-2359166278)</u>.
 
 - After that, you create another file with the file extension ending `.bat`, open it up with a notepad, copy paste what is needed in there again from the <u>[GitHub link](https://github.com/deiteris/voice-changer/issues/180#issuecomment-2359166278)</u>. 
 
 
 - Now run the bat file. After it starts, you should be able to open the link. For example, if you specified `HOST=192.168.0.1` and `ALLOWED_ORIGINS='["https://192.168.0.1:18888"]')`, you should be able to open `https://192.168.0.1:18888` in your browser and use the voice changer UI from other machines in your local network.
+
 ***
-## 5. Voice models
+## Voice Models
 ***
+
 ### Adding Models
 
 <img src="../wokada-img/edit.png" alt="image" width="430" height="auto">
@@ -217,9 +248,11 @@ If nothing opens, then open a browser and type in `http://127.0.0.1:18888/`. Thi
 
 If you wish to delete a model, you can overwrite the slot with a new model. If you insist on fully emptying a slot for whatever reason, head over to the `model_dir` folder, open the folder of the slot number you want to delete, and delete the model from that folder
 
+
 ***
-## 6. Audio Setup
+## Audio Setup
 ***
+
 ### Discord & Games
 
 On the voice changer app wokada, you select:
@@ -235,6 +268,7 @@ On discord and games, you select:
 
 For Linux, read the Virtual Cable step
 
+***
 ### Client and Server Setup
 
 Audio: `CLIENT`
@@ -254,8 +288,6 @@ ASIO > WASAPI > MME as a general thumbrule (this also affects delay)
 
 Sometimes Client does not work, then use SERVER with prefix "MME" or "Windows WASAPI". You can not use the in-built noise suppression and echo fix if you use SERVER.
 
-***
-## 7. Settings
 ***
 ### Settings Explained
 ***
@@ -287,8 +319,24 @@ Sometimes Client does not work, then use SERVER with prefix "MME" or "Windows WA
 - `Sup1:` Noise suppression but weaker, not recommended to use this at all, because it barely has any impact whilst reportedly, making the voice inconsistent
 
 - `Echo:` if you experience echo issues despite having sup2, In. Sens to the right and having lowered your windows system value, then this will help you as a last resort
+
 ***
-### Finding my Best Settings
+## Settings
+
+***
+### Advanced Settings
+
+- Protocol: sio
+- Crossfade length: 0.1 or 0.15 (0.1 for fastest voice, 0.15 for improved quality but increases delay by 50 ms. It is NOT recommended to go below 0.1)
+- SilenceFront: kinda useless, doesn't matter what you select here. On to reduce GPU usage when you are not speaking into the microphone by a few percentages
+- Force FP32 mode: on (THIS IS OFF BY DEFAULT! Turning this on improves stability. Increases VRAM usage by 200 MB)
+- Disable JIT compilation: off for faster loading speed of the program, on for slightly better performance (10-15 ms) for Nvidia only)
+- Convert to ONNX: No for Nvidia, Maybe for AMD/Intel GPUs. It is generally not needed anymore, but it may help AMD/Intel GPUs slightly
+- Protect: 0.5 for normal usage, 0.33 if you use index. Index is not recommended to use at all but keep this in mind
+
+***
+### Finding my own settings for Chunk
+
 First start with 500 ms, check what number your perf is and go closer to that number but not lower.
 
 Example: if your perf is 200, go down to 250 with your chunk. Chunk affects perf value, and Extra as well.
@@ -306,8 +354,8 @@ If your perf value is yellow, your selected chunk is enough, but audio may be un
 If your perf value is red, the voice changer is unstable. Increase chunk size or reduce Extra.
 
 ***
-### Best Settings
-***
+### Known working settings for Chunk and Extra
+
 +++ NVIDIA
 
 ||| GPU
@@ -497,9 +545,40 @@ fcpe ; for chunk check the perf number and add 50 to it ; 2.7s extra
 rmvpe_onnx + 260 ms + 0.6s extra
 |||
 +++ 
+
 ***
-## Extra
+## Extras
 ***
+
+### Information
+
+!!! What's the best choice for AMD users?
+This fork is a lot better for AMD GPU's compared to the original w-okada. On the original it requires converting models to onnx models which is annoying, requires more CPU and GPU resources, has a lot more delay and other little inconveniences/bugs.
+
+Example: AMD RX 6650 XT lowest latency is 298 ms chunk on original w-okada. On this fork lowest latency is around 60 - 80 ms chunk
+!!!
+
+!!! Which is better for NVIDIA mainline w-okada or Deiteris' fork?
+Deiteris' fork is better for NVIDIA users who normally use the prebuilt w-okada version, because this version uses GPU accelerated extra compared to the original which uses CPU.
+
+For the RTX GPUs the delay performance differences are minimal, but quality performance is better. For older cards like GTX or MX, this fork performs better in all aspects.
+
+Example: NVIDIA RTX 3070 on prebuilt w-okada reaches 170 - 213 ms chunk latency. On manually set up environment of w-okada reaches 42 ms chunk latency. On this fork it can reach 30 - 38 ms chunk latency, depending on the extra set. Keep in mind these are settings tested to the max, without a video game or intense operations running in the background
+!!!
+
+***
+### Reduce more Delay 
+
+!!! Reducing more delay with WASAPI guide
+https://rentry.co/LessDelayWasapi
+!!!
+
+!!! Reducing more delay with ASIO guide. This can slightly decrease more delay but more to set up
+https://rentry.co/lessdelayasio
+!!!
+
+***
+
 ### Models to try
 
 - You will need to connect your account to <u>[weights.gg](http://weights.gg/)</u> to be able to download these models
@@ -516,19 +595,11 @@ rmvpe_onnx + 260 ms + 0.6s extra
 [Bob Ross voice made by dieseldog34](https://www.weights.gg/models/clm72t7ra0qqhcctc4zyax181)
 
 [Markiplier voice made by hobqueer](https://www.weights.gg/models/clm72nuvi0c8scctcvzrckuqp)
-***
-### Reduce more Delay 
 
-!!! Reducing more delay with WASAPI guide
-https://rentry.co/LessDelayWasapi
-!!!
-
-!!! Reducing more delay with ASIO guide. This can slightly decrease more delay but more to set up
-https://rentry.co/lessdelayasio
-!!!
 ***
 ## Help
 ***
+
 After you start the program for the first time and it finished downloading files: if it says Failed to download or verify: ... followed by "Press Enter to continue" at the end, then the pretrain download failed. This can happen randomly. Here is what you will need to do:
 !!! Fix
 Go to the "pretrain" folder in the MMVCServerSIO folder.
@@ -541,11 +612,7 @@ Copy paste everything from this Google Drive inside the pretrain folder.
 
 Then run MMVCServerSIO.exe again, this time it should work
 !!!
-***
-### Troubleshooting
-***
-There is an in-depth section on troubleshooting, please check out <u>[Troubleshooting on Github](https://github.com/deiteris/voice-changer/blob/master-custom/README.md#troubleshooting)</u>
-***
+
 ### Crackle Fix
 Open Task Manager > Details
 
@@ -554,6 +621,10 @@ Right click `audiodg.exe` and set priority to `High`
 Right click `audiodg.exe` again > set affinity > uncheck everything except CPU 2 (only ✅ CPU 2, turn off the rest)
 
 With a program called ProcessLasso you can automate this to always be active, since Windows resets these sometimes.
+Or you can open up CMD/Powershell (or make a bat file) and type in:
+
+`powershell "ForEach($PROCESS in GET-PROCESS audiodg) { $PROCESS.ProcessorAffinity=4; $PROCESS.PriorityClass='High' }"`
+
 ***
 ### Discord Crackle Fix
 Make sure to do the Crackle Fixes in this step before doing this to see if it fixes your issue
@@ -562,9 +633,31 @@ If the voice sounds fine in the app AND it sounds fine in games, but ONLY sounds
 
 - Turn off Echo Cancellation
 - Turn off Noise Suppression (sometimes causes issues, maybe not. Check for yourself)
+
 ***
+## FAQ
+***
+### Why does it run in a browser and not it's own window?
 
+Because it uses a Web User Interface (WebUI) coded in JavaScript & TypeScript, the majority of AI programs are designed to run on the browser since it can be used both on cloud and locally (on your pc), and it can also resolve some performance issues. The original wokada also ran on a WebUI, just that it made it's own window
 
+***
+### What browser should I use?
+
+It's better you try and test, some people had issues on Chrome, some others on Firefox, it might depend on the settings you use and also Java/Type Script having issues. The browser that usually is reported by most people to have issues is OperaGX, which is why we don't suggest it much
+
+***
+### Why are most YouTube (Video) Tutorials old? Is there going to be an updated one?
+
+YouTube Tutorials take way more time to make, and get outdated easily in this case, as AI progresses fast and continues to change in better, with more different settings and versions. Written guides are easier to update, since you don't have to remake an entire video. It's unknown if we will ever release a video since they easily get outdated, but if we will, it will be linked inside of this guide.
+
+***
+### Do I need an extremely expensive mic for good quality?
+
+We had a conversation about this in https://discord.com/channels/1159260121998827560/1159290161683767298/1352325982689951765 & https://discord.com/channels/1159260121998827560/1159290161683767298/1356265862704926907,
+RVC works by downsampling your audio voice to 16khz because f0 estimators only works at that sample rate, after that the model outputs the results using it's original sample rate (without any upscaling). So there won't be the need of having a super extremely expensive, a decent one should do the job.
+
+***
 ###### ‎
 :::content-center
 #### `You have reached the end.`

@@ -21,7 +21,16 @@ order: 4000
 
 - Because of its user-friendly experience & active development, it's considered to be one of the best forks.     
 
-- It also has a <u>[cloud version](https://colab.research.google.com/github/iahispano/applio/blob/master/assets/Applio.ipynb)</u>, in case you don't meet the <u>[requirements](https://docs.ai-hub.wtf/essentials/whats-rvc/#what-are-the-requirements-for-rvc-locally/)</u> to run it locally.     
+- It also has a <u>[cloud version](https://colab.research.google.com/github/iahispano/applio/blob/master/assets/Applio.ipynb)</u>, in case you don't meet the <u>[requirements](https://docs.ai-hub.wtf/essentials/whats-rvc/#what-are-the-requirements-for-rvc-locally/)</u> to run it locally.   
+***
+#### Are RVC Models Safe?
+
+RVC Models are PyTorch Models, a Python library used for AI.
+PyTorch uses serialization via Pythons' Pickle Module, converting the model to a file.
+Since pickle can execute arbitrary code when loading a model, it could be theoretically used for malware, but this fork has a **built-in feature to prevent code execution along the model.**
+Also, **HuggingFace has a <u>[Security Scanner](https://huggingface.co/docs/hub/security-pickle#hubs-security-scanner)</u>** which scans for any unsafe pickle exploits and uses also ClamAV for scanning dangerous files.
+***
+
 ‎      
 #### Pros & Cons :icon-tasklist:
 ==- *Learn more*

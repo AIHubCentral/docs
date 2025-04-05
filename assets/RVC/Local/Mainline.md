@@ -27,7 +27,6 @@ order: 5000
 ||| ✔️ **PROS** 
 - Easy to install.                   
 - Simpler to use.     
-- A bit faster compared w/ other forks. 
 ||| ❌ **CONS** 
 - Has less features.     
 - Doesn't include <u>[Mangio-Crepe</u>](https://docs.ai-hub.wtf/rvc/resources/inference-settings/#pitch-extraction-algorithm).      
