@@ -39,7 +39,12 @@ order: 1000
 
 - Overtraining also know as overfitting is where the model doesn't actually learn the underlying patterns of the data and memorizes them instead. 
 
-- Some signs of overfitting are when the sibilances are robotic, when the graphs in the Tensorboard are going up or when the model is unable to produce high end harmonics.
+- Some signs of overfitting are when the sibilances are robotic, when the graphs in the <u>[Tensorboard](https://docs.aihub.gg/rvc/resources/training/#tensorboard)</u> are going up or when the model is unable to produce high end harmonics because it's learning your dataset to well and your dataset doesn't have these high end harmonics. 
+
+<img src="../tensorboard-img/overtrained.png" alt="image" width="1000" height="700">‎
+
+This image is a bit extreme but it gives you a good idea. If you notice your model is poorly creating high end harmonics try using a model several epochs back.
+
 
 
 ***
@@ -365,15 +370,15 @@ The third and final choice is RefineGAN, this is an entirely different GAN then 
 
 - TensorBoard is a tool that allows you to visualize & measure the training of an AI model, through graphs & metrics.
 
-- It's specially useful for determining when to stop training a voice model, since with it you can detect when the <u><u>[overtraining</u>](https://docs.ai-hub.wtf/rvc/resources/epochs--tensorboard/#overtraining)</u> point begins.    
+- It's specially useful for determining when to stop training a voice model, since with it you can detect when the <u><u>[overtraining</u>](https://docs.aihub.gg/rvc/resources/training/#epochs--overtraining)</u> point begins.    
 
 - Because of this, TB is the most convenient tool for RVC users for perfecting a voice model.     
 ***
 ###### ‎
 ### :icon-chevron-down: Installing & Opening
 
-!!!success
-For <u>[RVC Disconnected</u>](https://docs.ai-hub.wtf/rvc/cloud/rvc-disconnected/) users, ignore this, it opens up by itself when you start training.
+!!! Applio Users 
+If you use Applio you don't have to follow these installation steps. Just run `run-tensorboard.bat`.
 !!!
 
 ###### ‎       
@@ -529,14 +534,6 @@ Is a mel spectrogram view of audio from your dataset.
 <img src="../tensorboard-img/mel_og.png" alt="image" width="700" height="700">‎ 
 
 ***
-#### :icon-chevron-down: <u>Poor Generalization</u>
-***
-Another way to tell if a model is overtraining is if the model is unable to produce clear high end harmonics.
-
-<img src="../tensorboard-img/overtrained.png" alt="image" width="1000" height="700">‎
-
-This image is a bit extreme but it gives you a good idea. If you notice your model is poorly creating high end harmonics try using a model several epochs back.
-
 +++
 
 

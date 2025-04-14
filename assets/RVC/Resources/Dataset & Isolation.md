@@ -253,7 +253,7 @@ Click the `Start processing` button at the bottom. And that will be all.
 
 Extraction | Process Method | Model
 :---: | :---: | :---:
-Vocals/Instrumental | MDX-Net | Unwa's big mel roformer beta 4
+Vocals | MDX-Net | Gabox's voc_fv4
 De-Reverb | VR | Anvuew mel dereverb v2
 Extract Backing Vocals | VR | Mel roformer karaoke
 De-Noise | VR | Mel denoiser 
@@ -358,8 +358,13 @@ b. Download the result located in the output folder.
 ***
 ===
 
-- #### The best model for this change a lot so it's best you look <u>[here](https://docs.google.com/spreadsheets/d/1pPEJpu4tZjTkjPh_F5YjtIyHq8v0SxLnBydfUBUNlbI/edit?usp=sharing)</u>, but as of `12/12/2024` these are the best: 
-<img src="../clouduvr-img/6.png" alt="image" width="900" height="auto">‎
+Extraction | Model
+:---: | :---:
+Vocals | Gabox's voc_fv4
+De-Reverb | Anvuew mel dereverb v2
+Extract Backing Vocals | Mel roformer karaoke
+De-Noise | Mel denoiser 
+
 
 ‎
 ### Troubleshooting :icon-tools:
@@ -428,7 +433,7 @@ b. Playable audios will then appear in the output boxes below. To download the o
 
 ==- *I couldn't find my answer.*
 ###### ‎   
-- Report your issue <u>[here](https://docs.ai-hub.wtf/rvc/#contributions)</u>.
+- Report your issue <u>[here](https://docs.aihub.gg/contributions/)</u>.
 ===
 
 ==- Errors
