@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.7.0.797962827018">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.7.0.799024503298">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.7.0">
@@ -34,11 +34,11 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../../img/b.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.7.0.797962827018" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.7.0.799024503298" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.7.0.797962827018" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.7.0.799024503298" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.7.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.7.0.797962827018" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.7.0.799024503298" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -811,13 +811,13 @@ I&#x27;m not sure about the capabilities of UI tar archive extractors, but you c
     </h3>
 </doc-anchor-target>
 <ul>
-<li>Protocol: sio</li>
+<li>Protocol: rest</li>
 <li>Crossfade length: 0.1 or 0.15 (0.1 for fastest voice, 0.15 for improved quality but increases delay by 50 ms. It is NOT recommended to go below 0.1)</li>
-<li>SilenceFront: kinda useless, doesn&#x27;t matter what you select here. On to reduce GPU usage when you are not speaking into the microphone by a few percentages</li>
+<li>SilenceFront: Reduce GPU usage when idle. This only reduces GPU resources when you&#x27;re not talking or making sounds</li>
 <li>Force FP32 mode: on (THIS IS OFF BY DEFAULT! Turning this on improves stability. Increases VRAM usage by 200 MB)</li>
 <li>Disable JIT compilation: off for faster loading speed of the program, on for slightly better performance (10-15 ms) for Nvidia only)</li>
-<li>Convert to ONNX: No for Nvidia, Maybe for AMD/Intel GPUs. It is generally not needed anymore, but it may help AMD/Intel GPUs slightly</li>
-<li>Protect: 0.5 for normal usage, 0.33 if you use index. Index is not recommended to use at all but keep this in mind</li>
+<li>Convert to ONNX: Reduces delay and slightly reduces gpu usage. Enabling this increases CPU usage by around 5-10%. Reduces the quality of the voice a bit. If you decide to enable this, pair it with rmvpe_onnx for even less delay</li>
+<li>Protect: Reduces the occurrence of robotic sibilants and robotic breathing, but also reduces the effect of the index file. Lower values increase this protection, higher values decrease it. The default value is 0.5, which means that the protection is disabled, reduce this value to 0.33 to enable it</li>
 </ul>
 <hr>
 <doc-anchor-target id="finding-my-own-settings-for-chunk">
@@ -841,6 +841,27 @@ I&#x27;m not sure about the capabilities of UI tar archive extractors, but you c
         <span>Known working settings for Chunk and Extra</span>
     </h3>
 </doc-anchor-target>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>These settings are intentionally higher than what your GPU is capable of</h5>
+<p>If you are playing a video game with the voice changer, you will have to increase the chunk higher than what you usually can handle.
+This is because the game runs on GPU and the voice changer aswell. The game will always take higher priority by default, so the listed settings are safe options that should run with most games.
+If you run into issues, you will need to lower quality and limit your FPS, or increase chunk. It is best to first tweak your game&#x27;s settings first</p>
+<p>It is recommended to go up to Finding my own settings after you are comfortable with the program</p>
+        </div>
+    </div>
+</div>
 <doc-tabs>
 <doc-tab v-cloak id="nvidia">
 <template #title>NVIDIA</template>
