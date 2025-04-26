@@ -326,13 +326,13 @@ Sometimes Client does not work, then use SERVER with prefix "MME" or "Windows WA
 ***
 ### Advanced Settings
 
-- Protocol: sio
+- Protocol: rest
 - Crossfade length: 0.1 or 0.15 (0.1 for fastest voice, 0.15 for improved quality but increases delay by 50 ms. It is NOT recommended to go below 0.1)
-- SilenceFront: kinda useless, doesn't matter what you select here. On to reduce GPU usage when you are not speaking into the microphone by a few percentages
+- SilenceFront: Reduce GPU usage when idle. This only reduces GPU resources when you're not talking or making sounds
 - Force FP32 mode: on (THIS IS OFF BY DEFAULT! Turning this on improves stability. Increases VRAM usage by 200 MB)
 - Disable JIT compilation: off for faster loading speed of the program, on for slightly better performance (10-15 ms) for Nvidia only)
-- Convert to ONNX: No for Nvidia, Maybe for AMD/Intel GPUs. It is generally not needed anymore, but it may help AMD/Intel GPUs slightly
-- Protect: 0.5 for normal usage, 0.33 if you use index. Index is not recommended to use at all but keep this in mind
+- Convert to ONNX: Reduces delay and slightly reduces gpu usage. Enabling this increases CPU usage by around 5-10%. Reduces the quality of the voice a bit. If you decide to enable this, pair it with rmvpe_onnx for even less delay
+- Protect: Reduces the occurrence of robotic sibilants and robotic breathing, but also reduces the effect of the index file. Lower values increase this protection, higher values decrease it. The default value is 0.5, which means that the protection is disabled, reduce this value to 0.33 to enable it
 
 ***
 ### Finding my own settings for Chunk
@@ -355,6 +355,14 @@ If your perf value is red, the voice changer is unstable. Increase chunk size or
 
 ***
 ### Known working settings for Chunk and Extra
+
+!!! These settings are intentionally higher than what your GPU is capable of
+If you are playing a video game with the voice changer, you will have to increase the chunk higher than what you usually can handle.
+This is because the game runs on GPU and the voice changer aswell. The game will always take higher priority by default, so the listed settings are safe options that should run with most games.
+If you run into issues, you will need to lower quality and limit your FPS, or increase chunk. It is best to first tweak your game's settings first
+
+It is recommended to go up to Finding my own settings after you are comfortable with the program
+!!!
 
 +++ NVIDIA
 

@@ -60,6 +60,26 @@ order: 2000
 ***
 ###### ‎
 ***
+## Dia TTS
+- Dia generates high quality English only dialogue from a transcript.
+
+- Dia can create nonverbal sounds like laughter, coughing, clearing throat, etc.
+
+- It can be used either locally or on the cloud.
+
+ +++ :icon-device-desktop: ‎ LOCAL
+ - :icon-repo-forked: <u>[Offical github repo](https://github.com/nari-labs/dia)</u>
+
+ +++ :icon-cloud: ‎ CLOUD
+
+- :icon-rocket: <u>[HuggingFace Space](https://huggingface.co/spaces/nari-labs/Dia-1.6B)</u>
+
+ +++
+
+
+***
+###### ‎
+***
 ## Edge TTS
 ***
 - This is Microsoft Edge TTS, which is good **quality**, multilingual & works great on long sentences. 

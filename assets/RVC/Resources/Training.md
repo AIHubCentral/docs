@@ -51,7 +51,7 @@ This image is a bit extreme but it gives you a good idea. If you notice your mod
 :::content-center
 ## Batch Size
 :::
-A batch size is the number of training examples used in one iteration before updaing the model's parameters. For 30+ minutes of data batchsize 8 is recommended and for less than 30 minutes batchsize 4 is recommended.
+A batch size is the number of training examples used in one iteration before updaing the model's parameters. For 30+ minutes of data batch size 8 is recommended and for less than 30 minutes batch size 4 is recommended.
 
 - Smaller batch size:
     - Promotes noisier, less stable gradients.
@@ -378,11 +378,11 @@ The third and final choice is RefineGAN, this is an entirely different GAN then 
 ### :icon-chevron-down: Installing & Opening
 
 !!! Applio Users 
-If you use Applio you don't have to follow these installation steps. Just run `run-tensorboard.bat`.
+#### If you use Applio you don't have to follow these installation steps. Just run `run-tensorboard.bat`. These installation steps are only for local mainline RVC users.
 !!!
 
 ###### ‎       
-1. Download this file & move it inside RVC's folder. Ensure the file path doesn't contain spaces/special characters.
+1. Download this file & move it inside mainline RVC's folder. Ensure the file path doesn't contain spaces/special characters.
   
     [!file](./tensorboardfiles/TensorVENV.bat)    
 ###### ‎

@@ -254,6 +254,7 @@ Click the `Start processing` button at the bottom. And that will be all.
 Extraction | Process Method | Model
 :---: | :---: | :---:
 Vocals | MDX-Net | Gabox's voc_fv4
+Instrumental | MDX-Net | INST Gabox V7
 De-Reverb | VR | Anvuew mel dereverb v2
 Extract Backing Vocals | VR | Mel roformer karaoke
 De-Noise | VR | Mel denoiser 
@@ -361,6 +362,7 @@ b. Download the result located in the output folder.
 Extraction | Model
 :---: | :---:
 Vocals | Gabox's voc_fv4
+Instrumental | INST Gabox V7
 De-Reverb | Anvuew mel dereverb v2
 Extract Backing Vocals | Mel roformer karaoke
 De-Noise | Mel denoiser 

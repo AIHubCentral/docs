@@ -60,23 +60,41 @@ b. Verify your acount with a phone number so you can turn on the "internet" opti
 ***  
 
 ###### ‎  
-## Clone and Notebook Setup
+## Notebook Creation & Setup
 ###### ‎  
 #### 2. <u>Clone Notebook</u>
-a. Go to <u>[Applio's notebook](https://www.kaggle.com/code/deiant/applio)</u> and click "Copy and Edit"
+a. Go to <u>[Kaggle](https://www.kaggle.com)</u> and click "Create" then "New Notebook" at the top left. 
 
-   <img src="../applio-kaggle-img/applio.png" alt="image" width="1000" height="auto"> 
+   <img src="../applio-kaggle-img/new.png" alt="image" width="400" height="auto"> 
 
-   
-b. Under session settings in the sidebar turn on "internet". Make sure persistance is on for both files and varibles.
+‎ 
+b. Under your session's name click "File" then "Import Notebook".
 
-   <img src="../applio-kaggle-img/kaggle-internet.png" alt="image" width="450" height="auto">     
-  
-c. Turn on T4 X2 GPUs in accelerator.           
+   <img src="../applio-kaggle-img/import.png" alt="image" width="450" height="auto">     
+
+‎   
+
+c. On the new window that appeared on the right click "Link" then type in the box this link `https://github.com/IAHispano/Applio/blob/main/assets/Applio_Kaggle.ipynb`.
+
+   <img src="../applio-kaggle-img/link.png" alt="image" width="700" height="auto"> 
+
+Click "Import" on the bottom right once you've done this.
+
+d. When it's done importing it will display this text window.
+
+   <img src="../applio-kaggle-img/settings-updated.png" alt="image" width="600" height="auto">
+
+‎  
+e. Under session settings in the sidebar turn on "internet". Make sure persistance is on for both files and varibles.
+
+   <img src="../kaggle-img/kaggle-internet.png" alt="image" width="" height=""> 
+
+f. Turn on T4 X2 GPUs in accelerator.           
 
    <img src="../kaggle-img/kaggle-gpu.png" alt="image" width="" height=""> 
-   
-d: (Optional) Turn on headless mode so you can run so you can run the GPU on all sessions and save your progress. Go to the top right and click "Save version" then open the advanced dropdown.
+
+‎ 
+g: (Optional) Turn on headless mode so you can run so you can run the GPU on all sessions and save your progress. Go to the top right and click "Save version" then open the advanced dropdown.
 
 <img src="../kaggle-img/kaggle-pers.png" alt="image" width="" height=""> 
 
