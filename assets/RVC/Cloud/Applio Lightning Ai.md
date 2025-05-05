@@ -2,7 +2,7 @@
 icon: chevron-right
 order: 2000
 ---
-``Last update: Nov 21, 2024`` 
+``Last update: May 5, 2025`` 
 ***
 :::content-center
 <img src="../lighting.ai/logo.png" alt="image" width="600">        

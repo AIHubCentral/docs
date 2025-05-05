@@ -2,7 +2,7 @@
 icon: home-fill
 ---
 # :icon-home-fill: Home
-``Last update: Oct 21, 2024``         
+``Last update: May 5, 2025``         
 ***
 :::content-center
 <img src=".\img\a.png" alt="image" width="345" height="auto">
@@ -32,7 +32,7 @@ icon: home-fill
 ***
 #### :icon-chevron-right: 🍏 [<u>Applio Guide](https://docs.ai-hub.wtf/rvc/local/applio/)</u>
 ***
-#### :icon-chevron-right: :icon-broadcast: <u>[Deiteris' W-okada Guide](https://docs.aihub.gg/RVC-Voice-Changer/local/Deiteris'-W-Okada-Fork/)</u>
+#### :icon-chevron-right: :icon-broadcast: ‎ <u>[Deiteris' W-okada Guide](https://docs.aihub.gg/RVC-Voice-Changer/local/Deiteris'-W-Okada-Fork/)</u>
 
 
 !!!
