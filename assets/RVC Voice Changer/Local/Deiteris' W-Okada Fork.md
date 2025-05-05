@@ -643,6 +643,14 @@ If the voice sounds fine in the app AND it sounds fine in games, but ONLY sounds
 - Turn off Noise Suppression (sometimes causes issues, maybe not. Check for yourself)
 
 ***
+### GPU Idling
+Sometimes your GPU will start idling after the program is in the background for a while and affect performance. 
+
+
+- In the folder where w-okada is located there should be a .bat file called `force_gpu_clocks.bat`, run that and it should fix your gpu idling.
+- Once you no longer want your gpu clock speed to be forced anymore you can run `reset_gpu_clocks.bat`.
+
+***
 ## FAQ
 ***
 ### Why does it run in a browser and not it's own window?

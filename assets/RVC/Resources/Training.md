@@ -63,7 +63,7 @@ A batch size is the number of training examples used in one iteration before upd
     - Promotes smoother, more stable gradients.
     - Can beneficial in cases where your dataset is big and diverse.
     - Can lead to early overtraining or flat / 'stuck' graphs.
-    - Generalization might be worsened
+    - Generalization might be worsened.
 
 ***
 :::content-center
@@ -155,7 +155,7 @@ KLM 4.2 maintains the same highly extensive pitch range as before and was develo
     - <u>[**G Download**](https://huggingface.co/SeoulStreamingStation/KLM4.2/resolve/main/G_KLM42_32k_x10.pth?download=true)</u>
 
 |||
-||| KLM 4 by SeoulStreamingStation
+||| KLM 4 by SeoulStreamingStation :icon-star-fill:
 KLM 4 is the final HiFi-GAN pretrain that is going to be made by SSS. This version of klm is like all of the others but it follows the original structure of training and contains noise in the dataset so it can handle it better. This was trained with 800 hours of data, with a large portion of it being in Korean.
 
 - **32k Download:**

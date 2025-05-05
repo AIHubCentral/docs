@@ -35,7 +35,7 @@ visibility:
     - #### :icon-repo-forked: <u>[Applio](https://applio.org/)</u>
         - ##### :icon-cloud: <u>[Applio Colab](https://colab.research.google.com/github/iahispano/applio/blob/master/assets/Applio.ipynb)</u>
         - ##### :icon-cloud: <u>[Applio Kaggle](https://www.kaggle.com/code/deiant/applio)</u>
-        - ##### :icon-cloud: <u>[Applio Lighting Ai](https://lightning.ai/guilhermecardoso1/studios/applio-latest?section=all&query=applio)</u>
+        - ##### :icon-cloud: <u>[Applio Lightning Ai](https://lightning.ai/guilhermecardoso1/studios/applio-latest?section=all&query=applio)</u>
     ###### ‎ 
     {.list-icon} 
     - #### :icon-repo-forked: <u>[Codename Fork](https://github.com/codename0og/codename-rvc-fork-3)</u>

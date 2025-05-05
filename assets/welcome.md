@@ -31,6 +31,9 @@ icon: home-fill
 #### :icon-chevron-right: :icon-info: ‎ [<u>What's RVC](https://docs.ai-hub.wtf/essentials/whats-rvc/)</u>
 ***
 #### :icon-chevron-right: 🍏 [<u>Applio Guide](https://docs.ai-hub.wtf/rvc/local/applio/)</u>
+***
+#### :icon-chevron-right: :icon-broadcast: <u>[Deiteris' W-okada Guide](https://docs.aihub.gg/RVC-Voice-Changer/local/Deiteris'-W-Okada-Fork/)</u>
+
 
 !!!
 ***

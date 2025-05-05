@@ -301,6 +301,7 @@ De-Noise | VR | Mel denoiser
 2. To use RX 11 it is **STONGLY** recommended that you read this <u>[guide](https://rentry.co/RVC-dataset-RX11)</u> on RX 11.
 
 +++ Colab
+
 :::content-center
 ## Cloud UVR
 :::
@@ -405,7 +406,7 @@ b. Once it's done uploading, in **CHOOSE PROCESS METHOD**, select ``BS/Mel Rofor
 ‎ 
 #### 3. Select model
 ###### ‎  
-d. Check the <u>[model list](https://docs.ai-hub.wtf/rvc/resources/vocal-isolation/#best-models)</u> & in **CHOOSE MODEL** pick the one according to what you need to remove.    
+d. Check the best models list & in **CHOOSE MODEL** pick the one according to what you need to remove.    
 ‎       
 If you need to remove multiple noises, follow this pipeline for the best results:   
 ``Remove instrumental -> Remove reverb -> Extract main vocals -> Remove noise``  
@@ -448,6 +449,19 @@ ZeroGPU HuggingFace Spaces have a quota per account, if you aren’t signed in y
 - Wait
 - Pay to be an HuggingFace PRO Member to get X5 times more quota
 ===
+
+***
+### Best Models
+***
+
+Extraction | Model
+:---: | :---:
+Vocals | Gabox's voc_fv4
+Instrumental | INST Gabox V7
+De-Reverb | Anvuew mel dereverb v2
+Extract Backing Vocals | Mel roformer karaoke
+De-Noise | Mel denoiser 
+
 
 +++ MVSEP  
 
