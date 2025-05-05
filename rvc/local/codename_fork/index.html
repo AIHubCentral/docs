@@ -6,10 +6,10 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.7.0.799024503298">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.8.0.799782140968">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 3.7.0">
+    <meta name="generator" content="Retype 3.8.0">
 
     <!-- Primary Meta Tags -->
     <title>Codename Fork</title>
@@ -34,11 +34,11 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../../img/b.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.7.0.799024503298" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.8.0.799782140968" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.7.0.799024503298" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.7.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.7.0.799024503298" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.8.0.799782140968" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.8.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.8.0.799782140968" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -140,7 +140,7 @@
     
         <div class="container relative flex bg-white">
             <!-- Sidebar Skeleton -->
-            <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-gray-100 border-gray-200 sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton dark:bg-dark-800 dark:border-dark-650">
+            <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-white border-gray-200 sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton dark:bg-dark-800 dark:border-dark-650">
             
                 <div class="flex items-center h-16 px-6">
                     <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-white border border-gray-200 rounded shadow-none text-sm focus:outline-none focus:border-gray-600 dark:bg-dark-600 dark:border-dark-600" type="text" placeholder="Filter">
@@ -299,16 +299,12 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
     <div class="px-5 py-3 docs-columns-content border-r border-gray-200 dark:border-dark-650">
 <ul>
 <li>All of the pros of Applio.</li>
-<li>Supports MRF HiFi-GAN</li>
-<li>Supports RefineGAN</li>
 <li>Has a Warmup Phase option</li>
-<li>Uses the RAdam optimizer</li>
+<li>Uses the Ranger25 optimizer</li>
 <li>Avg running loss</li>
-<li>44.1k Sample rate support</li>
 <li>Mel similarity metric</li>
 <li>SoX resampler</li>
-<li>Checkpointing</li>
-<li>Improved inplace</li>
+<li>fcpe training</li>
 </ul>
     </div>
     <div class="px-5 py-3 docs-columns-content">
@@ -360,15 +356,6 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
 </doc-anchor-target>
 </div>
 <hr>
-<doc-anchor-target id="441k-sample-rate">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#441k-sample-rate">#</doc-anchor-trigger>
-        <span>44.1k Sample Rate:</span>
-    </h3>
-</doc-anchor-target>
-<p>Under Training there is the option to use 44.1k as your trainng sample rate, however there are currently no pretrains for it.</p>
-<img src="../codename-img/sr.png" alt="image" width="550" height="auto"> 
-<hr>
 <doc-anchor-target id="mrf-hifigan--refinegan">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#mrf-hifigan--refinegan">#</doc-anchor-trigger>
@@ -379,8 +366,8 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
 <li>In the training section you are given the option to choose your vocoder
 <ul>
 <li>HiFi-GAN: the default vocoder for RVC.</li>
-<li>MRF HiFi-GAN: a version of HiFi-GAN with MRF instead of MPD and new loss functions. This has higher fidelity but <strong>only</strong> works with this fork and the latest non-precompiled version Applio.</li>
-<li>RefineGAN: an entirely new GAN which is in a experimental phase.</li>
+<li>MRF HiFi-GAN: a version of HiFi-GAN with MRF instead of MPD and new loss functions. This has higher fidelity but <strong>only</strong> works with this fork and the latest version Applio.</li>
+<li>RefineGAN: an entirely new GAN which is in a experimental phase. This only works with this fork and Applio.</li>
 </ul>
 </li>
 </ul>
@@ -392,7 +379,7 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
         <span>Warmup Phase:</span>
     </h3>
 </doc-anchor-target>
-<p>In the training section there is an option to enable a warmup phase and a slider to choose how long it lasts. <strong>Do not use this with RAdam since RAdam does this on its own.</strong></p>
+<p>In the training section there is an option to enable a warmup phase and a slider to choose how long it lasts. <strong>Do not use this with Ranger25 since Ranger25 does this on its own.</strong></p>
 <img src="../codename-img/warm.png" alt="image" width="1000" height="auto"> 
 <ul>
 <li>The warmup phase is where the learning rate (lr) linearly increased for a certain amount of epochs, this can be used to prevent large destabilizing updates in the early stages of training.
@@ -410,21 +397,20 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
 </doc-anchor-target>
 <p>While training it logs the average loss per epoch as the standard loss and rolling average loss over 5 epochs to evaluate general trends and the model&#x27;s performance over time.</p>
 <hr>
-<doc-anchor-target id="radam--optimizer">
+<doc-anchor-target id="ranger25--optimizer">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#radam--optimizer">#</doc-anchor-trigger>
-        <span>RAdam  Optimizer:</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#ranger25--optimizer">#</doc-anchor-trigger>
+        <span>Ranger25  Optimizer:</span>
     </h3>
 </doc-anchor-target>
-<p>This fork uses the RAdam (Rectified Adam) <u><a href="https://docs.ai-hub.wtf/extra/glossary/#Optim">optim</a></u> as the default optim instead of the AdamW optim.</p>
+<p>This fork uses the Ranger25 optimizer as the default optimizer instead of AdamW. Ranger25 does train a bit slower than AdamW. Ranger25 is a updated version of the Ranger21 optimizer but with RAdam&#x27;s core instead of AdamW&#x27;s core.</p>
 <ul>
 <li>Some of its key features are:
 <ul>
-<li>Automatically adapts the learning rate and warmup.</li>
-<li>Requires less hyperparameter tuning.</li>
+<li>Automatically adapts the warmup.</li>
 <li>More stable training.</li>
 <li>Better generalization.</li>
-<li>Minimal computational overhead.</li>
+<li>Quicker convergence.</li>
 </ul>
 </li>
 </ul>
@@ -438,6 +424,26 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
 <p>Checkpointing reduces the vram usage, requirement of computation and training speed by 20-30 percent. Enable it If you&#x27;re an user of a 4GB GPU or if you intend to use a bigger batch size than your gpu can handle.</p>
 <img src="../codename-img/check.png" alt="image" width="800" height="auto">
 <hr>
+<doc-anchor-target id="custom-lr-for-gen-and-disc">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#custom-lr-for-gen-and-disc">#</doc-anchor-trigger>
+        <span>Custom LR for gen and disc</span>
+    </h3>
+</doc-anchor-target>
+<p>In the training section under advanced there is a option to set a custom learning rate for both the generator and discriminator.</p>
+<p><img src="../codename-img/lr.png" alt="image" width="800" height="auto"> ‎</p>
+<ul>
+<li>This controls how quickly or slowly either the gen or disc learn.</li>
+</ul>
+<hr>
+<doc-anchor-target id="fcpe-training">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#fcpe-training">#</doc-anchor-trigger>
+        <span>FCPE Training</span>
+    </h3>
+</doc-anchor-target>
+<p>Fast Context-based Pitch Estimation (fcpe) is another f0 like rmvpe. The benafit of using this f0 is that it can add that &quot;human softness&quot; and can give models nicer end breaths. However fcpe is not as percise as rmvpe.</p>
+<hr>
 <doc-anchor-target id="upcoming-features">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#upcoming-features">#</doc-anchor-trigger>
@@ -447,7 +453,6 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
 <ul>
 <li>More / different configurable optimizers.</li>
 <li>Adjustable hop length for RMVPE.</li>
-<li>Custom initial learning rate per Generator and Discriminator.</li>
 <li>Custom gradient norm value ( from the ui level )</li>
 <li>Ability to delay / headstart the Generator or Discriminator.</li>
 <li>More warmup options ( Cosine anneal and so on ).</li>
