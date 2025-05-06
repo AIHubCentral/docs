@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.8.0.799782692050">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.8.0.799871519765">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.8.0">
@@ -34,11 +34,11 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../../img/b.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.8.0.799782692050" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.8.0.799871519765" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.8.0.799782692050" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.8.0.799871519765" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.8.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.8.0.799782692050" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.8.0.799871519765" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -1880,6 +1880,9 @@ This determines the depth of the extraction.</li>
     </h2>
 </doc-anchor-target>
 </div>
+<ul>
+<li>To do these next steps you are going to need <u><a href="https://www.spek.cc/p/download">Spek</a></u> and <u><a href="https://www.audacityteam.org">Audacity</a></u>.</li>
+</ul>
 <doc-anchor-target id="step-1-find-the-sample-rate">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#step-1-find-the-sample-rate">#</doc-anchor-trigger>
@@ -1946,27 +1949,37 @@ This determines the depth of the extraction.</li>
     </h3>
 </doc-anchor-target>
 <ul>
+<li>In Audacity import your audio</li>
 <li>Go to Effects -&gt; Special -&gt; Truncate Silence</li>
 <li>Use the following values:<br />
 ‎<br />
 <img src="../datasets-img/truncnew.png" alt="image" width="420" height="auto"><hr>
-‎<doc-anchor-target id="step-2-audio-normalization-optional">
+‎<doc-anchor-target id="step-21-audio-normalization-optional">
     <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#step-2-audio-normalization-optional">#</doc-anchor-trigger>
-        <span>Step 2: Audio Normalization. (Optional)</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#step-21-audio-normalization-optional">#</doc-anchor-trigger>
+        <span>Step 2.1: Audio Normalization (Optional)</span>
     </h4>
 </doc-anchor-target>
-<ul>
+</li>
 <li>Go go to Effects -&gt; Volume and Compression -&gt; Loudness Normalization</li>
 <li>Use these values:<br />
 ‎<br />
-<img src="../datasets-img/norm.png" alt="image" width="420" height="auto"></li>
-</ul>
-</li>
+<img src="../datasets-img/norm.png" alt="image" width="500" height="auto"></li>
 </ul>
 <blockquote>
 <p>LUFS are used over db because hifigan needs perceptual quality and db doesnt offer that.</p>
 </blockquote>
+<hr>
+<doc-anchor-target id="step-22-combining-audio">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#step-22-combining-audio">#</doc-anchor-trigger>
+        <span>Step 2.2: Combining Audio</span>
+    </h4>
+</doc-anchor-target>
+<ul>
+<li>Go go to Tracks -&gt; Align Tracks -&gt; Align End to End</li>
+</ul>
+<img src="../datasets-img/combine.png" alt="image" width="420" height="auto"> 
 <hr>
 <doc-anchor-target id="step-3-export">
     <h3>
