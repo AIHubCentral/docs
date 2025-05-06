@@ -21,7 +21,7 @@ order: 1000
 
 - Acting like the voice you are trying to be also helps. 
 
-- Some users think that models trained on the f0 extractors crepe and fcpe give models a "human softness" to them while rmvpe can sometimes give a "metalic sound" to them. It would be good to try rmvpe, crepe or fcpe to see which one you think sounds more real. 
+- Some users think that models trained on the f0 extractors crepe and fcpe give models a "human softness" to them while rmvpe can sometimes give a "metalic sound" to them. It would be good to try models trained on rmvpe or fcpe to see which one you think sounds more real.
 
 
 ***
@@ -71,6 +71,11 @@ It's already installed for me so that is why it says "Remove".
 <img src="../realism-img/discord.png" alt="image" width="700" height="">
 
 
+8. (Optional) If you want to decrees delay press `ctrl + ,` and a menu should open. In the menu go down to where the buffer settings are and set the samples to 480. If you hear crackling or audio bugs increase the buffer size and if there is no crackling and you want less delay you can lower the buffer size more.
+
+<img src="../realism-img/buffer.png" alt="image" width="600" height="">
+
+
 ***
 ## Installing Light Host
 ***
@@ -112,9 +117,14 @@ It's already installed for me so that is why it says "Remove".
 
 ### VSTs
 
-- First you will need some VST's, you can find plenty of free ones at <u>[Kilohearts website](https://kilohearts.com/products/kilohearts_essentials)</u>. I suggest their Bitcrush and Filter but you can use whatever VST's you want.
+- First you will need some VST's, you can find plenty of free ones at <u>[Kilohearts website](https://kilohearts.com/products/kilohearts_essentials)</u>. I suggest their Bitcrush, Filter and Phase Distortion but you can use whatever VSTs you want.
 
 - There is no "prefect setting" for these VSTs so set their settings to whatever you think sounds good.
+
+
+!!!danger
+The more VSTs you add the more delay there is going to be.
+!!!
 
 ***
 

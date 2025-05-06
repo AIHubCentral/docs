@@ -681,6 +681,8 @@ De-Noise | Mel Roformer De-Noise
 ## Preparing the dataset
 :::
 
+- To do these next steps you are going to need <u>[Spek](https://www.spek.cc/p/download)</u> and <u>[Audacity](https://www.audacityteam.org)</u>.
+
 ### Step 1: Find the Sample Rate
 :::
 - This is a unit in that defines the total amount of **samples** (data) that can **fit** within **1 second** of an audio. They are measured in kilohertz (kHz).
@@ -704,19 +706,28 @@ De-Noise | Mel Roformer De-Noise
 ***
 ### Step 2: Truncating Silence 
 
+- In Audacity import your audio 
 - Go to Effects -> Special -> Truncate Silence     
 - Use the following values:         
     ‎  
     <img src="../datasets-img/truncnew.png" alt="image" width="420" height="auto">    
     ***
     ‎
-    #### Step 2: Audio Normalization. (Optional)  
-    - Go go to Effects -> Volume and Compression -> Loudness Normalization
-    - Use these values:     
+    #### Step 2.1: Audio Normalization (Optional)  
+- Go go to Effects -> Volume and Compression -> Loudness Normalization
+- Use these values:     
 ‎       
-<img src="../datasets-img/norm.png" alt="image" width="420" height="auto"> 
+<img src="../datasets-img/norm.png" alt="image" width="500" height="auto"> 
 
 > LUFS are used over db because hifigan needs perceptual quality and db doesnt offer that.
+
+***
+#### Step 2.2: Combining Audio  
+
+- Go go to Tracks -> Align Tracks -> Align End to End
+
+<img src="../datasets-img/combine.png" alt="image" width="420" height="auto"> 
+
 ***
 ### Step 3: Export
 - On the upper right corner go to File and click ``Export Audio``.       
