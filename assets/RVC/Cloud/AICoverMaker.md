@@ -12,7 +12,7 @@ order: 2000
 :::
 
 
-- AICoverMaker is a better and updated version of the old AICoverGen.
+- AICoverMaker (or known as RVC-AI-Cover-Maker-WebUI) is an Applio RVC <u>[Fork</u>](https://docs.ai-hub.wtf/essentials/whats-rvc/#forks) developed by the <u>[Eddy</u>](https://github.com/Eddycrack864)</u>, as a better and updated version of the old AICoverGen.
 
 - This are ideal for users who want '***quick & dirty***' AI covers, as the whole process of inputting audio, vocal isolation & song mixing is automated. 
   
@@ -52,44 +52,6 @@ There is a monthly limit rate with Ngrok so dont be supprised if training is sud
 ‎
 
 **3.** Once you've run either the cell with or without ngrok a link under the cell will apear, click it and it will take you the WebUI.
-
-***
-###### ‎  
-### <u>Downloading Music & Models</u>
-***
-
-#### Music Download
-
-**1.** When in the UI look at the top left and look for the tab named `Download Music` and click it.
-
-   <img src="../aicovermaker-img/5.png" alt="image" width="600" height="">
-
-‎ 
-
-**2.** Then put the song you want to download in the text box and click download.
-
-
-   <img src="../aicovermaker-img/6.png" alt="image" width="1000" height="">
-
-***
-
-#### Model Download
-
-**1.** In the UI look at the top left and look for the tab named `Download Model` and click it.
-
-   <img src="../aicovermaker-img/4.png" alt="image" width="600" height="">
-
-‎ 
-
-**2.** Then put the model you want to download in the text box and click download.
-
-
-   <img src="../aicovermaker-img/7.png" alt="image" width="1000" height="">
-
-‎
-
-**3.** You can also drag and drop your model in the `Drop files` box to upload them directly.
-***
 
 ###### ‎  
 :::content-center
@@ -131,7 +93,7 @@ There is a monthly limit rate with Ngrok so dont be supprised if training is sud
 
 ***
 ###### ‎  
-### <u>Downloading Music & Models</u>
+## <u>Downloading Music & Models</u>
 ***
 
 #### Music Download
@@ -168,7 +130,7 @@ There is a monthly limit rate with Ngrok so dont be supprised if training is sud
 
 ***
 
-### Inference
+## Inference
 
 Please use our <u>[Inference Settings guide](https://docs.aihub.gg/rvc/resources/inference-settings/)</u> to find out the inference settings do what.
 
