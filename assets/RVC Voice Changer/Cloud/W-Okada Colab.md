@@ -11,7 +11,7 @@ order: 4000
 :::content-center
 ## Introduction ‎
 :::
-- This cloud version is hosted in <u>[Google Colab](https://docs.ai-hub.wtf/extra/glossary/#google-colab)</u>, remember that you have a runtime of 4 hours.    
+- This cloud version is hosted in <u>[Google Colab](https://docs.aihub.gg/extra/glossary/#google-colab)</u>, remember that you have a runtime of 4 hours.    
 
 ***
 
@@ -104,5 +104,5 @@ On discord and games, you select:
 :::content-center
 #### `You have reached the end.`
 
-[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.ai-hub.wtf/rvc/contributions/)
+[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.aihub.gg/rvc/contributions/)
 :::

@@ -13,7 +13,7 @@ order: 5000
 
 - Mainline RVC is the base, original, & unmodified version of RVC. Made by the <u>[RVC-Project</u>](https://github.com/RVC-Project) team.
 
-- It has less features compared to other <u>[forks</u>](https://docs.ai-hub.wtf/essentials/whats-rvc/#forks), but still has the necessary tools to do a decent job.
+- It has less features compared to other <u>[forks</u>](https://docs.aihub.gg/essentials/whats-rvc/#forks), but still has the necessary tools to do a decent job.
 
 - It's specially liked because it's a little faster than other forks, as it's less bloated in a way. 
 
@@ -29,7 +29,7 @@ order: 5000
 - Simpler to use.     
 ||| ❌ **CONS** 
 - Has less features.     
-- Doesn't include <u>[Mangio-Crepe</u>](https://docs.ai-hub.wtf/rvc/resources/inference-settings/#pitch-extraction-algorithm).      
+- Doesn't include <u>[Mangio-Crepe</u>](https://docs.aihub.gg/rvc/resources/inference-settings/#pitch-extraction-algorithm).      
 - Manual model upload.
 ||| 
 ===
@@ -65,17 +65,17 @@ order: 5000
 :::content-center
 ## Inference :icon-unmute:   
 !!!success
-If you encounter an issue, be sure to read the <u>[Troubleshooting](https://docs.ai-hub.wtf/rvc/local/mainline/#troubleshooting-)</u> chapter.
+If you encounter an issue, be sure to read the <u>[Troubleshooting](https://docs.aihub.gg/rvc/local/mainline/#troubleshooting-)</u> chapter.
 !!!
 :::
 ###### ‎   
 #### 1. Upload voice model.
-a. Open RVC's folder, go to the `assets` folder and put your model's <u>[**.PTH**</u>](https://docs.ai-hub.wtf/essentials/voice-models/#voice-model-files) file inside the `weights` folder.       
+a. Open RVC's folder, go to the `assets` folder and put your model's <u>[**.PTH**</u>](https://docs.aihub.gg/essentials/voice-models/#voice-model-files) file inside the `weights` folder.       
     ‎       
     <img src="../mainline-img/5.png" alt="image" width="520" height="auto">      
 ‎       
        
-b. Return to the previous folder & put the model's <u>[**.INDEX**</u>](https://docs.ai-hub.wtf/essentials/voice-models/#voice-model-files) file in the `logs` folder.
+b. Return to the previous folder & put the model's <u>[**.INDEX**</u>](https://docs.aihub.gg/essentials/voice-models/#voice-model-files) file in the `logs` folder.
 
     <img src="../mainline-img/6.png" alt="image" width="520" height="auto"> 
 
@@ -101,7 +101,7 @@ In ``Enter the path of the audio file`` paste the <u>[path file</u>](https://sta
 ***
 ###### ‎  
 #### 4. Modify settings. (optional)      
-If you wish, modify the <u><u>[inference settings</u>](https://docs.ai-hub.wtf/rvc/resources/inference-settings/)</u> on display accordingly for better results.
+If you wish, modify the <u><u>[inference settings</u>](https://docs.aihub.gg/rvc/resources/inference-settings/)</u> on display accordingly for better results.
 ***
 ###### ‎  
 #### 5. Convert.
@@ -122,9 +122,9 @@ To download, click the three dots on the right & hit `Download`.
 ## Training :icon-dependabot:
 ###### ‎   
 !!!warning <u> NOTES: </u>
-The training guide will be centered around using [TensorBoard](https://docs.ai-hub.wtf/rvc/resources/training/#tensorboard). Read about it first if you haven't already.      
+The training guide will be centered around using [TensorBoard](https://docs.aihub.gg/rvc/resources/training/#tensorboard). Read about it first if you haven't already.      
 
-If you encounter an issue, be sure to read the <u>[Troubleshooting](https://docs.ai-hub.wtf/rvc/local/mainline/#troubleshooting-)</u> chapter.
+If you encounter an issue, be sure to read the <u>[Troubleshooting](https://docs.aihub.gg/rvc/local/mainline/#troubleshooting-)</u> chapter.
 !!!
 :::
 ###### ‎     
@@ -148,7 +148,7 @@ In `Enter the experiment name` you insert a name for your model. Don't include s
 
 ###### ‎  
 #### 3. Select Target Sample Rate.
-In `Target sample rate` select the number that matches your datasets' <u>[sample rate</u>](https://docs.ai-hub.wtf/rvc/resources/dataset-isolation/#step-1-find-the-sample-rate).        
+In `Target sample rate` select the number that matches your datasets' <u>[sample rate</u>](https://docs.aihub.gg/rvc/resources/dataset-isolation/#step-1-find-the-sample-rate).        
 Inputting an incorrect one might screw up the final quality.
 
 <img src="../mainline-img/g.png" alt="image" width="" height="auto">         
@@ -200,7 +200,7 @@ In `Enter the GPU index(es)` determine which GPU(s) you'll use for training, by 
 ***
 ###### ‎  
 #### 7. Select pitch extraction algorithm.
-a. At the right select the <u>[**Pitch extraction algorithm**](https://docs.ai-hub.wtf/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u>.       
+a. At the right select the <u>[**Pitch extraction algorithm**](https://docs.aihub.gg/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u>.       
 Only use ``RMVPE_GPU`` or ``Crepe``, as the rest are obsolete.      
 
     <img src="../mainline-img/16.png" alt="image" width="" height="auto"> ‎      
@@ -219,7 +219,7 @@ b. Now click the `Feature extraction` button on the right.
 ###### ‎  
 #### 8. Create .INDEX.
 Press `Train feature index` at the bottom center.       
-This will create the <u>[.INDEX</u>](https://docs.ai-hub.wtf/essentials/voice-models/#voice-model-files) file.
+This will create the <u>[.INDEX</u>](https://docs.aihub.gg/essentials/voice-models/#voice-model-files) file.
 
 <img src="../mainline-img/i.png" alt="image" width="250" height="auto">‎     
 ‎       
@@ -234,7 +234,7 @@ It'll finish when the output box says something like this:
 :::
 ###### ‎           
 #### 9. Select save frequency.
-Frequency of the <u>[saving checkpoints](https://docs.ai-hub.wtf/extra/glossary/#checkpoints)</u>, based on the <u>[epochs](https://docs.ai-hub.wtf/rvc/resources/training/#tensorboard)</u>.        
+Frequency of the <u>[saving checkpoints](https://docs.aihub.gg/extra/glossary/#checkpoints)</u>, based on the <u>[epochs](https://docs.aihub.gg/rvc/resources/training/#tensorboard)</u>.        
 
 If you are a newbie, simply leave it at `15`.        
     
@@ -246,9 +246,9 @@ E.g: with a value of ``10``, they will be saved after the epoch 10, 20, 30, etc.
 ***
 ###### ‎  
 #### 10. Input epochs amount.
-In `Total training epochs` you determine the total amount of <u>[epochs](https://docs.ai-hub.wtf/rvc/resources/training/#epochs--overtraining)</u> (training cycles) for the model.     
+In `Total training epochs` you determine the total amount of <u>[epochs](https://docs.aihub.gg/rvc/resources/training/#epochs--overtraining)</u> (training cycles) for the model.     
 
-But since we'll use [TensorBoard](https://docs.ai-hub.wtf/rvc/resources/training/#tensorboard), use an arbitrarily large value like `2000`.
+But since we'll use [TensorBoard](https://docs.aihub.gg/rvc/resources/training/#tensorboard), use an arbitrarily large value like `2000`.
 
 <img src="../mainline-img/19.png" alt="image" width="" height="auto">  
 
@@ -266,7 +266,7 @@ If your dataset is short (around 2 minutes or less), use ``4`` instead.
 #### 12. Launch TensorBoard.
 Now before you start training, open TB.     
 
-If you haven't already, start reading about it here <u><u>[here</u>](https://docs.ai-hub.wtf/rvc/resources/training/#tensorboard)</u>.
+If you haven't already, start reading about it here <u><u>[here</u>](https://docs.aihub.gg/rvc/resources/training/#tensorboard)</u>.
 ***
 ###### ‎  
 #### 13. Begin training.
@@ -297,7 +297,7 @@ Select the `.INDEX` named ``added_`` & move it to your newly made folder.
 
 ‎   
 
-c. Now go to the ``weights`` folder. Here you'll find the model's <u>[checkpoints](https://docs.ai-hub.wtf/extra/glossary/#checkpoints)</u>.      
+c. Now go to the ``weights`` folder. Here you'll find the model's <u>[checkpoints](https://docs.aihub.gg/extra/glossary/#checkpoints)</u>.      
 
     Select the one **closest** to ***before*** the overtraining point, and move it to the new folder      
 
@@ -309,7 +309,7 @@ c. Now go to the ``weights`` folder. Here you'll find the model's <u>[checkpoint
     ‎            
 
     And that's all. Have fun with your model.   
-    To test the model, do a normal <u>[inference</u>](https://docs.ai-hub.wtf/essentials/how-to-make-ai-cover/) as usual.
+    To test the model, do a normal <u>[inference</u>](https://docs.aihub.gg/essentials/how-to-make-ai-cover/) as usual.
 
 ***
 ###### ‎   
@@ -320,7 +320,7 @@ c. Now go to the ``weights`` folder. Here you'll find the model's <u>[checkpoint
 If the training finished but the model still needed training, you don't have to start from scratch.       
 **Follow this procedure:**
 
-- Simply enter the **same settings and criteria** that you previously inserted. Model name, sample rate, dataset, batch size, etc. You don't have to press ``Process Data`` or train the <u>[.INDEX</u>](https://docs.ai-hub.wtf/essentials/voice-models/#voice-model-files) again.
+- Simply enter the **same settings and criteria** that you previously inserted. Model name, sample rate, dataset, batch size, etc. You don't have to press ``Process Data`` or train the <u>[.INDEX</u>](https://docs.aihub.gg/essentials/voice-models/#voice-model-files) again.
 
 - You can change the **save frequency**, or increase the **epochs** amount in case you didn't input enough before.
 
@@ -347,7 +347,7 @@ If the training finished but the model still needed training, you don't have to 
 
 ==- *The voice glitches out.*
 ###### ‎   
-- This a phenomenon called artifacting. To fix it, read <u>[here](https://docs.ai-hub.wtf/rvc/resources/dataset-isolation/#artifacts)</u>.
+- This a phenomenon called artifacting. To fix it, read <u>[here](https://docs.aihub.gg/rvc/resources/dataset-isolation/#artifacts)</u>.
 
 ===
 
@@ -357,7 +357,7 @@ If the training finished but the model still needed training, you don't have to 
 
 ==- *I couldn't find my answer.*
 ###### ‎   
-- Report your issue <u>[here](https://docs.ai-hub.wtf/rvc/#contributions)</u>.
+- Report your issue <u>[here](https://docs.aihub.gg/rvc/#contributions)</u>.
 ===
 
 ***
@@ -365,5 +365,5 @@ If the training finished but the model still needed training, you don't have to 
 :::content-center
 #### `You have reached the end.`
 
-[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.ai-hub.wtf/contributions/)
+[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.aihub.gg/contributions/)
 :::

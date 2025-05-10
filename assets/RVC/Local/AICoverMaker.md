@@ -15,7 +15,7 @@ order: 2000
 :::content-center
 ## Introduction ‎
 :::
-- AICoverMaker (or known as RVC-AI-Cover-Maker-WebUI) is an Applio RVC <u>[Fork</u>](https://docs.ai-hub.wtf/essentials/whats-rvc/#forks) developed by the <u>[Eddy</u>](https://github.com/Eddycrack864)</u>, as a better and updated version of the old AICoverGen.
+- AICoverMaker (or known as RVC-AI-Cover-Maker-WebUI) is an Applio RVC <u>[Fork</u>](https://docs.aihub.gg/essentials/whats-rvc/#forks) developed by the <u>[Eddy</u>](https://github.com/Eddycrack864)</u>, as a better and updated version of the old AICoverGen.
 
 - It's liked for its great **UI** & **Automated AI Cover Process**, making it the easiest way to make ai cover, as it automatically separates instrumentals and mixes them back with the converted vocals.
 
@@ -134,5 +134,5 @@ If you don't want to download the latest precompiled the next time a new version
 :::content-center
 #### `You have reached the end.`
 
-[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.ai-hub.wtf/contributions/)
+[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.aihub.gg/contributions/)
 :::

@@ -20,7 +20,7 @@ order: 5000
 
 - Because of its user-friendly experience & active development, it's considered to be one of the best forks.     
 
-- As this cloud version is hosted in <u>[Google Colab](https://docs.ai-hub.wtf/extra/glossary/#google-colab)</u>, remember that you have a limited runtime of around 4 hours.       
+- As this cloud version is hosted in <u>[Google Colab](https://docs.aihub.gg/extra/glossary/#google-colab)</u>, remember that you have a limited runtime of around 4 hours.       
 ‎         
 #### Pros & Cons :icon-tasklist:
 ==- *Learn more*
@@ -119,5 +119,5 @@ b. Then run the `Installation` cell to install all the requirements.
 :::content-center
 #### `You have reached the end.`
 
-[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.ai-hub.wtf/contributions/)
+[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.aihub.gg/contributions/)
 :::

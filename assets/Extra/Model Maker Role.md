@@ -52,13 +52,13 @@ order: 5000
    - Is incapable of hitting certain notes.
    - Has slurred speech.
    - Is unable of pronouncing words correctly in its intended language.
-   - Has <u>[artifacting](https://docs.ai-hub.wtf/rvc/resources/dataset-isolation/#artifacts)</u>.
+   - Has <u>[artifacting](https://docs.aihub.gg/rvc/resources/dataset-isolation/#artifacts)</u>.
    - Has noise.
 ***
 ###### ‎ 
 #### :icon-chevron-right: An outdated extraction method was used.
 {.list-icon}
-- :icon-check-circle: Only **Mangio-Crepe** & **RMVPE** are allowed. Learn about them <u>[here](https://docs.ai-hub.wtf/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u>
+- :icon-check-circle: Only **Mangio-Crepe** & **RMVPE** are allowed. Learn about them <u>[here](https://docs.aihub.gg/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u>
 
 - :icon-x-circle: Harvest, Dio, Crepe-Tiny, PM, etc. are obsolete.
 
@@ -101,10 +101,10 @@ order: 5000
 :     The technology used for its training.
 
 **extraction**
-:     The <u>[extraction method](https://docs.ai-hub.wtf/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u> you used.
+:     The <u>[extraction method](https://docs.aihub.gg/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u> you used.
 
 **epochs**
-:     Total <u>[epochs](https://docs.ai-hub.wtf/rvc/resources/training/#tensorboard)</u> amount.
+:     Total <u>[epochs](https://docs.aihub.gg/rvc/resources/training/#tensorboard)</u> amount.
 
 **link**
 :     Its download link from Hugging Face or Weights. 
@@ -144,5 +144,5 @@ You can attach more samples when you repost the model to ``#voice-models``.
 :::content-center
 #### `You have reached the end.`
 
-[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.ai-hub.wtf/contributions/)
+[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.aihub.gg/contributions/)
 :::

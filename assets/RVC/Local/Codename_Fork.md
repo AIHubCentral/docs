@@ -10,11 +10,11 @@ order: 3000
 ## Introduction ‎ :icon-book:
 :::
 
-- The codename fork is a <u>[fork</u>](https://docs.ai-hub.wtf/essentials/whats-rvc/#forks) of Applio made by <u>[Codename](https://github.com/codename0og)</u>.
+- The codename fork is a <u>[fork</u>](https://docs.aihub.gg/essentials/whats-rvc/#forks) of Applio made by <u>[Codename](https://github.com/codename0og)</u>.
 
 - This fork has more features compared to others and changes to increase quality.
 
-- This guide will be only talking about the new features since everything else has been covered in the <u>[Applio guide](https://docs.ai-hub.wtf/rvc/local/applio/)</u>.
+- This guide will be only talking about the new features since everything else has been covered in the <u>[Applio guide](https://docs.aihub.gg/rvc/local/applio/)</u>.
 
 ***
 #### Are RVC Models Safe?
@@ -130,5 +130,5 @@ Fast Context-based Pitch Estimation (fcpe) is another f0 like rmvpe. The benafit
 :::content-center
 #### `You have reached the end.`
 
-[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.ai-hub.wtf/contributions/)
+[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.aihub.gg/contributions/)
 :::

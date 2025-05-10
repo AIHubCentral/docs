@@ -47,7 +47,7 @@ order: 2000
 - Ensure there isn't much background noise, reverb, overlapping voices, music, distortion, or small silences. *Some* quiet natural background noise is fine and won't ruin your model since the original pretrains for RVC were made with a noisy dataset, so RVC knows how to deal with noise. You'll learn more on cleaning vocals in the **Vocal Isolation & Cleaning** section below.   
 ‎   
 #### :icon-chevron-down: Audio quality.
-- The higher the audio quality, the better. If possible have it in a <u>[lossless](https://docs.ai-hub.wtf/extra/glossary/#lossless-formats)</u> format like **WAV** or **FLAC**, not a lossy one like MP3. No converting a MP3 to a FLAC or WAV won't remove the compression.  
+- The higher the audio quality, the better. If possible have it in a <u>[lossless](https://docs.aihub.gg/extra/glossary/#lossless-formats)</u> format like **WAV** or **FLAC**, not a lossy one like MP3. No converting a MP3 to a FLAC or WAV won't remove the compression.  
 ‎   
 #### :icon-chevron-down: No harsh sibilance/popping.
 - Additionally, don't include harsh sibilance (loud "S" & "SH" pronunciation) or popping sounds (loud "P" sound) 
@@ -62,7 +62,7 @@ order: 2000
 ## Artifacts 
 :::       
 In RVC, artifacting refers to an anomaly where the output voice sounds "robotic" & glitchy.     
-This occurs after the <u>[inference](https://docs.ai-hub.wtf/extra/glossary/#inference)</u> or model training process.     
+This occurs after the <u>[inference](https://docs.aihub.gg/extra/glossary/#inference)</u> or model training process.     
 #### Causes    
 It usually occurs when the dataset/vocal sample meets any of these criteria: 
 
@@ -78,19 +78,19 @@ Remember that the cleaner your input audio is, the better the results.
 
 #### Solutions    
 #### 1. Use a lossless format:
-- If possible, it's best if your audio is in a <u>[lossless format](https://docs.ai-hub.wtf/extra/glossary/#lossless-formats)</u> like **WAV** or **FLAC**, preserving its original quality.
+- If possible, it's best if your audio is in a <u>[lossless format](https://docs.aihub.gg/extra/glossary/#lossless-formats)</u> like **WAV** or **FLAC**, preserving its original quality.
 
 - Avoid using lossy ones like MP3 or OGG.
 ‎   
 #### 2. If doing inference:
-- Remove undesired noises with an <u>[vocal isolation</u>](https://docs.ai-hub.wtf/rvc/resources/vocal-isolation/) software.
+- Remove undesired noises with an <u>[vocal isolation</u>](https://docs.aihub.gg/rvc/resources/vocal-isolation/) software.
 
-- Lowering the <u>[search feature ratio</u>](https://docs.ai-hub.wtf/rvc/resources/inference-settings/) can also minimize this issue.
+- Lowering the <u>[search feature ratio</u>](https://docs.aihub.gg/rvc/resources/inference-settings/) can also minimize this issue.
 
-- If breathing sounds produce it, lower the <u>[Protection](https://docs.ai-hub.wtf/rvc/resources/inference-settings/)</u> value.
+- If breathing sounds produce it, lower the <u>[Protection](https://docs.aihub.gg/rvc/resources/inference-settings/)</u> value.
 ‎   
 #### 3. If training models:
-- Ensure to <u>[clean your dataset](https://docs.ai-hub.wtf/rvc/resources/datasets/#cleaning-datasets)</u> properly, this includes removing silences and distortions.
+- Ensure to <u>[clean your dataset](https://docs.aihub.gg/rvc/resources/datasets/#cleaning-datasets)</u> properly, this includes removing silences and distortions.
 
 ***
  ‎
@@ -103,7 +103,7 @@ Remember that the cleaner your input audio is, the better the results.
 
 - The goal is to get an audio sample with clean and natural vocals, which is what RVC needs to give the most accurate & quality results.
 
-- For RVC users, the best app is Ultimate Vocal Remover 5 (or **UVR**). It can be used either <u>[locally](https://docs.ai-hub.wtf/extra/glossary/#local-running)</u> or through the <u>[cloud](https://docs.ai-hub.wtf/rvc/resources/dataset-isolation/#cloud-uvr)</u>.
+- For RVC users, the best app is Ultimate Vocal Remover 5 (or **UVR**). It can be used either <u>[locally](https://docs.aihub.gg/extra/glossary/#local-running)</u> or through the <u>[cloud](https://docs.aihub.gg/rvc/resources/dataset-isolation/#cloud-uvr)</u>.
 
 - If you want to remove noise manually to avoid ai artifacts you can use RX 11, which is mentioned in this guide. 
 
@@ -114,7 +114,7 @@ Remember that the cleaner your input audio is, the better the results.
 :::content-center
 ## Local UVR
 !!!warning 
-*You'll require great specs & GPU to run it effectively. Otherwise, use either the <u>[google colab version](https://docs.ai-hub.wtf/rvc/resources/dataset-isolation/#cloud-uvr)</u> or the Huggingface space.*
+*You'll require great specs & GPU to run it effectively. Otherwise, use either the <u>[google colab version](https://docs.aihub.gg/rvc/resources/dataset-isolation/#cloud-uvr)</u> or the Huggingface space.*
 !!!
 :::
 ‎ 
@@ -153,16 +153,16 @@ Make sure to tick `🗹 Create a desktop shortcut` for an easier access to UVR.
     <img src="../uvrmvsep-img/4.jpg" alt="image" width="300" height="auto">         ‎    
 
 !!!success 
-For better results, have the audio in a <u>[lossless format](https://docs.ai-hub.wtf/extra/glossary/#lossless-formats)</u> (**WAV** or **FLAC**), & not MP3.
+For better results, have the audio in a <u>[lossless format](https://docs.aihub.gg/extra/glossary/#lossless-formats)</u> (**WAV** or **FLAC**), & not MP3.
 !!!
 ***
 ‎ 
 #### 2. Select FLAC & GPU Conversion.
 ###### ‎  
 a. At the right you can select the output format.       
-We recommend picking `FLAC`. Learn why <u>[here](https://docs.ai-hub.wtf/extra/glossary/#lossless-formats)</u>.   
+We recommend picking `FLAC`. Learn why <u>[here](https://docs.aihub.gg/extra/glossary/#lossless-formats)</u>.   
 ‎  
-b. If your GPU is **compatible with <u>[CUDA](https://docs.ai-hub.wtf/extra/glossary/#cuda)</u>**, toggle `GPU Conversion` on for a faster process.    
+b. If your GPU is **compatible with <u>[CUDA](https://docs.aihub.gg/extra/glossary/#cuda)</u>**, toggle `GPU Conversion` on for a faster process.    
 
     <img src="../uvrmvsep-img/16.png" alt="image" width="350" height="auto">‎      
 
@@ -204,16 +204,16 @@ b. Now click the long `Start Processing` button.
     <img src="../uvrmvsep-img/4.jpg" alt="image" width="300" height="auto">         ‎    
 
 !!!success 
-For better results, have the audio in a [lossless format](https://docs.ai-hub.wtf/extra/glossary/#lossless-formats)</u> (**WAV** or **FLAC**), & not MP3.
+For better results, have the audio in a [lossless format](https://docs.aihub.gg/extra/glossary/#lossless-formats)</u> (**WAV** or **FLAC**), & not MP3.
 !!!
 ***
 ‎   
 #### 2. Select FLAC & GPU Conversion.
 ###### ‎      
 a. At the right you can select the output format.       
-We recommend picking `FLAC`. Learn why <u>[here](https://docs.ai-hub.wtf/extra/glossary/#lossless-formats)</u>.     
+We recommend picking `FLAC`. Learn why <u>[here](https://docs.aihub.gg/extra/glossary/#lossless-formats)</u>.     
 ‎   
-b. If your GPU is **compatible with <u>[CUDA](https://docs.ai-hub.wtf/extra/glossary/#cuda)</u>**, toggle `GPU Conversion` on for a faster process.    
+b. If your GPU is **compatible with <u>[CUDA](https://docs.aihub.gg/extra/glossary/#cuda)</u>**, toggle `GPU Conversion` on for a faster process.    
     ‎       
         <img src="../uvrmvsep-img/16.png" alt="image" width="350" height="auto">‎      
 ###### ‎       
@@ -227,7 +227,7 @@ a. In **Process Method** select `VR`.
 b. Set **Window Size** to ``320``. (optional)        
 Lower Window Size yield a higher output **quality**, but will take **longer** to process.   
 ‎   
-b. Check the <u>[model list](https://docs.ai-hub.wtf/rvc/resources/vocal-isolation/#best-models)</u>. In **Select VR Model** pick the one according to what you need to remove.         
+b. Check the <u>[model list](https://docs.aihub.gg/rvc/resources/vocal-isolation/#best-models)</u>. In **Select VR Model** pick the one according to what you need to remove.         
 ‎       
 If you need to remove multiple noises, follow this pipeline for the best results:   
 ``Remove instrumental -> Remove reverb -> Extract main vocals -> Remove noise``  
@@ -282,7 +282,7 @@ De-Noise | VR | Mel denoiser
 
 ==- *I can't remove some of the backing vocals.*
 ###### ‎
-- Run the audio through BVE. Modify the <u>[Aggression Setting](https://docs.ai-hub.wtf/rvc/resources/vocal-isolation/#uvr-extracted-too-little-too-much)</u> if necessary.
+- Run the audio through BVE. Modify the <u>[Aggression Setting](https://docs.aihub.gg/rvc/resources/vocal-isolation/#uvr-extracted-too-little-too-much)</u> if necessary.
 ===
 
 ***
@@ -346,7 +346,7 @@ De-Noise | VR | Mel denoiser
 ‎  
 #### 3. Separate
 ###### ‎   
-a. Select your model of choice and run the **Separation** cell. You can look <u>[here](https://docs.ai-hub.wtf/rvc/resources/vocal-isolation/#best-models)</u> for the best models
+a. Select your model of choice and run the **Separation** cell. You can look <u>[here](https://docs.aihub.gg/rvc/resources/vocal-isolation/#best-models)</u> for the best models
 
 ‎   
     <img src="../clouduvr-img/5.png" alt="image" width="500" height="auto">‎   
@@ -374,7 +374,7 @@ De-Noise | Mel denoiser
 ***
 
 #### Cannot connect to GPU backend.
-- You have exhausted the <u>[GPU runtime](https://docs.ai-hub.wtf/rvc/extra/glossary/#google-colab)</u> of Colab.
+- You have exhausted the <u>[GPU runtime](https://docs.aihub.gg/rvc/extra/glossary/#google-colab)</u> of Colab.
 
 +++ Huggingface Spaces
 
@@ -470,7 +470,7 @@ De-Noise | Mel denoiser
 ***
 - MVSEP is a website for isolating vocals, that works similarly as UVR.
 
-- The <u>[UVR Colab](https://docs.ai-hub.wtf/rvc/resources/dataset-isolation/#cloud-uvr)</u> is much faster & convenient for this task. Use MVSEP if you run out of GPU runtime or feel lazy to convert your audio to WAV.
+- The <u>[UVR Colab](https://docs.aihub.gg/rvc/resources/dataset-isolation/#cloud-uvr)</u> is much faster & convenient for this task. Use MVSEP if you run out of GPU runtime or feel lazy to convert your audio to WAV.
 
 - For free users, you can't convert audios in batches or longer than 10 minutes. If that's your case, trim it into different pieces.
 
@@ -507,7 +507,7 @@ a. Click `Browse File` & select your audio, or simply drag & drop. The audio wil
 a. In **Separation type** select `BS Roformer`     
 ‎     
 b. In **Output encoding** select `FLAC`.          
-We recommend selecting FLAC from now on. Learn more <u>[here</u>](https://docs.ai-hub.wtf/extra/glossary/#lossless-formats).        
+We recommend selecting FLAC from now on. Learn more <u>[here</u>](https://docs.aihub.gg/extra/glossary/#lossless-formats).        
 ‎     
 c. Once the audio is done uploading, click `Separate`       
 
@@ -558,7 +558,7 @@ a. Click `Browse File` & select your audio, or simply drag & drop. The audio wil
 ‎       
 ‎     
 b. In **Output encoding** select `FLAC`.      
-We recommend selecting FLAC from now on. Learn more <u>[here</u>](https://docs.ai-hub.wtf/extra/glossary/#lossless-formats).        
+We recommend selecting FLAC from now on. Learn more <u>[here</u>](https://docs.aihub.gg/extra/glossary/#lossless-formats).        
 
     <img src="../uvrmvsep-img/10.png" alt="image" width="420" height="auto">‎    
 ***
@@ -567,7 +567,7 @@ We recommend selecting FLAC from now on. Learn more <u>[here</u>](https://docs.a
 ###### ‎
 a. In **Separation Type**, select `DeNoise by aufr33`.      
 ‎     
-b. Check the <u>[model list](https://docs.ai-hub.wtf/rvc/resources/dataset-isolation/#best-models)</u>. Pick the one according to what you need to remove.         
+b. Check the <u>[model list](https://docs.aihub.gg/rvc/resources/dataset-isolation/#best-models)</u>. Pick the one according to what you need to remove.         
 ‎       
 If you need to remove multiple noises, follow this pipeline for the best results:       
 ``Remove instrumental -> Remove reverb -> Extract main vocals -> Remove noise`` 
@@ -650,7 +650,7 @@ d. You can now click "Vocals" to download the vocals and "Other" to download the
 ######
 #### 1. Choose a De-Noiser
 ######
-a.  In "De-Noise" select "Mel-Roformer De-Noise". You can also check the [model list](https://docs.ai-hub.wtf/rvc/resources/vocal-isolation/#best-models) to see what is the best model for your needs.
+a.  In "De-Noise" select "Mel-Roformer De-Noise". You can also check the [model list](https://docs.aihub.gg/rvc/resources/vocal-isolation/#best-models) to see what is the best model for your needs.
 
 <img src="../x-minus-img/4.png" alt="image" width="600" height="auto">
 
@@ -748,5 +748,5 @@ De-Noise | Mel Roformer De-Noise
 :::content-center
 #### `You have reached the end.`
 
-[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.ai-hub.wtf/contributions/)
+[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.aihub.gg/contributions/)
 :::

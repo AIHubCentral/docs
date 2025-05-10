@@ -20,7 +20,7 @@ order: 1000
 
 - "Epoch" is a unit of measuring the training cycles of an AI model.     
 
-- In other words, the amount of times the model went over its <u>[dataset](https://docs.ai-hub.wtf/rvc/resources/datasets/)</u> and learned from it.         
+- In other words, the amount of times the model went over its <u>[dataset](https://docs.aihub.gg/rvc/resources/datasets/)</u> and learned from it.         
 #### *:icon-chevron-right: How many epochs should I use for my dataset?*
 - **There isn't a way to know the right amount previous to training.** It depends on the length, quality and diversity of the dataset.
 
@@ -29,7 +29,7 @@ order: 1000
 - So it's best to use TensorBoard. With it you can determine **exactly** for how long you should train. (explained later)  
 #### *:icon-chevron-right: Do more epochs equal a better model?*
 - **No it doesn't**, since using a disproportionate amount will overtrain the model, which will affect the quality of it.                 
-- In the field of AI, is when an AI model learns its <u>[dataset](https://docs.ai-hub.wtf/rvc/resources/datasets/)</u> too well, to the point where it centers too much around it & starts replicating undesired data.
+- In the field of AI, is when an AI model learns its <u>[dataset](https://docs.aihub.gg/rvc/resources/datasets/)</u> too well, to the point where it centers too much around it & starts replicating undesired data.
 
 - The model performs very well with data of the dataset, but poorly with new data, as it has lost its ability to replicate anything that deviates from it.
 
@@ -540,5 +540,5 @@ Is a mel spectrogram view of audio from your dataset.
 :::content-center
 #### `You have reached the end.`
 
-[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.ai-hub.wtf/contributions/)
+[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.aihub.gg/contributions/)
 :::

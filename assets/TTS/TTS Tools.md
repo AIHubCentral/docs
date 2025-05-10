@@ -10,7 +10,7 @@ order: 2000
 ***
 - TTS is an abbreviation of Text To Speech, an AI that converts any given text into vocal speech.
 
-- The ones listed here offer a decent variety of features & options, such as <u>[model training](https://docs.ai-hub.wtf/extra/glossary/#model-training)</u>, <u>[fine-tuning](https://docs.ai-hub.wtf/extra/glossary/#fine-tuning)</u>, <u>[0 shot training](https://docs.ai-hub.wtf/extra/glossary/#0-shot-training)</u>, or being <u>[mixed with RVC](https://ominous-waffle-r44vr6g95vvj2wqrx-5000.app.github.dev/other-ai/tts-tools/#rvc-forks)</u>.
+- The ones listed here offer a decent variety of features & options, such as <u>[model training](https://docs.aihub.gg/extra/glossary/#model-training)</u>, <u>[fine-tuning](https://docs.aihub.gg/extra/glossary/#fine-tuning)</u>, <u>[0 shot training](https://docs.aihub.gg/extra/glossary/#0-shot-training)</u>, or being <u>[mixed with RVC](https://ominous-waffle-r44vr6g95vvj2wqrx-5000.app.github.dev/other-ai/tts-tools/#rvc-forks)</u>.
 
 - Here's an index of the best TTS tools out there:    
 ‎
@@ -84,7 +84,7 @@ order: 2000
 ***
 - This is Microsoft Edge TTS, which is good **quality**, multilingual & works great on long sentences. 
 
-- It can only be used online via their API, through their web browser, a HF/Colab space or **mixed with <u>[RVC](https://docs.ai-hub.wtf/rvc/essentials/whats-rvc/)</u>**.
+- It can only be used online via their API, through their web browser, a HF/Colab space or **mixed with <u>[RVC](https://docs.aihub.gg/rvc/essentials/whats-rvc/)</u>**.
 
   +++ :icon-globe: ‎ BROWSER
   1. [Download the browser.](https://www.microsoft.com/en-us/edge/download?ch=1&form=MA13FJ)
@@ -135,9 +135,9 @@ order: 2000
   - 🤗 [Hugging Face](https://huggingface.co/spaces/Nick088/Edge-TTS)
 
   +++ :icon-dependabot: RVC FORKS
-  - [Ilaria RVC](https://docs.ai-hub.wtf/rvc/cloud/ilaria-rvc/#tts-) 
-  - [Applio Colab](https://docs.ai-hub.wtf/rvc/cloud/applio-colab/#tts)
-  - [Local Applio](https://docs.ai-hub.wtf/rvc/local/applio/)   
+  - [Ilaria RVC](https://docs.aihub.gg/rvc/cloud/ilaria-rvc/#tts-) 
+  - [Applio Colab](https://docs.aihub.gg/rvc/cloud/applio-colab/#tts)
+  - [Local Applio](https://docs.aihub.gg/rvc/local/applio/)   
   ‎
   !!!
   These being mixed with RVC means it generates the speech & runs the output through RVC, applying the voice model.
@@ -277,5 +277,5 @@ order: 2000
 :::content-center
 #### `You have reached the end.`
 
-[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.ai-hub.wtf/rvc/contributions/)
+[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.aihub.gg/rvc/contributions/)
 :::

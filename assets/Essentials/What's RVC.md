@@ -14,7 +14,7 @@ visibility:
 
 - It was designed for desktop, requiring great **specs** to run it effectively, specially **GPU** for training models.
 
-- Though it can be executed through the <u>[cloud](https://docs.ai-hub.wtf/extra/glossary/#cloud-based)</u> & be used in **any** device, in case you don't meet the previous requirement.        
+- Though it can be executed through the <u>[cloud](https://docs.aihub.gg/extra/glossary/#cloud-based)</u> & be used in **any** device, in case you don't meet the previous requirement.        
 ‎       
 ***
 ## Forks :icon-repo-forked:
@@ -23,7 +23,7 @@ visibility:
 
 - RVC has quite a few forks made by the community, each one meeting different **needs** for the user, and with its pros & cons.     
 
-- These are the main ones, along with their <u>[cloud-based](https://docs.ai-hub.wtf/extra/glossary/#cloud-based)</u> counterparts:       
+- These are the main ones, along with their <u>[cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based)</u> counterparts:       
 
     {.list-icon}
     - #### :icon-chevron-right: <u>[Mainline](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI)</u> (Original RVC)
@@ -57,12 +57,12 @@ visibility:
 ==- *What's the best fork?*
 ###### ‎       
 - As explained before, it depends on your needs. It's best to try them yourself.
-- For **local** users, <u>[Applio](https://docs.ai-hub.wtf/rvc/local/applio/)</u> is a great starting point. For **cloud** users you can use either the <u>[Applio Colab](https://docs.ai-hub.wtf/rvc/cloud/applio-colab/)</u> or <u>[mainline kaggle](https://docs.ai-hub.wtf/rvc/cloud/mainline-kaggle/)</u>.
+- For **local** users, <u>[Applio](https://docs.aihub.gg/rvc/local/applio/)</u> is a great starting point. For **cloud** users you can use either the <u>[Applio Colab](https://docs.aihub.gg/rvc/cloud/applio-colab/)</u> or <u>[mainline kaggle](https://docs.aihub.gg/rvc/cloud/mainline-kaggle/)</u>.
 ===
 
 ==- *What are the requirements for RVC locally?*
 ###### ‎      
-> The minimum specs vary depending if it's for training models or <u>[inference](https://docs.ai-hub.wtf/extra/glossary/#inference)</u>.
+> The minimum specs vary depending if it's for training models or <u>[inference](https://docs.aihub.gg/extra/glossary/#inference)</u>.
 +++ Training
 **SPEC** | **REQUIREMENT** | 
 :---: | :---: | :---: |
@@ -88,7 +88,7 @@ Storage | 6 GB
 ==- *Can I use it on my AMD GPU?*
 ###### ‎  
 - You can, but it's going to be slower, as they don't have CUDA cores.
-- So it's more convenient using RVC through the <u>[cloud](https://docs.ai-hub.wtf/extra/glossary/#cloud-based)</u>.
+- So it's more convenient using RVC through the <u>[cloud](https://docs.aihub.gg/extra/glossary/#cloud-based)</u>.
 - If you're willing to use a slower version you can go ahead and follow this guide on how to get zluda working with <u>[Applio](https://docs.applio.org/getting-started/installation#amd-gpu-support-windows)</u>.
 === 
 
@@ -96,13 +96,13 @@ Storage | 6 GB
 ###### ‎      
 - The total time depends on a lot of factors, like dataset length, batch size, pretrains, specs, etc.
 
-- A 10 min <u>[dataset](https://docs.ai-hub.wtf/rvc/resources/dataset-isolation/)</u> with <u>[RMVPE](https://docs.ai-hub.wtf/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u> may take around 1 to 2 hours.
+- A 10 min <u>[dataset](https://docs.aihub.gg/rvc/resources/dataset-isolation/)</u> with <u>[RMVPE](https://docs.aihub.gg/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u> may take around 1 to 2 hours.
 === 
 
 ==- *Can I run it on a Mac?*
 ###### ‎      
 - Yes, on Macs of recent generations.
-- But you can only do <u>[inference](https://docs.ai-hub.wtf/extra/glossary/#inference)</u> & it's a little unstable.  
+- But you can only do <u>[inference](https://docs.aihub.gg/extra/glossary/#inference)</u> & it's a little unstable.  
 ===
 
 ==- *Do I need internet to use it?*
@@ -116,5 +116,5 @@ Storage | 6 GB
 :::content-center
 #### `You have reached the end.`
 
-[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.ai-hub.wtf/contributions/)
+[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.aihub.gg/contributions/)
 :::

@@ -18,7 +18,7 @@ order: 3000
 
 - **In this case**, voice models are models trained to **replicate** a voice, and with AI they apply it to the input audio.
 
-- There are plenty of them uploaded to the internet, made by the public. And the best way to make them is with <u>[RVC</u>](https://docs.ai-hub.wtf/essentials/how-to-make-voice-models/)</u>.   
+- There are plenty of them uploaded to the internet, made by the public. And the best way to make them is with <u>[RVC</u>](https://docs.aihub.gg/essentials/how-to-make-voice-models/)</u>.   
 
 ###### ‎   
 ### Voice Model Files 
@@ -32,7 +32,7 @@ order: 3000
 ##### :icon-triangle-down: <u>PTH:</u>
 - This file is the model itself.
 - Contains data regarding pitch.     
-- While training, RVC generates other .PTHs named `D_` and `G_`, but these are the <u>[checkpoints](https://docs.ai-hub.wtf/extra/glossary/#checkpoints)</u>, not usable models.  
+- While training, RVC generates other .PTHs named `D_` and `G_`, but these are the <u>[checkpoints](https://docs.aihub.gg/extra/glossary/#checkpoints)</u>, not usable models.  
 ***
 !!!warning *Be sure to upload the correct files mentioned before.*
 As people sometimes upload them incorrectly.
@@ -83,7 +83,7 @@ If you get models from different years, remember, the person's voice changes ove
     <img src="../searchrvcmodels-img/3.png" alt="image" width="400" height="auto">
 
 !!!success
-If you're curious about the epochs, <u>[learn more here](https://docs.ai-hub.wtf/rvc/resources/training/#tensorboard)</u>.
+If you're curious about the epochs, <u>[learn more here](https://docs.aihub.gg/rvc/resources/training/#tensorboard)</u>.
 !!!
 ***
 ###### ‎
@@ -94,7 +94,7 @@ If you're curious about the epochs, <u>[learn more here](https://docs.ai-hub.wtf
 ‎   
 - If you need a link for it, use the other methods.     
 
-- If it only exists in weights.gg, download the .ZIP & <u>[upload it to HF](https://docs.ai-hub.wtf/essentials/voice-models/#uploading-to-hugging-face)</u>.  
+- If it only exists in weights.gg, download the .ZIP & <u>[upload it to HF](https://docs.aihub.gg/essentials/voice-models/#uploading-to-hugging-face)</u>.  
 
 +++ applio.org   
 :::content-center  
@@ -128,7 +128,7 @@ If you get models from different years, remember, the person's voice changes ove
     <img src="../searchrvcmodels-img/applio-web-3.png" alt="image" width="1000" height="auto">
 
 !!!success
-If you're curious about the epochs, <u>[you can learn more here](https://docs.ai-hub.wtf/rvc/resources/training/#tensorboard)</u>.
+If you're curious about the epochs, <u>[you can learn more here](https://docs.aihub.gg/rvc/resources/training/#tensorboard)</u>.
 !!!
 ***
 ###### ‎
@@ -233,14 +233,14 @@ If you're curious about the epochs, <u>[you can learn more here](https://docs.ai
 ###### ‎   
 
 !!! In case there isn't a .ZIP.
-Download the <u>[correct files](https://docs.ai-hub.wtf/essentials/voice-models/#voice-model-files)</u> of the model. Then if you need its **link**, <u>[upload it to HF</u>](https://docs.ai-hub.wtf/essentials/voice-models/#uploading-to-hugging-face).
+Download the <u>[correct files](https://docs.aihub.gg/essentials/voice-models/#voice-model-files)</u> of the model. Then if you need its **link**, <u>[upload it to HF</u>](https://docs.aihub.gg/essentials/voice-models/#uploading-to-hugging-face).
 !!!
 
 +++
 
 ##### ‎ 
 #### If you couldn't find one, you have 3 options:   
-- <u>[Make the model yourself](https://docs.ai-hub.wtf/essentials/how-to-make-voice-models/)</u>
+- <u>[Make the model yourself](https://docs.aihub.gg/essentials/how-to-make-voice-models/)</u>
 - Pick a different one
 - Comission a **model maker** to make it for you         
 
@@ -253,7 +253,7 @@ Download the <u>[correct files](https://docs.ai-hub.wtf/essentials/voice-models/
 :   ‎
 
 #### 1. Zip the model        
-- Select the correct <u>[.PTH & .INDEX](https://docs.ai-hub.wtf/essentials/voice-models/#voice-model-files)</u> & <u>[zip</u>](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-8d28fa72-f2f9-712f-67df-f80cf89fd4e5) them into a **.ZIP** file.       
+- Select the correct <u>[.PTH & .INDEX](https://docs.aihub.gg/essentials/voice-models/#voice-model-files)</u> & <u>[zip</u>](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-8d28fa72-f2f9-712f-67df-f80cf89fd4e5) them into a **.ZIP** file.       
 
 - Ensure it's .ZIP & not .RAR or .7ZIP.
 
@@ -304,5 +304,5 @@ c. Tap on `Commit changes to main` & the model will begin to upload.
 :::content-center
 #### `You have reached the end.`
 
-[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.ai-hub.wtf/contributions/)
+[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.aihub.gg/contributions/)
 :::

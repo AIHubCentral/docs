@@ -12,7 +12,7 @@ icon: home-fill
 #### **``AI and RVC-related guides.``**
 :::
 :::content-center
-##### <u>[LEARN MORE](https://docs.ai-hub.wtf/#introduction)</u>
+##### <u>[LEARN MORE](https://docs.aihub.gg/#introduction)</u>
 :::
 
 ***
@@ -22,15 +22,15 @@ icon: home-fill
 #### - Starting point for beginners -      
 :::
 ###### ‎
-#### :icon-chevron-right: 🎵 <u>[How to Make AI Cover](https://docs.ai-hub.wtf/essentials/how-to-make-ai-cover/)</u>
+#### :icon-chevron-right: 🎵 <u>[How to Make AI Cover](https://docs.aihub.gg/essentials/how-to-make-ai-cover/)</u>
 ***
-#### :icon-chevron-right: :icon-rocket: ‎ <u>[How to Make Voice Models](https://docs.ai-hub.wtf/essentials/how-to-make-voice-models/)</u>
+#### :icon-chevron-right: :icon-rocket: ‎ <u>[How to Make Voice Models](https://docs.aihub.gg/essentials/how-to-make-voice-models/)</u>
 ***
-#### :icon-chevron-right: 💾 <u>[Voice Models](https://docs.ai-hub.wtf/essentials/voice-models/)</u>
+#### :icon-chevron-right: 💾 <u>[Voice Models](https://docs.aihub.gg/essentials/voice-models/)</u>
 ***
-#### :icon-chevron-right: :icon-info: ‎ [<u>What's RVC](https://docs.ai-hub.wtf/essentials/whats-rvc/)</u>
+#### :icon-chevron-right: :icon-info: ‎ [<u>What's RVC](https://docs.aihub.gg/essentials/whats-rvc/)</u>
 ***
-#### :icon-chevron-right: 🍏 [<u>Applio Guide](https://docs.ai-hub.wtf/rvc/local/applio/)</u>
+#### :icon-chevron-right: 🍏 [<u>Applio Guide](https://docs.aihub.gg/rvc/local/applio/)</u>
 ***
 #### :icon-chevron-right: :icon-broadcast: ‎ <u>[Deiteris' W-okada Guide](https://docs.aihub.gg/RVC-Voice-Changer/local/Deiteris'-W-Okada-Fork/)</u>
 
@@ -39,7 +39,7 @@ icon: home-fill
 ***
 ###### ‎    
 ## Introduction :icon-book:
-- This site is a documentation of AI tools, mostly <u>[RVC](https://docs.ai-hub.wtf/essentials/whats-rvc/)</u>-related apps. Made by members of [<u>**AI HUB**</u>](https://discord.com/invite/aihub).
+- This site is a documentation of AI tools, mostly <u>[RVC](https://docs.aihub.gg/essentials/whats-rvc/)</u>-related apps. Made by members of [<u>**AI HUB**</u>](https://discord.com/invite/aihub).
 
 - See **simple & convenient guides** regarding model training, inference, audio isolation, datasets, TensorBoard, & more. Verified by the experts & for **all** devices.      
 ***

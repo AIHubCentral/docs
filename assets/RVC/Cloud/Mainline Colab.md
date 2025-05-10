@@ -7,9 +7,9 @@ order: 7000
 
 ***
              
-- Mainline colab is a port of <u>[mainline RVC](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI)</u> to <u>[Google Colab</u>](https://docs.ai-hub.wtf/extra/glossary/#google-colab), for exclusively training.
+- Mainline colab is a port of <u>[mainline RVC](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI)</u> to <u>[Google Colab</u>](https://docs.aihub.gg/extra/glossary/#google-colab), for exclusively training.
 
-- It's free, includes all the necessary tools for a quality model, the <u>[TensorBoard</u>](https://docs.ai-hub.wtf/rvc/resources/training/#tensorboard).   
+- It's free, includes all the necessary tools for a quality model, the <u>[TensorBoard</u>](https://docs.aihub.gg/rvc/resources/training/#tensorboard).   
      
 ‎       
 #### Pros & Cons :icon-tasklist:
@@ -139,5 +139,5 @@ a. Do not process and feature extract again because those files are already in t
 :::content-center
 #### `You have reached the end.`
 
-[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.ai-hub.wtf/contributions/)
+[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.aihub.gg/contributions/)
 :::

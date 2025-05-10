@@ -230,7 +230,7 @@ a. Find the Tensor board icon on the right side bar and click it.
 
 <img src="../lighting.ai/10.png" alt="image" width="500">‎
 
-b. Once you've done that it will open the Tensor board. To learn how to use it go <u>[here](https://docs.ai-hub.wtf/rvc/resources/training/#usage-guide)</u>
+b. Once you've done that it will open the Tensor board. To learn how to use it go <u>[here](https://docs.aihub.gg/rvc/resources/training/#usage-guide)</u>
 ***
 
 #### 4. Opening the notebook.
@@ -269,5 +269,5 @@ b. Then click on `GPU` and it will show you a list of GPUs you can use by clicki
 :::content-center
 #### `You have reached the end.`
 
-[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.ai-hub.wtf/contributions/)
+[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.aihub.gg/contributions/)
 :::
