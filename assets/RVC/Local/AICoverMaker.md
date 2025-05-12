@@ -7,7 +7,7 @@ order: 2000
 
 ***
 :::content-center
-<img src="..\aicovermaker-img\Banner.png" alt="image" width="600">
+<img src="..\aicovermaker-img\banner.png" alt="image" width="700">
 
 :::
 
@@ -60,7 +60,7 @@ Also, **HuggingFace has a <u>[Security Scanner](https://huggingface.co/docs/hub/
 ***
 1. The easiest way to download RVC-AI-Cover-Maker-WebUI is by going to Eddy's <u>[Latest GitHub Release](https://github.com/Eddycrack864/RVC-AI-Cover-Maker-UI/releases/latest)</u>, and clicking the **Precompiled** version for your Operative System.
 
-    <img src="..\aicovermaker-img\Precompiled-Github.png" alt="image" width="400">
+    <img src="..\aicovermaker-img\precompiled-github.png" alt="image" width="400">
 
 ***
 2. Unzip the folder. It may take a few minutes.
