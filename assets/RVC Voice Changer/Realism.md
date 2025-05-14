@@ -169,6 +169,65 @@ The more VSTs you add the more delay there is going to be.
 
 4. Then go back in "Windows Media Player" and hit play on your noise. Don't forget to turn on repeat so it doesn't randomly stop.
 
+***
+### VST & Bg Noise Examples
+
+Here are some examples of what you can do with Kilohearts VSTs and Bg noise.
+Here is the clean audio for reference. 
+
+<audio controls>
+  <source src="../audio/clean-sample.wav" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+‎
+
+- **Remember that these are just examples and you can change them to fit your needs or wants.**
+
+***
+
+#### Bitcrush
+- Here is what you can do with these bitcrush settings. 
+
+<img src="../realism-img/bitcrush-ex.png" alt="image" width="250" height="">
+
+<audio controls>
+  <source src="../audio/bitcrush-sample.wav" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+***
+#### Phase Distortion 
+- Here is what you can do with these phase distortion settings. 
+
+<img src="../realism-img/phasedistortion-ex.png" alt="image" width="250" height="">
+
+<audio controls>
+  <source src="../audio/phase-sample.wav" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+***
+#### Bg Noise
+- Here is what you can do with adding background noise. 
+
+<audio controls>
+  <source src="../audio/bgnoise-sample.wav" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+***
+#### Filter
+- Here is what you can do with this filter setting. 
+
+<img src="../realism-img/filter-ex.png" alt="image" width="250" height="">
+
+<audio controls>
+  <source src="../audio/filter-sample.wav" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+
 
 ***
 ###### ‎

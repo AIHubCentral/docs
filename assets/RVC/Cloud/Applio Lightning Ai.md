@@ -39,7 +39,7 @@ order: 2000
 ## How to Setup    
 ***
 ### 1. Set up Account.
-a. First make an acount with <u>[Lightning Ai](https://lightning.ai)</u>
+a. First make an account with <u>[Lightning Ai](https://lightning.ai)</u>
 
 <img src="../lighting.ai/1.png" alt="image" width="300">‎ 
 
@@ -64,7 +64,7 @@ b. In the top right click `New Studio`
 
 <img src="../lighting.ai/studio.png" alt="image" width="1400">‎ 
 
-c. Set the studio type to code, teamspace to vision model and select any gpu you want for the machine. Click create when you've selected everything
+c. Set the studio type to code, teamspace to vision model and select any gpu you want for the machine. Click create when you've selected everything.
 
 <img src="../lighting.ai/setting.png" alt="image" width="400">‎ 
 
@@ -206,7 +206,7 @@ while True:
 ###### ‎   
 ## Using Applio   
 ###### ‎   
-#### 1. Open the Gardio link.
+#### 1. Open the Gradio link.
 a. To access Applio's UI click on the link next to `Running on public URL:`, after that it is basically the same as using Applio locally or on other cloud platforms.
 
 #### 2. Accessing Files.
@@ -244,7 +244,7 @@ a. If you want to go back to the notebook simply click on the `Jupyter` icon on 
 ## How to use Better GPUs    
 ###### ‎   
 #### 1. Swapping GPUs.
-a. To swap GPUs go to the GPU icon the the righ and click it. 
+a. To swap GPUs go to the GPU icon the the right and click it. 
 
 <img src="../lighting.ai/11.png" alt="image" width="500">‎
 

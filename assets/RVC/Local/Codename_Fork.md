@@ -33,11 +33,12 @@ Also, **HuggingFace has a <u>[Security Scanner](https://huggingface.co/docs/hub/
 ||| ✔️ **PROS** 
 - All of the pros of Applio.                   
 - Has a Warmup Phase option
-- Uses the Ranger25 optimizer
+- Multiple optimizer choices
 - Avg running loss
 - Mel similarity metric
 - SoX resampler
 - fcpe training
+- L1 mel loss
 ||| ❌ **CONS** 
 - More complicated features.     
 ||| 
@@ -74,7 +75,7 @@ Also, **HuggingFace has a <u>[Security Scanner](https://huggingface.co/docs/hub/
 
 ***
 ### Warmup Phase:
-In the training section there is an option to enable a warmup phase and a slider to choose how long it lasts. **Do not use this with Ranger25 since Ranger25 does this on its own.**
+In the training section there is an option to enable a warmup phase and a slider to choose how long it lasts. **Do not use this with Ranger21 or RAdam since they do this on their own.**
 
 <img src="../codename-img/warm.png" alt="image" width="1000" height="auto"> 
 
@@ -86,23 +87,18 @@ In the training section there is an option to enable a warmup phase and a slider
 While training it logs the average loss per epoch as the standard loss and rolling average loss over 5 epochs to evaluate general trends and the model's performance over time. 
 
 ***
-### Ranger25  Optimizer:
-This fork uses the Ranger25 optimizer as the default optimizer instead of AdamW. Ranger25 does train a bit slower than AdamW. Ranger25 is a updated version of the Ranger21 optimizer but with RAdam's core instead of AdamW's core.
+### Multiple Optimizers:
+This fork gives you the option to choose between three optimizers. 
 
-- Some of its key features are:
-    - Automatically adapts the warmup.
-    - More stable training.
-    - Better generalization.
-    - Quicker convergence.
+- AdamW
+- RAdam
+- Ranger21
 
-***
-### Checkpointing:
-Checkpointing reduces the vram usage, requirement of computation and training speed by 20-30 percent. Enable it If you're an user of a 4GB GPU or if you intend to use a bigger batch size than your gpu can handle. 
+<img src="../codename-img/optimizer.png" alt="image" width="400" height="auto">
 
-<img src="../codename-img/check.png" alt="image" width="800" height="auto">
 
 ***
-### Custom LR for gen and disc
+### Custom LR for gen and disc:
 In the training section under advanced there is a option to set a custom learning rate for both the generator and discriminator. 
 
 <img src="../codename-img/lr.png" alt="image" width="800" height="auto"> ‎
@@ -111,18 +107,24 @@ In the training section under advanced there is a option to set a custom learnin
 - This controls how quickly or slowly either the gen or disc learn.
 
 ***
-### FCPE Training
+### FCPE Training:
 
 Fast Context-based Pitch Estimation (fcpe) is another f0 like rmvpe. The benafit of using this f0 is that it can add that "human softness" and can give models nicer end breaths. However fcpe is not as percise as rmvpe. 
 
 
 ***
+### L1 Mel Loss:
+In the training section under advanced settings for training you can find a toggle to enable or disable Multi-scale Mel loss function. The results of using L1 might be less detailed but may potentially mitigate the 'metalic voice' effect.
+
+<img src="../codename-img/l1.png" alt="image" width="800" height="auto">
+
+
+***
 ### Upcoming Features:
-- More / different configurable optimizers.
-- Adjustable hop length for RMVPE.
 - Custom gradient norm value ( from the ui level )
 - Ability to delay / headstart the Generator or Discriminator.
 - More warmup options ( Cosine anneal and so on ).
+- Ability to choose lr_decay from the ui
 - And more...
 
 ***
