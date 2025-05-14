@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.8.1.800325907348">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.8.1.800557861004">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.8.1">
@@ -34,11 +34,11 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../../img/b.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.8.1.800325907348" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.8.1.800557861004" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.8.1.800325907348" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.8.1.800557861004" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.8.1" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.8.1.800325907348" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.8.1.800557861004" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -300,11 +300,12 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
 <ul>
 <li>All of the pros of Applio.</li>
 <li>Has a Warmup Phase option</li>
-<li>Uses the Ranger25 optimizer</li>
+<li>Multiple optimizer choices</li>
 <li>Avg running loss</li>
 <li>Mel similarity metric</li>
 <li>SoX resampler</li>
 <li>fcpe training</li>
+<li>L1 mel loss</li>
 </ul>
     </div>
     <div class="px-5 py-3 docs-columns-content">
@@ -379,7 +380,7 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
         <span>Warmup Phase:</span>
     </h3>
 </doc-anchor-target>
-<p>In the training section there is an option to enable a warmup phase and a slider to choose how long it lasts. <strong>Do not use this with Ranger25 since Ranger25 does this on its own.</strong></p>
+<p>In the training section there is an option to enable a warmup phase and a slider to choose how long it lasts. <strong>Do not use this with Ranger21 or RAdam since they do this on their own.</strong></p>
 <img src="../codename-img/warm.png" alt="image" width="1000" height="auto"> 
 <ul>
 <li>The warmup phase is where the learning rate (lr) linearly increased for a certain amount of epochs, this can be used to prevent large destabilizing updates in the early stages of training.
@@ -397,37 +398,24 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
 </doc-anchor-target>
 <p>While training it logs the average loss per epoch as the standard loss and rolling average loss over 5 epochs to evaluate general trends and the model&#x27;s performance over time.</p>
 <hr>
-<doc-anchor-target id="ranger25--optimizer">
+<doc-anchor-target id="multiple-optimizers">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#ranger25--optimizer">#</doc-anchor-trigger>
-        <span>Ranger25  Optimizer:</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#multiple-optimizers">#</doc-anchor-trigger>
+        <span>Multiple Optimizers:</span>
     </h3>
 </doc-anchor-target>
-<p>This fork uses the Ranger25 optimizer as the default optimizer instead of AdamW. Ranger25 does train a bit slower than AdamW. Ranger25 is a updated version of the Ranger21 optimizer but with RAdam&#x27;s core instead of AdamW&#x27;s core.</p>
+<p>This fork gives you the option to choose between three optimizers.</p>
 <ul>
-<li>Some of its key features are:
-<ul>
-<li>Automatically adapts the warmup.</li>
-<li>More stable training.</li>
-<li>Better generalization.</li>
-<li>Quicker convergence.</li>
+<li>AdamW</li>
+<li>RAdam</li>
+<li>Ranger21</li>
 </ul>
-</li>
-</ul>
-<hr>
-<doc-anchor-target id="checkpointing">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#checkpointing">#</doc-anchor-trigger>
-        <span>Checkpointing:</span>
-    </h3>
-</doc-anchor-target>
-<p>Checkpointing reduces the vram usage, requirement of computation and training speed by 20-30 percent. Enable it If you&#x27;re an user of a 4GB GPU or if you intend to use a bigger batch size than your gpu can handle.</p>
-<img src="../codename-img/check.png" alt="image" width="800" height="auto">
+<img src="../codename-img/optimizer.png" alt="image" width="400" height="auto">
 <hr>
 <doc-anchor-target id="custom-lr-for-gen-and-disc">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#custom-lr-for-gen-and-disc">#</doc-anchor-trigger>
-        <span>Custom LR for gen and disc</span>
+        <span>Custom LR for gen and disc:</span>
     </h3>
 </doc-anchor-target>
 <p>In the training section under advanced there is a option to set a custom learning rate for both the generator and discriminator.</p>
@@ -439,10 +427,19 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
 <doc-anchor-target id="fcpe-training">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#fcpe-training">#</doc-anchor-trigger>
-        <span>FCPE Training</span>
+        <span>FCPE Training:</span>
     </h3>
 </doc-anchor-target>
 <p>Fast Context-based Pitch Estimation (fcpe) is another f0 like rmvpe. The benafit of using this f0 is that it can add that &quot;human softness&quot; and can give models nicer end breaths. However fcpe is not as percise as rmvpe.</p>
+<hr>
+<doc-anchor-target id="l1-mel-loss">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#l1-mel-loss">#</doc-anchor-trigger>
+        <span>L1 Mel Loss:</span>
+    </h3>
+</doc-anchor-target>
+<p>In the training section under advanced settings for training you can find a toggle to enable or disable Multi-scale Mel loss function. The results of using L1 might be less detailed but may potentially mitigate the &#x27;metalic voice&#x27; effect.</p>
+<img src="../codename-img/l1.png" alt="image" width="800" height="auto">
 <hr>
 <doc-anchor-target id="upcoming-features">
     <h3>
@@ -451,11 +448,10 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
     </h3>
 </doc-anchor-target>
 <ul>
-<li>More / different configurable optimizers.</li>
-<li>Adjustable hop length for RMVPE.</li>
 <li>Custom gradient norm value ( from the ui level )</li>
 <li>Ability to delay / headstart the Generator or Discriminator.</li>
 <li>More warmup options ( Cosine anneal and so on ).</li>
+<li>Ability to choose lr_decay from the ui</li>
 <li>And more...</li>
 </ul>
 <hr>
