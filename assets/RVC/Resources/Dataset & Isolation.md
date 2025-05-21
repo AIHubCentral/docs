@@ -90,7 +90,7 @@ Remember that the cleaner your input audio is, the better the results.
 - If breathing sounds produce it, lower the <u>[Protection](https://docs.aihub.gg/rvc/resources/inference-settings/)</u> value.
 ‎   
 #### 3. If training models:
-- Ensure to <u>[clean your dataset](https://docs.aihub.gg/rvc/resources/datasets/#cleaning-datasets)</u> properly, this includes removing silences and distortions.
+- Ensure to clean your dataset properly, this includes removing silences and distortions.
 
 ***
  ‎

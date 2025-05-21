@@ -480,7 +480,7 @@ The third and final choice is RefineGAN, this is an entirely different GAN then 
 #### `FM` Feature Matching: 
 FM shows how well the generator is able to make synthetic data that has similar features to the dataset.
 
-If the graph is decreasing that indicates that the generator is able to make audio that has similar features to the dataset.
+If the graph is increasing that indicates that the generator is able to make audio that has similar features to the dataset.
 
 > you can think of this as how well the model can match timbral, spatial and temporal characteristics. 
 ***
