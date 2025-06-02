@@ -310,7 +310,7 @@ Sometimes Client does not work, then use SERVER with prefix "MME" or "Windows WA
 
 - `Formant Shift:` Alters harmonic frequencies and changes the voice timbre without affecting the pitch
 
-- `Index:` This controls the accent of the voice model. In most cases, using Index on Realtime Voice Changer can add an autotune-like sound. If you have a heavy foreign accent, you may use this at a low rate. Beware, this increases CPU/GPU usage
+- `Index:` This controls the accent of the voice model. In most cases, using Index on Realtime Voice Changer can add realism if you speak the language the model was trained in. If you have a heavy foreign accent, you may use this at a low rate. Beware, this increases CPU usage
 ***
 - `In. Sens:` microphone threshold, increasing this will cause less background noise to get picked up if it's a problem
 
