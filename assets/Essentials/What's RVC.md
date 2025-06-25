@@ -66,14 +66,14 @@ visibility:
 +++ Training
 **SPEC** | **MINIMUM REQUIREMENT** | 
 :---: | :---: | :---: |
-GPU | NVIDIA GTX 900 Series / AMD RX580 (Mac isn't supposed) | 
+GPU | NVIDIA GTX 900 Series / AMD RX580 (Mac isn't supported) | 
 RAM | 6GB
 Storage | 30 GB
 
 
 **SPEC** | **SUGGESTED REQUIREMENT** | 
 :---: | :---: | :---: |
-GPU | NVIDIA RTX 20 Series or later / AMD Radeon RX 5xxx or later (Mac isn't supposed) | 
+GPU | NVIDIA RTX 20 Series or later / AMD Radeon RX 5xxx or later (Mac isn't supported) | 
 VRAM | 8GB
 RAM | 8GB
 Storage | 30 GB
