@@ -64,15 +64,30 @@ visibility:
 ###### ‎      
 > The minimum specs vary depending if it's for training models or <u>[inference](https://docs.aihub.gg/extra/glossary/#inference)</u>.
 +++ Training
-**SPEC** | **REQUIREMENT** | 
+**SPEC** | **MINIMUM REQUIREMENT** | 
 :---: | :---: | :---: |
-GPU | NVIDIA RTX 1060 / AMD RX5700 | 
+GPU | NVIDIA GTX 900 Series / AMD RX580 (Mac isn't supposed) | 
 RAM | 6GB
 Storage | 30 GB
 
+
+**SPEC** | **SUGGESTED REQUIREMENT** | 
+:---: | :---: | :---: |
+GPU | NVIDIA RTX 20 Series or later / AMD Radeon RX 5xxx or later (Mac isn't supposed) | 
+VRAM | 8GB
+RAM | 8GB
+Storage | 30 GB
+
+
 +++ Inference
-**SPEC** | **REQUIREMENT** | 
+**SPEC** | **MINIMUM REQUIREMENT** | 
 :---: | :---: | :---: | 
+RAM | 6GB
+Storage | 6 GB 
+
+**SPEC** | **SUGGESTED REQUIREMENT** | 
+:---: | :---: | :---: | 
+GPU | NVIDIA RTX 20 Series or later / AMD Radeon RX 5xxx or later / Apple M3 | 
 RAM | 6GB
 Storage | 6 GB 
 
@@ -80,7 +95,7 @@ Storage | 6 GB
 
 !!! NOTES:
 - For inference, the storage requirement varies depending on the fork. It can be around 5 to 9 GB
-- If you don't meet these requirements, it's more convenient to use RVC on the cloud.
+- If you don't meet the minimum requirements, it's more convenient to use RVC on the cloud.
 !!!
 
 === 
@@ -89,7 +104,7 @@ Storage | 6 GB
 ###### ‎  
 - You can, but it's going to be slower, as they don't have CUDA cores.
 - So it's more convenient using RVC through the <u>[cloud](https://docs.aihub.gg/extra/glossary/#cloud-based)</u>.
-- If you're willing to use a slower version you can go ahead and follow this guide on how to get zluda working with <u>[Applio](https://docs.applio.org/getting-started/installation#amd-gpu-support-windows)</u>.
+- If you're willing to use a slower version you can go ahead and follow this guide on how to get zluda working with <u>[Applio Zluda](https://docs.applio.org/getting-started/installation#amd-gpu-support-windows)</u>.
 === 
 
 ==- *How long does it take to train?*

@@ -14,7 +14,7 @@ order: 4000
 
 - This guide will be about the Deiteris fork since it has better preformence and quality.
 
-- RVC does **NOT** mean realtime voice changer.
+- RVC does **NOT** mean realtime voice changer. RVC means Retrieval-based-Voice-Conversion
 
 ***
 #### Is The W-Okada Deiteris Fork Safe?
