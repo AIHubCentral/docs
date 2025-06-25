@@ -6,10 +6,10 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.9.0.802213793238">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.10.1.804178895549">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 3.9.0">
+    <meta name="generator" content="Retype 3.10.1">
 
     <!-- Primary Meta Tags -->
     <title>Dataset &amp; Isolation</title>
@@ -34,26 +34,26 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../../img/b.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.9.0.802213793238" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.10.1.804178895549" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.9.0.802213793238" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.9.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.9.0.802213793238" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.10.1.804178895549" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.10.1" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.10.1.804178895549" data-turbo-eval="false" defer></script>
 </head>
 <body>
-    <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
-        <div class="absolute bottom-0 left-0 bg-gray-100 dark:bg-dark-800" style="top: 5rem; right: 50%"></div>
+    <div id="retype-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
+        <div class="absolute bottom-0 left-0 dark:bg-dark-800" style="top: 5rem; right: 50%"></div>
     
-        <header id="docs-site-header" class="sticky top-0 z-30 flex w-full h-16 bg-white border-b border-gray-200 md:h-20 dark:bg-dark-850 dark:border-dark-650">
+        <header id="retype-header" class="sticky top-0 z-30 flex w-full h-16 bg-white border-b border-gray-200 md:h-20 dark:bg-dark-850 dark:border-dark-650">
             <div class="container relative flex items-center justify-between pr-6 grow md:justify-start">
                 <!-- Mobile menu button skeleton -->
-                <button v-cloak class="skeleton docs-mobile-menu-button flex items-center justify-center shrink-0 overflow-hidden dark:text-white focus:outline-none rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
-                <div v-cloak id="docs-sidebar-toggle"></div>
+                <button v-cloak class="skeleton retype-mobile-menu-button flex items-center justify-center shrink-0 overflow-hidden dark:text-white focus:outline-none rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
+                <div v-cloak id="retype-sidebar-left-toggle-button"></div>
         
                 <!-- Logo -->
                 <div class="flex items-center justify-between h-full py-2 md:w-75">
                     <div class="flex items-center px-2 md:px-6">
-                        <a id="docs-site-logo" href="../../../" class="flex items-center leading-snug text-2xl">
+                        <a id="retype-branding-logo" href="../../../" class="flex items-center leading-snug text-2xl">
                             <span class="grow-0 shrink-0 overflow-hidden">
                                 <img class="max-h-10 dark:hidden md:inline-block" src="../../../img/a.png">
                                 <img class="max-h-10 hidden dark:inline-block" src="../../../img/a.png">
@@ -66,7 +66,7 @@
         
                 <div class="flex justify-between md:grow">
                     <!-- Top Nav -->
-                    <nav class="hidden md:flex">
+                    <nav id="retype-header-nav" class="hidden md:flex">
                         <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
                             <li class="mr-6">
                                 <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://discord.gg/aihub">
@@ -128,7 +128,7 @@
                     </div>
         
                     <div v-cloak class="flex justify-end grow">
-                        <div id="docs-mobile-search-button"></div>
+                        <div id="retype-mobile-search-button"></div>
                         <doc-search-desktop></doc-search-desktop>
         
                         <doc-theme-switch class="lg:ml-2"></doc-theme-switch>
@@ -138,7 +138,7 @@
             </div>
         </header>
     
-        <div class="container relative flex bg-white">
+        <div id="retype-container" class="container relative flex bg-white">
             <!-- Sidebar Skeleton -->
             <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-white border-gray-200 sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton dark:bg-dark-800 dark:border-dark-650">
             
@@ -217,11 +217,11 @@
             <div class="grow min-w-0 dark:bg-dark-850">
                 <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
                 <div class="flex">
-                    <div class="min-w-0 p-4 grow md:px-16">
+                    <div id="retype-main" class="min-w-0 p-4 grow md:px-16">
                         <main class="relative pb-12 lg:pt-2">
-                            <div class="docs-markdown" id="docs-content">
+                            <div class="retype-markdown" id="retype-content">
                                 <!-- Rendered if sidebar right is enabled -->
-                                <div id="docs-sidebar-right-toggle"></div>
+                                <div id="retype-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
 <doc-anchor-target id="dataset--isolation" class="break-words">
     <h1>
@@ -575,7 +575,7 @@ Make sure to tick <code v-pre>🗹 Create a desktop shortcut</code> for an easie
         <span>‎</span>
     </h6>
 </doc-anchor-target>
-<ol type="a">
+<ol type="a" start="1">
 <li><p>At the right you can select the output format.<br />
 We recommend picking <code v-pre>FLAC</code>. Learn why <u><a href="https://docs.aihub.gg/extra/glossary/#lossless-formats">here</a></u>.<br />
 ‎</p>
@@ -607,7 +607,7 @@ We recommend picking <code v-pre>FLAC</code>. Learn why <u><a href="https://docs
         <span>‎</span>
     </h6>
 </doc-anchor-target>
-<ol type="a">
+<ol type="a" start="1">
 <li><p>In <strong>CHOOSE PROCESS METHOD</strong> select <code v-pre>MDX-Net</code>, and select either the <code v-pre>BS Roformer-Viper-X 1296</code> or <code v-pre>MDX23C</code> model.</p>
 <p><img src="../uvrmvsep-img/5.jpg" alt="image" width="250" height="auto">‎</p>
 </li>
@@ -729,13 +729,15 @@ We recommend picking <code v-pre>FLAC</code>. Learn why <u><a href="https://docs
         <span>‎</span>
     </h6>
 </doc-anchor-target>
-<ol type="a">
-<li>At the right you can select the output format.<br />
+<ol type="a" start="1">
+<li><p>At the right you can select the output format.<br />
 We recommend picking <code v-pre>FLAC</code>. Learn why <u><a href="https://docs.aihub.gg/extra/glossary/#lossless-formats">here</a></u>.<br />
-‎</li>
-<li>If your GPU is <strong>compatible with <u><a href="https://docs.aihub.gg/extra/glossary/#cuda">CUDA</a></u></strong>, toggle <code v-pre>GPU Conversion</code> on for a faster process.<br />
+‎</p>
+</li>
+<li><p>If your GPU is <strong>compatible with <u><a href="https://docs.aihub.gg/extra/glossary/#cuda">CUDA</a></u></strong>, toggle <code v-pre>GPU Conversion</code> on for a faster process.<br />
 ‎<br />
-<img src="../uvrmvsep-img/16.png" alt="image" width="350" height="auto">‎</li>
+<img src="../uvrmvsep-img/16.png" alt="image" width="350" height="auto">‎</p>
+</li>
 </ol>
 <doc-anchor-target id="section-17">
     <h6>
@@ -760,16 +762,19 @@ We recommend picking <code v-pre>FLAC</code>. Learn why <u><a href="https://docs
         <span>‎</span>
     </h6>
 </doc-anchor-target>
-<ol type="a">
-<li>In <strong>Process Method</strong> select <code v-pre>VR</code>.<br />
-‎</li>
-<li>Set <strong>Window Size</strong> to <code v-pre>320</code>. (optional)<br />
+<ol type="a" start="1">
+<li><p>In <strong>Process Method</strong> select <code v-pre>VR</code>.<br />
+‎</p>
+</li>
+<li><p>Set <strong>Window Size</strong> to <code v-pre>320</code>. (optional)<br />
 Lower Window Size yield a higher output <strong>quality</strong>, but will take <strong>longer</strong> to process.<br />
-‎</li>
-<li>Check the <u><a href="https://docs.aihub.gg/rvc/resources/vocal-isolation/#best-models">model list</a></u>. In <strong>Select VR Model</strong> pick the one according to what you need to remove.<br />
+‎</p>
+</li>
+<li><p>Check the <u><a href="https://docs.aihub.gg/rvc/resources/vocal-isolation/#best-models">model list</a></u>. In <strong>Select VR Model</strong> pick the one according to what you need to remove.<br />
 ‎<br />
 If you need to remove multiple noises, follow this pipeline for the best results:<br />
-<code v-pre>Remove instrumental -&gt; Remove reverb -&gt; Extract main vocals -&gt; Remove noise</code></li>
+<code v-pre>Remove instrumental -&gt; Remove reverb -&gt; Extract main vocals -&gt; Remove noise</code></p>
+</li>
 </ol>
 <doc-anchor-target id="section-19">
     <h6>
@@ -995,14 +1000,17 @@ If you need to remove multiple noises, follow this pipeline for the best results
     </h6>
 </doc-anchor-target>
 <ol>
-<li>First access the Colab space <u><a href="https://colab.research.google.com/github/jarredou/Music-Source-Separation-Training-Colab-Inference/blob/main/Music_Source_Separation_Training_(Colab_Inference).ipynb">here</a></u>.<br />
-‎</li>
-<li>Then <strong>Log in</strong> to your Google account.<br />
-‎</li>
-<li>Execute the <strong>Gdrive Connection</strong> cell by pressing the play button <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M9.5 15.584V8.416a.5.5 0 0 1 .77-.42l5.576 3.583a.5.5 0 0 1 0 .842l-5.576 3.584a.5.5 0 0 1-.77-.42Z"/><path d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12Zm11-9.5A9.5 9.5 0 0 0 2.5 12a9.5 9.5 0 0 0 9.5 9.5 9.5 9.5 0 0 0 9.5-9.5A9.5 9.5 0 0 0 12 2.5Z"/></g></g></svg>. Grant all the permissions.<br />
+<li><p>First access the Colab space <u><a href="https://colab.research.google.com/github/jarredou/Music-Source-Separation-Training-Colab-Inference/blob/main/Music_Source_Separation_Training_(Colab_Inference).ipynb">here</a></u>.<br />
+‎</p>
+</li>
+<li><p>Then <strong>Log in</strong> to your Google account.<br />
+‎</p>
+</li>
+<li><p>Execute the <strong>Gdrive Connection</strong> cell by pressing the play button <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M9.5 15.584V8.416a.5.5 0 0 1 .77-.42l5.576 3.583a.5.5 0 0 1 0 .842l-5.576 3.584a.5.5 0 0 1-.77-.42Z"/><path d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12Zm11-9.5A9.5 9.5 0 0 0 2.5 12a9.5 9.5 0 0 0 9.5 9.5 9.5 9.5 0 0 0 9.5-9.5A9.5 9.5 0 0 0 12 2.5Z"/></g></g></svg>. Grant all the permissions.<br />
 ‎<br />
 <img src="../clouduvr-img/1.png" alt="image" width="270" height="auto">‎<br />
-‎</li>
+‎</p>
+</li>
 </ol>
 <ul>
 <li>It&#x27;ll finish once the logs say <code v-pre>Mounted at /content/drive</code>
@@ -1053,7 +1061,7 @@ If you need to remove multiple noises, follow this pipeline for the best results
         <span>‎</span>
     </h6>
 </doc-anchor-target>
-<ol type="a">
+<ol type="a" start="1">
 <li>Select your model of choice and run the <strong>Separation</strong> cell. You can look <u><a href="https://docs.aihub.gg/rvc/resources/vocal-isolation/#best-models">here</a></u> for the best models</li>
 </ol>
 <p>‎<br />
@@ -1173,15 +1181,17 @@ If you need to remove multiple noises, follow this pipeline for the best results
         <span>‎</span>
     </h6>
 </doc-anchor-target>
-<ol type="a">
-<li>Tap the <strong>Input Audio</strong> box &amp; select your audio, or simply drag &amp; drop.<br />
+<ol type="a" start="1">
+<li><p>Tap the <strong>Input Audio</strong> box &amp; select your audio, or simply drag &amp; drop.<br />
 ‎<br />
 <img src="../hugging-img/1.png" alt="image" width="1000" height="auto">‎<br />
 ‎<br />
-‎</li>
-<li>Once it&#x27;s done uploading, in <strong>CHOOSE PROCESS METHOD</strong>, select <code v-pre>BS/Mel Roformer</code>. Under that you can change <strong>Segment Size</strong> and <strong>Overlap</strong>, the defaults are fine.<br />
+‎</p>
+</li>
+<li><p>Once it&#x27;s done uploading, in <strong>CHOOSE PROCESS METHOD</strong>, select <code v-pre>BS/Mel Roformer</code>. Under that you can change <strong>Segment Size</strong> and <strong>Overlap</strong>, the defaults are fine.<br />
 ‎<br />
-<img src="../hugging-img/2.png" alt="image" width="1000" height="auto">‎</li>
+<img src="../hugging-img/2.png" alt="image" width="1000" height="auto">‎</p>
+</li>
 </ol>
 <p>‎</p>
 <doc-anchor-target id="3-select-model-1">
@@ -1215,10 +1225,12 @@ If you need to remove multiple noises, follow this pipeline for the best results
         <span>‎</span>
     </h6>
 </doc-anchor-target>
-<ol type="a">
-<li>Click <strong>Spererate!</strong> below. Wait a moment for the audio to process.<br />
-‎</li>
-<li>Playable audios will then appear in the output boxes below. To download the output, click the little download icon in the top right.</li>
+<ol type="a" start="1">
+<li><p>Click <strong>Spererate!</strong> below. Wait a moment for the audio to process.<br />
+‎</p>
+</li>
+<li><p>Playable audios will then appear in the output boxes below. To download the output, click the little download icon in the top right.</p>
+</li>
 </ol>
 <ul>
 <li>If you&#x27;re extracting lead vocals, remember to download the backing ones if you wish to keep them.</li>
@@ -1393,10 +1405,12 @@ If you need to remove multiple noises, follow this pipeline for the best results
         <span>‎</span>
     </h6>
 </doc-anchor-target>
-<ol type="a">
-<li>First, make an account <u><a href="https://mvsep.com/register">here</u></a>.<br />
-‎</li>
-<li>Once logged in, go to the <u><a href="https://mvsep.com">main page</u></a>.</li>
+<ol type="a" start="1">
+<li><p>First, make an account <u><a href="https://mvsep.com/register">here</u></a>.<br />
+‎</p>
+</li>
+<li><p>Once logged in, go to the <u><a href="https://mvsep.com">main page</u></a>.</p>
+</li>
 </ol>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-blue-500 dark:bg-blue-400"></div>
@@ -1429,7 +1443,7 @@ If you need to remove multiple noises, follow this pipeline for the best results
         <span>‎</span>
     </h6>
 </doc-anchor-target>
-<ol type="a">
+<ol type="a" start="1">
 <li><p>Click <code v-pre>Browse File</code> &amp; select your audio, or simply drag &amp; drop. The audio will begin to upload.</p>
 <p><img src="../uvrmvsep-img/9.png" alt="image" width="330" height="auto">‎</p>
 </li>
@@ -1448,7 +1462,7 @@ If you need to remove multiple noises, follow this pipeline for the best results
         <span>‎</span>
     </h6>
 </doc-anchor-target>
-<ol type="a">
+<ol type="a" start="1">
 <li><p>In <strong>Separation type</strong> select <code v-pre>BS Roformer</code><br />
 ‎</p>
 </li>
@@ -1494,7 +1508,7 @@ We recommend selecting FLAC from now on. Learn more <u><a href="https://docs.aih
 <ul>
 <li>When it&#x27;s done converting it will redirect you to a page where you can listen the results.</li>
 </ul>
-<ol type="a">
+<ol type="a" start="1">
 <li><p>Tap the three buttons of the <strong>Vocals</strong> audio and then <code v-pre>Download</code>.<br />
 ‎</p>
 </li>
@@ -1517,10 +1531,12 @@ We recommend selecting FLAC from now on. Learn more <u><a href="https://docs.aih
     </h6>
 </doc-anchor-target>
 <ul>
-<li>Usually songs include reverb &amp; backing vocals. These <strong>negatively</strong> impact the results in RVC.<br />
-‎</li>
-<li>So if the output has any undesired noises, follow the procedure on <strong>Cleaning Vocals</strong>.<br />
-‎</li>
+<li><p>Usually songs include reverb &amp; backing vocals. These <strong>negatively</strong> impact the results in RVC.<br />
+‎</p>
+</li>
+<li><p>So if the output has any undesired noises, follow the procedure on <strong>Cleaning Vocals</strong>.<br />
+‎</p>
+</li>
 </ul>
 </doc-panel>
 <doc-panel id="cleaning-vocals" collapsed>
@@ -1543,10 +1559,12 @@ We recommend selecting FLAC from now on. Learn more <u><a href="https://docs.aih
         <span>‎</span>
     </h6>
 </doc-anchor-target>
-<ol type="a">
-<li>First, make an account <u><a href="https://mvsep.com/register">here</u></a>.<br />
-‎</li>
-<li>Once logged in, go to the <u><a href="https://mvsep.com">main page</u></a>.</li>
+<ol type="a" start="1">
+<li><p>First, make an account <u><a href="https://mvsep.com/register">here</u></a>.<br />
+‎</p>
+</li>
+<li><p>Once logged in, go to the <u><a href="https://mvsep.com">main page</u></a>.</p>
+</li>
 </ol>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-blue-500 dark:bg-blue-400"></div>
@@ -1579,7 +1597,7 @@ We recommend selecting FLAC from now on. Learn more <u><a href="https://docs.aih
         <span>‎</span>
     </h6>
 </doc-anchor-target>
-<ol type="a">
+<ol type="a" start="1">
 <li><p>Click <code v-pre>Browse File</code> &amp; select your audio, or simply drag &amp; drop. The audio will begin to upload.<br />
 ‎<br />
 <img src="../uvrmvsep-img/9.png" alt="image" width="330" height="auto">‎<br />
@@ -1605,13 +1623,15 @@ We recommend selecting FLAC from now on. Learn more <u><a href="https://docs.aih
         <span>‎</span>
     </h6>
 </doc-anchor-target>
-<ol type="a">
-<li>In <strong>Separation Type</strong>, select <code v-pre>DeNoise by aufr33</code>.<br />
-‎</li>
-<li>Check the <u><a href="https://docs.aihub.gg/rvc/resources/dataset-isolation/#best-models">model list</a></u>. Pick the one according to what you need to remove.<br />
+<ol type="a" start="1">
+<li><p>In <strong>Separation Type</strong>, select <code v-pre>DeNoise by aufr33</code>.<br />
+‎</p>
+</li>
+<li><p>Check the <u><a href="https://docs.aihub.gg/rvc/resources/dataset-isolation/#best-models">model list</a></u>. Pick the one according to what you need to remove.<br />
 ‎<br />
 If you need to remove multiple noises, follow this pipeline for the best results:<br />
-<code v-pre>Remove instrumental -&gt; Remove reverb -&gt; Extract main vocals -&gt; Remove noise</code></li>
+<code v-pre>Remove instrumental -&gt; Remove reverb -&gt; Extract main vocals -&gt; Remove noise</code></p>
+</li>
 </ol>
 <hr>
 <p>‎</p>
@@ -1627,7 +1647,7 @@ If you need to remove multiple noises, follow this pipeline for the best results
         <span>‎</span>
     </h6>
 </doc-anchor-target>
-<ol type="a">
+<ol type="a" start="1">
 <li><p>Click <code v-pre>Separate</code> &amp; when it&#x27;s done converting it will redirect you to a page, where you can listen the results.<br />
 ‎</p>
 </li>
@@ -1706,8 +1726,7 @@ If you wish to keep the backing vocals stem, remember to download it too.</p>
     </h6>
 </doc-anchor-target>
 <ul>
-<li>Using the <strong>Separation Type</strong> of <code v-pre>DeNoise by aufr33</code>, you can modify the <code v-pre>Aggressiveness</code>.
-This determines the depth of the extraction.</li>
+<li>Using the <strong>Separation Type</strong> of <code v-pre>DeNoise by aufr33</code>, you can modify the <code v-pre>Aggressiveness</code>.This determines the depth of the extraction.</li>
 <li>A higher value will deepen the extraction, and a lower one will soften it.</li>
 <li>Each audio is different, so you&#x27;ll have to test the ideal value.</li>
 </ul>
@@ -1771,7 +1790,7 @@ This determines the depth of the extraction.</li>
         <span></span>
     </h6>
 </doc-anchor-target>
-<ol type="a">
+<ol type="a" start="1">
 <li>First go to <u><a href="https://x-minus.pro">X-minus&#x27;s website</a></u> and click the &quot;Vocal Remover&quot; at the top right.</li>
 </ol>
 <img src="../x-minus-img/1.png" alt="image" width="600" height="auto"> 
@@ -1814,7 +1833,7 @@ This determines the depth of the extraction.</li>
         <span></span>
     </h6>
 </doc-anchor-target>
-<ol type="a">
+<ol type="a" start="1">
 <li>In &quot;De-Noise&quot; select &quot;Mel-Roformer De-Noise&quot;. You can also check the <a href="https://docs.aihub.gg/rvc/resources/vocal-isolation/#best-models">model list</a> to see what is the best model for your needs.</li>
 </ol>
 <img src="../x-minus-img/4.png" alt="image" width="600" height="auto">
@@ -1951,10 +1970,12 @@ This determines the depth of the extraction.</li>
 <ul>
 <li>In Audacity import your audio</li>
 <li>Go to Effects -&gt; Special -&gt; Truncate Silence</li>
-<li>Use the following values:<br />
+<li><p>Use the following values:<br />
 ‎<br />
-<img src="../datasets-img/truncnew.png" alt="image" width="420" height="auto"><hr>
-‎<doc-anchor-target id="step-21-audio-normalization-optional">
+<img src="../datasets-img/truncnew.png" alt="image" width="420" height="auto"></p>
+<hr>
+<p>‎</p>
+<doc-anchor-target id="step-21-audio-normalization-optional">
     <h4>
         <doc-anchor-trigger class="header-anchor-trigger" to="#step-21-audio-normalization-optional">#</doc-anchor-trigger>
         <span>Step 2.1: Audio Normalization (Optional)</span>
@@ -1988,11 +2009,11 @@ This determines the depth of the extraction.</li>
     </h3>
 </doc-anchor-target>
 <ul>
-<li><p>On the upper right corner go to File and click <code v-pre>Export Audio</code>.<br />
+<li>On the upper right corner go to File and click <code v-pre>Export Audio</code>.<br />
 ‎<br />
 <img src="../datasets-img/4.png" alt="image" width="370" height="auto">
 ‎<br />
-‎</p>
+‎
 <ul>
 <li><p>And finally, introduce these values:</p>
 <ul>
@@ -2028,9 +2049,9 @@ This determines the depth of the extraction.</li>
                                 <!-- Required only on API pages -->
                                 <doc-toolbar-member-filter-no-results></doc-toolbar-member-filter-no-results>
                             </div>
-                            <footer class="clear-both">
+                            <footer id="retype-content-footer" class="clear-both">
                             
-                                <nav class="print:hidden flex mt-14">
+                                <nav id="retype-nextprev" class="print:hidden flex mt-14">
                                     <div class="w-1/2">
                                         <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../rvc/cloud/applio-lightning-ai/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
@@ -2054,13 +2075,13 @@ This determines the depth of the extraction.</li>
                             </footer>
                         </main>
                 
-                        <div class="print:border-none border-t dark:border-dark-650 pt-6 mb-8">
+                        <div id="retype-page-footer" class="print:border-none border-t dark:border-dark-650 pt-6 mb-8">
                             <footer class="flex flex-wrap items-center justify-between print:justify-center">
-                                <div class="print:hidden">
+                                <div id="retype-footer-links" class="print:hidden">
                                     <ul class="flex flex-wrap items-center text-sm">
                                     </ul>
                                 </div>
-                                <div class="print:justify-center docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright 2025. All rights reserved.</p></div>
+                                <div id="retype-copyright" class="print:justify-center docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright 2025. All rights reserved.</p></div>
                             </footer>
                         </div>
                     </div>
@@ -2087,7 +2108,7 @@ This determines the depth of the extraction.</li>
     </div>
 
 
-    <div id="docs-overlay-target"></div>
+    <div id="retype-overlay-target"></div>
 
     <script data-cfasync="false">window.__DOCS__ = { "title": "Dataset & Isolation", level: 3, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>

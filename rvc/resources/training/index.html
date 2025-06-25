@@ -6,10 +6,10 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.9.0.802213793238">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.10.1.804178895549">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 3.9.0">
+    <meta name="generator" content="Retype 3.10.1">
 
     <!-- Primary Meta Tags -->
     <title>Training</title>
@@ -34,26 +34,26 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../../img/b.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.9.0.802213793238" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.10.1.804178895549" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.9.0.802213793238" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.9.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.9.0.802213793238" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.10.1.804178895549" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.10.1" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.10.1.804178895549" data-turbo-eval="false" defer></script>
 </head>
 <body>
-    <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
-        <div class="absolute bottom-0 left-0 bg-gray-100 dark:bg-dark-800" style="top: 5rem; right: 50%"></div>
+    <div id="retype-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
+        <div class="absolute bottom-0 left-0 dark:bg-dark-800" style="top: 5rem; right: 50%"></div>
     
-        <header id="docs-site-header" class="sticky top-0 z-30 flex w-full h-16 bg-white border-b border-gray-200 md:h-20 dark:bg-dark-850 dark:border-dark-650">
+        <header id="retype-header" class="sticky top-0 z-30 flex w-full h-16 bg-white border-b border-gray-200 md:h-20 dark:bg-dark-850 dark:border-dark-650">
             <div class="container relative flex items-center justify-between pr-6 grow md:justify-start">
                 <!-- Mobile menu button skeleton -->
-                <button v-cloak class="skeleton docs-mobile-menu-button flex items-center justify-center shrink-0 overflow-hidden dark:text-white focus:outline-none rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
-                <div v-cloak id="docs-sidebar-toggle"></div>
+                <button v-cloak class="skeleton retype-mobile-menu-button flex items-center justify-center shrink-0 overflow-hidden dark:text-white focus:outline-none rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
+                <div v-cloak id="retype-sidebar-left-toggle-button"></div>
         
                 <!-- Logo -->
                 <div class="flex items-center justify-between h-full py-2 md:w-75">
                     <div class="flex items-center px-2 md:px-6">
-                        <a id="docs-site-logo" href="../../../" class="flex items-center leading-snug text-2xl">
+                        <a id="retype-branding-logo" href="../../../" class="flex items-center leading-snug text-2xl">
                             <span class="grow-0 shrink-0 overflow-hidden">
                                 <img class="max-h-10 dark:hidden md:inline-block" src="../../../img/a.png">
                                 <img class="max-h-10 hidden dark:inline-block" src="../../../img/a.png">
@@ -66,7 +66,7 @@
         
                 <div class="flex justify-between md:grow">
                     <!-- Top Nav -->
-                    <nav class="hidden md:flex">
+                    <nav id="retype-header-nav" class="hidden md:flex">
                         <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
                             <li class="mr-6">
                                 <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://discord.gg/aihub">
@@ -128,7 +128,7 @@
                     </div>
         
                     <div v-cloak class="flex justify-end grow">
-                        <div id="docs-mobile-search-button"></div>
+                        <div id="retype-mobile-search-button"></div>
                         <doc-search-desktop></doc-search-desktop>
         
                         <doc-theme-switch class="lg:ml-2"></doc-theme-switch>
@@ -138,7 +138,7 @@
             </div>
         </header>
     
-        <div class="container relative flex bg-white">
+        <div id="retype-container" class="container relative flex bg-white">
             <!-- Sidebar Skeleton -->
             <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-white border-gray-200 sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton dark:bg-dark-800 dark:border-dark-650">
             
@@ -217,11 +217,11 @@
             <div class="grow min-w-0 dark:bg-dark-850">
                 <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
                 <div class="flex">
-                    <div class="min-w-0 p-4 grow md:px-16">
+                    <div id="retype-main" class="min-w-0 p-4 grow md:px-16">
                         <main class="relative pb-12 lg:pt-2">
-                            <div class="docs-markdown" id="docs-content">
+                            <div class="retype-markdown" id="retype-content">
                                 <!-- Rendered if sidebar right is enabled -->
-                                <div id="docs-sidebar-right-toggle"></div>
+                                <div id="retype-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
 <doc-anchor-target id="training" class="break-words">
     <h1>
@@ -281,14 +281,10 @@
     </h4>
 </doc-anchor-target>
 <ul>
-<li><p><strong>No it doesn&#x27;t</strong>, since using a disproportionate amount will overtrain the model, which will affect the quality of it.</p>
-</li>
-<li><p>In the field of AI, is when an AI model learns its <u><a href="https://docs.aihub.gg/rvc/resources/datasets/">dataset</a></u> too well, to the point where it centers too much around it &amp; starts replicating undesired data.</p>
-</li>
-<li><p>The model performs very well with data of the dataset, but poorly with new data, as it has lost its ability to replicate anything that deviates from it.</p>
-</li>
-<li><p>It happens when the model is trained for <strong>too long</strong>/is too complex. So to avoid this, RVC users use a tool called <em><strong>TensorBoard</strong></em>.</p>
-</li>
+<li><strong>No it doesn&#x27;t</strong>, since using a disproportionate amount will overtrain the model, which will affect the quality of it.</li>
+<li>In the field of AI, is when an AI model learns its <u><a href="https://docs.aihub.gg/rvc/resources/datasets/">dataset</a></u> too well, to the point where it centers too much around it &amp; starts replicating undesired data.</li>
+<li>The model performs very well with data of the dataset, but poorly with new data, as it has lost its ability to replicate anything that deviates from it.</li>
+<li>It happens when the model is trained for <strong>too long</strong>/is too complex. So to avoid this, RVC users use a tool called <em><strong>TensorBoard</strong></em>.</li>
 </ul>
 <doc-anchor-target id="what-is-overtraining">
     <h4>
@@ -314,16 +310,15 @@
 </div>
 <p>A batch size is the number of training examples used in one iteration before updaing the model&#x27;s parameters. For 30+ minutes of data batch size 8 is recommended and for less than 30 minutes batch size 4 is recommended.</p>
 <ul>
-<li>Smaller batch size:
+<li><p>Smaller batch size:</p>
 <ul>
 <li>Promotes noisier, less stable gradients.</li>
 <li>More suitable when your dataset is small, less diverse or repetitive.</li>
 <li>Can lead to instability / divergence or noisy graphs.</li>
-<li>Generalization might be improved.
-‎</li>
+<li>Generalization might be improved.‎</li>
 </ul>
 </li>
-<li>Bigger batch size:
+<li><p>Bigger batch size:</p>
 <ul>
 <li>Promotes smoother, more stable gradients.</li>
 <li>Can beneficial in cases where your dataset is big and diverse.</li>
@@ -485,14 +480,13 @@
     <div class="px-5 py-3 docs-columns-content">
 <p>KLM 4.1 is a fine-tuned based on KLM V7 pretrained and made with around 100 hours dataset (Korean vocal/speech, Japanese vocal/speech and English speech), so it will work better with those languages. Unlike typical pretrained models KLM is a pretrained model created to make vocal guides using short voice recordings from a studio, this means that even with short dataset high pitch information it is possible to implement high-pitched sounds but it is sensitive to noise so it is recommended to use it with high quality datasets</p>
 <ul>
-<li><strong>32k Download:</strong>
+<li><p><strong>32k Download:</strong></p>
 <ul>
 <li><u><a href="https://huggingface.co/SeoulStreamingStation/KLM4.1/resolve/main/D_KLM41_32k.pth?download=true"><strong>D Download</strong></a></u></li>
-<li><u><a href="https://huggingface.co/SeoulStreamingStation/KLM4.1/resolve/main/G_KLM41_32k.pth?download=true"><strong>G Download</strong></a></u>
-‎</li>
+<li><u><a href="https://huggingface.co/SeoulStreamingStation/KLM4.1/resolve/main/G_KLM41_32k.pth?download=true"><strong>G Download</strong></a></u>‎</li>
 </ul>
 </li>
-<li><strong>48k Download:</strong>
+<li><p><strong>48k Download:</strong></p>
 <ul>
 <li><u><a href="https://huggingface.co/SeoulStreamingStation/KLM4.1/resolve/main/D_KLM41_48k.pth?download=true"><strong>D Download</strong></a></u></li>
 <li><u><a href="https://huggingface.co/SeoulStreamingStation/KLM4.1/resolve/main/G_KLM41_48k.pth?download=true"><strong>G Download</strong></a></u></li>
@@ -811,9 +805,10 @@
 <p>Creating a pretrain is pretty much the same as training a normal model but the dataset is bigger and longer.</p>
 <p>There are two ways of making a pretrain the first being:</p>
 <ul>
-<li>From scratch which means you don&#x27;t use a pretrain when training this. To make a decent from scratch pretrain you are going to need at <strong>least</strong> 50 hours of low, mid and high quality speech with many different speakers.
-The second way being:</li>
-<li>Finetuning which means you use a pretrain to train this pretrain. To make a good you are going to need at <strong>least</strong> 10 hours of high quality speech with many speakers.
+<li><p>From scratch which means you don&#x27;t use a pretrain when training this. To make a decent from scratch pretrain you are going to need at <strong>least</strong> 50 hours of low, mid and high quality speech with many different speakers.
+The second way being:</p>
+</li>
+<li><p>Finetuning which means you use a pretrain to train this pretrain. To make a good you are going to need at <strong>least</strong> 10 hours of high quality speech with many speakers.</p>
 <ul>
 <li>The big pro of making a Finetune is that you can tailor it to anything, like you can tailor it to improve a certain language, improve accents, types of speech and more. It can even improve the graphs (like grads, g/total etc.) if trained properly.</li>
 </ul>
@@ -1028,19 +1023,15 @@ The second way being:</li>
     </h6>
 </doc-anchor-target>
 <ol start="2">
-<li>Now execute it. It will open a console window &amp; create some folders inside RVC.
+<li><p>Now execute it. It will open a console window &amp; create some folders inside RVC.</p>
 <ul>
-<li>If you get the <code v-pre>Windows protected your PC</code> issue, click <u><strong>More info</strong></u> &amp; <strong>Run anyway</strong>.<br />
-‎</li>
+<li>If you get the <code v-pre>Windows protected your PC</code> issue, click <u><strong>More info</strong></u> &amp; <strong>Run anyway</strong>.‎</li>
 </ul>
 </li>
-<li>Once it&#x27;s done, your default browser should open with TensorBoard app.<br />
-‎
+<li><p>Once it&#x27;s done, your default browser should open with TensorBoard app.<br />
+‎</p>
 <ul>
-<li>If it doesn&#x27;t, copy the address of the console at the bottom, and paste it in your browser.<br />
-Said address will say &quot;<strong>https://localhost</strong>&quot; followed by some numbers.<br />
-‎<br />
-<img src="../tensorboard-img/11.png" alt="image" width="500" height="auto"></li>
+<li>If it doesn&#x27;t, copy the address of the console at the bottom, and paste it in your browser.Said address will say &quot;<strong>https://localhost</strong>&quot; followed by some numbers.‎<img src="../tensorboard-img/11.png" alt="image" width="500" height="auto"></li>
 </ul>
 </li>
 </ol>
@@ -1074,7 +1065,7 @@ Said address will say &quot;<strong>https://localhost</strong>&quot; followed by
 </doc-anchor-target>
 <hr>
 <ul>
-<li><p>Open TB &amp; begin training in RVC.</p>
+<li>Open TB &amp; begin training in RVC.
 <ul>
 <li><p>If you get the <code v-pre>No dashboards are active</code> issue, select <code v-pre>SCALARS</code> in the top right corner dropdown.</p>
 <p><img src="../tensorboard-img/17.png" alt="image" width="230" height="auto">‎<br />
@@ -1088,11 +1079,10 @@ You can always manually refresh with the refresh symbol (<span class="docs-emoji
   <img src="../tensorboard-img/2.png" alt="image" width="280" height="auto">
 <p>‎</p>
 </li>
-<li><p>Go to the <code v-pre>SCALARS</code> tab.<br />
+<li>Go to the <code v-pre>SCALARS</code> tab.<br />
 ‎<br />
 <img src="../tensorboard-img/12.png" alt="image" width="280" height="auto"><br />
-‎</p>
-</li>
+‎</li>
 </ul>
 <hr>
 <doc-anchor-target id="graph">
@@ -1121,22 +1111,21 @@ You can always manually refresh with the refresh symbol (<span class="docs-emoji
 </li>
 </ol>
 </li>
-<li>In the search bar, type &quot;<strong>g/total</strong>&quot; then look for the avg graph. This will be the graph you&#x27;ll monitor.<br />
+<li><p>In the search bar, type &quot;<strong>g/total</strong>&quot; then look for the avg graph. This will be the graph you&#x27;ll monitor.<br />
 ‎<br />
 <img src="../tensorboard-img/19.png" alt="image" width="390" height="auto">‎<br />
 ‎<br />
-‎</li>
-<li>Each graph has three buttons in the corner:
+‎</p>
+</li>
+<li><p>Each graph has three buttons in the corner:</p>
 <ul>
 <li>Left one is for going <strong>fullscreen</strong>.</li>
 <li>Middle one to <strong>disable</strong> Y axis, for a fuller view.</li>
-<li>And the right one is to <strong>center</strong> the view.<br />
-‎<br />
-<img src="../tensorboard-img/15.png" alt="image" width="300" height="auto">‎<br />
-‎</li>
+<li>And the right one is to <strong>center</strong> the view.‎<img src="../tensorboard-img/15.png" alt="image" width="300" height="auto">‎‎</li>
 </ul>
 </li>
-<li>To <strong>zoom</strong> in &amp; out the graphs, press the ALT key + mouse wheel. Remember to center the view after moving around, and after the graph updates.</li>
+<li><p>To <strong>zoom</strong> in &amp; out the graphs, press the ALT key + mouse wheel. Remember to center the view after moving around, and after the graph updates.</p>
+</li>
 </ul>
 <hr>
 <doc-anchor-target id="monitoring">
@@ -1292,9 +1281,9 @@ You can always manually refresh with the refresh symbol (<span class="docs-emoji
                                 <!-- Required only on API pages -->
                                 <doc-toolbar-member-filter-no-results></doc-toolbar-member-filter-no-results>
                             </div>
-                            <footer class="clear-both">
+                            <footer id="retype-content-footer" class="clear-both">
                             
-                                <nav class="print:hidden flex mt-14">
+                                <nav id="retype-nextprev" class="print:hidden flex mt-14">
                                     <div class="w-1/2">
                                         <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../rvc/resources/dataset-isolation/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
@@ -1318,13 +1307,13 @@ You can always manually refresh with the refresh symbol (<span class="docs-emoji
                             </footer>
                         </main>
                 
-                        <div class="print:border-none border-t dark:border-dark-650 pt-6 mb-8">
+                        <div id="retype-page-footer" class="print:border-none border-t dark:border-dark-650 pt-6 mb-8">
                             <footer class="flex flex-wrap items-center justify-between print:justify-center">
-                                <div class="print:hidden">
+                                <div id="retype-footer-links" class="print:hidden">
                                     <ul class="flex flex-wrap items-center text-sm">
                                     </ul>
                                 </div>
-                                <div class="print:justify-center docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright 2025. All rights reserved.</p></div>
+                                <div id="retype-copyright" class="print:justify-center docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright 2025. All rights reserved.</p></div>
                             </footer>
                         </div>
                     </div>
@@ -1351,7 +1340,7 @@ You can always manually refresh with the refresh symbol (<span class="docs-emoji
     </div>
 
 
-    <div id="docs-overlay-target"></div>
+    <div id="retype-overlay-target"></div>
 
     <script data-cfasync="false">window.__DOCS__ = { "title": "Training", level: 3, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
