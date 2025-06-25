@@ -596,8 +596,6 @@ https://rentry.co/lessdelayasio
 
 [Duckus Egirl voice made by lusbert](https://www.weights.gg/models/clroz1aic012sjmfug54yft0u)
 
-[Psych2Go voice made by dan](https://huggingface.co/legitdark/psych2go-By-Dan/resolve/main/psych2go-By-Dan.zip)
-
 **Male:**
 
 [Bob Ross voice made by dieseldog34](https://www.weights.gg/models/clm72t7ra0qqhcctc4zyax181)
