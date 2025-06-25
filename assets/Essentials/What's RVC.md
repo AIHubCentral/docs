@@ -39,15 +39,13 @@ visibility:
     ###### ‎ 
     {.list-icon} 
     - #### :icon-repo-forked: <u>[Codename Fork](https://github.com/codename0og/codename-rvc-fork-3)</u>
-    ###### ‎   
-    {.list-icon}
-    - #### :icon-repo-forked: <u>[Mangio](https://github.com/Mangio621/Mangio-RVC-Fork)</u>
+
         
     ###### ‎  
     {.list-icon} 
-    - #### :icon-repo-forked: <u>[AICoverGen](https://github.com/SociallyIneptWeeb/AICoverGen)</u>     
-        - ##### :icon-cloud: <u>[AICoverGen NO UI](https://colab.research.google.com/drive/1u1brjK8IZt647UsbZuGYfW29oFM2I4tk?usp%3Dsharing&sa=D&source=editors&ust=1704303145687891&usg=AOvVaw3M9tmokG80RXF-GD1LJqCL)</u>
-        - ##### :icon-cloud: <u>[AICoverGen UI](https://colab.research.google.com/github/hinabl/AICoverGen-Colab/blob/main/Hina_Mod_AICoverGen_colab.ipynb)</u>     
+    - #### :icon-repo-forked: <u>[RVC-AI-Cover-Maker-UI](https://github.com/Eddycrack864/RVC-AI-Cover-Maker-UI)</u>     
+        - ##### :icon-cloud: <u>[RVC-AI-Cover-Maker-UI Colab](https://colab.research.google.com/github/Eddycrack864/RVC-AI-Cover-Maker-UI/blob/main/assets/RVCAICoverMakerUI.ipynb)</u>
+        - ##### :icon-cloud: <u>[RVC-AI-Cover-Maker-UI Kaggle](https://www.kaggle.com/code/eddycrack864/rvc-ai-cover-maker-ui)</u>     
     ‎       
 ***
 ## FAQ :icon-question:
