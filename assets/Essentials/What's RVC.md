@@ -39,15 +39,13 @@ visibility:
     ###### ‎ 
     {.list-icon} 
     - #### :icon-repo-forked: <u>[Codename Fork](https://github.com/codename0og/codename-rvc-fork-3)</u>
-    ###### ‎   
-    {.list-icon}
-    - #### :icon-repo-forked: <u>[Mangio](https://github.com/Mangio621/Mangio-RVC-Fork)</u>
+
         
     ###### ‎  
     {.list-icon} 
-    - #### :icon-repo-forked: <u>[AICoverGen](https://github.com/SociallyIneptWeeb/AICoverGen)</u>     
-        - ##### :icon-cloud: <u>[AICoverGen NO UI](https://colab.research.google.com/drive/1u1brjK8IZt647UsbZuGYfW29oFM2I4tk?usp%3Dsharing&sa=D&source=editors&ust=1704303145687891&usg=AOvVaw3M9tmokG80RXF-GD1LJqCL)</u>
-        - ##### :icon-cloud: <u>[AICoverGen UI](https://colab.research.google.com/github/hinabl/AICoverGen-Colab/blob/main/Hina_Mod_AICoverGen_colab.ipynb)</u>     
+    - #### :icon-repo-forked: <u>[RVC-AI-Cover-Maker-UI](https://github.com/Eddycrack864/RVC-AI-Cover-Maker-UI)</u>     
+        - ##### :icon-cloud: <u>[RVC-AI-Cover-Maker-UI Colab](https://colab.research.google.com/github/Eddycrack864/RVC-AI-Cover-Maker-UI/blob/main/assets/RVCAICoverMakerUI.ipynb)</u>
+        - ##### :icon-cloud: <u>[RVC-AI-Cover-Maker-UI Kaggle](https://www.kaggle.com/code/eddycrack864/rvc-ai-cover-maker-ui)</u>     
     ‎       
 ***
 ## FAQ :icon-question:
@@ -64,15 +62,30 @@ visibility:
 ###### ‎      
 > The minimum specs vary depending if it's for training models or <u>[inference](https://docs.aihub.gg/extra/glossary/#inference)</u>.
 +++ Training
-**SPEC** | **REQUIREMENT** | 
+**SPEC** | **MINIMUM REQUIREMENT** | 
 :---: | :---: | :---: |
-GPU | NVIDIA RTX 1060 / AMD RX5700 | 
+GPU | NVIDIA GTX 900 Series / AMD RX580 (Mac isn't supported) | 
 RAM | 6GB
 Storage | 30 GB
 
+
+**SPEC** | **SUGGESTED REQUIREMENT** | 
+:---: | :---: | :---: |
+GPU | NVIDIA RTX 20 Series or later / AMD Radeon RX 5xxx or later (Mac isn't supported) | 
+VRAM | 8GB
+RAM | 8GB
+Storage | 30 GB
+
+
 +++ Inference
-**SPEC** | **REQUIREMENT** | 
+**SPEC** | **MINIMUM REQUIREMENT** | 
 :---: | :---: | :---: | 
+RAM | 6GB
+Storage | 6 GB 
+
+**SPEC** | **SUGGESTED REQUIREMENT** | 
+:---: | :---: | :---: | 
+GPU | NVIDIA RTX 20 Series or later / AMD Radeon RX 5xxx or later / Apple M3 | 
 RAM | 6GB
 Storage | 6 GB 
 
@@ -80,7 +93,7 @@ Storage | 6 GB
 
 !!! NOTES:
 - For inference, the storage requirement varies depending on the fork. It can be around 5 to 9 GB
-- If you don't meet these requirements, it's more convenient to use RVC on the cloud.
+- If you don't meet the minimum requirements, it's more convenient to use RVC on the cloud.
 !!!
 
 === 
@@ -89,7 +102,7 @@ Storage | 6 GB
 ###### ‎  
 - You can, but it's going to be slower, as they don't have CUDA cores.
 - So it's more convenient using RVC through the <u>[cloud](https://docs.aihub.gg/extra/glossary/#cloud-based)</u>.
-- If you're willing to use a slower version you can go ahead and follow this guide on how to get zluda working with <u>[Applio](https://docs.applio.org/getting-started/installation#amd-gpu-support-windows)</u>.
+- If you're willing to use a slower version you can go ahead and follow this guide on how to get zluda working with <u>[Applio Zluda](https://docs.applio.org/getting-started/installation#amd-gpu-support-windows)</u>.
 === 
 
 ==- *How long does it take to train?*

@@ -14,7 +14,7 @@ order: 4000
 
 - This guide will be about the Deiteris fork since it has better preformence and quality.
 
-- RVC does **NOT** mean realtime voice changer.
+- RVC does **NOT** mean realtime voice changer. RVC means Retrieval-based-Voice-Conversion
 
 ***
 #### Is The W-Okada Deiteris Fork Safe?
@@ -589,14 +589,14 @@ https://rentry.co/lessdelayasio
 
 ### Models to try
 
-- You will need to connect your account to <u>[weights.gg](http://weights.gg/)</u> to be able to download these models
-    - Click on the 3 dots (...) on weights.gg models, then Download model.
+- You will need to connect your account to <u>[weights.gg](http://weights.com/)</u> to be able to download these models
+    - Click on the 3 dots (...) on weights.gg models, then Download model. You will need an account
 
 **Female:**
 
 [Duckus Egirl voice made by lusbert](https://www.weights.gg/models/clroz1aic012sjmfug54yft0u)
 
-[Psych2Go voice made by dan](https://huggingface.co/legitdark/psych2go-By-Dan/resolve/main/psych2go-By-Dan.zip)
+Gawr Gura: [Hugging Face Link](https://huggingface.co/dacoolkid44/VTuber-RVC/tree/main/Gawr%20Gura%20(Talking)) / [Weights Link](https://www.weights.com/models/clm72kp5p01sycctcp3ti9xaw)
 
 **Male:**
 
