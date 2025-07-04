@@ -29,9 +29,7 @@ order: 5000
 ## Things to Avoid :icon-x:
 ##### ``These will disqualify your post``
 :::
-‎
-:   ‎
-:::
+
 #### :icon-chevron-right: It lacks the correct files.
 - The .ZIP file must contain both the **correct** `.INDEX` & `.PTH` file.
 

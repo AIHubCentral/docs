@@ -2,7 +2,7 @@
 icon: person
 order: 1000
 ---
-``Last update: May 3, 2025``
+``Last update: July 4, 2025``
 
 :::content-center
 ## Introduction
@@ -44,36 +44,52 @@ It's already installed for me so that is why it says "Remove".
 ### Voicemeeter Setup
 ***
 
-1. Open Voicemeeter and in the top right "Hardware Out" should be flashing red. 
+1. Open Voicemeeter and in the top right "Hardware Out" should be flashing red, if it's not you can skip these 2 steps. 
 
 <img src="../realism-img/hardware.png" alt="image" width="500" height="">
 
-2. Click A1 and set it to your headphones.
-3. Then go to "Stereo Input 1"
+2. Click A1 and set it to your headphones then click A1 again then click remove selection. If your Hardware Out isn't flashing anymore that's good. We do not want voicemeeter removing our system sounds so that is why we do this step.
+
+3. Go to "Stereo Input 1"
 
 <img src="../realism-img/stereo.png" alt="image" width="400" height="">
 
-4. Click it and select 'Line 1'. If you want you can also right click "Stereo Input 1" to rename it to something.
+4. Click it and select `Line 1` so whatever is sent through line 1 is sent to voicemeeter. If you want you can also right click "Stereo Input 1" to rename it to something.
 
 <img src="../realism-img/inputs.png" alt="image" width="700" height="">
 
-5. Once you have done that set it to output to B1 and have it on mono.
+5. Once you have done that set it to output to B1.
 
-<img src="../realism-img/b1.png" alt="image" width="100" height="">
+<img src="../realism-img/b2.png" alt="image" width="200" height="">
 
-6. Then go here and set both the outputs to B2
+6. Then go here and set both the outputs to B1.
 
-<img src="../realism-img/full.png" alt="image" width="300" height="">
+<img src="../realism-img/b1virt.png" alt="image" width="300" height="">
 
 
-7. Once you have completed all of the above steps you can now go into anything and set the mic input to "Voicemeeter Out B2". 
+7. Once you have completed all of the above steps you can now go into anything and set the mic input to "Voicemeeter Out B1". You will not be able to hear whatever is sent through B1 so you will have to use whatever game's or discord's mic test to hear it. 
 
-<img src="../realism-img/discord.png" alt="image" width="700" height="">
+<img src="../realism-img/discord1.png" alt="image" width="700" height="">
 
 
 8. (Optional) If you want to decrees delay press `ctrl + ,` and a menu should open. In the menu go down to where the buffer settings are and set the samples to 480. If you hear crackling or audio bugs increase the buffer size and if there is no crackling and you want less delay you can lower the buffer size more.
 
 <img src="../realism-img/buffer.png" alt="image" width="600" height="">
+
+
+***
+
+### W-Okada Setup
+
+This is pretty simple.
+
+
+Set `Input:` Your mic
+
+Set `Output:` Line 1
+
+Set `Monitor:` Your headphones if you want to hear the model
+
 
 
 ***

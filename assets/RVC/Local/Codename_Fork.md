@@ -3,7 +3,7 @@ icon: chevron-right
 order: 3000
 ---
 
-``Last update: May 5, 2025``
+``Last update: July 4, 2025``
 ***
 ###### ‎
 :::content-center
@@ -12,7 +12,9 @@ order: 3000
 
 - The codename fork is a <u>[fork</u>](https://docs.aihub.gg/essentials/whats-rvc/#forks) of Applio made by <u>[Codename](https://github.com/codename0og)</u>.
 
-- This fork has more features compared to others and changes to increase quality.
+- This fork has more features compared to others and changes to potentially increase quality.
+
+- Codename's fork is for advanced users, so if you don't know much about RVC then it's better if you use <u>[Applio](https://docs.aihub.gg/rvc/local/applio/)</u>.
 
 - This guide will be only talking about the new features since everything else has been covered in the <u>[Applio guide](https://docs.aihub.gg/rvc/local/applio/)</u>.
 
@@ -34,11 +36,10 @@ Also, **HuggingFace has a <u>[Security Scanner](https://huggingface.co/docs/hub/
 - All of the pros of Applio.                   
 - Has a Warmup Phase option
 - Multiple optimizer choices
-- Avg running loss
 - Mel similarity metric
 - SoX resampler
-- fcpe training
-- L1 mel loss
+- Hold-Out validation
+- TF32
 ||| ❌ **CONS** 
 - More complicated features.     
 ||| 
@@ -83,10 +84,6 @@ In the training section there is an option to enable a warmup phase and a slider
     - There isn't much testing on what using a warmup in RVC does so expect varying results. 
 
 ***
-### Avg Running Loss:
-While training it logs the average loss per epoch as the standard loss and rolling average loss over 5 epochs to evaluate general trends and the model's performance over time. 
-
-***
 ### Multiple Optimizers:
 This fork gives you the option to choose between three optimizers. 
 
@@ -107,23 +104,15 @@ In the training section under advanced there is a option to set a custom learnin
 - This controls how quickly or slowly either the gen or disc learn.
 
 ***
-### FCPE Training:
+### TF32 
+TF32 (TensorFloat32) is a different precision to use instead of FP32 or BF16. This can give a speed boost. This is only supported on Ampere GPUs or newer.
 
-Fast Context-based Pitch Estimation (fcpe) is another f0 like rmvpe. The benafit of using this f0 is that it can add that "human softness" and can give models nicer end breaths. However fcpe is not as percise as rmvpe. 
 
-
-***
-### L1 Mel Loss:
-In the training section under advanced settings for training you can find a toggle to enable or disable Multi-scale Mel loss function. The results of using L1 might be less detailed but may potentially mitigate the 'metalic voice' effect.
-
-<img src="../codename-img/l1.png" alt="image" width="800" height="auto">
-
+<img src="../codename-img/tf32.png" alt="image" width="800" height="auto"> ‎
 
 ***
 ### Upcoming Features:
-- Custom gradient norm value ( from the ui level )
 - Ability to delay / headstart the Generator or Discriminator.
-- More warmup options ( Cosine anneal and so on ).
 - Ability to choose lr_decay from the ui
 - And more...
 
