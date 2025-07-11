@@ -594,8 +594,6 @@ https://rentry.co/lessdelayasio
 
 **Female:**
 
-[Duckus Egirl voice made by lusbert](https://www.weights.gg/models/clroz1aic012sjmfug54yft0u)
-
 Gawr Gura: [Hugging Face Link](https://huggingface.co/dacoolkid44/VTuber-RVC/tree/main/Gawr%20Gura%20(Talking)) / [Weights Link](https://www.weights.com/models/clm72kp5p01sycctcp3ti9xaw)
 
 **Male:**
