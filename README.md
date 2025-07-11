@@ -9,7 +9,7 @@
 - Verified by experts.
 
 ## Contributions
-- We appreciate any **feedback**, big or small. You can directly **contact us** in <u>[AI Hub](https://discord.gg/aihub)</u>: **@eddycrack864** - **@ailen2091**
+- We appreciate any **feedback**, big or small. You can directly **contact us** in <u>[AI Hub](https://discord.gg/aihub)</u>: **@eddycrack864**
 - Leave **suggestions** in the <u>[#suggestions](https://discord.com/channels/1159260121998827560/1159516963014451302)</u> channel. To **report issues**, use <u>[#help-forum](https://discord.com/channels/1159260121998827560/1192011222023950368)</u>.
 
 - You are free to contribute to this project and create Pull-Requests
