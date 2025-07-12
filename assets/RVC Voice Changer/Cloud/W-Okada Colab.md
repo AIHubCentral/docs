@@ -11,7 +11,8 @@ order: 4000
 :::content-center
 ## Introduction ‎
 :::
-- This cloud version is hosted in <u>[Google Colab](https://docs.aihub.gg/extra/glossary/#google-colab)</u>, remember that you have a runtime of 4 hours.    
+- This cloud version is hosted in <u>[Google Colab](https://docs.aihub.gg/extra/glossary/#google-colab)</u>, remember that you have a GPU runtime of 4 hours.
+- **YOU WILL NEED TO HAVE A COLAB PAID TIER SUBSCRIPTION TO USE THIS AS WEB UIS AREN'T ALLOWED IN THE FREE TIER**
 
 ***
 
