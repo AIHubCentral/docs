@@ -120,9 +120,15 @@ Storage | 6 GB
 
 ==- *Do I need internet to use it?*
 ###### ‎      
-- If you're using RVC locally, no.
+- If you're using RVC locally, no (the only exception would be Applio TTS as it uses Microsoft's Edge TTS as a base).
 - If you're using it through the cloud, then yes.
 ===
+
+==- *Is there a scientific paper for RVC to understand more about it?*
+###### ‎      
+- There isn't an official one, but there's an <u>[unofficial complex blog](https://gudgud96.github.io/2024/09/26/annotated-rvc/)</u> to understand how it works.
+===
+
 
 ***
 ###### ‎
