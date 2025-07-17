@@ -1,10 +1,12 @@
 # AI Hub Docs
 
+[![Discord](https://img.shields.io/discord/1159260121998827560?color=%23738ADB&label=Discord&style=for-the-badge)](https://discord.gg/aihub)
+
 ## Introduction
 - This is a documentation of various AI tools, mostly <u>[RVC](https://docs.aihub.gg/essentials/whats-rvc/)</u>-related apps. Made by members of [<u>**AI HUB**</u>](https://discord.gg/aihub).
 
-- <ins>Topics include</ins>: model training, inference, audio-isolation, datasets, TensorBoard, & more.
-- Both locally and through the cloud.
+- <ins>Topics include</ins>: RVC model training & inference, audio-isolation, TTS, Realtime Voice Changing, Audio datasets, TensorBoard, & more.
+- Both locally and through the Cloud.
 
 - Verified by experts.
 
