@@ -44,7 +44,6 @@ Also, **HuggingFace has a <u>[Security Scanner](https://huggingface.co/docs/hub/
 ===
 ***
 ###### ‎
-:::content-center
 
 ***
 
