@@ -333,7 +333,7 @@ A: There is no "best pretrain" it all depends on your needs and what you're ok w
 ## Vocoders
 :::
 
--   In Applio and Codenames Fork you are given the choice between three vocoders:
+-   In Applio you are given the choice between three vocoders:
     - HiFi-GAN
     - MRF HiFi-GAN
     - RefineGAN
