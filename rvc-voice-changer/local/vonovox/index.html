@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.806077637532">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.806079643177">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -17,28 +17,28 @@
     <meta name="description" content="Last update: June 2, 2025">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://docs.aihub.gg/rvc-voice-changer/local/vonovox/">
+    <link rel="canonical" href="/rvc-voice-changer/local/vonovox/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://docs.aihub.gg/rvc-voice-changer/local/vonovox/">
+    <meta property="og:url" content="/rvc-voice-changer/local/vonovox/">
     <meta property="og:title" content="Vonovox">
     <meta property="og:description" content="Last update: June 2, 2025">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://docs.aihub.gg/rvc-voice-changer/local/vonovox/">
+    <meta property="twitter:url" content="/rvc-voice-changer/local/vonovox/">
     <meta property="twitter:title" content="Vonovox">
     <meta property="twitter:description" content="Last update: June 2, 2025">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../../img/b.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.11.0.806077637532" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.11.0.806079643177" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.806077637532" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.806079643177" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.806077637532" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.806079643177" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -298,7 +298,8 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
 <li>It doesn&#x27;t use a Web User Interface, meaning that it is less prone to errors and opens on it&#x27;s own window</li>
 <li>Easily reduces delay on Windows via facilitating the WASAPI/ASIO Backend process</li>
 <li>Lets you choose the embedder, including spin</li>
-<li>Extra Effects, such as &quot;Noise Gate&quot;.</li>
+<li>Uses TF32 Inference by default, which is more precise than FP16, and has very very slightly less precision/quality but better performance compared to FP32</li>
+<li>Extra Effects, such as &quot;Noise Gate&quot;</li>
 </ul>
     </div>
     <div class="px-5 py-3 docs-columns-content">
@@ -306,7 +307,7 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
 <li>Not Open Source (right now, but the dev is working on an Open Source version)</li>
 <li>Supports only Nvidia GPUs on Windows</li>
 <li>It doesn&#x27;t use a Web User Interface, meaning that it can&#x27;t be run on the Cloud</li>
-<li>Many Effects are Premium, such as &quot;Low Quality Mic&quot;.</li>
+<li>Many Effects are Premium, such as &quot;Low Quality Mic&quot;</li>
 </ul>
     </div>
 </div>
@@ -533,7 +534,7 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
 </doc-anchor-target>
 <hr>
 <ul>
-<li><p><code v-pre>Embedder:</code> Select between contentvec or spin trained models. Most current models are trained on contentvec. Make sure you read the model&#x27;s description to find out what embedder it uses.</p>
+<li><p><code v-pre>Embedder:</code> Select between contentvec or spin trained models. Most current models are trained on contentvec. Make sure you read the model&#x27;s description to find out what embedder it uses. Spin has kinda better breaths, more robust to noise, has some training related differences, but it&#x27;s less used and newer.</p>
 </li>
 <li><p><code v-pre>F0 det:</code> Pitch algorithm. Pitch algorithm. Both RMVPE (for the best quality and robustness) and FCPE (for nice quality and being lightweight) are good options.</p>
 </li>
