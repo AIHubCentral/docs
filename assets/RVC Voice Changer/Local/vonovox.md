@@ -33,12 +33,13 @@ Also, **HuggingFace has a <u>[Security Scanner](https://huggingface.co/docs/hub/
 - It doesn't use a Web User Interface, meaning that it is less prone to errors and opens on it's own window
 - Easily reduces delay on Windows via facilitating the WASAPI/ASIO Backend process
 - Lets you choose the embedder, including spin
-- Extra Effects, such as "Noise Gate".
+- Uses TF32 Inference by default, which is more precise than FP16, and has very very slightly less precision/quality but better performance compared to FP32
+- Extra Effects, such as "Noise Gate"
 ||| ❌ **CONS** 
 - Not Open Source (right now, but the dev is working on an Open Source version)
 - Supports only Nvidia GPUs on Windows
 - It doesn't use a Web User Interface, meaning that it can't be run on the Cloud
-- Many Effects are Premium, such as "Low Quality Mic".
+- Many Effects are Premium, such as "Low Quality Mic"
 |||
 ===
 ***
@@ -158,7 +159,7 @@ On discord and games, you select:
 ***
 ### Settings
 ***
-- `Embedder:` Select between contentvec or spin trained models. Most current models are trained on contentvec. Make sure you read the model's description to find out what embedder it uses.
+- `Embedder:` Select between contentvec or spin trained models. Most current models are trained on contentvec. Make sure you read the model's description to find out what embedder it uses. Spin has kinda better breaths, more robust to noise, has some training related differences, but it's less used and newer.
 
 - `F0 det:` Pitch algorithm. Pitch algorithm. Both RMVPE (for the best quality and robustness) and FCPE (for nice quality and being lightweight) are good options.
 

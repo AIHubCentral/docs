@@ -35,6 +35,7 @@ Also, **HuggingFace has a <u>[Security Scanner](https://huggingface.co/docs/hub/
 - Good Performance
 - Has great support for Nvidia, AMD, Intel, Mac, Linux, Windows
 - Uses a Web User Interface, meaning it can be run on the Cloud
+- Uses FP16 Inference by default, and let's you choose to use FP32 for better quality/precision
 ||| ❌ **CONS** 
 - Uses a Web User Interface, having issues on some browsers, and bugs with renaming or deleting models on it
 - Doesn't have an active development recently

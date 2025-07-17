@@ -12,7 +12,7 @@ order: 2000
 
 - It's a great alternative for training RVC voice models through the cloud, since it has the best GPUs with tons of VRAM.
 
-- Lightning doesn't have the best GPU hours but it does have the best GPUs out of all the other cloud options. 
+- Lightning has decent Free GPU hours (in the free plan which can change) but it does have the best GPUs out of all the other cloud options. 
 
 #### Pros & Cons :icon-tasklist:
 
@@ -27,7 +27,7 @@ order: 2000
 ||| ❌ **CONS**       
 - Takes some time to set up.      
 - Needs a phone number.
-- Low GPU time depending on what GPU you choose.
+- Low/Decent GPU time depending on what GPU you choose.
 - 2-3 Day verification wait time.
  
 |||
@@ -252,11 +252,10 @@ b. Then click on `GPU` and it will show you a list of GPUs you can use by clicki
 
 <img src="../lighting.ai/12.png" alt="image" width="500">‎
 
-!!! Here is a list of how long you can use each GPU before running out of hours.
-- 22 hours monthly of T4 16gb
-- 21 hours monthly of L4 24gb
-- 8 hours monthly of A10G 24gb
-- 6 hours monthly of L40 48gb
+!!! Here is a list of how long you can use each GPU before running out of Free hours.
+- 75 hours monthly of T4 16gb
+- 31 hours monthly of L4 24gb
+- 15 hours monthly of L40 48gb
 !!!
 
 ***
