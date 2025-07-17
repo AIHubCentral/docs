@@ -49,7 +49,7 @@ Also, **HuggingFace has a <u>[Security Scanner](https://huggingface.co/docs/hub/
 - TensorBoard included
 - Extra features: (plugins, model fusion, etc)
 ||| ❌ **CONS** 
-- None :smile: 
+- Broken Volume Envelope feature (even with the exact same code as Mainlie, which is weird..) that will possibly be removed
 |||
 ===
 ***
