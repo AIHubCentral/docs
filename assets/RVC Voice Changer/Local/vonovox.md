@@ -8,7 +8,7 @@ order: 4000
 ## Introduction
 :::
 
-- Vonovox is a voice changer that uses RVC for its conversion.
+- Vonovox is a realtime voice changer that uses RVC for its conversion.
 
 - Vonovox was developed by dr87.
 
@@ -19,6 +19,31 @@ RVC Models are PyTorch Models, a Python library used for AI.
 PyTorch uses serialization via Pythons' Pickle Module, converting the model to a file.
 Since pickle can execute arbitrary code when loading a model, it could be theoretically used for malware, but Vonovox has a **built-in feature to prevent code execution along the model.**
 Also, **HuggingFace has a <u>[Security Scanner](https://huggingface.co/docs/hub/security-pickle#hubs-security-scanner)</u>** which scans for any unsafe pickle exploits and uses also ClamAV for scanning dangerous files.
+***
+
+‎      
+#### Pros & Cons :icon-tasklist:
+==- *Learn more*
+!!! *The pros & cons are subjective to your necessities.*        
+!!! 
+||| ✔️ **PROS** 
+- Has an active development
+- Good Performance
+- Currently stable
+- It doesn't use a Web User Interface, meaning that it is less prone to errors and opens on it's own window
+- Easily reduces delay on Windows via facilitating the WASAPI/ASIO Backend process
+- Lets you choose the embedder, including spin
+- Extra Effects, such as "Noise Gate".
+||| ❌ **CONS** 
+- Not Open Source (right now, but the dev is working on an Open Source version)
+- Supports only Nvidia GPUs on Windows
+- It doesn't use a Web User Interface, meaning that it can't be run on the Cloud
+- Many Effects are Premium, such as "Low Quality Mic".
+|||
+===
+***
+###### ‎
+:::content-center
 
 ***
 
@@ -36,7 +61,7 @@ and
 ***
 ##### For GPU-conversion
 
-TLDR: Make sure you have Nvidia RTX 20xx better. GTX 10xx or RX 900 will also work, but may run into issues with games and higher delay. If you have an iGPU (mostly AMD Radeon Graphics or Vega) use online hosted alternative instead.
+TLDR: Make sure you have Nvidia RTX 20xx better. GTX 10xx or RX 900 will also work, but may run into issues with games and higher delay. If you have an iGPU (mostly AMD Radeon Graphics or Vega) use Wokada Deiteris Fork Cloud instead.
 
  Long answer:
 
@@ -135,7 +160,7 @@ On discord and games, you select:
 ***
 - `Embedder:` Select between contentvec or spin trained models. Most current models are trained on contentvec. Make sure you read the model's description to find out what embedder it uses.
 
-- `F0 det:` Pitch algorithm. Both RMVPE and FCPE are good options.
+- `F0 det:` Pitch algorithm. Pitch algorithm. Both RMVPE (for the best quality and robustness) and FCPE (for nice quality and being lightweight) are good options.
 
 - `Pitch smoothing factor:` Pitch smoothing will dampen pitch changes. It still follows the exact curve of the f0 predictor allowing it to maintain 100% accuracy, just to a lower magnitude. This allows normal speaking voices to have better stability, since sometimes f0 can be over aggressive and cause pitch wobble on minor pitch fluctuations.
 
@@ -192,9 +217,7 @@ Supports wav, mp3 and flac.
 
 **Female:**
 
-[Duckus Egirl voice made by lusbert](https://www.weights.gg/models/clroz1aic012sjmfug54yft0u)
-
-[Psych2Go voice made by dan](https://huggingface.co/legitdark/psych2go-By-Dan/resolve/main/psych2go-By-Dan.zip)
+Gawr Gura: [Hugging Face Link](https://huggingface.co/dacoolkid44/VTuber-RVC/tree/main/Gawr%20Gura%20(Talking)) / [Weights Link](https://www.weights.com/models/clm72kp5p01sycctcp3ti9xaw)
 
 **Male:**
 

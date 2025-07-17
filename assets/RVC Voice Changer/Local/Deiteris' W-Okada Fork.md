@@ -10,7 +10,7 @@ order: 4000
 
 - W-Okada is a voice changer that uses RVC for its conversion.
 
-- There are two versions of this voice changer, the <u>[offical mainline](https://github.com/w-okada/voice-changer)</u> one and the <u>[Deiteris fork](https://github.com/deiteris/voice-changer)</u>.  
+- There are two versions of this voice changer, the <u>[offical mainline/original](https://github.com/w-okada/voice-changer)</u> made by Wok, and the <u>[Deiteris fork](https://github.com/deiteris/voice-changer) made by Deiteris</u>.  
 
 - This guide will be about the Deiteris fork since it has better preformence and quality.
 
@@ -23,6 +23,27 @@ RVC Models are PyTorch Models, a Python library used for AI.
 PyTorch uses serialization via Pythons' Pickle Module, converting the model to a file.
 Since pickle can execute arbitrary code when loading a model, it could be theoretically used for malware, but Wokada Deiteris Fork has a **built-in feature to prevent code execution along the model.**
 Also, **HuggingFace has a <u>[Security Scanner](https://huggingface.co/docs/hub/security-pickle#hubs-security-scanner)</u>** which scans for any unsafe pickle exploits and uses also ClamAV for scanning dangerous files.
+***
+
+‎      
+#### Pros & Cons :icon-tasklist:
+==- *Learn more*
+!!! *The pros & cons are subjective to your necessities.*        
+!!! 
+||| ✔️ **PROS** 
+- Currently stable
+- Good Performance
+- Has great support for Nvidia, AMD, Intel, Mac, Linux, Windows
+- Uses a Web User Interface, meaning it can be run on the Cloud
+||| ❌ **CONS** 
+- Uses a Web User Interface, having issues on some browsers, and bugs with renaming or deleting models on it
+- Doesn't have an active development recently
+- Doesn't let you choose the embedder, using only RVC models trained on contentvec (the majority)
+|||
+===
+***
+###### ‎
+:::content-center
 
 ***
 
@@ -293,7 +314,7 @@ Sometimes Client does not work, then use SERVER with prefix "MME" or "Windows WA
 ***
 - `PASSTHRU button:` Sends your actual voice and not the voice changer through the virtual cable. You want this to be GLOWING GREEN or GREY (grey for dark mode users) for the voice changer to work.
 
-- `F0 det:` Pitch algorithm. **Don't use crepe because a youtube tutorial guy told you to**, recommended settings are down below on this guide.
+- `F0 det:` Pitch algorithm. Both RMVPE (for the best quality and robustness) and FCPE (for nice quality and being lightweight) are good options.
 
 - `Chunk:` Controls the delay (lower number means less delay, but please check out the recommended settings for what your GPU is capable of).
 
@@ -575,7 +596,7 @@ Example: NVIDIA RTX 3070 on prebuilt w-okada reaches 170 - 213 ms chunk latency.
 !!!
 
 ***
-### Reduce more Delay 
+### Reduce more Delay (Windows Only)
 
 !!! Reducing more delay with WASAPI guide
 https://rentry.co/LessDelayWasapi
@@ -653,7 +674,7 @@ Sometimes your GPU will start idling after the program is in the background for 
 ***
 ### Why does it run in a browser and not it's own window?
 
-Because it uses a Web User Interface (WebUI) coded in JavaScript & TypeScript, the majority of AI programs are designed to run on the browser since it can be used both on cloud and locally (on your pc), and it can also resolve some performance issues. The original wokada also ran on a WebUI, just that it made it's own window
+Because it uses a Web User Interface (WebUI) coded in JavaScript & TypeScript, the majority of (Open Source) AI programs are designed to run on the browser (even tho usually using things like Gradio) since it can be used both on cloud and locally. The original wokada also ran on a WebUI, just that it made it's own window
 
 ***
 ### What browser should I use?

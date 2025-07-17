@@ -1,6 +1,7 @@
 ---
 icon: chevron-right
 order: 3000
+visibility: hidden
 ---
 
 ``Last update: July 4, 2025``
