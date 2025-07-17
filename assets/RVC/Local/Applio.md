@@ -44,7 +44,6 @@ Also, **HuggingFace has a <u>[Security Scanner](https://huggingface.co/docs/hub/
 - Faster Training
 - TTS features            
 - Automatic model upload
-- Has Mangio-Crepe
 - User-friendly UI
 - TensorBoard included
 - Extra features: (plugins, model fusion, etc)
