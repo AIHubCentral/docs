@@ -6,6 +6,8 @@ order: 6000
 
 # :icon-unmute: How to Make AI Cover
 
+``Last update: July 17, 2025``
+
 #### - *Simple AI cover tutorial, using <u>[RVC](https://docs.aihub.gg/essentials/whats-rvc/)</u>* -
 
 ***
@@ -14,7 +16,7 @@ order: 6000
 ### 1. Extract vocals
 - Have the audio file of your song ready, & let's **extract** the vocals from it with an **audio isolation** software.
 
-- RVC is designed to work with voices only, so to get the best results the sample must be **clean**, with no undesired noises.
+- RVC is designed to work with only voices, so to get the best results the sample must be **clean**, without undesired noises.
 
 - #### <u>[Learn how](https://docs.aihub.gg/rvc/resources/dataset-isolation/)</u>.
 ***
@@ -60,12 +62,9 @@ For local users, first ensure you meet the <u>[minimum requirements](https://doc
     3. Record yourself singing them & convert the audio with RVC.
     4. Make vocals from scratch using a voice synthesizer (like SynthV) & convert them with RVC.
 ***
-:::content-right
-``Last update: Mar 1, 2024``
-:::
-‎     
-:::content-right
+###### ‎
+:::content-center
+#### `You have reached the end.`
+
 [!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.aihub.gg/contributions/)
-:::     
-‎   
 ***

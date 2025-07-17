@@ -6,10 +6,10 @@ order: 3000
 
 # :icon-dependabot: Voice Models
 
-``Last update: Apr 01, 2024``        
+``Last update: July 17, 2025``        
 
-‎
-:   ‎
+***
+
 :::   
 :::content-center
 ## What is a Voice Model
@@ -24,15 +24,15 @@ order: 3000
 ### Voice Model Files 
 ==- *They are made up of two files:*       
 ###### ‎    
-##### :icon-triangle-down: <u>INDEX:</u>   
-- Contains data regarding the voice's accent and speech manner.       
-- File is additional, but usually **crucial** for the **quality** of the model.        
-- While training, RVC generates two .INDEX file, but the right one will be named ``added_`` by default.         
-###### ‎       
-##### :icon-triangle-down: <u>PTH:</u>
+##### :icon-triangle-down: <u>PTH:</u>   
 - This file is the model itself.
 - Contains data regarding pitch.     
 - While training, RVC generates other .PTHs named `D_` and `G_`, but these are the <u>[checkpoints](https://docs.aihub.gg/extra/glossary/#checkpoints)</u>, not usable models.  
+###### ‎       
+##### :icon-triangle-down: <u>INDEX:</u>
+- Contains data regarding the voice's accent and speech manner.       
+- File is additional, but usually **crucial** for the **quality** of the model.        
+- While training, RVC generates two .INDEX file, but the right one will be named ``added_`` by default.         
 ***
 !!!warning *Be sure to upload the correct files mentioned before.*
 As people sometimes upload them incorrectly.
@@ -42,26 +42,23 @@ As people sometimes upload them incorrectly.
 ***
 ###### ‎
 :::content-center
-## How to Search Models
+## How to Search Voice Models
 #### *``Five methods to find one online.``*
 :::
 ###### ‎  
-!!!
-**Reminder:** Models from **kits.ai** can't be downloaded.
-!!!           
 
-+++ weights.gg   
++++ weights.com   
 :::content-center  
-<img src="../searchrvcmodels-img/1.png" alt="image" width="300" height="auto">           
+<img src="../searchrvcmodels-img/weights-logo.png" alt="image" width="300" height="auto">           
 :::  
 
 - This a website where people can upload voice models.
-- Models uploaded in **AI Hub** & **AI Hub France** get automatically stored here too.  
+- Models uploaded in **AI Hub** get automatically stored here too.  
 - Users can read/share feedback about the models through comments & likes.     
 ***
 ###### ‎
 #### 1. Log in 
-- Access the website <u>[here</u>](https://weights.gg) & login by clicking the icon on the top right corner.
+- Access the website <u>[here</u>](https://weights.com/models) & login by clicking the icon on the top right corner.
 ***
 ###### ‎
 #### 2. Search
@@ -94,50 +91,7 @@ If you're curious about the epochs, <u>[learn more here](https://docs.aihub.gg/r
 ‎   
 - If you need a link for it, use the other methods.     
 
-- If it only exists in weights.gg, download the .ZIP & <u>[upload it to HF](https://docs.aihub.gg/essentials/voice-models/#uploading-to-hugging-face)</u>.  
-
-+++ applio.org   
-:::content-center  
-<img src="../searchrvcmodels-img/applio-web-2.png" alt="image" width="350" height="auto">           
-:::
-
-- This is a website where people can upload voice models.
-- Access guides, the HF space, and the Applio API featuring 21k+ free models.
-- Share, favorite, and integrate with Applio (RVC) for direct model downloads to your PC.
-- User-friendly UI
-***
-###### ‎
-#### 1. Log in (Optional)
-- Access the website <u>[here</u>](https://applio.org/models) & login by clicking the icon on the top right corner.
-***
-###### ‎
-#### 2. Search
-- Type the name of the model in the ``Search`` bar & click a result.     
-      
-    <img src="../searchrvcmodels-img/applio-web-1.png" alt="image" width="1000" height="auto"> ‎    
-‎   
-!!!
-If you get models from different years, remember, the person's voice changes overtime.
-!!!
-***
-###### ‎
-#### 3. Evaluate model (optional)      
-- Check the description, likes or tags, this can give you a slight idea of how good the model is.
-- This step is especially useful if you get multiple results from the same model.
-
-    <img src="../searchrvcmodels-img/applio-web-3.png" alt="image" width="1000" height="auto">
-
-!!!success
-If you're curious about the epochs, <u>[you can learn more here](https://docs.aihub.gg/rvc/resources/training/#tensorboard)</u>.
-!!!
-***
-###### ‎
-#### 4. Download       
-- Click on ``Download model``. This will download a .ZIP file of it.     
-‎  
-<img src="../searchrvcmodels-img/applio-web-4.png" alt="image" width="600" height="auto">‎                          
-‎   
-- If you need a link for it, use the other methods.     
+- If it only exists in weights.com, download the .ZIP & <u>[upload it to HF](https://docs.aihub.gg/essentials/voice-models/#uploading-to-hugging-face)</u>.  
 
 
 +++ Voice Models channel     
@@ -152,7 +106,7 @@ If you're curious about the epochs, <u>[you can learn more here](https://docs.ai
 ###### ‎   
 #### 1. Enter the channel   
 - If you haven't already, join AI Hub <u>[here</u>](https://discord.gg/aihub).         
-- Then go to the ``#voice-models`` channel.       
+- Then go to the <u>[``#voice-models``](https://discord.com/channels/1159260121998827560/1175430844685484042)</u> channel.       
        
 <img src="../searchrvcmodels-img/5.png" alt="image" width="480" height="auto"> 
 
@@ -168,46 +122,44 @@ If you're curious about the epochs, <u>[you can learn more here](https://docs.ai
 
     <img src="../searchrvcmodels-img/6.png" alt="image" width="480" height="auto"> 
 
-+++ Applio Bot
+
++++ Weights.com Bot
 :::content-center
-<img src="../searchrvcmodels-img/applio.png" alt="image" width="200" height="auto"> 
+<img src="../searchrvcmodels-img/weights-logo.png" alt="image" width="300" height="auto">           
 :::
 ‎   
-- This is a Discord bot developed by the IA Hispano team.
-- It searches the models uploaded on every RVC/AI Hub Discord server.
-- There's also its <u>[web version](https://applio.org/models)</u>. Has less models but offers direct download & the Hugging Face link.
+- This is a Discord bot developed by the Weights.com team.
+- It searches the models uploaded on Weights.com/AI Hub Discord server.
+- There's also its <u>[web version](https://www.weights.com/models)</u>.
 ***
 
 ###### ‎
 #### 1. Enter the channel     
 - If you haven't already, join AI Hub <u>[here</u>](https://discord.gg/aihub).        
-- Head over to the ``#search-models`` channel.
+- Head over to the <u>[``#find-models``](https://discord.com/channels/1159260121998827560/1163592055830880266)</u> channel.
 ***
 ###### ‎
 #### 2. Type command        
 - #### In the chat:
-    1. Type ``/search``
-    2. Select the **Applio** command
+    1. Type ``/find``
+    2. Select the **Weights** command
     3. Type the model
     4. Send the message      
 
     ‎   
 
-    <img src="../searchrvcmodels-img/8.png" alt="image" width="340" height="auto"> 
+    <img src="../searchrvcmodels-img/weights-find-bot-command.png" alt="image" width="340" height="auto"> 
 
 ***     
 ###### ‎
 #### 3. Download
-‎ ‎ ‎ ‎ ‎ ‎ <img src="../searchrvcmodels-img/7.png" alt="image" width="500" height="auto"> ‎     
-- 📤‎ Click ``Download`` to **download** it.        
+‎ ‎ ‎ ‎ ‎ ‎ <img src="../searchrvcmodels-img/weights-find-bot-result.png" alt="image" width="500" height="auto"> ‎     
+- 🔗‎ Click ``Use Model`` to **Use** it on Weights.com.        
 
-- 🔗‎ To get its **link**, right-click ``Download Model`` & tap ``Copy link``.      
+- 📤‎ Click ``View Model`` to **View** it, and by being logged in, you can click the 3 dots and **Download** it.        
 
-- 👀‎ If there are **multiple** models, click the ``Select a result`` bar to see the others.     
+- 👀‎ If there are **multiple** models, click the ``View other models...`` bar to see the others.     
 
-- 👍‎ Press the `Like` to support the creator & offer feedback.
-
-- 💾‎ With the `Save` one the bot will DM you said search result.  
 
 +++ Hugging Face search
 :::content-center
@@ -215,8 +167,10 @@ If you're curious about the epochs, <u>[you can learn more here](https://docs.ai
 :::
 ‎   
 
-- This is a free & open-source platform for storing AI models, interactive AI apps, & datasets.
-- Here's where people usually store their RVC models.
+- This is a free & open-source platform for storing Any Type AI models, interactive AI apps, & datasets.
+!!!
+**Reminder:** This is a General AI Platform, not every model is an RVC one.
+!!!           
 ***
 ###### ‎
 1. Go to the <u>[models page](https://huggingface.co/models)</u> & search the model in the ``Filter by name`` bar.
@@ -241,8 +195,52 @@ Download the <u>[correct files](https://docs.aihub.gg/essentials/voice-models/#v
 ##### ‎ 
 #### If you couldn't find one, you have 3 options:   
 - <u>[Make the model yourself](https://docs.aihub.gg/essentials/how-to-make-voice-models/)</u>
-- Pick a different one
-- Comission a **model maker** to make it for you         
+- Pick a different one.
+- Request a **free** model via <u>[AI HUB](https://discord.gg/aihub)</u>'s <u>[``#request-models``](https://discord.com/channels/1159260121998827560/1159289738314919936)</u> forum channel. Be aware that **we don't allow paid commissions**
+
+
+
+##### ‎
+***
+:::content-center
+## Uploading to Weights.com
+:::
+‎
+:   ‎
+
+#### 1. Zip the model        
+- Select the correct <u>[.PTH & .INDEX](https://docs.aihub.gg/essentials/voice-models/#voice-model-files)</u> & <u>[zip</u>](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-8d28fa72-f2f9-712f-67df-f80cf89fd4e5) them into a **.ZIP** file.       
+
+- Ensure it's .ZIP & not .RAR or .7ZIP.
+
+***
+###### ‎ 
+#### 2. Log in
+- If you haven't already, <u>[create an account</u>](https://weights.com/signup) & log in.
+***
+###### ‎  
+#### 3. Upload the Model
+a. Once logged in, go to  <u>[`Upload a Voice Model`](https://www.weights.com/share)</u> in the `train models` tab.       
+
+    <img src="../weightscomupload-img/weights-upload-model.png" alt="image" width="600" height="auto">
+
+    ‎
+
+b.  In `Model name` you name the model.   
+
+c.  Describe the model in `Model Description`. 
+
+d.  Select a `Tag`, such as English, Anime, etc.
+
+e. Upload an `Image` for the model, like the character's image.
+
+f. Upload the `Model Zip` containing the .PTH and .INDEX file.
+
+g. You're done!
+
+***
+###### ‎ 
+
 
 ##### ‎
 ***

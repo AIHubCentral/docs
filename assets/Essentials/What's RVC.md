@@ -4,7 +4,7 @@ order: 2000
 visibility:
 ---
 
-``Last update: Oct 21, 2024``
+``Last update: July 17, 2025``
 
 ***
 
@@ -12,14 +12,14 @@ visibility:
 ***
 - RVC (*Retrieval-Based Voice Conversion*) is an advanced AI **voice cloning** software, developed by the <u>[RVC-Project team](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI)</u>. It's considered the best **free & open-source** one to date.
 
-- It was designed for desktop, requiring great **specs** to run it effectively, specially **GPU** for training models.
+- It was designed for desktop, requiring **great specs** to run it effectively, specially **GPU** for training models.
 
 - Though it can be executed through the <u>[cloud](https://docs.aihub.gg/extra/glossary/#cloud-based)</u> & be used in **any** device, in case you don't meet the previous requirement.        
 ‎       
 ***
 ## Forks :icon-repo-forked:
 ***
-- A fork is a **copy** of a main GitHub project. It aims to make a different **version** of the project, with improvements, new features & modifications.
+- A fork is a **copy** of a main GitHub project. It aims to make a **modified version** of the project, with improvements, new features & modifications.
 
 - RVC has quite a few forks made by the community, each one meeting different **needs** for the user, and with its pros & cons.     
 
@@ -52,7 +52,7 @@ visibility:
 ==- *What's the best fork?*
 ###### ‎       
 - As explained before, it depends on your needs. It's best to try them yourself.
-- For **local** users, <u>[Applio](https://docs.aihub.gg/rvc/local/applio/)</u> is a great starting point. For **cloud** users you can use either the <u>[Applio Colab](https://docs.aihub.gg/rvc/cloud/applio-colab/)</u> or <u>[mainline kaggle](https://docs.aihub.gg/rvc/cloud/mainline-kaggle/)</u>.
+- For **local** users, <u>[Applio](https://docs.aihub.gg/rvc/local/applio/)</u> is a great starting point. For **cloud** users you can use either the <u>[Applio Colab](https://docs.aihub.gg/rvc/cloud/applio-colab/)</u> or <u>[applio kaggle](https://docs.aihub.gg/rvc/cloud/applio-kaggle/)</u>.
 ===
 
 ==- *What are the requirements for RVC locally?*

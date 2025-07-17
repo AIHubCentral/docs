@@ -6,6 +6,8 @@ order: 5000
 
 # :icon-dependabot:  How to Make Voice Models
 
+``Last update: July 17, 2025``
+
 
 #### - *Simple model training tutorial, using <u>[RVC](https://docs.aihub.gg/essentials/whats-rvc/)</u>* -
 ***
@@ -28,7 +30,7 @@ order: 5000
     #### :icon-cloud: ‎ <u>[On the cloud](https://docs.aihub.gg/rvc/cloud/applio-colab/)</u>
 ###### ‎
 !!!warning
-For local users, first ensure you meet the <u>[minimum requirements](https://docs.aihub.gg/essentials/whats-rvc/#what-are-the-requirements-for-rvc-locally)</u>.
+For local users, first ensure you meet the <u>[local minimum requirements](https://docs.aihub.gg/essentials/whats-rvc/#what-are-the-requirements-for-rvc-locally)</u>.
 !!!
 ***
 ###### ‎ 
@@ -38,11 +40,10 @@ For local users, first ensure you meet the <u>[minimum requirements](https://doc
 - Good luck & remember to be patient! As this won't be an instant process.
 
 ***
-:::content-right
-``Last update: Mar 10, 2024``
-:::
-‎  
-:::content-right
+ ‎
+:::content-center
+#### `You have reached the end.`
+
 [!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.aihub.gg/contributions/)
 ::: 
 ‎  
