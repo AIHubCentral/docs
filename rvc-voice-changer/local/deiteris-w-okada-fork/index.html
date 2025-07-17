@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.806084263435">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.806084306141">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -34,11 +34,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../../img/b.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.11.0.806084263435" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.11.0.806084306141" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.806084263435" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.806084306141" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.806084263435" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.806084306141" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -319,7 +319,7 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
         <span>‎</span>
     </h6>
 </doc-anchor-target>
-<div class="content-center"><hr>
+<hr>
 <doc-anchor-target id="system--hardware-requirements">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#system--hardware-requirements">#</doc-anchor-trigger>
@@ -925,14 +925,30 @@ If you run into issues, you will need to lower quality and limit your FPS, or in
 <doc-tabs>
 <doc-tab v-cloak id="nvidia">
 <template #title>NVIDIA</template>
-</doc-tab>
-</div>
-<div class="mb-6 overflow-hidden border rounded-md docs-columns dark:border-base-border" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
+<div class="mb-6 overflow-hidden border rounded-md docs-columns dark:border-base-border" style="grid-template-columns: repeat(3, minmax(0, 1fr));">
+    <div class="flex items-center px-5 py-3 font-medium leading-snug text-gray-900 border-b border-base-border dark:text-white border-r">
+        <span>GPU</span>
+    </div>
     <div class="flex items-center px-5 py-3 font-medium leading-snug text-gray-900 border-b border-base-border dark:text-white border-r">
         <span>Max Settings</span>
     </div>
     <div class="flex items-center px-5 py-3 font-medium leading-snug text-gray-900 border-b border-base-border dark:text-white">
         <span>For gaming</span>
+    </div>
+    <div class="px-5 py-3 docs-columns-content border-r border-base-border">
+<div class="content-left"><p>RTX xx90 (e.g. 3090)</p>
+<p>RTX xx80 Ti (e.g.3080 Ti)</p>
+<p>RTX xx80 (e.g. 3080)</p>
+<p>RTX xx70 Ti (e.g. 3070 Ti)</p>
+<p>RTX xx70 (e.g. 3070)</p>
+<p>RTX xx60 Ti (e.g. 3060 Ti)</p>
+<p>RTX xx60 (e.g. 3060)</p>
+<p>RTX xx50 (e.g. 3050)</p>
+<p>GTX 16xx-series</p>
+<p>GTX 10xx-series</p>
+<p>GTX 900-series</p>
+<p>MX 330</p>
+</div>
     </div>
     <div class="px-5 py-3 docs-columns-content border-r border-base-border">
 <div class="content-center"><p>30 - 60 ms chunk + 2.7s extra</p>
@@ -965,7 +981,7 @@ If you run into issues, you will need to lower quality and limit your FPS, or in
 </div>
     </div>
 </div>
-<doc-tabs>
+</doc-tab>
 <doc-tab v-cloak id="amd">
 <template #title>AMD</template>
 <div class="mb-6 overflow-hidden border rounded-md docs-columns dark:border-base-border" style="grid-template-columns: repeat(3, minmax(0, 1fr));">
