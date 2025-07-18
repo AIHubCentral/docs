@@ -2,7 +2,7 @@
 icon: chevron-right
 order: 4000
 ---
-``Last update: July 17, 2025``
+``Last update: July 18, 2025``
 ***
 :::content-center
 ## Introduction
@@ -10,7 +10,7 @@ order: 4000
 
 - W-Okada is a voice changer that uses RVC for its conversion.
 
-- There are two versions of this voice changer, the <u>[offical mainline/original](https://github.com/w-okada/voice-changer)</u> made by Wok, and the <u>[Deiteris fork](https://github.com/deiteris/voice-changer) made by Deiteris</u>.  
+- There are two versions of this voice changer, the <u>[offical original](https://github.com/w-okada/voice-changer)</u> made by Wok, and the <u>[Deiteris fork](https://github.com/deiteris/voice-changer) made by Deiteris</u>.  
 
 - This guide will be about the Deiteris fork since it has better preformence and quality.
 
@@ -100,6 +100,10 @@ If you plan on playing games at the same, do not use CPU-conversion. With CPU, t
 
 #### Colab
 
+!!!danger
+You need the Google Colab Paid Tier to run this, as it uses a Web User Interface, else you could risk getting disconnected or getting banned off Colab.
+!!!
+
 Go <u>[here](https://colab.research.google.com/github/deiteris/voice-changer/blob/master-custom/Colab_RealtimeVoiceChanger.ipynb)</u>
 
 Then run all the needed cells one by one, create an ngrok account which is for free. After you started "server ngrok", an URL will be created - you open that URL, and that's where the voice changer will be on.
@@ -109,7 +113,7 @@ Then run all the needed cells one by one, create an ngrok account which is for f
 
 Go <u>[here](https://www.kaggle.com/code/suneku/voice-changer-public)</u>
 
-It has a rough tutorial included, needs cell phone number verification and longer to set up, but once you have it, it is worth it. On Kaggle there should be an option to import from Colab, which would be the fastest way to set it up
+It has a rough tutorial included, **needs cell phone number verification** and longer to set up, but it's **free** once you have it, it is worth it. On Kaggle there should be an option to import from Colab, which would be the fastest way to set it up
 
 ***
 
@@ -118,12 +122,13 @@ It has a rough tutorial included, needs cell phone number verification and longe
 #### A Virtual Audio Cable (VAC) is what you need to use the voice changer on Discord & Games.
 
 !!! For Windows
-Download this: <u>[VAC Lite (Virtual-Audio-Cable by Muzychenko)](https://software.muzychenko.net/freeware/vac470lite.zip)</u>
+Download this: <u>[VAC Lite (Virtual-Audio-Cable by Muzychenko)](https://software.muzychenko.net/freeware/vac470lite.zip)</u>.
+(Be sure to not use any toher vac like VB Audio Cable.)
 !!!
 
 - Run `setup64`, not 64a, after extracting the zip to a new folder
 
-- After installing the Virtual Cable, it changes your default audio system. Click **Yes** when it asks you to open the audio device settings (or press WIN+R, type "mmsys.cpl" if you closed it already), and change your **Recording** and **Playback** devices back to your usual devices. Same for communications device aswell (right click -> set as default communication device)
+- After installing the VAC Lite, it changes your default audio system. Click **Yes** when it asks you to open the audio device settings (or press WIN+R, type "mmsys.cpl" if you closed it already), and change your **Recording** and **Playback** devices back to your usual devices. Same for communications device aswell (right click -> set as default communication device)
 
 !!! For Mac
 Download either: 
@@ -148,7 +153,7 @@ Use Online Hosted if you have an integrated GPU (AMD Radeon Graphics ; AMD Radeo
 
 ### Download NVIDIA on Windows
 
-- The lastest version as of December 7th 2024 is: <u>[nvidia-b2332 (click here to download)](https://huggingface.co/Shadicti/deiteris-Fork/blob/main/voice-changer-windows-nvidia-b2332.zip)</u>
+- The latest version as of December 7th 2024 is: <u>[nvidia-b2332 (click here to download)](https://huggingface.co/Shadicti/deiteris-Fork/blob/main/voice-changer-windows-nvidia-b2332.zip)</u>
 
 !!!danger
 If you have a GTX 700 card or below, use AMD/Intel version instead.
@@ -166,7 +171,7 @@ Download all 3 files, then extract the .zip file, it will automatically extract 
 ***
 ### Download AMD, INTEL and CPU on Windows
 
-- The lastest version as of December 7th 2024 is: <u>[dml-b2332 (click here to download)](https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-windows-amd64-dml.zip)</u>
+- The latest version as of December 7th 2024 is: <u>[dml-b2332 (click here to download)](https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-windows-amd64-dml.zip)</u>
 
 !!!danger
 Intel UHD Graphics do NOT work at this point in time. Use Online Alternative.
@@ -189,12 +194,12 @@ Intel UHD Graphics do NOT work at this point in time. Use Online Alternative.
 ***
 ### Download Mac Silicon
 
-- The lastest version as of December 7th 2024 is: <u>[arm-b2332 (click here to download)](https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-macos-arm64-cpu.tar.gz)</u>
+- The latest version as of December 7th 2024 is: <u>[arm-b2332 (click here to download)](https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-macos-arm64-cpu.tar.gz)</u>
 
 ***
 ### Download Mac Intel
 
-- The lastest version as of December 7th 2024 is: <u>[macos-amd-b2332 (click here to download)](https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-macos-amd64-cpu.tar.gz)</u>
+- The latest version as of December 7th 2024 is: <u>[macos-amd-b2332 (click here to download)](https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-macos-amd64-cpu.tar.gz)</u>
 
 ***
 ### Opening on Mac
@@ -267,7 +272,7 @@ I'm not sure about the capabilities of UI tar archive extractors, but you can ex
 ***
 ### Deleting Models
 
-If you wish to delete a model, you can overwrite the slot with a new model. If you insist on fully emptying a slot for whatever reason, head over to the `model_dir` folder, open the folder of the slot number you want to delete, and delete the model from that folder
+If you wish to delete a model, you can overwrite the slot with a new model. If you insist on fully emptying a slot, head over to the `model_dir` folder, open the folder of the slot number you want to delete, and delete the model from that folder
 
 
 ***
