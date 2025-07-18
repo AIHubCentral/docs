@@ -3,7 +3,7 @@ icon: chevron-right
 order: 5000
 ---
 
-``Last update: Mar 8, 2024``
+``Last update: July 18, 2025``
 
 ***
 ###### ‎
@@ -11,7 +11,7 @@ order: 5000
 ## Introduction ‎ :icon-book:
 :::
 
-- Mainline RVC is the base, original, & unmodified version of RVC. Made by the <u>[RVC-Project</u>](https://github.com/RVC-Project) team.
+- Mainline RVC is the base, **original**, & unmodified version of RVC. Made by the <u>[RVC-Project</u>](https://github.com/RVC-Project) team. It can be called either Original/Mainline RVC.
 
 - It has less features compared to other <u>[forks</u>](https://docs.aihub.gg/essentials/whats-rvc/#forks), but still has the necessary tools to do a decent job.
 
@@ -36,7 +36,7 @@ order: 5000
 ***
 ###### ‎
 :::content-center
-## Installing & Opening :icon-download:
+## Installing & Opening Nvidia on Windows (Precompiled) :icon-download:
 :::
 ###### ‎
 1. Go to their download page <u>[here](https://huggingface.co/lj1995/VoiceConversionWebUI/blob/main/RVC1006Nvidia.7z)</u>    
