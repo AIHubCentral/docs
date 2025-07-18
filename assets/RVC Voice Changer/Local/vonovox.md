@@ -2,7 +2,7 @@
 icon: chevron-right
 order: 4000
 ---
-``Last update: July 17, 2025``
+``Last update: July 18, 2025``
 ***
 :::content-center
 ## Introduction
@@ -11,6 +11,9 @@ order: 4000
 - Vonovox is a realtime voice changer that uses RVC for its conversion.
 
 - Vonovox was developed by dr87.
+
+- RVC does **NOT** mean realtime voice changer. RVC means Retrieval-based-Voice-Conversion.
+
 
 ***
 #### Is Vonovox Safe?
@@ -39,7 +42,7 @@ Also, **HuggingFace has a <u>[Security Scanner](https://huggingface.co/docs/hub/
 - Not Open Source (right now, but the dev is working on an Open Source version)
 - Supports only Nvidia GPUs on Windows
 - It doesn't use a Web User Interface, meaning that it can't be run on the Cloud
-- Many Effects are Premium, such as "Low Quality Mic"
+- Many Effects are Premium (paid), such as "Low Quality Mic"
 |||
 ===
 ***
