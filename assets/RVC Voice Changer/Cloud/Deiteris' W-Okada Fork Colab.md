@@ -3,7 +3,7 @@ icon: chevron-right
 order: 4000
 ---
 
-``Last update: May 5, 2025``
+``Last update: July 17, 2025``
 
 ***
 :::
@@ -11,8 +11,11 @@ order: 4000
 :::content-center
 ## Introduction ‎
 :::
-- This cloud version is hosted in <u>[Google Colab](https://docs.aihub.gg/extra/glossary/#google-colab)</u>, remember that you have a GPU runtime of 4 hours.
-- **YOU WILL NEED TO HAVE A COLAB PAID TIER SUBSCRIPTION TO USE THIS AS WEB UIS AREN'T ALLOWED IN THE FREE TIER**
+- This cloud version is hosted in <u>[Google Colab](https://docs.aihub.gg/extra/glossary/#google-colab)</u>, remember that you have a random GPU runtime of max 4 hours daily.
+
+!!!danger
+You need the Google Colab Paid Tier to run this, as it uses a Web User Interface, else you could risk getting disconnected or getting banned off Colab.
+!!!
 
 ***
 
