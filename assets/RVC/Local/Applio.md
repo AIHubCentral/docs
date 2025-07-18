@@ -3,7 +3,7 @@ icon: chevron-right
 order: 4000
 ---
 
-``Last update: July 17, 2025``
+``Last update: July 18, 2025``
 
 ***
 :::content-center
@@ -21,7 +21,7 @@ order: 4000
 
 - Because of its user-friendly experience & active development, it's considered to be one of the best forks.     
 
-- It also has a <u>[cloud version](https://colab.research.google.com/github/iahispano/applio/blob/master/assets/Applio.ipynb)</u>, in case you don't meet the <u>[requirements](https://docs.aihub.gg/essentials/whats-rvc/#what-are-the-requirements-for-rvc-locally/)</u> to run it locally.   
+
 ***
 #### Are RVC Models Safe?
 
@@ -53,6 +53,19 @@ Also, **HuggingFace has a <u>[Security Scanner](https://huggingface.co/docs/hub/
 |||
 ===
 ***
+
+
+## System & Hardware Requirements
+
+Check if you meet the <u>[requirements](https://docs.aihub.gg/essentials/whats-rvc/#what-are-the-requirements-for-rvc-locally/)</u> to run it locally.
+
+If you don't meet the requirements, there are 4 Cloud Versions:
+- <u>[Applio UI Kaggle](http://docs.aihub.gg/rvc/cloud/applio-kaggle/)</u>
+- <u>[Applio UI Google Colab](http://docs.aihub.gg/rvc/cloud/applio-colab/)</u>
+- <u>[Applio NO UI Google Colab](http://docs.aihub.gg/rvc/cloud/applio-no-ui-colab/)</u>
+- <u>[Applio UI Lightning.AI](http://docs.aihub.gg/rvc/cloud/applio-lightning-ai/)</u>
+
+
 ###### ‎
 :::content-center
 ## Download :icon-download:

@@ -3,7 +3,7 @@ icon: chevron-right
 order: 2000
 ---
 
-``Last update: May 10, 2025``
+``Last update: July 18, 2025``
 
 ***
 :::content-center
@@ -19,7 +19,6 @@ order: 2000
 
 - It's liked for its great **UI** & **Automated AI Cover Process**, making it the easiest way to make ai cover, as it automatically separates instrumentals and mixes them back with the converted vocals.
 
-- It also has a <u>[cloud version](https://docs.aihub.gg/rvc/cloud/aicovermaker/)</u>, in case you don't meet the <u>[requirements](https://docs.aihub.gg/essentials/whats-rvc/#what-are-the-requirements-for-rvc-locally/)</u> to run it locally.   
 ***
 #### Are RVC Models Safe?
 
@@ -43,36 +42,87 @@ Also, **HuggingFace has a <u>[Security Scanner](https://huggingface.co/docs/hub/
 - User-friendly UI
 ||| ❌ **CONS** 
 - Can't Train models
-- No Precompiled versions for Non-Windows Users.
+- No Precompiled versions for Non-Windows Users
+- Doesn't support Mac nor any NON-Nvidia GPUs
 |||
 ===
 ***
+
+## System & Hardware Requirements
+
+**SPEC** | **MINIMUM REQUIREMENT** | 
+:---: | :---: | :---: | 
+OS | Windows 10 or later / Any Modern Linux Distro 
+RAM | 6GB
+Storage | 6 GB 
+
+**SPEC** | **SUGGESTED REQUIREMENT** | 
+:---: | :---: | :---: | 
+OS | Windows 10 or later / Any Modern Linux Distro 
+GPU | NVIDIA RTX 20 Series or later | 
+RAM | 6GB+
+Storage | 6GB+
+
+
+In case you don't meet the <u>[requirements](https://docs.aihub.gg//rvc/local/aicovermaker/#system--hardware-requirements/)</u> to run it locally, it also has a <u>[2 Cloud Versions: Kaggle & Colab](https://docs.aihub.gg/rvc/cloud/aicovermaker/)</u>
+
+
 ###### ‎
 :::content-center
 ## Download :icon-download:
 :::
 ###### ‎
-!!!warning Before Downloading:
-- Don't put it in a folder with privileged access.
-- Make sure the path does not contain any spaces or special characters.
-- Deactivate your antivirus and firewall to avoid missing dependencies.
+!!!warning Before Downloading (Applies to both methods):
+- Don't put the folder in a directory with privileged access (like `C:\Program Files`).
+- Make sure the file path does not contain any spaces or special characters.
+- It's recommended to temporarily deactivate your antivirus and firewall to avoid missing dependencies during installation.
 !!!
+
 ***
-1. The easiest way to download RVC-AI-Cover-Maker-WebUI is by going to Eddy's <u>[Latest GitHub Release](https://github.com/Eddycrack864/RVC-AI-Cover-Maker-UI/releases/latest)</u>, and clicking the **Precompiled** version for your Operative System.
+
+### Precompiled (Windows)
+
+1. The easiest way to download RVC-AI-Cover-Maker-WebUI is by going to Eddy's <u>[Latest GitHub Release](https://github.com/Eddycrack864/RVC-AI-Cover-Maker-UI/releases/latest)</u>, and clicking the **Precompiled** version.
 
     <img src="..\aicovermaker-img\precompiled-github.png" alt="image" width="400">
 
 ***
 2. Unzip the folder. It may take a few minutes.
 ***
-3. Open AICoverMaker's folder & execute ``run.bat``.
+3. Open the AICoverMaker folder & execute ``run.bat``.
 
     <img src="..\aicovermaker-img\bat-files.png" alt="image" width="550">‎    
 ‎       
-- A console tab will appear, and after a moment your default browser, with RVC-AI-Cover-Maker-WebUI ready to use.     
+- A console tab will appear, and after a moment your default browser will open with the WebUI ready to use.     
+
+***
+
+### Source / Manual (mainly for Linux)
+
+<img src="..\aicovermaker-img\aicovermaker-normal-install.png" alt="image" width="700">‎     
+
+1.  Download the source code, either .zip (which is the most suggested usually) or .tar.gz, from the latest release <u>[link](https://github.com/Eddycrack864/RVC-AI-Cover-Maker-UI/releases/latest)</u>.
+
+    <img src="..\aicovermaker-img\aicovermaker-sources.png" alt="image" width="700">‎    
 ‎       
-!!!warning Don't close the console until you're done using it, or it will stop working.     
+
+    !!!note
+    If you download the `.zip` from the latest release make sure to rename the folder from `"rvc-ai-cover-maker-ui-v1.0.5"` (or whatever version is the latest version) to just `"rvc-ai-cover-maker-ui"` otherwise you may run into missing dependencies issues.
+    !!!
+
+2. Extract the folder. It may take a few minutes.
+
+3. Open the AICoverMaker folder & execute the script `run.sh` for Linux, or `run.bat` for Windows.
+
+    <img src="..\aicovermaker-img\bat-files.png" alt="image" width="550">‎    
+‎       
+- A console tab will appear, and after a moment your default browser will open with the WebUI ready to use.  
+
+
+‎       
+!!!warning Don't close the console until you're done using it in both cases, or it will stop working.     
 !!! 
+
 
 ***
 ###### ‎
@@ -124,7 +174,7 @@ Please use our <u>[Inference Settings guide](https://docs.aihub.gg/rvc/resources
 
 ## Update
 
-If you don't want to download the latest precompiled the next time a new version comes out, open AICoverMaker's folder & execute ``update.bat``.
+If you don't want to download the latest precompiled the next time a new version comes out, open AICoverMaker's folder & execute the script `update.sh` for Linux, or `update.bat` for Windows
 
 <img src="..\aicovermaker-img\bat-files.png" alt="image" width="550">‎    
 
