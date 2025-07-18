@@ -98,22 +98,22 @@ If you plan on playing games at the same, do not use CPU-conversion. With CPU, t
 
 ## Online Alternatives [Colab/Kaggle]
 
-#### Colab
+#### Kaggle
+
+!!!danger
+It's free, but you will need a phone number verification.
+!!!
+
+<u>[Read the Tutorial HERE](https://docs.aihub.gg/rvc-voice-changer/cloud/deiteris-w-okada-fork-kaggle/)</u>
+
+***
+#### Google Colab
 
 !!!danger
 You need the Google Colab Paid Tier to run this, as it uses a Web User Interface, else you could risk getting disconnected or getting banned off Colab.
 !!!
 
-Go <u>[here](https://colab.research.google.com/github/deiteris/voice-changer/blob/master-custom/Colab_RealtimeVoiceChanger.ipynb)</u>
-
-Then run all the needed cells one by one, create an ngrok account which is for free. After you started "server ngrok", an URL will be created - you open that URL, and that's where the voice changer will be on.
-
-***
-#### Kaggle
-
-Go <u>[here](https://www.kaggle.com/code/suneku/voice-changer-public)</u>
-
-It has a rough tutorial included, **needs cell phone number verification** and longer to set up, but it's **free** once you have it, it is worth it. On Kaggle there should be an option to import from Colab, which would be the fastest way to set it up
+<u>[Read the tutorial HERE](https://docs.aihub.gg/rvc-voice-changer/cloud/deiteris-w-okada-fork-colab/)</u>
 
 ***
 
