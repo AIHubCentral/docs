@@ -102,7 +102,7 @@ If you don't meet the requirements, there are 4 Cloud Versions:
 
 ***
 
-### Nvidia RTX 5000 Serie on Windows (Precompiled Fix)
+### Nvidia RTX 5000 Series on Windows (Precompiled Fix)
 
 !!!warning "Unofficial Workaround"
 The following steps are an unofficial workaround to use Applio with NVIDIA RTX 50 series cards until the next official release includes updated PyTorch.
@@ -195,7 +195,7 @@ For AMD GPU users, follow these steps to set up Applio:
 
 ***
 
-2. irst, check the official <u>[System Requirements](https://rocm.docs.amd.com/projects/install-on-windows/en/develop/reference/system-requirements.html)</u> on the AMD ROCm™ documentation site. In the "Windows-supported GPUs" section, determine which steps to follow below.
+2. First, check the official <u>[System Requirements](https://rocm.docs.amd.com/projects/install-on-windows/en/develop/reference/system-requirements.html)</u> on the AMD ROCm™ documentation site. In the "Windows-supported GPUs" section, determine which steps to follow below.
 
 ==- GPU has a green check in the HIP SDK column
 - Install either v6.1.2 or v5.7.1 HIP SDK from the <u>[AMD ROCm Hub](https://www.amd.com/en/developer/resources/rocm-hub/hip-sdk.html)</u>.

@@ -106,7 +106,7 @@ If you're curious about the epochs, <u>[learn more here](https://docs.aihub.gg/r
 ###### ‎   
 #### 1. Enter the channel   
 - If you haven't already, join AI Hub <u>[here</u>](https://discord.gg/aihub).         
-- Then go to the <u>[``#voice-models``](https://discord.com/channels/1159260121998827560/1175430844685484042)</u> channel.       
+- Then go to the <u>[``#voice-models``](https://discord.com/channels/1159260121998827560/1175430844685484042)</u> forum channel.       
        
 <img src="../searchrvcmodels-img/5.png" alt="image" width="480" height="auto"> 
 

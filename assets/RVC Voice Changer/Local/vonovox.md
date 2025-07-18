@@ -215,8 +215,8 @@ Supports wav, mp3 and flac.
 ***
 ### Models to try
 
-- You will need to connect your account to <u>[weights.gg](http://weights.gg/)</u> to be able to download these models
-    - Click on the 3 dots (...) on weights.gg models, then Download model.
+- You will need to connect your account to <u>[weights.com](http://weights.com/)</u> to be able to download these models
+    - Click on the 3 dots (...) on weights.com models, then Download model.
 
 **Female:**
 
@@ -224,9 +224,9 @@ Gawr Gura: [Hugging Face Link](https://huggingface.co/dacoolkid44/VTuber-RVC/tre
 
 **Male:**
 
-[Bob Ross voice made by dieseldog34](https://www.weights.gg/models/clm72t7ra0qqhcctc4zyax181)
+[Bob Ross voice made by dieseldog34](https://www.weights.com/models/clm72t7ra0qqhcctc4zyax181)
 
-[Markiplier voice made by hobqueer](https://www.weights.gg/models/clm72nuvi0c8scctcvzrckuqp)
+[Markiplier voice made by hobqueer](https://www.weights.com/models/clm72nuvi0c8scctcvzrckuqp)
 
 ***
 ## FAQ

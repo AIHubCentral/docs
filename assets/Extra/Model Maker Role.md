@@ -5,10 +5,19 @@ order: 5000
 ---
 
 ``Last update: October 20, 2024``
+
 ***
-###### ‎ 
+
+:::content-center
+## Introduction ‎
+:::
+To upload your Voice Models in the <u>[AI HUB Discord Server](https://discord.gg/aihub)</u>'s <u>[``#voice-models``](https://discord.com/channels/1159260121998827560/1175430844685484042)</u> forum channel, you need to pass a Quality Control (QC) check to be sure that you post good voice models.
+
+***
+
 :::content-center
 ## Requirements
+
 
 ##### ``Before proceeding, ensure you meet these requirements.``
 :::
@@ -18,7 +27,7 @@ order: 5000
 - Model's **.INDEX** file.      
 - General information about the model.
 - General information about its training process.      
-- A Hugging Face or Weights.gg account.     
+- A Hugging Face or weights.com account.     
 - At least 1 raw audio sample of the model **<u>WITH NO MUSIC</u>**.     
 |||
 :::
@@ -82,7 +91,7 @@ order: 5000
 ***
 ###### ‎
 #### Step 3: Prepare the submission.
-- Once your model is ready, head over to the **#model-maker-role** channel.  
+- Once your model is ready, head over to the <u>[AI HUB](https://discord.gg/aihub)</u>'s <u>[`#model-maker-role`](https://discord.com/channels/1159260121998827560/1305524365810470963)</u> channel.  
 
 - Click the `Submit Model` button.    
 
