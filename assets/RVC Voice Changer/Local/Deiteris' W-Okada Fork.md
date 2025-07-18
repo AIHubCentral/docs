@@ -10,11 +10,11 @@ order: 4000
 
 - W-Okada is a voice changer that uses RVC for its conversion.
 
-- There are two versions of this voice changer, the <u>[offical original](https://github.com/w-okada/voice-changer)</u> made by Wok, and the <u>[Deiteris fork](https://github.com/deiteris/voice-changer) made by Deiteris</u>.  
+- There are two versions of this realtime voice changer, the <u>[offical original](https://github.com/w-okada/voice-changer)</u> made by Wok, and the <u>[Deiteris fork](https://github.com/deiteris/voice-changer)</u> made by Deiteris.  
 
-- This guide will be about the Deiteris fork since it has better preformence and quality.
+- This guide will be about the Wokada Deiteris fork since it has better preformance and quality compared to the Original Wokada.
 
-- RVC does **NOT** mean realtime voice changer. RVC means Retrieval-based-Voice-Conversion
+- RVC does **NOT** mean realtime voice changer. RVC means Retrieval-based-Voice-Conversion.
 
 ***
 #### Is The W-Okada Deiteris Fork Safe?
