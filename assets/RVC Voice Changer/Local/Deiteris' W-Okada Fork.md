@@ -2,7 +2,7 @@
 icon: chevron-right
 order: 4000
 ---
-``Last update: July 18, 2025``
+``Last update: July 26, 2025``
 ***
 :::content-center
 ## Introduction
@@ -233,11 +233,13 @@ https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-
 
 https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-linux-amd64-cuda.tar.gz.ab
 
-- For AMD, you need to download both these files:
+- For AMD, you need to download all these files:
 
 https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-linux-amd64-rocm.tar.gz.aa
 
 https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-linux-amd64-rocm.tar.gz.ab
+
+https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-linux-amd64-rocm.tar.gz.ac
 
 
 Install `portaudio` with `sudo yum -y install portaudio`. Installation of CUDA Toolkit or AMD **HIP SDK is NOT REQUIRED**. All other necessary libraries are bundled with the application.
