@@ -137,6 +137,20 @@ or
 <u>[VB-Audio](https://vb-audio.com/Cable)</u>
 !!!
 
+!!! For Linux
+For Debian / Ubuntu-based Systems (Ubuntu, Mint, Pop!_OS)
+```bash
+sudo apt-get update && sudo apt-get install -y portaudio19-dev
+```
+
+
+For Fedora / RHEL-based Systems (CentOS, Rocky Linux)
+```bash
+sudo yum install -y portaudio
+```
+!!!
+
+
 ***
 
 ## Windows
@@ -227,13 +241,20 @@ If nothing opens, then open a browser and type in `http://127.0.0.1:18888/`. Thi
 ***
 ## Linux
 
-- For NVIDIA, you need to download both these files:
+Installation of CUDA Toolkit or AMD **HIP SDK is NOT REQUIRED**. All other necessary libraries are bundled with the application.
+
+
+### Download on Nvidia on Linux
+
+you need to download both these files:
 
 https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-linux-amd64-cuda.tar.gz.aa
 
 https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-linux-amd64-cuda.tar.gz.ab
 
-- For AMD, you need to download all these files:
+### Download on AMD on Linux
+
+you need to download all these files:
 
 https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-linux-amd64-rocm.tar.gz.aa
 
@@ -242,12 +263,22 @@ https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-
 https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-linux-amd64-rocm.tar.gz.ac
 
 
-Install `portaudio` with `sudo yum -y install portaudio`. Installation of CUDA Toolkit or AMD **HIP SDK is NOT REQUIRED**. All other necessary libraries are bundled with the application.
-I'm not sure about the capabilities of UI tar archive extractors, but you can extract these archive parts with the following command that will merge them and extract: `cat voice-changer-linux-amd64-cuda.tar.gz.* | tar xzf -` (change **cuda** to **rocm** if necessary).
+### Download on CPU on Linux
+
+you need only this file:
+
+https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-linux-amd64-cpu.tar.gz
+
+
+### Opening on Linux
+
+I'm not sure about the capabilities of UI tar archive extractors, but you can extract these archive parts with the following command that will merge them and extract: `cat voice-changer-linux-amd64-cuda.tar.gz.* | tar xzf -`, change **cuda** to **rocm** or **cpu** depending on your PC GPU.
 
 
 ***
 ## Opening on Multi-PC Setups
+
+This is only for the people that want to use 1 PC for Gaming, and another only for Wokada Deiteris Fork.
 
 - Create a file named `.env` on the same folder where `MMVCServerSIO.exe` is located. Open it up with a notepad, copy paste the settings from the <u>[GitHub link](https://github.com/deiteris/voice-changer/issues/180#issuecomment-2359166278)</u>.
 
