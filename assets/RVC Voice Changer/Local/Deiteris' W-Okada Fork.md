@@ -138,13 +138,13 @@ or
 !!!
 
 !!! For Linux
-For Debian / Ubuntu-based Systems (Ubuntu, Mint, Pop!_OS)
+For Debian / Ubuntu-based Systems (Ubuntu, Mint, Pop!_OS), run in the terminal:
 ```bash
 sudo apt-get update && sudo apt-get install -y portaudio19-dev
 ```
 
 
-For Fedora / RHEL-based Systems (CentOS, Rocky Linux)
+For Fedora / RHEL-based Systems (CentOS, Rocky Linux), run in the terminal:
 ```bash
 sudo yum install -y portaudio
 ```
@@ -198,8 +198,9 @@ Intel UHD Graphics do NOT work at this point in time. Use Online Alternative.
 
 - After the download, you extract the zip file. You open the folders until you see an exe application called `MMVCServerSIO` and run that.
 
-- If nothing opens after a while of codes loading in, then open a browser and type in `http://127.0.0.1:18888/`. This is a local URL, it runs on the WebUI.
-
+!!!warning
+If nothing opens, then open a browser and type in `http://127.0.0.1:18888/`. This is a local URL, it runs on the WebUI.
+!!!
 
 ***
 ## Mac
@@ -273,6 +274,27 @@ https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-
 ### Opening on Linux
 
 I'm not sure about the capabilities of UI tar archive extractors, but you can extract these archive parts with the following command that will merge them and extract: `cat voice-changer-linux-amd64-cuda.tar.gz.* | tar xzf -`, change **cuda** to **rocm** or **cpu** depending on your PC GPU.
+
+After you extract the files using the command above, a new folder called `MMVCServerSIO` will appear.
+
+- Open a Terminal and navigate into that folder:
+  ```bash
+  cd MMVCServerSIO
+  ```
+
+- You may need to make the application executable. Run this command just in case:
+  ```bash
+  chmod +x ./MMVCServerSIO
+  ```
+
+- Now, run the voice changer:
+  ```bash
+  ./MMVCServerSIO
+  ```
+
+!!!warning
+After the server finishes loading in your terminal, it will not open a window on its own. Open a web browser and go to `http://127.0.0.1:18888/` to access the user interface.
+!!
 
 
 ***
