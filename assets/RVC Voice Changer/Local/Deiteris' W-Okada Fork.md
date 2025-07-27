@@ -39,6 +39,7 @@ Also, **HuggingFace has a <u>[Security Scanner](https://huggingface.co/docs/hub/
 ||| ❌ **CONS** 
 - Uses a Web User Interface, having issues on some browsers, and bugs with renaming or deleting models on it
 - Doesn't have an active development recently
+- Has Cut Off Issues Using an Extra superior to 2.7
 - Doesn't let you choose the embedder, using only RVC models trained on contentvec (the majority)
 |||
 ===

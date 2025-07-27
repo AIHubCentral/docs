@@ -37,6 +37,7 @@ Also, **HuggingFace has a <u>[Security Scanner](https://huggingface.co/docs/hub/
 - Easily reduces delay on Windows via facilitating the WASAPI/ASIO Backend process
 - Lets you choose the embedder, including spin
 - Uses TF32 Inference by default, which is more precise than FP16, and has very very slightly less precision/quality but better performance compared to FP32
+- Fixed 2.7+ Extra Time Cut Off Issues
 - Extra Effects, such as "Noise Gate"
 ||| ❌ **CONS** 
 - Not Open Source (right now, but the dev is working on an Open Source version)
@@ -184,8 +185,23 @@ On discord and games, you select:
 
 - `Block Size:` Critical setting. The optimal block size is the lowest you can get without audio being choppy. Listen to your output. This is GPU dependent, the more powerful the gpu, the lower the block size you can use. However the optimizations I made allow much smaller block sizes to work on lower end GPUs. At extremely low block sizes, quality may be reduced.
 
-- `Lookahead Buffer:` Gives the model more or less context to work with. Recommended 2.0 for best quality/latency ratio. The added latency of this setting is far less impactful than the block size.
+- `Extra Time:` Gives the model more or less context to work with. Recommended 2.0 for best quality/latency ratio. The added latency of this setting is far less impactful than the block size. This setting is known as "Extra" in Wokada Deiteris Fork, and Vonovox fixed the certain cut off issues experienced in some models over the value 2.7.
 ***
+
+
+***
+## Update :icon-download:
+***
+To Update Vonovox, you can either:
+A. Click the Update Check Symbol at the bottom right of the program.
+
+    <img src="../vonovox-img/vonovox-update.png" alt="image" width="480" height="auto">
+
+<br>
+
+B. Download the latest source code the next time a new version comes out, replace the files, run `setup.bat` and `start.bat`.
+
+
 ***
 ## Extras
 ***

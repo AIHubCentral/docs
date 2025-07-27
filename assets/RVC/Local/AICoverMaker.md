@@ -66,7 +66,7 @@ Storage | 6GB+
 
 In case you don't meet the <u>[requirements](https://docs.aihub.gg//rvc/local/aicovermaker/#system--hardware-requirements/)</u> to run it locally, it also has a <u>[2 Cloud Versions: Kaggle & Colab](https://docs.aihub.gg/rvc/cloud/aicovermaker/)</u>
 
-
+***
 ###### ‎
 :::content-center
 ## Download :icon-download:
@@ -162,22 +162,35 @@ In case you don't meet the <u>[requirements](https://docs.aihub.gg//rvc/local/ai
 
 **3.** You can also drag and drop your model in the `Drop files` box to upload them directly.
 
-***
 
-## Inference
+***
+###### ‎
+:::content-center
+## Inference :icon-unmute:   
+:::
+###### ‎
 
 Please use our <u>[Inference Settings guide](https://docs.aihub.gg/rvc/resources/inference-settings/)</u> to find out the inference settings do what.
 
 **TTA** - results in longer separation time, it gives a little better SDR score but hard to tell if it's really audible in most cases". it “means "test time augmentation", it will do 3 passes on the audio file instead of 1. 1 pass with be with original audio. 1 will be with inverted stereo (L becomes R, R become L). 1 will be with phase inverted and then results are averaged for final output. 
 
+
 ***
+###### ‎
+:::content-center
+## Update :icon-download:
+:::
+###### ‎
 
-## Update
+To Update AICoverMaker, you can either:
 
-If you don't want to download the latest precompiled the next time a new version comes out, open AICoverMaker's folder & execute the script `update.sh` for Linux, or `update.bat` for Windows
+A. Open AICoverMaker's folder & execute the script `update.sh` for Linux, or `update.bat` for Windows.
 
 <img src="..\aicovermaker-img\bat-files.png" alt="image" width="550">‎    
 
+<br>
+
+B. Download the latest precompiled the next time a new version comes out and replace the files.
 
 
 ###### ‎

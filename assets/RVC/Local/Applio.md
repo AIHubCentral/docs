@@ -579,6 +579,18 @@ iii. And that's all, have fun with your model. To test it, do a normal <u>[infer
 
    <img src="../applio-img/5-ttsoutput.png" alt="image" width="500" height="auto">‎   
 
+
+
+***
+###### ‎  
+###### ‎  
+:::content-center
+## Update :icon-download:
+:::
+###### ‎  
+To Update Applio, you need to firstly Save your audios and models, then Delete the current Applio folder and reinstall the latest version.
+
+
 ***
 ###### ‎  
 ###### ‎  
