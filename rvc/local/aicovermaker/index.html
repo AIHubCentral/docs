@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.806862817682">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.806958970368">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -34,11 +34,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../../img/b.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.11.0.806862817682" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.11.0.806958970368" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.806862817682" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.806958970368" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.806862817682" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.806958970368" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -377,6 +377,7 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
 </table>
 </div>
 <p>In case you don&#x27;t meet the <u><a href="https://docs.aihub.gg//rvc/local/aicovermaker/#system--hardware-requirements/">requirements</a></u> to run it locally, it also has a <u><a href="https://docs.aihub.gg/rvc/cloud/aicovermaker/">2 Cloud Versions: Kaggle &amp; Colab</a></u></p>
+<hr>
 <doc-anchor-target id="section-1">
     <h6>
         <doc-anchor-trigger class="header-anchor-trigger" to="#section-1">#</doc-anchor-trigger>
@@ -547,26 +548,59 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
 <p>‎</p>
 <p><strong>3.</strong> You can also drag and drop your model in the <code v-pre>Drop files</code> box to upload them directly.</p>
 <hr>
-<doc-anchor-target id="inference">
+<doc-anchor-target id="section-5">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-5">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<div class="content-center"><doc-anchor-target id="inference">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#inference">#</doc-anchor-trigger>
-        <span>Inference</span>
+        <span>Inference <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M11.553 3.064A.75.75 0 0 1 12 3.75v16.5a.75.75 0 0 1-1.255.555L5.46 16H2.75A1.75 1.75 0 0 1 1 14.25v-4.5C1 8.784 1.784 8 2.75 8h2.71l5.285-4.805a.752.752 0 0 1 .808-.13ZM10.5 5.445l-4.245 3.86a.748.748 0 0 1-.505.195h-3a.25.25 0 0 0-.25.25v4.5c0 .138.112.25.25.25h3c.187 0 .367.069.505.195l4.245 3.86Zm8.218-1.223a.75.75 0 0 1 1.06 0c4.296 4.296 4.296 11.26 0 15.556a.75.75 0 0 1-1.06-1.06 9.5 9.5 0 0 0 0-13.436.75.75 0 0 1 0-1.06Z"/><path d="M16.243 7.757a.75.75 0 1 0-1.061 1.061 4.5 4.5 0 0 1 0 6.364.75.75 0 0 0 1.06 1.06 6 6 0 0 0 0-8.485Z"/></g></g></svg></span>
     </h2>
+</doc-anchor-target>
+</div>
+<doc-anchor-target id="section-6">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-6">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
 </doc-anchor-target>
 <p>Please use our <u><a href="https://docs.aihub.gg/rvc/resources/inference-settings/">Inference Settings guide</a></u> to find out the inference settings do what.</p>
 <p><strong>TTA</strong> - results in longer separation time, it gives a little better SDR score but hard to tell if it&#x27;s really audible in most cases&quot;. it “means &quot;test time augmentation&quot;, it will do 3 passes on the audio file instead of 1. 1 pass with be with original audio. 1 will be with inverted stereo (L becomes R, R become L). 1 will be with phase inverted and then results are averaged for final output.</p>
 <hr>
-<doc-anchor-target id="update">
+<doc-anchor-target id="section-7">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-7">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<div class="content-center"><doc-anchor-target id="update">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#update">#</doc-anchor-trigger>
-        <span>Update</span>
+        <span>Update <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M4.75 17.25a.75.75 0 0 1 .75.75v2.25c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V18a.75.75 0 0 1 1.5 0v2.25A1.75 1.75 0 0 1 18.25 22H5.75A1.75 1.75 0 0 1 4 20.25V18a.75.75 0 0 1 .75-.75Z"/><path d="M5.22 9.97a.749.749 0 0 1 1.06 0l4.97 4.969V2.75a.75.75 0 0 1 1.5 0v12.189l4.97-4.969a.749.749 0 1 1 1.06 1.06l-6.25 6.25a.749.749 0 0 1-1.06 0l-6.25-6.25a.749.749 0 0 1 0-1.06Z"/></g></g></svg></span>
     </h2>
 </doc-anchor-target>
-<p>If you don&#x27;t want to download the latest precompiled the next time a new version comes out, open AICoverMaker&#x27;s folder &amp; execute the script <code v-pre>update.sh</code> for Linux, or <code v-pre>update.bat</code> for Windows</p>
-<p><img src="..\aicovermaker-img\bat-files.png" alt="image" width="550">‎</p>
-<doc-anchor-target id="section-5">
+</div>
+<doc-anchor-target id="section-8">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-5">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-8">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<p>To Update AICoverMaker, you can either:</p>
+<ol type="A" start="1">
+<li>Open AICoverMaker&#x27;s folder &amp; execute the script <code v-pre>update.sh</code> for Linux, or <code v-pre>update.bat</code> for Windows.</li>
+</ol>
+<p><img src="..\aicovermaker-img\bat-files.png" alt="image" width="550">‎</p>
+<br>
+<ol type="A" start="2">
+<li>Download the latest precompiled the next time a new version comes out and replace the files.</li>
+</ol>
+<doc-anchor-target id="section-9">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-9">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>

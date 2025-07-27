@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.806862817682">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.806958970368">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -34,11 +34,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../../img/b.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.11.0.806862817682" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.11.0.806958970368" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.806862817682" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.806958970368" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.806862817682" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.806958970368" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -301,6 +301,7 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
 <li>Easily reduces delay on Windows via facilitating the WASAPI/ASIO Backend process</li>
 <li>Lets you choose the embedder, including spin</li>
 <li>Uses TF32 Inference by default, which is more precise than FP16, and has very very slightly less precision/quality but better performance compared to FP32</li>
+<li>Fixed 2.7+ Extra Time Cut Off Issues</li>
 <li>Extra Effects, such as &quot;Noise Gate&quot;</li>
 </ul>
     </div>
@@ -574,10 +575,28 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
 </li>
 <li><p><code v-pre>Block Size:</code> Critical setting. The optimal block size is the lowest you can get without audio being choppy. Listen to your output. This is GPU dependent, the more powerful the gpu, the lower the block size you can use. However the optimizations I made allow much smaller block sizes to work on lower end GPUs. At extremely low block sizes, quality may be reduced.</p>
 </li>
-<li><p><code v-pre>Lookahead Buffer:</code> Gives the model more or less context to work with. Recommended 2.0 for best quality/latency ratio. The added latency of this setting is far less impactful than the block size.</p>
+<li><p><code v-pre>Extra Time:</code> Gives the model more or less context to work with. Recommended 2.0 for best quality/latency ratio. The added latency of this setting is far less impactful than the block size. This setting is known as &quot;Extra&quot; in Wokada Deiteris Fork, and Vonovox fixed the certain cut off issues experienced in some models over the value 2.7.</p>
 </li>
 </ul>
 <hr>
+<hr>
+<doc-anchor-target id="update">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#update">#</doc-anchor-trigger>
+        <span>Update <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M4.75 17.25a.75.75 0 0 1 .75.75v2.25c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V18a.75.75 0 0 1 1.5 0v2.25A1.75 1.75 0 0 1 18.25 22H5.75A1.75 1.75 0 0 1 4 20.25V18a.75.75 0 0 1 .75-.75Z"/><path d="M5.22 9.97a.749.749 0 0 1 1.06 0l4.97 4.969V2.75a.75.75 0 0 1 1.5 0v12.189l4.97-4.969a.749.749 0 1 1 1.06 1.06l-6.25 6.25a.749.749 0 0 1-1.06 0l-6.25-6.25a.749.749 0 0 1 0-1.06Z"/></g></g></svg></span>
+    </h2>
+</doc-anchor-target>
+<hr>
+<p>To Update Vonovox, you can either:</p>
+<ol type="A" start="1">
+<li><p>Click the Update Check Symbol at the bottom right of the program.</p>
+ <img src="../vonovox-img/vonovox-update.png" alt="image" width="480" height="auto">
+</li>
+</ol>
+<br>
+<ol type="A" start="2">
+<li>Download the latest source code the next time a new version comes out, replace the files, run <code v-pre>setup.bat</code> and <code v-pre>start.bat</code>.</li>
+</ol>
 <hr>
 <doc-anchor-target id="extras">
     <h2>
