@@ -83,6 +83,9 @@ TLDR: Make sure you have Nvidia RTX 20xx better. GTX 10xx or RX 900 will also wo
 
 #### A Virtual Audio Cable (VAC) is what you need to use the voice changer on Discord & Games.
 
+- A VAC (Virtual Audio Cable) makes a fake audio device, used to re-route the audio of different programs.
+- In Wokada Deiteris Fork context, it's used to get the output of Wokada Deiteris Fork as the input in other programs such as Discord.
+
 !!! For Windows
 Download this: <u>[VAC Lite (Virtual-Audio-Cable by Muzychenko)](https://software.muzychenko.net/freeware/vac470lite.zip)</u>
 !!!
@@ -107,7 +110,10 @@ Use Online Hosted if you have an integrated GPU (AMD Radeon Graphics ; AMD Radeo
 
 ### Download NVIDIA on Windows
 
-- Go to Vonovox's <u>[github repo](https://github.com/dr87/Vonovox/releases)</u> and download the latest release of Vonovox. 
+- Make sure you have the <u>[Microsoft Visual C++ Redistributable Package](https://aka.ms/vs/16/release/vc_redist.x64.exe)</u>, if you don't already.
+
+
+- Go to Vonovox's <u>[Github Repository](https://github.com/dr87/Vonovox/releases)</u> and download the Latest Release Source Code.
 
 !!!danger
 If you have a GTX 800 card or below you can't use Vonovox.
@@ -307,7 +313,7 @@ B. Download the latest source code the next time a new version comes out, replac
 ## Extras
 ***
 
-### Realtime Sound File Inferencing
+### Realtime Sound File Inferencing :icon-unmute:
 
 You are able to load and play sound files, converted to your model's voice in realtime.
 

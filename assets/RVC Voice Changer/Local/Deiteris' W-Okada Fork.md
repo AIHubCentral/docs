@@ -10,7 +10,7 @@ order: 4000
 
 - W-Okada is a voice changer that uses RVC for its conversion.
 
-- There are two versions of this realtime voice changer, the <u>[offical original](https://github.com/w-okada/voice-changer)</u> made by Wok, and the <u>[Deiteris fork](https://github.com/deiteris/voice-changer)</u> made by Deiteris.  
+- There are two versions of this realtime voice changer, the <u>[offical original](https://github.com/w-okada/voice-changer)</u> made by Wok, and the <u>[Deiteris fork](https://github.com/deiteris/voice-changer)</u> made by Deiteris. Note that those 2 links are just for reference to the Source Code Github Repositories of both projects, you should instead follow the guide below.
 
 - This guide will be about the Wokada Deiteris fork since it has better preformance and quality compared to the Original Wokada.
 
@@ -122,6 +122,9 @@ You need the Google Colab Paid Tier to run this, as it uses a Web User Interface
 
 #### A Virtual Audio Cable (VAC) is what you need to use the voice changer on Discord & Games.
 
+- A VAC (Virtual Audio Cable) makes a fake audio device, used to re-route the audio of different programs.
+- In Wokada Deiteris Fork context, it's used to get the output of Wokada Deiteris Fork as the input in other programs such as Discord.
+
 !!! For Windows
 Download this: <u>[VAC Lite (Virtual-Audio-Cable by Muzychenko)](https://software.muzychenko.net/freeware/vac470lite.zip)</u>.
 (Be sure to not use any toher vac like VB Audio Cable.)
@@ -158,7 +161,7 @@ sudo yum install -y portaudio
 
 - Download based on your GPU. You don't know what GPU you have? Open Task Manager > Performance tab and check for your GPU0 and GPU1 names. Prioritize the Nvidia one if you have one, else use the other.
 
-<img src="../wokada-img/cap.png" alt="image" width="600" height="auto">
+<img src="../wokada-img/cap.png" alt="Task Manager" width="600" height="auto">
 
 ####
 !!!
@@ -316,7 +319,7 @@ This is only for the people that have 2 PCs, and want to use 1 PC for Gaming, th
 
 ### Adding Models
 
-<img src="../wokada-img/edit.png" alt="image" width="430" height="auto">
+<img src="../wokada-img/edit.png" alt="Edit Button in Wokada Deiteris Fork to Add Models" width="430" height="auto">
 
 #####
 
@@ -348,7 +351,6 @@ On discord and games, you select:
 - Input: Virtual Cable
 - Output: Your headphones
 
-For Linux, read the Virtual Cable step
 
 ***
 ### Client and Server Setup
@@ -423,15 +425,15 @@ First start with 500 ms, check what number your perf is and go closer to that nu
 
 Example: if your perf is 200, go down to 250 with your chunk. Chunk affects perf value, and Extra as well.
 
-<img src="../wokada-img/greem.png" alt="image" width="170" height="auto">
+<img src="../wokada-img/greem.png" alt="Wokada Deiteris Fork Green Perf Value" width="170" height="auto">
 
 If your perf value is green, your selected chunk is stable. You can experiment and go down in chunk for less delay, or increase extra for more quality (would not recommend to go above 2.7s extra. Anything above uses more resource for no clear benefit).
 
-<img src="../wokada-img/yellow.png" alt="image" width="170" height="auto">
+<img src="../wokada-img/yellow.png" alt="Wokada Deiteris Fork Yellow Perf Value" width="170" height="auto">
 
 If your perf value is yellow, your selected chunk is enough, but audio may be unstable if you run other processes at the same time. Operation in this range will also incur high GPU usage. Increasing Chunk size or reducing Extra is recommended.
 
-<img src="../wokada-img/red.png" alt="image" width="170" height="auto">
+<img src="../wokada-img/red.png" alt="Wokada Deiteris Fork Red Perf Value" width="170" height="auto">
 
 If your perf value is red, the voice changer is unstable. Increase chunk size or reduce Extra.
 
