@@ -68,7 +68,7 @@ sudo yum install -y portaudio
 
 ***
 :::content-center
-### Setup
+## Setup
 :::
 
 1. After installing a VAC you need to:

@@ -15,11 +15,14 @@ visibility:
 - It was designed for desktop, requiring **great specs** to run it effectively, specially **GPU** for training models.
 
 - Though it can be executed through the <u>[cloud](https://docs.aihub.gg/extra/glossary/#cloud-based)</u> & be used in **any** device, in case you don't meet the previous requirement.        
-‎       
+
+- RVC doesn't have any major *quality* improvements since 2023, since its original devs are focused on other projects, RVC is hard to optimize, and it has limitations like non speech sounds such as realistic laughing, screaming, etc. Though, there are commmunity driven Forks that try to experiment with it, mostly about adding new features and performance improvements.
+
+
 ***
 ## Forks :icon-repo-forked:
 ***
-- A fork is a **copy** of a main GitHub project. It aims to make a **modified version** of the project, with improvements, new features & modifications.
+- A fork is a **copy** of a main GitHub Project. It aims to make a **modified version** of the project, with improvements, new features & modifications.
 
 - RVC has quite a few forks made by the community, each one meeting different **needs** for the user, and with its pros & cons.     
 
