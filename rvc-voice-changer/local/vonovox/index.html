@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.806958970368">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.806987677525">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -34,11 +34,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../../img/b.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.11.0.806958970368" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.11.0.806987677525" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.806958970368" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.806987677525" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.806958970368" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.806987677525" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -307,7 +307,7 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
     </div>
     <div class="px-5 py-3 docs-columns-content">
 <ul>
-<li>Not Open Source (right now, but the dev is working on an Open Source version)</li>
+<li>Not Open Source (at the moment, but the dev might be working on an Open Source version)</li>
 <li>Supports only Nvidia GPUs on Windows</li>
 <li>It doesn&#x27;t use a Web User Interface, meaning that it can&#x27;t be run on the Cloud</li>
 <li>Many Effects are Premium (paid), such as &quot;Low Quality Mic&quot;</li>
@@ -402,7 +402,7 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
 <ul>
 <li>Make sure you have a Nvidia and a good enough one to run Vonovox. You don&#x27;t know what GPU you have? Open Task Manager &gt; Performance tab and check for your GPU0 and GPU1 names.</li>
 </ul>
-<img src="../wokada-img/cap.png" alt="image" width="600" height="auto">
+<img src="../wokada-img/cap.png" alt="Task Manager" width="600" height="auto">
 <doc-anchor-target id="section-1">
     <h4>
         <doc-anchor-trigger class="header-anchor-trigger" to="#section-1">#</doc-anchor-trigger>
@@ -483,7 +483,7 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
         <span>Adding Models</span>
     </h3>
 </doc-anchor-target>
-<img src="../vonovox-img/select.png" alt="image" width="800" height="auto">
+<img src="../vonovox-img/select.png" alt="Select Model PTH" width="800" height="auto">
 <doc-anchor-target id="section-2">
     <h5>
         <doc-anchor-trigger class="header-anchor-trigger" to="#section-2">#</doc-anchor-trigger>
@@ -536,12 +536,37 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
     </h3>
 </doc-anchor-target>
 <hr>
+<doc-anchor-target id="current-model-settings">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#current-model-settings">#</doc-anchor-trigger>
+        <span><code v-pre>Current Model Settings:</code></span>
+    </h4>
+</doc-anchor-target>
 <ul>
 <li><p><code v-pre>Embedder:</code> Select between contentvec or spin trained models. Most current models are trained on contentvec. Make sure you read the model&#x27;s description to find out what embedder it uses. Spin has kinda better breaths, more robust to noise, has some training related differences, but it&#x27;s less used and newer.</p>
 </li>
+<li><p><code v-pre>Pitch:</code> This is the pitch. Going into negative will make it lower pitch (masculine), going higher will make it higher pitch (feminine). If you have a male voice using a female voice, aim for 10 - 14, this depends on your voice, try around those numbers until you find a sweet spot.</p>
+</li>
+<li><p><code v-pre>Formant:</code> Alters harmonic frequencies and changes the voice timbre without affecting the pitch (AKA Formant Shift).</p>
+</li>
+</ul>
+<hr>
+<doc-anchor-target id="audio-device-settings">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#audio-device-settings">#</doc-anchor-trigger>
+        <span><code v-pre>Audio Device Settings:</code></span>
+    </h4>
+</doc-anchor-target>
+<ul>
+<li><p><code v-pre>Audio Backend:</code> Use WASAPI unless you have an ASIO interface and know what you&#x27;re doing (advanced users)</p>
+</li>
+<li><p><code v-pre>Exclusive Mode:</code> WASAPI exclusive mode. It has much lower latency but the issue is if you don&#x27;t lock your gpu clocks with something like msi afterburner, it will pop nonstop , because it needs something like a ~45-50ms gpu delay max to function (advanced users)</p>
+</li>
+<li><p><code v-pre>Sample Rate:</code> Only 48000Hz is available. This is only the outgoing sample rate that matches your VAC line - It is compatible with 32000, 40000, or 48000 models</p>
+</li>
 <li><p><code v-pre>F0 det:</code> Pitch algorithm. Pitch algorithm. Both RMVPE (for the best quality and robustness) and FCPE (for nice quality and being lightweight) are good options.</p>
 </li>
-<li><p><code v-pre>Pitch smoothing factor:</code> Pitch smoothing will dampen pitch changes. It still follows the exact curve of the f0 predictor allowing it to maintain 100% accuracy, just to a lower magnitude. This allows normal speaking voices to have better stability, since sometimes f0 can be over aggressive and cause pitch wobble on minor pitch fluctuations.</p>
+<li><p><code v-pre>Pitch Smoothing Factor:</code> Pitch smoothing will dampen pitch changes. It still follows the exact curve of the f0 predictor allowing it to maintain 100% accuracy, just to a lower magnitude. This allows normal speaking voices to have better stability, since sometimes f0 can be over aggressive and cause pitch wobble on minor pitch fluctuations.</p>
 </li>
 <li><p><code v-pre>Output volume:</code> Controls how loud the output volume is.</p>
 </li>
@@ -553,6 +578,23 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
         <span><code v-pre>Noise Reduction:</code></span>
     </h4>
 </doc-anchor-target>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-warning"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-warning" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M22.48 15.59L14.01 1.45A2.968 2.968 0 0012.16.09c-.78-.19-1.58-.07-2.27.35-.41.25-.76.6-1.01 1.01v.01L.4 15.6c-.83 1.43-.33 3.27 1.1 4.1.45.26.95.4 1.48.4h16.95c.8-.01 1.55-.33 2.11-.9.56-.57.87-1.33.86-2.13a3.04 3.04 0 00-.42-1.48zm-1.87 2.21c-.19.19-.44.3-.69.3H2.99c-.17 0-.34-.05-.49-.13a.992.992 0 01-.37-1.35L10.6 2.48c.08-.14.2-.25.34-.33a.992.992 0 011.37.33l8.46 14.13c.09.15.13.32.13.49 0 .26-.1.51-.29.7z"></path>
+                    <path d="M11.45 12.1c.55 0 1-.45 1-1v-4c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .56.45 1 1 1zM11.46 14.1c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Warning:</h5>
+<p>Noise reduction algorithms are not compatible with singing or whispering. Turn them off if you need to sing or whisper.</p>
+        </div>
+    </div>
+</div>
 <ul>
 <li><p><code v-pre>RNNoise Reduction:</code> Greatly filters input background noise for very minimum latency. This can mitigate the chances of Vonovox trying to infer on noise.</p>
 </li>
@@ -569,16 +611,62 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
     </h4>
 </doc-anchor-target>
 <ul>
-<li><p><code v-pre>Pitch:</code> This is the pitch. Going into negative will make it lower pitch, going higher will make it higher pitch. If you have a male voice using a female voice, aim for 10 - 14, this depends on your voice, try around those numbers until you find a sweet spot.</p>
+<li><p><code v-pre>Block Size:</code> Critical setting. The optimal block size is the lowest you can get without audio being choppy. Listen to your output. This is GPU dependent, the more powerful the gpu, the lower the block size you can use. However the optimizations I made allow much smaller block sizes to work on lower end GPUs. At extremely low block sizes, quality may be reduced. This setting is similar to the <code v-pre>Chunk</code> in Wokada Deiteris Fork. Vonovox 0.30 Block size = Wokada Deiteris Fork 300ms Chunk. Use the GPU Delay to adjust it.</p>
 </li>
-<li><p><code v-pre>Formant Shift:</code> Alters harmonic frequencies and changes the voice timbre without affecting the pitch</p>
+<li><p><code v-pre>Extra Time:</code> Gives the model more or less context to work with. Recommended 2.0 for best quality/latency ratio. The added latency of this setting is far less impactful than the block size. This setting is known as <code v-pre>Extra</code> in Wokada Deiteris Fork, and Vonovox fixed the certain cut off issues experienced in some models over the value 2.7.</p>
 </li>
-<li><p><code v-pre>Block Size:</code> Critical setting. The optimal block size is the lowest you can get without audio being choppy. Listen to your output. This is GPU dependent, the more powerful the gpu, the lower the block size you can use. However the optimizations I made allow much smaller block sizes to work on lower end GPUs. At extremely low block sizes, quality may be reduced.</p>
-</li>
-<li><p><code v-pre>Extra Time:</code> Gives the model more or less context to work with. Recommended 2.0 for best quality/latency ratio. The added latency of this setting is far less impactful than the block size. This setting is known as &quot;Extra&quot; in Wokada Deiteris Fork, and Vonovox fixed the certain cut off issues experienced in some models over the value 2.7.</p>
+<li><p><code v-pre>Crossfade Duration:</code> 0.08-0.1 or 0.15 (0.08-0.1 for fastest voice, 0.15 for improved quality but increases delay by ~50 ms)</p>
 </li>
 </ul>
 <hr>
+<doc-anchor-target id="effects">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#effects">#</doc-anchor-trigger>
+        <span>Effects</span>
+    </h2>
+</doc-anchor-target>
+<hr>
+<ul>
+<li><p>Most of the default values are already decent.</p>
+</li>
+<li><p>Processing from all effects, premium and free, are done directly in the pipeline as the output voice is being produced, making them extremely low latency. Many effects can greatly enhance voice quality if used properly, while some are just for fun.</p>
+</li>
+</ul>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-warning"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-warning" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M22.48 15.59L14.01 1.45A2.968 2.968 0 0012.16.09c-.78-.19-1.58-.07-2.27.35-.41.25-.76.6-1.01 1.01v.01L.4 15.6c-.83 1.43-.33 3.27 1.1 4.1.45.26.95.4 1.48.4h16.95c.8-.01 1.55-.33 2.11-.9.56-.57.87-1.33.86-2.13a3.04 3.04 0 00-.42-1.48zm-1.87 2.21c-.19.19-.44.3-.69.3H2.99c-.17 0-.34-.05-.49-.13a.992.992 0 01-.37-1.35L10.6 2.48c.08-.14.2-.25.34-.33a.992.992 0 011.37.33l8.46 14.13c.09.15.13.32.13.49 0 .26-.1.51-.29.7z"></path>
+                    <path d="M11.45 12.1c.55 0 1-.45 1-1v-4c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .56.45 1 1 1zM11.46 14.1c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Warning:</h5>
+<p>Note: If you move sliders while in the middle of speaking, sound will have some minor popping. This is completely normal as you are applying effects in the middle of a block of audio being processed.</p>
+        </div>
+    </div>
+</div>
+<doc-anchor-target id="basic-effects">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#basic-effects">#</doc-anchor-trigger>
+        <span>Basic Effects</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><code v-pre>Noise Gate:</code> A simple noise gate so the application doesn&#x27;t try to process low background noise that made it past RNNoise</li>
+</ul>
+<doc-anchor-target id="premium-effects">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#premium-effects">#</doc-anchor-trigger>
+        <span>Premium Effects</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><code v-pre>Low Quality Mic:</code> An adjustable low quality microphone. This simulates a lower quality microphone to hide digital artifacts and sometimes sounds way more natural depending on the model.</li>
+</ul>
 <hr>
 <doc-anchor-target id="update">
     <h2>
@@ -590,7 +678,7 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
 <p>To Update Vonovox, you can either:</p>
 <ol type="A" start="1">
 <li><p>Click the Update Check Symbol at the bottom right of the program.</p>
- <img src="../vonovox-img/vonovox-update.png" alt="image" width="480" height="auto">
+ <img src="../vonovox-img/vonovox-update.png" alt="Update Vonovox Button" width="480" height="auto">
 </li>
 </ol>
 <br>
@@ -615,7 +703,7 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
 <p>The sound file replaces your input mic while active. Whatever sound is coming from your loaded file is your &quot;new microphone&quot; while the sound is playing. That means it will infer and play the sound file as if it was your own voice in realtime. You can play speech, singing, or whatever you want. Just make sure the audio is clean, as the client still needs to inference it, no different than the real mic.</p>
 <p>When a sound file is playing, it will zero out the input from your real mic, meaning you don&#x27;t have to worry about overlapping your voice with playback. Mic will automatically unmute when sound is playing again. Also mute and unmute is handled properly when pausing and resuming the playback of audio files.</p>
 <p>Seek timer and playback timer so you can go to specific times in your sound file.</p>
-<img src="../vonovox-img/soundfile.png" alt="image" width="800" height="auto">
+<img src="../vonovox-img/soundfile.png" alt="Sound File Inferencing" width="800" height="auto">
 <p>‎</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
@@ -686,6 +774,33 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
 </doc-anchor-target>
 <p>We had a conversation about this in <a href="https://discord.com/channels/1159260121998827560/1159290161683767298/1352325982689951765">https://discord.com/channels/1159260121998827560/1159290161683767298/1352325982689951765</a> &amp; <a href="https://discord.com/channels/1159260121998827560/1159290161683767298/1356265862704926907">https://discord.com/channels/1159260121998827560/1159290161683767298/1356265862704926907</a>,
 RVC works by downsampling your audio voice to 16khz because f0 estimators only works at that sample rate, after that the model outputs the results using it&#x27;s original sample rate (without any upscaling). So there won&#x27;t be the need of having a super extremely expensive, a decent one should do the job.</p>
+<hr>
+<doc-anchor-target id="how-can-i-hear-myself">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-can-i-hear-myself">#</doc-anchor-trigger>
+        <span>How can I hear myself?</span>
+    </h3>
+</doc-anchor-target>
+<p>Currently, Vonovox is missing the <code v-pre>Monitor</code> feature in Wokada Deiteris Fork, till it get&#x27;s added, you have to use some workarounds:</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>For Windows Only</h5>
+<p>Press WINDOWS+R, type &quot;mmsys.cpl&quot; and press Enter. Go to the <strong>Recording</strong> devices, find Line 1 and check it&#x27;s Properties, go to the Listen tab and check &quot;Listen to this device&quot;.</p>
+<img src="../vonovox-img/monitor-windows-workaround.png" alt="Windows Only Monitor Workaround" width="400" height="auto">
+        </div>
+    </div>
+</div>
 <hr>
 <doc-anchor-target id="section-3">
     <h6>
