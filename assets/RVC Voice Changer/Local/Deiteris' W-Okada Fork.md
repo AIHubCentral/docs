@@ -409,7 +409,7 @@ Sometimes Client does not work, then use SERVER with prefix "MME" or "Windows WA
 ### Advanced Settings
 
 - Protocol: rest (Use SIO if you want less delay but if you encounter any issues with SIO switch back to rest. Rest has slightly more delay than SIO)
-- Crossfade length: 0.1 or 0.15 (0.1 for fastest voice, 0.15 for improved quality but increases delay by 50 ms. It is NOT recommended to go below 0.1)
+- Crossfade length: 0.1 or 0.15 (0.1 for fastest voice, 0.15 for improved quality but increases delay by 50 ms)
 - SilenceFront: Reduce GPU usage when idle. This only reduces GPU resources when you're not talking or making sounds
 - Force FP32 mode: on (THIS IS OFF BY DEFAULT! Turning this on improves stability. Increases VRAM usage by 200 MB)
 - Disable JIT compilation: off for faster loading speed of the program, on for slightly better performance (10-15 ms) for Nvidia only)

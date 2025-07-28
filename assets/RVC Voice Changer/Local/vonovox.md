@@ -40,7 +40,7 @@ Also, **HuggingFace has a <u>[Security Scanner](https://huggingface.co/docs/hub/
 - Fixed 2.7+ Extra Time Cut Off Issues
 - Extra Effects, such as "Noise Gate"
 ||| ❌ **CONS** 
-- Not Open Source (right now, but the dev is working on an Open Source version)
+- Not Open Source (at the moment, but the dev might be working on an Open Source version)
 - Supports only Nvidia GPUs on Windows
 - It doesn't use a Web User Interface, meaning that it can't be run on the Cloud
 - Many Effects are Premium (paid), such as "Low Quality Mic"
@@ -97,7 +97,7 @@ Download this: <u>[VAC Lite (Virtual-Audio-Cable by Muzychenko)](https://softwar
 
 - Make sure you have a Nvidia and a good enough one to run Vonovox. You don't know what GPU you have? Open Task Manager > Performance tab and check for your GPU0 and GPU1 names.
 
-<img src="../wokada-img/cap.png" alt="image" width="600" height="auto">
+<img src="../wokada-img/cap.png" alt="Task Manager" width="600" height="auto">
 
 ####
 !!!
@@ -130,7 +130,7 @@ If you have a GTX 800 card or below you can't use Vonovox.
 
 ### Adding Models
 
-<img src="../vonovox-img/select.png" alt="image" width="800" height="auto">
+<img src="../vonovox-img/select.png" alt="Select Model PTH" width="800" height="auto">
 
 #####
 
@@ -161,16 +161,38 @@ On discord and games, you select:
 
 ***
 ### Settings
+
 ***
+#### `Current Model Settings:`
+
 - `Embedder:` Select between contentvec or spin trained models. Most current models are trained on contentvec. Make sure you read the model's description to find out what embedder it uses. Spin has kinda better breaths, more robust to noise, has some training related differences, but it's less used and newer.
+
+- `Pitch:` This is the pitch. Going into negative will make it lower pitch (masculine), going higher will make it higher pitch (feminine). If you have a male voice using a female voice, aim for 10 - 14, this depends on your voice, try around those numbers until you find a sweet spot.
+
+- `Formant:` Alters harmonic frequencies and changes the voice timbre without affecting the pitch (AKA Formant Shift).
+
+***
+#### `Audio Device Settings:`
+
+- `Audio Backend:` Use WASAPI unless you have an ASIO interface and know what you're doing (advanced users)
+
+- `Exclusive Mode:` WASAPI exclusive mode. It has much lower latency but the issue is if you don't lock your gpu clocks with something like msi afterburner, it will pop nonstop , because it needs something like a ~45-50ms gpu delay max to function (advanced users)
+
+- `Sample Rate:` Only 48000Hz is available. This is only the outgoing sample rate that matches your VAC line - It is compatible with 32000, 40000, or 48000 models
 
 - `F0 det:` Pitch algorithm. Pitch algorithm. Both RMVPE (for the best quality and robustness) and FCPE (for nice quality and being lightweight) are good options.
 
-- `Pitch smoothing factor:` Pitch smoothing will dampen pitch changes. It still follows the exact curve of the f0 predictor allowing it to maintain 100% accuracy, just to a lower magnitude. This allows normal speaking voices to have better stability, since sometimes f0 can be over aggressive and cause pitch wobble on minor pitch fluctuations.
+- `Pitch Smoothing Factor:` Pitch smoothing will dampen pitch changes. It still follows the exact curve of the f0 predictor allowing it to maintain 100% accuracy, just to a lower magnitude. This allows normal speaking voices to have better stability, since sometimes f0 can be over aggressive and cause pitch wobble on minor pitch fluctuations.
 
 - `Output volume:` Controls how loud the output volume is.
+
 ***
 #### `Noise Reduction:`
+
+!!!warning Warning:
+Noise reduction algorithms are not compatible with singing or whispering. Turn them off if you need to sing or whisper.
+!!!
+
 - `RNNoise Reduction:` Greatly filters input background noise for very minimum latency. This can mitigate the chances of Vonovox trying to infer on noise.
 
 - `VAD Noise Reduction:` Completely mutes the output when speech is not detected. When speech is detected, it uses a 400ms release window. It is also much better at filtering breathe noises than RNNoise.
@@ -179,14 +201,36 @@ On discord and games, you select:
 
 ***
 #### `Voice Settings:`
-- `Pitch:` This is the pitch. Going into negative will make it lower pitch, going higher will make it higher pitch. If you have a male voice using a female voice, aim for 10 - 14, this depends on your voice, try around those numbers until you find a sweet spot.
 
-- `Formant Shift:` Alters harmonic frequencies and changes the voice timbre without affecting the pitch
+- `Block Size:` Critical setting. The optimal block size is the lowest you can get without audio being choppy. Listen to your output. This is GPU dependent, the more powerful the gpu, the lower the block size you can use. However the optimizations I made allow much smaller block sizes to work on lower end GPUs. At extremely low block sizes, quality may be reduced. This setting is similar to the `Chunk` in Wokada Deiteris Fork. Vonovox 0.30 Block size = Wokada Deiteris Fork 300ms Chunk. Use the GPU Delay to adjust it.
 
-- `Block Size:` Critical setting. The optimal block size is the lowest you can get without audio being choppy. Listen to your output. This is GPU dependent, the more powerful the gpu, the lower the block size you can use. However the optimizations I made allow much smaller block sizes to work on lower end GPUs. At extremely low block sizes, quality may be reduced.
+- `Extra Time:` Gives the model more or less context to work with. Recommended 2.0 for best quality/latency ratio. The added latency of this setting is far less impactful than the block size. This setting is known as `Extra` in Wokada Deiteris Fork, and Vonovox fixed the certain cut off issues experienced in some models over the value 2.7.
 
-- `Extra Time:` Gives the model more or less context to work with. Recommended 2.0 for best quality/latency ratio. The added latency of this setting is far less impactful than the block size. This setting is known as "Extra" in Wokada Deiteris Fork, and Vonovox fixed the certain cut off issues experienced in some models over the value 2.7.
+- `Crossfade Duration:` 0.08-0.1 or 0.15 (0.08-0.1 for fastest voice, 0.15 for improved quality but increases delay by ~50 ms)
+
+
 ***
+## Effects
+***
+
+- Most of the default values are already decent.
+
+- Processing from all effects, premium and free, are done directly in the pipeline as the output voice is being produced, making them extremely low latency. Many effects can greatly enhance voice quality if used properly, while some are just for fun.
+
+
+!!!warning Warning:
+Note: If you move sliders while in the middle of speaking, sound will have some minor popping. This is completely normal as you are applying effects in the middle of a block of audio being processed.
+!!!
+
+### Basic Effects
+
+- `Noise Gate:` A simple noise gate so the application doesn't try to process low background noise that made it past RNNoise
+
+### Premium Effects
+
+- `Low Quality Mic:` An adjustable low quality microphone. This simulates a lower quality microphone to hide digital artifacts and sometimes sounds way more natural depending on the model.
+
+
 
 
 ***
@@ -195,7 +239,7 @@ On discord and games, you select:
 To Update Vonovox, you can either:
 A. Click the Update Check Symbol at the bottom right of the program.
 
-    <img src="../vonovox-img/vonovox-update.png" alt="image" width="480" height="auto">
+    <img src="../vonovox-img/vonovox-update.png" alt="Update Vonovox Button" width="480" height="auto">
 
 <br>
 
@@ -216,7 +260,7 @@ When a sound file is playing, it will zero out the input from your real mic, mea
 
 Seek timer and playback timer so you can go to specific times in your sound file.
 
-<img src="../vonovox-img/soundfile.png" alt="image" width="800" height="auto">
+<img src="../vonovox-img/soundfile.png" alt="Sound File Inferencing" width="800" height="auto">
 
 ‎
 
@@ -251,6 +295,18 @@ Gawr Gura: [Hugging Face Link](https://huggingface.co/dacoolkid44/VTuber-RVC/tre
 
 We had a conversation about this in https://discord.com/channels/1159260121998827560/1159290161683767298/1352325982689951765 & https://discord.com/channels/1159260121998827560/1159290161683767298/1356265862704926907,
 RVC works by downsampling your audio voice to 16khz because f0 estimators only works at that sample rate, after that the model outputs the results using it's original sample rate (without any upscaling). So there won't be the need of having a super extremely expensive, a decent one should do the job.
+
+***
+### How can I hear myself?
+
+Currently, Vonovox is missing the `Monitor` feature in Wokada Deiteris Fork, till it get's added, you have to use some workarounds:
+
+!!! For Windows Only
+Press WINDOWS+R, type "mmsys.cpl" and press Enter. Go to the **Recording** devices, find Line 1 and check it's Properties, go to the Listen tab and check "Listen to this device".
+
+<img src="../vonovox-img/monitor-windows-workaround.png" alt="Windows Only Monitor Workaround" width="400" height="auto">
+!!!
+
 
 ***
 ###### ‎
