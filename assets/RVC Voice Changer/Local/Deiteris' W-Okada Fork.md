@@ -301,7 +301,7 @@ After the server finishes loading in your terminal, it will not open a window on
 ***
 ## Opening on Multi-PC Setups
 
-This is only for the people that want to use 1 PC for Gaming, and another only for Wokada Deiteris Fork.
+This is only for the people that have 2 PCs, and want to use 1 PC for Gaming, the other only for Wokada Deiteris Fork.
 
 - Create a file named `.env` on the same folder where `MMVCServerSIO.exe` is located. Open it up with a notepad, copy paste the settings from the <u>[GitHub link](https://github.com/deiteris/voice-changer/issues/180#issuecomment-2359166278)</u>.
 
@@ -409,7 +409,7 @@ Sometimes Client does not work, then use SERVER with prefix "MME" or "Windows WA
 ### Advanced Settings
 
 - Protocol: rest (Use SIO if you want less delay but if you encounter any issues with SIO switch back to rest. Rest has slightly more delay than SIO)
-- Crossfade length: 0.1 or 0.15 (0.1 for fastest voice, 0.15 for improved quality but increases delay by 50 ms)
+- Crossfade length: Controls how smoothly the AI stitches different processed parts "chunks" of your voice back together. 0.1 or 0.15 (0.1 for fastest voice, 0.15 for improved quality but increases delay by 50 ms)
 - SilenceFront: Reduce GPU usage when idle. This only reduces GPU resources when you're not talking or making sounds
 - Force FP32 mode: on (THIS IS OFF BY DEFAULT! Turning this on improves stability. Increases VRAM usage by 200 MB)
 - Disable JIT compilation: off for faster loading speed of the program, on for slightly better performance (10-15 ms) for Nvidia only)

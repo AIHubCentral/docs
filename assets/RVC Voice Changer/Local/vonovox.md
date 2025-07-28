@@ -125,6 +125,19 @@ If you have a GTX 800 card or below you can't use Vonovox.
 - Once it's done downloading everything it will display `Setup complete!` in the command line. You can now go ahead and run `start.bat`. 
 
 ***
+### Opening on Multi-GPU Systems
+
+This is ONLY For users with 2 GPUs in the same system, you must do the following:
+
+1. Open NVIDIA Control Panel
+2. Go to Manage 3D Settings > Program Settings Tab
+3. Add python.exe from the Vonovox runtime folder (runtime\python.exe)
+4. Set both settings "CUDA - GPUs" and "OpenGL rendering GPU" to the GPU you want to use for conversion
+
+This will hide the other GPU from being used by the application which is required
+
+
+***
 ## Voice Models
 ***
 
@@ -206,7 +219,7 @@ Noise reduction algorithms are not compatible with singing or whispering. Turn t
 
 - `Extra Time:` Gives the model more or less context to work with. Recommended 2.0 for best quality/latency ratio. The added latency of this setting is far less impactful than the block size. This setting is known as `Extra` in Wokada Deiteris Fork, and Vonovox fixed the certain cut off issues experienced in some models over the value 2.7.
 
-- `Crossfade Duration:` 0.08-0.1 or 0.15 (0.08-0.1 for fastest voice, 0.15 for improved quality but increases delay by ~50 ms)
+- `Crossfade Duration:` Controls how smoothly the AI stitches different processed parts "chunks" of your voice back together. 0.08-0.1 or 0.15 (0.08-0.1 for fastest voice, 0.15 for improved quality but increases delay by ~50 ms)
 
 
 ***
@@ -224,12 +237,56 @@ Note: If you move sliders while in the middle of speaking, sound will have some 
 
 ### Basic Effects
 
+- Those are the Free Effects.
+
 - `Noise Gate:` A simple noise gate so the application doesn't try to process low background noise that made it past RNNoise
+
+- `EQ Band (1 & 2):` Boosts or cuts specific frequency ranges of your voice to shape its overall tone.
+    - `Frequency (Hz):` Selects the center of the frequency range you want to adjust.
+    - `Gain (dB):` Sets how much to raise or lower the volume of the selected frequency.
+    - `Q:` Adjusts the width of the frequency band. A low Q affects a wide range of frequencies, while a high Q is more narrow and precise.
+
 
 ### Premium Effects
 
-- `Low Quality Mic:` An adjustable low quality microphone. This simulates a lower quality microphone to hide digital artifacts and sometimes sounds way more natural depending on the model.
+- Those are the Paid Effects, you can learn how to get them by clicking "Manage License" -> "How To Purchase".
 
+- `Low Quality Mic:` Simulates the sound of a bad microphone or a telephone call.
+    - `Strength:` Controls the overall intensity of the low-quality sound effect.
+    - `Telephone Effect:` Narrows the frequency range to mimic the sound of a phone line.
+    - `Add Static:` Overlays crackling static noise for a more distorted effect.
+
+- `Compressor:` Evens out your voice's volume, preventing sudden loud peaks and making quieter sounds more audible.
+    - `Threshold (dB):` The volume your voice must reach before the effect starts turning it down.
+    - `Ratio:` How much the volume is turned down after crossing the threshold.
+    - `Attack (ms):` How quickly the compressor reacts to loud sounds.
+    - `Release (ms):` How quickly the compressor stops after the sound is no longer loud.
+
+- `Low Pass Filter (24 dB/oct):` Cuts high frequencies, making the voice sound more muffled or distant.
+    - `Cutoff (Hz):` The frequency above which sounds will be removed.
+    - `Resonance:` Adds a slight boost to frequencies right at the cutoff point for emphasis.
+
+- `High Pass Filter (12 dB/oct):` Cuts low frequencies, which can remove low-end rumble and make a voice sound thinner.
+    - `Cutoff (Hz):` The frequency below which sounds will be removed.
+    - `Resonance:` Adds a slight boost to frequencies right at the cutoff point for emphasis.
+
+- `EQ Band (3 & 4):` Boosts or cuts specific frequency ranges of your voice to shape its overall tone.
+    - `Frequency (Hz):` Selects the center of the frequency range you want to adjust.
+    - `Gain (dB):` Sets how much to raise or lower the volume of the selected frequency.
+    - `Q:` Adjusts the width of the frequency band. A low Q affects a wide range of frequencies, while a high Q is more narrow and precise.
+
+- `Reverb:` Simulates the sound of being in a physical space by adding echoes and reflections.
+    - `Room Size:` Controls the perceived size of the simulated room, from a small closet to a large hall.
+    - `Damping:` Absorbs high frequencies in the echoes, making the reverb sound warmer or darker.
+    - `Wet Level:` Adjusts the volume of the reverb effect itself.
+    - `Dry Level:` Adjusts the volume of your original, unprocessed voice.
+
+- `Chorus:` Makes a single voice sound like multiple voices by adding slightly detuned and delayed copies.
+    - `Rate (Hz):` Controls the speed of the subtle pitch variations in the chorus effect.
+    - `Depth:` Determines the intensity of the pitch variations.
+    - `Delay (ms):` Sets the time delay between your original voice and the copies.
+    - `Feedback:` Feeds some of the effected sound back into the input for a more intense, swirling effect.
+    - `Mix:` Blends the amount of the original (dry) voice with the chorused (wet) voice.
 
 
 
@@ -306,6 +363,11 @@ Press WINDOWS+R, type "mmsys.cpl" and press Enter. Go to the **Recording** devic
 
 <img src="../vonovox-img/monitor-windows-workaround.png" alt="Windows Only Monitor Workaround" width="400" height="auto">
 !!!
+
+***
+### Why are there Multiple EQ Bands Effects, which some are free and some others are paid?
+
+Having Multiple EQ bands provides the flexibility to precisely shape and refine the tone of your voice far more effectively than a single band ever could. It's made so you can adjust multiple parts of your voice range with each.
 
 
 ***
