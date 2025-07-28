@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.806987677525">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.807030621392">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -34,12 +34,12 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../../img/b.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.11.0.806987677525" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.11.0.807030621392" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.806987677525" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.807030621392" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.806987677525" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=3.11.0.806987677525" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.807030621392" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=3.11.0.807030621392" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -243,7 +243,7 @@
 <ul>
 <li><p>W-Okada is a voice changer that uses RVC for its conversion.</p>
 </li>
-<li><p>There are two versions of this realtime voice changer, the <u><a href="https://github.com/w-okada/voice-changer">offical original</a></u> made by Wok, and the <u><a href="https://github.com/deiteris/voice-changer">Deiteris fork</a></u> made by Deiteris.</p>
+<li><p>There are two versions of this realtime voice changer, the <u><a href="https://github.com/w-okada/voice-changer">offical original</a></u> made by Wok, and the <u><a href="https://github.com/deiteris/voice-changer">Deiteris fork</a></u> made by Deiteris. Note that those 2 links are just for reference to the Source Code Github Repositories of both projects, you should instead follow the guide below.</p>
 </li>
 <li><p>This guide will be about the Wokada Deiteris fork since it has better preformance and quality compared to the Original Wokada.</p>
 </li>
@@ -459,6 +459,10 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
         <span>A Virtual Audio Cable (VAC) is what you need to use the voice changer on Discord &amp; Games.</span>
     </h4>
 </doc-anchor-target>
+<ul>
+<li>A VAC (Virtual Audio Cable) makes a fake audio device, used to re-route the audio of different programs.</li>
+<li>In Wokada Deiteris Fork context, it&#x27;s used to get the output of Wokada Deiteris Fork as the input in other programs such as Discord.</li>
+</ul>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
     <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
@@ -540,7 +544,7 @@ or
 <ul>
 <li>Download based on your GPU. You don&#x27;t know what GPU you have? Open Task Manager &gt; Performance tab and check for your GPU0 and GPU1 names. Prioritize the Nvidia one if you have one, else use the other.</li>
 </ul>
-<img src="../wokada-img/cap.png" alt="image" width="600" height="auto">
+<img src="../wokada-img/cap.png" alt="Task Manager" width="600" height="auto">
 <doc-anchor-target id="section-1">
     <h4>
         <doc-anchor-trigger class="header-anchor-trigger" to="#section-1">#</doc-anchor-trigger>
@@ -839,7 +843,7 @@ For example, if you extracted the voice changer to your desktop, the command may
         <span>Opening on Multi-PC Setups</span>
     </h2>
 </doc-anchor-target>
-<p>This is only for the people that want to use 1 PC for Gaming, and another only for Wokada Deiteris Fork.</p>
+<p>This is only for the people that have 2 PCs, and want to use 1 PC for Gaming, the other only for Wokada Deiteris Fork.</p>
 <ul>
 <li><p>Create a file named <code v-pre>.env</code> on the same folder where <code v-pre>MMVCServerSIO.exe</code> is located. Open it up with a notepad, copy paste the settings from the <u><a href="https://github.com/deiteris/voice-changer/issues/180#issuecomment-2359166278">GitHub link</a></u>.</p>
 </li>
@@ -862,7 +866,7 @@ For example, if you extracted the voice changer to your desktop, the command may
         <span>Adding Models</span>
     </h3>
 </doc-anchor-target>
-<img src="../wokada-img/edit.png" alt="image" width="430" height="auto">
+<img src="../wokada-img/edit.png" alt="Edit Button in Wokada Deiteris Fork to Add Models" width="430" height="auto">
 <doc-anchor-target id="section-2">
     <h5>
         <doc-anchor-trigger class="header-anchor-trigger" to="#section-2">#</doc-anchor-trigger>
@@ -909,7 +913,6 @@ For example, if you extracted the voice changer to your desktop, the command may
 <li>Input: Virtual Cable</li>
 <li>Output: Your headphones</li>
 </ul>
-<p>For Linux, read the Virtual Cable step</p>
 <hr>
 <doc-anchor-target id="client-and-server-setup">
     <h3>
@@ -1002,7 +1005,7 @@ For example, if you extracted the voice changer to your desktop, the command may
 </doc-anchor-target>
 <ul>
 <li>Protocol: rest (Use SIO if you want less delay but if you encounter any issues with SIO switch back to rest. Rest has slightly more delay than SIO)</li>
-<li>Crossfade length: 0.1 or 0.15 (0.1 for fastest voice, 0.15 for improved quality but increases delay by 50 ms)</li>
+<li>Crossfade length: Controls how smoothly the AI stitches different processed parts &quot;chunks&quot; of your voice back together. 0.1 or 0.15 (0.1 for fastest voice, 0.15 for improved quality but increases delay by 50 ms)</li>
 <li>SilenceFront: Reduce GPU usage when idle. This only reduces GPU resources when you&#x27;re not talking or making sounds</li>
 <li>Force FP32 mode: on (THIS IS OFF BY DEFAULT! Turning this on improves stability. Increases VRAM usage by 200 MB)</li>
 <li>Disable JIT compilation: off for faster loading speed of the program, on for slightly better performance (10-15 ms) for Nvidia only)</li>
@@ -1018,11 +1021,11 @@ For example, if you extracted the voice changer to your desktop, the command may
 </doc-anchor-target>
 <p>First start with 500 ms, check what number your perf is and go closer to that number but not lower.</p>
 <p>Example: if your perf is 200, go down to 250 with your chunk. Chunk affects perf value, and Extra as well.</p>
-<img src="../wokada-img/greem.png" alt="image" width="170" height="auto">
+<img src="../wokada-img/greem.png" alt="Wokada Deiteris Fork Green Perf Value" width="170" height="auto">
 <p>If your perf value is green, your selected chunk is stable. You can experiment and go down in chunk for less delay, or increase extra for more quality (would not recommend to go above 2.7s extra. Anything above uses more resource for no clear benefit).</p>
-<img src="../wokada-img/yellow.png" alt="image" width="170" height="auto">
+<img src="../wokada-img/yellow.png" alt="Wokada Deiteris Fork Yellow Perf Value" width="170" height="auto">
 <p>If your perf value is yellow, your selected chunk is enough, but audio may be unstable if you run other processes at the same time. Operation in this range will also incur high GPU usage. Increasing Chunk size or reducing Extra is recommended.</p>
-<img src="../wokada-img/red.png" alt="image" width="170" height="auto">
+<img src="../wokada-img/red.png" alt="Wokada Deiteris Fork Red Perf Value" width="170" height="auto">
 <p>If your perf value is red, the voice changer is unstable. Increase chunk size or reduce Extra.</p>
 <hr>
 <doc-anchor-target id="known-working-settings-for-chunk-and-extra">

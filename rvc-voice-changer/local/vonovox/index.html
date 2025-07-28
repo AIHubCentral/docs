@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.806987677525">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.807030621392">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -34,11 +34,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../../img/b.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.11.0.806987677525" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.11.0.807030621392" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.806987677525" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.807030621392" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.806987677525" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.807030621392" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -368,6 +368,10 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
         <span>A Virtual Audio Cable (VAC) is what you need to use the voice changer on Discord &amp; Games.</span>
     </h4>
 </doc-anchor-target>
+<ul>
+<li>A VAC (Virtual Audio Cable) makes a fake audio device, used to re-route the audio of different programs.</li>
+<li>In Wokada Deiteris Fork context, it&#x27;s used to get the output of Wokada Deiteris Fork as the input in other programs such as Discord.</li>
+</ul>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
     <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
@@ -434,7 +438,10 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
     </h3>
 </doc-anchor-target>
 <ul>
-<li>Go to Vonovox&#x27;s <u><a href="https://github.com/dr87/Vonovox/releases">github repo</a></u> and download the latest release of Vonovox.</li>
+<li><p>Make sure you have the <u><a href="https://aka.ms/vs/16/release/vc_redist.x64.exe">Microsoft Visual C++ Redistributable Package</a></u>, if you don&#x27;t already.</p>
+</li>
+<li><p>Go to Vonovox&#x27;s <u><a href="https://github.com/dr87/Vonovox/releases">Github Repository</a></u> and download the Latest Release Source Code.</p>
+</li>
 </ul>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-danger"></div>
@@ -469,6 +476,21 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
 <li><p>Once it&#x27;s done downloading everything it will display <code v-pre>Setup complete!</code> in the command line. You can now go ahead and run <code v-pre>start.bat</code>.</p>
 </li>
 </ul>
+<hr>
+<doc-anchor-target id="opening-on-multi-gpu-systems">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#opening-on-multi-gpu-systems">#</doc-anchor-trigger>
+        <span>Opening on Multi-GPU Systems</span>
+    </h3>
+</doc-anchor-target>
+<p>This is ONLY For users with 2 GPUs in the same system, you must do the following:</p>
+<ol>
+<li>Open NVIDIA Control Panel</li>
+<li>Go to Manage 3D Settings &gt; Program Settings Tab</li>
+<li>Add python.exe from the Vonovox runtime folder (runtime\python.exe)</li>
+<li>Set both settings &quot;CUDA - GPUs&quot; and &quot;OpenGL rendering GPU&quot; to the GPU you want to use for conversion</li>
+</ol>
+<p>This will hide the other GPU from being used by the application which is required</p>
 <hr>
 <doc-anchor-target id="voice-models">
     <h2>
@@ -615,7 +637,7 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
 </li>
 <li><p><code v-pre>Extra Time:</code> Gives the model more or less context to work with. Recommended 2.0 for best quality/latency ratio. The added latency of this setting is far less impactful than the block size. This setting is known as <code v-pre>Extra</code> in Wokada Deiteris Fork, and Vonovox fixed the certain cut off issues experienced in some models over the value 2.7.</p>
 </li>
-<li><p><code v-pre>Crossfade Duration:</code> 0.08-0.1 or 0.15 (0.08-0.1 for fastest voice, 0.15 for improved quality but increases delay by ~50 ms)</p>
+<li><p><code v-pre>Crossfade Duration:</code> Controls how smoothly the AI stitches different processed parts &quot;chunks&quot; of your voice back together. 0.08-0.1 or 0.15 (0.08-0.1 for fastest voice, 0.15 for improved quality but increases delay by ~50 ms)</p>
 </li>
 </ul>
 <hr>
@@ -656,7 +678,17 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
     </h3>
 </doc-anchor-target>
 <ul>
-<li><code v-pre>Noise Gate:</code> A simple noise gate so the application doesn&#x27;t try to process low background noise that made it past RNNoise</li>
+<li><p>Those are the Free Effects.</p>
+</li>
+<li><p><code v-pre>Noise Gate:</code> A simple noise gate so the application doesn&#x27;t try to process low background noise that made it past RNNoise</p>
+</li>
+<li><p><code v-pre>EQ Band (1 &amp; 2):</code> Boosts or cuts specific frequency ranges of your voice to shape its overall tone.</p>
+<ul>
+<li><code v-pre>Frequency (Hz):</code> Selects the center of the frequency range you want to adjust.</li>
+<li><code v-pre>Gain (dB):</code> Sets how much to raise or lower the volume of the selected frequency.</li>
+<li><code v-pre>Q:</code> Adjusts the width of the frequency band. A low Q affects a wide range of frequencies, while a high Q is more narrow and precise.</li>
+</ul>
+</li>
 </ul>
 <doc-anchor-target id="premium-effects">
     <h3>
@@ -665,7 +697,59 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
     </h3>
 </doc-anchor-target>
 <ul>
-<li><code v-pre>Low Quality Mic:</code> An adjustable low quality microphone. This simulates a lower quality microphone to hide digital artifacts and sometimes sounds way more natural depending on the model.</li>
+<li><p>Those are the Paid Effects, you can learn how to get them by clicking &quot;Manage License&quot; -&gt; &quot;How To Purchase&quot;.</p>
+</li>
+<li><p><code v-pre>Low Quality Mic:</code> Simulates the sound of a bad microphone or a telephone call.</p>
+<ul>
+<li><code v-pre>Strength:</code> Controls the overall intensity of the low-quality sound effect.</li>
+<li><code v-pre>Telephone Effect:</code> Narrows the frequency range to mimic the sound of a phone line.</li>
+<li><code v-pre>Add Static:</code> Overlays crackling static noise for a more distorted effect.</li>
+</ul>
+</li>
+<li><p><code v-pre>Compressor:</code> Evens out your voice&#x27;s volume, preventing sudden loud peaks and making quieter sounds more audible.</p>
+<ul>
+<li><code v-pre>Threshold (dB):</code> The volume your voice must reach before the effect starts turning it down.</li>
+<li><code v-pre>Ratio:</code> How much the volume is turned down after crossing the threshold.</li>
+<li><code v-pre>Attack (ms):</code> How quickly the compressor reacts to loud sounds.</li>
+<li><code v-pre>Release (ms):</code> How quickly the compressor stops after the sound is no longer loud.</li>
+</ul>
+</li>
+<li><p><code v-pre>Low Pass Filter (24 dB/oct):</code> Cuts high frequencies, making the voice sound more muffled or distant.</p>
+<ul>
+<li><code v-pre>Cutoff (Hz):</code> The frequency above which sounds will be removed.</li>
+<li><code v-pre>Resonance:</code> Adds a slight boost to frequencies right at the cutoff point for emphasis.</li>
+</ul>
+</li>
+<li><p><code v-pre>High Pass Filter (12 dB/oct):</code> Cuts low frequencies, which can remove low-end rumble and make a voice sound thinner.</p>
+<ul>
+<li><code v-pre>Cutoff (Hz):</code> The frequency below which sounds will be removed.</li>
+<li><code v-pre>Resonance:</code> Adds a slight boost to frequencies right at the cutoff point for emphasis.</li>
+</ul>
+</li>
+<li><p><code v-pre>EQ Band (3 &amp; 4):</code> Boosts or cuts specific frequency ranges of your voice to shape its overall tone.</p>
+<ul>
+<li><code v-pre>Frequency (Hz):</code> Selects the center of the frequency range you want to adjust.</li>
+<li><code v-pre>Gain (dB):</code> Sets how much to raise or lower the volume of the selected frequency.</li>
+<li><code v-pre>Q:</code> Adjusts the width of the frequency band. A low Q affects a wide range of frequencies, while a high Q is more narrow and precise.</li>
+</ul>
+</li>
+<li><p><code v-pre>Reverb:</code> Simulates the sound of being in a physical space by adding echoes and reflections.</p>
+<ul>
+<li><code v-pre>Room Size:</code> Controls the perceived size of the simulated room, from a small closet to a large hall.</li>
+<li><code v-pre>Damping:</code> Absorbs high frequencies in the echoes, making the reverb sound warmer or darker.</li>
+<li><code v-pre>Wet Level:</code> Adjusts the volume of the reverb effect itself.</li>
+<li><code v-pre>Dry Level:</code> Adjusts the volume of your original, unprocessed voice.</li>
+</ul>
+</li>
+<li><p><code v-pre>Chorus:</code> Makes a single voice sound like multiple voices by adding slightly detuned and delayed copies.</p>
+<ul>
+<li><code v-pre>Rate (Hz):</code> Controls the speed of the subtle pitch variations in the chorus effect.</li>
+<li><code v-pre>Depth:</code> Determines the intensity of the pitch variations.</li>
+<li><code v-pre>Delay (ms):</code> Sets the time delay between your original voice and the copies.</li>
+<li><code v-pre>Feedback:</code> Feeds some of the effected sound back into the input for a more intense, swirling effect.</li>
+<li><code v-pre>Mix:</code> Blends the amount of the original (dry) voice with the chorused (wet) voice.</li>
+</ul>
+</li>
 </ul>
 <hr>
 <doc-anchor-target id="update">
@@ -696,7 +780,7 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
 <doc-anchor-target id="realtime-sound-file-inferencing">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#realtime-sound-file-inferencing">#</doc-anchor-trigger>
-        <span>Realtime Sound File Inferencing</span>
+        <span>Realtime Sound File Inferencing <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M11.553 3.064A.75.75 0 0 1 12 3.75v16.5a.75.75 0 0 1-1.255.555L5.46 16H2.75A1.75 1.75 0 0 1 1 14.25v-4.5C1 8.784 1.784 8 2.75 8h2.71l5.285-4.805a.752.752 0 0 1 .808-.13ZM10.5 5.445l-4.245 3.86a.748.748 0 0 1-.505.195h-3a.25.25 0 0 0-.25.25v4.5c0 .138.112.25.25.25h3c.187 0 .367.069.505.195l4.245 3.86Zm8.218-1.223a.75.75 0 0 1 1.06 0c4.296 4.296 4.296 11.26 0 15.556a.75.75 0 0 1-1.06-1.06 9.5 9.5 0 0 0 0-13.436.75.75 0 0 1 0-1.06Z"/><path d="M16.243 7.757a.75.75 0 1 0-1.061 1.061 4.5 4.5 0 0 1 0 6.364.75.75 0 0 0 1.06 1.06 6 6 0 0 0 0-8.485Z"/></g></g></svg></span>
     </h3>
 </doc-anchor-target>
 <p>You are able to load and play sound files, converted to your model&#x27;s voice in realtime.</p>
@@ -801,6 +885,14 @@ RVC works by downsampling your audio voice to 16khz because f0 estimators only w
         </div>
     </div>
 </div>
+<hr>
+<doc-anchor-target id="why-are-there-multiple-eq-bands-effects-which-some-are-free-and-some-others-are-paid">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#why-are-there-multiple-eq-bands-effects-which-some-are-free-and-some-others-are-paid">#</doc-anchor-trigger>
+        <span>Why are there Multiple EQ Bands Effects, which some are free and some others are paid?</span>
+    </h3>
+</doc-anchor-target>
+<p>Having Multiple EQ bands provides the flexibility to precisely shape and refine the tone of your voice far more effectively than a single band ever could. It&#x27;s made so you can adjust multiple parts of your voice range with each.</p>
 <hr>
 <doc-anchor-target id="section-3">
     <h6>

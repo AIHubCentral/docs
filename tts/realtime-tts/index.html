@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.806987677525">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.807030621392">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -14,7 +14,7 @@
     <!-- Primary Meta Tags -->
     <title>Realtime TTS</title>
     <meta name="title" content="Realtime TTS">
-    <meta name="description" content="Last update: Jan 13, 2025">
+    <meta name="description" content="Last update: July 28, 2025">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://docs.aihub.gg/tts/realtime-tts/">
@@ -23,22 +23,23 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.aihub.gg/tts/realtime-tts/">
     <meta property="og:title" content="Realtime TTS">
-    <meta property="og:description" content="Last update: Jan 13, 2025">
+    <meta property="og:description" content="Last update: July 28, 2025">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.aihub.gg/tts/realtime-tts/">
     <meta property="twitter:title" content="Realtime TTS">
-    <meta property="twitter:description" content="Last update: Jan 13, 2025">
+    <meta property="twitter:description" content="Last update: July 28, 2025">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../img/b.png" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.11.0.806987677525" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.11.0.807030621392" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.11.0.806987677525" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.11.0.807030621392" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.11.0.806987677525" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.11.0.807030621392" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.11.0.807030621392" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -230,7 +231,7 @@
         <span>Realtime TTS</span>
     </h1>
 </doc-anchor-target>
-<p><code v-pre>Last update: Jan 13, 2025</code></p>
+<p><code v-pre>Last update: July 28, 2025</code></p>
 <hr>
 <doc-anchor-target id="section">
     <h6>
@@ -249,45 +250,192 @@
 <li>This is a guide on how to use most of the TTS&#x27; listed in the TTS Tools section in realtime.</li>
 </ul>
 <hr>
-<div class="content-center"><doc-anchor-target id="installation-n-setup">
+<div class="content-center"><doc-anchor-target id="installation">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#installation-n-setup">#</doc-anchor-trigger>
-        <span>Installation &#x27;n&#x27; Setup</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#installation">#</doc-anchor-trigger>
+        <span>Installation</span>
     </h2>
 </doc-anchor-target>
 </div>
-<ol>
-<li>Install A Virtual Audio Cable(VAC) like <u><a href="https://software.muzychenko.net/freeware/vac470lite.zip">VAC by Muzycgenko</a></u>.
-<ul>
-<li>For Mac install <u><a href="https://existential.audio/blackhole/">Blackhole VAC</a></u></li>
-</ul>
-</li>
-</ol>
-<doc-anchor-target id="section-1">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-1">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
+<hr>
+<div class="content-center"><doc-anchor-target id="tts-program">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#tts-program">#</doc-anchor-trigger>
+        <span>TTS Program</span>
+    </h3>
 </doc-anchor-target>
-<ol start="2">
+</div>
+<p>Choose any TTS in our <u><a href="https://docs.aihub.gg/tts-tools/">TTS Tools</a></u>.</p>
+<hr>
+<div class="content-center"><doc-anchor-target id="virtual-audio-cable">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#virtual-audio-cable">#</doc-anchor-trigger>
+        <span>Virtual Audio Cable</span>
+    </h3>
+</doc-anchor-target>
+</div>
+<ul>
+<li>A VAC (Virtual Audio Cable) makes a fake audio device, used to re-route the audio of different programs.</li>
+<li>In Wokada Deiteris Fork context, it&#x27;s used to get the output of Wokada Deiteris Fork as the input in other programs such as Discord.</li>
+</ul>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>For Windows</h5>
+<p>Download this: <u><a href="https://software.muzychenko.net/freeware/vac470lite.zip">VAC Lite (Virtual-Audio-Cable by Muzychenko)</a></u>.
+(Be sure to not use any toher vac like VB Audio Cable.)</p>
+        </div>
+    </div>
+</div>
+<ul>
+<li><p>Run <code v-pre>setup64</code>, not 64a, after extracting the zip to a new folder</p>
+</li>
+<li><p>After installing the VAC Lite, it changes your default audio system. Click <strong>Yes</strong> when it asks you to open the audio device settings (or press WIN+R, type &quot;mmsys.cpl&quot; if you closed it already), and change your <strong>Recording</strong> and <strong>Playback</strong> devices back to your usual devices. Same for communications device aswell (right click -&gt; set as default communication device)</p>
+</li>
+</ul>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>For Mac</h5>
+<p>Download either:
+<u><a href="https://existential.audio/blackhole">Blackhole Virtual Audio Cable</a></u>
+or
+<u><a href="https://vb-audio.com/Cable">VB-Audio</a></u></p>
+        </div>
+    </div>
+</div>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>For Linux</h5>
+<p>For Debian / Ubuntu-based Systems (Ubuntu, Mint, Pop!_OS), run in the terminal:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-bash"><code v-pre class="language-bash">sudo apt-get update &amp;&amp; sudo apt-get install -y portaudio19-dev</code></pre>
+</doc-codeblock></div>
+<p>For Fedora / RHEL-based Systems (CentOS, Rocky Linux), run in the terminal:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-bash"><code v-pre class="language-bash">sudo yum install -y portaudio</code></pre>
+</doc-codeblock></div>
+        </div>
+    </div>
+</div>
+<hr>
+<div class="content-center"><doc-anchor-target id="setup">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#setup">#</doc-anchor-trigger>
+        <span>Setup</span>
+    </h3>
+</doc-anchor-target>
+</div>
+<ol>
 <li>After installing a VAC you need to:</li>
 </ol>
-<ul>
-<li><p><strong>For Windows:</strong> Press WIN+R and type <code v-pre>mmsys.cpl</code> and change the default audio devices back to your headphones and microphone, make sure you do this for default and communication default.</p>
-</li>
-<li><p><strong>For Mac:</strong> Press Command + Spacebar and type <code v-pre>Sound</code> and set the default audio device back to your headphones and microphone , make sure you do this for default and communication default.</p>
-</li>
-</ul>
-<ol start="3">
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>For Windows:</h5>
+<p>Press WIN+R and type <code v-pre>mmsys.cpl</code> and change the default audio devices back to your headphones and microphone, make sure you do this for default and communication default.</p>
+        </div>
+    </div>
+</div>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>For Mac:</h5>
+<p>Press Command + Spacebar and type <code v-pre>Sound</code> and set the default audio device back to your headphones and microphone , make sure you do this for default and communication default.</p>
+        </div>
+    </div>
+</div>
+<ol start="2">
 <li>After that:</li>
 </ol>
-<ul>
-<li><p><strong>For Windows:</strong> Press WIN+CTRL+V and select the VAC as the output device.</p>
-</li>
-<li><p><strong>For Mac:</strong> Hold down the option key on your keyboard then click the sound icon in the upper right corner of the menu bar and then a dropdown menu will appear which allows you to select the VAC as the output device.</p>
-</li>
-</ul>
-<ol start="4">
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>For Windows:</h5>
+<p>Press WIN+CTRL+V and select the VAC as the output device.</p>
+        </div>
+    </div>
+</div>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>For Mac:</h5>
+<p>Hold down the option key on your keyboard then click the sound icon in the upper right corner of the menu bar and then a dropdown menu will appear which allows you to select the VAC as the output device.</p>
+        </div>
+    </div>
+</div>
+<ol start="3">
 <li>Audio Setup in Games:</li>
 </ol>
 <ul>
@@ -378,6 +526,6 @@
 
     <div id="retype-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Realtime TTS", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Realtime TTS", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
