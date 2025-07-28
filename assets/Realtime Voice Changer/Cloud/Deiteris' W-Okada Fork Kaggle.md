@@ -43,7 +43,7 @@ b. Verify your acount with a phone number so you can turn on the "internet" opti
 ## Clone and Notebook Setup
 ###### ‎  
 #### 2. <u>Clone Notebook</u>
-a. Go to the <u>[voice changer notebook](https://www.kaggle.com/code/suneku/voice-changer-public)</u> and click "Copy and Edit"
+a. Go to the <u>[realtime voice changer notebook](https://www.kaggle.com/code/suneku/voice-changer-public)</u> and click "Copy and Edit"
 
    <img src="../kaggle-img/vc.png" alt="image" width="1000" height="auto"> 
 
@@ -115,7 +115,7 @@ c. From here it's pretty much the same as using local W-Okada.
 
 ## Virtual Audio Cable
 
-#### A Virtual Audio Cable (VAC) is what you need to use the voice changer on Discord & Games.
+#### A Virtual Audio Cable (VAC) is what you need to use the realtime voice changer on Discord & Games.
 
 !!! For Windows
 Download this: <u>[VAC Lite (Virtual-Audio-Cable by Muzychenko)](https://software.muzychenko.net/freeware/vac470lite.zip)</u>
@@ -139,11 +139,11 @@ or
 
 ### Discord & Games
 
-On the voice changer app wokada, you select:
+On the realtime voice changer app wokada, you select:
 
 - Input: Your microphone
 - Output: Virtual Cable
-- Monitor (if you wish to hear the voice changer on your headphones aswell): Your headphones
+- Monitor (if you wish to hear the realtime voice changer on your headphones aswell): Your headphones
 
 On discord and games, you select:
 

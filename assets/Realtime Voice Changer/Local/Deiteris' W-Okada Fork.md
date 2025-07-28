@@ -8,7 +8,7 @@ order: 4000
 ## Introduction
 :::
 
-- W-Okada is a voice changer that uses RVC for its conversion.
+- W-Okada is a realtime voice changer that uses RVC for its conversion.
 
 - There are two versions of this realtime voice changer, the <u>[offical original](https://github.com/w-okada/voice-changer)</u> made by Wok, and the <u>[Deiteris fork](https://github.com/deiteris/voice-changer)</u> made by Deiteris. Note that those 2 links are just for reference to the Source Code Github Repositories of both projects, you should instead follow the guide below.
 
@@ -71,7 +71,7 @@ TLDR: Make sure you have Nvidia RTX 20xx or AMD Radeon RX 5xxx or better. GTX 10
 
 `Minimum:`
 
-- An integrated graphics card: AMD Radeon Vega 7 (with AMD Ryzen 5 5600G) or later; with 2GB VRAM (in FP32 mode), ~1GB VRAM (in FP16 mode, if supported). But this is NOT recommended at all and we will most likely not recommend you to download the voice changer with iGPUs.
+- An integrated graphics card: AMD Radeon Vega 7 (with AMD Ryzen 5 5600G) or later; with 2GB VRAM (in FP32 mode), ~1GB VRAM (in FP16 mode, if supported). But this is NOT recommended at all and we will most likely not recommend you to download the realtime voice changer with iGPUs.
 
 - A dedicated graphics card: Nvidia GeForce GTX 900 Series or later, or AMD Radeon RX 400 series or later, or Intel Arc A300 series or later.
 
@@ -120,7 +120,7 @@ You need the Google Colab Paid Tier to run this, as it uses a Web User Interface
 
 ## Virtual Audio Cable
 
-#### A Virtual Audio Cable (VAC) is what you need to use the voice changer on Discord & Games.
+#### A Virtual Audio Cable (VAC) is what you need to use the realtime voice changer on Discord & Games.
 
 - A VAC (Virtual Audio Cable) makes a fake audio device, used to re-route the audio of different programs.
 - In Wokada Deiteris Fork context, it's used to get the output of Wokada Deiteris Fork as the input in other programs such as Discord.
@@ -223,21 +223,21 @@ If nothing opens, then open a browser and type in `http://127.0.0.1:18888/`. Thi
 ***
 ### Opening on Mac
 
-- Double click the voice-changer-macos-arm64-cpu.tar.gz file. The voice changer will unpack and the MMVCServerSIO folder will appear.
+- Double click the voice-changer-macos-arm64-cpu.tar.gz file. The realtime voice changer will unpack and the MMVCServerSIO folder will appear.
 
 - Open the extracted MMVCServerSIO folder.
 
-- Double-click `MMVCServerSIO` to run the voice changer.
+- Double-click `MMVCServerSIO` to run the realtime voice changer.
 
-!!! Apple quarantine stops you from running the voice changer
+!!! Apple quarantine stops you from running the realtime voice changer
 You do not get a popup notification for this, so if it does not open or says "Pytorch is damaged", do the following:
 
 1. Open the Terminal
 
 2. Run the following command: `xattr -dr com.apple.quarantine <PUT IN THE PATH TO YOUR MMVCServerSIO FOLDER HERE>`
-For example, if you extracted the voice changer to your desktop, the command may look as follows: `xattr -dr com.apple.quarantine ~/Desktop/MMVCServerSIO`
+For example, if you extracted the realtime voice changer to your desktop, the command may look as follows: `xattr -dr com.apple.quarantine ~/Desktop/MMVCServerSIO`
 
-3. Now, open the extracted MMVCServerSIO folder and run `MMVCServerSIO` to run the voice changer.
+3. Now, open the extracted MMVCServerSIO folder and run `MMVCServerSIO` to run the realtime voice changer.
 !!!
 !!!warning
 If nothing opens, then open a browser and type in `http://127.0.0.1:18888/`. This is a local URL, it runs on the WebUI.
@@ -291,7 +291,7 @@ After you extract the files using the command above, a new folder called `MMVCSe
   chmod +x ./MMVCServerSIO
   ```
 
-- Now, run the voice changer:
+- Now, run the realtime voice changer:
   ```bash
   ./MMVCServerSIO
   ```
@@ -311,7 +311,7 @@ This is only for the people that have 2 PCs, and want to use 1 PC for Gaming, th
 - After that, you create another file with the file extension ending `.bat`, open it up with a notepad, copy paste what is needed in there again from the <u>[GitHub link](https://github.com/deiteris/voice-changer/issues/180#issuecomment-2359166278)</u>. 
 
 
-- Now run the bat file. After it starts, you should be able to open the link. For example, if you specified `HOST=192.168.0.1` and `ALLOWED_ORIGINS='["https://192.168.0.1:18888"]')`, you should be able to open `https://192.168.0.1:18888` in your browser and use the voice changer UI from other machines in your local network.
+- Now run the bat file. After it starts, you should be able to open the link. For example, if you specified `HOST=192.168.0.1` and `ALLOWED_ORIGINS='["https://192.168.0.1:18888"]')`, you should be able to open `https://192.168.0.1:18888` in your browser and use the realtime voice changer UI from other machines in your local network.
 
 ***
 ## Voice Models
@@ -340,11 +340,11 @@ If you wish to delete a model, you can overwrite the slot with a new model. If y
 
 ### Discord & Games
 
-On the voice changer app wokada, you select:
+On the realtime voice changer app wokada, you select:
 
 - Input: Your microphone
 - Output: Virtual Cable
-- Monitor (if you wish to hear the voice changer on your headphones aswell): Your headphones
+- Monitor (if you wish to hear the realtime voice changer on your headphones aswell): Your headphones
 
 On discord and games, you select:
 
@@ -375,7 +375,7 @@ Sometimes Client does not work, then use SERVER with prefix "MME" or "Windows WA
 ***
 ### Settings Explained
 ***
-- `PASSTHRU button:` Sends your actual voice and not the voice changer through the virtual cable. You want this to be GLOWING GREEN or GREY (grey for dark mode users) for the voice changer to work.
+- `PASSTHRU button:` Sends your actual voice and not the realtime voice changer through the virtual cable. You want this to be GLOWING GREEN or GREY (grey for dark mode users) for the realtime voice changer to work.
 
 - `F0 det:` Pitch algorithm. Both RMVPE (for the best quality and robustness) and FCPE (for nice quality and being lightweight) are good options.
 
@@ -384,11 +384,11 @@ Sometimes Client does not work, then use SERVER with prefix "MME" or "Windows WA
 - `Extra:` Controls voice model quality. 2.7s is the max, anything above is not worth it and can cause issues for no benefit.
 ***
 #### `VOL:`
-- `in:` This raises the microphone volume before it goes into the voice changer (Recommended to leave it on the default or if needed, not to go too high, else it increases background noise and makes the voice sound worse).
+- `in:` This raises the microphone volume before it goes into the realtime voice changer (Recommended to leave it on the default or if needed, not to go too high, else it increases background noise and makes the voice sound worse).
 
-- `OUT:` Raising voice changer volume on the output.
+- `OUT:` Raising realtime voice changer volume on the output.
 
-- `MON:` Increases volume of your headphones that you set on "mon" if you selected to hear yourself with the voice changer.
+- `MON:` Increases volume of your headphones that you set on "mon" if you selected to hear yourself with the realtime voice changer.
 ***
 - `Pitch:` This is the pitch. Going into negative will make it lower pitch, going higher will make it higher pitch. If you have a male voice using a female voice, aim for 10 - 14, this depends on your voice, try around those numbers until you find a sweet spot.
 
@@ -435,14 +435,14 @@ If your perf value is yellow, your selected chunk is enough, but audio may be un
 
 <img src="../wokada-img/red.png" alt="Wokada Deiteris Fork Red Perf Value" width="170" height="auto">
 
-If your perf value is red, the voice changer is unstable. Increase chunk size or reduce Extra.
+If your perf value is red, the realtime voice changer is unstable. Increase chunk size or reduce Extra.
 
 ***
 ### Known working settings for Chunk and Extra
 
 !!! These settings are intentionally higher than what your GPU is capable of
-If you are playing a video game with the voice changer, you will have to increase the chunk higher than what you usually can handle.
-This is because the game runs on GPU and the voice changer aswell. The game will always take higher priority by default, so the listed settings are safe options that should run with most games.
+If you are playing a video game with the realtime voice changer, you will have to increase the chunk higher than what you usually can handle.
+This is because the game runs on GPU and the realtime voice changer aswell. The game will always take higher priority by default, so the listed settings are safe options that should run with most games.
 If you run into issues, you will need to lower quality and limit your FPS, or increase chunk. It is best to first tweak your game's settings first
 
 It is recommended to go up to Finding my own settings after you are comfortable with the program
