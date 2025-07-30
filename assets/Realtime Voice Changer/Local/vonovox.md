@@ -353,6 +353,13 @@ Gawr Gura: [Hugging Face Link](https://huggingface.co/dacoolkid44/VTuber-RVC/tre
 
 [Markiplier voice made by hobqueer](https://www.weights.com/models/clm72nuvi0c8scctcvzrckuqp)
 
+
+***
+## Known Issues / Bugs
+***
+License caching is currently not working, meaning *some* licenses might not work.
+
+
 ***
 ## FAQ
 ***
@@ -371,6 +378,15 @@ Press WINDOWS+R, type "mmsys.cpl" and press Enter. Go to the **Recording** devic
 
 <img src="../vonovox-img/monitor-windows-workaround.png" alt="Windows Only Monitor Workaround" width="400" height="auto">
 !!!
+
+***
+### What are the benefits of premium? Is it forever or monthly?
+You can get premium by a **monthly** subscription at <u>[dr87's Patreon](https://www.patreon.com/dr87/membership)</u>, but the creator said he *might* make a lifetime version.
+The benefits are:
+- Early access.
+- Premium Effects and Features.
+- Supporter role and access to the <u>[Vonovox Official Discord Server](https://discord.gg/c9mbMGxEbR)</u>.
+
 
 ***
 ### Why are there Multiple EQ Bands Effects, which some are free and some others are paid?
