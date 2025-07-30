@@ -3,7 +3,7 @@ icon: chevron-right
 order: 100
 ---
 
-``Last update: Feb 25, 2024``
+``Last update: July 30, 2025``
 
 ***
 ###### ‎ 
@@ -65,12 +65,13 @@ order: 100
 
 - Each one works in its own way, and has its pros & cons.       
 
-- As the majority of them are obsolete, we'll focus on the 2 best ones: **RMVPE** and **Mangio-Crepe**.
+- As the majority of them are obsolete, we'll focus on the 3 best ones: **RMVPE**, **Mangio-Crepe** & **FCPE**.
 
     ==- *RMVPE*
     ###### ‎       
+    - A Robust Model for Vocal Pitch Estimation in Polyphonic 
     - Fast        
-    - Decent quality       
+    - Decent precision       
     - Usually sounds a little harsh   
     - Should be your **go-to** algorithm, due to its convenience      
     - Better with harmonic-rich voices / fuller voices 
@@ -97,6 +98,17 @@ order: 100
     >Lowering it too much might lead to voice cracks so it's recommended to not lower it below 64.
 
     ===
+
+    ==- *FCPE*
+    ###### ‎  
+    - Fast Context-base Pitch Estimator
+    - Very fast, less precise and prone to noise
+    - Useful for Realtime. If you have poor performance in Realtime, use this over RMVPE
+    - Might be better with human softness
+    ###### ‎ 
+
+    ===
+
 >They also work the same for training models.
 ***
 ###### ‎    

@@ -2,7 +2,7 @@
 icon: chevron-right
 order: 4000
 ---
-``Last update: July 18, 2025``
+``Last update: July 30, 2025``
 ***
 :::content-center
 ## Introduction
@@ -201,7 +201,7 @@ On discord and games, you select:
 
 - `Sample Rate:` Only 48000Hz is available. This is only the outgoing sample rate that matches your VAC line - It is compatible with 32000, 40000, or 48000 models
 
-- `F0 det:` Pitch algorithm. Pitch algorithm. Both RMVPE (for the best quality and robustness) and FCPE (for nice quality and being lightweight) are good options.
+- `F0 det:` Pitch extraction algorithm. Both RMVPE (for the best precision and robustness) and FCPE (for less precision & robustness but lower delay) are good options.
 
 - `Pitch Smoothing Factor:` Pitch smoothing will dampen pitch changes. It still follows the exact curve of the f0 predictor allowing it to maintain 100% accuracy, just to a lower magnitude. This allows normal speaking voices to have better stability, since sometimes f0 can be over aggressive and cause pitch wobble on minor pitch fluctuations.
 

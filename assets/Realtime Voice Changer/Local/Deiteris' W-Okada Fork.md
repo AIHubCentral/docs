@@ -2,7 +2,7 @@
 icon: chevron-right
 order: 4000
 ---
-``Last update: July 26, 2025``
+``Last update: July 30, 2025``
 ***
 :::content-center
 ## Introduction
@@ -377,7 +377,7 @@ Sometimes Client does not work, then use SERVER with prefix "MME" or "Windows WA
 ***
 - `PASSTHRU button:` Sends your actual voice and not the realtime voice changer through the virtual cable. You want this to be GLOWING GREEN or GREY (grey for dark mode users) for the realtime voice changer to work.
 
-- `F0 det:` Pitch algorithm. Both RMVPE (for the best quality and robustness) and FCPE (for nice quality and being lightweight) are good options.
+- `F0 det:` Pitch extraction algorithm. Both RMVPE (for the best precision and robustness) and FCPE (for less precision & robustness but lower delay) are good options.
 
 - `Chunk:` Controls the delay (lower number means less delay, but please check out the recommended settings for what your GPU is capable of).
 
