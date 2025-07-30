@@ -90,7 +90,7 @@ order: 1000
 ### :icon-chevron-down:Gradio
 - Gradio is an open-source Python packag that makes it easy for developers to create user-friendly web interfaces for machine learning models and other applications, such as RVC.
   
-- It deploys the program on a Local URL, which is the one running locally on the machine, and a Public Share Link, which is a tunnel that exposes the Local URL. The Public Share Link is used, for example, in Google Colabs, powered by their Share API. Sometimes, the Share API goes down, you can check its status <u>[here](https://status.gradio.app/)</u>.
+- It deploys the program on a Local URL, which is the one running locally on the machine, and a Public Share Link, which is a tunnel that exposes the Local URL. The Public Share Link is used, for example, in Google Colabs, powered by their Share API. Sometimes, the Share API goes down, you can check its <u>[status](https://status.gradio.app/)</u>.
 
 ***
 ###### ‎

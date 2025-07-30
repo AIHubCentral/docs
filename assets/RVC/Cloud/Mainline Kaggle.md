@@ -3,7 +3,7 @@ icon: chevron-right
 order: 2000
 ---
  
-``Last update: Oct 23, 2024``
+``Last update: July 30, 2025``
 
 ***
 :::content-center
@@ -14,6 +14,10 @@ order: 2000
 - Kaggle is a cloud platform for using AI apps, powered by virtual machines with powerful GPU's.     
 
 - It's a great alternative for training RVC voice models through the cloud, since it has the best GPUs.
+
+!!!danger End Of Life
+The Hina Modified Mainline Kaggle has reached EOL (End Of Life), meaning it has had it's last update, it won't be suggested anymore nor fixed for any future issues. We would suggest users to use other alternatives if it breaks, and if it breaks this guide will be removed in the future.
+!!!
 
 !!!danger
 You only get 30 free GPU hours per week.
@@ -31,6 +35,7 @@ You only get 30 free GPU hours per week.
 - TensorBoard included
 -  You can leave training unsupervised.  
 ||| ❌ **CONS**       
+- Reached End Of Life.
 - Takes some time to set up.      
 - Doesn't have Mangio-Crepe
  

@@ -3,13 +3,17 @@ icon: chevron-right
 order: 1000
 ---
 
-``Last update: Oct 23, 2024``
+``Last update: July 30, 2025``
 
 ***
              
 - Mainline colab is a port of <u>[mainline RVC](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI)</u> to <u>[Google Colab</u>](https://docs.aihub.gg/extra/glossary/#google-colab), for exclusively training.
 
 - It's free, includes all the necessary tools for a quality model, the <u>[TensorBoard</u>](https://docs.aihub.gg/rvc/resources/training/#tensorboard).   
+
+!!!danger End Of Life
+The Hina Modified Mainline Google Colab has reached EOL (End Of Life), meaning it has had it's last update, it won't be suggested anymore nor fixed for any future issues. We would suggest users to use other alternatives if it breaks, and if it breaks this guide will be removed in the future.
+!!!
      
 ‎       
 #### Pros & Cons :icon-tasklist:
@@ -20,6 +24,7 @@ order: 1000
 ||| **✔️ PROS:**  
 - Has TensorBoard.    
 ||| ❌ **CONS**     
+- Reached End Of Life.
 - Inconvenient.   
 - Takes some time to set up.      
 - You can't leave training unsupervised.

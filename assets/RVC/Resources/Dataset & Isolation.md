@@ -3,7 +3,7 @@ icon: chevron-right
 order: 2000
 ---
 
-``Last update: May 5, 2025``
+``Last update: July 30, 2025``
 ***
  ‎
 :::content-center
@@ -376,12 +376,17 @@ De-Noise | Mel denoiser
 #### Cannot connect to GPU backend.
 - You have exhausted the <u>[GPU runtime](https://docs.aihub.gg/rvc/extra/glossary/#google-colab)</u> of Colab.
 
+
 +++ Huggingface Spaces
 
 :::content-center
 ## UVR Zero GPU 
 :::
 ***
+
+!!!danger Currently broken for uknown issues
+For unknwon related ZeroGPU issues, the space is broken. We suggest alternatives till it's fixed or we have updates on the situation.
+!!!
 
 ## How to use :icon-checklist:
 
