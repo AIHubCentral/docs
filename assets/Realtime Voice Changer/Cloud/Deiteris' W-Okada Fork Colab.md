@@ -70,19 +70,36 @@ c. From here it's pretty much the same as using local W-Okada.
 
 #### A Virtual Audio Cable (VAC) is what you need to use the realtime voice changer on Discord & Games.
 
+- A VAC (Virtual Audio Cable) makes a fake audio device, used to re-route the audio of different programs.
+- In Wokada Deiteris Fork context, it's used to get the output of Wokada Deiteris Fork as the input in other programs such as Discord.
+
 !!! For Windows
-Download this: <u>[VAC Lite (Virtual-Audio-Cable by Muzychenko)](https://software.muzychenko.net/freeware/vac470lite.zip)</u>
+Download this: <u>[VAC Lite (Virtual-Audio-Cable by Muzychenko)](https://software.muzychenko.net/freeware/vac470lite.zip)</u>.
+(Be sure to not use any toher vac like VB Audio Cable.)
 !!!
 
 - Run `setup64`, not 64a, after extracting the zip to a new folder
 
-- After installing the Virtual Cable, it changes your default audio system. Click **Yes** when it asks you to open the audio device settings (or press WIN+R, type "mmsys.cpl" if you closed it already), and change your **Recording** and **Playback** devices back to your usual devices. Same for communications device aswell (right click -> set as default communication device)
+- After installing the VAC Lite, it changes your default audio system. Click **Yes** when it asks you to open the audio device settings (or press WIN+R, type "mmsys.cpl" if you closed it already), and change your **Recording** and **Playback** devices back to your usual devices. Same for communications device aswell (right click -> set as default communication device)
 
 !!! For Mac
 Download either: 
 <u>[Blackhole Virtual Audio Cable](https://existential.audio/blackhole)</u>
 or
 <u>[VB-Audio](https://vb-audio.com/Cable)</u>
+!!!
+
+!!! For Linux
+For Debian / Ubuntu-based Systems (Ubuntu, Mint, Pop!_OS), run in the terminal:
+```bash
+sudo apt-get update && sudo apt-get install -y portaudio19-dev
+```
+
+
+For Fedora / RHEL-based Systems (CentOS, Rocky Linux), run in the terminal:
+```bash
+sudo yum install -y portaudio
+```
 !!!
 
 
