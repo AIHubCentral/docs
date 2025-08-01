@@ -294,7 +294,7 @@ De-Noise | VR | Mel denoiser
 
 ### Installation :icon-download:
 *** 
-1. Go to their <u>[official website</u>](https://www.izotope.com/en/shop/rx-11-advanced/?srsltid=AfmBOor--irjtR7Bsl08_bPj-7UMUGd49tYy9C_U2iXOAupjQ74Mat_s) & buy it or sail the seven seas and find a treasure box which contains RX 11. 
+1. Go to their <u>[official website</u>](https://www.izotope.com/en/shop/rx-11-advanced/?srsltid=AfmBOor--irjtR7Bsl08_bPj-7UMUGd49tYy9C_U2iXOAupjQ74Mat_s) & buy it.
 ***
 ###### ‎ 
 ### Usage 

@@ -54,14 +54,28 @@ icon: home-fill
 
 - You can also send an issue/pull request to our <u>[GitHub Docs Repository](https://github.com/AIHubCentral/docs)</u>.
 
+
+***
+###### ‎     
+## Disclaimer :icon-shield:
+- The tools and guides provided on this site are for informational and educational purposes only. Good and ethical fun only. The creators and contributors of this documentation do not condone and are not responsible for any misuse of the information or tools provided.
+
+- **Illegal Activities:** We strictly prohibit the use of any information or tools from this site for illegal activities, including but not limited to scamming, catfishing, and any form of fraud.
+
+- **Misuse of AI:** The use of AI should be done responsibly. We do not support the use of AI for creating harmful, deceptive, or malicious content.
+
+- **Copyright:** Users are responsible for ensuring they have the necessary rights and permissions for any content they use with these tools. We do not condone copyright infringement.
+
+- **Responsibility:** By using the information and tools provided, you agree that the creators and contributors of this documentation are not liable for any damages or issues that may arise from your actions.
+
+
 ***
 ###### ‎  
-
 ## Credits :icon-heart:
-- **Lead by:** Nick, Eddy, Julia (Used to)
-- **General Help:** Poopmaster Raid, Light, Faze Masta, Alexolotl, Delik, Razer, Nick
+- **Lead by:** Nick088, Eddy, Julia (Used to)
+- **General Help:** Poopmaster Raid, Light, Faze Masta, Alexolotl, Delik, Razer, Nick088
 - **Reviewing:** Faze Masta, Alexolotl, SimplCup, Delik, Litsa, Lyery, Razer
-- **OG Guides:** Litsa, LollenApe, Faze Masta, MrM0dz, FDG, Eddy, Julia, Nick
+- **OG Guides:** Litsa, LollenApe, Faze Masta, MrM0dz, FDG, Eddy, Julia, Nick088
 - **Backend:** Eddy & Yui
 - **Branding:** Grvyscale & Cthulhu
 ***
