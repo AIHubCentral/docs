@@ -2,7 +2,7 @@
 icon: chevron-right
 order: 4000
 ---
-``Last update: May 5, 2025``
+``Last update: August 1, 2025``
 ***
 :::content-center
 <img src="..\kaggle-img\kaggle.png" alt="image" width="600">
@@ -48,7 +48,7 @@ a. Go to the <u>[realtime voice changer notebook](https://www.kaggle.com/code/su
    <img src="../kaggle-img/vc.png" alt="image" width="1000" height="auto"> 
 
    
-b. Under session settings in the sidebar turn on "internet". Make sure persistance is on for both files and varibles.
+b. Under "Session options" in the sidebar turn on "internet". Make sure persistance is on for both files and varibles.
 
    <img src="../kaggle-img/kaggle-internet.png" alt="image" width="450" height="auto">     
   

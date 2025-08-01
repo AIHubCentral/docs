@@ -3,7 +3,7 @@ icon: chevron-right
 order: 2000
 ---
  
-``Last update: July 30, 2025``
+``Last update: August 1, 2025``
 
 ***
 :::content-center
@@ -65,7 +65,7 @@ a. Go to <u>[Hina's mainline notebook](https://www.kaggle.com/code/hinabl/mainli
    <img src="../kaggle-img/kaggle-copy.png" alt="image" width="1000" height="auto"> 
 
    
-b. Under session settings in the sidebar turn on "internet". Make sure persistance is on for both files and varibles.
+b. Under "Session options" in the sidebar turn on "internet". Make sure persistance is on for both files and varibles.
 
    <img src="../kaggle-img/kaggle-internet.png" alt="image" width="450" height="auto">     
   

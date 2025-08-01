@@ -3,7 +3,7 @@ icon: chevron-right
 order: 8000
 ---
  
-``Last update: Jan 13, 2025``
+``Last update: August 1, 2025``
 
 ***
 :::content-center
@@ -85,7 +85,7 @@ d. When it's done importing it will display this text window.
    <img src="../applio-kaggle-img/settings-updated.png" alt="image" width="600" height="auto">
 
 ‎  
-e. Under session settings in the sidebar turn on "internet". Make sure persistance is on for both files and varibles.
+e. Under "Session options" in the sidebar turn on "internet". Make sure persistance is on for both files and varibles.
 
    <img src="../kaggle-img/kaggle-internet.png" alt="image" width="" height=""> 
 
@@ -150,7 +150,7 @@ a. Click on the Applio URL link to open Applio's UI, click the Tensorboard Url l
 
 ‎
 
-b. Once you've click the Applio Url it will take you to Applio's UI where it operates the same as normal Applio. If you happen to not know how to use Applio you can read about it in their <u>[docs](https://docs.applio.org/applio)</u>.
+b. Once you've click the Applio Url it will take you to Applio's UI where it operates the same as normal Applio. If you happen to not know how to use Applio you can read about it in the <u>[Local Applio Docs](https://docs.aihub.gg/rvc/local/applio/)</u>, it operates similarly.
 
 ***
 
