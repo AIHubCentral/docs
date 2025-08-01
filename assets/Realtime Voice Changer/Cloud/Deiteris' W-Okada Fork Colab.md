@@ -100,6 +100,11 @@ For Fedora / RHEL-based Systems (CentOS, Rocky Linux), run in the terminal:
 ```bash
 sudo yum install -y portaudio
 ```
+
+For Arch / Arch-based Systems (Endeavour, Manjaro Linux), run in the terminal:
+```bash
+sudo pacman -Syu portaudio
+```
 !!!
 
 
