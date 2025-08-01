@@ -328,6 +328,34 @@ This is only for the people that have 2 PCs, and want to use 1 PC for Gaming, th
 - Only RVC models will work. If you have a gpt-sovits one or any other, they will not work.
 - Select `Type: RVC`, then `select file` on the `Model` slot and upload your `.pth` file.
 - No need for an `Index` file, but you can upload it. This controls the accent of the voice model
+
+***
+### Merging Models (Merge Lab) :icon-git-merge:
+
+The Merge Lab allows you to combine multiple RVC V2 voice models (.pth Weights only, not indexs too) into a single, new hybrid model. This is useful for creating unique voices.
+
+1.  **Open Merge Lab:** Scroll down in the user interface and click on the `Merge Lab` button.
+
+  <img src="../wokada-img/merge-lab-button.png" alt="Merge Lab Button in Wokada Deiteris Fork" width="300" height="auto">
+
+
+2.  **Select Model Type:** From the `Type` dropdown menu, choose the type of models you wish to merge. Only models that share the same sample rate and type (e.g., "pyTorchRVCv2, 32000Hz, 768" which are all RVC v2 models with the 32kHz Sample Rate, or "pyTorchRVC, 40000Hz, 256" which are all RVC v1 models with the 40kHz Sample Rate) will be shown and can be merged together.
+
+  <img src="../wokada-img/merge-lab.png" alt="Merge Lab in Wokada Deiteris Fork" width="600" height="auto">
+
+3.  **Adjust Weights:** Use the sliders next to each model's name to set its "weight" (RVC models are PyTorch files, the .pth is the weight containing the voice) or influence in the merged model. The numbers (from 0 to 100) represent the percentage of each voice in the mix.
+
+4.  **Merge and Download:** Once you have set the desired proportions, click the `Merge` button. Your browser will automatically download the new, `merged.pth` model file.
+
+!!! Manual Download
+The merged model is **not** automatically added to your model list. You must upload it to an empty slot yourself by following the steps in the **Adding Models** section.
+!!!
+
+!!!danger Index Merging
+You **can't merge indexs** (in rvc context, the trained accent of the voice). Only the .pth actual voice file.
+!!!
+
+
 ***
 ### Deleting Models
 
@@ -754,6 +782,11 @@ YouTube Tutorials take way more time to make, and get outdated easily in this ca
 
 We had a conversation about this in https://discord.com/channels/1159260121998827560/1159290161683767298/1352325982689951765 & https://discord.com/channels/1159260121998827560/1159290161683767298/1356265862704926907,
 RVC works by downsampling your audio voice to 16khz because f0 estimators only works at that sample rate, after that the model outputs the results using it's original sample rate (without any upscaling). So there won't be the need of having a super extremely expensive, a decent one should do the job.
+
+***
+### Are there unique Voice Models?
+RVC Voice Models need to be trained on something, so the models themselves can't be unique, but you can use the [Merge Lab](http://docs.aihub.gg/realtime-voice-changer/local/deiteris-w-okada-fork/#merging-models-merge-lab) to create a new unique merged model.
+
 
 ***
 ###### ‎

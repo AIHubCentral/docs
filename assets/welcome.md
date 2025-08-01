@@ -75,7 +75,7 @@ icon: home-fill
 - **Lead by:** Nick088, Eddy, Julia (Used to)
 - **General Help:** Poopmaster Raid, Light, Faze Masta, Alexolotl, Delik, Razer, Nick088
 - **Reviewing:** Faze Masta, Alexolotl, SimplCup, Delik, Litsa, Lyery, Razer
-- **OG Guides:** Litsa, LollenApe, Faze Masta, MrM0dz, FDG, Eddy, Julia, Nick088
+- **OG Guides:** Litsa, Faze Masta, MrM0dz, FDG, Eddy, Julia, Nick088
 - **Backend:** Eddy & Yui
 - **Branding:** Grvyscale & Cthulhu
 ***
