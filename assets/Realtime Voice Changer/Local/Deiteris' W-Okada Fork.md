@@ -350,7 +350,7 @@ The Merge Lab allows you to combine multiple RVC V2 voice models (.pth Weights o
 
 3.  **Adjust Weights:** Use the sliders next to each model's name to set its "weight" (RVC models are PyTorch files, the .pth is the weight containing the voice) or influence in the merged model. The numbers (from 0 to 100) represent the percentage of each voice in the mix.
 
-4.  **Merge and Download:** Once you have set the desired proportions, click the `Merge` button. Your browser will automatically download the new, `merged.pth` model file.
+4.  **Merge and Download:** Once you have set the desired proportions, click the `Merge` button. Your browser will automatically download the new, `merged.pth` model file, which you can rename to whatever you want.
 
 !!! Manual Download
 The merged model is **not** automatically added to your model list. You must upload it to an empty slot yourself by following the steps in the **Adding Models** section.
@@ -819,17 +819,20 @@ Gawr Gura: [Hugging Face Link](https://huggingface.co/dacoolkid44/VTuber-RVC/tre
 ## Help
 ***
 
-After you start the program for the first time and it finished downloading files: if it says Failed to download or verify: ... followed by "Press Enter to continue" at the end, then the pretrain download failed. This can happen randomly. Here is what you will need to do:
-!!! Fix
-Go to the "pretrain" folder in the MMVCServerSIO folder.
-Delete everything inside it if there is anything.
+### How to fix "Failed to download or verify"
 
-Download ALL THE FILES from this drive:
-https://drive.google.com/drive/folders/1OFfM9rmxCZkiYjxoK_yzhRbcXpt0TiJ0?usp=drive_link
+After you start the program for the first time and it finished downloading files, but you have slow/unstable internet connection it might say Failed to download or verify: ... followed by "Press Enter to continue" at the end, then the pretrain download failed. To fix it, you can either:
 
-Copy paste everything from this Google Drive inside the pretrain folder.
+!!! Method 1
+Retry with a better connection later.
+!!!
 
-Then run MMVCServerSIO.exe again, this time it should work
+!!! Method 2
+1. Go to the "pretrain" folder in the MMVCServerSIO folder.
+2. Delete everything inside it if there is anything.
+3. Download the [Zipped Version of the Pretrained folder](https://github.com/Nick088Official/Wokada-Deiteris-Fork-Pretrain/releases/download/b2332/pretrain.zip)
+4. Extract the pretrain.zip, be sure the pretrain folder contains only the files, not a pretrain folder inside another pretrain folder with the files.
+5. Then run MMVCServerSIO.exe again, this time it should work.
 !!!
 
 ### Crackle Fix
