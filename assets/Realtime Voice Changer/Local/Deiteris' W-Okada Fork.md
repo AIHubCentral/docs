@@ -767,7 +767,7 @@ Run `FlexASIO GUI`. If it doesn't open, you missed installing the .NET runtime f
 - **Latency:** ✅ Set Input Latency: `0.2` ; ✅ Set Output Latency: `0.2`
 - **Output:** ✅ Set: `;` ✅ AutoConvert
 
-<img src="../wokada-img/FlexASIO-GUI.jpg" alt="FlexASIO GUI Configuration" width="600" height="auto">
+<img src="../wokada-img/flexasio-gui.jpg" alt="FlexASIO GUI Configuration" width="600" height="auto">
 
 !!! Latency Explanation
 Having the input latency at 0.0 can make your microphone crackle. Using 0.1 often works fine. If you experience crackles, experiment with this value (e.g., 0.12, 0.15) until it stops. The lower you can go, the better. If you don't want to experiment, you can keep it at `0.2`.
@@ -785,7 +785,7 @@ In the voice changer app:
 - Select **S.R.:** `48000`
 - Select the **input** and **output** from ASIO. You can select "ALL" in the first column to filter for ASIO devices to make it easier.
 
-<img src="../wokada-img/FlexASIO-server.jpg" alt="Wokada FlexASIO Server Settings" width="600" height="auto">
+<img src="../wokada-img/flexasio-server.jpg" alt="Wokada FlexASIO Server Settings" width="600" height="auto">
 
 Then, on your game or Discord, you select:
 
