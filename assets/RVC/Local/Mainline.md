@@ -1,9 +1,9 @@
 ---
 icon: chevron-right
-order: 5000
+order: 2000
 ---
 
-``Last update: July 18, 2025``
+``Last update: August 3, 2025``
 
 ***
 ###### ‎
@@ -11,7 +11,7 @@ order: 5000
 ## Introduction ‎ :icon-book:
 :::
 
-- Mainline RVC is the base, **original**, & unmodified version of RVC. Made by the <u>[RVC-Project</u>](https://github.com/RVC-Project) team. It can be called either Original/Mainline RVC.
+- Mainline RVC is the base, **original**, & unmodified pfficial version of RVC. Made by the <u>[RVC-Project</u>](https://github.com/RVC-Project) team. It can be called either Original/Mainline RVC.
 
 - It has less features compared to other <u>[forks</u>](https://docs.aihub.gg/essentials/whats-rvc/#forks), but still has the necessary tools to do a decent job.
 

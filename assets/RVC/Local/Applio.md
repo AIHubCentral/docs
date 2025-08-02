@@ -1,9 +1,9 @@
 ---
 icon: chevron-right
-order: 4000
+order: 3000
 ---
 
-``Last update: July 18, 2025``
+``Last update: August 3, 2025``
 
 ***
 :::content-center
@@ -17,11 +17,11 @@ order: 4000
 :::
 - Applio is a VITS-based Voice Conversion Tool developed by the <u>[IA Hispano</u>](https://github.com/IAHispano)</u> team. It's a <u>[Fork</u>](https://docs.aihub.gg/essentials/whats-rvc/#forks) of Original/Mainline RVC.
 
-- It's liked for its great **UI** & **lots** of extra features, such as TTS (with RVC models too), plugins, automatic model upload, customizable theme & more.
+- It's liked for its great **UI**, **performance** improvements and **lots** of extra features, such as TTS (with RVC models too), plugins, automatic model upload, customizable theme & more.
 
 - Because of its user-friendly experience & active development, it's considered to be one of the best forks.     
 
-- Applio has <u>[it's own Docs](https://docs.applio.org/)</u>, which may have more info about the tool.
+- Applio has <u>[it's own Applio Docs](https://docs.applio.org/)</u>, which may have more info about the tool.
 
 
 ***
