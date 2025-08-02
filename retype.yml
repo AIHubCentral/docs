@@ -3,8 +3,6 @@ output: .retype
 
 url: https://docs.aihub.gg/
 
-recase: none
-
 branding:
   title:
   logo: ../assets/img/a.png
