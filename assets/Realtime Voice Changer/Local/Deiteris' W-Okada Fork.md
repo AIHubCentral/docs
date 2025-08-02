@@ -376,12 +376,12 @@ If you wish to delete a model, you can overwrite the slot with a new model. If y
 On the realtime voice changer app wokada, you select:
 
 - Input: Your microphone
-- Output: Virtual Cable
+- Output: Virtual Audio Cable
 - Monitor (if you wish to hear the realtime voice changer on your headphones aswell): Your headphones
 
 On discord and games, you select:
 
-- Input: Virtual Cable
+- Input: Virtual Audio Cable
 - Output: Your headphones
 
 
@@ -408,7 +408,7 @@ Sometimes Client does not work, then use SERVER with prefix "MME" or "Windows WA
 ***
 ### Settings Explained
 ***
-- `PASSTHRU button:` Sends your actual voice and not the realtime voice changer through the virtual cable. You want this to be GLOWING GREEN or GREY (grey for dark mode users) for the realtime voice changer to work.
+- `PASSTHRU button:` Sends your actual voice and not the realtime voice changer through the virtual audio cable. You want this to be GLOWING GREEN or GREY (grey for dark mode users) for the realtime voice changer to work.
 
 - `F0 det:` Pitch extraction algorithm. Both RMVPE (for the best precision and robustness) and FCPE (for less precision & robustness but lower delay) are good options.
 
@@ -693,14 +693,110 @@ Example: NVIDIA RTX 3070 on prebuilt w-okada reaches 170 - 213 ms chunk latency.
 
 ***
 ### Reduce more Delay (Windows Only)
+***
+#### Prerequisite: Match Sample Rates (for both WASAPI & ASIO)
+This first step is mandatory for both methods. You must select the same `sample rate` for your microphone and the virtual audio cable before proceeding.
 
-!!! Reducing more delay with WASAPI guide
-https://rentry.co/LessDelayWasapi
+!!!
+If you don't know how to open your sound devices, press **WIN+R**, type "**mmsys.cpl**", then hit enter.
 !!!
 
-!!! Reducing more delay with ASIO guide. This can slightly decrease more delay but more to set up
-https://rentry.co/lessdelayasio
+1.  Navigate to the `Recording` tab, right-click on your microphone, and select `Properties`.
+2.  Go to the last tab, `Advanced`, and set the sample rate to **48000 Hz**.
+3.  Ensure both options for **Exclusive Mode** are activated.
+
+<img src="../wokada-img/microphone-properties.png" alt="Microphone Properties" width="450" height="auto">
+
+4.  Now, go to the `Playback` tab. Right-click on your virtual audio cable (e.g., Line 1) and go to `Properties`.
+5.  In the `Advanced` tab, adjust the sample rate to match your microphone: **48000 Hz**.
+
+<img src="../wokada-img/vac-properties.png" alt="Virtual Audio Cable Properties" width="450" height="auto">
+
+With the sample rates matched, you can now proceed to configure either WASAPI or ASIO.
+
++++ WASAPI
+!!! What does WASAPI do?
+WASAPI accesses your audio devices directly, while the driver that you use by default (which is "MME") *goes through multiple layers within the Windows audio subsystem*, causing more delay. This will in total cut down **50-80ms delay**.
 !!!
+
+#### Enable WASAPI
+Assuming you completed the prerequisite step, you can now select the correct inputs and outputs in the voice changer as follows:
+
+- **AUDIO:** `SERVER`
+- **S.R.:** Match the sample rate you chose above, which should be `48000`.
+- **Input:** `[WINDOWS WASAPI] Your Microphone`
+- **Output:** `[WINDOWS WASAPI] Your Virtual Audio Cable (e.g., Line 1)`
+
+<img src="../wokada-img/wasapi-server.png" alt="Wokada WASAPI Server Settings" width="600" height="auto">
+
+!!!warning
+You cannot use the noise suppression (`sup1`, `sup2`) or `echo` functions in `SERVER` mode.
+!!!
+
+Then, on your game or Discord, you select:
+
+- **Input:** Your Virtual Audio Cable (e.g., Line 1 Output)
+- **Output:** Your Headphones/Speakers
+
+#### Common Errors
+!!!danger sounddevice.PortAudioError: Error opening Stream: Invalid sample rate [PaErrorCode -9997]
+You did not match the sample rate of your virtual audio cable to your microphone. Return to the prerequisite step and ensure both are set to the same value (48000 Hz).
+!!!
++++ ASIO
+!!!
+I would recommend using WASAPI first if you are a normal user, as ASIO is more complex to set up.
+!!!
+!!! What does ASIO do?
+Like WASAPI, ASIO accesses your audio devices directly, bypassing multiple layers within the Windows audio subsystem that "MME" (the default driver) has to go through. It has a lower algorithmic delay and can reduce total delay by **50-80ms**.
+!!!
+
+#### Step 1: Download and Install FlexASIO
+- Download and run the installer from here: <u>[FlexASIO Download](https://github.com/dechamps/FlexASIO/releases/download/flexasio-1.9/FlexASIO-1.9.exe)</u>
+
+#### Step 2: Download and Install FlexASIO GUI
+- First, you need the .NET Desktop runtime. Download and install it from here: <u>[.NET 6.x Desktop runtime](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)</u>
+- Afterwards, download and install the FlexASIO GUI: <u>[FlexASIO GUI Download](https://github.com/flipswitchingmonkey/FlexASIO_GUI/releases/download/v0.35/FlexASIO.GUIInstaller_0.35.exe)</u>
+
+#### Step 3: Configuring FlexASIO GUI
+Run `FlexASIO GUI`. If it doesn't open, you missed installing the .NET runtime from the previous step. Copy the following settings:
+
+- **Backend:** `Windows WASAPI`
+- **Buffer Size:** ✅ Set to `256`
+- **Input Device:** Select your Microphone.
+- **Output Device:** Select your Virtual Audio Cable (e.g., Line 1).
+- **Latency:** ✅ Set Input Latency: `0.2` ; ✅ Set Output Latency: `0.2`
+- **Output:** ✅ Set: `;` ✅ AutoConvert
+
+<img src="../wokada-img/FlexASIO-GUI.jpg" alt="FlexASIO GUI Configuration" width="600" height="auto">
+
+!!! Latency Explanation
+Having the input latency at 0.0 can make your microphone crackle. Using 0.1 often works fine. If you experience crackles, experiment with this value (e.g., 0.12, 0.15) until it stops. The lower you can go, the better. If you don't want to experiment, you can keep it at `0.2`.
+!!!
+!!!danger
+Click **SAVE TO DEFAULT FLEXASIO.TOML**. Do not forget this step. You can close the GUI afterwards.
+!!!
+
+#### Step 4: Setting it up on the voice changer
+!!!warning
+The Deiteris Fork works with ASIO, while some older versions of the original w-okada do not.
+!!!
+In the voice changer app:
+- Select **AUDIO:** `Server`
+- Select **S.R.:** `48000`
+- Select the **input** and **output** from ASIO. You can select "ALL" in the first column to filter for ASIO devices to make it easier.
+
+<img src="../wokada-img/FlexASIO-server.jpg" alt="Wokada FlexASIO Server Settings" width="600" height="auto">
+
+Then, on your game or Discord, you select:
+
+- **Input:** Your Virtual Audio Cable (e.g., Line 1 Output)
+- **Output:** Your Headphones/Speakers
+
+#### Common Errors
+!!!danger sounddevice.PortAudioError: Error opening Stream: Invalid sample rate [PaErrorCode -9997]
+You did not match the sample rate of your virtual audio cable to your microphone. Return to the prerequisite step and ensure both are set to 48000 Hz.
+!!!
++++
 
 ***
 
