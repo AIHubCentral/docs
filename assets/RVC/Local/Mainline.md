@@ -11,7 +11,7 @@ order: 2000
 ## Introduction ‎ :icon-book:
 :::
 
-- Mainline RVC is the base, **original**, & unmodified pfficial version of RVC. Made by the <u>[RVC-Project</u>](https://github.com/RVC-Project) team. It can be called either Original/Mainline RVC.
+- Mainline RVC is the base, **original**, & unmodified official version of RVC. Made by the <u>[RVC-Project</u>](https://github.com/RVC-Project) team. It can be called either Original/Mainline RVC.
 
 - It has less features compared to other <u>[forks</u>](https://docs.aihub.gg/essentials/whats-rvc/#forks), but still has the necessary tools to do a decent job.
 
@@ -368,4 +368,5 @@ If the training finished but the model still needed training, you don't have to 
 #### `You have reached the end.`
 
 [!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.aihub.gg/contributions/)
+
 :::
