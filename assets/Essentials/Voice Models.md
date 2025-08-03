@@ -49,7 +49,7 @@ As people sometimes upload them incorrectly.
 
 +++ weights.com   
 :::content-center  
-<img src="../searchrvcmodels-img/weights-logo.png" alt="image" width="300" height="auto">           
+<img src="/img/weights-logo.png" alt="Weights Logo" width="300" height="auto">
 :::  
 
 - This a website where people can upload voice models.
@@ -125,7 +125,7 @@ If you're curious about the epochs, <u>[learn more here](https://docs.aihub.gg/r
 
 +++ Weights.com Bot
 :::content-center
-<img src="../searchrvcmodels-img/weights-logo.png" alt="image" width="300" height="auto">           
+<img src="/img/weights-logo.png" alt="Weights Logo" width="300" height="auto">
 :::
 ‎   
 - This is a Discord bot developed by the Weights.com team.

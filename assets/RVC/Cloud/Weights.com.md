@@ -4,7 +4,13 @@ order: 9000
 ---
 
 `Last update: August 3, 2025` 
-‎  
+
+
+***
+:::content-center
+<img src="/img/weights-logo.png" alt="Weights Logo" width="600" height="auto">
+
+
 ***
 ###### ‎  
 :::content-center
