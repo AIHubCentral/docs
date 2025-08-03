@@ -322,7 +322,9 @@ This is only for the people that have 2 PCs, and want to use 1 PC for Gaming, th
 ## Voice Models
 ***
 
-### Adding Models
+### Managing Models
+
+#### Adding Models
 
 <img src="../wokada-img/edit.png" alt="Edit Button in Wokada Deiteris Fork to Add Models" width="430" height="auto">
 
@@ -332,7 +334,42 @@ This is only for the people that have 2 PCs, and want to use 1 PC for Gaming, th
 - Pick any slot you want, click `upload`
 - Only RVC models will work. If you have a gpt-sovits one or any other, they will not work.
 - Select `Type: RVC`, then `select file` on the `Model` slot and upload your `.pth` file.
-- No need for an `Index` file, but you can upload it. This controls the accent of the voice model
+- No need for an `Index` file, but you can upload it. This controls the accent of the voice model.
+
+***
+#### Renaming Models
+
+!!!danger A Common Bug
+Attempting to rename a model directly within the Web User Interface will cause the program to crash. This is a known bug. Use one of the two methods below to safely rename your models.
+!!!
+
+**Method 1: Re-uploading the Model**
+
+This is the simplest method.
+
+1.  Find the model's `.pth` file on your computer.
+2.  Rename the file to your desired new name.
+3.  In the voice changer UI, click `Edit`, select the slot of the model you want to rename, and click `upload`.
+4.  Re-upload the renamed `.pth` file to the same slot. This will overwrite the old model and update its name.
+
+**Method 2: Editing the Configuration File**
+
+This method doesn't require re-uploading.
+
+1.  Navigate to your `MMVCServerSIO` folder.
+2.  Inside, open the `model_dir` folder. You will see several numbered folders, each corresponding to a model slot in the UI.
+3.  Open the folder for the slot number you want to rename.
+4.  Inside this folder, you will find a `params.json` configuration file. Open this file with a text editor like Notepad.
+5.  Look for the `"name":` field in the file. Change the text in the quotes to your desired new model name.
+
+<img src="../wokada-img/json-rename-model.png" alt="Editing the model name in the JSON file with Notepad" width="800" height="auto">
+
+6.  Save the `.json` file. The name will be updated in the voice changer UI.
+
+***
+#### Deleting Models
+
+If you wish to delete a model, you can simply overwrite the slot with a new model by following the steps in the **Adding Models** section. If you want to completely empty a slot, navigate to the `MMVCServerSIO/model_dir` folder, open the folder of the slot number you want to delete, and delete all the files inside it.
 
 ***
 ### Merging Models (Merge Lab) :icon-git-merge:
@@ -359,12 +396,6 @@ The merged model is **not** automatically added to your model list. You must upl
 !!!danger Index Merging
 You **can't merge indexs** (in rvc context, the trained accent of the voice). Only the .pth actual voice file.
 !!!
-
-
-***
-### Deleting Models
-
-If you wish to delete a model, you can overwrite the slot with a new model. If you insist on fully emptying a slot, head over to the `model_dir` folder, open the folder of the slot number you want to delete, and delete the model from that folder
 
 
 ***
