@@ -32,9 +32,9 @@ icon: home-fill
 ***
 #### :icon-chevron-right: 🍏 <u>[Applio Guide](https://docs.aihub.gg/rvc/local/applio/)</u>
 ***
-#### :icon-chevron-right: :icon-broadcast: ‎ <u>[Deiteris' W-okada Guide](https://docs.aihub.gg/rvc-voice-changer/local/deiteris-w-okada-fork/)</u>
+#### :icon-chevron-right: :icon-broadcast: ‎ <u>[Deiteris' W-okada Guide](https://docs.aihub.gg/realtime-voice-changer/local/deiteris-w-okada-fork/)</u>
 ***
-#### :icon-chevron-right: :icon-broadcast: ‎ <u>[Vonovox Guide](https://docs.aihub.gg/rvc-voice-changer/local/vonovox/)</u>
+#### :icon-chevron-right: :icon-broadcast: ‎ <u>[Vonovox Guide](https://docs.aihub.gg/realtime-voice-changer/local/vonovox/)</u>
 
 
 

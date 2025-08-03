@@ -105,7 +105,7 @@ If you plan on playing games at the same, do not use CPU-conversion. With CPU, t
 It's free, but you will need a phone number verification.
 !!!
 
-<u>[Read the Tutorial HERE](https://docs.aihub.gg/rvc-voice-changer/cloud/deiteris-w-okada-fork-kaggle/)</u>
+<u>[Read the Tutorial HERE](https://docs.aihub.gg/realtime-voice-changer/cloud/deiteris-w-okada-fork-kaggle/)</u>
 
 ***
 #### Google Colab
@@ -114,7 +114,7 @@ It's free, but you will need a phone number verification.
 You need the Google Colab Paid Tier to run this, as it uses a Web User Interface, else you could risk getting disconnected or getting banned off Colab.
 !!!
 
-<u>[Read the tutorial HERE](https://docs.aihub.gg/rvc-voice-changer/cloud/deiteris-w-okada-fork-colab/)</u>
+<u>[Read the tutorial HERE](https://docs.aihub.gg/realtime-voice-changer/cloud/deiteris-w-okada-fork-colab/)</u>
 
 ***
 
