@@ -32,7 +32,6 @@ visibility:
     - #### :icon-chevron-right: <u>[Mainline](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI)</u> (Original RVC)
         - ##### :icon-cloud: <u> [Mainline Kaggle](https://www.kaggle.com/code/hinabl/mainline)</u>
          - ##### :icon-cloud: <u>[Mainline Colab](https://colab.research.google.com/github/hinabl/RVC-Online/blob/main/Mainline_Colab_Full.ipynb)</u>
-         - ##### :icon-cloud: <u>[Ilaria RVC Zero](https://huggingface.co/spaces/TheStinger/Ilaria_RVC)</u> (Inference only)
     ###### ‎    
     {.list-icon}
     - #### :icon-repo-forked: <u>[Applio](https://applio.org/)</u>
