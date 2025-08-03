@@ -101,13 +101,59 @@ You can find all of the community made pretrains in the "pretrain-models" channe
 
 Here is a list of all publicly available pretrains: 
 
-||| DMR V1 by Razer
-This is a fine-tuned based on the original RVC V2 pretrained and made with a 11.3 hour dataset aimed towards e-girl, soft male/female and deep male/female voices. This model was trained with Mangio-Crepe/Crepe (Applio) therefore it is advisable to use this extraction algorithm with a 128 hop length or below and have a clean dataset due to the sensitivity to noise of this algorithm.
+||| TITAN by blaise-tk
+TITAN is a fine-tuned based on the original RVC V2 pretrained, leveraging an 11.15-hours dataset sourced from Expresso. It gives cleaner results compared to the original pretrained, also handles the accent and noise better due to its robustness, being able to generate high quality results. Like Ov2 Super, it allows models to be trained with few epochs.
 
 - **32k Download:**
-    -  <u>[**D Download**](https://huggingface.co/Razer112/DMR_Pretrain/resolve/main/D_DMR-V1.pth?download=true)</u>
-    -  <u>[**G Download**](https://huggingface.co/Razer112/DMR_Pretrain/resolve/main/G_DMR-V1.pth?download=true)</u> 
-||| 
+    - <u>[**D Download**](https://huggingface.co/blaise-tk/TITAN/resolve/main/models/medium/32k/pretrained/D-f032k-TITAN-Medium.pth?download=true)</u>
+    - <u>[**G Download**](https://huggingface.co/blaise-tk/TITAN/resolve/main/models/medium/32k/pretrained/G-f032k-TITAN-Medium.pth?download=true)</u>
+- **40k Download:**
+    - <u>[**D Download**](https://huggingface.co/blaise-tk/TITAN/resolve/main/models/medium/40k/pretrained/D-f040k-TITAN-Medium.pth?download=true)</u>
+    - <u>[**G Download**](https://huggingface.co/blaise-tk/TITAN/resolve/main/models/medium/40k/pretrained/G-f040k-TITAN-Medium.pth?download=true)</u>
+- **48k Download:**
+    - <u>[**D Download**](https://huggingface.co/blaise-tk/TITAN/resolve/main/models/medium/48k/pretrained/D-f048k-TITAN-Medium.pth?download=true)</u>
+    - <u>[**G Download**](https://huggingface.co/blaise-tk/TITAN/resolve/main/models/medium/48k/pretrained/G-f048k-TITAN-Medium.pth?download=true)</u>
+|||
+||| Nanashi V1.7 by shiromiya
+Nanashi V1.7 is a fine-tuned based on TITAN pretrained and made with 11 hours of Brazilian music, so it will work better with this language but it can work with other languages without any problems, like TITAN, it allows models to be trained with few epochs and handles the noise better.
+
+- **32k Download:**
+    - <u>[**D Download**](https://huggingface.co/shiromiya/nanashi-pretrain/resolve/main/v1.7/D_nanashi_v1_7.pth?download=true)</u>
+    - <u>[**G Download**](https://huggingface.co/shiromiya/nanashi-pretrain/resolve/main/v1.7/G_nanashi_v1_7.pth?download=true)</u>
+|||
+||| KLM 4.1 by SeoulStreamingStation
+KLM 4.1 is a fine-tuned based on KLM V7 pretrained and made with around 100 hours dataset (Korean vocal/speech, Japanese vocal/speech and English speech), so it will work better with those languages. Unlike typical pretrained models KLM is a pretrained model created to make vocal guides using short voice recordings from a studio, this means that even with short dataset high pitch information it is possible to implement high-pitched sounds but it is sensitive to noise so it is recommended to use it with high quality datasets
+
+- **32k Download:**
+    - <u>[**D Download**](https://huggingface.co/SeoulStreamingStation/KLM4.1/resolve/main/D_KLM41_32k.pth?download=true)</u>
+    - <u>[**G Download**](https://huggingface.co/SeoulStreamingStation/KLM4.1/resolve/main/G_KLM41_32k.pth?download=true)</u>
+
+- **48k Download:**
+    - <u>[**D Download**](https://huggingface.co/SeoulStreamingStation/KLM4.1/resolve/main/D_KLM41_48k.pth?download=true)</u>
+    - <u>[**G Download**](https://huggingface.co/SeoulStreamingStation/KLM4.1/resolve/main/G_KLM41_48k.pth?download=true)</u>
+|||
+||| KLM 4.2 by SeoulStreamingStation
+KLM 4.2 maintains the same highly extensive pitch range as before and was developed to be able to handle high-pitched vocal inference even without having the corresponding vocal data of the model you wish to generate. KLM 4.2 was trained with 146 hours of data which mostly contains Korean, Japanese and some English.
+
+- **32k Download:**
+    - <u>[**D Download**](https://huggingface.co/SeoulStreamingStation/KLM4.2/resolve/main/D_KLM42_32k_x10.pth?download=true)</u>
+    - <u>[**G Download**](https://huggingface.co/SeoulStreamingStation/KLM4.2/resolve/main/G_KLM42_32k_x10.pth?download=true)</u>
+
+|||
+||| KLM 4 by SeoulStreamingStation :icon-star-fill:
+KLM 4 is the final HiFi-GAN pretrain that is going to be made by SSS. This version of klm is like all of the others but it follows the original structure of training and contains noise in the dataset so it can handle it better. This was trained with 800 hours of data, with a large portion of it being in Korean.
+
+- **32k Download:**
+    - <u>[**D Download**](https://huggingface.co/SeoulStreamingStation/KLM49_HFG/resolve/main/D_KLM_HFG_32k.pth?download=true)</u>
+    - <u>[**G Download**](https://huggingface.co/SeoulStreamingStation/KLM49_HFG/resolve/main/G_KLM_HFG_32k.pth?download=true)</u>
+- **40k Download:**
+    - <u>[**D Download**](https://huggingface.co/SeoulStreamingStation/KLM49_HFG/resolve/main/D_KLM_HFG_40k.pth?download=true)</u>
+    - <u>[**G Download**](https://huggingface.co/SeoulStreamingStation/KLM49_HFG/resolve/main/G_KLM_HFG_40k.pth?download=true)</u>
+- **48k Download:**
+    - <u>[**D Download**](https://huggingface.co/SeoulStreamingStation/KLM49_HFG/resolve/main/D_KLM_HFG_48k.pth?download=true)</u>
+    - <u>[**G Download**](https://huggingface.co/SeoulStreamingStation/KLM49_HFG/resolve/main/G_KLM_HFG_48k.pth?download=true)</u>
+
+|||
 ||| DMR V2 by Razer
 This is a fine-tuned based on the original RVC V2 pretrained and made with 22 hours of dataset aimed towards e-girl, soft male/female and deep male/female voices.
 
@@ -136,52 +182,12 @@ This is a fine-tuned pretrain based on the original pretrains and was made with 
     - <u>[**D Download**](https://huggingface.co/Loren85/IMA-TEST-V1/resolve/main/D_2333333.pth?download=true)</u>
     - <u>[**G Download**](https://huggingface.co/Loren85/IMA-TEST-V1/resolve/main/G_2333333.pth?download=true)</u>
 |||
-||| KLM 4.1 by SeoulStreamingStation
-KLM 4.1 is a fine-tuned based on KLM V7 pretrained and made with around 100 hours dataset (Korean vocal/speech, Japanese vocal/speech and English speech), so it will work better with those languages. Unlike typical pretrained models KLM is a pretrained model created to make vocal guides using short voice recordings from a studio, this means that even with short dataset high pitch information it is possible to implement high-pitched sounds but it is sensitive to noise so it is recommended to use it with high quality datasets
-
-- **32k Download:**
-    - <u>[**D Download**](https://huggingface.co/SeoulStreamingStation/KLM4.1/resolve/main/D_KLM41_32k.pth?download=true)</u>
-    - <u>[**G Download**](https://huggingface.co/SeoulStreamingStation/KLM4.1/resolve/main/G_KLM41_32k.pth?download=true)</u>
-‎ 
-- **48k Download:**
-    - <u>[**D Download**](https://huggingface.co/SeoulStreamingStation/KLM4.1/resolve/main/D_KLM41_48k.pth?download=true)</u>
-    - <u>[**G Download**](https://huggingface.co/SeoulStreamingStation/KLM4.1/resolve/main/G_KLM41_48k.pth?download=true)</u>
-|||
-||| KLM 4.2 by SeoulStreamingStation
-KLM 4.2 maintains the same highly extensive pitch range as before and was developed to be able to handle high-pitched vocal inference even without having the corresponding vocal data of the model you wish to generate. KLM 4.2 was trained with 146 hours of data which mostly contains Korean, Japanese and some English.
-
-- **32k Download:**
-    - <u>[**D Download**](https://huggingface.co/SeoulStreamingStation/KLM4.2/resolve/main/D_KLM42_32k_x10.pth?download=true)</u>
-    - <u>[**G Download**](https://huggingface.co/SeoulStreamingStation/KLM4.2/resolve/main/G_KLM42_32k_x10.pth?download=true)</u>
-
-|||
-||| KLM 4 by SeoulStreamingStation :icon-star-fill:
-KLM 4 is the final HiFi-GAN pretrain that is going to be made by SSS. This version of klm is like all of the others but it follows the original structure of training and contains noise in the dataset so it can handle it better. This was trained with 800 hours of data, with a large portion of it being in Korean.
-
-- **32k Download:**
-    - <u>[**D Download**](https://huggingface.co/SeoulStreamingStation/KLM49_HFG/resolve/main/D_KLM_HFG_32k.pth?download=true)</u>
-    - <u>[**G Download**](https://huggingface.co/SeoulStreamingStation/KLM49_HFG/resolve/main/G_KLM_HFG_32k.pth?download=true)</u>
-- **40k Download:**
-    - <u>[**D Download**](https://huggingface.co/SeoulStreamingStation/KLM49_HFG/resolve/main/D_KLM_HFG_40k.pth?download=true)</u>
-    - <u>[**G Download**](https://huggingface.co/SeoulStreamingStation/KLM49_HFG/resolve/main/G_KLM_HFG_40k.pth?download=true)</u>
-- **48k Download:**
-    - <u>[**D Download**](https://huggingface.co/SeoulStreamingStation/KLM49_HFG/resolve/main/D_KLM_HFG_48k.pth?download=true)</u>
-    - <u>[**G Download**](https://huggingface.co/SeoulStreamingStation/KLM49_HFG/resolve/main/G_KLM_HFG_48k.pth?download=true)</u>
-
-|||
 ||| KLM BeatzForge by SeoulStreamingStation
 This is a fine-tuned pretrain based on the original pretrain that improves drum models. 
 
 - **32k Download:**
     - <u>[**D Download**](https://huggingface.co/SeoulStreamingStation/KLM_BEATMASTER/resolve/main/D_BeatzForge_V2_32k.pth?download=true)</u>
     - <u>[**G Download**](https://huggingface.co/SeoulStreamingStation/KLM_BEATMASTER/resolve/main/G_BeatzForge_V2_32k.pth?download=true)</u>
-|||
-||| Nanashi V1.7 by shiromiya
-Nanashi V1.7 is a fine-tuned based on TITAN pretrained and made with 11 hours of Brazilian music, so it will work better with this language but it can work with other languages without any problems, like TITAN, it allows models to be trained with few epochs and handles the noise better.
-
-- **32k Download:**
-    - <u>[**D Download**](https://huggingface.co/shiromiya/nanashi-pretrain/resolve/main/v1.7/D_nanashi_v1_7.pth?download=true)</u>
-    - <u>[**G Download**](https://huggingface.co/shiromiya/nanashi-pretrain/resolve/main/v1.7/G_nanashi_v1_7.pth?download=true)</u>
 |||
 ||| Nanashi Anime v1 by shiromiya
 This is a fine-tuned pretrain based off of the original pretrain which aims to improve anime-style speech. This was train with 11 hours of speech.
@@ -232,16 +238,6 @@ SingerPetrain is a fine-tuned based on Ov2 Super pretrained and made with 14 hou
     - <u>[**D Download**](https://huggingface.co/Sztef/SingerPreTrained/resolve/main/update/f0D_SingerPreTrain.pth?download=true)</u>
     - <u>[**G Download**](https://huggingface.co/Sztef/SingerPreTrained/resolve/main/update/f0G_SingerPreTrain.pth?download=true)</u>
 |||
-||| Snowie by MUSTAR
-Snowie is a fine-tuned pretrain based on the original pretrain. This pretrain's goal is to improve Russian speech without effecting English speech. This was trained with 21 hours of Russian speech.
-
-- **40k Download:**
-    - <u>[**D Download**](https://huggingface.co/MUSTAR/SnowyRuPretrain_EnP_40k/resolve/main/D_Snowie_RuPretrain_EnP.pth?download=true)</u>
-    - <u>[**G Download**](https://huggingface.co/MUSTAR/SnowyRuPretrain_EnP_40k/resolve/main/G_Snowie_RuPretrain_EnP.pth?download=true)</u>
-- **48k Download:**
-    - <u>[**D Download**](https://huggingface.co/MUSTAR/SnowyRuPretrain_EnP_48k/resolve/main/D_Snowie_Rupretrain_48k_V1.2.pth?download=true)</u>
-    - <u>[**G Download**](https://huggingface.co/MUSTAR/SnowyRuPretrain_EnP_48k/resolve/main/G_Snowie_Rupretrain_48k_V1.2.pth?download=true)</u>
-|||
 ||| SnowieV3 X RIN_E3 by MUSTAR
 SnowieV3 X RIN_E3 continues the training with Snowie dataset and then finetuned with additional data, so it will work better with English, Russian and Japanese language and also helps models of other languages to pronounce them well.
 
@@ -261,26 +257,6 @@ SnowieV3.1 is a fine-tuned based on Snowie base pretrained (not publicly availab
 - **48k Download:**
     - <u>[**D Download**](https://huggingface.co/MUSTAR/SnowieV3.1-48k/resolve/main/D_SnowieV3.1_48k.pth?download=true)</u>
     - <u>[**G Download**](https://huggingface.co/MUSTAR/SnowieV3.1-48k/resolve/main/G_SnowieV3.1_48k.pth?download=true)</u>
-|||
-||| TITAN by blaise-tk
-TITAN is a fine-tuned based on the original RVC V2 pretrained, leveraging an 11.15-hours dataset sourced from Expresso. It gives cleaner results compared to the original pretrained, also handles the accent and noise better due to its robustness, being able to generate high quality results. Like Ov2 Super, it allows models to be trained with few epochs.
-
-- **32k Download:**
-    - <u>[**D Download**](https://huggingface.co/blaise-tk/TITAN/resolve/main/models/medium/32k/pretrained/D-f032k-TITAN-Medium.pth?download=true)</u>
-    - <u>[**G Download**](https://huggingface.co/blaise-tk/TITAN/resolve/main/models/medium/32k/pretrained/G-f032k-TITAN-Medium.pth?download=true)</u>
-- **40k Download:**
-    - <u>[**D Download**](https://huggingface.co/blaise-tk/TITAN/resolve/main/models/medium/40k/pretrained/D-f040k-TITAN-Medium.pth?download=true)</u>
-    - <u>[**G Download**](https://huggingface.co/blaise-tk/TITAN/resolve/main/models/medium/40k/pretrained/G-f040k-TITAN-Medium.pth?download=true)</u>
-- **48k Download:**
-    - <u>[**D Download**](https://huggingface.co/blaise-tk/TITAN/resolve/main/models/medium/48k/pretrained/D-f048k-TITAN-Medium.pth?download=true)</u>
-    - <u>[**G Download**](https://huggingface.co/blaise-tk/TITAN/resolve/main/models/medium/48k/pretrained/G-f048k-TITAN-Medium.pth?download=true)</u>
-|||
-||| UKA by PlasmaTi
-UKA is a fine-tuned pretrain based on the original pretrain. This pretrain has 8 hours of english speech all containing the British accent. 
-
-- **32k Download:**
-    - <u>[**D Download**](https://huggingface.co/Plasmati/Pretrains/resolve/main/UKA-Pretrain-D.pth?download=true)</u>
-    - <u>[**G Download**](https://huggingface.co/Plasmati/Pretrains/resolve/main/UKA-Pretrain-G.pth?download=true)</u>
 |||
 ***
 ###### ‎ 
