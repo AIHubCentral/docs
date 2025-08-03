@@ -12,24 +12,24 @@
     <meta name="generator" content="Retype 3.11.0">
 
     <!-- Primary Meta Tags -->
-    <title>AICoverMaker</title>
-    <meta name="title" content="AICoverMaker">
-    <meta name="description" content="Last update: August 3, 2025">
+    <title>Weights.com</title>
+    <meta name="title" content="Weights.com">
+    <meta name="description" content="Last update: August 3, 2025‎">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://docs.aihub.gg/rvc/local/aicovermaker/">
+    <link rel="canonical" href="https://docs.aihub.gg/rvc/cloud/weights.com/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://docs.aihub.gg/rvc/local/aicovermaker/">
-    <meta property="og:title" content="AICoverMaker">
-    <meta property="og:description" content="Last update: August 3, 2025">
+    <meta property="og:url" content="https://docs.aihub.gg/rvc/cloud/weights.com/">
+    <meta property="og:title" content="Weights.com">
+    <meta property="og:description" content="Last update: August 3, 2025‎">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://docs.aihub.gg/rvc/local/aicovermaker/">
-    <meta property="twitter:title" content="AICoverMaker">
-    <meta property="twitter:description" content="Last update: August 3, 2025">
+    <meta property="twitter:url" content="https://docs.aihub.gg/rvc/cloud/weights.com/">
+    <meta property="twitter:title" content="Weights.com">
+    <meta property="twitter:description" content="Last update: August 3, 2025‎">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
@@ -224,48 +224,34 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="retype-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="aicovermaker" class="break-words">
+<doc-anchor-target id="weightscom" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#aicovermaker">#</doc-anchor-trigger>
-        <span>AICoverMaker</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#weightscom">#</doc-anchor-trigger>
+        <span>Weights.com</span>
     </h1>
 </doc-anchor-target>
-<p><code v-pre>Last update: August 3, 2025</code></p>
+<p><code v-pre>Last update: August 3, 2025</code>
+‎</p>
 <hr>
-<div class="content-center"><img src="..\aicovermaker-img\banner.png" alt="image" width="700">
-</div>
 <doc-anchor-target id="section">
     <h6>
         <doc-anchor-trigger class="header-anchor-trigger" to="#section">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
-<div class="content-center"><doc-anchor-target id="introduction-">
+<div class="content-center"><doc-anchor-target id="introduction">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#introduction-">#</doc-anchor-trigger>
-        <span>Introduction ‎</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#introduction">#</doc-anchor-trigger>
+        <span>Introduction</span>
     </h2>
 </doc-anchor-target>
 </div>
 <ul>
-<li><p>AICoverMaker (or known as RVC-AI-Cover-Maker-WebUI) is an Applio RVC <u><a href="https://docs.aihub.gg/essentials/whats-rvc/#forks">Fork</u></a> developed by the <u><a href="https://github.com/Eddycrack864">Eddy</u></a></u>, as a better and updated version of the old AICoverGen.</p>
-</li>
-<li><p>It&#x27;s liked for its great <strong>UI</strong> &amp; <strong>Automated AI Cover Process</strong>, making it the easiest way to make AI Covers, as it automatically separates instrumentals &amp; vocals, and mixes them back with the converted vocals.</p>
-</li>
+<li><strong>Weights.com</strong> is an easy, freemium AI Cloud Website platform that provides tools for creating AI voice covers, text-to-speech, and more. It serves as an all-in-one web UI, eliminating the need for powerful local hardware or complex setups.</li>
+<li>The platform is designed to be user-friendly, catering to both beginners and experienced users. You can train your own custom voice models or use a vast library of high-quality, community-made models, from both the <a href="https://discord.gg/aihub">AI Hub Discord</a> &amp; the <a href="https://weights.com/models">Weights.com Models Page</a>.</li>
+<li><a href="https://discord.gg/weights">Weights</a> is partnered with <a href="https://discord.gg/aihub">AI HUB</a> &amp; <a href="https://discord.gg/dreamtavern">DreamTavern</a>.</li>
+<li>It&#x27;s named Weights, as it was originally meant only for RVC with the domain Weights.gg, storing RVC Models, which are PyTorch <em>Weights</em>. Later on, the domain changed to Weights.com and expanded to other things, but for this specific guide, we will focus on the RVC-related side.</li>
 </ul>
-<hr>
-<doc-anchor-target id="are-rvc-models-safe">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#are-rvc-models-safe">#</doc-anchor-trigger>
-        <span>Are RVC Models Safe?</span>
-    </h4>
-</doc-anchor-target>
-<p>RVC Models are PyTorch Models, a Python library used for AI.
-PyTorch uses serialization via Pythons&#x27; Pickle Module, converting the model to a file.
-Since pickle can execute arbitrary code when loading a model, it could be theoretically used for malware, but this fork has a <strong>built-in feature to prevent code execution along the model.</strong>
-Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/security-pickle#hubs-security-scanner">Security Scanner</a></u></strong> which scans for any unsafe pickle exploits and uses also ClamAV for scanning dangerous files.</p>
-<hr>
-<p>‎</p>
 <doc-anchor-target id="pros--cons">
     <h4>
         <doc-anchor-trigger class="header-anchor-trigger" to="#pros--cons">#</doc-anchor-trigger>
@@ -300,162 +286,96 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
     </div>
     <div class="px-5 py-3 docs-columns-content border-r border-base-border">
 <ul>
-<li>Automatically separates instrumentals and mixes them with converted ones</li>
-<li>Currently stable</li>
-<li>Faster interface</li>
-<li>Automatic model upload</li>
-<li>Has Mangio-Crepe</li>
-<li>User-friendly UI</li>
+<li>All-in-one web cloud platform.</li>
+<li>No need for a powerful PC.</li>
+<li>Mobile friendly, with even an app.</li>
+<li>User-friendly interface suitable for beginners.</li>
+<li>Large library of public RVC voice models (anime, singers, etc.).</li>
+<li>Free tier available for basic usage.</li>
+<li>Integrated TTS and direct recording options.</li>
+<li>Active community for sharing and collaboration.</li>
 </ul>
     </div>
     <div class="px-5 py-3 docs-columns-content">
 <ul>
-<li>Can&#x27;t Train models</li>
-<li>No Precompiled versions for Non-Windows Users</li>
-<li>Doesn&#x27;t support Mac nor any NON-Nvidia GPUs</li>
+<li>Free plan has limitations on credits and features.</li>
+<li>Processing and training times could be slow due to queues in certain, but it&#x27;s better on Paid Tiers.</li>
+<li>Less granular advanced control compared to forks like Applio or Mainline/Original RVC, Because it&#x27;s meant for everyone and not just tech experts.</li>
 </ul>
     </div>
 </div>
 </doc-panel>
 <hr>
-<doc-anchor-target id="system--hardware-requirements">
+<div class="content-center"><doc-anchor-target id="training-a-voice-model">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#system--hardware-requirements">#</doc-anchor-trigger>
-        <span>System &amp; Hardware Requirements</span>
-    </h2>
-</doc-anchor-target>
-<div class="table-wrapper scrollbar overflow-hidden">
-<table class="comfortable">
-<thead>
-<tr>
-<th style="text-align: center;"><strong>SPEC</strong></th>
-<th style="text-align: center;"><strong>MINIMUM REQUIREMENT</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">OS</td>
-<td style="text-align: center;">Windows 10 or later / Any Modern Linux Distro</td>
-</tr>
-<tr>
-<td style="text-align: center;">RAM</td>
-<td style="text-align: center;">6GB</td>
-</tr>
-<tr>
-<td style="text-align: center;">Storage</td>
-<td style="text-align: center;">6 GB</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="table-wrapper scrollbar overflow-hidden">
-<table class="comfortable">
-<thead>
-<tr>
-<th style="text-align: center;"><strong>SPEC</strong></th>
-<th style="text-align: center;"><strong>SUGGESTED REQUIREMENT</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">OS</td>
-<td style="text-align: center;">Windows 10 or later / Any Modern Linux Distro</td>
-</tr>
-<tr>
-<td style="text-align: center;">GPU</td>
-<td style="text-align: center;">NVIDIA RTX 20 Series or later</td>
-</tr>
-<tr>
-<td style="text-align: center;">RAM</td>
-<td style="text-align: center;">6GB+</td>
-</tr>
-<tr>
-<td style="text-align: center;">Storage</td>
-<td style="text-align: center;">6GB+</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>In case you don&#x27;t meet the <u><a href="https://docs.aihub.gg//rvc/local/aicovermaker/#system--hardware-requirements/">requirements</a></u> to run it locally, it also has a <u><a href="https://docs.aihub.gg/rvc/cloud/aicovermaker/">2 Cloud Versions: Kaggle &amp; Colab</a></u></p>
-<hr>
-<doc-anchor-target id="section-1">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-1">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
-<div class="content-center"><doc-anchor-target id="download">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#download">#</doc-anchor-trigger>
-        <span>Download <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M4.75 17.25a.75.75 0 0 1 .75.75v2.25c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V18a.75.75 0 0 1 1.5 0v2.25A1.75 1.75 0 0 1 18.25 22H5.75A1.75 1.75 0 0 1 4 20.25V18a.75.75 0 0 1 .75-.75Z"/><path d="M5.22 9.97a.749.749 0 0 1 1.06 0l4.97 4.969V2.75a.75.75 0 0 1 1.5 0v12.189l4.97-4.969a.749.749 0 1 1 1.06 1.06l-6.25 6.25a.749.749 0 0 1-1.06 0l-6.25-6.25a.749.749 0 0 1 0-1.06Z"/></g></g></svg></span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#training-a-voice-model">#</doc-anchor-trigger>
+        <span>Training a Voice Model <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M8.75 11a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5a.75.75 0 0 1 .75-.75Zm7.25.75a.75.75 0 0 0-1.5 0v3.5a.75.75 0 0 0 1.5 0v-3.5Z"/><path d="M9.813 1h2.437a.75.75 0 0 1 .75.75V5h6.75A2.25 2.25 0 0 1 22 7.25v5.25h1.25a.75.75 0 0 1 0 1.5H22v5.75A2.25 2.25 0 0 1 19.75 22H4.25A2.25 2.25 0 0 1 2 19.75V14H.75a.75.75 0 0 1 0-1.5H2V7.25A2.25 2.25 0 0 1 4.25 5h7.25V2.5H9.813A.75.75 0 0 1 9.812 1ZM3.5 7.25v12.5c0 .414.336.75.75.75h15.5a.75.75 0 0 0 .75-.75V7.25a.75.75 0 0 0-.75-.75H4.25a.75.75 0 0 0-.75.75Z"/></g></g></svg></span>
     </h2>
 </doc-anchor-target>
 </div>
-<doc-anchor-target id="section-2">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-2">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
+<doc-anchor-target id="training-disclaimer">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#training-disclaimer">#</doc-anchor-trigger>
+        <span><u>Training Disclaimer</u></span>
+    </h4>
 </doc-anchor-target>
+<p>Before you train your first model, Weights will present you with a disclaimer that you must accept. This ensures that the tool is used ethically and legally.</p>
 <div class="flex mb-6">
-    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-warning"></div>
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-success"></div>
     <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
         <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-warning" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-success" width="22" height="22" viewBox="0 0 24 24" role="presentation">
                 <g fill="currentColor"><g>
-                    <path d="M22.48 15.59L14.01 1.45A2.968 2.968 0 0012.16.09c-.78-.19-1.58-.07-2.27.35-.41.25-.76.6-1.01 1.01v.01L.4 15.6c-.83 1.43-.33 3.27 1.1 4.1.45.26.95.4 1.48.4h16.95c.8-.01 1.55-.33 2.11-.9.56-.57.87-1.33.86-2.13a3.04 3.04 0 00-.42-1.48zm-1.87 2.21c-.19.19-.44.3-.69.3H2.99c-.17 0-.34-.05-.49-.13a.992.992 0 01-.37-1.35L10.6 2.48c.08-.14.2-.25.34-.33a.992.992 0 011.37.33l8.46 14.13c.09.15.13.32.13.49 0 .26-.1.51-.29.7z"></path>
-                    <path d="M11.45 12.1c.55 0 1-.45 1-1v-4c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .56.45 1 1 1zM11.46 14.1c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path d="M21 9.09c-.55 0-1 .45-1 1v.92c0 4.96-4.04 8.99-9 8.99-4.97 0-9-4.04-9-9s4.04-9 9-9c1.27 0 2.5.26 3.66.78.51.22 1.1 0 1.32-.51.23-.5 0-1.1-.51-1.32C14.06.32 12.56 0 11.01 0H11C4.94 0 0 4.93 0 10.99 0 17.06 4.93 22 10.99 22H11c6.06 0 11-4.93 11-10.99v-.92c0-.56-.45-1-1-1z"></path>
+                    <path d="M8.71 9.31a.996.996 0 10-1.41 1.41l3 3c.19.19.44.29.71.29.27 0 .52-.11.71-.29l10-10.01a.996.996 0 10-1.41-1.41L11 11.6 8.71 9.31z"></path>
                 </g></g>
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-            <h5>Before Downloading (Applies to both methods):</h5>
+            <h5>The key terms are:</h5>
 <ul>
-<li>Don&#x27;t put the folder in a directory with privileged access (like <code v-pre>C:\Program Files</code>).</li>
-<li>Make sure the file path does not contain any spaces or special characters.</li>
-<li>It&#x27;s recommended to temporarily deactivate your antivirus and firewall to avoid missing dependencies during installation.</li>
+<li><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12Zm16.28-2.72a.751.751 0 0 0-.018-1.042.751.751 0 0 0-1.042-.018l-5.97 5.97-2.47-2.47a.751.751 0 0 0-1.042.018.751.751 0 0 0-.018 1.042l3 3a.75.75 0 0 0 1.06 0Z"/></g></g></svg> Never use the voice of someone without their consent.</li>
+<li><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12Zm16.28-2.72a.751.751 0 0 0-.018-1.042.751.751 0 0 0-1.042-.018l-5.97 5.97-2.47-2.47a.751.751 0 0 0-1.042.018.751.751 0 0 0-.018 1.042l3 3a.75.75 0 0 0 1.06 0Z"/></g></g></svg> Don’t use voices for fraud, scams, or bullying.</li>
+<li><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12Zm16.28-2.72a.751.751 0 0 0-.018-1.042.751.751 0 0 0-1.042-.018l-5.97 5.97-2.47-2.47a.751.751 0 0 0-1.042.018.751.751 0 0 0-.018 1.042l3 3a.75.75 0 0 0 1.06 0Z"/></g></g></svg> Protected intellectual property rights must be respected.</li>
+<li><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12Zm16.28-2.72a.751.751 0 0 0-.018-1.042.751.751 0 0 0-1.042-.018l-5.97 5.97-2.47-2.47a.751.751 0 0 0-1.042.018.751.751 0 0 0-.018 1.042l3 3a.75.75 0 0 0 1.06 0Z"/></g></g></svg> Voices should be used for good, not for harm. Have fun!</li>
 </ul>
         </div>
     </div>
 </div>
-<hr>
-<doc-anchor-target id="precompiled-windows">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#precompiled-windows">#</doc-anchor-trigger>
-        <span>Precompiled (Windows)</span>
-    </h3>
-</doc-anchor-target>
-<ol>
-<li><p>The easiest way to download RVC-AI-Cover-Maker-WebUI is by going to Eddy&#x27;s <u><a href="https://github.com/Eddycrack864/RVC-AI-Cover-Maker-UI/releases/latest">Latest GitHub Release</a></u>, and clicking the <strong>Precompiled</strong> version.</p>
- <img src="..\aicovermaker-img\precompiled-github.png" alt="image" width="400">
-</li>
-</ol>
-<hr>
-<ol start="2">
-<li>Unzip the folder. It may take a few minutes.</li>
-</ol>
-<hr>
-<ol start="3">
-<li><p>Open the AICoverMaker folder &amp; execute <code v-pre>run.bat</code>.</p>
-<p><img src="..\aicovermaker-img\bat-files.png" alt="image" width="550">‎<br />
-‎</p>
-</li>
-</ol>
+<img src="../weights-com-img/training-disclaimer.png" alt="Training Disclaimer on Weights" width="400" height="auto">
+<p>You can review the full legal documents here:</p>
 <ul>
-<li>A console tab will appear, and after a moment your default browser will open with the WebUI ready to use.</li>
+<li><strong><u><a href="https://www.weights.com/terms-of-service">Terms of Service</a></u></strong></li>
+<li><strong><u><a href="https://www.weights.com/eula">End-User License Agreement (EULA)</a></u></strong></li>
 </ul>
 <hr>
-<doc-anchor-target id="source--manual-mainly-for-linux">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#source--manual-mainly-for-linux">#</doc-anchor-trigger>
-        <span>Source / Manual (mainly for Linux)</span>
-    </h3>
+<doc-anchor-target id="instructions">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#instructions">#</doc-anchor-trigger>
+        <span><u>Instructions:</u></span>
+    </h4>
 </doc-anchor-target>
-<p><img src="..\aicovermaker-img\aicovermaker-normal-install.png" alt="image" width="700">‎</p>
-<ol>
-<li><p>Download the source code, either .zip (which is the most suggested usually) or .tar.gz, from the latest release <u><a href="https://github.com/Eddycrack864/RVC-AI-Cover-Maker-UI/releases/latest">link</a></u>.</p>
-<p><img src="..\aicovermaker-img\aicovermaker-sources.png" alt="image" width="700">‎<br />
-‎</p>
+<p><strong>1.</strong> Navigate to the <a href="https://www.weights.com/train/voice"><strong>Train Model</strong></a> tab from the main menu. You will be presented with the &quot;New Voice Model&quot; page.</p>
+<img src="../weights-com-img/train-voice-model.png" alt="Weights new voice model page." width="800" height="auto">
+<p><strong>2.</strong> Fill in the <strong>Model Details</strong>:</p>
+<ul>
+<li><strong>Select or drop image:</strong> Upload a picture to serve as the thumbnail for your model.</li>
+<li><strong>Model Name:</strong> Assign a clear and descriptive name.</li>
+<li><strong>Model Description:</strong> Add optional details about the voice or its intended use.</li>
+<li><strong>Private Model:</strong> Enable this option if you want the model to be visible only to you. Premium only</li>
+</ul>
+<p><strong>3.</strong> Upload your <strong>Input Audio</strong>:</p>
+<ul>
+<li>This section is for your dataset, the collection of voice recordings the AI will learn from.</li>
+<li>You can drag and drop audio files directly. Minimum 3 minutes, It is recommended to upload at least 5-10+ minutes of clean audio with minimal background noise for good results.</li>
+<li>Premium users can train longer datasets, up to 30 minutes.</li>
+<li>Weights will automatically clean your dataset.</li>
+</ul>
+<p><strong>4.</strong> Start the training process by clicking <strong>Start Training</strong>.</p>
+<ul>
+<li>Depending on your subscription, you may see different options, such as &quot;Train and Publish&quot; or &quot;Use Premium Training Item&quot;.</li>
+</ul>
+<img src="../weights-com-img/train-voice-models-2.png" alt="Start training options on Weights." width="600" height="auto">
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
     <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
@@ -469,23 +389,107 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-            <h5>note</h5>
-<p>If you download the <code v-pre>.zip</code> from the latest release make sure to rename the folder from <code v-pre>&quot;rvc-ai-cover-maker-ui-v1.0.5&quot;</code> (or whatever version is the latest version) to just <code v-pre>&quot;rvc-ai-cover-maker-ui&quot;</code> otherwise you may run into missing dependencies issues.</p>
+<p>Learn more about Free Premium Items via <a href="http://docs.aihub.gg/rvc/cloud/weights-com/#streaks">Streaks</a>.</p>
         </div>
     </div>
 </div>
-</li>
-<li><p>Extract the folder. It may take a few minutes.</p>
-</li>
-<li><p>Open the AICoverMaker folder &amp; execute the script <code v-pre>run.sh</code> for Linux, or <code v-pre>run.bat</code> for Windows.</p>
-<p><img src="..\aicovermaker-img\bat-files.png" alt="image" width="550">‎<br />
-‎</p>
-</li>
-</ol>
+<hr>
+<div class="content-center"><doc-anchor-target id="creating-a-cover-inference">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#creating-a-cover-inference">#</doc-anchor-trigger>
+        <span>Creating a Cover (Inference) <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M11.553 3.064A.75.75 0 0 1 12 3.75v16.5a.75.75 0 0 1-1.255.555L5.46 16H2.75A1.75 1.75 0 0 1 1 14.25v-4.5C1 8.784 1.784 8 2.75 8h2.71l5.285-4.805a.752.752 0 0 1 .808-.13ZM10.5 5.445l-4.245 3.86a.748.748 0 0 1-.505.195h-3a.25.25 0 0 0-.25.25v4.5c0 .138.112.25.25.25h3c.187 0 .367.069.505.195l4.245 3.86Zm8.218-1.223a.75.75 0 0 1 1.06 0c4.296 4.296 4.296 11.26 0 15.556a.75.75 0 0 1-1.06-1.06 9.5 9.5 0 0 0 0-13.436.75.75 0 0 1 0-1.06Z"/><path d="M16.243 7.757a.75.75 0 1 0-1.061 1.061 4.5 4.5 0 0 1 0 6.364.75.75 0 0 0 1.06 1.06 6 6 0 0 0 0-8.485Z"/></g></g></svg></span>
+    </h2>
+</doc-anchor-target>
+</div>
+<p>Once you have a model, you can use it to generate voice covers. This process is also known as inference.</p>
+<doc-anchor-target id="instructions-1">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#instructions-1">#</doc-anchor-trigger>
+        <span><u>Instructions:</u></span>
+    </h4>
+</doc-anchor-target>
+<p><strong>1. Choose a Voice to Use</strong></p>
 <ul>
-<li>A console tab will appear, and after a moment your default browser will open with the WebUI ready to use.</li>
+<li>You can select one of your own trained models or browse the extensive public library of <strong>Voice Models</strong>.</li>
+<li>Use the search bar to find specific characters or artists.</li>
 </ul>
-<p>‎</p>
+<img src="../weights-com-img/cover-model.png" alt="Selecting a voice model on Weights." width="500" height="auto">
+<p><strong>2. Choose your Input Audio</strong></p>
+<ul>
+<li>You have three main options for providing the audio to be converted:</li>
+</ul>
+<doc-tabs>
+<doc-tab v-cloak id="audio">
+<template #title>Audio</template>
+<p>Upload an audio file from your device. This is the most common method for creating song covers.</p>
+</doc-tab>
+<doc-tab v-cloak id="text-to-speech-tts">
+<template #title>Text-to-Speech (TTS)</template>
+<p>Write text directly into the provided box. Since RVC is Speech-To-Speech Natively, You will need to select a base TTS voice (like &quot;John&quot;) which  will be used as an input for RVC Model.</p>
+   <img src="../weights-com-img/cover-tts.png" alt="Text-to-Speech input on Weights." width="450" height="auto">
+</doc-tab>
+<doc-tab v-cloak id="recording">
+<template #title>Recording</template>
+<p>Record audio directly through your microphone, which is useful for quick tests or generating voice lines.</p>
+   <img src="../weights-com-img/cover-recording.png" alt="Recording audio directly on Weights." width="450" height="auto">
+</doc-tab>
+</doc-tabs>
+<hr>
+<doc-anchor-target id="3-optional-choose-your-settings">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#3-optional-choose-your-settings">#</doc-anchor-trigger>
+        <span><strong>3. (Optional) Choose Your Settings</strong></span>
+    </h4>
+</doc-anchor-target>
+<ul>
+<li>Before creating the cover, you can adujst the output with several settings.</li>
+</ul>
+<doc-panel id="basic-settings" collapsed>
+    <template #title>Basic Settings</template>
+<ul>
+<li><strong>Pre-Stemmed:</strong> Turn this on if your uploaded audio file contains only vocals without any instrumental backing.</li>
+<li><strong>Pitch:</strong> Adjust the pitch of the output voice. A positive value makes it higher, while a negative value makes it lower.</li>
+</ul>
+<img src="../weights-com-img/cover-basic.png" alt="Basic settings for creating a cover." width="500" height="auto">
+</doc-panel>
+<doc-panel id="advanced-settings" collapsed>
+    <template #title>Advanced Settings</template>
+<ul>
+<li><strong>De-Echo &amp; Reverb:</strong> Removes echo and reverb from the source vocal track for a cleaner conversion.</li>
+<li><strong>Isolate Main Singer:</strong> Attempts to convert only the lead vocals, ignoring background singers.</li>
+<li><strong>Instrumental Pitch:</strong> Changes the pitch of the instrumental track separately from the vocals.</li>
+<li><strong>Volume Envelope:</strong> Lower values make the output volume closer to the original vocal&#x27;s volume dynamics.</li>
+<li><strong>Consonant Protection:</strong> Helps reduce audio artifacts and slurring on consonants, especially at lower volumes.</li>
+</ul>
+<img src="../weights-com-img/cover-advanced.png" alt="Advanced settings for creating a cover." width="400" height="auto">
+</doc-panel>
+<doc-anchor-target id="4-create-and-download">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#4-create-and-download">#</doc-anchor-trigger>
+        <span><strong>4. Create and Download</strong></span>
+    </h4>
+</doc-anchor-target>
+<ul>
+<li>Click the <strong>Create</strong> button to start the conversion process.</li>
+<li>Your request will be added to a queue. You can view its status on the <strong>My Creations</strong> page, where it will show as &quot;Processing&quot;.</li>
+</ul>
+<img src="../weights-com-img/cover-creations.png" alt="A cover being processed in My Creations." width="900" height="auto">
+<ul>
+<li>Once finished, you can play the result directly and download it to your device.</li>
+</ul>
+<hr>
+<div class="content-center"><doc-anchor-target id="pricing--plans">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#pricing--plans">#</doc-anchor-trigger>
+        <span>Pricing &amp; Plans <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M15.25 14a.75.75 0 0 0 0 1.5h3.5a.75.75 0 0 0 0-1.5h-3.5Z"/><path d="M1.75 3h20.5c.966 0 1.75.784 1.75 1.75v14.5A1.75 1.75 0 0 1 22.25 21H1.75A1.75 1.75 0 0 1 0 19.25V4.75C0 3.784.784 3 1.75 3Zm-.25 7v9.25c0 .138.112.25.25.25h20.5a.25.25 0 0 0 .25-.25V10Zm0-5.25V8.5h21V4.75a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25Z"/></g></g></svg></span>
+    </h2>
+</doc-anchor-target>
+</div>
+<ul>
+<li>Weights.com operates on a freemium model. It offers a <strong>Free Plan</strong> with core features and daily credits, alongside paid <strong>Basic</strong> and <strong>Pro</strong> plans for users who need more and better resources.</li>
+<li>Subscriptions increase the number of daily covers, queued items, and weekly voice trainings, while also allowing for longer maximum audio lengths.</li>
+</ul>
+<img src="../weights-com-img/pricing.png" alt="Pricing plans on Weights." width="900" height="auto">
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-warning"></div>
     <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
@@ -498,110 +502,65 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-            <h5>Don&#x27;t close the console until you&#x27;re done using it in both cases, or it will stop working.</h5>
+<p>Limits and features are subject to change. Always check the <a href="https://weights.com/pricing"><strong>Weights.com Official Pricing Page</strong></a> for the most current information.</p>
         </div>
     </div>
 </div>
 <hr>
-<doc-anchor-target id="section-3">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-3">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
-<div class="content-center"><doc-anchor-target id="downloading-music--models">
+<div class="content-center"><doc-anchor-target id="streaks">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#downloading-music--models">#</doc-anchor-trigger>
-        <span>Downloading Music &amp; Models</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#streaks">#</doc-anchor-trigger>
+        <span>Streaks <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M14.265 1.627c0 3.545 1.869 5.327 3.479 7.021 1.54 1.62 3.006 3.163 3.006 6.102 0 4.812-3.753 8.25-8.565 8.25-4.813 0-8.935-3.421-8.935-8.25 0-2.039.962-4.011 2.509-4.899.305-.175.672.007.803.334C7.563 12.684 8.797 12.64 9.437 12c.388-.387.47-1.116-.004-2.062-2.405-4.812 1.863-8.279 4.2-8.854.336-.082.615.198.632.543ZM12.185 21.5c4.059 0 7.065-2.84 7.065-6.75 0-2.337-1.093-3.489-2.678-5.158l-.021-.023c-1.44-1.517-3.139-3.351-3.649-6.557a6.148 6.148 0 0 0-1.911 1.76c-.787 1.144-1.147 2.633-.216 4.495.603 1.205.777 2.74-.277 3.794-.657.657-1.762 1.1-2.956.586-.752-.324-1.353-.955-1.838-1.79-.567.706-.954 1.74-.954 2.893 0 3.847 3.288 6.75 7.435 6.75Z"/></g></g></svg></span>
     </h2>
 </doc-anchor-target>
 </div>
-<doc-anchor-target id="section-4">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-4">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
-<doc-anchor-target id="music-download">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#music-download">#</doc-anchor-trigger>
-        <span>Music Download</span>
-    </h4>
-</doc-anchor-target>
-<p><strong>1.</strong> When in the UI look at the top left and look for the tab named <code v-pre>Download Music</code> and click it.</p>
-   <img src="../aicovermaker-img/download-music-tab.png" alt="image" width="600" height="">
-<p>‎</p>
-<p><strong>2.</strong> Then put the song you want to download in the text box and click download.</p>
-   <img src="../aicovermaker-img/download-music-url.png" alt="image" width="1000" height="">
+<ul>
+<li>Weights.com rewards users for daily activity through a <strong>Streak</strong> system.</li>
+<li>To keep your streak going, you must create at least one item (Voice Cover, Image, or Chat) each day before the streak resets.</li>
+<li>As a reward for consistency, you will <strong>earn a Free Premium Training every 5 days</strong> you maintain your streak. This allows you to train more RVC voice models with a bigger dataset without a paid subscription.</li>
+</ul>
+<img src="../weights-com-img/streaks.png" alt="Weights daily streak system." width="700" height="auto">
 <hr>
-<doc-anchor-target id="model-download">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#model-download">#</doc-anchor-trigger>
-        <span>Model Download</span>
-    </h4>
-</doc-anchor-target>
-<p><strong>1.</strong> In the UI look at the top left and look for the tab named <code v-pre>Download Model</code> and click it.</p>
-   <img src="../aicovermaker-img/download-model-tab.png" alt="image" width="600" height="">
-<p>‎</p>
-<p><strong>2.</strong> Then put the model you want to download in the text box and click download.</p>
-   <img src="../aicovermaker-img/download-models.png" alt="image" width="1000" height="">
-<p>‎</p>
-<p><strong>3.</strong> You can also drag and drop your model in the <code v-pre>Drop files</code> box to upload them directly.</p>
-<hr>
-<doc-anchor-target id="section-5">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-5">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
-<div class="content-center"><doc-anchor-target id="inference">
+<div class="content-center"><doc-anchor-target id="communities">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#inference">#</doc-anchor-trigger>
-        <span>Inference <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M11.553 3.064A.75.75 0 0 1 12 3.75v16.5a.75.75 0 0 1-1.255.555L5.46 16H2.75A1.75 1.75 0 0 1 1 14.25v-4.5C1 8.784 1.784 8 2.75 8h2.71l5.285-4.805a.752.752 0 0 1 .808-.13ZM10.5 5.445l-4.245 3.86a.748.748 0 0 1-.505.195h-3a.25.25 0 0 0-.25.25v4.5c0 .138.112.25.25.25h3c.187 0 .367.069.505.195l4.245 3.86Zm8.218-1.223a.75.75 0 0 1 1.06 0c4.296 4.296 4.296 11.26 0 15.556a.75.75 0 0 1-1.06-1.06 9.5 9.5 0 0 0 0-13.436.75.75 0 0 1 0-1.06Z"/><path d="M16.243 7.757a.75.75 0 1 0-1.061 1.061 4.5 4.5 0 0 1 0 6.364.75.75 0 0 0 1.06 1.06 6 6 0 0 0 0-8.485Z"/></g></g></svg></span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#communities">#</doc-anchor-trigger>
+        <span>Communities <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3.5 8a5.5 5.5 0 1 1 8.596 4.547 9.005 9.005 0 0 1 5.9 8.18.751.751 0 0 1-1.5.045 7.5 7.5 0 0 0-14.993 0 .75.75 0 0 1-1.499-.044 9.005 9.005 0 0 1 5.9-8.181A5.496 5.496 0 0 1 3.5 8ZM9 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm8.29 4c-.148 0-.292.01-.434.03a.75.75 0 1 1-.212-1.484 4.53 4.53 0 0 1 3.38 8.097 6.69 6.69 0 0 1 3.956 6.107.75.75 0 0 1-1.5 0 5.193 5.193 0 0 0-3.696-4.972l-.534-.16v-1.676l.41-.209A3.03 3.03 0 0 0 17.29 8Z"/></g></g></svg></span>
     </h2>
 </doc-anchor-target>
 </div>
-<doc-anchor-target id="section-6">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-6">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
-<p>Please use our <u><a href="https://docs.aihub.gg/rvc/resources/inference-settings/">Inference Settings guide</a></u> to find out the inference settings do what.</p>
-<p><strong>TTA</strong> - results in longer separation time, it gives a little better SDR score but hard to tell if it&#x27;s really audible in most cases&quot;. it “means &quot;test time augmentation&quot;, it will do 3 passes on the audio file instead of 1. 1 pass with be with original audio. 1 will be with inverted stereo (L becomes R, R become L). 1 will be with phase inverted and then results are averaged for final output.</p>
+<div style="display: flex; flex-direction: column; gap: 1rem; align-items: center; padding: 1rem 0;">
+  <a href="https://discord.gg/weights" style="display: inline-flex; align-items: center; gap: 0.5rem; background-color: #1a1c1d; color: white; padding: 0.6rem 1.2rem; border-radius: 9999px; text-decoration: none; font-weight: bold; font-size: 1rem; min-width: 150px; justify-content: center; border: 1.5px solid #555;">
+    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjcuMTQgOTYuMzYiPgogICAgPHBhdGggZmlsbD0iIzU4NjVmMiIKICAgICAgICBkPSJNMTA3LjcsOC4wN0ExMDUuMTUsMTA1LjE1LDAsMCwwLDgxLjQ3LDBhNzIuMDYsNzIuMDYsMCwwLDAtMy4zNiw2LjgzQTk3LjY4LDk3LjY4LDAsMCwwLDQ5LDYuODMsNzIuMzcsNzIuMzcsMCwwLDAsNDUuNjQsMCwxMDUuODksMTA1Ljg5LDAsMCwwLDE5LjM5LDguMDlDMi43OSwzMi42NS0xLjcxLDU2LjYuNTQsODAuMjFoMEExMDUuNzMsMTA1LjczLDAsMCwwLDMyLjcxLDk2LjM2LDc3LjcsNzcuNywwLDAsMCwzOS42LDg1LjI1YTY4LjQyLDY4LjQyLDAsMCwxLTEwLjg1LTUuMThjLjkxLS42NiwxLjgtMS4zNCwyLjY2LTJhNzUuNTcsNzUuNTcsMCwwLDAsNjQuMzIsMGMuODcuNzEsMS43NiwxLjM5LDIuNjYsMmE2OC42OCw2OC42OCwwLDAsMS0xMC44Nyw1LjE5LDc3LDc3LDAsMCwwLDYuODksMTEuMUExMDUuMjUsMTA1LjI1LDAsMCwwLDEyNi42LDgwLjIyaDBDMTI5LjI0LDUyLjg0LDEyMi4wOSwyOS4xMSwxMDcuNyw4LjA3Wk00Mi40NSw2NS42OUMzNi4xOCw2NS42OSwzMSw2MCwzMSw1M3M1LTEyLjc0LDExLjQzLTEyLjc0UzU0LDQ2LDUzLjg5LDUzLDQ4Ljg0LDY1LjY5LDQyLjQ1LDY1LjY5Wm00Mi4yNCwwQzc4LjQxLDY1LjY5LDczLjI1LDYwLDczLjI1LDUzczUtMTIuNzQsMTEuNDQtMTIuNzRTOTYuMjMsNDYsOTYuMTIsNTMsOTEuMDgsNjUuNjksODQuNjksNjUuNjlaIiAvPgo8L3N2Zz4=" alt="Discord Icon" style="width: 20px; height: 20px;"/>
+    <span>Discord</span>
+  </a>
+  <a href="https://www.reddit.com/r/weights/" style="display: inline-flex; align-items: center; gap: 0.5rem; background-color: #1a1c1d; color: white; padding: 0.6rem 1.2rem; border-radius: 9999px; text-decoration: none; font-weight: bold; font-size: 1rem; min-width: 150px; justify-content: center; border: 1.5px solid #555;">
+    <img src="data:image/svg+xml;base64,PHN2ZyBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNTYgMjU2IiB2aWV3Qm94PSIwIDAgMjU2IDI1NiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGxpbmVhckdyYWRpZW50IGlkPSJhIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZWZmZmYiLz48c3RvcCBvZmZzZXQ9Ii40IiBzdG9wLWNvbG9yPSIjZmVmZmZmIi8+PHN0b3Agb2Zmc2V0PSIuNTEiIHN0b3AtY29sb3I9IiNmOWZjZmMiLz48c3RvcCBvZmZzZXQ9Ii42MiIgc3RvcC1jb2xvcj0iI2VkZjNmNSIvPjxzdG9wIG9mZnNldD0iLjciIHN0b3AtY29sb3I9IiNkZWU5ZWMiLz48c3RvcCBvZmZzZXQ9Ii43MiIgc3RvcC1jb2xvcj0iI2Q4ZTRlOCIvPjxzdG9wIG9mZnNldD0iLjc2IiBzdG9wLWNvbG9yPSIjY2NkOGRmIi8+PHN0b3Agb2Zmc2V0PSIuOCIgc3RvcC1jb2xvcj0iI2M4ZDVkZCIvPjxzdG9wIG9mZnNldD0iLjgzIiBzdG9wLWNvbG9yPSIjY2NkNmRlIi8+PHN0b3Agb2Zmc2V0PSIuODUiIHN0b3AtY29sb3I9IiNkOGRiZTIiLz48c3RvcCBvZmZzZXQ9Ii44OCIgc3RvcC1jb2xvcj0iI2VkZTNlOSIvPjxzdG9wIG9mZnNldD0iLjkiIHN0b3AtY29sb3I9IiNmZmViZWYiLz48L2xpbmVhckdyYWRpZW50PjxyYWRpYWxHcmFkaWVudCBpZD0iYiIgY3g9Ijk4MS4wMjUxIiBjeT0iMS44MTEiIGZ5PSItNy4zMTkiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLjQ3IDAgMCAtLjQxIC0yNjAuMDcgMTA4LjMpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgcj0iMTI3LjQ1IiB4bGluazpocmVmPSIjYSIvPjxyYWRpYWxHcmFkaWVudCBpZD0iYyIgY3g9IjY3Mi4yNTkyIiBjeT0iMS44MTEiIGZ5PSItNy4zMTkiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLjQ3IDAgMCAtLjQxIC0yNjAuMDcgMTA4LjMpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgcj0iMTI3LjQ1IiB4bGluazpocmVmPSIjYSIvPjxyYWRpYWxHcmFkaWVudCBpZD0iZCIgY3g9IjgzMC42NzUxIiBjeT0iLTIyNC42ODQ1IiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KC40NyAwIDAgLS4zMyAtMjYwLjA3IDI1LjAzKSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHI9IjM4NC40NCIgeGxpbms6aHJlZj0iI2EiLz48bGluZWFyR3JhZGllbnQgaWQ9ImUiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2Y2MCIvPjxzdG9wIG9mZnNldD0iLjUiIHN0b3AtY29sb3I9IiNmZjQ1MDAiLz48c3RvcCBvZmZzZXQ9Ii43IiBzdG9wLWNvbG9yPSIjZmM0MzAxIi8+PHN0b3Agb2Zmc2V0PSIuODIiIHN0b3AtY29sb3I9IiNmNDNmMDciLz48c3RvcCBvZmZzZXQ9Ii45MiIgc3RvcC1jb2xvcj0iI2U1MzgxMiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2Q0MzAxZiIvPjwvbGluZWFyR3JhZGllbnQ+PHJhZGlhbEdyYWRpZW50IGlkPSJmIiBjeD0iLTI5NTcuMjU1MSIgY3k9IjE3My40MjIyIiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KC0uNDcgMCAwIC42OSAtMTIyNC42MyAzMS4zMSkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiByPSIzMi4xMiIgeGxpbms6aHJlZj0iI2UiLz48cmFkaWFsR3JhZGllbnQgaWQ9ImciIGN4PSI3NDUuMjM1MSIgY3k9IjE3My40MjIyIiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KC40NyAwIDAgLjY5IC0yNjAuMDcgMzEuMzEpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgcj0iMzIuMTIiIHhsaW5rOmhyZWY9IiNlIi8+PHJhZGlhbEdyYWRpZW50IGlkPSJoIiBjeD0iODI2LjQ2NTEiIGN5PSItNTA4LjQ3NjQiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLjQ3IDAgMCAtLjMxIC0yNjAuMDcgMzcuMjgpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgcj0iMTEzLjI2Ij48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMxNzJlMzUiLz48c3RvcCBvZmZzZXQ9Ii4yOSIgc3RvcC1jb2xvcj0iIzBlMWMyMSIvPjxzdG9wIG9mZnNldD0iLjczIiBzdG9wLWNvbG9yPSIjMDMwNzA4Ii8+PHN0b3Agb2Zmc2V0PSIxIi8+PC9yYWRpYWxHcmFkaWVudD48cmFkaWFsR3JhZGllbnQgaWQ9ImkiIGN4PSI5MjYuMzQ1MSIgY3k9IjI3Ny45MDE5IiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KC40NyAwIDAgLS40NyAtMjYwLjA3IDE2NC43MikiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiByPSI5OS40MiIgeGxpbms6aHJlZj0iI2EiLz48cmFkaWFsR3JhZGllbnQgaWQ9ImoiIGN4PSI4ODQuOTE1MSIgY3k9IjE3Ny41NjE5IiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KC40NyAwIDAgLS40NyAtMjYwLjA3IDE2OC41KSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHI9IjgxLjQ5Ij48c3RvcCBvZmZzZXQ9Ii40OCIgc3RvcC1jb2xvcj0iIzdhOTI5OSIvPjxzdG9wIG9mZnNldD0iLjY3IiBzdG9wLWNvbG9yPSIjMTcyZTM1Ii8+PHN0b3Agb2Zmc2V0PSIuNzUiLz48c3RvcCBvZmZzZXQ9Ii44MiIgc3RvcC1jb2xvcj0iIzE3MmUzNSIvPjwvcmFkaWFsR3JhZGllbnQ+PHBhdGggZD0ibTEyOCAwYy03MC43IDAtMTI4IDU3LjMtMTI4IDEyOCAwIDM1LjQgMTQuMyA2Ny40IDM3LjUgOTAuNWwtMjQuNCAyNC40Yy00LjggNC44LTEuNCAxMy4xIDUuNCAxMy4xaDEwOS41YzcwLjcgMCAxMjgtNTcuMyAxMjgtMTI4cy01Ny4zLTEyOC0xMjgtMTI4eiIgZmlsbD0iI2ZmNDUwMCIvPjxjaXJjbGUgY3g9IjIwMC42IiBjeT0iMTIzLjciIGZpbGw9InVybCgjYikiIHI9IjI5LjkiLz48Y2lyY2xlIGN4PSI1NS40IiBjeT0iMTIzLjciIGZpbGw9InVybCgjYykiIHI9IjI5LjkiLz48ZWxsaXBzZSBjeD0iMTI4LjEiIGN5PSIxNDkuMyIgZmlsbD0idXJsKCNkKSIgcng9Ijg1LjMiIHJ5PSI2NCIvPjxwYXRoIGQ9Im0xMDIuOCAxNDMuMWMtLjUgMTAuOC03LjcgMTQuOC0xNi4xIDE0LjhzLTE0LjgtNS42LTE0LjMtMTYuNCA3LjctMTggMTYuMS0xOCAxNC44IDguOCAxNC4zIDE5LjZ6IiBmaWxsPSIjODQyMTIzIi8+PHBhdGggZD0ibTE4My42IDE0MS41Yy41IDEwLjgtNS45IDE2LjQtMTQuMyAxNi40cy0xNS42LTMuOS0xNi4xLTE0LjhjLS41LTEwLjggNS45LTE5LjYgMTQuMy0xOS42czE1LjYgNy4xIDE2LjEgMTh6IiBmaWxsPSIjODQyMTIzIi8+PHBhdGggZD0ibTE1My4zIDE0NC4xYy41IDEwLjEgNy4yIDEzLjggMTUgMTMuOHMxMy44LTUuNSAxMy40LTE1LjdjLS41LTEwLjEtNy4yLTE2LjgtMTUtMTYuOHMtMTMuOSA4LjUtMTMuNCAxOC43eiIgZmlsbD0idXJsKCNmKSIvPjxwYXRoIGQ9Im0xMDIuOCAxNDQuMWMtLjUgMTAuMS03LjIgMTMuOC0xNSAxMy44cy0xMy44LTUuNS0xMy4zLTE1LjdjLjUtMTAuMSA3LjItMTYuOCAxNS0xNi44czEzLjggOC41IDEzLjMgMTguN3oiIGZpbGw9InVybCgjZykiLz48cGF0aCBkPSJtMTI4LjEgMTY1LjFjLTEwLjYgMC0yMC43LjUtMzAuMSAxLjQtMS42LjItMi42IDEuOC0yIDMuMiA1LjIgMTIuMyAxNy42IDIxIDMyLjEgMjFzMjYuOC04LjYgMzIuMS0yMWMuNi0xLjUtLjQtMy4xLTItMy4yLTkuNC0uOS0xOS41LTEuNC0zMC4xLTEuNHoiIGZpbGw9IiNiYmNmZGEiLz48cGF0aCBkPSJtMTI4LjEgMTY3LjVjLTEwLjYgMC0yMC43LjUtMzAgMS41LTEuNi4yLTIuNiAxLjgtMiAzLjMgNS4yIDEyLjUgMTcuNiAyMS4zIDMyIDIxLjNzMjYuOC04LjggMzItMjEuM2MuNi0xLjUtLjQtMy4xLTItMy4zLTkuNC0xLTE5LjUtMS41LTMwLTEuNXoiIGZpbGw9IiNmZmYiLz48cGF0aCBkPSJtMTI4LjEgMTY2LjJjLTEwLjQgMC0yMC4zLjUtMjkuNSAxLjQtMS42LjItMi42IDEuOC0yIDMuMiA1LjIgMTIuMyAxNy4zIDIxIDMxLjUgMjFzMjYuMy04LjYgMzEuNS0yMWMuNi0xLjUtLjQtMy4xLTItMy4yLTkuMi0uOC0xOS4xLTEuNC0yOS41LTEuNHoiIGZpbGw9InVybCgjaCkiLz48Y2lyY2xlIGN4PSIxNzQuOCIgY3k9IjU1LjUiIGZpbGw9InVybCgjaSkiIHI9IjIxLjIiLz48cGF0aCBkPSJtMTI3LjggODhjLTIuNSAwLTQuNi0xLjEtNC42LTIuNyAwLTE5IDE1LjQtMzQuNCAzNC40LTM0LjQgMi41IDAgNC42IDIuMSA0LjYgNC42cy0yLjEgNC42LTQuNiA0LjZjLTEzLjkgMC0yNS4yIDExLjMtMjUuMiAyNS4yIDAgMS43LTIuMSAyLjctNC42IDIuN3oiIGZpbGw9InVybCgjaikiLz48cGF0aCBkPSJtOTcuMyAxNDkuMWMwIDMuOS00LjIgNS43LTkuMyA1LjdzLTkuMy0xLjgtOS4zLTUuNyA0LjItNy4xIDkuMy03LjEgOS4zIDMuMSA5LjMgNy4xeiIgZmlsbD0iI2ZmNjEwMSIvPjxwYXRoIGQ9Im0xNzcuNSAxNDkuMWMwIDMuOS00LjIgNS43LTkuMyA1LjdzLTkuMy0xLjgtOS4zLTUuNyA0LjItNy4xIDkuMy03LjEgOS4zIDMuMSA5LjMgNy4xeiIgZmlsbD0iI2ZmNjEwMSIvPjxnIGZpbGw9IiNmZmM0OWMiPjxlbGxpcHNlIGN4PSI5NC40IiBjeT0iMTM0LjgiIHJ4PSIzLjMiIHJ5PSIzLjYiLz48ZWxsaXBzZSBjeD0iMTczLjMiIGN5PSIxMzQuOCIgcng9IjMuMyIgcnk9IjMuNiIvPjwvZz48L3N2Zz4=" alt="Reddit Icon" style="width: 20px; height: 20px;"/>
+    <span>Reddit</span>
+  </a>
+</div>
 <hr>
-<doc-anchor-target id="section-7">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-7">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
-<div class="content-center"><doc-anchor-target id="update">
+<div class="content-center"><doc-anchor-target id="mobile-apps">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#update">#</doc-anchor-trigger>
-        <span>Update <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M4.75 17.25a.75.75 0 0 1 .75.75v2.25c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V18a.75.75 0 0 1 1.5 0v2.25A1.75 1.75 0 0 1 18.25 22H5.75A1.75 1.75 0 0 1 4 20.25V18a.75.75 0 0 1 .75-.75Z"/><path d="M5.22 9.97a.749.749 0 0 1 1.06 0l4.97 4.969V2.75a.75.75 0 0 1 1.5 0v12.189l4.97-4.969a.749.749 0 1 1 1.06 1.06l-6.25 6.25a.749.749 0 0 1-1.06 0l-6.25-6.25a.749.749 0 0 1 0-1.06Z"/></g></g></svg></span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#mobile-apps">#</doc-anchor-trigger>
+        <span>Mobile Apps <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M10.25 5.25A.75.75 0 0 1 11 4.5h2A.75.75 0 0 1 13 6h-2a.75.75 0 0 1-.75-.75ZM12 19.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/><path d="M4 2.75C4 1.784 4.784 1 5.75 1h12.5c.966 0 1.75.784 1.75 1.75v18.5A1.75 1.75 0 0 1 18.25 23H5.75A1.75 1.75 0 0 1 4 21.25Zm1.75-.25a.25.25 0 0 0-.25.25v18.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V2.75a.25.25 0 0 0-.25-.25Z"/></g></g></svg></span>
     </h2>
 </doc-anchor-target>
 </div>
-<doc-anchor-target id="section-8">
+<div style="display: flex; flex-direction: column; gap: 1rem; align-items: center; padding: 1rem 0;">
+  <a href="https://apps.apple.com/us/app/weights-create-with-ai/id6480142052" style="display: inline-flex; align-items: center; gap: 0.5rem; background-color: #1a1c1d; color: white; padding: 0.6rem 1.2rem; border-radius: 9999px; text-decoration: none; font-weight: bold; font-size: 1rem; min-width: 150px; justify-content: center; border: 1.5px solid #555;">
+    <img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjMyIiB2aWV3Qm94PSI0IDMyIDM3Ni40IDQ0OS40IiB3aWR0aD0iMzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibTMxOC43IDI2OC43Yy0uMi0zNi43IDE2LjQtNjQuNCA1MC04NC44LTE4LjgtMjYuOS00Ny4yLTQxLjctODQuNy00NC42LTM1LjUtMi44LTc0LjMgMjAuNy04OC41IDIwLjctMTUgMC00OS40LTE5LjctNzYuNC0xOS43LTU1LjguOS0xMTUuMSA0NC41LTExNS4xIDEzMy4ycTAgMzkuMyAxNC40IDgxLjJjMTIuOCAzNi43IDU5IDEyNi43IDEwNy4yIDEyNS4yIDI1LjItLjYgNDMtMTcuOSA3NS44LTE3LjkgMzEuOCAwIDQ4LjMgMTcuOSA3Ni40IDE3LjkgNDguNi0uNyA5MC40LTgyLjUgMTAyLjYtMTE5LjMtNjUuMi0zMC43LTYxLjctOTAtNjEuNy05MS45em0tNTYuNi0xNjQuMmMyNy4zLTMyLjQgMjQuOC02MS45IDI0LTcyLjUtMjQuMSAxLjQtNTIgMTYuNC02Ny45IDM0LjktMTcuNSAxOS44LTI3LjggNDQuMy0yNS42IDcxLjkgMjYuMSAyIDQ5LjktMTEuNCA2OS41LTM0LjN6IiBmaWxsPSIjZmZmIi8+PC9zdmc+" alt="Apple iOS Icon" style="width: 20px; height: 20px;"/>
+    <span>iOS</span>
+  </a>
+  <a href="https://play.google.com/store/apps/details?id=com.weights.app" style="display: inline-flex; align-items: center; gap: 0.5rem; background-color: #1a1c1d; color: white; padding: 0.6rem 1.2rem; border-radius: 9999px; text-decoration: none; font-weight: bold; font-size: 1rem; min-width: 150px; justify-content: center; border: 1.5px solid #555;">
+    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KDTwhLS0gVXBsb2FkZWQgdG86IFNWRyBSZXBvLCB3d3cuc3ZncmVwby5jb20sIEdlbmVyYXRvcjogU1ZHIFJlcG8gTWl4ZXIgVG9vbHMgLS0+Cjxzdmcgd2lkdGg9IjgwMHB4IiBoZWlnaHQ9IjgwMHB4IiB2aWV3Qm94PSIwIDAgMzIgMzIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+DQo8bWFzayBpZD0ibWFzazBfODdfODMyMCIgc3R5bGU9Im1hc2stdHlwZTphbHBoYSIgbWFza1VuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeD0iNyIgeT0iMyIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI2Ij4NCjxwYXRoIGQ9Ik0zMC4wNDg0IDE0LjQwMDRDMzEuMzE3MiAxNS4wOTg2IDMxLjMxNzIgMTYuOTAxNCAzMC4wNDg0IDE3LjU5OTZMOS43NTYyNyAyOC43NjU5QzguNTIwNTIgMjkuNDQ1OSA3IDI4LjU2MzQgNyAyNy4xNjYzTDcgNC44MzM3NEM3IDMuNDM2NTcgOC41MjA1MiAyLjU1NDE1IDkuNzU2MjcgMy4yMzQxNUwzMC4wNDg0IDE0LjQwMDRaIiBmaWxsPSIjQzRDNEM0Ii8+DQo8L21hc2s+DQo8ZyBtYXNrPSJ1cmwoI21hc2swXzg3XzgzMjApIj4NCjxwYXRoIGQ9Ik03LjYzNDczIDI4LjU0NjZMMjAuMjkyMyAxNS44MTc5TDcuODQzMTkgMy4yOTg4M0M3LjM0NjUzIDMuNjE3MjEgNyA0LjE2NjkgNyA0LjgzMzlWMjcuMTY2NEM3IDI3LjczNTUgNy4yNTIyMyAyOC4yMTkxIDcuNjM0NzMgMjguNTQ2NloiIGZpbGw9InVybCgjcGFpbnQwX2xpbmVhcl84N184MzIwKSIvPg0KPHBhdGggZD0iTTMwLjA0OCAxNC40MDAzQzMxLjMxNjkgMTUuMDk4NSAzMS4zMTY5IDE2LjkwMTIgMzAuMDQ4IDE3LjU5OTRMMjQuOTI4NyAyMC40MTY1TDIwLjI5MiAxNS44MTc1TDI0LjY5MjMgMTEuNDUzMUwzMC4wNDggMTQuNDAwM1oiIGZpbGw9InVybCgjcGFpbnQxX2xpbmVhcl84N184MzIwKSIvPg0KPHBhdGggZD0iTTI0LjkyOTIgMjAuNDE2OEwyMC4yOTI0IDE1LjgxNzlMNy42MzQ3NyAyOC41NDY2QzguMTkxMzkgMjkuMDIzMiA5LjAyMzg5IDI5LjE2OTEgOS43NTYzNSAyOC43NjZMMjQuOTI5MiAyMC40MTY4WiIgZmlsbD0idXJsKCNwYWludDJfbGluZWFyXzg3XzgzMjApIi8+DQo8cGF0aCBkPSJNNy44NDI3NyAzLjI5ODY1TDIwLjI5MTkgMTUuODE3N0wyNC42OTIyIDExLjQ1MzNMOS43NTU4MyAzLjIzNDE1QzkuMTEwMDMgMi44Nzg3OCA4LjM4NjQ2IDIuOTUwMTMgNy44NDI3NyAzLjI5ODY1WiIgZmlsbD0idXJsKCNwYWludDNfbGluZWFyXzg3XzgzMjApIi8+DQo8L2c+DQo8ZGVmcz4NCjxsaW5lYXJHcmFkaWVudCBpZD0icGFpbnQwX2xpbmVhcl84N184MzIwIiB4MT0iMTUuNjc2OSIgeTE9IjEwLjg3NCIgeDI9IjcuMDcxMDYiIHkyPSIxOS41NTA2IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+DQo8c3RvcCBzdG9wLWNvbG9yPSIjMDBDM0ZGIi8+DQo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMxQkUyRkEiLz4NCjwvbGluZWFyR3JhZGllbnQ+DQo8bGluZWFyR3JhZGllbnQgaWQ9InBhaW50MV9saW5lYXJfODdfODMyMCIgeDE9IjIwLjI5MiIgeTE9IjE1LjgxNzYiIHgyPSIzMS43MzgxIiB5Mj0iMTUuODE3NiIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPg0KPHN0b3Agc3RvcC1jb2xvcj0iI0ZGQ0UwMCIvPg0KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjRkZFQTAwIi8+DQo8L2xpbmVhckdyYWRpZW50Pg0KPGxpbmVhckdyYWRpZW50IGlkPSJwYWludDJfbGluZWFyXzg3XzgzMjAiIHgxPSI3LjM2OTMyIiB5MT0iMzAuMTAwNCIgeDI9IjIyLjU5NSIgeTI9IjE3Ljg5MzciIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4NCjxzdG9wIHN0b3AtY29sb3I9IiNERTI0NTMiLz4NCjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI0ZFMzk0NCIvPg0KPC9saW5lYXJHcmFkaWVudD4NCjxsaW5lYXJHcmFkaWVudCBpZD0icGFpbnQzX2xpbmVhcl84N184MzIwIiB4MT0iOC4xMDcyNSIgeTE9IjEuOTAxMzciIHgyPSIyMi41OTcxIiB5Mj0iMTMuNzM2NSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPg0KPHN0b3Agc3RvcC1jb2xvcj0iIzExRDU3NCIvPg0KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDFGMTc2Ii8+DQo8L2xpbmVhckdyYWRpZW50Pg0KPC9kZWZzPg0KPC9zdmc+" alt="Google Play Android Icon" style="width: 20px; height: 20px;"/>
+    <span>Android</span>
+  </a>
+</div>
+<hr>
+<doc-anchor-target id="section-1">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-8">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
-<p>To Update AICoverMaker, you can either:</p>
-<ol type="A" start="1">
-<li>Open AICoverMaker&#x27;s folder &amp; execute the script <code v-pre>update.sh</code> for Linux, or <code v-pre>update.bat</code> for Windows.</li>
-</ol>
-<p><img src="..\aicovermaker-img\bat-files.png" alt="image" width="550">‎</p>
-<br>
-<ol type="A" start="2">
-<li>Download the latest precompiled the next time a new version comes out and replace the files.</li>
-</ol>
-<doc-anchor-target id="section-9">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-9">#</doc-anchor-trigger>
-        <span>‎</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-1">#</doc-anchor-trigger>
+        <span></span>
     </h6>
 </doc-anchor-target>
 <div class="content-center"><doc-anchor-target id="you-have-reached-the-end">
@@ -624,20 +583,20 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
                             
                                 <nav id="retype-nextprev" class="print:hidden flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../rvc/local/mainline/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../rvc/local/aicovermaker/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-base-text-muted">Previous</span>
-                                                <span class="block mt-1">Mainline</span>
+                                                <span class="block mt-1">AI​Cover​Maker</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../rvc/cloud/weights.com/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../rvc/cloud/applio-kaggle/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-base-text-muted">Next</span>
-                                                <span class="block mt-1">Weights.​com</span>
+                                                <span class="block mt-1">Applio Kaggle</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -681,6 +640,6 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
 
     <div id="retype-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "AICoverMaker", level: 3, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Weights.com", level: 3, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
