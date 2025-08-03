@@ -359,7 +359,7 @@ If the training finished but the model still needed training, you don't have to 
 
 ==- *I couldn't find my answer.*
 ###### ‎   
-- Report your issue <u>[here](https://docs.aihub.gg/rvc/#contributions)</u>.
+- Report your issue <u>[here](https://docs.aihub.gg/contributions)</u>.
 ===
 
 ***

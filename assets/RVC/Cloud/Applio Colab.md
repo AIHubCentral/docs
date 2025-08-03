@@ -565,7 +565,7 @@ If the frequencies don't reach the top of the spectrogram, see at which number p
 
 ==- *I couldn't find my answer.*
 ###### ‎   
-- Report your issue <u>[here](https://docs.aihub.gg/rvc/#contributions)</u>.
+- Report your issue <u>[here](https://docs.aihub.gg/contributions)</u>.
 ===
 ***
 ###### ‎

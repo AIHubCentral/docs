@@ -700,7 +700,7 @@ Then you'll be able to see the plugin in the **Plugins** tab.
 
 ==- *I couldn't find my answer.*
 ###### ‎   
-- Report your issue <u>[here](https://docs.aihub.gg/rvc/#contributions)</u>.
+- Report your issue <u>[here](https://docs.aihub.gg/contributions)</u>.
 ===
 
 ***
