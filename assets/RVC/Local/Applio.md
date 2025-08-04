@@ -598,7 +598,7 @@ To Update Applio, you need to firstly Save your audios and models, then Delete t
 ## Extra
 :::
 ###### ‎  
-- Applio has an **Extra** menu, containing an **audio analyzer**, originally made by <u>[Ilaria](https://ko-fi.com/ilariaowo)</u>.
+- Applio has an **Extra** menu, containing an **audio analyzer**.
 
 - Making it convenient for determining the **sample rate** of datasets when training models.
 
