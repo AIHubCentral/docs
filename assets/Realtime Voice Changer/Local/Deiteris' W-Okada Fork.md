@@ -108,6 +108,15 @@ It's free, but you will need a phone number verification.
 <u>[Read the Tutorial HERE](https://docs.aihub.gg/realtime-voice-changer/cloud/deiteris-w-okada-fork-kaggle/)</u>
 
 ***
+#### Lightning.AI
+
+!!!danger
+It has free credits, but you will need a phone number verification.
+!!!
+
+<u>[Read the Tutorial HERE](https://docs.aihub.gg/realtime-voice-changer/cloud/deiteris-w-okada-fork-lightning-ai/)</u>
+
+***
 #### Google Colab
 
 !!!danger

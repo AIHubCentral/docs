@@ -1,8 +1,8 @@
 ---
 icon: chevron-right
-order: 4000
+order: 3000
 ---
-``Last update: August 4, 2025``
+``Last update: August 6, 2025``
 ***
 :::content-center
 <img src="..\kaggle-img\kaggle.png" alt="image" width="600">
@@ -18,6 +18,10 @@ order: 4000
 
 !!!danger
 You only get 30 free GPU hours per week.
+!!!
+
+!!!danger
+You will need a phone number verification.
 !!!
 
 
