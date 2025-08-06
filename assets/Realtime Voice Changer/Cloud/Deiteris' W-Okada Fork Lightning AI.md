@@ -11,16 +11,10 @@ order: 2000
 :::content-center
 ## Introduction
 :::
-- Lightning.AI is a cloud platform for developing and running AI applications, offering a persistent cloud development environment called a Studio, using a **credits system**.
-- This notebook provides a way to run the Wokada-Deiteris-Fork Realtime Voice Changer on Lightning.AI's powerful GPU hardware without powerful hardware.
-- You can create a free account to get started, which includes free credits for GPU hours shown in the [pricing](https://lightning.ai/pricing), and purchase more as needed.
+- This is a <u>[cloud-based](http://docs.aihub.gg/extra/glossary/#cloud-based)</u> alternative to run Wokada Deiteris Fork, Realtime Voice Changer for calls/games, only fopr people who don't have a good PC GPU, via the <u>[Lightning.AI Service](http://docs.aihub.gg/extra/glossary/#lightningai)</u>.
 
-!!!danger
-GPU usage on Lightning.AI is metered. While new accounts receive free credits, be sure to monitor your usage and stop the Studio when not in use to avoid unexpected charges. You can check the [pricing](https://lightning.ai/pricing).
-!!!
-
-!!!danger
-You will need a phone number verification.
+!!!danger Lightning.AI Service
+**Check the <u>[Lightning.AI Glossary](http://docs.aihub.gg/extra/glossary/#lightningai)</u> for more info on Free Tier, Limits, Verification, Pricing and other things.**
 !!!
 
 
