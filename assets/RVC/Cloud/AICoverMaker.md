@@ -3,27 +3,25 @@ icon: chevron-right
 order: 4000
 ---
 
-``Last update: Mar 8, 2025`` 
-‎  
+``Last update: August 7, 2025``
 ***
-###### ‎  
 :::content-center
 ## Introduction
 :::
+- This is a <u>[cloud-based](http://docs.aihub.gg/extra/glossary/#cloud-based)</u> alternative to run [AICoverMaker](https://docs.aihub.gg/rvc/local/aicovermaker/), Applio RVC Fork, only for people who don't have a good PC GPU, via the <u>[Google Colab Service](http://docs.aihub.gg/extra/glossary/#google-colab)</u> & <u>[Kaggle Service](http://docs.aihub.gg/extra/glossary/#kaggle)</u>. With a Web User Interface.
 
-
-- AICoverMaker (or known as RVC-AI-Cover-Maker-WebUI) is an Applio RVC <u>[Fork</u>](https://docs.aihub.gg/essentials/whats-rvc/#forks) developed by the <u>[Eddy</u>](https://github.com/Eddycrack864)</u>, as a better and updated version of the old AICoverGen.
-
-- This are ideal for users who want '***quick & dirty***' AI covers, as the whole process of inputting audio, vocal isolation & song mixing is automated. 
-  
 - ##### There are two versions this AI Cover maker which are: <u>[AICoverMaker Colab](https://docs.aihub.gg/rvc/cloud/aicovermaker/#aicovermaker-colab)</u> and <u>[AICoverMaker Kaggle](https://docs.aihub.gg/rvc/cloud/aicovermaker/#aicovermaker-kaggle)</u>.
-               
+
+
 ***
-###### ‎  
 :::content-center
 ## AICoverMaker Colab
+
+!!!danger Google Colab Service
+**Check the <u>[Google Colab Glossary](http://docs.aihub.gg/extra/glossary/#google-colab)</u> for more info on Free Tier, Limits, Verification, Pricing and other things.**
+!!!
+
 :::
-###### ‎  
 ### <u>Installation & Setup</u> :icon-book:
 
 **1.** Go to the <u>[AICoverMaker Colab](https://colab.research.google.com/github/Eddycrack864/RVC-AI-Cover-Maker-UI/blob/main/assets/RVCAICoverMakerUI.ipynb)</u> and run the first cell. 
@@ -53,11 +51,14 @@ There is a monthly limit rate with Ngrok so dont be supprised if training is sud
 
 **3.** Once you've run either the cell with or without ngrok a link under the cell will apear, click it and it will take you the WebUI.
 
-###### ‎  
 :::content-center
 ## AICoverMaker Kaggle
 :::
-###### ‎  
+
+!!!danger Kaggle Service
+**Check the <u>[Kaggle Glossary](http://docs.aihub.gg/extra/glossary/#kaggle)</u> for more info on Free Tier, Limits, Verification, Pricing and other things.**
+!!!
+
 ### <u>Installation & Setup</u> :icon-book:
 
 **1.** Go to the <u>[AICoverMaker Kaggle notebook](https://www.kaggle.com/code/eddycrack864/rvc-ai-cover-maker-ui)</u> and click `Copy & Edit` on the top right. 
@@ -92,7 +93,6 @@ There is a monthly limit rate with Ngrok so dont be supprised if training is sud
 **3.** Once you've run the final cell a ngrok link will apear under the cell, click it and it will take you the WebUI.
 
 ***
-###### ‎  
 ## <u>Downloading Music & Models</u>
 ***
 
@@ -137,7 +137,6 @@ Please use our <u>[Inference Settings guide](https://docs.aihub.gg/rvc/resources
 **TTA** - results in longer separation time, it gives a little better SDR score but hard to tell if it's really audible in most cases". it “means "test time augmentation", it will do 3 passes on the audio file instead of 1. 1 pass with be with original audio. 1 will be with inverted stereo (L becomes R, R become L). 1 will be with phase inverted and then results are averaged for final output. 
 
 ***
-###### ‎
 :::content-center
 #### `You have reached the end.`
 

@@ -2,7 +2,7 @@
 icon: chevron-right
 order: 3000
 ---
-``Last update: August 6, 2025``
+``Last update: August 7, 2025``
 ***
 :::content-center
 <img src="..\kaggle-img\kaggle.png" alt="image" width="600">
@@ -12,16 +12,10 @@ order: 3000
 :::content-center
 ## Introduction ‎
 :::
-- Kaggle is a cloud platform for using AI apps, powered by virtual machines with powerful GPU's.     
+- This is a <u>[cloud-based](http://docs.aihub.gg/extra/glossary/#cloud-based)</u> alternative to run [Wokada Deiteris Fork](https://docs.aihub.gg/realtime-voice-changer/local/deiteris-w-okada-fork/#virtual-audio-cable), Realtime Voice Changer for calls/games, only for people who don't have a good PC GPU, via the <u>[Kaggle Service](http://docs.aihub.gg/extra/glossary/#kaggle)</u>.
 
-- It's a good cloud alternative for W-Okada for those who don't have good enough GPUs.
-
-!!!danger
-You only get 30 free GPU hours per week.
-!!!
-
-!!!danger
-You will need a phone number verification.
+!!!danger Kaggle Service
+**Check the <u>[Kaggle Glossary](http://docs.aihub.gg/extra/glossary/#kaggle)</u> for more info on Free Tier, Limits, Verification, Pricing and other things.**
 !!!
 
 

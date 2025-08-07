@@ -2,17 +2,19 @@
 icon: chevron-right
 order: 6000
 ---
-``Last update: July 17, 2025`` 
+``Last update: August 7, 2025``
 ***
 :::content-center
 <img src="../lighting.ai/logo.png" alt="image" width="600">        
 :::
 ## </u>Introduction</u>
-- Lightning.Ai is a cloud platform for using AI apps, powered by virtual machines with powerful GPU's.     
+- This is a <u>[cloud-based](http://docs.aihub.gg/extra/glossary/#cloud-based)</u> alternative to run [Applio](https://docs.aihub.gg/rvc/local/applio/), RVC Fork, only for people who don't have a good PC GPU, via the <u>[Lightning.AI Service](http://docs.aihub.gg/extra/glossary/#lightningai)</u>. With a Web User Interface.
 
 - It's a great alternative for training RVC voice models through the cloud, since it has the best GPUs with tons of VRAM.
 
-- Lightning has decent Free GPU hours (in the free plan which can change) but it does have the best GPUs out of all the other cloud options. 
+!!!danger Lightning.AI Service
+**Check the <u>[Lightning.AI Glossary](http://docs.aihub.gg/extra/glossary/#lightningai)</u> for more info on Free Tier, Limits, Verification, Pricing and other things.**
+
 
 #### Pros & Cons :icon-tasklist:
 

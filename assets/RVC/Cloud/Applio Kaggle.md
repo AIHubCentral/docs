@@ -3,7 +3,7 @@ icon: chevron-right
 order: 8000
 ---
  
-``Last update: August 1, 2025``
+``Last update: August 7, 2025``
 
 ***
 :::content-center
@@ -14,14 +14,13 @@ order: 8000
 :::content-center
 ## Introduction ‎
 :::
-- Kaggle is a cloud platform for using AI apps, powered by virtual machines with powerful GPU's.     
+- This is a <u>[cloud-based](http://docs.aihub.gg/extra/glossary/#cloud-based)</u> alternative to run [Applio](https://docs.aihub.gg/rvc/local/applio/), RVC Fork, only for people who don't have a good PC GPU, via the <u>[Kaggle Service](http://docs.aihub.gg/extra/glossary/#kaggle)</u>. With a Web User Interface.
 
-- It's a great alternative for training RVC voice models through the cloud, since it has the best GPUs.
-
-!!!danger
-You only get 30 free GPU hours per week.
+!!!danger Kaggle Service
+**Check the <u>[Kaggle Glossary](http://docs.aihub.gg/extra/glossary/#kaggle)</u> for more info on Free Tier, Limits, Verification, Pricing and other things.**
 !!!
-    
+
+
 #### Pros & Cons :icon-tasklist:
 
 ==- ***Learn more***

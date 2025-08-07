@@ -11,10 +11,14 @@ order: 1000
 :::content-center
 ## Introduction ‎
 :::
-- This cloud version is hosted in <u>[Google Colab](https://docs.aihub.gg/extra/glossary/#google-colab)</u>, remember that you have a random GPU runtime of max 4 hours daily.
+- This is a <u>[cloud-based](http://docs.aihub.gg/extra/glossary/#cloud-based)</u> alternative to run [Wokada Deiteris Fork](https://docs.aihub.gg/realtime-voice-changer/local/deiteris-w-okada-fork/#virtual-audio-cable), Realtime Voice Changer for calls/games, only for people who don't have a good PC GPU, via the <u>[Google Colab Service](http://docs.aihub.gg/extra/glossary/#google-colab)</u>.
+
+!!!danger Google Colab Service
+**Check the <u>[Google Colab Glossary](http://docs.aihub.gg/extra/glossary/#google-colab)</u> for more info on Free Tier, Limits, Verification, Pricing and other things.**
+!!!
 
 !!!danger
-You need the Google Colab Paid Tier to run this, as it uses a Web User Interface, else you could risk getting disconnected or getting banned off Colab.
+You need the Google Colab Paid Tier to run this, as it uses a Web User Interface, else you could risk getting disconnected or banned off Colab.
 !!!
 
 

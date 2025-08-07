@@ -11,9 +11,11 @@ order: 2000
 :::
  
 ## </u>Introduction</u>
-- Kaggle is a cloud platform for using AI apps, powered by virtual machines with powerful GPU's.     
+- This is a <u>[cloud-based](http://docs.aihub.gg/extra/glossary/#cloud-based)</u> alternative to run [Mainline/Original RVC](https://docs.aihub.gg/rvc/local/mainline/), RVC Fork, only for people who don't have a good PC GPU, via the <u>[Kaggle Service](http://docs.aihub.gg/extra/glossary/#kaggle)</u>. With a Web User Interface.
 
-- It's a great alternative for training RVC voice models through the cloud, since it has the best GPUs.
+!!!danger Kaggle Service
+**Check the <u>[Google Colab Glossary](http://docs.aihub.gg/extra/glossary/#kaggle)</u> for more info on Free Tier, Limits, Verification, Pricing and other things.**
+!!!
 
 !!!danger End Of Life
 The Hina Modified Mainline Kaggle has reached EOL (End Of Life), meaning it has had it's last update, it won't be suggested anymore nor fixed for any future issues. We would suggest users to use other alternatives if it breaks, and if it breaks this guide will be removed in the future.

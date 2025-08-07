@@ -3,25 +3,23 @@ icon: chevron-right
 order: 5000
 ---
 
-``Last update: Jan 31, 2025``
+``Last update: August 7, 2025``
 
 ***
 :::content-center
 <img src="..\appliocolab-img\banner.png" alt="image" width="600">
 
 :::
-###### ‎
 :::content-center
-## Introduction ‎
+## Introduction
 :::
-- Applio is a VITS-based Voice Conversion Tool developed by the <u>[IA Hispano</u>](https://github.com/IAHispano)</u> team.
+- This is a <u>[cloud-based](http://docs.aihub.gg/extra/glossary/#cloud-based)</u> alternative to run [Applio](https://docs.aihub.gg/rvc/local/applio/), RVC Fork, only for people who don't have a good PC GPU, via the <u>[Google Colab Service](http://docs.aihub.gg/extra/glossary/#google-colab)</u>. Without a Web User Interface.
 
-- It's liked for its great **UI** & **lots** of extra features, such as TTS (with RVC models too), plugins, automatic model upload, customizable theme & more.
+!!!danger Google Colab Service
+**Check the <u>[Google Colab Glossary](http://docs.aihub.gg/extra/glossary/#google-colab)</u> for more info on Free Tier, Limits, Verification, Pricing and other things.**
+!!!
 
-- Because of its user-friendly experience & active development, it's considered to be one of the best forks.     
 
-- As this cloud version is hosted in <u>[Google Colab](https://docs.aihub.gg/extra/glossary/#google-colab)</u>, remember that you have a limited runtime of around 4 hours.       
-‎         
 #### Pros & Cons :icon-tasklist:
 ==- *Learn more*
 !!! *The pros & cons are subjective to your necessities.*        
