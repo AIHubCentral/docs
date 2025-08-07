@@ -141,6 +141,7 @@ Of course. Here is a standalone section about Jupyter Notebooks, written in the 
 - It features persistent storage, meaning your files are saved between sessions.
 - It allows Web User Interfaces on the Free tier, avoiding any encryption or ban risk unlike Google Colab or Kaggle.
 - Studios Auto Sleep (stop running) after 10 minutes of inactivity (such as closing the site or not running anything in the background) in the Free tier.
+- Users inactive for a 6 month period and do not have an active paid subscription will be scheduled for deletion. Users will be notified 30 days before the scheduled deletion, with several reminders sent during this period.
 - Free tier users get free 15 monthly credits that can be used on CPUs or GPUs. Be sure to monitor your usage and stop the Studio when not in use.
 - "free studios" are considerated the free *CPU* studios, which have a 4 hour limit session, after that they will become paid CPU studios using your credits unless you restart them. Unlike GPU Studios which directly use credits.
 - In Free tier you can change GPU/CPUs at any time, but if you used all free 15 credits **monthly** only on a specific computing, you'd have:     
