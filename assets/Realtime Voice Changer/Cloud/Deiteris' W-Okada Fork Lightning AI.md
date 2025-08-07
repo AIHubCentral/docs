@@ -90,14 +90,14 @@ c. Once you are verified Lightning Ai will send you a email that conatins this:
 #### 2. Access the Notebook
 a. After creating your Lightning.AI account, open the [Wokada-Deiteris-Fork Notebook](https://lightning.ai/nick088/studios/wokada-deiteris-fork?view=public&section=featured) and Clone it.
 
-<img src="../lighting.ai/lightning-ai-clone-studio.png" alt="LightningAI Clone Studio" width="300">
+<img src="../lighting-img/lightning-ai-clone-studio.png" alt="LightningAI Clone Studio" width="300">
 
 #### 3. Activate/Switch GPU
 a. If you aren't on a GPU environment by default, you must switch to a GPU environment. This is crucial for performance.
 b. On the right-hand lateral menu, click on **Studio Environment** (the processor icon).
-<img src="../lighting.ai/gpu-setting.png" alt="image" width="500">
+<img src="../lighting-img/gpu-setting.png" alt="image" width="500">
 c. Click **Switch To GPU**, select an available GPU, and wait for the environment to restart.
-<img src="../lighting.ai/gpus-list.png" alt="image" width="500">
+<img src="../lighting-img/gpus-list.png" alt="image" width="500">
 
 !!! Here is a list of how long you can use each GPU before running out of Free credits.
 - 75 hours monthly of T4 16gb
