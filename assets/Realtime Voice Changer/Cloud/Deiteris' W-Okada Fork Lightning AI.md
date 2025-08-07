@@ -62,34 +62,44 @@ sudo pacman -Syu portaudio
 ```
 !!!
 
+
 ***
 ## Create an Account   
-#### 1. <u>Set up account.</u>
-a. Start by making an account <u>[here](https://lightning.ai/)</u>. You can sign up using your email, Google, or GitHub account. Using a work or .edu email may result in faster verification.
+### 1. Set up account.
+a. First make an account with <u>[Lightning Ai](https://lightning.ai)</u>
 
-<img src="../lightning-img/signup.png" alt="LightningAI Sign up" width="450" height="auto">
+<img src="../lighting.ai/signup.png" alt="image" width="300">
 
-b. Depending on the chosen sign-up method, you may need to verify your account via Phone Number to get full access.
+b. Make sure you verify yourself with a phone number. Once you've done that you will get an email that looks like this: 
 
-c. You can check more info about the different sign-up methods and trouble on the [Lightning.AI Create an Account Docs Page](https://lightning.ai/docs/overview/getting-started/create-account)
+<img src="../lighting.ai/verification.png" alt="LightningAI Verification" width="400">
+
+!!!danger
+You will need to wait 2-3 business days to become fully verified 
+!!!
+
+c. Once you are verified Lightning Ai will send you a email that conatins this: 
+
+<img src="../lighting.ai/email-verification.png" alt="LightningAI Email Verification" width="500">
+
 
 
 ***
 ## Studio Setup & Installation
 
-#### 2. <u>Access the Notebook</u>
+#### 2. Access the Notebook
 a. After creating your Lightning.AI account, open the [Wokada-Deiteris-Fork Notebook](https://lightning.ai/nick088/studios/wokada-deiteris-fork?view=public&section=featured) and Clone it.
 
-#### 3. <u>Activate GPU (Very Important!)</u>
+#### 3. Activate GPU (Very Important!)
 a. If you aren't on a GPU environment by default, you must switch to a GPU environment. This is crucial for performance.
 b. On the right-hand lateral menu, click on **Studio Environment** (the processor icon).
 c. Click **Switch To GPU**, select an available GPU, and wait for the environment to restart.
 
-#### 4. <u>Clone Repository and Install Dependencies</u>
+#### 4. Clone Repository and Install Dependencies
 a. Run the first code cell. This will download the latest version of the realtime voice changer and install necessary dependencies.
 b. This step may take a few minutes to complete. It will print "Installed!" when finished.
 
-#### 5. <u>Set Server Configuration</u>
+#### 5. Set Server Configuration
 a. Run the second code cell to apply the server configuration.
 b. It will print "Server successfully configurated!" upon completion.
 
@@ -97,7 +107,7 @@ b. It will print "Server successfully configurated!" upon completion.
 ***
 ### Tunnels & Server Setup
 
-#### 6. <u>Launch the Server via Tunnels</u>
+#### 6. Launch the Server via Tunnels
 This final code cell is the most important one—it starts the voice changer's server and uses a "tunneling" service to create a secure, public web address (URL) for you to access it from your own computer.
 
 a. Navigate to the third code cell, titled "Start Server **using Tunnels**". This cell boots up the Wokada Deiteris Fork application inside your Lightning.AI Studio.
@@ -117,7 +127,7 @@ b. **Select a Tunnel:** A tunnel securely exposes the application running in you
             8. You can optionally go back to the Jupyter session in the right-hand sidebar of the Lightning.AI interface, to check if any error appears in the code output.
 
     - **Ngrok (Fast, Popular & Reliable)**
-        - **How it works:** Ngrok is a popular service that creates secure tunnels. It requires a free account and an authentication token.
+        - **How it works:** Ngrok is a popular service that creates secure tunnels. It requires a free account and an authentication token. It has a 1GB Bandwidth Free Monthly Limit https://ngrok.com/docs/pricing-limits/free-plan-limits/.
         - **Steps:**
             1. Go to the [Ngrok Dashboard](https://dashboard.ngrok.com/get-started/your-authtoken) to get your free authtoken.
             2. In the notebook cell, paste your token into the `Token` field, replacing `'Ngrok | Horizon TOKEN'`.
@@ -151,15 +161,13 @@ c. After configuring your chosen tunnel, run the cell. The first time you run it
 
 d. Once the setup is complete, the output will display a message: **"--------- SERVER READY! ---------"**, followed by your public URL. Click this link to open the Wokada Deiteris Fork interface and start using the voice changer.
 
-!!!warning Note:
+!!!danger Note:
 The server runs in the foreground. If you stop the cell or close the Lightning.AI site, the server will shut down. Keep the cell running to use the program.
 !!!
 
 
 ***
 ## Usage
-***
-
 Now that you have the web interface running via Lightning.AI, the rest of the process is **identical to using a local installation.**
 
 For all subsequent steps, including audio routing, application settings, and model usage, please continue by following the Local PC guide.

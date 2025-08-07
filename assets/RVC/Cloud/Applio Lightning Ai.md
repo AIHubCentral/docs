@@ -1,8 +1,8 @@
 ---
-icon: chevron-right
+icon: ":zap:"
 order: 6000
 ---
-``Last update: August 7, 2025``
+``Last update: August 8, 2025``
 ***
 :::content-center
 <img src="../lighting.ai/logo.png" alt="image" width="600">        
@@ -14,7 +14,7 @@ order: 6000
 
 !!!danger Lightning.AI Service
 **Check the <u>[Lightning.AI Glossary](http://docs.aihub.gg/extra/glossary/#lightningai)</u> for more info on Free Tier, Limits, Verification, Pricing and other things.**
-
+!!!
 
 #### Pros & Cons :icon-tasklist:
 
@@ -37,17 +37,15 @@ order: 6000
 
 
 ***
-###### ‎   
-## How to Setup    
-***
-### 1. Set up Account.
+## Create an Account   
+### 1. Set up account.
 a. First make an account with <u>[Lightning Ai](https://lightning.ai)</u>
 
-<img src="../lighting.ai/1.png" alt="image" width="300">‎ 
+<img src="../lighting.ai/signup.png" alt="LightningAI Signup" width="300">
 
 b. Make sure you verify yourself with a phone number. Once you've done that you will get an email that looks like this: 
 
-<img src="../lighting.ai/2.png" alt="image" width="400">‎   
+<img src="../lighting.ai/verification.png" alt="LightningAI Verification" width="400">
 
 !!!danger
 You will need to wait 2-3 business days to become fully verified 
@@ -55,166 +53,101 @@ You will need to wait 2-3 business days to become fully verified
 
 c. Once you are verified Lightning Ai will send you a email that conatins this: 
 
-<img src="../lighting.ai/3.png" alt="image" width="500">‎   
-
-***  
-######
-### 2. Notebook and Setup.
-a. Once you have become verified click this <u>[link](https://lightning.ai)</u> and it should take you to your home page so you can create a notebook.
-
-b. In the top right click `New Studio` 
-
-<img src="../lighting.ai/studio.png" alt="image" width="1400">‎ 
-
-c. Set the studio type to code, teamspace to vision model and select any gpu you want for the machine. Click create when you've selected everything.
-
-<img src="../lighting.ai/setting.png" alt="image" width="400">‎ 
-
-d. Once you are in the notebook go to the left side right under `main.py` and right click. Select `New Notebook`. 
-
-<img src="../lighting.ai/notebook.png" alt="image" width="400">‎ 
-
-e. Select python 3 for your kernal. 
-
-<img src="../lighting.ai/python.png" alt="image" width="400">‎ 
-
-f. In the first cell paste in the code from this code block:
-
-
-==- Code Block 1
-```py
-import sys
-from IPython.display import clear_output
-import codecs
-import os
-
-encoded_url = "uggcf://tvguho.pbz/VNUvfcnab/Nccyvb/"
-decoded_url = codecs.decode(encoded_url, "rot_13")
-
-repo_name_encoded = "Nccyvb"
-repo_name = codecs.decode(repo_name_encoded, "rot_13")
-
-!pip install -q uv
-
-!git clone --depth 1 {decoded_url} --branch 3.2.9 --single-branch
-%cd {repo_name}
-clear_output()
-
-print("Installing requirements...")
-!uv pip install torch==2.7.0 torchvision torchaudio==2.7.0 \
-  --index-url https://download.pytorch.org/whl/cu128 \
-  -q
-!uv pip install -r requirements.txt -q
-!uv pip install pyngrok -q
-
-clear_output()
-print("✅ Finished installing requirements!")
-```
-===
-
-- Click the run button once you've pasted the code.
-
-<img src="../lighting.ai/block1.png" alt="image" width="600">‎ 
-
-
-g. When it's done it will say `Finished installing requirements!`. When it says that paste in this second code block in another cell.
-
-==- Code Block 2
-```py
-import codecs
-import threading
-import urllib.request
-import time
-import ipywidgets as widgets
-from IPython.display import display
-import os
-from pyngrok import ngrok
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
-
-method = "gradio"  # @param ["gradio", "localtunnel", "ngrok"]
-ngrok_token = "If you selected the 'ngrok' method, obtain your auth token here: https://dashboard.ngrok.com/get-started/your-authtoken" # @param {type:"string"}
-tensorboard = True #@param {type: "boolean"}
-
-def start_gradio():
-    !python app.py --listen --share
-
-def start_localtunnel():
-    !npm install -g localtunnel &>/dev/null
-    with open('url.txt', 'w') as file:
-        file.write('')
-    get_ipython().system_raw('lt --port 6969 >> url.txt 2>&1 &')
-    time.sleep(2)
-    endpoint_ip = urllib.request.urlopen('https://ipv4.icanhazip.com').read().decode('utf8').strip("\n")
-
-    with open('url.txt', 'r') as file:
-        tunnel_url = file.read()
-        tunnel_url = tunnel_url.replace("your url is: ", "")
-
-    print(f"Share Link: \033[0m\033[93m{tunnel_url}\033[0m", end="\033[0m\n")
-
-    password_endpoint_widget = widgets.Text(
-    value=endpoint_ip,
-    description='Password IP:',
-    disabled=True
-    )
-    display(password_endpoint_widget)
-    !python app.py --listen
-
-
-def start_ngrok():
-    try:
-        ngrok.set_auth_token(ngrok_token)
-        ngrok.kill()
-        tunnel = ngrok.connect(6969)
-        print(f"Ngrok URL: \033[0m\033[93m{tunnel.public_url}\033[0m", end="\033[0m\n")
-        !python app.py --listen
-    except Exception as e:
-        print(f"Error starting ngrok: {e}")
-
-def start_applio():
-    if method == 'gradio':
-        start_gradio()
-    elif method == 'localtunnel':
-        start_localtunnel()
-    elif method == 'ngrok':
-        start_ngrok()
-
-if tensorboard:
-    %load_ext tensorboard
-    %reload_ext tensorboard
-    %tensorboard --logdir logs --bind_all
-
-if "autobackups" not in globals():
-    autobackups = False
-
-if autobackups:
-    thread = threading.Thread(target=backup_files)
-    thread.start()
-
-thread_applio = threading.Thread(target=start_applio)
-thread_applio.start()
-
-
-while True:
-    time.sleep(5)
-```
-===
-
-- Once again click the run button when you've pasted this code in another cell. 
-
+<img src="../lighting.ai/email-verification.png" alt="LightningAI Email Verification" width="500">
 
 
 ***
-###### ‎   
-## Using Applio   
-###### ‎   
-#### 1. Open the Gradio link.
-a. To access Applio's UI click on the link next to `Running on public URL:`, after that it is basically the same as using Applio locally or on other cloud platforms.
+## Studio Setup & Installation
 
-#### 2. Accessing Files.
+#### 2. Access the Notebook
+a. After creating your Lightning.AI account, open the [Applio Notebook](https://lightning.ai/nick088/studios/applio-ui?view=public&section=featured) and Clone it.
+
+<img src="../lighting.ai/lightning-ai-clone-studio.png" alt="LightningAI Clone Studio" width="300">
+
+#### 3. Activate/Switch GPU
+a. If you aren't on a GPU environment by default, you must switch to a GPU environment. This is crucial for performance.
+b. On the right-hand lateral menu, click on **Studio Environment** (the processor icon).
+<img src="../lighting.ai/gpu-setting.png" alt="image" width="500">
+c. Click **Switch To GPU**, select an available GPU, and wait for the environment to restart.
+<img src="../lighting.ai/gpus-list.png" alt="image" width="500">
+
+!!! Here is a list of how long you can use each GPU before running out of Free credits.
+- 75 hours monthly of T4 16gb
+- 31 hours monthly of L4 24gb
+- 15 hours monthly of L40 48gb
+!!!
+
+#### 4. Clone Repository and Install Dependencies
+a. Run the first code cell. This will download the latest version of the realtime voice changer and install necessary dependencies.
+b. This step may take a few minutes to complete. It will print "Installed!" when finished.
+
+
+***
+### Tunnels & Server Setup
+
+#### 5. Launch the Server via Tunnels
+This final code cell is the most important one—it starts the voice changer's server and uses a "tunneling" service to create a secure, public web address (URL) for you to access it from your own computer.
+
+a. Navigate to the third code cell, titled "Start Server **using Tunnels**". This cell boots up the Wokada Deiteris Fork application inside your Lightning.AI Studio.
+
+b. **Select a Tunnel:** A tunnel securely exposes the application running in your private cloud environment to the public internet. The notebook gives you five different services to do this. Choose one from the `Tunnel` code menu in the code cell.
+
+    - **Port Viewer (Recommended & Default method)**
+        - **How it works:** This is a built-in Lightning.AI feature. It's the most straightforward method as it doesn't require any external accounts or tokens.
+        - **Steps:**
+            1. Select "Port Viewer" from the `Tunnel` code.
+            2. Click the + at the bottom of the right tab, click on Web Apps and install Port Viewer.
+            3. Run the code cell. Wait for the output to show that the server is listening.
+            4. In the right-hand sidebar of the Lightning.AI interface, click the **Web Apps** tab.
+            5. Click on **Port Viewer** and then click **Add a new port**.
+            6. Enter `18888` as the Port Number and optionally give it a name (e.g., "Voice Changer").
+            7. Click your Port in Port Viewer, you can also click Open to open it in an external tab.
+            8. You can optionally go back to the Jupyter session in the right-hand sidebar of the Lightning.AI interface, to check if any error appears in the code output.
+
+    - **Ngrok (Fast, Popular & Reliable)**
+        - **How it works:** Ngrok is a popular service that creates secure tunnels. It requires a free account and an authentication token. It has a 1GB Bandwidth Free Monthly Limit https://ngrok.com/docs/pricing-limits/free-plan-limits/.
+        - **Steps:**
+            1. Go to the [Ngrok Dashboard](https://dashboard.ngrok.com/get-started/your-authtoken) to get your free authtoken.
+            2. In the notebook cell, paste your token into the `Token` field, replacing `'Ngrok | Horizon TOKEN'`.
+            3. (Optional) To potentially reduce latency, select a geographical `Region` from the list of parameter options next to it, that is closest to you.
+            4. Run the cell. The public Ngrok URL (ending in `ngrok.io`) will be printed in the output once the server is ready. Click on it to access the UI.
+
+    - **Cloudflare (Easy, No Account Needed)**
+        - **How it works:** This option uses Cloudflare's free `trycloudflare` service. It's very easy to use as it requires no accounts or tokens.
+        - **Steps:**
+            1. Select "Cloudflare" from the `Tunnel` code.
+            2. Run the cell. The script will automatically download the necessary tools. After a few moments, a public URL (ending in `trycloudflare.com`) will be printed in the output. Click it to open the interface.
+
+    - **LocalTunnel (No Account, Password Protected)**
+        - **How it works:** LocalTunnel is another free service that doesn't require an account. For security, it generates a unique URL that is protected by a password.
+        - **Steps:**
+            1. Select "LocalTunnel" from the `Tunnel` code.
+            2. Run the cell.
+            3. The output will display two key pieces of information: the public URL (ending in `loca.lt`) and a `Local Tunnel Password` below it.
+            4. Click the URL. A new page will ask for a password.
+            5. Copy the password from the notebook output and paste it into the password prompt in your browser to access the voice changer.
+
+    - **Horizon (Fast, Requires Account & ID)**
+        - **How it works:** Horizon is another tunneling service that requires a free account and a personal ID for authentication.
+        - **Steps:**
+            1. Go to the [Horizon Dashboard](https://hrzn.run/dashboard/) and sign up. On the second step of the setup, you will see a command like `hrzn login YOUR_ID`. Copy that `YOUR_ID` part.
+            2. In the notebook cell, paste this ID into the `Token` field.
+            3. Run the cell. The first time you use it, the output may ask you to authorize the connection by clicking a link (`https://hrzn.run/dashboard/settings/cli-token-requests/...`). Click this link and approve the request in your Horizon dashboard.
+            4. The public Horizon URL (ending in `hrzn.run`) will then be printed in the output. Click it to access the UI.
+
+c. After configuring your chosen tunnel, run the cell. The first time you run it, it might download the necessary files, which might take a minute or two.
+
+d. Once the setup is complete, the output will display a message with your public URL. Click this link to open the Applio interface and start using the program.
+
+!!!danger Note:
+The server runs in the foreground. If you stop the cell or close the Lightning.AI site, the server will shut down. Keep the cell running to use the program.
+!!!
+
+
+#### 6. Accessing Files.
 b. To upload a dataset, upload audio or anything else find the `Teamspace Drive` button on the right and click it.
 
-<img src="../lighting.ai/8.png" alt="image" width="500">‎
+<img src="../lighting.ai/teamspace-drive.png" alt="LightningAI Teamspace Drive" width="500">‎
 
 !!!
 The path to Applio is `Studio > this_studio > Applio > Applio`
@@ -224,45 +157,37 @@ c. Once you're there you can just drag and drop files.
 
 d. To download files click on the file then click the three dots on the right of it and click download
 
-<img src="../lighting.ai/13.png" alt="image" width="500">‎
+<img src="../lighting.ai/teamspace-drive-download.png" alt="Teamspace Drive Download" width="500">
 
-#### 3. Opening the Tensor Board.
+#### 7. Opening the TensorBoard.
 
-a. Find the Tensor board icon on the right side bar and click it.
+a. Find the TensorBoard icon on the right side bar and click it.
 
-<img src="../lighting.ai/10.png" alt="image" width="500">‎
+<img src="../lighting.ai/tensorboard.png" alt="LightningAI TensorBoard" width="500">
 
-b. Once you've done that it will open the Tensor board. To learn how to use it go <u>[here](https://docs.aihub.gg/rvc/resources/training/#usage-guide)</u>
+b. Once you've done that it will open the TensorBoard. To learn how to use it go <u>[here](https://docs.aihub.gg/rvc/resources/training/#usage-guide)</u>
 ***
 
-#### 4. Opening the notebook.
+#### 8. Opening the notebook.
 
 a. If you want to go back to the notebook simply click on the `Jupyter` icon on the right. 
 
-<img src="../lighting.ai/14.png" alt="image" width="500">‎
+<img src="../lighting.ai/jupyter.png" alt="image" width="500">
+
 
 ***
-###### ‎   
-## How to use Better GPUs    
-###### ‎   
-#### 1. Swapping GPUs.
-a. To swap GPUs go to the GPU icon the the right and click it. 
+## Usage
+Now that you have the web interface running via Lightning.AI, the rest of the process is **identical to using a local installation.**
 
-<img src="../lighting.ai/11.png" alt="image" width="500">‎
+For all subsequent steps, including application settings and model usage, please continue by following the Local PC guide.
 
-b. Then click on `GPU` and it will show you a list of GPUs you can use by clicking on them and then clicking request.
+[!button text="Continue with the Local PC Guide" icon="arrow-right" target="blank"](https://docs.aihub.gg/rvc/local/applio/#inference)
 
-<img src="../lighting.ai/12.png" alt="image" width="500">‎
-
-!!! Here is a list of how long you can use each GPU before running out of Free hours.
-- 75 hours monthly of T4 16gb
-- 31 hours monthly of L4 24gb
-- 15 hours monthly of L40 48gb
-!!!
 
 ***
-
-
+## Maintenance
+#### Deleting Everything
+If you need to update Applio or start fresh, you can run the final cell in the notebook, "Delete everything". This will remove all downloaded files and configurations from your persistent storage, allowing for a clean installation by re-following the notebook with perhaps a changed branch variable.
 
 
 ***
