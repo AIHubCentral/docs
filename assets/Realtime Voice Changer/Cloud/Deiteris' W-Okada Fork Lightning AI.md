@@ -17,6 +17,10 @@ order: 2000
 **Check the <u>[Lightning.AI Glossary](http://docs.aihub.gg/extra/glossary/#lightningai)</u> for more info on Free Tier, Limits, Verification, Pricing and other things.**
 !!!
 
+!!! Note on the Free Tier "10 Mins Inactivity Auto Sleep"
+This doesn't affect when the Wokada Deiteris Fork is running, this is affected only if no cell is running or the site is closed, which will shutdown the studio session. So you don't have to check every 10 minutes the site after you're sure the server cell is running and you're using the Web User Interface after starting it.
+!!!
+
 
 ***
 ## Virtual Audio Cable
