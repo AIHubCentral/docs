@@ -3,9 +3,8 @@ icon: chevron-right
 order: 2000
 ---
 
-``Last update: July 30, 2025``
+``Last update: August 8, 2025``
 ***
- ‎
 :::content-center
 ## Introduction
 :::
@@ -17,7 +16,6 @@ order: 2000
 
 - The **quality**, **variety** & **length** of the dataset are the biggest determining factors for the final quality of the model. Let's explain Length and Variety.
 ***
- ‎
 :::content-center
 ## Length & Variety
 :::
@@ -31,7 +29,6 @@ order: 2000
     - Longer datasets.
     - Expressive speech.
 ***
- ‎
 :::content-center
 ## Quality  
 :::
@@ -164,7 +161,7 @@ We recommend picking `FLAC`. Learn why <u>[here](https://docs.aihub.gg/extra/glo
 ‎  
 b. If your GPU is **compatible with <u>[CUDA](https://docs.aihub.gg/extra/glossary/#cuda)</u>**, toggle `GPU Conversion` on for a faster process.    
 
-    <img src="../uvrmvsep-img/16.png" alt="image" width="350" height="auto">‎      
+    <img src="../uvrmvsep-img/16.png" alt="image" width="350" height="auto">   
 
 ###### ‎       
 >This step is not mandatory, but recommended for better results.
@@ -300,11 +297,81 @@ De-Noise | VR | Mel denoiser
 ### Usage 
 2. To use RX 11 it is **STONGLY** recommended that you read this <u>[guide](https://rentry.co/RVC-dataset-RX11)</u> on RX 11.
 
-+++ Colab
++++ UVR5 UI Colab
 
 :::content-center
-## Cloud UVR
+## UVR5 UI Colab (WIP)
 :::
+
+This is Eddy's UVR5 UI Colab.
+
+### How to Use :icon-checklist:
+
+***
+==- *Extracting Vocals From Songs* 🎶
+###### ‎       
+#### 1. Set up Colab
+###### ‎ 
+1. First access <u>[Eddy's UVR UI Cloud Colab](https://colab.research.google.com/github/Eddycrack864/UVR5-UI/blob/main/UVR_UI.ipynb)</u>.   
+‎       
+2. Then **Log in** to your Google account.      
+‎   
+3. Execute the **Installation** cell by pressing the play button :icon-play: , optionally check `use_drive` & grant all the permissions for Batch Separation.
+‎   
+    <img src="../uvrcolab-img/installation.png" alt="UVR5 UI Colab Installation Cell" width="270" height="auto">‎   
+‎   
+
+5. Then run the **Install** cell. 
+
+    <img src="../msstcolab-img/3.png" alt="image" width="270" height="auto">
+
+- Once it's done it will look like this: 
+
+    <img src="../msstcolab-img/4.png" alt="image" width="600" height="auto">
+
+***
+
+‎  
+#### 2. Set up folders
+###### ‎ 
+- In Google Drive, make two folders, named **input** & **output**.       
+‎       
+    <img src="../msstcolab-img/2.png" alt="image" width="600" height="auto">     
+‎     
+‎     
+***
+‎  
+#### 3. Separate
+###### ‎   
+a. Select your model of choice and run the **Separation** cell. You can look <u>[here](https://docs.aihub.gg/rvc/resources/vocal-isolation/#best-models)</u> for the best models
+
+‎   
+    <img src="../msstcolab-img/5.png" alt="image" width="500" height="auto">‎   
+‎         
+!!!
+These are the best settings: 
+- Overlap: 8
+- Chunk Size: 485100
+!!!
+b. Download the result located in the output folder.
+***
+===
+
+
+### Troubleshooting :icon-tools:
+***
+
+#### Cannot connect to GPU backend.
+- You have exhausted the <u>[GPU runtime](https://docs.aihub.gg/rvc/extra/glossary/#google-colab)</u> of Colab.
+
+
++++ MSST Colab
+
+:::content-center
+## MSST
+:::
+
+This is jarredou's Music Source Separation Training (MMST) (Colab Inference).
 
 ### How to Use :icon-checklist:
 
@@ -319,18 +386,18 @@ De-Noise | VR | Mel denoiser
 ‎   
 3. Execute the **Gdrive Connection** cell by pressing the play button :icon-play:. Grant all the permissions.   
 ‎   
-    <img src="../clouduvr-img/1.png" alt="image" width="270" height="auto">‎   
+    <img src="../msstcolab-img/1.png" alt="image" width="270" height="auto">‎   
 ‎   
 - It'll finish once the logs say `Mounted at /content/drive`
 ‎   
 
 5. Then run the **Install** cell. 
 
-    <img src="../clouduvr-img/3.png" alt="image" width="270" height="auto">
+    <img src="../msstcolab-img/3.png" alt="image" width="270" height="auto">
 
 - Once it's done it will look like this: 
 
-    <img src="../clouduvr-img/4.png" alt="image" width="600" height="auto">
+    <img src="../msstcolab-img/4.png" alt="image" width="600" height="auto">
 
 ***
 
@@ -339,7 +406,7 @@ De-Noise | VR | Mel denoiser
 ###### ‎ 
 - In Google Drive, make two folders, named **input** & **output**.       
 ‎       
-    <img src="../clouduvr-img/2.png" alt="image" width="600" height="auto">     
+    <img src="../msstcolab-img/2.png" alt="image" width="600" height="auto">     
 ‎     
 ‎     
 ***
@@ -349,7 +416,7 @@ De-Noise | VR | Mel denoiser
 a. Select your model of choice and run the **Separation** cell. You can look <u>[here](https://docs.aihub.gg/rvc/resources/vocal-isolation/#best-models)</u> for the best models
 
 ‎   
-    <img src="../clouduvr-img/5.png" alt="image" width="500" height="auto">‎   
+    <img src="../msstcolab-img/5.png" alt="image" width="500" height="auto">‎   
 ‎         
 !!!
 These are the best settings: 
