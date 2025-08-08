@@ -101,7 +101,7 @@ Storage | 6 GB
 ###### ‎  
 - You can, but it's going to be slower, as they don't have CUDA cores.
 - So it's more convenient using RVC through the <u>[cloud](https://docs.aihub.gg/extra/glossary/#cloud-based)</u>.
-- If you're willing to use a slower version you can go ahead and follow this guide on how to get zluda working with <u>[Applio Zluda](https://docs.applio.org/getting-started/installation#amd-gpu-support-windows)</u>.
+- If you're willing to use a slower version you can go ahead and follow this guide on how to get zluda working with <u>[Applio Zluda](https://docs.aihub.gg/rvc/local/applio/#amd-on-windows-precompiled-fix)</u>.
 === 
 
 ==- *How long does it take to train?*

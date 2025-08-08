@@ -11,7 +11,6 @@ order: 3000
 
 :::
 
-###### ‎
 :::content-center
 ## Introduction ‎
 :::
@@ -70,7 +69,7 @@ If you don't meet the requirements, there are 4 Cloud Versions:
 
 ###### ‎
 :::content-center
-## Download :icon-download:
+## Download & Installation :icon-download:
 :::
 ###### ‎
 !!!warning Before Downloading:
