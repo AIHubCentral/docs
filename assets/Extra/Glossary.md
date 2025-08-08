@@ -3,7 +3,7 @@ icon: chevron-right
 order: 1000
 ---
 
-``Last update: June 15, 2024``
+``Last update: August 9, 2025``
 ***
 :::content-center
 
@@ -130,6 +130,7 @@ Of course. Here is a standalone section about Jupyter Notebooks, written in the 
 - A <u>[cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based)</u> is a <u>[cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based)</u> platform by Google to run <u>[Jupyter Notebooks](https://docs.aihub.gg/extra/glossary/#jupyter-notebook)</u>.
 - It's focused on data science and machine learning.
 - It doesn't Web User Interfaces, meaning it needs encrypted <u>[Jupyter Notebooks](https://docs.aihub.gg/extra/glossary/#jupyter-notebook)</u>) and has ban risk like Google Colab.
+- If you have trouble verifying your phone number, [Contact Kaggle](https://www.kaggle.com/contact).
 - It requires a phone number verification to access the internet (which is needed to run most <u>[Jupyter Notebooks](https://docs.aihub.gg/extra/glossary/#jupyter-notebook)</u>).
 - The free tier provides a limited quota of **30 free GPU hours per week** of either T4x2 (2 T4 GPUs at once) or P100, which you can swap at any time, using either will consume the quota, which resets weekly.
 
