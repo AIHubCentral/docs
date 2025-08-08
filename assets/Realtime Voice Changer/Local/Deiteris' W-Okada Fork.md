@@ -723,7 +723,7 @@ This fork is a lot better for AMD GPU's compared to the original w-okada. On the
 Example: AMD RX 6650 XT lowest latency is 298 ms chunk on original w-okada. On this fork lowest latency is around 60 - 80 ms chunk
 !!!
 
-!!! Which is better for NVIDIA mainline w-okada or Deiteris' fork?
+!!! Which is better for NVIDIA original w-okada or Deiteris' fork?
 Deiteris' fork is better for NVIDIA users who normally use the prebuilt w-okada version, because this version uses GPU accelerated extra compared to the original which uses CPU.
 
 For the RTX GPUs the delay performance differences are minimal, but quality performance is better. For older cards like GTX or MX, this fork performs better in all aspects.
