@@ -5,7 +5,7 @@ order: 6000
 ``Last update: August 8, 2025``
 ***
 :::content-center
-<img src="../lighting.ai/logo.png" alt="image" width="600">        
+<img src="../lightning-applio-img/logo.png" alt="image" width="600">        
 :::
 ## </u>Introduction</u>
 - This is a <u>[cloud-based](http://docs.aihub.gg/extra/glossary/#cloud-based)</u> alternative to run [Applio](https://docs.aihub.gg/rvc/local/applio/), RVC Fork, only for people who don't have a good PC GPU, via the <u>[Lightning.AI Service](http://docs.aihub.gg/extra/glossary/#lightningai)</u>. With a Web User Interface.
@@ -41,11 +41,11 @@ order: 6000
 ### 1. Set up account.
 a. First make an account with <u>[Lightning Ai](https://lightning.ai)</u>
 
-<img src="../lighting.ai/signup.png" alt="LightningAI Signup" width="300">
+<img src="../lightning-applio-img/signup.png" alt="LightningAI Signup" width="300">
 
 b. Make sure you verify yourself with a phone number. Once you've done that you will get an email that looks like this: 
 
-<img src="../lighting.ai/verification.png" alt="LightningAI Verification" width="400">
+<img src="../lightning-applio-img/verification.png" alt="LightningAI Verification" width="400">
 
 !!!danger
 You will need to wait 2-3 business days to become fully verified 
@@ -53,7 +53,7 @@ You will need to wait 2-3 business days to become fully verified
 
 c. Once you are verified Lightning Ai will send you a email that conatins this: 
 
-<img src="../lighting.ai/email-verification.png" alt="LightningAI Email Verification" width="500">
+<img src="../lightning-applio-img/email-verification.png" alt="LightningAI Email Verification" width="500">
 
 
 ***
@@ -62,14 +62,14 @@ c. Once you are verified Lightning Ai will send you a email that conatins this:
 #### 2. Access the Notebook
 a. After creating your Lightning.AI account, open the [Applio Notebook](https://lightning.ai/nick088/studios/applio-ui?view=public&section=featured) and Clone it.
 
-<img src="../lighting.ai/lightning-ai-clone-studio.png" alt="LightningAI Clone Studio" width="300">
+<img src="../lightning-applio-img/lightning-ai-clone-studio.png" alt="LightningAI Clone Studio" width="300">
 
 #### 3. Activate/Switch GPU
 a. If you aren't on a GPU environment by default, you must switch to a GPU environment. This is crucial for performance.
 b. On the right-hand lateral menu, click on **Studio Environment** (the processor icon).
-<img src="../lighting.ai/gpu-setting.png" alt="image" width="500">
+<img src="../lightning-applio-img/gpu-setting.png" alt="LightningAI GPU Setting" width="500">
 c. Click **Switch To GPU**, select an available GPU, and wait for the environment to restart.
-<img src="../lighting.ai/gpus-list.png" alt="image" width="500">
+<img src="../lightning-applio-img/gpus-list.png" alt="LightningAI GPUs List" width="500">
 
 !!! Here is a list of how long you can use each GPU before running out of Free credits.
 - 75 hours monthly of T4 16gb
@@ -83,7 +83,7 @@ b. This step may take a few minutes to complete. It will print "Installed!" when
 
 
 ***
-### Tunnels & Server Setup
+### Tunnels
 
 #### 5. Launch the Server via Tunnels
 This final code cell is the most important one—it starts the voice changer's server and uses a "tunneling" service to create a secure, public web address (URL) for you to access it from your own computer.
@@ -143,11 +143,12 @@ d. Once the setup is complete, the output will display a message with your publi
 The server runs in the foreground. If you stop the cell or close the Lightning.AI site, the server will shut down. Keep the cell running to use the program.
 !!!
 
+### Server Setup
 
 #### 6. Accessing Files.
 b. To upload a dataset, upload audio or anything else find the `Teamspace Drive` button on the right and click it.
 
-<img src="../lighting.ai/teamspace-drive.png" alt="LightningAI Teamspace Drive" width="500">‎
+<img src="../lightning-applio-img/teamspace-drive.png" alt="LightningAI Teamspace Drive" width="500">‎
 
 !!!
 The path to Applio is `Studio > this_studio > Applio > Applio`
@@ -157,22 +158,27 @@ c. Once you're there you can just drag and drop files.
 
 d. To download files click on the file then click the three dots on the right of it and click download
 
-<img src="../lighting.ai/teamspace-drive-download.png" alt="Teamspace Drive Download" width="500">
+<img src="../lightning-applio-img/teamspace-drive-download.png" alt="Teamspace Drive Download" width="500">
 
-#### 7. Opening the TensorBoard.
+##### 7. Opening the TensorBoard.
 
 a. Find the TensorBoard icon on the right side bar and click it.
 
-<img src="../lighting.ai/tensorboard.png" alt="LightningAI TensorBoard" width="500">
+<img src="../lightning-applio-img/tensorboard.png" alt="LightningAI TensorBoard" width="500">
 
-b. Once you've done that it will open the TensorBoard. To learn how to use it go <u>[here](https://docs.aihub.gg/rvc/resources/training/#usage-guide)</u>
+b. Once you've clicked it, Start it.
+
+<img src="../lightning-applio-img/run-tensorboard.png" alt="LightningAI Run TensorBoard" width="500">
+
+
+c. Once you've done that it will open the TensorBoard. you can open it externally in another tab/window via clicking Open. To learn how to use it go <u>[here](https://docs.aihub.gg/rvc/resources/training/#usage-guide)</u>
 ***
 
 #### 8. Opening the notebook.
 
 a. If you want to go back to the notebook simply click on the `Jupyter` icon on the right. 
 
-<img src="../lighting.ai/jupyter.png" alt="image" width="500">
+<img src="../lightning-applio-img/jupyter.png" alt="LightningAI Jupyter" width="500">
 
 
 ***

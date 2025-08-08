@@ -68,11 +68,11 @@ sudo pacman -Syu portaudio
 ### 1. Set up account.
 a. First make an account with <u>[Lightning Ai](https://lightning.ai)</u>
 
-<img src="../lighting.ai/signup.png" alt="image" width="300">
+<img src="../lightning-img/signup.png" alt="LightningAI Signup" width="300">
 
 b. Make sure you verify yourself with a phone number. Once you've done that you will get an email that looks like this: 
 
-<img src="../lighting.ai/verification.png" alt="LightningAI Verification" width="400">
+<img src="../lightning-img/verification.png" alt="LightningAI Verification" width="400">
 
 !!!danger
 You will need to wait 2-3 business days to become fully verified 
@@ -80,7 +80,7 @@ You will need to wait 2-3 business days to become fully verified
 
 c. Once you are verified Lightning Ai will send you a email that conatins this: 
 
-<img src="../lighting.ai/email-verification.png" alt="LightningAI Email Verification" width="500">
+<img src="../lightning-img/email-verification.png" alt="LightningAI Email Verification" width="500">
 
 
 
@@ -95,9 +95,9 @@ a. After creating your Lightning.AI account, open the [Wokada-Deiteris-Fork Note
 #### 3. Activate/Switch GPU
 a. If you aren't on a GPU environment by default, you must switch to a GPU environment. This is crucial for performance.
 b. On the right-hand lateral menu, click on **Studio Environment** (the processor icon).
-<img src="../lighting-img/gpu-setting.png" alt="image" width="500">
+<img src="../lighting-img/gpu-setting.png" alt="LightningAI GPU Setting" width="500">
 c. Click **Switch To GPU**, select an available GPU, and wait for the environment to restart.
-<img src="../lighting-img/gpus-list.png" alt="image" width="500">
+<img src="../lighting-img/gpus-list.png" alt="LightningAI GPUs List" width="500">
 
 !!! Here is a list of how long you can use each GPU before running out of Free credits.
 - 75 hours monthly of T4 16gb
