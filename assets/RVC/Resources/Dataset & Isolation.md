@@ -321,43 +321,14 @@ This is Eddy's UVR5 UI Colab.
     <img src="../uvrcolab-img/installation.png" alt="UVR5 UI Colab Installation Cell" width="270" height="auto">‎   
 ‎   
 
-5. Then run the **Install** cell. 
+5. Then run the **Run UI** cell. You can choose different tunnels in case one is down. 
 
-    <img src="../msstcolab-img/3.png" alt="image" width="270" height="auto">
+    <img src="../uvrcolab-img/run-ui.png" alt="image" width="270" height="auto">
 
-- Once it's done it will look like this: 
+- Once it's done open the public url.
 
-    <img src="../msstcolab-img/4.png" alt="image" width="600" height="auto">
 
 ***
-
-‎  
-#### 2. Set up folders
-###### ‎ 
-- In Google Drive, make two folders, named **input** & **output**.       
-‎       
-    <img src="../msstcolab-img/2.png" alt="image" width="600" height="auto">     
-‎     
-‎     
-***
-‎  
-#### 3. Separate
-###### ‎   
-a. Select your model of choice and run the **Separation** cell. You can look <u>[here](https://docs.aihub.gg/rvc/resources/vocal-isolation/#best-models)</u> for the best models
-
-‎   
-    <img src="../msstcolab-img/5.png" alt="image" width="500" height="auto">‎   
-‎         
-!!!
-These are the best settings: 
-- Overlap: 8
-- Chunk Size: 485100
-!!!
-b. Download the result located in the output folder.
-***
-===
-
-
 ### Troubleshooting :icon-tools:
 ***
 
