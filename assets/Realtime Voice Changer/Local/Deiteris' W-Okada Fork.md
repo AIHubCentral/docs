@@ -838,22 +838,6 @@ You did not match the sample rate of your virtual audio cable to your microphone
 !!!
 +++
 
-***
-
-### Models to try
-
-- You will need to connect your account to <u>[weights.com](http://weights.com/)</u> to be able to download these models
-    - Click on the 3 dots (...) on weights.com models, then Download model. You will need an account
-
-**Female:**
-
-Gawr Gura: [Hugging Face Link](https://huggingface.co/dacoolkid44/VTuber-RVC/tree/main/Gawr%20Gura%20(Talking)) / [Weights Link](https://www.weights.com/models/clm72kp5p01sycctcp3ti9xaw)
-
-**Male:**
-
-[Bob Ross voice made by dieseldog34](https://www.weights.com/models/clm72t7ra0qqhcctc4zyax181)
-
-[Markiplier voice made by hobqueer](https://www.weights.com/models/clm72nuvi0c8scctcvzrckuqp)
 
 ***
 ## Help
