@@ -915,6 +915,10 @@ RVC works by downsampling your audio voice to 16khz because f0 estimators only w
 ### Are there unique Voice Models?
 RVC Voice Models need to be trained on something, so the models themselves can't be unique, but you can use the [Merge Lab](http://docs.aihub.gg/realtime-voice-changer/local/deiteris-w-okada-fork/#merging-models-merge-lab) to create a new unique merged model.
 
+***
+### Is there a way to use Spin embedder rvc voice models?
+Wokada Deiteris Fork doesn't support models trained with the Spin embedder (which are very few), but there is a Pull Request for that https://github.com/deiteris/voice-changer/pull/213.
+
 
 ***
 ###### ‎
