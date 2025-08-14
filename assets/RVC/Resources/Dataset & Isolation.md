@@ -414,6 +414,97 @@ De-Noise | Mel denoiser
 #### Cannot connect to GPU backend.
 - You have exhausted the <u>[GPU runtime](https://docs.aihub.gg/rvc/extra/glossary/#google-colab)</u> of Colab.
 
+%%
++++ Huggingface Spaces
+
+:::content-center
+## UVR Zero GPU 
+:::
+***
+
+!!!danger Currently broken for uknown issues
+For unknwon related ZeroGPU issues, the space is broken. We suggest alternatives till it's fixed or we have updates on the situation.
+!!!
+
+## How to use :icon-checklist:
+
+***
+
+==- Extract vocals
+###### ‎
+
+Access the space <u>[here](https://huggingface.co/spaces/TheStinger/UVR5_UI)</u>, you don't need an account to use this.           
+    
+#### 2. Select vocals & options
+###### ‎  
+a. Tap the **Input Audio** box & select your audio, or simply drag & drop.     
+‎        
+<img src="../hugging-img/1.png" alt="image" width="1000" height="auto">‎           
+‎       
+‎       
+b. Once it's done uploading, in **CHOOSE PROCESS METHOD**, select ``BS/Mel Roformer``. Under that you can change **Segment Size** and **Overlap**, the defaults are fine.   
+‎   
+<img src="../hugging-img/2.png" alt="image" width="1000" height="auto">‎              
+
+‎ 
+#### 3. Select model
+###### ‎  
+d. Check the best models list & in **CHOOSE MODEL** pick the one according to what you need to remove.    
+‎       
+If you need to remove multiple noises, follow this pipeline for the best results:   
+``Remove instrumental -> Remove reverb -> Extract main vocals -> Remove noise``  
+‎  
+#### 4. Start Processing
+###### ‎  
+a. Click **Spererate!** below. Wait a moment for the audio to process.       
+‎       
+b. Playable audios will then appear in the output boxes below. To download the output, click the little download icon in the top right.            
+     
+- If you're extracting lead vocals, remember to download the backing ones if you wish to keep them.     
+===
+
+### Troubleshooting :icon-tools:
+***
+==- *UVR extracted too little/too much.*
+###### ‎
+- Modify the `Aggression Setting` value on the right. 
+- This determines the depth of the extraction. Only the VR method has it.
+- A higher value will deepen the extraction, and a lower one will soften it.
+- Each audio is different, so you'll have to test the ideal value.
+===
+
+==- *I can't remove some of the backing vocals.*
+- Run the audio through BVE. Modify the Aggression Setting if necessary.
+===
+
+==- *I couldn't find my answer.*
+###### ‎   
+- Report your issue <u>[here](https://docs.aihub.gg/contributions/)</u>.
+===
+
+==- Errors
+#### GPU task aborted:
+ZeroGPU HuggingFace Spaces have a max inference time duration, it’s the time it takes to do an Inference (use the model, not the time of your audio file itself), on default it’s around 1 minute which is what Ilaria RVC uses. You need to retry with a shorter audio, you could also split your audio.
+***
+#### You have exceeded your GPU quota ( NUMBER s left vs. 60s requested). Sign-up on Hugging Face to get more quotas or retry in Hour:Minutes:Seconds
+ZeroGPU HuggingFace Spaces have a quota per account, if you aren’t signed in you will get less quota so it’s better to login for more quota. You could get the ‘Sign-up’ part even if you are logged in. The ZeroGPU Quota can’t be seen but it isn’t unlimited. You can either:
+- Login so you get more quota
+- Wait
+- Pay to be an HuggingFace PRO Member to get X5 times more quota
+===
+
+***
+### Best Models
+***
+
+Extraction | Model
+:---: | :---:
+Vocals | Gabox's voc_fv4
+Instrumental | INST Gabox V7
+De-Reverb | Anvuew mel dereverb v2
+Extract Backing Vocals | Mel roformer karaoke
+De-Noise | Mel denoiser 
+%%
 
 +++ MVSEP  
 
