@@ -121,6 +121,40 @@ Nanashi V1.7 is a fine-tuned based on TITAN pretrained and made with 11 hours of
     - <u>[**D Download**](https://huggingface.co/shiromiya/nanashi-pretrain/resolve/main/v1.7/D_nanashi_v1_7.pth?download=true)</u>
     - <u>[**G Download**](https://huggingface.co/shiromiya/nanashi-pretrain/resolve/main/v1.7/G_nanashi_v1_7.pth?download=true)</u>
 |||
+||| Freesia-speech by lyery
+Freesia-speech is a fine-tuned based on the original RVC V2 pretrained, trained with the vctk dataset, also used in the original pretrain, but is the first pretrain to use the [Spin Embedder Model](http://docs.aihub.gg/rvc/resources/inference-settings/#spin), resulting in more natural output, better pronunciation and fewer artifacts compared to ContentVec, especially in realtime. This is speech only (it is a very common bad practice is mixing singing with speech) and any languages are supported, tho english works best. 10 minutes should be the bare minimum to train models with this pretrain, it's suggested to have 30 minutes.
+
+- Training Info:
+    - dataset: vctk (38 hours in total after manual preprocessing, 109 speakers)
+    - batch size: 32
+    - sample rate: 32k
+    - embedder: spin
+    - f0: rmvpe
+    - vocoder: hifigan
+    - trained on applio-main, fp16 precision
+
+<br>
+
+- **32k Download:**
+    - <u>[**D Download**](https://huggingface.co/lyery/spin/resolve/main/D_fp16vctk.pth?download=true)</u>
+    - <u>[**G Download**](https://huggingface.co/lyery/spin/resolve/main/G_fp16vctk.pth?download=true)</u>
+|||
+||| Freesia-sing by lyery
+Freesia-sing is a fine-tuned based on the original RVC V2 pretrained, it's the 2nd pretrain to use the [Spin Embedder Model](http://docs.aihub.gg/rvc/resources/inference-settings/#spin), resulting in more natural output, better pronunciation and fewer artifacts compared to ContentVec, especially in realtime. This is Singing only (it is a very common bad practice is mixing singing with speech) and any languages are supported, tho english works best.
+
+- Training Info:
+    - dataset: m4singer (28 hours after preprocessing, 20 speakers, vocal ranges included are bass, soprano, tenor, alto)
+    - batch size: 32
+    - sample rate: 32k
+    - embedder: spin
+    - f0: rmvpe
+
+<br>
+
+- **32k Download:**
+    - <u>[**D Download**](https://huggingface.co/lyery/spin-singing/resolve/main/D_singer.pth?download=true)</u>
+    - <u>[**G Download**](https://huggingface.co/lyery/spin-singing/resolve/main/G_singer.pth?download=true)</u>
+|||
 ||| KLM 4.1 by SeoulStreamingStation
 KLM 4.1 is a fine-tuned based on KLM V7 pretrained and made with around 100 hours dataset (Korean vocal/speech, Japanese vocal/speech and English speech), so it will work better with those languages. Unlike typical pretrained models KLM is a pretrained model created to make vocal guides using short voice recordings from a studio, this means that even with short dataset high pitch information it is possible to implement high-pitched sounds but it is sensitive to noise so it is recommended to use it with high quality datasets
 
