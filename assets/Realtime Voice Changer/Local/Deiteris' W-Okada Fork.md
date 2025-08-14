@@ -824,8 +824,11 @@ In the voice changer app:
 - Select **AUDIO:** `Server`
 - Select **S.R.:** `48000`
 - Select the **input** and **output** from ASIO. You can select "ALL" in the first column to filter for ASIO devices to make it easier.
+- **Ch.:** For both input and output, it's best to leave them to "default", the numbers are for true asio devices which flex isnt.
+- **Monitor:** You can use the WASAPI Windows, you could also use windows directsound but that might cause an issue if matching sample rates doesnt fix it.
 
-<img src="../wokada-img/flexasio-server.jpg" alt="Wokada FlexASIO Server Settings" width="600" height="auto">
+
+<img src="../wokada-img/flexasio-server.png" alt="Wokada FlexASIO Server Settings" width="600" height="auto">
 
 Then, on your game or Discord, you select:
 
