@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.808495449444">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.808498511497">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -34,11 +34,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../../img/b.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.11.0.808495449444" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.11.0.808498511497" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.808495449444" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.808498511497" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.808495449444" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.808498511497" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -433,6 +433,64 @@
 <ul>
 <li><u><a href="https://huggingface.co/shiromiya/nanashi-pretrain/resolve/main/v1.7/D_nanashi_v1_7.pth?download=true"><strong>D Download</strong></a></u></li>
 <li><u><a href="https://huggingface.co/shiromiya/nanashi-pretrain/resolve/main/v1.7/G_nanashi_v1_7.pth?download=true"><strong>G Download</strong></a></u></li>
+</ul>
+</li>
+</ul>
+    </div>
+</div>
+<div class="mb-6 overflow-hidden border rounded-md docs-columns dark:border-base-border" style="grid-template-columns: repeat(1, minmax(0, 1fr));">
+    <div class="flex items-center px-5 py-3 font-medium leading-snug text-gray-900 border-b border-base-border dark:text-white">
+        <span>Freesia-speech by lyery</span>
+    </div>
+    <div class="px-5 py-3 docs-columns-content">
+<p>Freesia-speech is a fine-tuned based on the original RVC V2 pretrained, trained with the vctk dataset, also used in the original pretrain, but is the first pretrain to use the <a href="http://docs.aihub.gg/rvc/resources/inference-settings/#spin">Spin Embedder Model</a>, resulting in more natural output, better pronunciation and fewer artifacts compared to ContentVec, especially in realtime. This is speech only (it is a very common bad practice is mixing singing with speech) and any languages are supported, tho english works best. 10 minutes should be the bare minimum to train models with this pretrain, it&#x27;s suggested to have 30 minutes.</p>
+<ul>
+<li>Training Info:
+<ul>
+<li>dataset: vctk (38 hours in total after manual preprocessing, 109 speakers)</li>
+<li>batch size: 32</li>
+<li>sample rate: 32k</li>
+<li>embedder: spin</li>
+<li>f0: rmvpe</li>
+<li>vocoder: hifigan</li>
+<li>trained on applio-main, fp16 precision</li>
+</ul>
+</li>
+</ul>
+<br>
+<ul>
+<li><strong>32k Download:</strong>
+<ul>
+<li><u><a href="https://huggingface.co/lyery/spin/resolve/main/D_fp16vctk.pth?download=true"><strong>D Download</strong></a></u></li>
+<li><u><a href="https://huggingface.co/lyery/spin/resolve/main/G_fp16vctk.pth?download=true"><strong>G Download</strong></a></u></li>
+</ul>
+</li>
+</ul>
+    </div>
+</div>
+<div class="mb-6 overflow-hidden border rounded-md docs-columns dark:border-base-border" style="grid-template-columns: repeat(1, minmax(0, 1fr));">
+    <div class="flex items-center px-5 py-3 font-medium leading-snug text-gray-900 border-b border-base-border dark:text-white">
+        <span>Freesia-sing by lyery</span>
+    </div>
+    <div class="px-5 py-3 docs-columns-content">
+<p>Freesia-sing is a fine-tuned based on the original RVC V2 pretrained, it&#x27;s the 2nd pretrain to use the <a href="http://docs.aihub.gg/rvc/resources/inference-settings/#spin">Spin Embedder Model</a>, resulting in more natural output, better pronunciation and fewer artifacts compared to ContentVec, especially in realtime. This is Singing only (it is a very common bad practice is mixing singing with speech) and any languages are supported, tho english works best.</p>
+<ul>
+<li>Training Info:
+<ul>
+<li>dataset: m4singer (28 hours after preprocessing, 20 speakers, vocal ranges included are bass, soprano, tenor, alto)</li>
+<li>batch size: 32</li>
+<li>sample rate: 32k</li>
+<li>embedder: spin</li>
+<li>f0: rmvpe</li>
+</ul>
+</li>
+</ul>
+<br>
+<ul>
+<li><strong>32k Download:</strong>
+<ul>
+<li><u><a href="https://huggingface.co/lyery/spin-singing/resolve/main/D_singer.pth?download=true"><strong>D Download</strong></a></u></li>
+<li><u><a href="https://huggingface.co/lyery/spin-singing/resolve/main/G_singer.pth?download=true"><strong>G Download</strong></a></u></li>
 </ul>
 </li>
 </ul>
