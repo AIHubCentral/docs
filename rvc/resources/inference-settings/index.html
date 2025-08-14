@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.808492222733">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.808495060027">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -14,7 +14,7 @@
     <!-- Primary Meta Tags -->
     <title>Inference Settings</title>
     <meta name="title" content="Inference Settings">
-    <meta name="description" content="Last update: July 30, 2025">
+    <meta name="description" content="Last update: August 14, 2025">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://docs.aihub.gg/rvc/resources/inference-settings/">
@@ -23,22 +23,22 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.aihub.gg/rvc/resources/inference-settings/">
     <meta property="og:title" content="Inference Settings">
-    <meta property="og:description" content="Last update: July 30, 2025">
+    <meta property="og:description" content="Last update: August 14, 2025">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.aihub.gg/rvc/resources/inference-settings/">
     <meta property="twitter:title" content="Inference Settings">
-    <meta property="twitter:description" content="Last update: July 30, 2025">
+    <meta property="twitter:description" content="Last update: August 14, 2025">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../../img/b.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.11.0.808492222733" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.11.0.808495060027" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.808492222733" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.808495060027" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.808492222733" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.808495060027" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -230,7 +230,7 @@
         <span>Inference Settings</span>
     </h1>
 </doc-anchor-target>
-<p><code v-pre>Last update: July 30, 2025</code></p>
+<p><code v-pre>Last update: August 14, 2025</code></p>
 <hr>
 <doc-anchor-target id="section">
     <h6>
@@ -450,6 +450,119 @@
         <span>‎</span>
     </h6>
 </doc-anchor-target>
+<div class="content-center"><doc-anchor-target id="embedder-model">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#embedder-model">#</doc-anchor-trigger>
+        <span><u>Embedder Model</u></span>
+    </h3>
+</doc-anchor-target>
+<img src="../infsettings-img/embedder-options.png" alt="Embedder Models Options" width="440" height="auto"> 
+</div>
+<p>‎</p>
+<doc-anchor-target id="theyre-the-models-used-for-learning-speaker-embedding">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#theyre-the-models-used-for-learning-speaker-embedding">#</doc-anchor-trigger>
+        <span><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M5.22 8.22a.749.749 0 0 0 0 1.06l6.25 6.25a.749.749 0 0 0 1.06 0l6.25-6.25a.749.749 0 1 0-1.06-1.06L12 13.939 6.28 8.22a.749.749 0 0 0-1.06 0Z"/></g></g></svg> They&#x27;re the Models used for learning speaker embedding.</span>
+    </h4>
+</doc-anchor-target>
+<ul>
+<li><p>Each one works in its own way, and has its pros &amp; cons.</p>
+</li>
+<li><p>This model analyzes an audio sample to extract a &quot;speaker embedding&quot;, it&#x27;s like a digital fingerprint of a voice&#x27;s unique timbre and characteristics.</p>
+<doc-panel id="contentvec" collapsed>
+    <template #title><em>ContentVec</em></template>
+<doc-anchor-target id="section-12">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-12">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<ul>
+<li>The <strong>default and original one, used for the great majority of RVC models</strong>.</li>
+<li>An advanced model adapted from the HuBERT framework, specifically designed to be better at separating speech <em>content</em> from the <em>speaker&#x27;s</em> unique vocal characteristics.</li>
+<li>This helps to prevent the original speaker&#x27;s pronunciation or words from &quot;bleeding&quot; into the final output.</li>
+<li>Often considered a high-quality choice for getting a clean and accurate speaker identity.</li>
+</ul>
+</doc-panel>
+<doc-panel id="chinese-hubert-base" collapsed>
+    <template #title><em>Chinese-Hubert-Base</em></template>
+<doc-anchor-target id="section-13">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-13">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<ul>
+<li>A HuBERT (Hidden-Unit BERT) model that was pre-trained specifically on a very large dataset (10,000 hours) of Chinese speech.</li>
+<li>Because it is specialized for the Chinese language, it can be particularly effective at capturing the nuances of Mandarin-speaking voices.</li>
+<li>While optimized for Chinese, it can still function as a general-purpose embedder for other languages.</li>
+</ul>
+</doc-panel>
+<doc-panel id="japanese-hubert-base" collapsed>
+    <template #title><em>Japanese-Hubert-Base</em></template>
+<doc-anchor-target id="section-14">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-14">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<ul>
+<li>A HuBERT model pre-trained on a large-scale Japanese speech corpus (approximately 19,000 hours).</li>
+<li>Its specialization in Japanese makes it adept at creating embeddings from Japanese speakers, as it&#x27;s tuned to the phonetic and acoustic characteristics of the language.</li>
+<li>Can also be used for other languages, but may show a performance advantage with Japanese source audio.</li>
+</ul>
+</doc-panel>
+<doc-panel id="korean-hubert-base" collapsed>
+    <template #title><em>Korean-Hubert-Base</em></template>
+<doc-anchor-target id="section-15">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-15">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<ul>
+<li>A HuBERT model pre-trained on a large dataset of Korean speech.</li>
+<li>Like the other language-specific models, it is optimized for capturing the vocal characteristics of Korean speakers.</li>
+<li>Using a model pre-trained in the target language can sometimes yield more accurate speaker similarity.</li>
+</ul>
+</doc-panel>
+<doc-panel id="spin" collapsed>
+    <template #title><em>Spin</em></template>
+<doc-anchor-target id="section-16">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-16">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<ul>
+<li>A newer, more advanced embedder based on the &quot;Speaker-invariant Clustering&quot; method.</li>
+<li>Excels at separating the speaker&#x27;s unique vocal timbre from the actual phonetic content (the words being spoken).</li>
+<li>This could result in clearer and more accurate pronunciation compared to older models like ContentVec.</li>
+<li>Its architecture is well-suited for realtime models.</li>
+<li>It can be downloaded at: <a href="https://huggingface.co/IAHispano/Applio/tree/main/Resources/embedders/spin">https://huggingface.co/IAHispano/Applio/tree/main/Resources/embedders/spin</a> .</li>
+</ul>
+</doc-panel>
+<doc-panel id="custom" collapsed>
+    <template #title><em>Custom</em></template>
+<doc-anchor-target id="section-17">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-17">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<ul>
+<li>This option allows for the use of a user-provided, custom-trained embedder model.</li>
+</ul>
+</doc-panel>
+</li>
+</ul>
+<hr>
+<doc-anchor-target id="section-18">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-18">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
 <div class="content-center"><doc-anchor-target id="protect-voiceless-consonants">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#protect-voiceless-consonants">#</doc-anchor-trigger>
@@ -476,9 +589,9 @@
 <p>Be careful, lowering it too much will make it voice sound &quot;inhumane&quot; &amp; suppress part of the words.</p>
 </blockquote>
 <hr>
-<doc-anchor-target id="section-12">
+<doc-anchor-target id="section-19">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-12">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-19">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -507,9 +620,9 @@
 <p>Basically, leave it at 0 if you want the audio to try to keep its original volume.</p>
 </blockquote>
 <hr>
-<doc-anchor-target id="section-13">
+<doc-anchor-target id="section-20">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-13">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-20">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -537,9 +650,9 @@
 </li>
 </ul>
 <hr>
-<doc-anchor-target id="section-14">
+<doc-anchor-target id="section-21">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-14">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-21">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
