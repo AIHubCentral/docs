@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.808501622790">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.808504594380">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -34,12 +34,12 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../../img/b.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.11.0.808501622790" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.11.0.808504594380" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.808501622790" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.808504594380" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.808501622790" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=3.11.0.808501622790" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.808504594380" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=3.11.0.808504594380" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -1289,15 +1289,57 @@ It&#x27;ll finish when it says <code v-pre>extracted successfully</code>.</p>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
-<doc-anchor-target id="d-sync-graphs">
+<doc-anchor-target id="d-use-pretrained-models">
     <h5>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#d-sync-graphs">#</doc-anchor-trigger>
-        <span>d. Sync Graphs</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#d-use-pretrained-models">#</doc-anchor-trigger>
+        <span>d. Use Pretrained Models</span>
     </h5>
 </doc-anchor-target>
 <doc-anchor-target id="section-37">
     <h6>
         <doc-anchor-trigger class="header-anchor-trigger" to="#section-37">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<ul>
+<li>RVC uses the Orignal <a href="https://docs.aihub.gg/rvc/resources/training/#pretrains">Pretrain</a> by default (<code v-pre>Pretrained</code> is always checked, unchecking it is highly not recommended as you won&#x27;t use even the Original Pretrain and train from scratc) to significantly reduce training duration and enhance overall quality. You can use the original pretrain, or community made models downloaded via the Download tab or upload them yourself.</li>
+</ul>
+<img src="..\applio-img\advanced-settings-pretrain.png" alt="Pretrained and Custom Pretrained options in Applio" width="600">
+<ul>
+<li>Download Custom Pretrained Models (Optional):
+<ul>
+<li>Go to the <strong>Download</strong> tab, go to the download custom pretrain, and select the community made ones like TITAN and for which sample rate you need.</li>
+<li>To use a pretrained model that you downloaded from the <strong>Download</strong> tab, simply check the <code v-pre>Pretrained</code> box.</li>
+<li>If you can&#x27;t find the pretrain you want, you can check <a href="https://discord.gg/invite/aihub">AI HUB</a>&#x27;s <a href="https://discord.com/channels/1159260121998827560/1235952130855010365"><code v-pre>#pretrain-models</code></a> or <a href="https://docs.aihub.gg/rvc/resources/training/#where-do-i-find-pretrains">here</a></li>
+</ul>
+</li>
+<li><p>Use Custom Pretrained Models (Optional):</p>
+<ul>
+<li>Check the <code v-pre>Custom Pretrained</code> box to use your own files. This will open the <code v-pre>Pretrained Custom Settings</code> section.</li>
+</ul>
+  <img src="..\applio-img\custom-pretrain.png" alt="Uploading a custom pretrained model in Applio" width="700">
+<ul>
+<li><strong>Upload:</strong> Click <code v-pre>Upload Pretrained Model</code> to open a file dialog. Here, you can drag and drop your files or click to upload the Generator (<code v-pre>G</code>) and Discriminator (<code v-pre>D</code>) <code v-pre>.pth</code> files. This is for when you want to upload your own pretrains which aren&#x27;t in the community download pretrains tab.</li>
+<li><strong>Select:</strong> After uploading, click <code v-pre>Refresh Custom Pretraineds</code>. Then, select your custom generator and discriminator from the <code v-pre>Custom Pretrained G</code> and <code v-pre>Custom Pretrained D</code> dropdown menus. These dropdowns will also show any custom pretrained models you have downloaded from the Download tab.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<doc-anchor-target id="section-38">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-38">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<doc-anchor-target id="e-sync-graphs">
+    <h5>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#e-sync-graphs">#</doc-anchor-trigger>
+        <span>e. Sync Graphs</span>
+    </h5>
+</doc-anchor-target>
+<doc-anchor-target id="section-39">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-39">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1310,40 +1352,16 @@ It&#x27;ll finish when it says <code v-pre>extracted successfully</code>.</p>
 </li>
 </ul>
 <hr>
-<doc-anchor-target id="section-38">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-38">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
-<doc-anchor-target id="e-gpu-settings">
-    <h5>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#e-gpu-settings">#</doc-anchor-trigger>
-        <span>e. GPU Settings</span>
-    </h5>
-</doc-anchor-target>
-<doc-anchor-target id="section-39">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-39">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
-<ul>
-<li><p>If you have multiple GPUs, tick <code v-pre>GPU Settings</code> to use a specific one for the training.</p>
-<p><img src="../applio-img/4-gpu.png" alt="image" width="440" height="auto">‎</p>
-</li>
-</ul>
-<hr>
 <doc-anchor-target id="section-40">
     <h6>
         <doc-anchor-trigger class="header-anchor-trigger" to="#section-40">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
-<doc-anchor-target id="f-generate-index">
+<doc-anchor-target id="f-gpu-settings">
     <h5>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#f-generate-index">#</doc-anchor-trigger>
-        <span>f. Generate Index</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#f-gpu-settings">#</doc-anchor-trigger>
+        <span>f. GPU Settings</span>
     </h5>
 </doc-anchor-target>
 <doc-anchor-target id="section-41">
@@ -1353,7 +1371,9 @@ It&#x27;ll finish when it says <code v-pre>extracted successfully</code>.</p>
     </h6>
 </doc-anchor-target>
 <ul>
-<li>Click <code v-pre>Generate Index</code>. This will create the model&#x27;s <u><a href="https://docs.aihub.gg/essentials/voice-models/#voice-model-files">.INDEX</a></u> file.</li>
+<li><p>If you have multiple GPUs, tick <code v-pre>GPU Settings</code> to use a specific one for the training.</p>
+<p><img src="../applio-img/4-gpu.png" alt="image" width="440" height="auto">‎</p>
+</li>
 </ul>
 <hr>
 <doc-anchor-target id="section-42">
@@ -1362,15 +1382,37 @@ It&#x27;ll finish when it says <code v-pre>extracted successfully</code>.</p>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
-<doc-anchor-target id="g-start-training">
+<doc-anchor-target id="g-generate-index">
     <h5>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#g-start-training">#</doc-anchor-trigger>
-        <span>g. Start Training</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#g-generate-index">#</doc-anchor-trigger>
+        <span>g. Generate Index</span>
     </h5>
 </doc-anchor-target>
 <doc-anchor-target id="section-43">
     <h6>
         <doc-anchor-trigger class="header-anchor-trigger" to="#section-43">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<ul>
+<li>Click <code v-pre>Generate Index</code>. This will create the model&#x27;s <u><a href="https://docs.aihub.gg/essentials/voice-models/#voice-model-files">.INDEX</a></u> file.</li>
+</ul>
+<hr>
+<doc-anchor-target id="section-44">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-44">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<doc-anchor-target id="h-start-training">
+    <h5>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#h-start-training">#</doc-anchor-trigger>
+        <span>h. Start Training</span>
+    </h5>
+</doc-anchor-target>
+<doc-anchor-target id="section-45">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-45">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1388,9 +1430,9 @@ It&#x27;ll finish when it says <code v-pre>extracted successfully</code>.</p>
 </doc-panel>
 <doc-panel id="4-final-step" collapsed>
     <template #title>4. FINAL STEP</template>
-<doc-anchor-target id="section-44">
+<doc-anchor-target id="section-46">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-44">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-46">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1400,9 +1442,9 @@ It&#x27;ll finish when it says <code v-pre>extracted successfully</code>.</p>
         <span>a. Stop training</span>
     </h5>
 </doc-anchor-target>
-<doc-anchor-target id="section-45">
+<doc-anchor-target id="section-47">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-45">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-47">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1412,9 +1454,9 @@ It&#x27;ll finish when it says <code v-pre>extracted successfully</code>.</p>
 </li>
 </ul>
 <hr>
-<doc-anchor-target id="section-46">
+<doc-anchor-target id="section-48">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-46">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-48">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1424,9 +1466,9 @@ It&#x27;ll finish when it says <code v-pre>extracted successfully</code>.</p>
         <span>b. Get the INDEX</span>
     </h5>
 </doc-anchor-target>
-<doc-anchor-target id="section-47">
+<doc-anchor-target id="section-49">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-47">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-49">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1444,9 +1486,9 @@ It&#x27;ll finish when it says <code v-pre>extracted successfully</code>.</p>
 </li>
 </ol>
 <hr>
-<doc-anchor-target id="section-48">
+<doc-anchor-target id="section-50">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-48">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-50">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1456,9 +1498,9 @@ It&#x27;ll finish when it says <code v-pre>extracted successfully</code>.</p>
         <span>c. Get the PTH</span>
     </h5>
 </doc-anchor-target>
-<doc-anchor-target id="section-49">
+<doc-anchor-target id="section-51">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-49">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-51">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1493,21 +1535,21 @@ Example: <code v-pre>arianagrande_e60_s120.pth</code></p>
 </li>
 </ul>
 </doc-panel>
-<doc-anchor-target id="section-50">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-50">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
-<doc-anchor-target id="section-51">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-51">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
 <doc-anchor-target id="section-52">
     <h6>
         <doc-anchor-trigger class="header-anchor-trigger" to="#section-52">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<doc-anchor-target id="section-53">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-53">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<doc-anchor-target id="section-54">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-54">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1519,9 +1561,9 @@ Example: <code v-pre>arianagrande_e60_s120.pth</code></p>
 </doc-anchor-target>
 <p><em><code v-pre>+ with any RVC model</code></em></p>
 </div>
-<doc-anchor-target id="section-53">
+<doc-anchor-target id="section-55">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-53">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-55">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1534,9 +1576,9 @@ Example: <code v-pre>arianagrande_e60_s120.pth</code></p>
 </li>
 </ul>
 <hr>
-<doc-anchor-target id="section-54">
+<doc-anchor-target id="section-56">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-54">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-56">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1552,9 +1594,9 @@ Example: <code v-pre>arianagrande_e60_s120.pth</code></p>
 </li>
 </ol>
 <hr>
-<doc-anchor-target id="section-55">
+<doc-anchor-target id="section-57">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-55">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-57">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1568,9 +1610,9 @@ Example: <code v-pre>arianagrande_e60_s120.pth</code></p>
 <li>To modify the <u><a href="https://docs.aihub.gg/rvc/resources/inference-settings/">inference settings</a></u> or the output folder for the TTS/RVC audio, unfold <code v-pre>Advanced Settings</code>.</li>
 </ul>
 <hr>
-<doc-anchor-target id="section-56">
+<doc-anchor-target id="section-58">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-56">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-58">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1585,9 +1627,9 @@ Example: <code v-pre>arianagrande_e60_s120.pth</code></p>
 <li>If you are using an RVC model, select a voice that matches the model the most, to guarantee great results.</li>
 </ul>
 <hr>
-<doc-anchor-target id="section-57">
+<doc-anchor-target id="section-59">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-57">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-59">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1597,15 +1639,15 @@ Example: <code v-pre>arianagrande_e60_s120.pth</code></p>
 </li>
 </ol>
 <hr>
-<doc-anchor-target id="section-58">
+<doc-anchor-target id="section-60">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-58">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-60">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
-<doc-anchor-target id="section-59">
+<doc-anchor-target id="section-61">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-59">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-61">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1616,23 +1658,23 @@ Example: <code v-pre>arianagrande_e60_s120.pth</code></p>
     </h2>
 </doc-anchor-target>
 </div>
-<doc-anchor-target id="section-60">
+<doc-anchor-target id="section-62">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-60">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-62">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
 <p>To Update Applio, you need to firstly Save your audios and models, then Delete the current Applio folder and reinstall the latest version.</p>
 <hr>
-<doc-anchor-target id="section-61">
+<doc-anchor-target id="section-63">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-61">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-63">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
-<doc-anchor-target id="section-62">
+<doc-anchor-target id="section-64">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-62">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-64">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1643,9 +1685,9 @@ Example: <code v-pre>arianagrande_e60_s120.pth</code></p>
     </h2>
 </doc-anchor-target>
 </div>
-<doc-anchor-target id="section-63">
+<doc-anchor-target id="section-65">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-63">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-65">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1658,9 +1700,9 @@ Example: <code v-pre>arianagrande_e60_s120.pth</code></p>
 </li>
 </ul>
 <hr>
-<doc-anchor-target id="section-64">
+<doc-anchor-target id="section-66">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-64">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-66">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1676,9 +1718,9 @@ Example: <code v-pre>arianagrande_e60_s120.pth</code></p>
 </li>
 </ol>
 <hr>
-<doc-anchor-target id="section-65">
+<doc-anchor-target id="section-67">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-65">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-67">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1686,9 +1728,9 @@ Example: <code v-pre>arianagrande_e60_s120.pth</code></p>
 <li>Once it&#x27;s done uploading, click <code v-pre>Get information about the audio</code>.</li>
 </ol>
 <hr>
-<doc-anchor-target id="section-66">
+<doc-anchor-target id="section-68">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-66">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-68">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1697,9 +1739,9 @@ Example: <code v-pre>arianagrande_e60_s120.pth</code></p>
 <p><img src="../applio-img/6-samplerate.png" alt="image" width="470" height="auto">‎</p>
 </li>
 </ol>
-<doc-anchor-target id="section-67">
+<doc-anchor-target id="section-69">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-67">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-69">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1720,9 +1762,9 @@ Example: <code v-pre>arianagrande_e60_s120.pth</code></p>
         </div>
     </div>
 </div>
-<doc-anchor-target id="section-68">
+<doc-anchor-target id="section-70">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-68">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-70">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1741,15 +1783,15 @@ Example: <code v-pre>arianagrande_e60_s120.pth</code></p>
 <p>Here it reached 20 kHz. <strong>Doubling</strong> it gives 40kHz. Therefore the ideal target sample rate would be <code v-pre>40k</code></p>
 </blockquote>
 <hr>
-<doc-anchor-target id="section-69">
+<doc-anchor-target id="section-71">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-69">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-71">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
-<doc-anchor-target id="section-70">
+<doc-anchor-target id="section-72">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-70">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-72">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1769,9 +1811,9 @@ Example: <code v-pre>arianagrande_e60_s120.pth</code></p>
 </li>
 </ul>
 <hr>
-<doc-anchor-target id="section-71">
+<doc-anchor-target id="section-73">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-71">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-73">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1787,9 +1829,9 @@ Example: <code v-pre>arianagrande_e60_s120.pth</code></p>
 </li>
 </ol>
 <hr>
-<doc-anchor-target id="section-72">
+<doc-anchor-target id="section-74">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-72">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-74">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1805,9 +1847,9 @@ Example: <code v-pre>arianagrande_e60_s120.pth</code></p>
 </li>
 </ul>
 <hr>
-<doc-anchor-target id="section-73">
+<doc-anchor-target id="section-75">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-73">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-75">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1823,9 +1865,9 @@ Example: <code v-pre>arianagrande_e60_s120.pth</code></p>
 </li>
 </ul>
 <hr>
-<doc-anchor-target id="section-74">
+<doc-anchor-target id="section-76">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-74">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-76">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1854,15 +1896,15 @@ Then you&#x27;ll be able to see the plugin in the <strong>Plugins</strong> tab.<
     </a>
 </div>
 <hr>
-<doc-anchor-target id="section-75">
+<doc-anchor-target id="section-77">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-75">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-77">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
-<doc-anchor-target id="section-76">
+<doc-anchor-target id="section-78">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-76">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-78">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1873,17 +1915,17 @@ Then you&#x27;ll be able to see the plugin in the <strong>Plugins</strong> tab.<
     </h2>
 </doc-anchor-target>
 </div>
-<doc-anchor-target id="section-77">
+<doc-anchor-target id="section-79">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-77">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-79">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
 <doc-panel id="theres-no-option-for-my-sample-rate" collapsed>
     <template #title><em>There&#x27;s no option for my sample rate.</em></template>
-<doc-anchor-target id="section-78">
+<doc-anchor-target id="section-80">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-78">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-80">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1900,9 +1942,9 @@ Then you&#x27;ll be able to see the plugin in the <strong>Plugins</strong> tab.<
 </doc-panel>
 <doc-panel id="the-voice-glitches-out" collapsed>
     <template #title><em>The voice glitches out.</em></template>
-<doc-anchor-target id="section-79">
+<doc-anchor-target id="section-81">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-79">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-81">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1912,9 +1954,9 @@ Then you&#x27;ll be able to see the plugin in the <strong>Plugins</strong> tab.<
 </doc-panel>
 <doc-panel id="i-couldnt-find-my-answer" collapsed>
     <template #title><em>I couldn&#x27;t find my answer.</em></template>
-<doc-anchor-target id="section-80">
+<doc-anchor-target id="section-82">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-80">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-82">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1923,9 +1965,9 @@ Then you&#x27;ll be able to see the plugin in the <strong>Plugins</strong> tab.<
 </ul>
 </doc-panel>
 <hr>
-<doc-anchor-target id="section-81">
+<doc-anchor-target id="section-83">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-81">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-83">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
