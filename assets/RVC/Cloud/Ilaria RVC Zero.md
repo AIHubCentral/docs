@@ -3,7 +3,7 @@ icon: chevron-right
 order: 3000
 visibility: private
 ---
-``Last update: July 30, 2025`` 
+``Last update: August 14, 2025`` 
 ***
 
 ## </u>Introduction</u>
@@ -12,10 +12,6 @@ visibility: private
 - This is a fork of mainline RVC running on Hugging Face Spaces, it’s called this way because it runs on Hugging Face’s ZeroGPU, which currently is an A100 GPU.
 
 - Here is the link to the space <u>[Ilaria RVC Zero](https://huggingface.co/spaces/TheStinger/Ilaria_RVC)</u>.
-
-!!!danger Currently broken for uknown issues
-For unknwon related ZeroGPU issues, the space is broken. We suggest alternatives till it's fixed or we have updates on the situation.
-!!!
 
 !!!danger
 This space is only for inference which means you can not train a model here.
