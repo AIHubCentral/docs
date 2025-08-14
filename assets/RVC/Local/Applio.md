@@ -262,6 +262,7 @@ The very first time you run a task (like inference or training), Applio may appe
 !!!warning Don't close the console until you're done using it, or it will stop working.     
 !!! 
 
+
 ***
 ###### ‎       
 ###### ‎   
@@ -344,6 +345,8 @@ The processing time will mainly depend on your specs, length of audio & the algo
 b. Once it's done, you can hear the results in the **Export Audio** box below.
 
     By default the output files will be in the "**audios**" folder: ``\ApplioV3.0.7\assets\audios``
+
+
 ***
 ###### ‎     
 ###### ‎  
@@ -477,7 +480,27 @@ It'll finish when it says `extracted successfully`.
     <img src="..\applio-img\4-epoch.png" alt="image" width="420">‎   
 ***
 ###### ‎  
-##### d. Sync Graphs
+##### d. Use Pretrained Models
+###### ‎  
+- RVC uses the Orignal [Pretrain](https://docs.aihub.gg/rvc/resources/training/#pretrains) by default (`Pretrained` is always checked, unchecking it is highly not recommended as you won't use even the Original Pretrain and train from scratc) to significantly reduce training duration and enhance overall quality. You can use the original pretrain, or community made models downloaded via the Download tab or upload them yourself.
+
+<img src="..\applio-img\advanced-settings-pretrain.png" alt="Pretrained and Custom Pretrained options in Applio" width="600">
+
+- Download Custom Pretrained Models (Optional):
+    - Go to the **Download** tab, go to the download custom pretrain, and select the community made ones like TITAN and for which sample rate you need.
+    - To use a pretrained model that you downloaded from the **Download** tab, simply check the `Pretrained` box.
+    - If you can't find the pretrain you want, you can check [AI HUB](https://discord.gg/invite/aihub)'s [`#pretrain-models`](https://discord.com/channels/1159260121998827560/1235952130855010365) or [here](https://docs.aihub.gg/rvc/resources/training/#where-do-i-find-pretrains)
+- Use Custom Pretrained Models (Optional):
+    - Check the `Custom Pretrained` box to use your own files. This will open the `Pretrained Custom Settings` section.
+
+    <img src="..\applio-img\custom-pretrain.png" alt="Uploading a custom pretrained model in Applio" width="700">
+
+    - **Upload:** Click `Upload Pretrained Model` to open a file dialog. Here, you can drag and drop your files or click to upload the Generator (`G`) and Discriminator (`D`) `.pth` files. This is for when you want to upload your own pretrains which aren't in the community download pretrains tab.
+    - **Select:** After uploading, click `Refresh Custom Pretraineds`. Then, select your custom generator and discriminator from the `Custom Pretrained G` and `Custom Pretrained D` dropdown menus. These dropdowns will also show any custom pretrained models you have downloaded from the Download tab.
+
+***
+###### ‎  
+##### e. Sync Graphs
 ###### ‎  
 - Sync graphs trains a single epoch and sets the log interval to the amount of steps that epoch trained for.     
 ‎   
@@ -486,19 +509,19 @@ It'll finish when it says `extracted successfully`.
     <img src="..\applio-img\sync-graph.png" alt="image" width="420">‎   
 ***
 ###### ‎  
-##### e. GPU Settings
+##### f. GPU Settings
 ###### ‎  
 - If you have multiple GPUs, tick `GPU Settings` to use a specific one for the training.
 
    <img src="../applio-img/4-gpu.png" alt="image" width="440" height="auto">‎ 
 ***
 ###### ‎  
-##### f. Generate Index
+##### g. Generate Index
 ###### ‎  
 - Click `Generate Index`. This will create the model's <u>[.INDEX](https://docs.aihub.gg/essentials/voice-models/#voice-model-files)</u> file.
 ***
 ###### ‎  
-##### g. Start Training
+##### h. Start Training
 ###### ‎  
 - Press `Start Training` to begin the training process.     
 ‎   
