@@ -152,8 +152,8 @@ Freesia-sing is a fine-tuned based on the original RVC V2 pretrained, it's the 2
 <br>
 
 - **32k Download:**
-    - <u>[**D Download**](https://huggingface.co/lyery/spin-singing/resolve/main/D_singer.pth?download=true)</u>
-    - <u>[**G Download**](https://huggingface.co/lyery/spin-singing/resolve/main/G_singer.pth?download=true)</u>
+    - <u>[**D Download**](https://huggingface.co/lyery/spin-singing/resolve/main/D_fsing.pth?download=true)</u>
+    - <u>[**G Download**](https://huggingface.co/lyery/spin-singing/resolve/main/G_fsing.pth?download=true)</u>
 |||
 ||| KLM 4.1 by SeoulStreamingStation
 KLM 4.1 is a fine-tuned based on KLM V7 pretrained and made with around 100 hours dataset (Korean vocal/speech, Japanese vocal/speech and English speech), so it will work better with those languages. Unlike typical pretrained models KLM is a pretrained model created to make vocal guides using short voice recordings from a studio, this means that even with short dataset high pitch information it is possible to implement high-pitched sounds but it is sensitive to noise so it is recommended to use it with high quality datasets
