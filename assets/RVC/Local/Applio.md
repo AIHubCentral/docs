@@ -7,7 +7,7 @@ order: 3000
 
 ***
 :::content-center
-<img src="..\applio-img\banner.png" alt="image" width="600">
+<img src="..\applio-img\banner.png" alt="Applio Banner Logo" width="600">
 
 :::
 
@@ -399,21 +399,45 @@ Don't include spaces/special characters.
 ###### ‎    
 ##### a. Pitch extraction algorithm
 ###### ‎  
-- Select the <u>[algorithm](https://docs.aihub.gg/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u> you want. Use either ``Crepe`` or ``RMVPE``, as the rest are outdated.
+- Select the <u>[algorithm](https://docs.aihub.gg/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u> you want. Use either ``RMVPE`` (most suggested) or ``Crepe`` (which is actually Mangio Crepe with the costumizable hop lenght, this is for crepe-tiny too). Applio removed pm. dio and harvest as they are outdated.
 
-    <img src="..\applio-img\4-f0.png" alt="image" width="400">
+    <img src="..\applio-img\pitch-extraction-algorithms.png" alt="image" width="400">
 
 ***
 ###### ‎  
 ##### b. Hop Length (optional)
 ###### ‎  
-- If you chose ``Crepe``, you can modify its <u>[hop length](https://docs.aihub.gg/rvc/resources/inference-settings/#mangio-crepe)</u>.
+- If you chose ``Crepe`` (or Crepe-tiny), as it's actually Mangio Crepe, you can modify its <u>[hop length](https://docs.aihub.gg/rvc/resources/inference-settings/#mangio-crepe)</u>.
 
-    <img src="..\applio-img\4-hoplength.png" alt="image" width="900">
+    <img src="..\applio-img\mangio-crepe-hop-length.png" alt="image" width="900">
 
 ***
 ###### ‎  
-##### c. Extract Features
+##### c. Embedder Model
+###### ‎  
+- Select the <u>[Embedder Model](https://docs.aihub.gg/rvc/resources/inference-settings/#embedder-model)</u> you want. Contentvec is the most used.
+
+    <img src="..\applio-img\embedder.png" alt="image" width="400">
+
+***
+###### ‎  
+##### d. Custom Embedder Model
+###### ‎  
+- If you select "custom" for embedders, you can add your own, like [Spin](http://docs.aihub.gg/rvc/resources/inference-settings/#spin) (which seems to have better pronunciation than contentvec and better for realtime as it handles context differently)
+
+    <img src="..\applio-img\embedder-custom-option.png" alt="image" width="400">
+
+- Give it a Folder Name, like "spin".
+- Upload the .bin and .json files, which for example you can find them at https://huggingface.co/IAHispano/Applio/tree/main/Resources/embedders/spin for spin.
+- Click "Move files to custom embedder folder".
+
+- After you added your custom embedder, Refresh Embedders and select it from the Dropdown menu at the left of the refresh embedders button.
+    <img src="..\applio-img\custom-embedder.png" alt="image" width="600">
+
+
+***
+###### ‎  
+##### e. Extract Features
 ###### ‎  
 - Press **Extract Features**.       
 It'll finish when it says `extracted successfully`.

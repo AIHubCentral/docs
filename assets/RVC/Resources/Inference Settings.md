@@ -3,7 +3,7 @@ icon: chevron-right
 order: 100
 ---
 
-``Last update: July 30, 2025``
+``Last update: August 14, 2025``
 
 ***
 ###### ‎ 
@@ -15,11 +15,15 @@ order: 100
 - Configuring them accordingly can improve the output quality by a lot, as well as reduce artifacting, so we highly recommend learning them.   
 
 - There are some of them that are either obsolete or not important. So if a setting is not explained here, you can ignore it.
+
+
 ***
 ###### ‎ 
 :::content-center
 ## Explanation
 :::
+
+
 ***
 ###### ‎   
 :::content-center
@@ -37,6 +41,7 @@ order: 100
 
 >You'll usually have to modify this for the pitch to sound perfect. Modify it until it matches the tone of the model.
 
+
 ***
 ###### ‎
 :::content-center
@@ -52,6 +57,7 @@ order: 100
 - Lowering it can **reduce [<u>artifacting</u>](https://docs.aihub.gg/rvc/resources/dataset-making/#artifacts)**.      
      
 >Remember, if the <u>[dataset](https://docs.aihub.gg/rvc/resources/datasets/)</u> had other sounds like background noise, there will be noise in the .INDEX too.
+
 
 ***
 ###### ‎
@@ -110,6 +116,72 @@ order: 100
     ===
 
 >They also work the same for training models.
+
+
+***
+###### ‎
+:::content-center
+### <u>Embedder Model</u>
+<img src="../infsettings-img/embedder-options.png" alt="Embedder Models Options" width="440" height="auto"> 
+:::
+‎ 
+
+#### :icon-chevron-down: They're the Models used for learning speaker embedding.        
+
+- Each one works in its own way, and has its pros & cons.       
+
+- This model analyzes an audio sample to extract a "speaker embedding", it's like a digital fingerprint of a voice's unique timbre and characteristics.
+
+    ==- *ContentVec*
+    ###### ‎       
+    - The **default and original one, used for the great majority of RVC models**.
+    - An advanced model adapted from the HuBERT framework, specifically designed to be better at separating speech *content* from the *speaker's* unique vocal characteristics.
+    - This helps to prevent the original speaker's pronunciation or words from "bleeding" into the final output.
+    - Often considered a high-quality choice for getting a clean and accurate speaker identity.
+
+    ===
+
+    ==- *Chinese-Hubert-Base*
+    ###### ‎  
+    - A HuBERT (Hidden-Unit BERT) model that was pre-trained specifically on a very large dataset (10,000 hours) of Chinese speech.
+    - Because it is specialized for the Chinese language, it can be particularly effective at capturing the nuances of Mandarin-speaking voices.
+    - While optimized for Chinese, it can still function as a general-purpose embedder for other languages.
+
+    ===
+
+    ==- *Japanese-Hubert-Base*
+    ###### ‎  
+    - A HuBERT model pre-trained on a large-scale Japanese speech corpus (approximately 19,000 hours).
+    - Its specialization in Japanese makes it adept at creating embeddings from Japanese speakers, as it's tuned to the phonetic and acoustic characteristics of the language.
+    - Can also be used for other languages, but may show a performance advantage with Japanese source audio.
+
+    ===
+
+    ==- *Korean-Hubert-Base*
+    ###### ‎  
+    - A HuBERT model pre-trained on a large dataset of Korean speech.
+    - Like the other language-specific models, it is optimized for capturing the vocal characteristics of Korean speakers.
+    - Using a model pre-trained in the target language can sometimes yield more accurate speaker similarity.
+
+    ===
+
+    ==- *Spin*
+    ###### ‎  
+    - A newer, more advanced embedder based on the "Speaker-invariant Clustering" method.
+    - Excels at separating the speaker's unique vocal timbre from the actual phonetic content (the words being spoken).
+    - This could result in clearer and more accurate pronunciation compared to older models like ContentVec.
+    - Its architecture is well-suited for realtime models.
+    - It can be downloaded at: https://huggingface.co/IAHispano/Applio/tree/main/Resources/embedders/spin .
+
+    ===
+
+    ==- *Custom*
+    ###### ‎  
+    - This option allows for the use of a user-provided, custom-trained embedder model.
+
+    ===
+
+
 ***
 ###### ‎    
 :::content-center
@@ -126,6 +198,7 @@ order: 100
 ‎   
 
 >Be careful, lowering it too much will make it voice sound "inhumane" & suppress part of the words.
+
 
 ***
 ###### ‎
@@ -155,6 +228,7 @@ order: 100
 - To prevent this, Split Audio divides the audio & infers them one by one. Then unites them at the end.
 
 - Doing it this way is faster too.
+
 
 ***
 ###### ‎
