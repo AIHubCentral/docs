@@ -169,6 +169,7 @@ sudo pacman -Syu portaudio
 !!!
 
 
+%%
 ***
 ## Newer (community-built) Version with Spin Support
 
@@ -178,6 +179,8 @@ A newer, community-built (made by forking the wokada deiteris fork, as deiteris 
 - A Windows Nvidia version which supports normal and rtx 5000 series cards all in a single release rather than 2 different files.
 If you want to use these models, please skip to the [Spin Embedder Version](http://docs.aihub.gg/realtime-voice-changer/local/deiteris-w-okada-fork/#spin-embedder-version-community-build) section for dedicated download links.
 !!!
+%%
+
 
 ## Windows
 
@@ -322,8 +325,9 @@ After you extract the files using the command above, a new folder called `MMVCSe
 After the server finishes loading in your terminal, it will not open a window on its own. Open a web browser and go to `http://127.0.0.1:18888/` to access the user interface.
 !!!
 
-***
 
+%%
+***
 ## Spin Embedder Version (Community Build)
 This version of the Deiteris Fork has been specially compiled to include support for RVC models trained with the **Spin embedder**.
 
@@ -353,8 +357,9 @@ This single NVIDIA build supports all cards, including the RTX 5000-series. You 
 ### Installation and Opening
 The installation and startup process for this version is **exactly the same** as the standard versions. After downloading the correct file for your system, please follow the "Opening on..." instructions for your operating system (Windows, Mac, or Linux) as detailed in the sections above.
 
-***
 
+%%
+***
 ## Opening on Multi-PC Setups
 
 This is only for the people that have 2 PCs, and want to use 1 PC for Gaming, the other only for Wokada Deiteris Fork.
@@ -962,11 +967,13 @@ RVC works by downsampling your audio voice to 16khz because f0 estimators only w
 ### Are there unique Voice Models?
 RVC Voice Models need to be trained on something, so the models themselves can't be unique, but you can use the [Merge Lab](http://docs.aihub.gg/realtime-voice-changer/local/deiteris-w-okada-fork/#merging-models-merge-lab) to create a new unique merged model.
 
+%%
 ***
 ### Is there a way to use Spin embedder rvc voice models?
 Yes. The standard versions of the Wokada Deiteris Fork do not support models trained with the Spin embedder. However, a community-built (made by forking https://github.com/tg-develop/voice-changer and updating the .yml workflows linux's ubuntu's version from 20.04 to 24.04) version is available that adds this functionality.
 
 For a full explanation and download links, please see the **[Spin Embedder Version (Community Build)](http://docs.aihub.gg/realtime-voice-changer/local/deiteris-w-okada-fork/#spin-embedder-version-community-build)** section of this guide.
+%%
 
 ***
 ###### ‎
