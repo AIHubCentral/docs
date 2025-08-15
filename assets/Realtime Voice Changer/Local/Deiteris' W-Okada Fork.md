@@ -176,7 +176,7 @@ sudo pacman -Syu portaudio
 A newer, community-built (made by forking the wokada deiteris fork, as deiteris didn't accept the pull request that should add this and isn't active since december 2024) experimental version of the Wokada Deiteris Fork is available which adds support for:
 - RVC Models trained with the [**Spin Embedder Model**](http://docs.aihub.gg/rvc/resources/inference-settings/#spin), meaning that you can use models trained on Spin on Wokada Deiteris Fork now, and Spin can help with pronunciation and realtime!
 - A Windows Nvidia version which supports normal and rtx 5000 series cards all in a single release rather than 2 different files.
-If you want to use these models, please skip to the [Spin Embedder Version](http://docs.aihub.gg/realtime-voice-changer/local/deiteris-w-okada-fork/#newer-community-built-version-with-spin-support) section for dedicated download links.
+If you want to use these models, please skip to the [Spin Embedder Version](http://docs.aihub.gg/realtime-voice-changer/local/deiteris-w-okada-fork/#spin-embedder-version-community-build) section for dedicated download links.
 !!!
 
 ## Windows
@@ -387,7 +387,7 @@ This is only for the people that have 2 PCs, and want to use 1 PC for Gaming, th
 
 <img src="../wokada-img/upload-model-embedder-spin.png" alt="Edit Button in Wokada Deiteris Fork to Add Models with Spin Support" width="430" height="auto">
 
-- If you have the Wokada Deiteris Fork [Spin Support Version](http://docs.aihub.gg/realtime-voice-changer/local/deiteris-w-okada-fork/#newer-community-built-version-with-spin-support), you will have an additional button where you can choose the embedder type depending if the model has been trained on ContentVec (the original default one for most models) or Spin (newer that can help).
+- If you have the Wokada Deiteris Fork [Spin Support Version](http://docs.aihub.gg/realtime-voice-changer/local/deiteris-w-okada-fork/#spin-embedder-version-community-build), you will have an additional button where you can choose the embedder type depending if the model has been trained on ContentVec (the original default one for most models) or Spin (newer that can help).
 
 ***
 #### Renaming Models
@@ -966,7 +966,7 @@ RVC Voice Models need to be trained on something, so the models themselves can't
 ### Is there a way to use Spin embedder rvc voice models?
 Yes. The standard versions of the Wokada Deiteris Fork do not support models trained with the Spin embedder. However, a community-built (made by forking https://github.com/tg-develop/voice-changer and updating the .yml workflows linux's ubuntu's version from 20.04 to 24.04) version is available that adds this functionality.
 
-For a full explanation and download links, please see the **[Spin Embedder Version (Community Build)](http://docs.aihub.gg/realtime-voice-changer/local/deiteris-w-okada-fork/#newer-community-built-version-with-spin-support)** section of this guide.
+For a full explanation and download links, please see the **[Spin Embedder Version (Community Build)](http://docs.aihub.gg/realtime-voice-changer/local/deiteris-w-okada-fork/#spin-embedder-version-community-build)** section of this guide.
 
 ***
 ###### ‎
