@@ -31,7 +31,7 @@ Also, **HuggingFace has a <u>[Security Scanner](https://huggingface.co/docs/hub/
 !!! 
 ||| ✔️ **PROS** 
 - Has an active development
-- Good Performance
+- Good Performance, and has even more improvements
 - Currently stable
 - It doesn't use a Web User Interface, meaning that it is less prone to errors and opens on it's own window
 - Easily reduces delay on Windows via facilitating the WASAPI/ASIO Backend process
@@ -39,6 +39,7 @@ Also, **HuggingFace has a <u>[Security Scanner](https://huggingface.co/docs/hub/
 - Uses TF32 Inference by default, which is more precise than FP16, and has very very slightly less precision/quality but better performance compared to FP32
 - Fixed 2.7+ Extra Time Cut Off Issues
 - Extra Effects, such as "Noise Gate"
+- Has an Update Checker at startup
 ||| ❌ **CONS** 
 - Not Open Source (at the moment, but the dev might be working on an Open Source version)
 - Supports only Nvidia GPUs on Windows
@@ -151,14 +152,16 @@ This will hide the other GPU from being used by the application which is require
 
 ### Adding Models
 
-<img src="../vonovox-img/select.png" alt="Select Model PTH" width="800" height="auto">
+<img src="../vonovox-img/select.png" alt="Add Models in Vonovox" width="800" height="auto">
 
 #####
 
-- Click on `Select .pth file` on the blue square located around the the top
+- In Model Presrts, click on a slot and select the `.pth` file.
 - Only RVC models will work. If you have a gpt-sovits one or any other, they will not work.
 - Select your `.pth` file and click `upload`.
-- No need for an `Index` file.
+- If the model has an `Index` file, you can optionally add it for the trained accent, but it may cause CPU spikes.
+- You can also choose the Embedder, which depends if the model is trained with ContentVec (used by default for most models) or Spin (newer and can help with realtime).
+
 ***
 ### Changing Models
 
