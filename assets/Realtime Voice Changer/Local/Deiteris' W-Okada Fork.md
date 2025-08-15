@@ -2,7 +2,7 @@
 icon: chevron-right
 order: 4000
 ---
-``Last update: July 30, 2025``
+``Last update: August 14, 2025``
 ***
 :::content-center
 ## Introduction
@@ -170,6 +170,14 @@ sudo pacman -Syu portaudio
 
 
 ***
+## Newer (community-built) Version with Spin Support
+
+!!!warning NEW VERSION AVAILABLE (SPIN EMBEDDER SUPPORT)
+A newer, community-built (made by forking the wokada deiteris fork, as deiteris didn't accept the pull request that should add this and isn't active since december 2024) experimental version of the Wokada Deiteris Fork is available which adds support for:
+- RVC Models trained with the [**Spin Embedder Model**](http://docs.aihub.gg/rvc/resources/inference-settings/#spin), meaning that you can use models trained on Spin on Wokada Deiteris Fork now, and Spin can help with pronunciation and realtime!
+- A Windows Nvidia version which supports normal and rtx 5000 series cards all in a single release rather than 2 different files.
+If you want to use these models, please skip to the [Spin Embedder Version](http://docs.aihub.gg/realtime-voice-changer/local/deiteris-w-okada-fork/#newer-community-built-version-with-spin-support) section for dedicated download links.
+!!!
 
 ## Windows
 
@@ -314,8 +322,39 @@ After you extract the files using the command above, a new folder called `MMVCSe
 After the server finishes loading in your terminal, it will not open a window on its own. Open a web browser and go to `http://127.0.0.1:18888/` to access the user interface.
 !!!
 
+***
+
+## Spin Embedder Version (Community Build)
+This version of the Deiteris Fork has been specially compiled to include support for RVC models trained with the **Spin embedder**.
+
+#### How was this added?
+This feature was made possible by integrating the code from [Pull Request #213](https://github.com/deiteris/voice-changer/pull/213) on the original Deiteris repository. By manually merging these changes and running the build process, a new set of executables was created that can load and run Spin embedder models, which the versions above cannot.
 
 ***
+### Download (Spin Version)
+
+#### Windows
+- **NVIDIA (All cards):** <u>[voice-changer-windows-amd64-cuda.zip](https://huggingface.co/Nick088/Wokada-Deiteris-Fork-Spin/resolve/main/voice-changer-windows-amd64-cuda.zip?download=true)</u>
+!!!info
+This single NVIDIA build supports all cards, including the RTX 5000-series. You do not need a separate download.
+!!!
+- **AMD / Intel (DML):** <u>[voice-changer-windows-amd64-dml.zip](https://huggingface.co/Nick088/Wokada-Deiteris-Fork-Spin/resolve/main/voice-changer-windows-amd64-dml.zip?download=true)</u>
+
+#### Mac
+- **Mac Silicon (ARM):** <u>[voice-changer-macos-arm64-cpu.tar](https://huggingface.co/Nick088/Wokada-Deiteris-Fork-Spin/resolve/main/voice-changer-macos-arm64-cpu.tar?download=true)</u>
+- **Mac Intel:** <u>[voice-changer-macos-amd64-cpu.tar](https://huggingface.co/Nick088/Wokada-Deiteris-Fork-Spin/resolve/main/voice-changer-macos-amd64-cpu.tar?download=true)</u>
+
+#### Linux
+- **NVIDIA (CUDA):** <u>[voice-changer-linux-amd64-cuda.tar](https://huggingface.co/Nick088/Wokada-Deiteris-Fork-Spin/resolve/main/voice-changer-linux-amd64-cuda.tar?download=true)</u>
+- **AMD (ROCm):** <u>[voice-changer-linux-amd64-rocm.tar](https://huggingface.co/Nick088/Wokada-Deiteris-Fork-Spin/resolve/main/voice-changer-linux-amd64-rocm.tar?download=true)</u>
+- **CPU:** <u>[voice-changer-linux-amd64-cpu.tar](https://huggingface.co/Nick088/Wokada-Deiteris-Fork-Spin/resolve/main/voice-changer-linux-amd64-cpu.tar?download=true)</u>
+
+***
+### Installation and Opening
+The installation and startup process for this version is **exactly the same** as the standard versions. After downloading the correct file for your system, please follow the "Opening on..." instructions for your operating system (Windows, Mac, or Linux) as detailed in the sections above.
+
+***
+
 ## Opening on Multi-PC Setups
 
 This is only for the people that have 2 PCs, and want to use 1 PC for Gaming, the other only for Wokada Deiteris Fork.
@@ -344,6 +383,11 @@ This is only for the people that have 2 PCs, and want to use 1 PC for Gaming, th
 - Only RVC models will work. If you have a gpt-sovits one or any other, they will not work.
 - Select `Type: RVC`, then `select file` on the `Model` slot and upload your `.pth` file.
 - No need for an `Index` file, but you can upload it. This controls the accent of the voice model.
+
+
+<img src="../wokada-img/upload-model-embedder-spin.png" alt="Edit Button in Wokada Deiteris Fork to Add Models with Spin Support" width="430" height="auto">
+
+- If you have the Wokada Deiteris Fork [Spin Support Version](http://docs.aihub.gg/realtime-voice-changer/local/deiteris-w-okada-fork/#newer-community-built-version-with-spin-support), you will have an additional button where you can choose the embedder type depending if the model has been trained on ContentVec (the original default one for most models) or Spin (newer that can help).
 
 ***
 #### Renaming Models
@@ -920,8 +964,9 @@ RVC Voice Models need to be trained on something, so the models themselves can't
 
 ***
 ### Is there a way to use Spin embedder rvc voice models?
-Wokada Deiteris Fork doesn't support models trained with the Spin embedder (which are very few), but there is a Pull Request for that https://github.com/deiteris/voice-changer/pull/213.
+Yes. The standard versions of the Wokada Deiteris Fork do not support models trained with the Spin embedder. However, a community-built (made by forking https://github.com/tg-develop/voice-changer and updating the .yml workflows linux's ubuntu's version from 20.04 to 24.04) version is available that adds this functionality.
 
+For a full explanation and download links, please see the **[Spin Embedder Version (Community Build)](http://docs.aihub.gg/realtime-voice-changer/local/deiteris-w-okada-fork/#newer-community-built-version-with-spin-support)** section of this guide.
 
 ***
 ###### ‎
