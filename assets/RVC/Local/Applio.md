@@ -73,7 +73,6 @@ If you don't meet the requirements, there are 4 Cloud Versions:
 :::
 ###### ‎
 !!!warning Before Downloading:
-- Make sure that you place Applio inside a folder on C drive.
 - Don't put it in a folder with privileged access.
 - Don't run the run-install.bat as an administrator.
 - Make sure the path does not contain any spaces or special characters.
