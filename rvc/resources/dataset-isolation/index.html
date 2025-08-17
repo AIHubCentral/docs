@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.808756906424">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.808783829003">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -34,11 +34,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../../img/b.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.11.0.808756906424" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.11.0.808783829003" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.808756906424" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.808783829003" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.808756906424" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.808783829003" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -390,9 +390,9 @@ This occurs after the <u><a href="https://docs.aihub.gg/extra/glossary/#inferenc
     </h4>
 </doc-anchor-target>
 <ul>
-<li><p>Remove undesired noises with an <u><a href="https://docs.aihub.gg/rvc/resources/vocal-isolation/">vocal isolation</u></a> software.</p>
+<li><p>Remove undesired noises with an <u><a href="https://docs.aihub.gg/rvc/resources/vocal-isolation/">vocal isolation</a></u> software.</p>
 </li>
-<li><p>Lowering the <u><a href="https://docs.aihub.gg/rvc/resources/inference-settings/">search feature ratio</u></a> can also minimize this issue.</p>
+<li><p>Lowering the <u><a href="https://docs.aihub.gg/rvc/resources/inference-settings/">search feature ratio</a></u> can also minimize this issue.</p>
 </li>
 <li><p>If breathing sounds produce it, lower the <u><a href="https://docs.aihub.gg/rvc/resources/inference-settings/">Protection</a></u> value.
 ‎</p>
@@ -425,19 +425,27 @@ This occurs after the <u><a href="https://docs.aihub.gg/extra/glossary/#inferenc
 </li>
 <li><p>For RVC users, the best app is Ultimate Vocal Remover 5 (or <strong>UVR</strong>). It can be used either <u><a href="https://docs.aihub.gg/extra/glossary/#local-running">locally</a></u> or through the <u><a href="https://docs.aihub.gg/rvc/resources/dataset-isolation/#cloud-uvr">cloud</a></u>.</p>
 </li>
+<li><p>If you need to remove multiple noises, follow this pipeline for the best results: <code v-pre>Remove instrumental -&gt; Remove reverb -&gt; Extract main vocals -&gt; Remove noise</code></p>
+</li>
 <li><p>If you want to remove noise manually to avoid ai artifacts you can use RX 11, which is mentioned in this guide.</p>
 </li>
 </ul>
 <p>‎</p>
 <doc-tabs>
-<doc-tab v-cloak id="local">
-<template #title>Local</template>
+<doc-tab v-cloak id="local-uvr">
+<template #title>Local UVR</template>
 <div class="content-center"><doc-anchor-target id="local-uvr">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#local-uvr">#</doc-anchor-trigger>
         <span>Local UVR</span>
     </h2>
 </doc-anchor-target>
+</div>
+<div class="content-center"><p><a href="https://www.buymeacoffee.com/uvr5" class="no-link inline-flex align-middle items-center font-medium cursor-pointer transition-colors duration-200 ease-out focus:outline-none bg-button-danger hover:bg-button-danger-hover text-button-danger-text px-4 h-10 text-sm rounded-full">
+    <span>Support UVR5</span>
+    <span><svg xmlns="http://www.w3.org/2000/svg" class="mb-px inline-flex ml-2" width="18" height="18" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M14 20.408c-.492.308-.903.546-1.192.709-.153.086-.308.17-.463.252h-.002a.75.75 0 0 1-.686 0 16.709 16.709 0 0 1-.465-.252 31.147 31.147 0 0 1-4.803-3.34C3.8 15.572 1 12.331 1 8.513 1 5.052 3.829 2.5 6.736 2.5 9.03 2.5 10.881 3.726 12 5.605 13.12 3.726 14.97 2.5 17.264 2.5 20.17 2.5 23 5.052 23 8.514c0 3.818-2.801 7.06-5.389 9.262A31.146 31.146 0 0 1 14 20.408Z"/></g></svg></span>
+</a></p>
+</div>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-warning"></div>
     <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
@@ -450,15 +458,10 @@ This occurs after the <u><a href="https://docs.aihub.gg/extra/glossary/#inferenc
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p><em>You&#x27;ll require great specs &amp; GPU to run it effectively. Otherwise, use either the <u><a href="https://docs.aihub.gg/rvc/resources/dataset-isolation/#cloud-uvr">google colab version</a></u> or the Huggingface space.</em></p>
+<p><em>You&#x27;ll require great specs &amp; GPU to run it effectively. Otherwise, use either the <u><a href="https://docs.aihub.gg/rvc/resources/dataset-isolation/#uvr5-ui-colab">Eddy&#x27;s UVR5 UI Google Colab</a></u> or the <u><a href="http://docs.aihub.gg/rvc/resources/dataset-isolation/#uvr5-ui-hf">HuggingFace Space</a></u>.</em></p>
         </div>
     </div>
 </div>
-</div>
-<dl>
-<dt>‎ </dt>
-<dd>‎</dd>
-</dl>
 <doc-anchor-target id="installation">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#installation">#</doc-anchor-trigger>
@@ -467,8 +470,8 @@ This occurs after the <u><a href="https://docs.aihub.gg/extra/glossary/#inferenc
 </doc-anchor-target>
 <hr>
 <ol>
-<li><p>Go to their <u><a href="https://ultimatevocalremover.com/">official website</u></a> &amp; press <code v-pre>Download UVR</code>. If you want to use BS / Mel Roformer you are going to need to install <u><a href="https://github.com/Anjok07/ultimatevocalremovergui/releases/download/v5.6/UVR_1_15_25_22_30_BETA_full.exe">this</a></u>.</p>
- <img src="../uvrmvsep-img/1.jpg" alt="image" width="" height="auto">   
+<li><p>Go to their <u><a href="https://ultimatevocalremover.com/">official website</a></u> &amp; press <code v-pre>Download UVR</code>. If you want to use BS / Mel Roformer you are going to need to install <u><a href="https://github.com/Anjok07/ultimatevocalremovergui/releases/download/v5.6/UVR_1_15_25_22_30_BETA_full.exe">this</a></u>.</p>
+ <img src="../uvr-img/website.jpg" alt="UVR Official Website Download Button" width="300" height="auto">   
 </li>
 </ol>
 <hr>
@@ -492,19 +495,13 @@ UVR is available both on <strong>Windows &amp; Mac</strong>.</li>
 <ol start="3">
 <li><p>Once the installer finishes downloading, execute it &amp; follow the instructions.<br />
 Make sure to tick <code v-pre>🗹 Create a desktop shortcut</code> for an easier access to UVR.</p>
- <img src="../uvrmvsep-img/2.jpg" alt="image" width="500" height="auto"> 
+ <img src="../uvr-img/installation-shortcut.jpg" alt="UVR Installation Desktop Shortcut" width="500" height="auto">
 </li>
 </ol>
 <hr>
 <doc-anchor-target id="section-3">
     <h6>
         <doc-anchor-trigger class="header-anchor-trigger" to="#section-3">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
-<doc-anchor-target id="section-4">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-4">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -515,23 +512,15 @@ Make sure to tick <code v-pre>🗹 Create a desktop shortcut</code> for an easie
     </h3>
 </doc-anchor-target>
 <hr>
-<doc-panel id="extracting-vocals-from-songs-" collapsed>
-    <template #title><em>Extracting Vocals From Songs <span class="docs-emoji">&#x1F3B6;</span></em></template>
-<doc-anchor-target id="section-5">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-5">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
 <doc-anchor-target id="1-input-audio">
     <h4>
         <doc-anchor-trigger class="header-anchor-trigger" to="#1-input-audio">#</doc-anchor-trigger>
         <span>1. Input audio.</span>
     </h4>
 </doc-anchor-target>
-<doc-anchor-target id="section-6">
+<doc-anchor-target id="section-4">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-6">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-4">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -540,7 +529,7 @@ Make sure to tick <code v-pre>🗹 Create a desktop shortcut</code> for an easie
 ‎</p>
 </li>
 <li><p>In <code v-pre>Select output</code> you can define the folder for the results.</p>
-<p><img src="../uvrmvsep-img/4.jpg" alt="image" width="300" height="auto">         ‎</p>
+<p><img src="../uvr-img/input-output-folders.jpg" alt="Select input and outputs and folders" width="300" height="auto">         ‎</p>
 </li>
 </ul>
 <div class="flex mb-6">
@@ -567,9 +556,9 @@ Make sure to tick <code v-pre>🗹 Create a desktop shortcut</code> for an easie
         <span>2. Select FLAC &amp; GPU Conversion.</span>
     </h4>
 </doc-anchor-target>
-<doc-anchor-target id="section-7">
+<doc-anchor-target id="section-5">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-7">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-5">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -579,12 +568,12 @@ We recommend picking <code v-pre>FLAC</code>. Learn why <u><a href="https://docs
 ‎</p>
 </li>
 <li><p>If your GPU is <strong>compatible with <u><a href="https://docs.aihub.gg/extra/glossary/#cuda">CUDA</a></u></strong>, toggle <code v-pre>GPU Conversion</code> on for a faster process.</p>
- <img src="../uvrmvsep-img/16.png" alt="image" width="350" height="auto">   
+ <img src="../uvr-img/flac-gpu-settings.png" alt="Setting FLAC & GPU Conversion" width="350" height="auto">   
 </li>
 </ol>
-<doc-anchor-target id="section-8">
+<doc-anchor-target id="section-6">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-8">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-6">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -599,16 +588,31 @@ We recommend picking <code v-pre>FLAC</code>. Learn why <u><a href="https://docs
         <span>3. Extract vocals.</span>
     </h4>
 </doc-anchor-target>
+<doc-anchor-target id="section-7">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-7">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<ol type="a" start="1">
+<li><p><strong>Select</strong> the Process Method and Model depending on your use case and <a href="https://docs.aihub.gg/rvc/resources/vocal-isolation/#best-models-for-uvr">the List of Best Models</a>.</p>
+<p><img src="../uvr-img/process-method-model.jpg" alt="UVR Process Method & Model Selection" width="250" height="auto">‎</p>
+</li>
+</ol>
+<doc-anchor-target id="section-8">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-8">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
 <doc-anchor-target id="section-9">
     <h6>
         <doc-anchor-trigger class="header-anchor-trigger" to="#section-9">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
-<ol type="a" start="1">
-<li><p>In <strong>CHOOSE PROCESS METHOD</strong> select <code v-pre>MDX-Net</code>, and select either the <code v-pre>BS Roformer-Viper-X 1296</code> or <code v-pre>MDX23C</code> model.</p>
-<p><img src="../uvrmvsep-img/5.jpg" alt="image" width="250" height="auto">‎</p>
-</li>
+<ol type="a" start="2">
+<li>Now click the long <code v-pre>Start Processing</code> button.</li>
 </ol>
 <doc-anchor-target id="section-10">
     <h6>
@@ -616,21 +620,6 @@ We recommend picking <code v-pre>FLAC</code>. Learn why <u><a href="https://docs
         <span>‎</span>
     </h6>
 </doc-anchor-target>
-<doc-anchor-target id="section-11">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-11">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
-<ol type="a" start="2">
-<li>Now click the long <code v-pre>Start Processing</code> button.</li>
-</ol>
-<doc-anchor-target id="section-12">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-12">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-success"></div>
     <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
@@ -649,191 +638,13 @@ We recommend picking <code v-pre>FLAC</code>. Learn why <u><a href="https://docs
 </div>
 <hr>
 <p>‎</p>
-<doc-anchor-target id="4-clean-vocals">
+<doc-anchor-target id="best-models-for-uvr">
     <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#4-clean-vocals">#</doc-anchor-trigger>
-        <span>4. Clean vocals.</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#best-models-for-uvr">#</doc-anchor-trigger>
+        <span>Best models for UVR:</span>
     </h4>
 </doc-anchor-target>
-<doc-anchor-target id="section-13">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-13">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
-<ul>
-<li><p>Usually songs include reverb &amp; backing vocals. These <strong>negatively</strong> impact the results in RVC.</p>
-</li>
-<li><p>So if the output has any undesired noises, follow the procedure on <strong>Cleaning Vocals</strong>.<br />
-‎</p>
-</li>
-</ul>
-</doc-panel>
-<doc-panel id="cleaning-vocals-" collapsed>
-    <template #title><em>Cleaning Vocals <span class="docs-emoji">&#x1F5E3;&#xFE0F;</span></em></template>
-<doc-anchor-target id="section-14">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-14">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
-<doc-anchor-target id="1-input-audio-1">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#1-input-audio-1">#</doc-anchor-trigger>
-        <span>1. Input audio.</span>
-    </h4>
-</doc-anchor-target>
-<doc-anchor-target id="section-15">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-15">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
-<ul>
-<li><p>Click <code v-pre>Select input</code> to input the vocals. Or just drag the files to it.<br />
-‎</p>
-</li>
-<li><p>In <code v-pre>Select output</code> you can define the folder for the results.</p>
-<p><img src="../uvrmvsep-img/4.jpg" alt="image" width="300" height="auto">         ‎</p>
-</li>
-</ul>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-success"></div>
-    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-success" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M21 9.09c-.55 0-1 .45-1 1v.92c0 4.96-4.04 8.99-9 8.99-4.97 0-9-4.04-9-9s4.04-9 9-9c1.27 0 2.5.26 3.66.78.51.22 1.1 0 1.32-.51.23-.5 0-1.1-.51-1.32C14.06.32 12.56 0 11.01 0H11C4.94 0 0 4.93 0 10.99 0 17.06 4.93 22 10.99 22H11c6.06 0 11-4.93 11-10.99v-.92c0-.56-.45-1-1-1z"></path>
-                    <path d="M8.71 9.31a.996.996 0 10-1.41 1.41l3 3c.19.19.44.29.71.29.27 0 .52-.11.71-.29l10-10.01a.996.996 0 10-1.41-1.41L11 11.6 8.71 9.31z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>For better results, have the audio in a <a href="https://docs.aihub.gg/extra/glossary/#lossless-formats">lossless format</a></u> (<strong>WAV</strong> or <strong>FLAC</strong>), &amp; not MP3.</p>
-        </div>
-    </div>
-</div>
-<hr>
-<p>‎</p>
-<doc-anchor-target id="2-select-flac--gpu-conversion-1">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#2-select-flac--gpu-conversion-1">#</doc-anchor-trigger>
-        <span>2. Select FLAC &amp; GPU Conversion.</span>
-    </h4>
-</doc-anchor-target>
-<doc-anchor-target id="section-16">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-16">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
-<ol type="a" start="1">
-<li><p>At the right you can select the output format.<br />
-We recommend picking <code v-pre>FLAC</code>. Learn why <u><a href="https://docs.aihub.gg/extra/glossary/#lossless-formats">here</a></u>.<br />
-‎</p>
-</li>
-<li><p>If your GPU is <strong>compatible with <u><a href="https://docs.aihub.gg/extra/glossary/#cuda">CUDA</a></u></strong>, toggle <code v-pre>GPU Conversion</code> on for a faster process.<br />
-‎<br />
-<img src="../uvrmvsep-img/16.png" alt="image" width="350" height="auto">‎</p>
-</li>
-</ol>
-<doc-anchor-target id="section-17">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-17">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
-<blockquote>
-<p>This step is not mandatory, but recommended for better results.</p>
-</blockquote>
-<hr>
-<p>‎</p>
-<doc-anchor-target id="3-select-model">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#3-select-model">#</doc-anchor-trigger>
-        <span>3. Select model.</span>
-    </h4>
-</doc-anchor-target>
-<doc-anchor-target id="section-18">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-18">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
-<ol type="a" start="1">
-<li><p>In <strong>Process Method</strong> select <code v-pre>VR</code>.<br />
-‎</p>
-</li>
-<li><p>Set <strong>Window Size</strong> to <code v-pre>320</code>. (optional)<br />
-Lower Window Size yield a higher output <strong>quality</strong>, but will take <strong>longer</strong> to process.<br />
-‎</p>
-</li>
-<li><p>Check the <u><a href="https://docs.aihub.gg/rvc/resources/vocal-isolation/#best-models">model list</a></u>. In <strong>Select VR Model</strong> pick the one according to what you need to remove.<br />
-‎<br />
-If you need to remove multiple noises, follow this pipeline for the best results:<br />
-<code v-pre>Remove instrumental -&gt; Remove reverb -&gt; Extract main vocals -&gt; Remove noise</code></p>
-</li>
-</ol>
-<doc-anchor-target id="section-19">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-19">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-success"></div>
-    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-success" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M21 9.09c-.55 0-1 .45-1 1v.92c0 4.96-4.04 8.99-9 8.99-4.97 0-9-4.04-9-9s4.04-9 9-9c1.27 0 2.5.26 3.66.78.51.22 1.1 0 1.32-.51.23-.5 0-1.1-.51-1.32C14.06.32 12.56 0 11.01 0H11C4.94 0 0 4.93 0 10.99 0 17.06 4.93 22 10.99 22H11c6.06 0 11-4.93 11-10.99v-.92c0-.56-.45-1-1-1z"></path>
-                    <path d="M8.71 9.31a.996.996 0 10-1.41 1.41l3 3c.19.19.44.29.71.29.27 0 .52-.11.71-.29l10-10.01a.996.996 0 10-1.41-1.41L11 11.6 8.71 9.31z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p><u><strong>TIP:</strong></u> To <strong>test</strong> models/options more efficiently, tick <code v-pre>Sample Mode</code> to only process 30 seconds of your sample.</p>
-        </div>
-    </div>
-</div>
-<hr>
-<p>‎</p>
-<doc-anchor-target id="4-process">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#4-process">#</doc-anchor-trigger>
-        <span>4. Process.</span>
-    </h4>
-</doc-anchor-target>
-<doc-anchor-target id="section-20">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-20">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
-<p>Click the <code v-pre>Start processing</code> button at the bottom. And that will be all.</p>
-<hr>
-<doc-anchor-target id="section-21">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-21">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
-<div class="content-center"><p><a href="https://www.buymeacoffee.com/uvr5" class="no-link inline-flex align-middle items-center font-medium cursor-pointer transition-colors duration-200 ease-out focus:outline-none bg-button-danger hover:bg-button-danger-hover text-button-danger-text px-4 h-10 text-sm rounded-full">
-    <span>Support UVR</span>
-    <span><svg xmlns="http://www.w3.org/2000/svg" class="mb-px inline-flex ml-2" width="18" height="18" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M14 20.408c-.492.308-.903.546-1.192.709-.153.086-.308.17-.463.252h-.002a.75.75 0 0 1-.686 0 16.709 16.709 0 0 1-.465-.252 31.147 31.147 0 0 1-4.803-3.34C3.8 15.572 1 12.331 1 8.513 1 5.052 3.829 2.5 6.736 2.5 9.03 2.5 10.881 3.726 12 5.605 13.12 3.726 14.97 2.5 17.264 2.5 20.17 2.5 23 5.052 23 8.514c0 3.818-2.801 7.06-5.389 9.262A31.146 31.146 0 0 1 14 20.408Z"/></g></svg></span>
-</a></p>
-</div>
-<p>‎</p>
-</doc-panel>
-<ul>
-<li><doc-anchor-target id="the-best-models-for-uvr-are">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#the-best-models-for-uvr-are">#</doc-anchor-trigger>
-        <span>The best models for UVR are:</span>
-    </h4>
-</doc-anchor-target>
-</li>
-</ul>
+<p>Note: they actually are all MelBand Roformer models, but there isn&#x27;t a proper list yet for them</p>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -856,18 +667,18 @@ If you need to remove multiple noises, follow this pipeline for the best results
 </tr>
 <tr>
 <td style="text-align: center;">De-Reverb</td>
-<td style="text-align: center;">VR</td>
+<td style="text-align: center;">MDX-Net</td>
 <td style="text-align: center;">Anvuew mel dereverb v2</td>
 </tr>
 <tr>
 <td style="text-align: center;">Extract Backing Vocals</td>
-<td style="text-align: center;">VR</td>
+<td style="text-align: center;">MDX-Net</td>
 <td style="text-align: center;">Mel roformer karaoke</td>
 </tr>
 <tr>
 <td style="text-align: center;">De-Noise</td>
-<td style="text-align: center;">VR</td>
-<td style="text-align: center;">Mel denoiser</td>
+<td style="text-align: center;">MDX-Net</td>
+<td style="text-align: center;">Mel denoiser v2</td>
 </tr>
 </tbody>
 </table>
@@ -880,28 +691,23 @@ If you need to remove multiple noises, follow this pipeline for the best results
     </h3>
 </doc-anchor-target>
 <hr>
-<doc-panel id="a-model-isnt-there" collapsed>
-    <template #title><em>A model isn&#x27;t there.</em></template>
-<doc-anchor-target id="section-22">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-22">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
+<doc-anchor-target id="a-model-isnt-there">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#a-model-isnt-there">#</doc-anchor-trigger>
+        <span>A model isn&#x27;t there.</span>
+    </h4>
 </doc-anchor-target>
 <ul>
 <li>Click the wrench (<span class="docs-emoji">&#x1F527;</span>) on the left &amp; go to <code v-pre>Download Center</code></li>
-<li>Select the category of the model (MDX-NET or VR)</li>
+<li>Select the category of the model (Process Method)</li>
 <li>Unfold its dropdown &amp; select the model that you need</li>
 <li>Then click the download button (<span class="docs-emoji">&#x1F4E5;</span>). The model will download, which will take a few minutes</li>
 </ul>
-</doc-panel>
-<doc-panel id="uvr-extracted-too-littletoo-much" collapsed>
-    <template #title><em>UVR extracted too little/too much.</em></template>
-<doc-anchor-target id="section-23">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-23">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
+<doc-anchor-target id="uvr-extracted-too-littletoo-much">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#uvr-extracted-too-littletoo-much">#</doc-anchor-trigger>
+        <span>UVR extracted too little/too much.</span>
+    </h4>
 </doc-anchor-target>
 <ul>
 <li>Modify the <code v-pre>Aggression Setting</code> value on the right.</li>
@@ -909,31 +715,41 @@ If you need to remove multiple noises, follow this pipeline for the best results
 <li>A higher value will deepen the extraction, and a lower one will soften it.</li>
 <li>Each audio is different, so you&#x27;ll have to test the ideal value.</li>
 </ul>
-</doc-panel>
-<doc-panel id="i-cant-remove-some-of-the-backing-vocals" collapsed>
-    <template #title><em>I can&#x27;t remove some of the backing vocals.</em></template>
-<doc-anchor-target id="section-24">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-24">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
+<doc-anchor-target id="i-cant-remove-some-of-the-backing-vocals">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#i-cant-remove-some-of-the-backing-vocals">#</doc-anchor-trigger>
+        <span>I can&#x27;t remove some of the backing vocals.</span>
+    </h4>
 </doc-anchor-target>
 <ul>
 <li>Run the audio through BVE. Modify the <u><a href="https://docs.aihub.gg/rvc/resources/vocal-isolation/#uvr-extracted-too-little-too-much">Aggression Setting</a></u> if necessary.</li>
 </ul>
-</doc-panel>
-<hr>
-<div class="content-center"><doc-anchor-target id="rx-11">
+</doc-tab>
+<doc-tab v-cloak id="local-eddy-uvr5-ui">
+<template #title>Local Eddy UVR5 UI</template>
+<div class="content-center"><doc-anchor-target id="local-eddys-uvr5-ui">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#rx-11">#</doc-anchor-trigger>
-        <span>RX 11</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#local-eddys-uvr5-ui">#</doc-anchor-trigger>
+        <span>Local Eddy&#x27;s UVR5 UI</span>
     </h2>
 </doc-anchor-target>
 </div>
-<dl>
-<dt>‎ </dt>
-<dd>‎</dd>
-</dl>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-warning"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-warning" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M22.48 15.59L14.01 1.45A2.968 2.968 0 0012.16.09c-.78-.19-1.58-.07-2.27.35-.41.25-.76.6-1.01 1.01v.01L.4 15.6c-.83 1.43-.33 3.27 1.1 4.1.45.26.95.4 1.48.4h16.95c.8-.01 1.55-.33 2.11-.9.56-.57.87-1.33.86-2.13a3.04 3.04 0 00-.42-1.48zm-1.87 2.21c-.19.19-.44.3-.69.3H2.99c-.17 0-.34-.05-.49-.13a.992.992 0 01-.37-1.35L10.6 2.48c.08-.14.2-.25.34-.33a.992.992 0 011.37.33l8.46 14.13c.09.15.13.32.13.49 0 .26-.1.51-.29.7z"></path>
+                    <path d="M11.45 12.1c.55 0 1-.45 1-1v-4c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .56.45 1 1 1zM11.46 14.1c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p><em>You&#x27;ll require great specs &amp; GPU to run it effectively. Otherwise, use either the <u><a href="https://docs.aihub.gg/rvc/resources/dataset-isolation/#uvr5-ui-colab">Eddy&#x27;s UVR5 UI Google Colab </a></u> or the <u><a href="http://docs.aihub.gg/rvc/resources/dataset-isolation/#uvr5-ui-hf">HuggingFace Space</a></u>.</em></p>
+        </div>
+    </div>
+</div>
 <doc-anchor-target id="installation-1">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#installation-1">#</doc-anchor-trigger>
@@ -942,49 +758,344 @@ If you need to remove multiple noises, follow this pipeline for the best results
 </doc-anchor-target>
 <hr>
 <ol>
-<li>Go to their <u><a href="https://www.izotope.com/en/shop/rx-11-advanced/?srsltid=AfmBOor--irjtR7Bsl08_bPj-7UMUGd49tYy9C_U2iXOAupjQ74Mat_s">official website</u></a> &amp; buy it.</li>
+<li><p>Go to their <u><a href="https://github.com/Eddycrack864/UVR5-UI/releases/latest">Eddy&#x27;s UVR5 UI Latest Release</a></u> &amp; Follow the installation steps (<strong>Precompiled</strong> versions are suggested).</p>
+ <img src="../localeddyuvr5ui-img/installation-steps.png" alt="Eddy's UVR5 UI Local Installation Steps" width="700" height="auto">   
+</li>
 </ol>
 <hr>
-<doc-anchor-target id="section-25">
+<doc-anchor-target id="section-11">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-25">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-11">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
-<doc-anchor-target id="usage">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#usage">#</doc-anchor-trigger>
-        <span>Usage</span>
-    </h3>
-</doc-anchor-target>
-<ol start="2">
-<li>To use RX 11 it is <strong>STONGLY</strong> recommended that you read this <u><a href="https://rentry.co/RVC-dataset-RX11">guide</a></u> on RX 11.</li>
-</ol>
-</doc-tab>
-<doc-tab v-cloak id="uvr5-ui-colab">
-<template #title>UVR5 UI Colab</template>
-<div class="content-center"><doc-anchor-target id="uvr5-ui-colab-wip">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#uvr5-ui-colab-wip">#</doc-anchor-trigger>
-        <span>UVR5 UI Colab (WIP)</span>
-    </h2>
-</doc-anchor-target>
-</div>
-<p>This is Eddy&#x27;s UVR5 UI Colab.</p>
 <doc-anchor-target id="how-to-use-1">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-use-1">#</doc-anchor-trigger>
         <span>How to Use <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3.5 3.75a.25.25 0 0 1 .25-.25h13.5a.25.25 0 0 1 .25.25v10a.75.75 0 0 0 1.5 0v-10A1.75 1.75 0 0 0 17.25 2H3.75A1.75 1.75 0 0 0 2 3.75v16.5c0 .966.784 1.75 1.75 1.75h7a.75.75 0 0 0 0-1.5h-7a.25.25 0 0 1-.25-.25V3.75Z"/><path d="M6.25 7a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Zm-.75 4.75a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75Zm16.28 4.53a.75.75 0 1 0-1.06-1.06l-4.97 4.97-1.97-1.97a.75.75 0 1 0-1.06 1.06l2.5 2.5a.75.75 0 0 0 1.06 0l5.5-5.5Z"/></g></g></svg></span>
     </h3>
 </doc-anchor-target>
-<hr>
-<doc-panel id="extracting-vocals-from-songs" collapsed>
-    <template #title><em>Extracting Vocals From Songs</em> <span class="docs-emoji">&#x1F3B6;</span></template>
-<doc-anchor-target id="section-26">
+<doc-anchor-target id="1-select-input--options">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#1-select-input--options">#</doc-anchor-trigger>
+        <span>1. Select input &amp; options</span>
+    </h4>
+</doc-anchor-target>
+<doc-anchor-target id="section-12">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-26">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-12">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
+</doc-anchor-target>
+<ol type="a" start="1">
+<li>Tap the <strong>Input Audio</strong> box &amp; select your audio, or simply drag &amp; drop.<br />
+‎<br />
+<img src="../localeddyuvr5ui-img/input-audio.png" alt="Input Audio" width="1000" height="auto">‎<br />
+‎</li>
+</ol>
+<p>‎</p>
+<doc-anchor-target id="2-select-model">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#2-select-model">#</doc-anchor-trigger>
+        <span>2. Select model</span>
+    </h4>
+</doc-anchor-target>
+<doc-anchor-target id="section-13">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-13">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<ol type="a" start="2">
+<li>Once it&#x27;s done uploading, select a Model by the <a href="http://docs.aihub.gg/rvc/resources/dataset-isolation/#best-models-for-local-eddy-uvr5-ui">List of the Best Models</a>. Under that you can change <strong>Segment Size</strong> and <strong>Overlap</strong>, the defaults are fine.<br />
+<img src="../localeddyuvr5ui-img/model-selection.png" alt="Model Selection" width="1000" height="auto">‎</li>
+</ol>
+<p>‎</p>
+<doc-anchor-target id="3-start-processing">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#3-start-processing">#</doc-anchor-trigger>
+        <span>3. Start Processing</span>
+    </h4>
+</doc-anchor-target>
+<doc-anchor-target id="section-14">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-14">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<ol type="a" start="1">
+<li><p>Click <strong>Spererate!</strong> below. Wait a moment for the audio to process.<br />
+‎</p>
+</li>
+<li><p>Playable audios will then appear in the output boxes below. To download the output, click the little download icon in the top right.</p>
+</li>
+</ol>
+<doc-anchor-target id="best-models-for-local-eddy-uvr5-ui">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#best-models-for-local-eddy-uvr5-ui">#</doc-anchor-trigger>
+        <span>Best Models for Local Eddy UVR5 UI</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th style="text-align: center;">Extraction</th>
+<th style="text-align: center;">Model</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Vocals</td>
+<td style="text-align: center;"><code v-pre>MelBand Roformer | Vocals FV4 by Gabox</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">Instrumental</td>
+<td style="text-align: center;"><code v-pre>MelBand Roformer | INSTV7 by Gabox</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">De-Reverb</td>
+<td style="text-align: center;"><code v-pre>MelBand Roformer | De-Reverb by anvuew</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">Extract Backing Vocals</td>
+<td style="text-align: center;">Mel-Roformer-Karaoke-Aufr33-Viperx</td>
+</tr>
+<tr>
+<td style="text-align: center;">De-Noise</td>
+<td style="text-align: center;">Mel-Roformer-Denoise-Aufr33-Aggr</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+<doc-anchor-target id="troubleshooting-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#troubleshooting-1">#</doc-anchor-trigger>
+        <span>Troubleshooting <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M7.875 2.292a.114.114 0 0 0-.032.018A7.239 7.239 0 0 0 4.75 8.25a7.248 7.248 0 0 0 3.654 6.297c.57.327.982.955.941 1.682v.002l-.317 6.058a.75.75 0 1 1-1.498-.078l.317-6.062v-.004c.006-.09-.047-.215-.188-.296A8.749 8.749 0 0 1 3.25 8.25a8.738 8.738 0 0 1 3.732-7.169 1.547 1.547 0 0 1 1.709-.064c.484.292.809.835.809 1.46v4.714a.25.25 0 0 0 .119.213l2.25 1.385c.08.05.182.05.262 0l2.25-1.385a.25.25 0 0 0 .119-.213V2.478c0-.626.325-1.169.81-1.461a1.547 1.547 0 0 1 1.708.064 8.741 8.741 0 0 1 3.732 7.17 8.747 8.747 0 0 1-4.41 7.598c-.14.081-.193.206-.188.296v.004l.318 6.062a.75.75 0 1 1-1.498.078l-.317-6.058v-.002c-.041-.727.37-1.355.94-1.682A7.247 7.247 0 0 0 19.25 8.25a7.239 7.239 0 0 0-3.093-5.94.114.114 0 0 0-.032-.018l-.01-.001c-.003 0-.014 0-.031.01-.036.022-.084.079-.084.177V7.19c0 .608-.315 1.172-.833 1.49l-2.25 1.385a1.75 1.75 0 0 1-1.834 0l-2.25-1.384A1.752 1.752 0 0 1 8 7.192V2.477c0-.098-.048-.155-.084-.176a.068.068 0 0 0-.031-.011l-.01.001Z"/></g></g></svg></span>
+    </h3>
+</doc-anchor-target>
+<hr>
+<doc-anchor-target id="uvr-extracted-too-littletoo-much-1">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#uvr-extracted-too-littletoo-much-1">#</doc-anchor-trigger>
+        <span>UVR extracted too little/too much.</span>
+    </h4>
+</doc-anchor-target>
+<ul>
+<li>Modify the <code v-pre>Aggression Setting</code> value on the right.</li>
+<li>This determines the depth of the extraction. Only the VR method has it.</li>
+<li>A higher value will deepen the extraction, and a lower one will soften it.</li>
+<li>Each audio is different, so you&#x27;ll have to test the ideal value.</li>
+</ul>
+<doc-anchor-target id="i-cant-remove-some-of-the-backing-vocals-1">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#i-cant-remove-some-of-the-backing-vocals-1">#</doc-anchor-trigger>
+        <span>I can&#x27;t remove some of the backing vocals.</span>
+    </h4>
+</doc-anchor-target>
+<ul>
+<li>Run the audio through BVE. Modify the Aggression Setting if necessary.</li>
+</ul>
+<doc-anchor-target id="i-couldnt-find-my-answer">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#i-couldnt-find-my-answer">#</doc-anchor-trigger>
+        <span>I couldn&#x27;t find my answer.</span>
+    </h4>
+</doc-anchor-target>
+<ul>
+<li>Report your issue <u><a href="https://docs.aihub.gg/contributions/">here</a></u>.</li>
+</ul>
+</doc-tab>
+<doc-tab v-cloak id="uvr5-ui-hf">
+<template #title>UVR5 UI HF</template>
+<div class="content-center"><doc-anchor-target id="eddys-uvr5-ui-huggingface-zerogpu-space">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#eddys-uvr5-ui-huggingface-zerogpu-space">#</doc-anchor-trigger>
+        <span>Eddy&#x27;s UVR5 UI HuggingFace ZeroGPU Space</span>
+    </h2>
+</doc-anchor-target>
+</div>
+<hr>
+<doc-anchor-target id="how-to-use-2">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-use-2">#</doc-anchor-trigger>
+        <span>How to use <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3.5 3.75a.25.25 0 0 1 .25-.25h13.5a.25.25 0 0 1 .25.25v10a.75.75 0 0 0 1.5 0v-10A1.75 1.75 0 0 0 17.25 2H3.75A1.75 1.75 0 0 0 2 3.75v16.5c0 .966.784 1.75 1.75 1.75h7a.75.75 0 0 0 0-1.5h-7a.25.25 0 0 1-.25-.25V3.75Z"/><path d="M6.25 7a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Zm-.75 4.75a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75Zm16.28 4.53a.75.75 0 1 0-1.06-1.06l-4.97 4.97-1.97-1.97a.75.75 0 1 0-1.06 1.06l2.5 2.5a.75.75 0 0 0 1.06 0l5.5-5.5Z"/></g></g></svg></span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="1-access-the-huggingface-space">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#1-access-the-huggingface-space">#</doc-anchor-trigger>
+        <span>1. Access the HuggingFace Space</span>
+    </h4>
+</doc-anchor-target>
+<p>Access the space <u><a href="https://huggingface.co/spaces/TheStinger/UVR5_UI">here</a></u>, you don&#x27;t need an account to use this, but making one will get you more free time, and paying for HuggingFace PRO will give you the most ZeroGPU time.</p>
+<doc-anchor-target id="2-select-input--options">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#2-select-input--options">#</doc-anchor-trigger>
+        <span>2. Select input &amp; options</span>
+    </h4>
+</doc-anchor-target>
+<doc-anchor-target id="section-15">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-15">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<ol type="a" start="1">
+<li>Tap the <strong>Input Audio</strong> box &amp; select your audio, or simply drag &amp; drop.<br />
+‎<br />
+<img src="../hugging-img/input-audio.png" alt="Input Audio" width="1000" height="auto">‎<br />
+‎</li>
+</ol>
+<p>‎</p>
+<doc-anchor-target id="3-select-model">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#3-select-model">#</doc-anchor-trigger>
+        <span>3. Select model</span>
+    </h4>
+</doc-anchor-target>
+<doc-anchor-target id="section-16">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-16">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<ol type="a" start="2">
+<li>Once it&#x27;s done uploading, select a Model by the <a href="http://docs.aihub.gg/rvc/resources/dataset-isolation/#best-models-for-uvr5-ui-hf">List of the Best Models</a>. Under that you can change <strong>Segment Size</strong> and <strong>Overlap</strong>, the defaults are fine.<br />
+<img src="../hugging-img/model-selection.png" alt="Model Selection" width="1000" height="auto">‎</li>
+</ol>
+<p>‎</p>
+<doc-anchor-target id="4-start-processing">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#4-start-processing">#</doc-anchor-trigger>
+        <span>4. Start Processing</span>
+    </h4>
+</doc-anchor-target>
+<doc-anchor-target id="section-17">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-17">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<ol type="a" start="1">
+<li><p>Click <strong>Spererate!</strong> below. Wait a moment for the audio to process.<br />
+‎</p>
+</li>
+<li><p>Playable audios will then appear in the output boxes below. To download the output, click the little download icon in the top right.</p>
+</li>
+</ol>
+<doc-anchor-target id="best-models-for-uvr5-ui-hf">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#best-models-for-uvr5-ui-hf">#</doc-anchor-trigger>
+        <span>Best Models for UVR5-UI-HF</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th style="text-align: center;">Extraction</th>
+<th style="text-align: center;">Model</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Vocals</td>
+<td style="text-align: center;"><code v-pre>MelBand Roformer | Vocals FV4 by Gabox</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">Instrumental</td>
+<td style="text-align: center;"><code v-pre>MelBand Roformer | INSTV7 by Gabox</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">De-Reverb</td>
+<td style="text-align: center;"><code v-pre>MelBand Roformer | De-Reverb by anvuew</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">Extract Backing Vocals</td>
+<td style="text-align: center;">Mel-Roformer-Karaoke-Aufr33-Viperx</td>
+</tr>
+<tr>
+<td style="text-align: center;">De-Noise</td>
+<td style="text-align: center;">Mel-Roformer-Denoise-Aufr33-Aggr</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+<doc-anchor-target id="troubleshooting-2">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#troubleshooting-2">#</doc-anchor-trigger>
+        <span>Troubleshooting <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M7.875 2.292a.114.114 0 0 0-.032.018A7.239 7.239 0 0 0 4.75 8.25a7.248 7.248 0 0 0 3.654 6.297c.57.327.982.955.941 1.682v.002l-.317 6.058a.75.75 0 1 1-1.498-.078l.317-6.062v-.004c.006-.09-.047-.215-.188-.296A8.749 8.749 0 0 1 3.25 8.25a8.738 8.738 0 0 1 3.732-7.169 1.547 1.547 0 0 1 1.709-.064c.484.292.809.835.809 1.46v4.714a.25.25 0 0 0 .119.213l2.25 1.385c.08.05.182.05.262 0l2.25-1.385a.25.25 0 0 0 .119-.213V2.478c0-.626.325-1.169.81-1.461a1.547 1.547 0 0 1 1.708.064 8.741 8.741 0 0 1 3.732 7.17 8.747 8.747 0 0 1-4.41 7.598c-.14.081-.193.206-.188.296v.004l.318 6.062a.75.75 0 1 1-1.498.078l-.317-6.058v-.002c-.041-.727.37-1.355.94-1.682A7.247 7.247 0 0 0 19.25 8.25a7.239 7.239 0 0 0-3.093-5.94.114.114 0 0 0-.032-.018l-.01-.001c-.003 0-.014 0-.031.01-.036.022-.084.079-.084.177V7.19c0 .608-.315 1.172-.833 1.49l-2.25 1.385a1.75 1.75 0 0 1-1.834 0l-2.25-1.384A1.752 1.752 0 0 1 8 7.192V2.477c0-.098-.048-.155-.084-.176a.068.068 0 0 0-.031-.011l-.01.001Z"/></g></g></svg></span>
+    </h3>
+</doc-anchor-target>
+<hr>
+<doc-anchor-target id="uvr-extracted-too-littletoo-much-2">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#uvr-extracted-too-littletoo-much-2">#</doc-anchor-trigger>
+        <span>UVR extracted too little/too much.</span>
+    </h4>
+</doc-anchor-target>
+<ul>
+<li>Modify the <code v-pre>Aggression Setting</code> value on the right.</li>
+<li>This determines the depth of the extraction. Only the VR method has it.</li>
+<li>A higher value will deepen the extraction, and a lower one will soften it.</li>
+<li>Each audio is different, so you&#x27;ll have to test the ideal value.</li>
+</ul>
+<doc-anchor-target id="i-cant-remove-some-of-the-backing-vocals-2">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#i-cant-remove-some-of-the-backing-vocals-2">#</doc-anchor-trigger>
+        <span>I can&#x27;t remove some of the backing vocals.</span>
+    </h4>
+</doc-anchor-target>
+<ul>
+<li>Run the audio through BVE. Modify the Aggression Setting if necessary.</li>
+</ul>
+<doc-anchor-target id="i-couldnt-find-my-answer-1">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#i-couldnt-find-my-answer-1">#</doc-anchor-trigger>
+        <span>I couldn&#x27;t find my answer.</span>
+    </h4>
+</doc-anchor-target>
+<ul>
+<li>Report your issue <u><a href="https://docs.aihub.gg/contributions/">here</a></u>.</li>
+</ul>
+<doc-anchor-target id="gpu-task-aborted">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#gpu-task-aborted">#</doc-anchor-trigger>
+        <span>GPU task aborted:</span>
+    </h3>
+</doc-anchor-target>
+<p>ZeroGPU HuggingFace Spaces have a max inference time duration, it’s the time it takes to do an Inference (use the model, not the time of your audio file itself), on default it’s around 1 minute which is what Ilaria RVC uses. You need to retry with a shorter audio, you could also split your audio.</p>
+<doc-anchor-target id="you-have-exceeded-your-gpu-quota--number-s-left-vs-60s-requested-sign-up-on-hugging-face-to-get-more-quotas-or-retry-in-hourminutesseconds">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#you-have-exceeded-your-gpu-quota--number-s-left-vs-60s-requested-sign-up-on-hugging-face-to-get-more-quotas-or-retry-in-hourminutesseconds">#</doc-anchor-trigger>
+        <span>You have exceeded your GPU quota ( NUMBER s left vs. 60s requested). Sign-up on Hugging Face to get more quotas or retry in Hour:Minutes:Seconds</span>
+    </h3>
+</doc-anchor-target>
+<p>ZeroGPU HuggingFace Spaces have a quota per account, if you aren’t signed in you will get less quota so it’s better to login for more quota. You could get the ‘Sign-up’ part even if you are logged in. The ZeroGPU Quota can’t be seen but it isn’t unlimited. You can either:</p>
+<ul>
+<li>Login so you get more quota</li>
+<li>Wait</li>
+<li>Pay to be an HuggingFace PRO Member to get X5 times more quota</li>
+</ul>
+</doc-tab>
+<doc-tab v-cloak id="uvr5-ui-colab">
+<template #title>UVR5 UI Colab</template>
+<div class="content-center"><doc-anchor-target id="eddys-uvr5-ui-google-colab">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#eddys-uvr5-ui-google-colab">#</doc-anchor-trigger>
+        <span>Eddy&#x27;s UVR5 UI Google Colab</span>
+    </h2>
+</doc-anchor-target>
+</div>
+<hr>
+<doc-anchor-target id="how-to-use-3">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-use-3">#</doc-anchor-trigger>
+        <span>How to Use <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3.5 3.75a.25.25 0 0 1 .25-.25h13.5a.25.25 0 0 1 .25.25v10a.75.75 0 0 0 1.5 0v-10A1.75 1.75 0 0 0 17.25 2H3.75A1.75 1.75 0 0 0 2 3.75v16.5c0 .966.784 1.75 1.75 1.75h7a.75.75 0 0 0 0-1.5h-7a.25.25 0 0 1-.25-.25V3.75Z"/><path d="M6.25 7a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Zm-.75 4.75a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75Zm16.28 4.53a.75.75 0 1 0-1.06-1.06l-4.97 4.97-1.97-1.97a.75.75 0 1 0-1.06 1.06l2.5 2.5a.75.75 0 0 0 1.06 0l5.5-5.5Z"/></g></g></svg></span>
+    </h3>
 </doc-anchor-target>
 <doc-anchor-target id="1-set-up-colab">
     <h4>
@@ -992,14 +1103,14 @@ If you need to remove multiple noises, follow this pipeline for the best results
         <span>1. Set up Colab</span>
     </h4>
 </doc-anchor-target>
-<doc-anchor-target id="section-27">
+<doc-anchor-target id="section-18">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-27">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-18">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
 <ol>
-<li><p>First access <u><a href="https://colab.research.google.com/github/Eddycrack864/UVR5-UI/blob/main/UVR_UI.ipynb">Eddy&#x27;s UVR UI Cloud Colab</a></u>.<br />
+<li><p>First access <u><a href="https://colab.research.google.com/github/Eddycrack864/UVR5-UI/blob/main/UVR_UI.ipynb">Eddy&#x27;s UVR UI Google Colab</a></u>.<br />
 ‎</p>
 </li>
 <li><p>Then <strong>Log in</strong> to your Google account.<br />
@@ -1007,20 +1118,59 @@ If you need to remove multiple noises, follow this pipeline for the best results
 </li>
 <li><p>Execute the <strong>Installation</strong> cell by pressing the play button <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M9.5 15.584V8.416a.5.5 0 0 1 .77-.42l5.576 3.583a.5.5 0 0 1 0 .842l-5.576 3.584a.5.5 0 0 1-.77-.42Z"/><path d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12Zm11-9.5A9.5 9.5 0 0 0 2.5 12a9.5 9.5 0 0 0 9.5 9.5 9.5 9.5 0 0 0 9.5-9.5A9.5 9.5 0 0 0 12 2.5Z"/></g></g></svg> , optionally check <code v-pre>use_drive</code> &amp; grant all the permissions for Batch Separation.
 ‎<br />
-<img src="../uvrcolab-img/installation.png" alt="UVR5 UI Colab Installation Cell" width="270" height="auto">‎<br />
+<img src="../uvrcolab-img/installation.png" alt="UVR5 UI Colab Installation Cell" width="330" height="auto">‎<br />
 ‎</p>
 </li>
 <li><p>Then run the <strong>Run UI</strong> cell. You can choose different tunnels in case one is down.</p>
- <img src="../uvrcolab-img/run-ui.png" alt="image" width="270" height="auto">
+ <img src="../uvrcolab-img/run-ui.png" alt="UVR5 UI Colab Run UI Cell" width="600" height="auto">
 </li>
 </ol>
 <ul>
-<li>Once it&#x27;s done open the public url.</li>
+<li>Once it&#x27;s done open the public url, and it will be the same as using Eddy&#x27;s UVR5 UI Local/HF-Space.</li>
 </ul>
 <hr>
-<doc-anchor-target id="troubleshooting-1">
+<doc-anchor-target id="best-models-for-uvr5-ui-colab">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#troubleshooting-1">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#best-models-for-uvr5-ui-colab">#</doc-anchor-trigger>
+        <span>Best Models for UVR5-UI-Colab</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th style="text-align: center;">Extraction</th>
+<th style="text-align: center;">Model</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Vocals</td>
+<td style="text-align: center;"><code v-pre>MelBand Roformer | Vocals FV4 by Gabox</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">Instrumental</td>
+<td style="text-align: center;"><code v-pre>MelBand Roformer | INSTV7 by Gabox</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">De-Reverb</td>
+<td style="text-align: center;"><code v-pre>MelBand Roformer | De-Reverb by anvuew</code></td>
+</tr>
+<tr>
+<td style="text-align: center;">Extract Backing Vocals</td>
+<td style="text-align: center;">Mel-Roformer-Karaoke-Aufr33-Viperx</td>
+</tr>
+<tr>
+<td style="text-align: center;">De-Noise</td>
+<td style="text-align: center;">Mel-Roformer-Denoise-Aufr33-Aggr</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+<doc-anchor-target id="troubleshooting-3">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#troubleshooting-3">#</doc-anchor-trigger>
         <span>Troubleshooting <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M7.875 2.292a.114.114 0 0 0-.032.018A7.239 7.239 0 0 0 4.75 8.25a7.248 7.248 0 0 0 3.654 6.297c.57.327.982.955.941 1.682v.002l-.317 6.058a.75.75 0 1 1-1.498-.078l.317-6.062v-.004c.006-.09-.047-.215-.188-.296A8.749 8.749 0 0 1 3.25 8.25a8.738 8.738 0 0 1 3.732-7.169 1.547 1.547 0 0 1 1.709-.064c.484.292.809.835.809 1.46v4.714a.25.25 0 0 0 .119.213l2.25 1.385c.08.05.182.05.262 0l2.25-1.385a.25.25 0 0 0 .119-.213V2.478c0-.626.325-1.169.81-1.461a1.547 1.547 0 0 1 1.708.064 8.741 8.741 0 0 1 3.732 7.17 8.747 8.747 0 0 1-4.41 7.598c-.14.081-.193.206-.188.296v.004l.318 6.062a.75.75 0 1 1-1.498.078l-.317-6.058v-.002c-.041-.727.37-1.355.94-1.682A7.247 7.247 0 0 0 19.25 8.25a7.239 7.239 0 0 0-3.093-5.94.114.114 0 0 0-.032-.018l-.01-.001c-.003 0-.014 0-.031.01-.036.022-.084.079-.084.177V7.19c0 .608-.315 1.172-.833 1.49l-2.25 1.385a1.75 1.75 0 0 1-1.834 0l-2.25-1.384A1.752 1.752 0 0 1 8 7.192V2.477c0-.098-.048-.155-.084-.176a.068.068 0 0 0-.031-.011l-.01.001Z"/></g></g></svg></span>
     </h3>
 </doc-anchor-target>
@@ -1034,32 +1184,22 @@ If you need to remove multiple noises, follow this pipeline for the best results
 <ul>
 <li>You have exhausted the <u><a href="https://docs.aihub.gg/rvc/extra/glossary/#google-colab">GPU runtime</a></u> of Colab.</li>
 </ul>
-<doc-tabs>
+</doc-tab>
 <doc-tab v-cloak id="msst-colab">
 <template #title>MSST Colab</template>
-<div class="content-center"><doc-anchor-target id="msst">
+<div class="content-center"><doc-anchor-target id="msst-colab">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#msst">#</doc-anchor-trigger>
-        <span>MSST</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#msst-colab">#</doc-anchor-trigger>
+        <span>MSST Colab</span>
     </h2>
 </doc-anchor-target>
 </div>
 <p>This is jarredou&#x27;s Music Source Separation Training (MMST) (Colab Inference).</p>
-<doc-anchor-target id="how-to-use-2">
+<doc-anchor-target id="how-to-use-4">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-use-2">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-use-4">#</doc-anchor-trigger>
         <span>How to Use <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3.5 3.75a.25.25 0 0 1 .25-.25h13.5a.25.25 0 0 1 .25.25v10a.75.75 0 0 0 1.5 0v-10A1.75 1.75 0 0 0 17.25 2H3.75A1.75 1.75 0 0 0 2 3.75v16.5c0 .966.784 1.75 1.75 1.75h7a.75.75 0 0 0 0-1.5h-7a.25.25 0 0 1-.25-.25V3.75Z"/><path d="M6.25 7a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Zm-.75 4.75a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75Zm16.28 4.53a.75.75 0 1 0-1.06-1.06l-4.97 4.97-1.97-1.97a.75.75 0 1 0-1.06 1.06l2.5 2.5a.75.75 0 0 0 1.06 0l5.5-5.5Z"/></g></g></svg></span>
     </h3>
-</doc-anchor-target>
-<hr>
-<doc-panels>
-   <doc-panel id="extracting-vocals-from-songs" collapsed>
-       <template #title><em>Extracting Vocals From Songs</em> <span class="docs-emoji">&#x1F3B6;</span></template>
-<doc-anchor-target id="section-28">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-28">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
 </doc-anchor-target>
 <doc-anchor-target id="1-set-up-colab-1">
     <h4>
@@ -1067,9 +1207,9 @@ If you need to remove multiple noises, follow this pipeline for the best results
         <span>1. Set up Colab</span>
     </h4>
 </doc-anchor-target>
-<doc-anchor-target id="section-29">
+<doc-anchor-target id="section-19">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-29">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-19">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1082,7 +1222,7 @@ If you need to remove multiple noises, follow this pipeline for the best results
 </li>
 <li><p>Execute the <strong>Gdrive Connection</strong> cell by pressing the play button <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M9.5 15.584V8.416a.5.5 0 0 1 .77-.42l5.576 3.583a.5.5 0 0 1 0 .842l-5.576 3.584a.5.5 0 0 1-.77-.42Z"/><path d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12Zm11-9.5A9.5 9.5 0 0 0 2.5 12a9.5 9.5 0 0 0 9.5 9.5 9.5 9.5 0 0 0 9.5-9.5A9.5 9.5 0 0 0 12 2.5Z"/></g></g></svg>. Grant all the permissions.<br />
 ‎<br />
-<img src="../msstcolab-img/1.png" alt="image" width="270" height="auto">‎<br />
+<img src="../msstcolab-img/gdrive-connection.png" alt="GDrive Connection cell" width="270" height="auto">‎<br />
 ‎</p>
 </li>
 </ol>
@@ -1092,12 +1232,12 @@ If you need to remove multiple noises, follow this pipeline for the best results
 </ul>
 <ol start="5">
 <li><p>Then run the <strong>Install</strong> cell.</p>
- <img src="../msstcolab-img/3.png" alt="image" width="270" height="auto">
+ <img src="../msstcolab-img/install-cell.png" alt="Installation Cell" width="270" height="auto">
 </li>
 </ol>
 <ul>
 <li><p>Once it&#x27;s done it will look like this:</p>
-  <img src="../msstcolab-img/4.png" alt="image" width="600" height="auto">
+  <img src="../msstcolab-img/installation-done.png" alt="Finished Installation" width="600" height="auto">
 </li>
 </ul>
 <hr>
@@ -1108,16 +1248,16 @@ If you need to remove multiple noises, follow this pipeline for the best results
         <span>2. Set up folders</span>
     </h4>
 </doc-anchor-target>
-<doc-anchor-target id="section-30">
+<doc-anchor-target id="section-20">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-30">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-20">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
 <ul>
 <li>In Google Drive, make two folders, named <strong>input</strong> &amp; <strong>output</strong>.<br />
 ‎<br />
-<img src="../msstcolab-img/2.png" alt="image" width="600" height="auto"><br />
+<img src="../msstcolab-img/drive-folders.png" alt="GDrive folders input & output" width="600" height="auto"><br />
 ‎<br />
 ‎</li>
 </ul>
@@ -1129,17 +1269,17 @@ If you need to remove multiple noises, follow this pipeline for the best results
         <span>3. Separate</span>
     </h4>
 </doc-anchor-target>
-<doc-anchor-target id="section-31">
+<doc-anchor-target id="section-21">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-31">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-21">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
 <ol type="a" start="1">
-<li>Select your model of choice and run the <strong>Separation</strong> cell. You can look <u><a href="https://docs.aihub.gg/rvc/resources/vocal-isolation/#best-models">here</a></u> for the best models</li>
+<li>Select your model of choice and run the <strong>Separation</strong> cell. You can look for the <u><a href="https://docs.aihub.gg/rvc/resources/vocal-isolation/#best-models-for-msst">List of the Best Models</a></u>.</li>
 </ol>
 <p>‎<br />
-<img src="../msstcolab-img/5.png" alt="image" width="500" height="auto">‎<br />
+<img src="../msstcolab-img/model-selection.png" alt="image" width="500" height="auto">‎<br />
 ‎</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
@@ -1166,9 +1306,12 @@ If you need to remove multiple noises, follow this pipeline for the best results
 <li>Download the result located in the output folder.</li>
 </ol>
 <hr>
-   </doc-panel>
-</doc-tab>
-</doc-panel>
+<doc-anchor-target id="best-models-for-msst">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#best-models-for-msst">#</doc-anchor-trigger>
+        <span>Best models for MSST:</span>
+    </h4>
+</doc-anchor-target>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -1196,15 +1339,15 @@ If you need to remove multiple noises, follow this pipeline for the best results
 </tr>
 <tr>
 <td style="text-align: center;">De-Noise</td>
-<td style="text-align: center;">Mel denoiser</td>
+<td style="text-align: center;">Mel denoiser v2</td>
 </tr>
 </tbody>
 </table>
 </div>
 <p>‎</p>
-<doc-anchor-target id="troubleshooting-2">
+<doc-anchor-target id="troubleshooting-4">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#troubleshooting-2">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#troubleshooting-4">#</doc-anchor-trigger>
         <span>Troubleshooting <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M7.875 2.292a.114.114 0 0 0-.032.018A7.239 7.239 0 0 0 4.75 8.25a7.248 7.248 0 0 0 3.654 6.297c.57.327.982.955.941 1.682v.002l-.317 6.058a.75.75 0 1 1-1.498-.078l.317-6.062v-.004c.006-.09-.047-.215-.188-.296A8.749 8.749 0 0 1 3.25 8.25a8.738 8.738 0 0 1 3.732-7.169 1.547 1.547 0 0 1 1.709-.064c.484.292.809.835.809 1.46v4.714a.25.25 0 0 0 .119.213l2.25 1.385c.08.05.182.05.262 0l2.25-1.385a.25.25 0 0 0 .119-.213V2.478c0-.626.325-1.169.81-1.461a1.547 1.547 0 0 1 1.708.064 8.741 8.741 0 0 1 3.732 7.17 8.747 8.747 0 0 1-4.41 7.598c-.14.081-.193.206-.188.296v.004l.318 6.062a.75.75 0 1 1-1.498.078l-.317-6.058v-.002c-.041-.727.37-1.355.94-1.682A7.247 7.247 0 0 0 19.25 8.25a7.239 7.239 0 0 0-3.093-5.94.114.114 0 0 0-.032-.018l-.01-.001c-.003 0-.014 0-.031.01-.036.022-.084.079-.084.177V7.19c0 .608-.315 1.172-.833 1.49l-2.25 1.385a1.75 1.75 0 0 1-1.834 0l-2.25-1.384A1.752 1.752 0 0 1 8 7.192V2.477c0-.098-.048-.155-.084-.176a.068.068 0 0 0-.031-.011l-.01.001Z"/></g></g></svg></span>
     </h3>
 </doc-anchor-target>
@@ -1219,228 +1362,20 @@ If you need to remove multiple noises, follow this pipeline for the best results
 <li>You have exhausted the <u><a href="https://docs.aihub.gg/rvc/extra/glossary/#google-colab">GPU runtime</a></u> of Colab.</li>
 </ul>
 </doc-tab>
-<doc-tab v-cloak id="huggingface-spaces">
-<template #title>Huggingface Spaces</template>
-<div class="content-center"><doc-anchor-target id="uvr-zero-gpu">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#uvr-zero-gpu">#</doc-anchor-trigger>
-        <span>UVR Zero GPU</span>
-    </h2>
-</doc-anchor-target>
-</div>
-<hr>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-danger"></div>
-    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-danger" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M21.71 6.15L15.85.29c-.19-.18-.44-.29-.71-.29H6.86c-.27 0-.52.11-.71.29L.29 6.15c-.18.19-.29.44-.29.71v8.28c0 .27.11.52.29.71l5.86 5.86c.19.18.44.29.71.29h8.28c.27 0 .52-.11.71-.29l5.86-5.86a.99.99 0 00.29-.71V6.86c0-.27-.11-.52-.29-.71zM20 14.73L14.73 20H7.27L2 14.73V7.27L7.27 2h7.45L20 7.27v7.46z"></path>
-                    <path d="M11 12c.55 0 1-.45 1-1V7c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .55.45 1 1 1zM11.01 14c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-            <h5>Currently broken for uknown issues</h5>
-<p>For unknwon related ZeroGPU issues, the space is broken. We suggest alternatives till it&#x27;s fixed or we have updates on the situation.</p>
-        </div>
-    </div>
-</div>
-<doc-anchor-target id="how-to-use-3">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-use-3">#</doc-anchor-trigger>
-        <span>How to use <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3.5 3.75a.25.25 0 0 1 .25-.25h13.5a.25.25 0 0 1 .25.25v10a.75.75 0 0 0 1.5 0v-10A1.75 1.75 0 0 0 17.25 2H3.75A1.75 1.75 0 0 0 2 3.75v16.5c0 .966.784 1.75 1.75 1.75h7a.75.75 0 0 0 0-1.5h-7a.25.25 0 0 1-.25-.25V3.75Z"/><path d="M6.25 7a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Zm-.75 4.75a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75Zm16.28 4.53a.75.75 0 1 0-1.06-1.06l-4.97 4.97-1.97-1.97a.75.75 0 1 0-1.06 1.06l2.5 2.5a.75.75 0 0 0 1.06 0l5.5-5.5Z"/></g></g></svg></span>
-    </h2>
-</doc-anchor-target>
-<hr>
-<doc-panel id="extract-vocals" collapsed>
-    <template #title>Extract vocals</template>
-<doc-anchor-target id="section-32">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-32">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
-<p>Access the space <u><a href="https://huggingface.co/spaces/TheStinger/UVR5_UI">here</a></u>, you don&#x27;t need an account to use this.</p>
-<doc-anchor-target id="2-select-vocals--options">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#2-select-vocals--options">#</doc-anchor-trigger>
-        <span>2. Select vocals &amp; options</span>
-    </h4>
-</doc-anchor-target>
-<doc-anchor-target id="section-33">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-33">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
-<ol type="a" start="1">
-<li><p>Tap the <strong>Input Audio</strong> box &amp; select your audio, or simply drag &amp; drop.<br />
-‎<br />
-<img src="../hugging-img/1.png" alt="image" width="1000" height="auto">‎<br />
-‎<br />
-‎</p>
-</li>
-<li><p>Once it&#x27;s done uploading, in <strong>CHOOSE PROCESS METHOD</strong>, select <code v-pre>BS/Mel Roformer</code>. Under that you can change <strong>Segment Size</strong> and <strong>Overlap</strong>, the defaults are fine.<br />
-‎<br />
-<img src="../hugging-img/2.png" alt="image" width="1000" height="auto">‎</p>
-</li>
-</ol>
-<p>‎</p>
-<doc-anchor-target id="3-select-model-1">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#3-select-model-1">#</doc-anchor-trigger>
-        <span>3. Select model</span>
-    </h4>
-</doc-anchor-target>
-<doc-anchor-target id="section-34">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-34">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
-<ol type="a" start="4">
-<li>Check the best models list &amp; in <strong>CHOOSE MODEL</strong> pick the one according to what you need to remove.<br />
-‎<br />
-If you need to remove multiple noises, follow this pipeline for the best results:<br />
-<code v-pre>Remove instrumental -&gt; Remove reverb -&gt; Extract main vocals -&gt; Remove noise</code><br />
-‎</li>
-</ol>
-<doc-anchor-target id="4-start-processing">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#4-start-processing">#</doc-anchor-trigger>
-        <span>4. Start Processing</span>
-    </h4>
-</doc-anchor-target>
-<doc-anchor-target id="section-35">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-35">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
-<ol type="a" start="1">
-<li><p>Click <strong>Spererate!</strong> below. Wait a moment for the audio to process.<br />
-‎</p>
-</li>
-<li><p>Playable audios will then appear in the output boxes below. To download the output, click the little download icon in the top right.</p>
-</li>
-</ol>
-<ul>
-<li>If you&#x27;re extracting lead vocals, remember to download the backing ones if you wish to keep them.</li>
-</ul>
-</doc-panel>
-<doc-anchor-target id="troubleshooting-3">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#troubleshooting-3">#</doc-anchor-trigger>
-        <span>Troubleshooting <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M7.875 2.292a.114.114 0 0 0-.032.018A7.239 7.239 0 0 0 4.75 8.25a7.248 7.248 0 0 0 3.654 6.297c.57.327.982.955.941 1.682v.002l-.317 6.058a.75.75 0 1 1-1.498-.078l.317-6.062v-.004c.006-.09-.047-.215-.188-.296A8.749 8.749 0 0 1 3.25 8.25a8.738 8.738 0 0 1 3.732-7.169 1.547 1.547 0 0 1 1.709-.064c.484.292.809.835.809 1.46v4.714a.25.25 0 0 0 .119.213l2.25 1.385c.08.05.182.05.262 0l2.25-1.385a.25.25 0 0 0 .119-.213V2.478c0-.626.325-1.169.81-1.461a1.547 1.547 0 0 1 1.708.064 8.741 8.741 0 0 1 3.732 7.17 8.747 8.747 0 0 1-4.41 7.598c-.14.081-.193.206-.188.296v.004l.318 6.062a.75.75 0 1 1-1.498.078l-.317-6.058v-.002c-.041-.727.37-1.355.94-1.682A7.247 7.247 0 0 0 19.25 8.25a7.239 7.239 0 0 0-3.093-5.94.114.114 0 0 0-.032-.018l-.01-.001c-.003 0-.014 0-.031.01-.036.022-.084.079-.084.177V7.19c0 .608-.315 1.172-.833 1.49l-2.25 1.385a1.75 1.75 0 0 1-1.834 0l-2.25-1.384A1.752 1.752 0 0 1 8 7.192V2.477c0-.098-.048-.155-.084-.176a.068.068 0 0 0-.031-.011l-.01.001Z"/></g></g></svg></span>
-    </h3>
-</doc-anchor-target>
-<hr>
-<doc-panel id="uvr-extracted-too-littletoo-much" collapsed>
-    <template #title><em>UVR extracted too little/too much.</em></template>
-<doc-anchor-target id="section-36">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-36">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
-<ul>
-<li>Modify the <code v-pre>Aggression Setting</code> value on the right.</li>
-<li>This determines the depth of the extraction. Only the VR method has it.</li>
-<li>A higher value will deepen the extraction, and a lower one will soften it.</li>
-<li>Each audio is different, so you&#x27;ll have to test the ideal value.</li>
-</ul>
-</doc-panel>
-<doc-panel id="i-cant-remove-some-of-the-backing-vocals" collapsed>
-    <template #title><em>I can&#x27;t remove some of the backing vocals.</em></template>
-<ul>
-<li>Run the audio through BVE. Modify the Aggression Setting if necessary.</li>
-</ul>
-</doc-panel>
-<doc-panel id="i-couldnt-find-my-answer" collapsed>
-    <template #title><em>I couldn&#x27;t find my answer.</em></template>
-<doc-anchor-target id="section-37">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-37">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
-<ul>
-<li>Report your issue <u><a href="https://docs.aihub.gg/contributions/">here</a></u>.</li>
-</ul>
-</doc-panel>
-<doc-panel id="errors" collapsed>
-    <template #title>Errors</template>
-<doc-anchor-target id="gpu-task-aborted">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#gpu-task-aborted">#</doc-anchor-trigger>
-        <span>GPU task aborted:</span>
-    </h4>
-</doc-anchor-target>
-<p>ZeroGPU HuggingFace Spaces have a max inference time duration, it’s the time it takes to do an Inference (use the model, not the time of your audio file itself), on default it’s around 1 minute which is what Ilaria RVC uses. You need to retry with a shorter audio, you could also split your audio.</p>
-<hr>
-<doc-anchor-target id="you-have-exceeded-your-gpu-quota--number-s-left-vs-60s-requested-sign-up-on-hugging-face-to-get-more-quotas-or-retry-in-hourminutesseconds">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#you-have-exceeded-your-gpu-quota--number-s-left-vs-60s-requested-sign-up-on-hugging-face-to-get-more-quotas-or-retry-in-hourminutesseconds">#</doc-anchor-trigger>
-        <span>You have exceeded your GPU quota ( NUMBER s left vs. 60s requested). Sign-up on Hugging Face to get more quotas or retry in Hour:Minutes:Seconds</span>
-    </h4>
-</doc-anchor-target>
-<p>ZeroGPU HuggingFace Spaces have a quota per account, if you aren’t signed in you will get less quota so it’s better to login for more quota. You could get the ‘Sign-up’ part even if you are logged in. The ZeroGPU Quota can’t be seen but it isn’t unlimited. You can either:</p>
-<ul>
-<li>Login so you get more quota</li>
-<li>Wait</li>
-<li>Pay to be an HuggingFace PRO Member to get X5 times more quota</li>
-</ul>
-</doc-panel>
-<hr>
-<doc-anchor-target id="best-models">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#best-models">#</doc-anchor-trigger>
-        <span>Best Models</span>
-    </h3>
-</doc-anchor-target>
-<hr>
-<div class="table-wrapper scrollbar overflow-hidden">
-<table class="comfortable">
-<thead>
-<tr>
-<th style="text-align: center;">Extraction</th>
-<th style="text-align: center;">Model</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">Vocals</td>
-<td style="text-align: center;">Gabox&#x27;s voc_fv4</td>
-</tr>
-<tr>
-<td style="text-align: center;">Instrumental</td>
-<td style="text-align: center;">INST Gabox V7</td>
-</tr>
-<tr>
-<td style="text-align: center;">De-Reverb</td>
-<td style="text-align: center;">Anvuew mel dereverb v2</td>
-</tr>
-<tr>
-<td style="text-align: center;">Extract Backing Vocals</td>
-<td style="text-align: center;">Mel roformer karaoke</td>
-</tr>
-<tr>
-<td style="text-align: center;">De-Noise</td>
-<td style="text-align: center;">Mel denoiser</td>
-</tr>
-</tbody>
-</table>
-</div>
-</doc-tab>
 <doc-tab v-cloak id="mvsep">
 <template #title>MVSEP</template>
-<doc-anchor-target id="section-38">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-38">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
+<div class="content-center"><doc-anchor-target id="mvsep">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#mvsep">#</doc-anchor-trigger>
+        <span>MVSEP</span>
+    </h2>
 </doc-anchor-target>
+</div>
+<div class="content-center"><p><a href="https://mvsep.com/billing" class="no-link inline-flex align-middle items-center font-medium cursor-pointer transition-colors duration-200 ease-out focus:outline-none bg-button-danger hover:bg-button-danger-hover text-button-danger-text px-4 h-10 text-sm rounded-full">
+    <span>Support MVSEP by Paying</span>
+    <span><svg xmlns="http://www.w3.org/2000/svg" class="mb-px inline-flex ml-2" width="18" height="18" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M14 20.408c-.492.308-.903.546-1.192.709-.153.086-.308.17-.463.252h-.002a.75.75 0 0 1-.686 0 16.709 16.709 0 0 1-.465-.252 31.147 31.147 0 0 1-4.803-3.34C3.8 15.572 1 12.331 1 8.513 1 5.052 3.829 2.5 6.736 2.5 9.03 2.5 10.881 3.726 12 5.605 13.12 3.726 14.97 2.5 17.264 2.5 20.17 2.5 23 5.052 23 8.514c0 3.818-2.801 7.06-5.389 9.262A31.146 31.146 0 0 1 14 20.408Z"/></g></svg></span>
+</a></p>
+</div>
 <doc-anchor-target id="important-notes-">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#important-notes-">#</doc-anchor-trigger>
@@ -1451,58 +1386,36 @@ If you need to remove multiple noises, follow this pipeline for the best results
 <ul>
 <li><p>MVSEP is a website for isolating vocals, that works similarly as UVR.</p>
 </li>
-<li><p>The <u><a href="https://docs.aihub.gg/rvc/resources/dataset-isolation/#cloud-uvr">UVR Colab</a></u> is much faster &amp; convenient for this task. Use MVSEP if you run out of GPU runtime or feel lazy to convert your audio to WAV.</p>
-</li>
 <li><p>For free users, you can&#x27;t convert audios in batches or longer than 10 minutes. If that&#x27;s your case, trim it into different pieces.</p>
 </li>
 <li><p>There is a queue so make sure you make an account to skip most of it.</p>
 </li>
 </ul>
 <hr>
-<doc-anchor-target id="section-39">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-39">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
-<doc-anchor-target id="section-40">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-40">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
-<doc-anchor-target id="how-to-use-">
+<doc-anchor-target id="how-to-use-5">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-use-">#</doc-anchor-trigger>
-        <span>How to Use ‎ <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3.5 3.75a.25.25 0 0 1 .25-.25h13.5a.25.25 0 0 1 .25.25v10a.75.75 0 0 0 1.5 0v-10A1.75 1.75 0 0 0 17.25 2H3.75A1.75 1.75 0 0 0 2 3.75v16.5c0 .966.784 1.75 1.75 1.75h7a.75.75 0 0 0 0-1.5h-7a.25.25 0 0 1-.25-.25V3.75Z"/><path d="M6.25 7a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Zm-.75 4.75a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75Zm16.28 4.53a.75.75 0 1 0-1.06-1.06l-4.97 4.97-1.97-1.97a.75.75 0 1 0-1.06 1.06l2.5 2.5a.75.75 0 0 0 1.06 0l5.5-5.5Z"/></g></g></svg></span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-use-5">#</doc-anchor-trigger>
+        <span>How to Use <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3.5 3.75a.25.25 0 0 1 .25-.25h13.5a.25.25 0 0 1 .25.25v10a.75.75 0 0 0 1.5 0v-10A1.75 1.75 0 0 0 17.25 2H3.75A1.75 1.75 0 0 0 2 3.75v16.5c0 .966.784 1.75 1.75 1.75h7a.75.75 0 0 0 0-1.5h-7a.25.25 0 0 1-.25-.25V3.75Z"/><path d="M6.25 7a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Zm-.75 4.75a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75Zm16.28 4.53a.75.75 0 1 0-1.06-1.06l-4.97 4.97-1.97-1.97a.75.75 0 1 0-1.06 1.06l2.5 2.5a.75.75 0 0 0 1.06 0l5.5-5.5Z"/></g></g></svg></span>
     </h3>
 </doc-anchor-target>
 <hr>
-<doc-panel id="extracting-vocals-from-songs" collapsed>
-    <template #title><em>Extracting Vocals From Songs</em> <span class="docs-emoji">&#x1F3B6;</span></template>
-<doc-anchor-target id="section-41">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-41">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
 <doc-anchor-target id="1-log-in">
     <h4>
         <doc-anchor-trigger class="header-anchor-trigger" to="#1-log-in">#</doc-anchor-trigger>
         <span>1. Log in.</span>
     </h4>
 </doc-anchor-target>
-<doc-anchor-target id="section-42">
+<doc-anchor-target id="section-22">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-42">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-22">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
 <ol type="a" start="1">
-<li><p>First, make an account <u><a href="https://mvsep.com/register">here</u></a>.<br />
+<li><p>First, <u><a href="https://mvsep.com/register">login</a></u>.
 ‎</p>
 </li>
-<li><p>Once logged in, go to the <u><a href="https://mvsep.com">main page</u></a>.</p>
+<li><p>Once logged in, go to the <u><a href="https://mvsep.com">main page</a></u>.</p>
 </li>
 </ol>
 <div class="flex mb-6">
@@ -1530,41 +1443,42 @@ If you need to remove multiple noises, follow this pipeline for the best results
         <span>2. Select audio.</span>
     </h4>
 </doc-anchor-target>
-<doc-anchor-target id="section-43">
+<doc-anchor-target id="section-23">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-43">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-23">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
 <ol type="a" start="1">
 <li><p>Click <code v-pre>Browse File</code> &amp; select your audio, or simply drag &amp; drop. The audio will begin to upload.</p>
-<p><img src="../uvrmvsep-img/9.png" alt="image" width="330" height="auto">‎</p>
+ <img src="../mvsep-img/upload-input.png" alt="Upload Input" width="330" height="auto">
 </li>
 </ol>
 <hr>
 <p>‎</p>
-<doc-anchor-target id="3-extract-vocals-1">
+<doc-anchor-target id="3-model-usage">
     <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#3-extract-vocals-1">#</doc-anchor-trigger>
-        <span>3. Extract vocals.</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#3-model-usage">#</doc-anchor-trigger>
+        <span>3. Model usage.</span>
     </h4>
 </doc-anchor-target>
-<doc-anchor-target id="section-44">
+<doc-anchor-target id="section-24">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-44">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-24">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
 <ol type="a" start="1">
-<li><p>In <strong>Separation type</strong> select <code v-pre>BS Roformer</code><br />
+<li><p>In <strong>Separation type</strong> Select a Model based on the <a href="https://docs.aihub.gg/rvc/resources/vocal-isolation/#best-models-for-mvsep">Best Models List</a>.
 ‎</p>
 </li>
 <li><p>In <strong>Output encoding</strong> select <code v-pre>FLAC</code>.<br />
-We recommend selecting FLAC from now on. Learn more <u><a href="https://docs.aihub.gg/extra/glossary/#lossless-formats">here</u></a>.<br />
+We recommend selecting FLAC from now on. Learn more <u><a href="https://docs.aihub.gg/extra/glossary/#lossless-formats">here</a></u>.<br />
 ‎</p>
 </li>
 <li><p>Once the audio is done uploading, click <code v-pre>Separate</code></p>
-<p><img src="../uvrmvsep-img/11.png" alt="image" width="400" height="auto">‎</p>
+<p><img src="../mvsep-img/model-selection.png" alt="Model Selection" width="400" height="auto">‎</p>
+<p><img src="../mvsep-img/output-encoding.png" alt="Flac as Output Encoding" width="420" height="auto">‎</p>
 </li>
 </ol>
 <div class="flex mb-6">
@@ -1592,9 +1506,9 @@ We recommend selecting FLAC from now on. Learn more <u><a href="https://docs.aih
         <span>4. Download output.</span>
     </h4>
 </doc-anchor-target>
-<doc-anchor-target id="section-45">
+<doc-anchor-target id="section-25">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-45">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-25">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1606,165 +1520,16 @@ We recommend selecting FLAC from now on. Learn more <u><a href="https://docs.aih
 ‎</p>
 </li>
 <li><p>Same thing for the <strong>Instrumental</strong>, if you wish to keep it.</p>
-<p><img src="../uvrmvsep-img/12.png" alt="image" width="400" height="auto">‎</p>
+<p><img src="../mvsep-img/results.png" alt="Results of separated Stems" width="400" height="auto">‎</p>
 </li>
 </ol>
 <hr>
-<p>‎</p>
-<doc-anchor-target id="4-clean-vocals-1">
+<doc-anchor-target id="best-models-for-mvsep">
     <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#4-clean-vocals-1">#</doc-anchor-trigger>
-        <span>4. Clean vocals</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#best-models-for-mvsep">#</doc-anchor-trigger>
+        <span>Best Models for MVSEP:</span>
     </h4>
 </doc-anchor-target>
-<doc-anchor-target id="section-46">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-46">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
-<ul>
-<li><p>Usually songs include reverb &amp; backing vocals. These <strong>negatively</strong> impact the results in RVC.<br />
-‎</p>
-</li>
-<li><p>So if the output has any undesired noises, follow the procedure on <strong>Cleaning Vocals</strong>.<br />
-‎</p>
-</li>
-</ul>
-</doc-panel>
-<doc-panel id="cleaning-vocals" collapsed>
-    <template #title>Cleaning Vocals <span class="docs-emoji">&#x1F5E3;&#xFE0F;</span></template>
-<doc-anchor-target id="section-47">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-47">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
-<doc-anchor-target id="1-log-in-1">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#1-log-in-1">#</doc-anchor-trigger>
-        <span>1. Log in.</span>
-    </h4>
-</doc-anchor-target>
-<doc-anchor-target id="section-48">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-48">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
-<ol type="a" start="1">
-<li><p>First, make an account <u><a href="https://mvsep.com/register">here</u></a>.<br />
-‎</p>
-</li>
-<li><p>Once logged in, go to the <u><a href="https://mvsep.com">main page</u></a>.</p>
-</li>
-</ol>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
-    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>Logging in is not mandatory, but recommended for <strong>shorter waiting lists</strong>.</p>
-        </div>
-    </div>
-</div>
-<hr>
-<p>‎</p>
-<doc-anchor-target id="2-select-audio--output-format">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#2-select-audio--output-format">#</doc-anchor-trigger>
-        <span>2. Select audio &amp; output format.</span>
-    </h4>
-</doc-anchor-target>
-<doc-anchor-target id="section-49">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-49">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
-<ol type="a" start="1">
-<li><p>Click <code v-pre>Browse File</code> &amp; select your audio, or simply drag &amp; drop. The audio will begin to upload.<br />
-‎<br />
-<img src="../uvrmvsep-img/9.png" alt="image" width="330" height="auto">‎<br />
-‎<br />
-‎</p>
-</li>
-<li><p>In <strong>Output encoding</strong> select <code v-pre>FLAC</code>.<br />
-We recommend selecting FLAC from now on. Learn more <u><a href="https://docs.aihub.gg/extra/glossary/#lossless-formats">here</u></a>.</p>
-<p><img src="../uvrmvsep-img/10.png" alt="image" width="420" height="auto">‎</p>
-</li>
-</ol>
-<hr>
-<p>‎</p>
-<doc-anchor-target id="3-select-model-2">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#3-select-model-2">#</doc-anchor-trigger>
-        <span>3. Select model.</span>
-    </h4>
-</doc-anchor-target>
-<doc-anchor-target id="section-50">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-50">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
-<ol type="a" start="1">
-<li><p>In <strong>Separation Type</strong>, select <code v-pre>DeNoise by aufr33</code>.<br />
-‎</p>
-</li>
-<li><p>Check the <u><a href="https://docs.aihub.gg/rvc/resources/dataset-isolation/#best-models">model list</a></u>. Pick the one according to what you need to remove.<br />
-‎<br />
-If you need to remove multiple noises, follow this pipeline for the best results:<br />
-<code v-pre>Remove instrumental -&gt; Remove reverb -&gt; Extract main vocals -&gt; Remove noise</code></p>
-</li>
-</ol>
-<hr>
-<p>‎</p>
-<doc-anchor-target id="4-download-output-1">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#4-download-output-1">#</doc-anchor-trigger>
-        <span>4. Download output.</span>
-    </h4>
-</doc-anchor-target>
-<doc-anchor-target id="section-51">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-51">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
-<ol type="a" start="1">
-<li><p>Click <code v-pre>Separate</code> &amp; when it&#x27;s done converting it will redirect you to a page, where you can listen the results.<br />
-‎</p>
-</li>
-<li><p>Tap the three dots of the audio you need and then <code v-pre>Download</code>.<br />
-If you wish to keep the backing vocals stem, remember to download it too.</p>
-<p><img src="..\uvrmvsep-img\12.png" alt="image" width="400" height="auto">‎</p>
-</li>
-</ol>
-<hr>
-<div class="content-center"><p><a href="https://mvsep.com/billing" class="no-link inline-flex align-middle items-center font-medium cursor-pointer transition-colors duration-200 ease-out focus:outline-none bg-button-danger hover:bg-button-danger-hover text-button-danger-text px-4 h-10 text-sm rounded-full">
-    <span>Support MVSEP</span>
-    <span><svg xmlns="http://www.w3.org/2000/svg" class="mb-px inline-flex ml-2" width="18" height="18" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M14 20.408c-.492.308-.903.546-1.192.709-.153.086-.308.17-.463.252h-.002a.75.75 0 0 1-.686 0 16.709 16.709 0 0 1-.465-.252 31.147 31.147 0 0 1-4.803-3.34C3.8 15.572 1 12.331 1 8.513 1 5.052 3.829 2.5 6.736 2.5 9.03 2.5 10.881 3.726 12 5.605 13.12 3.726 14.97 2.5 17.264 2.5 20.17 2.5 23 5.052 23 8.514c0 3.818-2.801 7.06-5.389 9.262A31.146 31.146 0 0 1 14 20.408Z"/></g></svg></span>
-</a></p>
-</div>
-</doc-panel>
-<ul>
-<li><doc-anchor-target id="the-best-models-for-mvsep-are">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#the-best-models-for-mvsep-are">#</doc-anchor-trigger>
-        <span>The best models for MVSEP are:</span>
-    </h4>
-</doc-anchor-target>
-</li>
-</ul>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -1778,22 +1543,22 @@ If you wish to keep the backing vocals stem, remember to download it too.</p>
 <tr>
 <td style="text-align: center;">Vocals</td>
 <td style="text-align: center;">MelBand Roformer</td>
-<td style="text-align: center;">unwa big beta v5e</td>
+<td style="text-align: center;"><code v-pre>either:</code> unwa big beta v5e <code v-pre>OR</code> 2024.10</td>
 </tr>
 <tr>
 <td style="text-align: center;">Instrumental</td>
 <td style="text-align: center;">MelBand Roformer</td>
-<td style="text-align: center;">unwa instrumental v1e</td>
+<td style="text-align: center;"><code v-pre>either:</code> unwa instrumental v1e plus <code v-pre>OR</code> 2024.10</td>
 </tr>
 <tr>
 <td style="text-align: center;">De-Reverb</td>
 <td style="text-align: center;">Reverb Removal</td>
-<td style="text-align: center;">Reverb removal by anvuew V2 (MelRoformer)</td>
+<td style="text-align: center;">Reverb removal by <code v-pre>either</code>: Sucial V2 (MelRoformer) <code v-pre>OR</code> Anvuew V2 (MelRoformer)</td>
 </tr>
 <tr>
 <td style="text-align: center;">Extract Backing Vocals</td>
 <td style="text-align: center;">MelBand Karaoke</td>
-<td style="text-align: center;">Extract from vocals</td>
+<td style="text-align: center;">Model fuzed gabox &amp; aufr33/viperx (SDR: 9.85)</td>
 </tr>
 <tr>
 <td style="text-align: center;">De-Noise</td>
@@ -1803,50 +1568,58 @@ If you wish to keep the backing vocals stem, remember to download it too.</p>
 </tbody>
 </table>
 </div>
-<doc-anchor-target id="troubleshooting-">
+<hr>
+<doc-anchor-target id="troubleshooting-5">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#troubleshooting-">#</doc-anchor-trigger>
-        <span>Troubleshooting ‎ <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M7.875 2.292a.114.114 0 0 0-.032.018A7.239 7.239 0 0 0 4.75 8.25a7.248 7.248 0 0 0 3.654 6.297c.57.327.982.955.941 1.682v.002l-.317 6.058a.75.75 0 1 1-1.498-.078l.317-6.062v-.004c.006-.09-.047-.215-.188-.296A8.749 8.749 0 0 1 3.25 8.25a8.738 8.738 0 0 1 3.732-7.169 1.547 1.547 0 0 1 1.709-.064c.484.292.809.835.809 1.46v4.714a.25.25 0 0 0 .119.213l2.25 1.385c.08.05.182.05.262 0l2.25-1.385a.25.25 0 0 0 .119-.213V2.478c0-.626.325-1.169.81-1.461a1.547 1.547 0 0 1 1.708.064 8.741 8.741 0 0 1 3.732 7.17 8.747 8.747 0 0 1-4.41 7.598c-.14.081-.193.206-.188.296v.004l.318 6.062a.75.75 0 1 1-1.498.078l-.317-6.058v-.002c-.041-.727.37-1.355.94-1.682A7.247 7.247 0 0 0 19.25 8.25a7.239 7.239 0 0 0-3.093-5.94.114.114 0 0 0-.032-.018l-.01-.001c-.003 0-.014 0-.031.01-.036.022-.084.079-.084.177V7.19c0 .608-.315 1.172-.833 1.49l-2.25 1.385a1.75 1.75 0 0 1-1.834 0l-2.25-1.384A1.752 1.752 0 0 1 8 7.192V2.477c0-.098-.048-.155-.084-.176a.068.068 0 0 0-.031-.011l-.01.001Z"/></g></g></svg></span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#troubleshooting-5">#</doc-anchor-trigger>
+        <span>Troubleshooting <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M7.875 2.292a.114.114 0 0 0-.032.018A7.239 7.239 0 0 0 4.75 8.25a7.248 7.248 0 0 0 3.654 6.297c.57.327.982.955.941 1.682v.002l-.317 6.058a.75.75 0 1 1-1.498-.078l.317-6.062v-.004c.006-.09-.047-.215-.188-.296A8.749 8.749 0 0 1 3.25 8.25a8.738 8.738 0 0 1 3.732-7.169 1.547 1.547 0 0 1 1.709-.064c.484.292.809.835.809 1.46v4.714a.25.25 0 0 0 .119.213l2.25 1.385c.08.05.182.05.262 0l2.25-1.385a.25.25 0 0 0 .119-.213V2.478c0-.626.325-1.169.81-1.461a1.547 1.547 0 0 1 1.708.064 8.741 8.741 0 0 1 3.732 7.17 8.747 8.747 0 0 1-4.41 7.598c-.14.081-.193.206-.188.296v.004l.318 6.062a.75.75 0 1 1-1.498.078l-.317-6.058v-.002c-.041-.727.37-1.355.94-1.682A7.247 7.247 0 0 0 19.25 8.25a7.239 7.239 0 0 0-3.093-5.94.114.114 0 0 0-.032-.018l-.01-.001c-.003 0-.014 0-.031.01-.036.022-.084.079-.084.177V7.19c0 .608-.315 1.172-.833 1.49l-2.25 1.385a1.75 1.75 0 0 1-1.834 0l-2.25-1.384A1.752 1.752 0 0 1 8 7.192V2.477c0-.098-.048-.155-.084-.176a.068.068 0 0 0-.031-.011l-.01.001Z"/></g></g></svg></span>
     </h3>
 </doc-anchor-target>
 <hr>
-<doc-panel id="mvsep-extracted-too-muchtoo-little" collapsed>
-    <template #title><em>MVSEP extracted too much/too little.</em></template>
-<doc-anchor-target id="section-52">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-52">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
+<doc-anchor-target id="mvsep-extracted-too-muchtoo-little">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#mvsep-extracted-too-muchtoo-little">#</doc-anchor-trigger>
+        <span>MVSEP extracted too much/too little.</span>
+    </h4>
 </doc-anchor-target>
 <ul>
-<li>Using the <strong>Separation Type</strong> of <code v-pre>DeNoise by aufr33</code>, you can modify the <code v-pre>Aggressiveness</code>.This determines the depth of the extraction.</li>
+<li>Using the <strong>Separation Type</strong> of <code v-pre>DeNoise by aufr33</code>, you can modify the <code v-pre>Aggressiveness</code>.
+This determines the depth of the extraction.</li>
 <li>A higher value will deepen the extraction, and a lower one will soften it.</li>
 <li>Each audio is different, so you&#x27;ll have to test the ideal value.</li>
 </ul>
-</doc-panel>
-<doc-panel id="i-cant-remove-some-of-the-backing-vocals" collapsed>
-    <template #title><em>I can&#x27;t remove some of the backing vocals.</em></template>
-<doc-anchor-target id="section-53">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-53">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
+<doc-anchor-target id="i-cant-remove-some-of-the-backing-vocals-3">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#i-cant-remove-some-of-the-backing-vocals-3">#</doc-anchor-trigger>
+        <span>I can&#x27;t remove some of the backing vocals.</span>
+    </h4>
 </doc-anchor-target>
 <ul>
 <li>Try running the audio through MelBand Karaoke or BVE. Modify the Aggression Setting if necessary.</li>
 </ul>
-</doc-panel>
+<doc-anchor-target id="what-is-sdr">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#what-is-sdr">#</doc-anchor-trigger>
+        <span>What is SDR?</span>
+    </h4>
+</doc-anchor-target>
+<p>Signal to distortion ratio, the higher is technically better, but your ears are more trustworthy.</p>
 </doc-tab>
 <doc-tab v-cloak id="x-minus">
 <template #title>X-Minus</template>
-<div class="content-center"><doc-anchor-target id="how-to-use-4">
+<div class="content-center"><doc-anchor-target id="x-minus-aka-uvronline">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-use-4">#</doc-anchor-trigger>
-        <span>How to Use <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3.5 3.75a.25.25 0 0 1 .25-.25h13.5a.25.25 0 0 1 .25.25v10a.75.75 0 0 0 1.5 0v-10A1.75 1.75 0 0 0 17.25 2H3.75A1.75 1.75 0 0 0 2 3.75v16.5c0 .966.784 1.75 1.75 1.75h7a.75.75 0 0 0 0-1.5h-7a.25.25 0 0 1-.25-.25V3.75Z"/><path d="M6.25 7a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Zm-.75 4.75a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75Zm16.28 4.53a.75.75 0 1 0-1.06-1.06l-4.97 4.97-1.97-1.97a.75.75 0 1 0-1.06 1.06l2.5 2.5a.75.75 0 0 0 1.06 0l5.5-5.5Z"/></g></g></svg></span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#x-minus-aka-uvronline">#</doc-anchor-trigger>
+        <span>X-Minus (aka UVROnline)</span>
     </h2>
 </doc-anchor-target>
 </div>
-<hr>
+<doc-anchor-target id="how-to-use-6">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-use-6">#</doc-anchor-trigger>
+        <span>How to use <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3.5 3.75a.25.25 0 0 1 .25-.25h13.5a.25.25 0 0 1 .25.25v10a.75.75 0 0 0 1.5 0v-10A1.75 1.75 0 0 0 17.25 2H3.75A1.75 1.75 0 0 0 2 3.75v16.5c0 .966.784 1.75 1.75 1.75h7a.75.75 0 0 0 0-1.5h-7a.25.25 0 0 1-.25-.25V3.75Z"/><path d="M6.25 7a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Zm-.75 4.75a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75Zm16.28 4.53a.75.75 0 1 0-1.06-1.06l-4.97 4.97-1.97-1.97a.75.75 0 1 0-1.06 1.06l2.5 2.5a.75.75 0 0 0 1.06 0l5.5-5.5Z"/></g></g></svg></span>
+    </h3>
+</doc-anchor-target>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-warning"></div>
     <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
@@ -1863,34 +1636,20 @@ If you wish to keep the backing vocals stem, remember to download it too.</p>
         </div>
     </div>
 </div>
-<doc-panel id="extrating-vocals-from-songs" collapsed>
-    <template #title><em>Extrating Vocals From Songs</em> <span class="docs-emoji">&#x1F3B6;</span></template>
-<doc-anchor-target id="section-54">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-54">#</doc-anchor-trigger>
-        <span></span>
-    </h6>
-</doc-anchor-target>
 <doc-anchor-target id="1-choose-a-separator">
     <h4>
         <doc-anchor-trigger class="header-anchor-trigger" to="#1-choose-a-separator">#</doc-anchor-trigger>
         <span>1. Choose a Separator</span>
     </h4>
 </doc-anchor-target>
-<doc-anchor-target id="section-55">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-55">#</doc-anchor-trigger>
-        <span></span>
-    </h6>
-</doc-anchor-target>
 <ol type="a" start="1">
 <li>First go to <u><a href="https://x-minus.pro">X-minus&#x27;s website</a></u> and click the &quot;Vocal Remover&quot; at the top right.</li>
 </ol>
-<img src="../x-minus-img/1.png" alt="image" width="600" height="auto"> 
+<img src="../x-minus-img/homepage.png" alt="X-Minus Homepage" width="600" height="auto"> 
 <ol type="a" start="2">
-<li>Then select &quot;Music and vocals&quot; and choose &quot;Bs Roformer&quot;</li>
+<li>Then select the Seperator type you need and the model based on the <a href="https://docs.aihub.gg/rvc/resources/vocal-isolation/#best-models-for-x-minus">Best Models List</a></li>
 </ol>
-<img src="../x-minus-img/2.png" alt="image" width="600" height="auto">
+<img src="../x-minus-img/model-selection.png" alt="Select a Model in X-Minus" width="600" height="auto">
 <hr>
 <doc-anchor-target id="2-upload-your-audio-file">
     <h4>
@@ -1901,55 +1660,15 @@ If you wish to keep the backing vocals stem, remember to download it too.</p>
 <ol type="a" start="3">
 <li>Then click &quot;select a file&quot; and choose a audio file, or you can drag and drop a file. And when it&#x27;s done it will look like this:</li>
 </ol>
-<img src="../x-minus-img/3.png" alt="image" width="600" height="auto">
+<img src="../x-minus-img/model-usage.png" alt="Use a Model in X-Minus" width="600" height="auto">
 <ol type="a" start="4">
 <li>You can now click &quot;Vocals&quot; to download the vocals and &quot;Other&quot; to download the instrumentals.</li>
 </ol>
-</doc-panel>
-<doc-panel id="cleaning-vocals" collapsed>
-    <template #title><em>Cleaning Vocals</em> <span class="docs-emoji">&#x1F5E3;&#xFE0F;</span></template>
-<doc-anchor-target id="section-56">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-56">#</doc-anchor-trigger>
-        <span></span>
-    </h6>
-</doc-anchor-target>
-<doc-anchor-target id="1-choose-a-de-noiser">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#1-choose-a-de-noiser">#</doc-anchor-trigger>
-        <span>1. Choose a De-Noiser</span>
-    </h4>
-</doc-anchor-target>
-<doc-anchor-target id="section-57">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-57">#</doc-anchor-trigger>
-        <span></span>
-    </h6>
-</doc-anchor-target>
-<ol type="a" start="1">
-<li>In &quot;De-Noise&quot; select &quot;Mel-Roformer De-Noise&quot;. You can also check the <a href="https://docs.aihub.gg/rvc/resources/vocal-isolation/#best-models">model list</a> to see what is the best model for your needs.</li>
-</ol>
-<img src="../x-minus-img/4.png" alt="image" width="600" height="auto">
-<hr>
-<doc-anchor-target id="2-upload-your-audio-file-1">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#2-upload-your-audio-file-1">#</doc-anchor-trigger>
-        <span>2. Upload Your Audio File</span>
-    </h4>
-</doc-anchor-target>
-<ol type="a" start="3">
-<li>Then click &quot;select a file&quot; and choose a audio file, or you can drag and drop a file. And when it&#x27;s done it will look like this:</li>
-</ol>
-<img src="../x-minus-img/3.png" alt="image" width="600" height="auto">
-<ol type="a" start="4">
-<li>You can now click &quot;Vocals&quot; to download the vocals and &quot;Other&quot; to download the instrumentals.</li>
-</ol>
-</doc-panel>
 <ul>
-<li><doc-anchor-target id="the-best-models-for-x-minus-are">
+<li><doc-anchor-target id="best-models-for-x-minus">
     <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#the-best-models-for-x-minus-are">#</doc-anchor-trigger>
-        <span>The best models for X-Minus are:</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#best-models-for-x-minus">#</doc-anchor-trigger>
+        <span>Best models for X-Minus:</span>
     </h4>
 </doc-anchor-target>
 </li>
@@ -1965,23 +1684,388 @@ If you wish to keep the backing vocals stem, remember to download it too.</p>
 <tbody>
 <tr>
 <td style="text-align: center;">Vocals/Instrumental</td>
-<td style="text-align: center;">BS Roformer</td>
+<td style="text-align: center;">Mel-RoFormer by Gabox Fv7z</td>
 </tr>
 <tr>
-<td style="text-align: center;">De-Reverb</td>
-<td style="text-align: center;">MDX23C (De-Reverb)</td>
+<td style="text-align: center;">De-Echo / De-Reverb</td>
+<td style="text-align: center;">De-reverb &amp; De-echo by Sucial v2</td>
 </tr>
 <tr>
 <td style="text-align: center;">Extract Backing Vocals</td>
-<td style="text-align: center;">UVR BVE 2</td>
+<td style="text-align: center;">Mel-RoFormer Lead/Back (the only, invisible, available one)</td>
 </tr>
 <tr>
-<td style="text-align: center;">De-Noise</td>
+<td style="text-align: center;">De-Noise (found in Restoration)</td>
 <td style="text-align: center;">Mel Roformer De-Noise</td>
+</tr>
+<tr>
+<td style="text-align: center;">Restoration</td>
+<td style="text-align: center;">Apollo Universal by Lew (to enhance mp3 and other low quality files)</td>
 </tr>
 </tbody>
 </table>
 </div>
+</doc-tab>
+<doc-tab v-cloak id="rx11">
+<template #title>RX11</template>
+<div class="content-center"><doc-anchor-target id="rx-11">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#rx-11">#</doc-anchor-trigger>
+        <span>RX 11</span>
+    </h2>
+</doc-anchor-target>
+</div>
+<p>Go to their <u><a href="https://www.izotope.com/en/shop/rx-11-advanced/">Official Website</a></u> &amp; buy it.</p>
+<hr>
+<div class="content-center"><doc-anchor-target id="getting-a-dataset">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#getting-a-dataset">#</doc-anchor-trigger>
+        <span>Getting a Dataset</span>
+    </h3>
+</doc-anchor-target>
+</div>
+<p>Getting the highest quality audio works best for Izotope and will result in a better model. Ideally, you want to preserve the <strong>dynamic range</strong>, the <strong>frequencies</strong>, and the <strong>fidelity/clarity</strong>.
+If you&#x27;re working with low quality audio, RX cannot upscale or restore the missing details that were originally there. The end result will be audible as the voice model quality will be muddied with artifacts/tearing.</p>
+<p><strong>Mic proximity</strong> is also another factor to consider as you want the voice to be consistent since RVC does not handle <strong>audio frequency response</strong> well and will muffle the pronunciation of words. Keep this in mind for studio sessions and video game voice lines rips as it may have been bass boosted, compressed, or eq&#x27;d by default. Arguably, more variation of the voice will add to the vocal range of the model but we want to keep the accent consistent as well.</p>
+<doc-anchor-target id="for-youtube-ripping">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#for-youtube-ripping">#</doc-anchor-trigger>
+        <span>For Youtube ripping</span>
+    </h4>
+</doc-anchor-target>
+<p>You can use <a href="https://cobalt.tools/">Cobalt</a>, <a href="https://github.com/yt-dlp/yt-dlp">yt-dlp</a>, or <a href="https://en.loader.to/4/">Loader.to</a>. Overall, yt-dlp is the best for ripping.
+Preferably rip the audios in Opus format so the downloaded audio will be 48khz, which can be resampled down to 44.1k on Izotope and trained on 40k via RVC. The quality depends on what is uploaded on the server side so this might not always be the case.</p>
+<p>For YT-dlp, the command prompt is:</p>
+<blockquote>
+<p>yt-dlp -x
+ffmpeg -i audio.opus audio.wav
+or
+yt-dlp.exe --audio-format wav -x <a href="https://www.youtube.com/watch?v=5aYwU4nj5QA&amp;t=2s">https://www.youtube.com/watch?v=5aYwU4nj5QA&amp;t=2s</a></p>
+</blockquote>
+<p>Resampling down to 32k is also fine since it results in less harsher <strong>sibilance</strong> and <strong>-plosives</strong> for your model.</p>
+<ul>
+<li>Sibilance&#x27;s are the hissing sounds when a person speaks, and plosives are the sounds of air that are released through the mouth. They are both considered <strong>consonant</strong> sounds with RVC.</li>
+</ul>
+<p>Whenever you export the dataset, you can export it to WAV 32-bit. For Flac files, use 24-bit. We never use MP3 files since RVC heavily compresses those audio files.</p>
+<hr>
+<div class="content-center"><doc-anchor-target id="loading-the-audio-and-changing-settings">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#loading-the-audio-and-changing-settings">#</doc-anchor-trigger>
+        <span>Loading The Audio And Changing Settings</span>
+    </h3>
+</doc-anchor-target>
+</div>
+<p>Open the WAV or FLAC file.</p>
+<p>Now that we have the file in RX, make sure to turn this slider to the right to show the Spectrogram only.
+<img src="../rx11-img/waveform.png" alt="Waveform" width="auto" height="auto"></p>
+<p>Now after that it should look like this:
+<img src="../rx11-img/spectrogramview.png" alt="Spectogram View" width="auto" height="auto"></p>
+<p>This is using Mel scaling, if you right click on the numbers list(20k and such). you can change the scaling.
+Mel is the best scaling in our case since it shows vocals better than Linear scaling would.</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-success"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-success" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M21 9.09c-.55 0-1 .45-1 1v.92c0 4.96-4.04 8.99-9 8.99-4.97 0-9-4.04-9-9s4.04-9 9-9c1.27 0 2.5.26 3.66.78.51.22 1.1 0 1.32-.51.23-.5 0-1.1-.51-1.32C14.06.32 12.56 0 11.01 0H11C4.94 0 0 4.93 0 10.99 0 17.06 4.93 22 10.99 22H11c6.06 0 11-4.93 11-10.99v-.92c0-.56-.45-1-1-1z"></path>
+                    <path d="M8.71 9.31a.996.996 0 10-1.41 1.41l3 3c.19.19.44.29.71.29.27 0 .52-.11.71-.29l10-10.01a.996.996 0 10-1.41-1.41L11 11.6 8.71 9.31z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>The brighter a color on the spectrogram, the louder it is and will be audible.</p>
+        </div>
+    </div>
+</div>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-success"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-success" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M21 9.09c-.55 0-1 .45-1 1v.92c0 4.96-4.04 8.99-9 8.99-4.97 0-9-4.04-9-9s4.04-9 9-9c1.27 0 2.5.26 3.66.78.51.22 1.1 0 1.32-.51.23-.5 0-1.1-.51-1.32C14.06.32 12.56 0 11.01 0H11C4.94 0 0 4.93 0 10.99 0 17.06 4.93 22 10.99 22H11c6.06 0 11-4.93 11-10.99v-.92c0-.56-.45-1-1-1z"></path>
+                    <path d="M8.71 9.31a.996.996 0 10-1.41 1.41l3 3c.19.19.44.29.71.29.27 0 .52-.11.71-.29l10-10.01a.996.996 0 10-1.41-1.41L11 11.6 8.71 9.31z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>The spectrogram in the example is slightly above a frequency of 15khz. Take the khz x 2 and it would equal to a 32k audio. If it were 20khz, then it&#x27;ll be a 40k audio. 32k is the lowest sample rate you can train on in RVC if your khz is below 15.</p>
+        </div>
+    </div>
+</div>
+<hr>
+<div class="content-center"><doc-anchor-target id="trying-to-explain-a-spectrogram">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#trying-to-explain-a-spectrogram">#</doc-anchor-trigger>
+        <span>Trying To Explain a Spectrogram</span>
+    </h3>
+</doc-anchor-target>
+</div>
+<p>Spectrograms are graphical representations of frequencies which can determine whether your audio sample rate is 32k, 40k, or 48k.</p>
+<img src="../rx11-img/frequency.png" alt="frequency.png" width="auto" height="auto">
+<p>There is a distinction between <strong>high-end frequency</strong> and <strong>low-end frequency</strong> in a spectrogram. The high-end frequency (48k-40khz), or the air region in the chart isn&#x27;t audible for the human ears. But, it&#x27;ll help to handle <strong>aliasing</strong>. Aliasing is the effect of new frequencies appearing in the sampled signal after reconstruction, that were not present in the original signal. In other words, it creates artifacts to your model.</p>
+<p>Meanwhile you can hear some of the low-end frequencies. If you were to resample from 40k to 32k, then most of the high-end and low-end frequencies are gone at the cost of less harsher sibilances and -plosives sounds like I mentioned before.</p>
+<img src="../rx11-img/chart.png" alt="Chart.png" width="auto" height="auto">
+<doc-anchor-target id="example-of-audios-through-a-spectrogram">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#example-of-audios-through-a-spectrogram">#</doc-anchor-trigger>
+        <span>Example of Audios Through a Spectrogram</span>
+    </h4>
+</doc-anchor-target>
+<p>For example, this is noise. The orange area may look like breathing that&#x27;s masked under the artifacts, but RVC will consider this noise as it&#x27;s barely audible and you&#x27;ll only hear static or dry air. The blue areas surrounding the audio are also noise. You can think of these as layers that needs to be removed when we use the Spectral Denoise module later.</p>
+<img src="../rx11-img/noiseprofile.png" alt="noiseprofile.png" width="auto" height="auto">
+<p>Now this is breathing. Keep in mind that RVC will consider &quot;soft breathing&quot; as a white noise if the breath sounds are too low (around -40db). Proper vocal breathing are grunts like &quot;huffs, &quot;hahhhhs, &quot;hoohhhhhs&quot;. There cannot be harsh inhaling sounds. Breathe sounds by itself without a voice or tone behind it will also cause RVC to think it is noise. Without breathes, the model sound will robotic.
+<img src="../rx11-img/breathing.png" alt="Breathing.png" width="auto" height="auto"></p>
+<p>And this is speech:
+<img src="../rx11-img/speech.png" alt="Speech.png" width="auto" height="auto"></p>
+<hr>
+<div class="content-center"><doc-anchor-target id="preparing-the-dataset-through-musicsfx-removal">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#preparing-the-dataset-through-musicsfx-removal">#</doc-anchor-trigger>
+        <span>Preparing the Dataset Through Music/SFX Removal</span>
+    </h3>
+</doc-anchor-target>
+</div>
+<p>The key principal behind preparing your dataset is doing the <em>least audio processing</em> as possible as you want to keep the overall robustness of the model. Excessively stacking vocal separator models such as <strong>UVR</strong> Inst Voc, Kim Vocals, Denoise, ensemble mode, and so forth can introduce noises to your dataset as it rips away frequencies from your audio. This harms the model fidelity and quality.</p>
+<hr>
+<doc-anchor-target id="rx-de-clipping">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#rx-de-clipping">#</doc-anchor-trigger>
+        <span>RX De-Clipping</span>
+    </h4>
+</doc-anchor-target>
+<p>This helps to remove most of the clipping that is occurring throughout the audio around the -0db range. Do not touch the make-up gain as it will alter the natural dynamic range of the audio. You can press &quot;preview&quot; to see that it is working as indicated with &quot;clipped intervals repaired&quot;. If it does nothing, then you can skip this part.</p>
+<img src="../rx11-img/de-clip-settings.png" alt="de-clip-settings.png" width="auto" height="auto">
+<doc-anchor-target id="removing-dc-offset">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#removing-dc-offset">#</doc-anchor-trigger>
+        <span>Removing DC Offset</span>
+    </h4>
+</doc-anchor-target>
+<p>Before starting the process for separation, make sure that the audio has zero DC offset to prevent further issues that would interrupt the processing due to the bottom line noise. The <strong>waveform statistics</strong> is under the Window tab in RX11.
+<img src="../rx11-img/dcoffset.png" alt="dcoffset.png" width="auto" height="auto"></p>
+<p>This can be done in audacity by going to the Effect tab &gt; Volume and Compression &gt; Normalize then check the box to remove the DC offset.
+<img src="../rx11-img/remove-dc-offset.png" alt="Remove-dc-offset.png" width="auto" height="auto"></p>
+<p>If you prefer to <strong>EQ</strong> in RX 11, then click on the EQ module and enable only the hp bell curve. Keep the frequency precision to 6 and the frequency at 30-32hz. Your DC offset will be at 0% if you&#x27;ve done it correctly.</p>
+<p>Here&#x27;s a small comparison with the changes after vocal separation.
+Without DC offset:
+<img src="../rx11-img/resizing.png" alt="resizing.png" width="auto" height="auto"></p>
+<p>With DC offset:
+<img src="../rx11-img/with-dc-offset.png" alt="With-dc-offset.png" width="auto" height="auto"></p>
+<hr>
+<doc-anchor-target id="dereverbing-and-de-echo-the-audio">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#dereverbing-and-de-echo-the-audio">#</doc-anchor-trigger>
+        <span>Dereverbing and De-echo The Audio</span>
+    </h4>
+</doc-anchor-target>
+<p>While keeping in mind of doing the least processing, <em>you want to keep the audio as natural</em> as possible for RVC, or <strong>Hifigan</strong>. Hifigan is the generative adversarial network that makes up our discriminator and generator for cloning sounds and training stability. Having audio that has been damaged or reconstructed will affect the generalization of the graphs to fully replicate the clarity and accent of the voice.</p>
+<p><strong>Reverb</strong> is multiple sources of sound returning and <strong>echo</strong> is the delay. It is important to remove these from the dataset otherwise it&#x27;ll cause your model to have artifacts as Hifigan cannot replicate the model&#x27;s clarity.</p>
+<doc-anchor-target id="best-model-for-dereverb-and-de-echo">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#best-model-for-dereverb-and-de-echo">#</doc-anchor-trigger>
+        <span>Best Model for Dereverb And De-echo</span>
+    </h4>
+</doc-anchor-target>
+<p>The current best Dereverb plugin is the <strong>Clarity VX</strong> DeReverb Pro module, another paid software that you can get for free. The aggressiveness can be tweaked or finetuned to your liking as it cuts into the audio and does not reconstruct the frequencies. Clarity VX cannot de-echo the audio so you need to use UVR De-echo or RX Dialogue Isolate.</p>
+<img src="../rx11-img/clarity-vx.png" alt="Clarity-VX.png" width="auto" height="auto">
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-warning"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-warning" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M22.48 15.59L14.01 1.45A2.968 2.968 0 0012.16.09c-.78-.19-1.58-.07-2.27.35-.41.25-.76.6-1.01 1.01v.01L.4 15.6c-.83 1.43-.33 3.27 1.1 4.1.45.26.95.4 1.48.4h16.95c.8-.01 1.55-.33 2.11-.9.56-.57.87-1.33.86-2.13a3.04 3.04 0 00-.42-1.48zm-1.87 2.21c-.19.19-.44.3-.69.3H2.99c-.17 0-.34-.05-.49-.13a.992.992 0 01-.37-1.35L10.6 2.48c.08-.14.2-.25.34-.33a.992.992 0 011.37.33l8.46 14.13c.09.15.13.32.13.49 0 .26-.1.51-.29.7z"></path>
+                    <path d="M11.45 12.1c.55 0 1-.45 1-1v-4c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .56.45 1 1 1zM11.46 14.1c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Audio damage</h5>
+<p>Any use of the De-echo model with UVR will slightly damage your audio with a 17khz cutoff frequency on the spectrogram.</p>
+        </div>
+    </div>
+</div>
+<p>If you don&#x27;t want to use ClarityVX, the most common method is to use UVR Dereverb and De-echo separately as you have full control on what&#x27;s needed for your audio. <em>There is no predetermined settings as each audio is different.</em> The rule of thumb is to use an aggression of 3.0 -5.0 and nothing more than that. If the audio does not have reverb or echo, do not use any of these models as it can muffle the audio.</p>
+<p>If you only rely on MVSEP, you&#x27;re forced to use UVR-DeEcho-Dereverb as there is no standalone option for the dereverb model. The cutoff frequency for this separation model would be 17.5khz.</p>
+<img src="../rx11-img/deecho.png" alt="Deecho.png" width="auto" height="auto">
+<p>Here&#x27;s what audio with mono reverb will look like on Izotope RX11:
+<img src="../rx11-img/mono-reverb.png" alt="mono-reverb.png" width="auto" height="auto"></p>
+<p>And the result of DeEcho-Dereverb at 0.5 aggression:
+<img src="../rx11-img/aggression.png" alt="aggression.png" width="auto" height="auto"></p>
+<p>There may be leftover reverb or echo that weren&#x27;t removed so that&#x27;ll be addressed in the <strong>RX Dereverb</strong> module later in the <strong>Manual Denoising</strong> section. I will also troubleshoot the audio increasing in volume after dereverb and deecho in the <strong>FAQ Regarding Normalization and Compression</strong> section.</p>
+<hr>
+<div class="content-center"><doc-anchor-target id="rx11-modules">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#rx11-modules">#</doc-anchor-trigger>
+        <span>RX11 Modules</span>
+    </h3>
+</doc-anchor-target>
+</div>
+<hr>
+<doc-anchor-target id="spectral-denoising-the-audio">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#spectral-denoising-the-audio">#</doc-anchor-trigger>
+        <span>Spectral Denoising The Audio</span>
+    </h4>
+</doc-anchor-target>
+<p>Izotope&#x27;s Spectral Denoise provides natural noise reduction and will preserve the quality of your audio as it minimizes artifacts. It analyzes the signals of noise that we select and modifies the frequency components. Essentially, <strong>UVR Denoise</strong> is not needed afterwards since the cleaning has been processed in spectral. The rest of the the cleanup is done through our manual denoising via RX11.</p>
+<p>Here is the settings that were used in the previous guide, which is mostly fine if you can&#x27;t recognize patterns in a noise profile. <em>Artifact control, whitening, Release [ms], Smoothing, and Reduction</em> could be adjusted based on particular datasets. Again, don&#x27;t fix it if it aint broke.
+<img src="../rx11-img/spectral-denoise.png" alt="Spectral-denoise.png" width="auto" height="auto"></p>
+<p>You only need to do one or two passes of spectral denoising. Doing further processing than that will compress, or degrade your audio. Be cautious of overdoing it with the noise profile (selecting breathing or speech by accident) as RX might take away details and important aspects of a person&#x27;s voice.</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-success"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-success" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M21 9.09c-.55 0-1 .45-1 1v.92c0 4.96-4.04 8.99-9 8.99-4.97 0-9-4.04-9-9s4.04-9 9-9c1.27 0 2.5.26 3.66.78.51.22 1.1 0 1.32-.51.23-.5 0-1.1-.51-1.32C14.06.32 12.56 0 11.01 0H11C4.94 0 0 4.93 0 10.99 0 17.06 4.93 22 10.99 22H11c6.06 0 11-4.93 11-10.99v-.92c0-.56-.45-1-1-1z"></path>
+                    <path d="M8.71 9.31a.996.996 0 10-1.41 1.41l3 3c.19.19.44.29.71.29.27 0 .52-.11.71-.29l10-10.01a.996.996 0 10-1.41-1.41L11 11.6 8.71 9.31z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>Wouldn&#x27;t this take up too much time?
+If your dataset is too long for spectral denoising, I suggest splitting it into sections so it is more manageable. It won&#x27;t mess up with the overall noise profile of the whole dataset if you do so. You&#x27;re prone to make mistakes/misclicks when selecting audio, especially when the dataset is 20 minutes to an hour long.</p>
+        </div>
+    </div>
+</div>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-success"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-success" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M21 9.09c-.55 0-1 .45-1 1v.92c0 4.96-4.04 8.99-9 8.99-4.97 0-9-4.04-9-9s4.04-9 9-9c1.27 0 2.5.26 3.66.78.51.22 1.1 0 1.32-.51.23-.5 0-1.1-.51-1.32C14.06.32 12.56 0 11.01 0H11C4.94 0 0 4.93 0 10.99 0 17.06 4.93 22 10.99 22H11c6.06 0 11-4.93 11-10.99v-.92c0-.56-.45-1-1-1z"></path>
+                    <path d="M8.71 9.31a.996.996 0 10-1.41 1.41l3 3c.19.19.44.29.71.29.27 0 .52-.11.71-.29l10-10.01a.996.996 0 10-1.41-1.41L11 11.6 8.71 9.31z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>What if I didn&#x27;t capture the entire profile?
+Some noises may, or may not stay in tact even after the second pass with Spectral Denoise. RX will only pick out each respective noise samples to the audio that has been selected so it&#x27;s better that you capture it in full.</p>
+        </div>
+    </div>
+</div>
+<p>This is what the audio looks like before spectral denoising:
+<img src="../rx11-img/spectral-denoise-1.png" alt="Spectral-denoise-1.png" width="auto" height="auto"></p>
+<p>Now we select the noise (click and hold shift after selecting an area to include multiple audios) then press learn in the Spectral Denoise module after we captured the entire noise profile. Unselect the audio and click render.
+<img src="../rx11-img/spectral-denoise-2.png" alt="Spectral-denoise-2.png" width="auto" height="auto"></p>
+<p>Now in this case one pass of spectral denoise wasn&#x27;t enough. Repeat the steps done in the first pass by selecting the areas with the blue noise.
+<img src="../rx11-img/spectral-denoise-3.png" alt="Spectral-denoise-3.png" width="auto" height="auto"></p>
+<p>The 2nd pass will remove the noise.
+<img src="../rx11-img/2pass.png" alt="2Pass.png" width="auto" height="auto"></p>
+<hr>
+<doc-anchor-target id="faq-regarding-normalization-and-compression">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#faq-regarding-normalization-and-compression">#</doc-anchor-trigger>
+        <span>FAQ Regarding Normalization and Compression</span>
+    </h4>
+</doc-anchor-target>
+<p><strong>Why does my audio sounds like it&#x27;s clipping or distorted? Should I use the gain tool in RX?</strong>
+Audios will usually have crackling and clicking noises introduced if it&#x27;s over 1.0+db. We don&#x27;t want to use the gain tool to address this since it&#x27;s a compressor. If it doesn&#x27;t have any of those issues, then leave the dialogue alone to maintain its natural range.
+<img src="../rx11-img/too-loud.png" alt="too-loud.png" width="auto" height="auto"></p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-danger"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-danger" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M21.71 6.15L15.85.29c-.19-.18-.44-.29-.71-.29H6.86c-.27 0-.52.11-.71.29L.29 6.15c-.18.19-.29.44-.29.71v8.28c0 .27.11.52.29.71l5.86 5.86c.19.18.44.29.71.29h8.28c.27 0 .52-.11.71-.29l5.86-5.86a.99.99 0 00.29-.71V6.86c0-.27-.11-.52-.29-.71zM20 14.73L14.73 20H7.27L2 14.73V7.27L7.27 2h7.45L20 7.27v7.46z"></path>
+                    <path d="M11 12c.55 0 1-.45 1-1V7c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .55.45 1 1 1zM11.01 14c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>Do not use any form of compression on speech as it&#x27;ll squash the dynamics and introduce artificial tearing to your model.</p>
+        </div>
+    </div>
+</div>
+<p>Again, try to maintain the <strong>natural dynamic range</strong> if possible. If you must decrease the volume on a particular dialogue because its too loud for your ears and you still need to use the RX Dereverb module, consider normalizing between -2db or -3db. The use of the <strong>RX Dereverb</strong> will put it back to normal volume.</p>
+<p><strong>When should I normalize the whole dataset?</strong>
+It is optional to use this module as it can be argued that rvc will do the normalization for you with -2db. You can normalize the dataset when it has been thoroughly cleaned at the end, if you want.</p>
+<img src="../rx11-img/normalization.png" alt="Normalization.png" width="auto" height="auto">
+***
+#### Modules overview
+**De-ess**
+This tool is used so that the -ess /fff/z/ch sounds, or sibilances, are less harsh/robotic when the voice model tries to pronounce certain words. Only use this on the actual sibilances and not the entire dataset/dialogue. Automatic de-ssing with Ctrl + A can select the wrong consonant sounds or skip audios that needs more de-essing so keep that in mind. Adjust spectral shaping as needed if you know what you're doing.
+<img src="../rx11-img/de-ess.png" alt="De-ess.png" width="auto" height="auto">
+<p><strong>De-crackle</strong>
+Only use this tool if you hear crackling noises in specific parts of your dialogue/speech. It&#x27;s not a requirement to use it.
+<img src="../rx11-img/de-crackle.png" alt="De-crackle.png" width="auto" height="auto"></p>
+<p><strong>Mouth De-clicking and De-click</strong>
+Only use mouth de-clicking when clicking noises are audible. It&#x27;s a good practice to use mouth de-clicking on only the click and not the entire dialogue/audio. Adjust the sensitivity or frequency skew as needed, but do not go overboard as it can remove the finer details of our audio.</p>
+<ul>
+<li>This module is specifically tailored to address mouth noise issues in vocal recordings. Mouth noises are typically caused by saliva, lip smacks, tongue clicks, or other oral sounds that can be distracting or unpleasant to listen to in vocal recordings. Mouth de-click module preserves the integrity and naturalness of the vocal performance while reducing these types of mouth noises.</li>
+</ul>
+<p>We run the <strong>de-click</strong> module only as a last resort when mouth de-click doesn&#x27;t work. Using both modules together may strip away the &quot;k&quot; consonants of our model.
+<img src="../rx11-img/de-click.png" alt="De-click.png" width="auto" height="auto"></p>
+<ul>
+<li>This module is designed to remove or reduce short impulse noises such as clicks, pops, and digital clipping artifacts from audio recordings. These noises can occur due to various reasons, including imperfections in the recording equipment, electrical interference, or flaws in the audio signal itself. The De-click module analyzes the audio waveform and identifies these short, transient noises, then applies processing algorithms to smooth out or remove them, restoring the audio to a cleaner state.</li>
+</ul>
+<p><strong>Dialogue Isolate</strong>
+Use this tool when you have audible room echo that could be removed on specific parts of your speech. Do not use it for the entire dataset because it may be inaccurate and strip away details. Or sometimes it doesn&#x27;t work. Keep the settings the same here including sensitivity.
+<img src="../rx11-img/dialogue-isolate.png" alt="dialogue-isolate.png" width="auto" height="auto"></p>
+<p><strong>De-plosive</strong>
+Use Deplosives when there are audible thumps of air coming through the mouth. Again, -plosives are consonant sounds that needs attention. Specifically the P, T, K, and CH sounds. There are no right settings for this so adjust it until the roughness of the -plosives are gone.
+<img src="../rx11-img/deplosive.png" alt="Deplosive.png" width="auto" height="auto"></p>
+<p>Plosives look like this. Do not select the whole speech and only the plosives as suggested in the red lines.
+<img src="../rx11-img/plosive-examples.png" alt="plosive-examples.png" width="auto" height="auto"></p>
+<p><strong>De-hum</strong>
+Use De-humming to take care of low or high frequency hums. There are no consistent settings for this as each situation is different for your audio.</p>
+<ul>
+<li>Sensitivity will adjust the amount of hum that will be removed.</li>
+<li>Bands, or notch filters will increase depending on the complexity of the noise.</li>
+<li>Filter Q is the range selector.</li>
+</ul>
+<img src="../rx11-img/dehum.png" alt="dehum.png" width="auto" height="auto">
+<p>For example, use the <strong>frequency selector tool</strong>, select the humming occurring below 100hz, then press learn and render.
+<img src="../rx11-img/freq.png" alt="freq.png" width="auto" height="auto"></p>
+<img src="../rx11-img/fnwwdec.png" alt="FnwwDec.png" width="auto" height="auto">
+<p>The red underline shows what you should be looking for.
+<img src="../rx11-img/humming100hz.png" alt="humming100hz.png" width="auto" height="auto"></p>
+<p><strong>EQ</strong>
+This has already been covered in the section for removing the <strong>Removing DC Offset</strong>. Do this if you haven&#x27;t done it already. It takes care of low-end noise, but if your dc offset is already at 0% then skip this module.</p>
+<hr>
+<doc-anchor-target id="manual-denoising">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#manual-denoising">#</doc-anchor-trigger>
+        <span>Manual Denoising</span>
+    </h4>
+</doc-anchor-target>
+<p>You should have noticed that RX11 moves the audio closer to each other whenever you delete a space or speech. Use the <strong>Lasso</strong> or <strong>Brush tool</strong> to delete dialogue precisely, which should preserve the spacing in <strong>phonetics</strong>. Make sure it does not cause clipping on the waveform as it&#x27;ll look like a sharp spike. You can also clean up the leftover residuals left behind by spectral denoising.</p>
+<p>Audios with thumping, SFX sounds, ringing noises, and weird vocalizations or breaths that might affect the voice model should be removed from the dataset as it&#x27;ll have those characteristics. You can try to lasso out the possible source of the noise, but keep the audio as natural as possible without damaging the frequencies.</p>
+<img src="../rx11-img/lasso.png" alt="lasso.png" width="auto" height="auto">
+<img src="../rx11-img/lasso-3.png" alt="lasso-3.png" width="auto" height="auto">
+<p>The <strong>RX Dereverb</strong> module will remove reverb that&#x27;s leftover from the audio and may help remove noises.
+With RX Dereverb, select the audio, press learn and render. Adjust the reduction if needed. Do not use a strong reduction as it may muffle the audio. You can always undo with Ctrl + Z.</p>
+<p>Refer to the <strong>FAQ Regarding Normalization and Compression</strong> if the volume is peaking or &quot;introducing noises&quot;, which isn&#x27;t the case at all. Do note that RX Dereverb will raise the volume by 2db each time you use it.</p>
+<img src="../rx11-img/dereverb.png" alt="dereverb.png" width="auto" height="auto">
+When the dataset has been thoroughly cleaned, you can resample the dataset to 32k or 44.1k and export as a WAV 32-bit or Flac 24-bit.
+<img src="../rx11-img/resample.png" alt="resample.png" width="auto" height="auto">
+***
+:::content-center
+### Noise Gating and Audio Labeling
+:::
+[Auburn Renegate](https://www.auburnsounds.com/products/Renegate.html)
+(basically Audacity noisegate but better) the free version will be more than enough.
+<img src="../rx11-img/auburn-noise-gate.png" alt="Auburn-noise-gate.png" width="auto" height="auto">
+<p>We can open Audacity and run the the dataset through <strong>Auburn Renegate</strong>. After that convert your dataset to mono since RVC works on mono and not stereo. There are two ways of neatly removing the silences in your dataset called <strong>Audio Labeling and Truncate</strong>.</p>
+<p>Follow these steps:
+Open the menu for labeling.
+<img src="../rx11-img/audiolabel1.png" alt="audiolabel1.png" width="auto" height="auto">
+<img src="../rx11-img/audiolabel2.png" alt="audiolabel2.png" width="auto" height="auto"></p>
+<p>You will now have it like this:
+<img src="../rx11-img/audiolabel3.png" alt="audiolabel3.png" width="auto" height="auto"></p>
+<p>Turn off shaped dither with <code v-pre>Ctrl + P</code> &gt; Quality since we are exporting with WAV 32-Bit or FLAC 24-bit anyways.
+<img src="../rx11-img/preferences-quality.png" alt="preferences-quality.png" width="auto" height="auto"></p>
+<p>Now we go to export our audio.
+<img src="../rx11-img/audiolabel4.png" alt="audiolabel4.png" width="auto" height="auto">
+<img src="../rx11-img/audiolabel5.png" alt="audiolabel5.png" width="auto" height="auto"></p>
+<p>The output will be like this:
+<img src="../rx11-img/audiolabel6.png" alt="audiolabel6.png" width="auto" height="auto"></p>
+<p>Now go in the RVC folder and place all these files in datasets folder. Zip it up if needed.</p>
 </doc-tab>
 </doc-tabs>
 <hr>
@@ -2022,7 +2106,7 @@ If you wish to keep the backing vocals stem, remember to download it too.</p>
         <span>STEP 1:</span>
     </h5>
 </doc-anchor-target>
-<p>Download and install Spek <u><a href="https://www.spek.cc/p/download">here</u></a>.</p>
+<p>Download and install Spek <u><a href="https://www.spek.cc/p/download">here</a></u>.</p>
 </li>
 <li><doc-anchor-target id="step-2">
     <h5>
@@ -2113,9 +2197,9 @@ If you wish to keep the backing vocals stem, remember to download it too.</p>
 <li><strong>Format</strong>: <code v-pre>WAV</code></li>
 <li><strong>Encoding</strong>: <code v-pre>32-Bit Float</code></li>
 </ul>
-<doc-anchor-target id="section-58">
+<doc-anchor-target id="section-26">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-58">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-26">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
