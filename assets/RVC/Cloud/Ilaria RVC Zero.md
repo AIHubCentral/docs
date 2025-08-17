@@ -1,9 +1,9 @@
 ---
 icon: chevron-right
 order: 3000
-visibility: private
+visibility: public
 ---
-``Last update: August 14, 2025`` 
+``Last update: August 17, 2025`` 
 ***
 
 ## </u>Introduction</u>
