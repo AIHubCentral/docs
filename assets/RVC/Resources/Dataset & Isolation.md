@@ -3,7 +3,7 @@ icon: chevron-right
 order: 2000
 ---
 
-``Last update: August 8, 2025``
+``Last update: August 18, 2025``
 ***
 :::content-center
 ## Introduction
