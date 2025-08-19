@@ -31,7 +31,7 @@ order: 5000
 - Very fast
 - TTS features            
 - Automatic model upload
-- Has Mangio-Crepe
+- Has (not Mangio) Crepe
 - User-friendly UI
 - TensorBoard included
 - Extra features: (plugins, model fusion, etc)
@@ -72,9 +72,9 @@ b. Then run the `Installation` cell to install all the requirements.
 #### 3. <u>Extract Features.</u>
 1. Choose the f0 method you want, usually RMVPE is the best.
 
-2. If you chose Crepe set your hop length to 32, 64 or 128. If you chose RMVPE ignore this option.
+2. You can also change the [Embedder Model](https://docs.aihub.gg/rvc/resources/inference-settings/#embedder-model).
 
-<img src="../applio-no-ui-img/three.png" alt="image" width="1500" height="">
+<img src="../applio-no-ui-img/extract-features.png" alt="Extract Features" width="1500" height="">
 ‎ 
 
 3. Run the cell. 

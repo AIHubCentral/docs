@@ -43,7 +43,7 @@ Also, **HuggingFace has a <u>[Security Scanner](https://huggingface.co/docs/hub/
 - Currently stable
 - Faster interface
 - Faster Training
-- Has Crepe for Training
+- Has (not Mangio) Crepe for Training
 - TTS features            
 - Automatic model upload
 - User-friendly UI
@@ -376,21 +376,13 @@ Don't include spaces/special characters.
 ###### ‎    
 ##### a. Pitch extraction algorithm
 ###### ‎  
-- Select the <u>[algorithm](https://docs.aihub.gg/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u> you want. Use either ``RMVPE`` (most suggested) or ``Crepe`` (which is actually Mangio Crepe with the costumizable hop lenght, this is for crepe-tiny too). Applio removed pm. dio and harvest as they are outdated.
+- Select the <u>[algorithm](https://docs.aihub.gg/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u> you want. Use either ``RMVPE`` (most suggested) or ``Crepe``. Applio removed pm. dio and harvest as they are outdated.
 
     <img src="..\applio-img\pitch-extraction-algorithms.png" alt="image" width="400">
 
 ***
 ###### ‎  
-##### b. Hop Length (optional)
-###### ‎  
-- If you chose ``Crepe`` (or Crepe-tiny), as it's actually Mangio Crepe, you can modify its <u>[hop length](https://docs.aihub.gg/rvc/resources/inference-settings/#mangio-crepe)</u>.
-
-    <img src="..\applio-img\mangio-crepe-hop-length.png" alt="image" width="900">
-
-***
-###### ‎  
-##### c. Embedder Model
+##### b. Embedder Model
 ###### ‎  
 - Select the <u>[Embedder Model](https://docs.aihub.gg/rvc/resources/inference-settings/#embedder-model)</u> you want. Contentvec is the most used.
 
@@ -398,7 +390,7 @@ Don't include spaces/special characters.
 
 ***
 ###### ‎  
-##### d. Custom Embedder Model
+##### c. Custom Embedder Model
 ###### ‎  
 - If you select "custom" for embedders, you can add your own, like [Spin](http://docs.aihub.gg/rvc/resources/inference-settings/#spin) (which seems to have better pronunciation than contentvec and better for realtime as it handles context differently)
 
@@ -414,7 +406,7 @@ Don't include spaces/special characters.
 
 ***
 ###### ‎  
-##### e. Extract Features
+##### d. Extract Features
 ###### ‎  
 - Press **Extract Features**.       
 It'll finish when it says `extracted successfully`.

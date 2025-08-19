@@ -31,7 +31,7 @@ order: 7000
 - Very fast
 - TTS features            
 - Automatic model upload
-- Has Mangio-Crepe
+- Has (not Mangio) Crepe
 - User-friendly UI
 - TensorBoard included
 - Extra features: (plugins, model fusion, etc)
@@ -241,15 +241,7 @@ iv. Then paste it on the `Dataset Path` bar.
 
 ***
 ###### ‎  
-##### b. Hop Length (optional)
-###### ‎  
-- If you chose ``Crepe``, you can modify its <u>[hop length](https://docs.aihub.gg/rvc/resources/inference-settings/#mangio-crepe)</u>.
-
-    <img src="..\appliocolab-img\4-hoplength.png" alt="image" width="900">
-
-***
-###### ‎  
-##### c. Extract Features
+##### b. Extract Features
 ###### ‎  
 - Press **Extract Features**.       
 It'll finish when it says `extracted successfully`.
