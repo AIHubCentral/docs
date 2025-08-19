@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.808943148513">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.808944175719">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -34,11 +34,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../../img/b.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.11.0.808943148513" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.11.0.808944175719" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.808943148513" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.808944175719" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.808943148513" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.808944175719" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -391,8 +391,8 @@
 </dd>
 </dl>
 </doc-panel>
-<doc-panel id="mangio-crepe--crepe-in-applio" collapsed>
-    <template #title><em>Mangio-Crepe / Crepe (In Applio)</em></template>
+<doc-panel id="mangio-crepe--crepe" collapsed>
+    <template #title><em>Mangio-Crepe / Crepe</em></template>
 <doc-anchor-target id="section-7">
     <h6>
         <doc-anchor-trigger class="header-anchor-trigger" to="#section-7">#</doc-anchor-trigger>
@@ -400,10 +400,8 @@
     </h6>
 </doc-anchor-target>
 <ul>
-<li>It&#x27;s crepe, but you can adjust its <strong>hop_length</strong></li>
-<li>It determines the time it takes the voice to hit a note</li>
-<li>The lower the value, the more detailed results you&#x27;ll get, but will take longer to process</li>
-<li>Useful when the audio/model performs drastic note shifts</li>
+<li><strong>NOTE THAT MANGIO CREPE IS ONLY A PLACEBO</strong>: 160 hop is required to match with feature extraction, if you ran hop 40, that made f0 output 4x longer than needed and it had to be interpolated back required size. That&#x27;s why it got removed from Applio, it would be better to use Crepe, or even better just use RMVPE.</li>
+<li>Mangio Crepe: It&#x27;s crepe, but you can adjust its hop_length. It determines the time it takes the voice to hit a note. The lower the value, the more detailed results you&#x27;ll get, but will take longer to process</li>
 <li>If you have really clean audio use this over RMVPE</li>
 <li>Better with soft, whspery or voices with feminine timbres</li>
 </ul>
