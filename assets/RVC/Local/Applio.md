@@ -82,6 +82,8 @@ If you don't meet the requirements, there are 4 Cloud Versions:
 
 ### Nvidia on Windows (Precompiled)
 
+RTX 5000 Series Users require version 3.3.0 or newer.
+
 1. The easiest way to download Applio is by going to Applio's <u>[Hugging Face repo](https://huggingface.co/IAHispano/Applio/tree/main/Compiled)</u>, and clicking the [ :icon-download: **download** ] button on the right-hand side.
 
     <img src="..\applio-img\2-localappliodl.png" alt="image" width="400">
@@ -98,33 +100,6 @@ If you don't meet the requirements, there are 4 Cloud Versions:
 !!!warning Don't close the console until you're done using it, or it will stop working.     
 !!! 
 
-***
-
-### Nvidia RTX 5000 Series on Windows (Precompiled Fix)
-
-!!!warning "Unofficial Workaround"
-The following steps are an unofficial workaround to use Applio with NVIDIA RTX 50 series cards until the next official release includes updated PyTorch.
-!!!
-
-1. Follow the standard <u>[Nvidia on Windows (Precompiled)](https://docs.aihub.gg/rvc/local/applio/#nvidia-on-windows-precompiled)</u> download steps first.
-2. After you have extracted the precompiled folder, navigate to it in Windows Explorer.
-3. In the address bar, type `CMD` and press Enter. This will open a Command Prompt window in the correct directory.
-4. In the CMD window, paste and run the following command to upgrade PyTorch to a compatible version:
-   ```bash
-   env\python -m pip install torch==2.7.0 torchvision==0.22.0 torchaudio==2.7.0 --upgrade --index-url https://download.pytorch.org/whl/cu128
-   ```
-!!!info "Requirement Already Satisfied?"
-If you get an error about requirements being already satisfied, you must first uninstall the existing versions. Run this command first, and then run the command above again.
-```bash
-env\python -m pip uninstall torch torchvision torchaudio
-```
-!!!
-
-‎       
-- A console tab will appear, and after a moment your default browser, with Applio ready to use.     
-‎       
-!!!warning Don't close the console until you're done using it, or it will stop working.     
-!!! 
 
 ***
 
@@ -138,7 +113,7 @@ env\python -m pip uninstall torch torchvision torchaudio
 2. Unzip the folder. This may take a few minutes.
 ***
 
-3. Make sure you have **Python 3.10.12** installed. You can check your version by running `python --version`.
+3. Make sure you have **Python 3.10.12** or 3.11.x installed. You can check your version by running `python --version`.
 4. Open a terminal in the Applio directory you just extracted.
 5. Run the commands corresponding to your Linux distribution:
 
