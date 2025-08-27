@@ -65,6 +65,9 @@ A batch size is the number of training examples used in one iteration before upd
     - Can lead to early overtraining or flat / 'stuck' graphs.
     - Generalization might be worsened.
 
+
+Be aware that if you're training with 2 GPUs, like in Kaggle's T4x2, the batch size has to be splitted, as each GPU runs the same batch size, for example if you want to train batch size 8, you have to put 4 in the program.
+
 ***
 :::content-center
 ## Pretrains
