@@ -1,8 +1,8 @@
 ---
 icon: ":zap:"
-order: 2000
+order: 3000
 ---
-`Last update: August 8, 2025`
+`Last update: September 6, 2025`
 ***
 :::content-center
 <img src="../lightning-img/lightning-ai-banner.png" alt="LightningAI Banner" width="600">
@@ -28,7 +28,7 @@ This doesn't affect when the Wokada Deiteris Fork is running, this is affected o
 #### A Virtual Audio Cable (VAC) is what you need to use the realtime voice changer on Discord & Games.
 
 - A VAC (Virtual Audio Cable) makes a fake audio device, used to re-route the audio of different programs.
-- In the context of the Wokada Deiteris Fork, it's used to get the output from the realtime voice changer as an input in other programs such as Discord.
+- In AI Realtime Voice Changing context, it's used to get the output of AI Converted Voice Output as the input in other programs such as Discord.
 
 !!! For Windows
 Download this: <u>[VAC Lite (Virtual-Audio-Cable by Muzychenko)](https://software.muzychenko.net/freeware/vac470lite.zip)</u>.

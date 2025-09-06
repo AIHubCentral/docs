@@ -1,6 +1,6 @@
 ---
 icon: chevron-right
-order: 5000
+order: 6000
 ---
 ``Last update: September 6, 2025``
 ***
@@ -12,7 +12,7 @@ order: 5000
 :::content-center
 ## Introduction ‎
 :::
-- This is a <u>[cloud-based](http://docs.aihub.gg/extra/glossary/#cloud-based)</u> alternative to run [Wokada Deiteris Fork](https://docs.aihub.gg/realtime-voice-changer/local/deiteris-w-okada-fork/#virtual-audio-cable), Realtime Voice Changer for calls/games, only for people who don't have a good PC GPU, via the <u>[Kaggle Service](http://docs.aihub.gg/extra/glossary/#kaggle)</u>.
+- This is a <u>[cloud-based](http://docs.aihub.gg/extra/glossary/#cloud-based)</u> alternative to run [Wokada Tg-Develop's Fork](https://docs.aihub.gg/realtime-voice-changer/local/tg-develops-w-okada-fork/#virtual-audio-cable), Realtime Voice Changer for calls/games, only for people who don't have a good PC GPU, via the <u>[Kaggle Service](http://docs.aihub.gg/extra/glossary/#kaggle)</u>.
 
 !!!danger Kaggle Service
 **Check the <u>[Kaggle Glossary](http://docs.aihub.gg/extra/glossary/#kaggle)</u> for more info on Free Tier, Limits, Verification, Pricing and other things.**
@@ -79,26 +79,61 @@ b. Verify your acount with a phone number so you can turn on the "internet" opti
  <img src="../kaggle-img/kaggle-phone.png" alt="image" width="575" height="auto">    
  
 
+***
+###### ‎   
+## Create an Account   
+###### ‎   
+#### 1. <u>Set up account.</u>
+a. Start by making an account <u>[here](https://www.kaggle.com/account/login?phase=startRegisterTab&returnUrl=%2F)</u>.
+‎  
+
+   <img src="../kaggle-img/kaggle-sign-in.png" alt="image" width="575" height="auto">
+
+‎  
+
+b. Verify your acount with a phone number so you can turn on the "internet" option.  
+
+ <img src="../kaggle-img/kaggle-phone.png" alt="image" width="575" height="auto">    
+ 
+
 ***  
 
 ###### ‎  
-## Clone and Notebook Setup
+## Notebook Creation & Setup
 ###### ‎  
 #### 2. <u>Clone Notebook</u>
-a. Go to the <u>[realtime voice changer notebook](https://www.kaggle.com/code/suneku/voice-changer-public)</u> and click "Copy and Edit"
+a. Go to <u>[Kaggle](https://www.kaggle.com)</u> and click "Create" then "New Notebook" at the top left. 
 
-   <img src="../kaggle-img/vc.png" alt="image" width="1000" height="auto"> 
+   <img src="../kaggle-img/new.png" alt="image" width="400" height="auto"> 
 
-   
-b. Under "Session options" in the sidebar turn on "internet". Make sure persistance is on for both files and varibles.
+‎ 
+b. Under your session's name click "File" then "Import Notebook".
 
-   <img src="../kaggle-img/kaggle-internet.png" alt="image" width="450" height="auto">     
-  
-c. Turn on T4 X2 GPUs in accelerator.           
+   <img src="../kaggle-img/import.png" alt="image" width="450" height="auto">     
+
+‎   
+
+c. On the new window that appeared on the right click "Link" then type in the box this link `https://github.com/tg-develop/voice-changer/blob/master-custom/Kaggle_RealtimeVoiceChanger.ipynb`.
+
+   <img src="../kaggle-img/link.png" alt="image" width="700" height="auto"> 
+
+Click "Import" on the bottom right once you've done this.
+
+d. When it's done importing it will display this text window.
+
+   <img src="../kaggle-img/settings-updated.png" alt="image" width="600" height="auto">
+
+‎  
+e. Under "Session options" in the sidebar turn on "internet". Make sure persistance is on for both files and varibles.
+
+   <img src="../kaggle-img/kaggle-internet.png" alt="image" width="" height=""> 
+
+f. Turn on T4 X2 GPUs in accelerator.           
 
    <img src="../kaggle-img/kaggle-gpu.png" alt="image" width="" height=""> 
-   
-d: (Optional) Turn on headless mode so you can run so you can run the GPU on all sessions and save your progress. Go to the top right and click "Save version" then open the advanced dropdown.
+
+‎ 
+g: (Optional) Turn on headless mode so you can run so you can run the GPU on all sessions and save your progress. Go to the top right and click "Save version" then open the advanced dropdown.
 
 <img src="../kaggle-img/kaggle-pers.png" alt="image" width="" height=""> 
 
@@ -163,7 +198,7 @@ Now that you have the web interface running via Kaggle, the rest of the process 
 
 For *mostly* all subsequent steps, including audio routing, application settings, and model usage, please continue by following the Local PC guide.
 
-[!button text="Continue with the Local PC Guide" icon="arrow-right" target="blank"](https://docs.aihub.gg/realtime-voice-changer/local/deiteris-w-okada-fork/#voice-models)
+[!button text="Continue with the Local PC Guide" icon="arrow-right" target="blank"](https://docs.aihub.gg/realtime-voice-changer/local/tg-develops-w-okada-fork/#voice-models)
 
 
 

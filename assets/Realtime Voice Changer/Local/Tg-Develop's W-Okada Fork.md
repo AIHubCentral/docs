@@ -1,6 +1,6 @@
 ---
 icon: chevron-right
-order: 1000
+order: 3000
 ---
 ``Last update: September 6, 2025``
 ***
@@ -12,16 +12,16 @@ order: 1000
 
 - There are 3 versions of this realtime voice changer, the <u>[Offical Original W-Okada](https://github.com/w-okada/voice-changer)</u> made by Wok, the <u>[Deiteris' Fork](https://github.com/deiteris/voice-changer)</u> made by Deiteris, and the <u>[Tg-Develop's Fork](https://github.com/tg-develop/voice-changer)</u> made by Tg-Develop. Note that those 3 links are just for reference to the Source Code Github Repositories of both projects, you should instead follow the guide below.
 
-- This guide will be about the Wokada Deiteris' fork since it has better preformance and quality compared to the Original Wokada.
+- This guide will be about the Wokada Tg-Develop's fork since it's a fork of the Deiteris' Fork, containing the performance improvements, has an improved Web User Interface, supports Spin Embedder Models, and has Audio Effects.
 
 - RVC does **NOT** mean realtime voice changer. RVC means Retrieval-based-Voice-Conversion.
 
 ***
-#### Is The W-Okada Deiteris Fork Safe?
+#### Is The W-Okada Tg-Develop's Fork Safe?
 
 RVC Models are PyTorch Models, a Python library used for AI.
 PyTorch uses serialization via Pythons' Pickle Module, converting the model to a file.
-Since pickle can execute arbitrary code when loading a model, it could be theoretically used for malware, but Wokada Deiteris Fork has a **built-in feature to prevent code execution along the model.**
+Since pickle can execute arbitrary code when loading a model, it could be theoretically used for malware, but Wokada Tg-Develop's Fork has a **built-in feature to prevent code execution along the model.**
 Also, **HuggingFace has a <u>[Security Scanner](https://huggingface.co/docs/hub/security-pickle#hubs-security-scanner)</u>** which scans for any unsafe pickle exploits and uses also ClamAV for scanning dangerous files.
 ***
 
@@ -36,11 +36,12 @@ Also, **HuggingFace has a <u>[Security Scanner](https://huggingface.co/docs/hub/
 - Has great support for Nvidia, AMD, Intel, Mac, Linux, Windows
 - Uses a Web User Interface, meaning it can be run on the Cloud
 - Uses FP16 Inference by default, and let's you choose to use FP32 for better quality/precision
+- Has Audio Effects
+- Lets you choose the Model Embedder Type, including ContentVec & Spin.
 ||| ❌ **CONS** 
 - Uses a Web User Interface, having issues on some browsers, and bugs with renaming or deleting models on it
-- Doesn't have an active development recently
+- Doesn't have a very active development recently
 - Has Cut Off Issues Using an Extra superior to 2.7
-- Doesn't let you choose the embedder, using only RVC models trained on contentvec (the majority)
 |||
 ===
 ***
@@ -96,43 +97,12 @@ If you plan on playing games at the same, do not use CPU-conversion. With CPU, t
 
 ***
 
-
-## Online Alternatives [Colab/Kaggle]
-
-#### Kaggle
-
-!!!danger
-It's free, but you will need a phone number verification.
-!!!
-
-<u>[Read the Tutorial HERE](https://docs.aihub.gg/realtime-voice-changer/cloud/deiteris-w-okada-fork-kaggle/)</u>
-
-***
-#### Lightning.AI
-
-!!!danger
-It has free credits, but you will need a phone number verification.
-!!!
-
-<u>[Read the Tutorial HERE](https://docs.aihub.gg/realtime-voice-changer/cloud/deiteris-w-okada-fork-lightning-ai/)</u>
-
-***
-#### Google Colab
-
-!!!danger
-You need the Google Colab Paid Tier to run this, as it uses a Web User Interface, else you could risk getting disconnected or getting banned off Colab.
-!!!
-
-<u>[Read the tutorial HERE](https://docs.aihub.gg/realtime-voice-changer/cloud/deiteris-w-okada-fork-colab/)</u>
-
-***
-
 ## Virtual Audio Cable
 
 #### A Virtual Audio Cable (VAC) is what you need to use the realtime voice changer on Discord & Games.
 
 - A VAC (Virtual Audio Cable) makes a fake audio device, used to re-route the audio of different programs.
-- In AI Realtime Voice Changing context, it's used to get the output of AI Converted Voice Output as the input in other programs such as Discord.
+- In Wokada Deiteris Fork context, it's used to get the output of Wokada Deiteris Fork as the input in other programs such as Discord.
 
 !!! For Windows
 Download this: <u>[VAC Lite (Virtual-Audio-Cable by Muzychenko)](https://software.muzychenko.net/freeware/vac470lite.zip)</u>.
@@ -172,48 +142,42 @@ sudo pacman -Syu portaudio
 ***
 ## Windows
 
-- Download based on your GPU. You don't know what GPU you have? Open Task Manager > Performance tab and check for your GPU0 and GPU1 names. Prioritize the Nvidia one if you have one, else use the other.
+- First, go to the latest release page: <u>[Latest Release (click here to go to Github)](https://github.com/tg-develop/voice-changer/releases/latest)</u>
+- On the release page, find the "Assets" section and download the files based on your GPU.
 
-<img src="../wokada-deiteris-img/cap.png" alt="Task Manager" width="600" height="auto">
+!!!
+To check your GPU, open Task Manager (Ctrl+Shift+Esc), go to the "Performance" tab, and look at the GPU names. If you have an NVIDIA card, use the NVIDIA (CUDA) version.
+!!!
 
-####
-!!!
-Use Online Hosted if you have an integrated GPU (AMD Radeon Graphics ; AMD Radeon Vega ; Intel UHD) and if you do not have a GPU at all
-!!!
 ***
 
 ### Download NVIDIA on Windows
 
-- The latest version as of December 7th 2024 is: <u>[nvidia-b2332 (click here to download)](https://huggingface.co/Shadicti/deiteris-Fork/blob/main/voice-changer-windows-nvidia-b2332.zip)</u>
+- Download all of the `voice-changer-windows-amd64-cuda` files. This will include multiple files, likely ending in `.zip.001`, `.zip.002`, etc.
+- Make sure all downloaded parts are in the same folder before extracting.
 
 !!!danger
-If you have a GTX 700 card or below, use AMD/Intel version instead.
+If you have a GTX 700 series card or older, the CUDA version may not work. Use the AMD/Intel (DML) version instead.
 !!!
 
-***
-### Download NVIDIA RTX 5000-series on Windows
-
-- NVIDIA RTX-5000 series, the newest release of GPU's, require a separate download. You do not need it if you have an older GPU, follow the normal Nvidia link in that case. <u>[nvidia-5000-Series (click here to download)](https://github.com/IllIlIlIllIl/voice-changer/releases/tag/b2335)</u>
-
-!!!danger
-Download all 3 files, then extract the .zip file, it will automatically extract ALL 3 FILES into one. Then open the `MMVCServerSIO` folder and run `MMVCServerSIO.exe` (or called `MMVCServerSIO` if you don't have extensions activated).
-!!!
-
-***
 ### Download AMD, INTEL and CPU on Windows
 
-- The latest version as of December 7th 2024 is: <u>[dml-b2332 (click here to download)](https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-windows-amd64-dml.zip)</u>
+- Download the single file named `voice-changer-windows-amd64-dml.zip`.
+- If you don't have a dedicated GPU or the `dml` version doesn't work, download `voice-changer-windows-amd64-cpu.zip`.
 
 !!!danger
-Intel UHD Graphics do NOT work at this point in time. Use Online Alternative.
+Some integrated graphics like Intel UHD may not be compatible. If it fails, you may need to use the CPU version or an online alternative.
 !!!
 
 ***
+
 ### Opening on Windows
 
-- First Make sure you have <u>[7zip](https://www.7-zip.org/)</u> or <u>[WinRAR](https://www.win-rar.com/download.html)</u> for extracting / unzipping.
-
-- After the download, you extract the zip file. You open the folders until you see an exe application called `MMVCServerSIO` and run that.
+- Make sure you have <u>[7-Zip](https://www.7-zip.org/)</u> or <u>[WinRAR](https://www.win-rar.com/download.html)</u> installed to extract the files.
+- To extract:
+    - **For the NVIDIA version:** Right-click on the file ending in `.zip.001` (the first part of the archive) and choose to extract it. Your archiving program will automatically find the other parts and combine them.
+    - **For the AMD/Intel or CPU version:** Right-click the single `.zip` file and extract it.
+- Open the newly created `MMVCServerSIO` folder and run the `MMVCServerSIO.exe` application.
 
 !!!warning
 If nothing opens, then open a browser and type in `http://127.0.0.1:18888/`. This is a local URL, it runs on the WebUI.
@@ -222,25 +186,25 @@ If nothing opens, then open a browser and type in `http://127.0.0.1:18888/`. Thi
 ***
 ## Mac
 
+- First, go to the latest release page: <u>[Latest Release (click here to go to Github)](https://github.com/tg-develop/voice-changer/releases/latest)</u>
+- On the release page, find the "Assets" section and download the file corresponding to your Mac's processor.
 
 ***
-### Download Mac Silicon
 
-- The latest version as of December 7th 2024 is: <u>[arm-b2332 (click here to download)](https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-macos-arm64-cpu.tar.gz)</u>
+### Download for Apple Silicon Mac
+
+- For Macs with an M1, M2, or newer Apple chip, download the file ending in `macos-arm64-cpu.tar.gz`.
+
+### Download for Intel Mac
+
+- For older Macs with an Intel processor, download the file ending in `macos-amd64-cpu.tar.gz`.
 
 ***
-### Download Mac Intel
 
-- The latest version as of December 7th 2024 is: <u>[macos-amd-b2332 (click here to download)](https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-macos-amd64-cpu.tar.gz)</u>
-
-***
 ### Opening on Mac
 
-- Double click the voice-changer-macos-arm64-cpu.tar.gz file. The realtime voice changer will unpack and the MMVCServerSIO folder will appear.
-
-- Open the extracted MMVCServerSIO folder.
-
-- Double-click `MMVCServerSIO` to run the realtime voice changer.
+- Double-click the downloaded `.tar.gz` file to unpack it. An `MMVCServerSIO` folder will appear.
+- Open the `MMVCServerSIO` folder and double-click the `MMVCServerSIO` application to run it.
 
 !!! Apple quarantine stops you from running the realtime voice changer
 You do not get a popup notification for this, so if it does not open or says "Pytorch is damaged", do the following:
@@ -260,52 +224,53 @@ If nothing opens, then open a browser and type in `http://127.0.0.1:18888/`. Thi
 ***
 ## Linux
 
-Installation of CUDA Toolkit or AMD **HIP SDK is NOT REQUIRED**. All other necessary libraries are bundled with the application.
+- First, go to the latest release page: <u>[Latest Release (click here to go to Github)](https://github.com/tg-develop/voice-changer/releases/latest)</u>
+- On the release page, find the "Assets" section and download the file(s) corresponding to your hardware.
 
+***
 
-### Download on Nvidia on Linux
+### Download for NVIDIA on Linux
 
-you need to download both these files:
+- Download all files that start with `voice-changer-linux-amd64-cuda.tar.gz` (e.g., `.tar.gz.aa`, `.tar.gz.ab`).
 
-https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-linux-amd64-cuda.tar.gz.aa
+### Download for AMD on Linux
 
-https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-linux-amd64-cuda.tar.gz.ab
+- Download all files that start with `voice-changer-linux-amd64-rocm.tar.gz` (e.g., `.tar.gz.aa`, `.tar.gz.ab`).
 
-### Download on AMD on Linux
+### Download for CPU on Linux
 
-you need to download all these files:
+- Download the single file named `voice-changer-linux-amd64-cpu.tar.gz`.
 
-https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-linux-amd64-rocm.tar.gz.aa
-
-https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-linux-amd64-rocm.tar.gz.ab
-
-https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-linux-amd64-rocm.tar.gz.ac
-
-
-### Download on CPU on Linux
-
-you need only this file:
-
-https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-linux-amd64-cpu.tar.gz
-
+***
 
 ### Opening on Linux
 
-I'm not sure about the capabilities of UI tar archive extractors, but you can extract these archive parts with the following command that will merge them and extract: `cat voice-changer-linux-amd64-cuda.tar.gz.* | tar xzf -`, change **cuda** to **rocm** or **cpu** depending on your PC GPU.
+- Make sure all downloaded parts for your version are in the same directory.
+- Open a Terminal and navigate to your downloads folder.
+- Use the `cat` command to combine and extract the multi-part archives. For the single-file CPU version, use `tar`.
 
-After you extract the files using the command above, a new folder called `MMVCServerSIO` will appear.
+  ```bash
+  # For NVIDIA
+  cat voice-changer-linux-amd64-cuda.tar.gz.* | tar xzf -
 
-- Open a Terminal and navigate into that folder:
+  # For AMD
+  cat voice-changer-linux-amd64-rocm.tar.gz.* | tar xzf -
+
+  # For CPU
+  tar xzf voice-changer-linux-amd64-cpu.tar.gz
+  ```
+
+- A new folder named `MMVCServerSIO` will be created. Navigate into it:
   ```bash
   cd MMVCServerSIO
   ```
 
-- You may need to make the application executable. Run this command just in case:
+- Make the application executable:
   ```bash
   chmod +x ./MMVCServerSIO
   ```
 
-- Now, run the realtime voice changer:
+- Run the voice changer:
   ```bash
   ./MMVCServerSIO
   ```
@@ -318,7 +283,7 @@ After the server finishes loading in your terminal, it will not open a window on
 ***
 ## Opening on Multi-PC Setups
 
-This is only for the people that have 2 PCs, and want to use 1 PC for Gaming, the other only for Wokada Deiteris Fork.
+This is only for the people that have 2 PCs, and want to use 1 PC for Gaming, the other only for Wokada Tg-Develop's Fork.
 
 - Create a file named `.env` on the same folder where `MMVCServerSIO.exe` is located. Open it up with a notepad, copy paste the settings from the <u>[GitHub link](https://github.com/deiteris/voice-changer/issues/180#issuecomment-2359166278)</u>.
 
@@ -326,6 +291,7 @@ This is only for the people that have 2 PCs, and want to use 1 PC for Gaming, th
 
 
 - Now run the bat file. After it starts, you should be able to open the link. For example, if you specified `HOST=192.168.0.1` and `ALLOWED_ORIGINS='["https://192.168.0.1:18888"]')`, you should be able to open `https://192.168.0.1:18888` in your browser and use the realtime voice changer UI from other machines in your local network.
+
 
 ***
 ## Voice Models
@@ -335,35 +301,23 @@ This is only for the people that have 2 PCs, and want to use 1 PC for Gaming, th
 
 #### Adding Models
 
-<img src="../wokada-deiteris-img/edit.png" alt="Edit Button in Wokada Deiteris Fork to Add Models" width="430" height="auto">
+<img src="../wokada-tg-develop-img/plus-button-models-list.png" alt="Plus Button in Wokada Tg-Develop's Fork to Add Models" width="430" height="auto">
 
 #####
 
-- Click on `Edit` on the small blue square located around the the top left side
-- Pick any slot you want, click `upload`
+- Click on `+` on the left sidebar Model Selector menu.
 - Only RVC models will work. If you have a gpt-sovits one or any other, they will not work.
-- Select `Type: RVC`, then `select file` on the `Model` slot and upload your `.pth` file.
-- No need for an `Index` file, but you can upload it. This controls the accent of the voice model.
+- Upload the Model File (.pth, .safetensors, .onnx), give it a Name (this is currently bugged, no matter what name you give it, it will always use the actual model's name), and Select between Hubert_Base/ContentVec & SPIN for the Embedder Type
+- Optionally Upload the Index File (.index), this controls the Trained Model Accent.
+- Optionally Upload a Thumbnail Image.
+- Optionally check "Select model after upload", to automatically select it after it gets uploaded.
 
 ***
 #### Renaming Models
 
 !!!danger A Common Bug
-Attempting to rename a model directly within the Web User Interface will cause the program to crash. This is a known bug. Use one of the two methods below to safely rename your models.
+Attempting to rename a model directly within the Web User Interface will cause the program to delete the model. This is a known bug. Use fix below to safely rename your models.
 !!!
-
-**Method 1: Re-uploading the Model**
-
-This is the simplest method.
-
-1.  Find the model's `.pth` file on your computer.
-2.  Rename the file to your desired new name.
-3.  In the voice changer UI, click `Edit`, select the slot of the model you want to rename, and click `upload`.
-4.  Re-upload the renamed `.pth` file to the same slot. This will overwrite the old model and update its name.
-
-**Method 2: Editing the Configuration File**
-
-This method doesn't require re-uploading.
 
 1.  Navigate to your `MMVCServerSIO` folder.
 2.  Inside, open the `model_dir` folder. You will see several numbered folders, each corresponding to a model slot in the UI.
@@ -371,36 +325,39 @@ This method doesn't require re-uploading.
 4.  Inside this folder, you will find a `params.json` configuration file. Open this file with a text editor like Notepad.
 5.  Look for the `"name":` field in the file. Change the text in the quotes to your desired new model name.
 
-<img src="../wokada-deiteris-img/json-rename-model.png" alt="Editing the model name in the JSON file with Notepad" width="800" height="auto">
+<img src="../wokada-tg-develop-img/json-rename-model.png" alt="Editing the model name in the JSON file with Notepad" width="800" height="auto">
 
-6.  Save the `.json` file. The name will be updated in the voice changer UI.
+6.  Save the `.json` file. The name will be updated in the program UI.
 
 ***
 #### Deleting Models
 
-If you wish to delete a model, you can simply overwrite the slot with a new model by following the steps in the **Adding Models** section. If you want to completely empty a slot, navigate to the `MMVCServerSIO/model_dir` folder, open the folder of the slot number you want to delete, and delete all the files inside it.
+If you wish to delete a model, you can simply click the red trashbin icon next to its name in the Model Selector sidebar list.
 
 ***
 ### Merging Models (Merge Lab) :icon-git-merge:
 
 The Merge Lab allows you to combine multiple RVC V2 voice models (.pth Weights only, not indexs too) into a single, new hybrid model. This is useful for creating unique voices.
 
-1.  **Open Merge Lab:** Scroll down in the user interface and click on the `Merge Lab` button.
+1.  **Open Merge Lab:** At the bottom left, click on the `Merge Lab` button.
 
-  <img src="../wokada-deiteris-img/merge-lab-button.png" alt="Merge Lab Button in Wokada Deiteris Fork" width="300" height="auto">
+  <img src="../wokada-tg-develop-img/merge-lab-button.png" alt="Merge Lab Button in Wokada Tg-Develop's Fork" width="300" height="auto">
 
+2. **Select Models to Merge:**
+    - In the "Filter Settings" section, you can use the `Search Models` bar to find specific models by name.
+    - Select the desired `Sample Rate` and `Embedder` from the dropdown menus to filter the list of available models. Only models that share these same characteristics can be merged.
+    - From the "Available Models" list, check the boxes next to the models you want to include in the merge.
 
-2.  **Select Model Type:** From the `Type` dropdown menu, choose the type of models you wish to merge. Only models that share the same sample rate and type (e.g., "pyTorchRVCv2, 32000Hz, 768" which are all RVC v2 models with the 32kHz Sample Rate, or "pyTorchRVC, 40000Hz, 256" which are all RVC v1 models with the 40kHz Sample Rate) will be shown and can be merged together.
-
-  <img src="../wokada-deiteris-img/merge-lab.png" alt="Merge Lab in Wokada Deiteris Fork" width="600" height="auto">
+  <img src="../wokada-tg-develop-img/merge-lab.png" alt="Merge Lab in Wokada Tg-Develop's Fork" width="600" height="auto">
 
 3.  **Adjust Weights:** Use the sliders next to each model's name to set its "weight" (RVC models are PyTorch files, the .pth is the weight containing the voice) or influence in the merged model. The numbers (from 0 to 100) represent the percentage of each voice in the mix.
 
-4.  **Merge and Download:** Once you have set the desired proportions, click the `Merge` button. Your browser will automatically download the new, `merged.pth` model file, which you can rename to whatever you want.
+4. **Choose Merge Options:**
+    - **Download merged model:** This is checked by default and will download the final merged model file to your computer.
+    - **Save to merge slot:** This option saves the merged model to a dedicated merge slot.
+    - **Save to empty slot (auto-select first available):** This will automatically save the merged model into the next open model slot.
 
-!!! Manual Download
-The merged model is **not** automatically added to your model list. You must upload it to an empty slot yourself by following the steps in the **Adding Models** section.
-!!!
+5. **Finalize Merge:** Once you have selected your models and set your desired save options, click the `Merge` button to create the new hybdrid model.
 
 !!!danger Index Merging
 You **can't merge indexs** (in rvc context, the trained accent of the voice). Only the .pth actual voice file.
@@ -445,271 +402,198 @@ ASIO > WASAPI > MME as a general thumbrule (this also affects delay)
 
 Sometimes Client does not work, then use SERVER with prefix "MME" or "Windows WASAPI". You can not use the in-built noise suppression and echo fix if you use SERVER.
 
+
 ***
-### Settings Explained
+## Settings Explained
 ***
-- `PASSTHRU button:` Sends your actual voice and not the realtime voice changer through the virtual audio cable. You want this to be GLOWING GREEN or GREY (grey for dark mode users) for the realtime voice changer to work.
 
-- `F0 det:` Pitch extraction algorithm. Both RMVPE (for the best precision and robustness) and FCPE (for less precision & robustness but lower delay) are good options.
+- `Start Server:` Starts/Stops the realtime voice changer, be aware that you can't change every settings while it's running.
 
-- `Chunk:` Controls the delay (lower number means less delay, but please check out the recommended settings for what your GPU is capable of).
+- `Passthrough:` Sends your actual voice and not the realtime voice changer through the virtual audio cable. You want this to be OFF for the realtime voice changer to work.
 
-- `Extra:` Controls voice model quality. 2.7s is the max, anything above can cause cutoff issues.
 ***
-#### `VOL:`
-- `in:` This raises the microphone volume before it goes into the realtime voice changer (Recommended to leave it on the default or if needed, not to go too high, else it increases background noise and makes the voice sound worse).
+### Model Settings
 
-- `OUT:` Raising realtime voice changer volume on the output.
-
-- `MON:` Increases volume of your headphones that you set on "mon" if you selected to hear yourself with the realtime voice changer.
-***
 - `Pitch:` This is the pitch. Going into negative will make it lower pitch, going higher will make it higher pitch. If you have a male voice using a female voice, aim for 10 - 14, this depends on your voice, try around those numbers until you find a sweet spot.
 
 - `Formant Shift:` Alters harmonic frequencies and changes the voice timbre without affecting the pitch
 
-- `Index:` This controls the accent of the voice model. In most cases, using Index on Realtime Voice Changer can add realism if you speak the language the model was trained in. If you have a heavy foreign accent, you may use this at a low rate. Beware, this increases CPU usage
-***
-- `In. Sens:` microphone threshold, increasing this will cause less background noise to get picked up if it's a problem
+- `Index Ratio:` This controls the accent of the voice model. In most cases, using Index on Realtime Voice Changer can add realism if you speak the language the model was trained in. If you have a heavy foreign accent, you may use this at a low rate. Beware, this increases CPU usage.
 
-- `Sup2:` Noise suppression on your microphone.
-
-- `Sup1:` Noise suppression but weaker, not recommended to use this at all, because it barely has any impact whilst reportedly, making the voice inconsistent
-
-- `Echo:` if you experience echo issues despite having sup2, In. Sens to the right and having lowered your windows system value, then this will help you as a last resort
+- `Save Settings:` Save the previous Settings for the specific model you're using.
 
 ***
-## Settings
+#### AI Settings
+
+- `Echo Cancellation:` if you experience echo issues despite having sup2, In. Sens to the right and having lowered your windows system value, then this will help you as a last resort.
+
+- `Noise Suppression 1:` Noise suppression but weaker, not recommended to use this at all, because it barely has any impact whilst reportedly, making the voice inconsistent.
+
+- `Noise Suppression 2:` Noise suppression on your microphone.
+
+- `Input Sensivity:` microphone threshold, increasing this will cause less background noise to get picked up if it's a problem.
+
+- `Chunk Size:` Controls the delay (lower number means less delay, but depends on what your GPU is capable of).
+
+- `Extra Processing Time:` Controls voice model quality. 2.7s is the max, anything above can cause cutoff issues.
+
+- `F0 det:` Pitch extraction algorithm. Both RMVPE (for the best precision and robustness) and FCPE (for less precision & robustness but lower delay) are good options.
+
+- `Processing Unit:` Select your Processing Unit, which can be your GPU, CPU or M Chip.
+
+***
+#### Audio Settings
+- `Input Volume:` This raises the microphone volume before it goes into the realtime voice changer (Recommended to leave it on the default or if needed, not to go too high, else it increases background noise and makes the voice sound worse).
+
+- `Output Volume:` Raising realtime voice changer volume on the output.
+
+- `Monitor Volume:` Increases volume of your headphones that you set on Monitor Device if you selected to hear yourself with the realtime voice changer.
+
+***
+### Audio Effects
+
+Audio effects are powerful tools for shaping and enhancing your voice in real-time. They can be applied to either the input (your microphone) or the output (the final sound you and your audience hear). 
+
+*** 
+
+#### Input vs. Output Effects 
+
+The same effects can be applied to both your input and output audio, but the application timing and purpose differ. 
+
+- **Input effects** process your raw microphone audio before it's used by the voice changer. Applying effects here can alter how the AI processes your voice, which can be useful for creative sound design. 
+- **Output effects** are applied to the audio after the voice-changing process. These are typically used to refine the final sound, add ambiance, or apply mastering touches. 
+
+#### Effect Providers: Simple vs. Pedalboard 
+
+Two types of effect providers are available, each offering a different level of complexity and control. 
+
+- **Simple Provider:** Offers basic, essential effects with straightforward controls. It's ideal for quick adjustments and users who are new to audio effects. 
+- **Pedalboard Provider:** Provides a more extensive collection of high-quality effects with detailed parameters. This provider is geared towards users who want to fine-tune their sound with greater precision, much like a guitarist's physical pedalboard. 
+
+#### Simple Provider Effects 
+
+- `Simple Gain:` Basic volume adjustment. 
+    - `Gain:` Amount of volume boost or cut. 
+- `Simple Low Pass:` Basic IIR low-pass filter. 
+    - `Cutoff Frequency:` Frequency above which signals are filtered out. 
+- `Simple High Pass:` Basic IIR high-pass filter. 
+    - `Cutoff Frequency:` Frequency below which signals are filtered out. 
+- `Simple Delay:` Basic delay effect. 
+    - `Delay Time:` Time delay for echoes. 
+    - `Feedback:` Amount of feedback for multiple echoes. 
+    - `Wet Level:` Level of delayed signal. 
+
+#### Pedalboard Provider Effects 
+
+- `Reverb:` Adds room ambience and depth. 
+    - `Room Size:` Controls the size of the simulated room space. 
+    - `Damping:` Amount of high-frequency absorption in the room. 
+    - `Wet/Dry Mix:` Balance between original and reverb signal. 
+    - `Pre-delay:` Delay before reverb starts, simulates room distance. 
+- `Echo:` Creates delayed repetitions. 
+    - `Delay Time:` Time between the original sound and the echo. 
+    - `Feedback:` How much of the echo is fed back to create repeats. 
+    - `Wet Level:` Volume level of the echo effect. 
+    - `High Cut:` Removes high frequencies from the echo. 
+- `Chorus:` Adds richness and width. 
+    - `Rate:` Speed of the chorus modulation. 
+    - `Depth:` Intensity of the pitch modulation. 
+    - `Mix:` Balance between dry and chorus signal. 
+    - `Voice Count:` Number of virtual voices in the chorus. 
+- `Distortion:` Adds harmonic saturation. 
+    - `Drive:` Amount of distortion applied to the signal. 
+    - `Tone:` EQ balance from dark to bright. 
+    - `Level:` Output volume of the effect. 
+    - `Type:` Character of the distortion algorithm. 
+- `Compressor:` Controls dynamic range. 
+    - `Threshold:` Level above which compression starts. 
+    - `Ratio:` How much the signal is compressed (4:1 means 4dB in = 1dB out). 
+    - `Attack:` How quickly the compressor responds to loud signals. 
+    - `Release:` How quickly the compressor stops compressing. 
+- `Equalizer:` Adjusts frequency response. 
+    - `Low (80Hz):` Boost or cut low frequencies (bass). 
+    - `Low-Mid (320Hz):` Boost or cut low-mid frequencies (warmth). 
+    - `Mid (1.25kHz):` Boost or cut mid frequencies (presence). 
+    - `High-Mid (5kHz):` Boost or cut high-mid frequencies (clarity). 
+    - `High (12.5kHz):` Boost or cut high frequencies (air/brightness). 
+- `Noise Gate:` Eliminates unwanted background noise. 
+    - `Threshold:` Level below which audio is gated (silenced). 
+    - `Ratio:` How aggressively the gate closes. 
+    - `Attack:` How quickly the gate opens. 
+    - `Release:` How quickly the gate closes. 
+- `Gain:` Adjusts overall volume level. 
+    - `Gain:` Amount of volume boost or cut. 
+- `Low Pass Filter:` Removes high frequencies above cutoff. 
+    - `Cutoff Frequency:` Frequency above which signals are filtered out. 
+    - `Resonance:` Emphasis at the cutoff frequency. 
+- `High Pass Filter:` Removes low frequencies below cutoff. 
+    - `Cutoff Frequency:` Frequency below which signals are filtered out. 
+    - `Resonance:` Emphasis at the cutoff frequency. 
+- `Bitcrush:` Adds lo-fi digital reduction. 
+    - `Bit Depth:` Number of bits for quantization (lower = more distorted). 
+- `Clipping:` Hard distortion by signal clipping. 
+    - `Threshold:` Level at which clipping occurs. 
+- `Limiter:` Prevents audio from exceeding threshold. 
+    - `Threshold:` Maximum output level. 
+    - `Release:` Time to return to normal after limiting. 
+- `Invert:` Flips signal polarity. 
+- `Ladder Filter:` Moog-style multimode filter. 
+    - `Cutoff Frequency:` Filter cutoff frequency. 
+    - `Resonance:` Filter resonance (emphasis at cutoff). 
+    - `Drive:` Amount of filter overdrive. 
+    - `Mode:` Filter mode (LPF=lowpass, HPF=highpass, BPF=bandpass, 12/24=slope). 
+- `Peak Filter:` Parametric EQ band. 
+    - `Frequency:` Center frequency of the peak. 
+    - `Gain:` Boost or cut at the center frequency. 
+    - `Q Factor:` Width of the frequency band (higher = narrower). 
+- `High Shelf Filter:` Boosts/cuts high frequencies. 
+    - `Cutoff Frequency:` Frequency where shelf begins. 
+    - `Gain:` Amount of boost or cut. 
+    - `Q Factor:` Sharpness of the transition. 
+- `Low Shelf Filter:` Boosts/cuts low frequencies. 
+    - `Cutoff Frequency:` Frequency where shelf begins. 
+    - `Gain:` Amount of boost or cut. 
+    - `Q Factor:` Sharpness of the transition. 
+- `Convolution:` Impulse response reverb/simulation. 
+    - `Impulse Response:` Type of acoustic space to simulate. 
+    - `Mix:` Balance between dry and processed signal. 
+- `MP3 Compressor:` Adds MP3 compression artifacts. 
+    - `VBR Quality:` MP3 VBR quality (0=highest, 9=lowest). 
+- `GSM Compressor:` 2G cellular phone compression.
 
 ***
 ### Advanced Settings
 
+- `UI Language:` Select the Web User Interface Language, currently there is only English, German and Japanese.
 - `Protocol:` rest (Use SIO if you want less delay but if you encounter any issues with SIO switch back to rest. Rest has slightly more delay than SIO)
-- `Crossfade length:` Controls how smoothly the AI stitches different processed parts "chunks" of your voice back together. 0.1 or 0.15 (0.1 for fastest voice, 0.15 for improved quality but increases delay by 50 ms)
+- `Crossfade Overlap:` Controls how smoothly the AI stitches different processed parts "chunks" of your voice back together. 0.1 or 0.15 (0.1 for fastest voice, 0.15 for improved quality but increases delay by 50 ms)
 - `SilenceFront:` Reduce GPU usage when idle. This only reduces GPU resources when you're not talking or making sounds
 - `Force FP32 mode:` on (THIS IS OFF BY DEFAULT! Turning this on improves stability. Increases VRAM usage by 200 MB)
 - `Disable JIT compilation:` off for faster loading speed of the program, on for slightly better performance (10-15 ms) for Nvidia only.
 - `Convert to ONNX:` Reduces delay and slightly reduces gpu usage. Enabling this increases CPU usage by around 5-10%. Reduces the quality of the voice a bit. If you decide to enable this, pair it with rmvpe_onnx for even less delay
 - `Protect:` Reduces the occurrence of robotic sibilants and robotic breathing, but also reduces the effect of the index file. Lower values increase this protection, higher values decrease it. The default value is 0.5, which means that the protection is disabled, reduce this value to 0.33 to enable it
+- `Interface - Switch To Classic UI:` It should use the same Web User Interface as the Original Wokada and Deiteris Fork, it's not suggested as it won't have all the new features, and is currently broken.
+- `Skip Pass through confirmation:` It will skip the confirmation when you enable Passthrough, not suggested.
+
 
 ***
-### Finding my own settings for Chunk
+### Finding my own settings for Chunk Size and Extra Processing Time
 
-First start with 500 ms, check what number your perf is and go closer to that number but not lower.
+First start with 500 ms, check what number your Perf (in the top right of the Performance Stats) is and go closer to that number but not lower.
 
 Example: if your perf is 200, go down to 250 with your chunk. Chunk affects perf value, and Extra as well.
 
-<img src="../wokada-deiteris-img/green.png" alt="Wokada Deiteris Fork Green Perf Value" width="170" height="auto">
+<img src="../wokada-tg-develop-img/green.png" alt="Wokada Tg-Develop's Fork Green Perf Value" width="170" height="auto">
 
 If your perf value is green, your selected chunk is stable. You can experiment and go down in chunk for less delay, or increase extra for more quality (would not recommend to go above 2.7s extra. Anything above uses more resource for no clear benefit).
 
-<img src="../wokada-deiteris-img/yellow.png" alt="Wokada Deiteris Fork Yellow Perf Value" width="170" height="auto">
+<img src="../wokada-tg-develop-img/yellow.png" alt="Wokada Tg-Develop's Fork Yellow Perf Value" width="170" height="auto">
 
 If your perf value is yellow, your selected chunk is enough, but audio may be unstable if you run other processes at the same time. Operation in this range will also incur high GPU usage. Increasing Chunk size or reducing Extra is recommended.
 
-<img src="../wokada-deiteris-img/red.png" alt="Wokada Deiteris Fork Red Perf Value" width="170" height="auto">
+<img src="../wokada-tg-develop-img/red.png" alt="Wokada Tg-Develop's Fork Red Perf Value" width="170" height="auto">
 
-If your perf value is red, the realtime voice changer is unstable. Increase chunk size or reduce Extra.
-
-***
-### Known working settings for Chunk and Extra
-
-!!! These settings are intentionally higher than what your GPU is capable of
-If you are playing a video game with the realtime voice changer, you will have to increase the chunk higher than what you usually can handle.
-This is because the game runs on GPU and the realtime voice changer aswell. The game will always take higher priority by default, so the listed settings are safe options that should run with most games.
-If you run into issues, you will need to lower quality and limit your FPS, or increase chunk. It is best to first tweak your game's settings first
-
-It is recommended to go up to Finding my own settings after you are comfortable with the program
-!!!
-
-+++ NVIDIA
-
-||| GPU
-:::content-left
-RTX xx90 (e.g. 3090)
-
-RTX xx80 Ti (e.g.3080 Ti)
-
-RTX xx80 (e.g. 3080)
-
-RTX xx70 Ti (e.g. 3070 Ti)
-
-RTX xx70 (e.g. 3070)
-
-RTX xx60 Ti (e.g. 3060 Ti)
-
-RTX xx60 (e.g. 3060)
-
-RTX xx50 (e.g. 3050)
-
-GTX 16xx-series
-
-GTX 10xx-series
-
-GTX 900-series
-
-MX 330
-:::
-||| Max Settings
-:::content-center
-30 - 60 ms chunk + 2.7s extra
-
-30 - 60 ms chunk + 2.7s extra
-
-100 - 120 + 2.7s extra
-
-50 - 80 ms chunk + 2.7s extra
-
-50 - 80 ms chunk + 2.7s extra
-
-50 - 90 ms chunk + 2.7s extra
-
-60 - 90 ms chunk + 2.7s extra
-
-110 - 130 ms chunk + 2.7s extra
-
-140 - 180 ms chunk + 2.7s extra
-
-200 ms chunk + 2.0s extra
-
-250 ms chunk + 1.0s extra
-
-500 ms chunk + 0.6s extra
-:::
-||| For gaming
-:::content-right
-perf number + 40 ms chunk
-
-perf number + 40 ms chunk
-
-perf number + 40 ms chunk
-
-perf number + 40 ms chunk
-
-perf number + 40 ms chunk
-
-perf number + 40 ms chunk
-
-perf number + 50 ms chunk
-
-perf number + 60 ms chunk
-
-perf number + 60 ms chunk
-
-perf number + 80 ms chunk
-
-perf number + 80 ms chunk
-
-perf number + 100 ms chunk
-:::
-|||
-
-+++ AMD
-||| GPU
-:::content-left
-7xxx XT cards
-
-6xxx XT cards
-
-5xxx XT cards
-
-7xxx cards
-
-6xxx cards
-
-5xxx cards
-
-RX 6600M
-
-RX 580
-
-RX 570
-
-RX 560
-:::
-||| Max Settings
-:::content-center
-60 - 80 ms + 2.7s extra
-
-70 - 100 ms + 2.7s extra
-
-80 - 120 ms + 2.7s extra
-
-*bugged* 256 ms + 2.7s extra
-
-128 ms + 2.7s extra
-
-140 - 200ms + 2.0s extra
-
-128ms + 2.7s extra
-
-perf number + 60 ms chunk
-
-perf number + 60 ms chunk
-
-perf number + 60 ms chunk
-:::
-||| For gaming
-:::content-right
-perf number + 40 ms chunk
-
-perf number + 40 ms chunk
-
-perf number + 40 ms chunk
-
-perf number + 60 ms chunk
-
-perf number + 60 ms chunk
-
-perf number + 60 ms chunk
-
-perf number + 60 ms chunk
-
-perf number + 60 ms chunk
-
-perf number + 60 ms chunk
-
-perf number + 80 ms chunk
-:::
-|||
-+++ AMD iGPU
-||| GPU
-:::content-left
-AMD Radeon(TM) Graphics (with Ryzen 7 5800H)
-
-AMD Radeon RX Vega 10 (with Ryzen 7 3700U)
-
-AMD Radeon RX Vega 8 (with Ryzen 3 3200G)
-:::
-||| Chunk + Extra
-256 ms + 2.7s extra
-
-600 ms + 0.6s extra
-
-700 ms + 1.0s extra
-|||
-+++ Mac & CPU's
-||| Mac and CPU
-Mac M1
-
-Mac M1 Air
-
-Mac M2
-
-Mac M2 Air
-
-Ryzen 7 5800x
-||| F0 + Chunk + Extra
-fcpe ; for chunk check the perf number and add 50 to it ; 1.0s extra
-
-fcpe + 230ms + 2.7s extra
-
-rmvpe_onnx + 650ms + 1.0s extra
-
-fcpe ; for chunk check the perf number and add 50 to it ; 2.7s extra
-
-rmvpe_onnx + 260 ms + 0.6s extra
-|||
-+++ 
+If your perf value is red, the realtime voice changer is unstable. Increase Chunk Size or reduce Extra Processing Time.
 
 ***
 ## Extras
@@ -719,16 +603,12 @@ rmvpe_onnx + 260 ms + 0.6s extra
 
 !!! What's the best choice for AMD users?
 This fork is a lot better for AMD GPU's compared to the original w-okada. On the original it requires converting models to onnx models which is annoying, requires more CPU and GPU resources, has a lot more delay and other little inconveniences/bugs.
-
-Example: AMD RX 6650 XT lowest latency is 298 ms chunk on original w-okada. On this fork lowest latency is around 60 - 80 ms chunk
 !!!
 
-!!! Which is better for NVIDIA original w-okada or Deiteris' fork?
-Deiteris' fork is better for NVIDIA users who normally use the prebuilt w-okada version, because this version uses GPU accelerated extra compared to the original which uses CPU.
+!!! Which is better for NVIDIA users?
+This fork is better for NVIDIA users who normally use the prebuilt w-okada version, because this version uses GPU accelerated extra compared to the original which uses CPU.
 
 For the RTX GPUs the delay performance differences are minimal, but quality performance is better. For older cards like GTX or MX, this fork performs better in all aspects.
-
-Example: NVIDIA RTX 3070 on prebuilt w-okada reaches 170 - 213 ms chunk latency. On manually set up environment of w-okada reaches 42 ms chunk latency. On this fork it can reach 30 - 38 ms chunk latency, depending on the extra set. Keep in mind these are settings tested to the max, without a video game or intense operations running in the background
 !!!
 
 ***
@@ -745,12 +625,12 @@ If you don't know how to open your sound devices, press **WIN+R**, type "**mmsys
 2.  Go to the last tab, `Advanced`, and set the sample rate to **48000 Hz**.
 3.  Ensure both options for **Exclusive Mode** are activated.
 
-<img src="../wokada-deiteris-img/microphone-properties.png" alt="Microphone Properties" width="450" height="auto">
+<img src="../wokada-tg-develop-img/microphone-properties.png" alt="Microphone Properties" width="450" height="auto">
 
 4.  Now, go to the `Playback` tab. Right-click on your virtual audio cable (e.g., Line 1) and go to `Properties`.
 5.  In the `Advanced` tab, adjust the sample rate to match your microphone: **48000 Hz**.
 
-<img src="../wokada-deiteris-img/vac-properties.png" alt="Virtual Audio Cable Properties" width="450" height="auto">
+<img src="../wokada-tg-develop-img/vac-properties.png" alt="Virtual Audio Cable Properties" width="450" height="auto">
 
 With the sample rates matched, you can now proceed to configure either WASAPI or ASIO.
 
@@ -766,8 +646,6 @@ Assuming you completed the prerequisite step, you can now select the correct inp
 - **S.R.:** Match the sample rate you chose above, which should be `48000`.
 - **Input:** `[WINDOWS WASAPI] Your Microphone`
 - **Output:** `[WINDOWS WASAPI] Your Virtual Audio Cable (e.g., Line 1)`
-
-<img src="../wokada-deiteris-img/wasapi-server.png" alt="Wokada WASAPI Server Settings" width="600" height="auto">
 
 !!!warning
 You cannot use the noise suppression (`sup1`, `sup2`) or `echo` functions in `SERVER` mode.
@@ -807,8 +685,6 @@ Run `FlexASIO GUI`. If it doesn't open, you missed installing the .NET runtime f
 - **Latency:** ✅ Set Input Latency: `0.2` ; ✅ Set Output Latency: `0.2`
 - **Output:** ✅ Set: `;` ✅ AutoConvert
 
-<img src="../wokada-deiteris-img/flexasio-gui.jpg" alt="FlexASIO GUI Configuration" width="600" height="auto">
-
 !!! Latency Explanation
 Having the input latency at 0.0 can make your microphone crackle. Using 0.1 often works fine. If you experience crackles, experiment with this value (e.g., 0.12, 0.15) until it stops. The lower you can go, the better. If you don't want to experiment, you can keep it at `0.2`.
 !!!
@@ -818,7 +694,7 @@ Click **SAVE TO DEFAULT FLEXASIO.TOML**. Do not forget this step. You can close 
 
 #### Step 4: Setting it up on the voice changer
 !!!warning
-The Deiteris Fork works with ASIO, while some older versions of the original w-okada do not.
+The Tg-Develop's Fork works with ASIO, while some older versions of the original w-okada do not.
 !!!
 In the voice changer app:
 - Select **AUDIO:** `Server`
@@ -827,8 +703,6 @@ In the voice changer app:
 - **Ch.:** For both input and output, it's best to leave them to "default", the numbers are for true asio devices which flex isnt.
 - **Monitor:** You can use the WASAPI Windows, you could also use windows directsound but that might cause an issue if matching sample rates doesnt fix it.
 
-
-<img src="../wokada-deiteris-img/flexasio-server.png" alt="Wokada FlexASIO Server Settings" width="600" height="auto">
 
 Then, on your game or Discord, you select:
 
@@ -857,7 +731,7 @@ Retry with a better connection later.
 !!! Method 2
 1. Go to the "pretrain" folder in the MMVCServerSIO folder.
 2. Delete everything inside it if there is anything.
-3. Download the [Zipped Version of the Pretrained folder](https://github.com/Nick088Official/Wokada-Deiteris-Fork-Pretrain/releases/download/b2332/pretrain.zip)
+3. Download the [Zipped Version of the Pretrained folder](https://github.com/Nick088Official/Wokada-Tg-Develop-Fork-Pretrain/releases/download/b2364/pretrain.zip)
 4. Extract the pretrain.zip, be sure the pretrain folder contains only the files, not a pretrain folder inside another pretrain folder with the files.
 5. Then run MMVCServerSIO.exe again, this time it should work.
 !!!
@@ -916,11 +790,8 @@ RVC works by downsampling your audio voice to 16khz because f0 estimators only w
 
 ***
 ### Are there unique Voice Models?
-RVC Voice Models need to be trained on something, so the models themselves can't be unique, but you can use the [Merge Lab](http://docs.aihub.gg/realtime-voice-changer/local/deiteris-w-okada-fork/#merging-models-merge-lab) to create a new unique merged model.
+RVC Voice Models need to be trained on something, so the models themselves can't be unique, but you can use the [Merge Lab](http://docs.aihub.gg/realtime-voice-changer/local/tg-develops-w-okada-fork/#merging-models-merge-lab) to create a new unique merged model.
 
-***
-### Is there a way to use Spin embedder rvc voice models?
-Wokada Deiteris Fork doesn't support models trained with the Spin embedder (which are very few), but there is a Pull Request for that https://github.com/deiteris/voice-changer/pull/213, which is just the [Tg-Develop's Fork](http://docs.aihub.gg/realtime-voice-changer/local/tg-develops-w-okada-fork/).
 
 ***
 ###### ‎

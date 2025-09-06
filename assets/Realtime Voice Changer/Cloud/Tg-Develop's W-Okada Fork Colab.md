@@ -1,6 +1,6 @@
 ---
 icon: chevron-right
-order: 1000
+order: 2000
 ---
 
 ``Last update: September 6, 2025``
@@ -11,7 +11,7 @@ order: 1000
 :::content-center
 ## Introduction ‎
 :::
-- This is a <u>[cloud-based](http://docs.aihub.gg/extra/glossary/#cloud-based)</u> alternative to run [Wokada Deiteris Fork](https://docs.aihub.gg/realtime-voice-changer/local/deiteris-w-okada-fork/#virtual-audio-cable), Realtime Voice Changer for calls/games, only for people who don't have a good PC GPU, via the <u>[Google Colab Service](http://docs.aihub.gg/extra/glossary/#google-colab)</u>.
+- This is a <u>[cloud-based](http://docs.aihub.gg/extra/glossary/#cloud-based)</u> alternative to run [Wokada Tg-Develop's Fork](https://docs.aihub.gg/realtime-voice-changer/local/tg-develops-w-okada-fork/#virtual-audio-cable), Realtime Voice Changer for calls/games, only for people who don't have a good PC GPU, via the <u>[Google Colab Service](http://docs.aihub.gg/extra/glossary/#google-colab)</u>.
 
 !!!danger Google Colab Service
 **Check the <u>[Google Colab Glossary](http://docs.aihub.gg/extra/glossary/#google-colab)</u> for more info on Free Tier, Limits, Verification, Pricing and other things.**
@@ -70,7 +70,7 @@ sudo pacman -Syu portaudio
 ## Installation
 ###### ‎  
 #### 1. <u>Installation Cells</u>
-a. Click <u>[here](https://colab.research.google.com/github/deiteris/voice-changer/blob/master-custom/Colab_RealtimeVoiceChanger.ipynb)</u> to access the colab. Then starting from the top run the first cell:
+a. Click <u>[here](https://colab.research.google.com/github/tg-develop/voice-changer/blob/master-custom/Colab_RealtimeVoiceChanger.ipynb)</u> to access the colab. Then starting from the top run the first cell:
 
    <img src="../colab-img/colab1.png" alt="image" width="900" height=""> 
 
@@ -119,7 +119,7 @@ Now that you have the web interface running via Kaggle, the rest of the process 
 
 For *mostly* all subsequent steps, including audio routing, application settings, and model usage, please continue by following the Local PC guide.
 
-[!button text="Continue with the Local PC Guide" icon="arrow-right" target="blank"](https://docs.aihub.gg/realtime-voice-changer/local/deiteris-w-okada-fork/#voice-models)
+[!button text="Continue with the Local PC Guide" icon="arrow-right" target="blank"](https://docs.aihub.gg/realtime-voice-changer/local/tg-develops-w-okada-fork/#voice-models)
 
 
 ***
