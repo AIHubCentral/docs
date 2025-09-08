@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.810668148174">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.810669109942">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -34,11 +34,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../../img/b.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.11.0.810668148174" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.11.0.810669109942" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.810668148174" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.810669109942" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.810668148174" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.810669109942" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -361,6 +361,8 @@
 <ul>
 <li><p>Each one works in its own way, and has its pros &amp; cons.</p>
 </li>
+<li><p>There&#x27;s a <u><a href="https://github.com/lars76/pitch-benchmark">Pitch Benchmark</a></u>, but this is generally speaking and not only taken in the context of RVC.</p>
+</li>
 <li><p>As the majority of them are obsolete, we&#x27;ll focus on the 3 best ones: <strong>RMVPE</strong>, <strong>Mangio-Crepe</strong> &amp; <strong>FCPE</strong>.</p>
 <doc-panel id="rmvpe" collapsed>
     <template #title><em>RMVPE</em></template>
@@ -436,15 +438,36 @@
     </h6>
 </doc-anchor-target>
 </doc-panel>
+<doc-panel id="switft" collapsed>
+    <template #title><em>Switft</em></template>
+<doc-anchor-target id="section-11">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-11">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+<ul>
+<li>Pretty new</li>
+<li>Might be more precise than RMVPE, but it&#x27;s not as much tested yet for RVC</li>
+<li>Fast, which is good for realtime</li>
+<li>Check <a href="https://github.com/lars76/swift-f0/">https://github.com/lars76/swift-f0/</a> for more info</li>
+</ul>
+<doc-anchor-target id="section-12">
+    <h6>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-12">#</doc-anchor-trigger>
+        <span>‎</span>
+    </h6>
+</doc-anchor-target>
+</doc-panel>
 </li>
 </ul>
 <blockquote>
 <p>They also work the same for training models.</p>
 </blockquote>
 <hr>
-<doc-anchor-target id="section-11">
+<doc-anchor-target id="section-13">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-11">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-13">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -469,9 +492,9 @@
 <li><p>This model analyzes an audio sample to extract a &quot;speaker embedding&quot;, it&#x27;s like a digital fingerprint of a voice&#x27;s unique timbre and characteristics.</p>
 <doc-panel id="contentvec" collapsed>
     <template #title><em>ContentVec</em></template>
-<doc-anchor-target id="section-12">
+<doc-anchor-target id="section-14">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-12">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-14">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -484,9 +507,9 @@
 </doc-panel>
 <doc-panel id="chinese-hubert-base" collapsed>
     <template #title><em>Chinese-Hubert-Base</em></template>
-<doc-anchor-target id="section-13">
+<doc-anchor-target id="section-15">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-13">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-15">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -498,9 +521,9 @@
 </doc-panel>
 <doc-panel id="japanese-hubert-base" collapsed>
     <template #title><em>Japanese-Hubert-Base</em></template>
-<doc-anchor-target id="section-14">
+<doc-anchor-target id="section-16">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-14">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-16">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -512,9 +535,9 @@
 </doc-panel>
 <doc-panel id="korean-hubert-base" collapsed>
     <template #title><em>Korean-Hubert-Base</em></template>
-<doc-anchor-target id="section-15">
+<doc-anchor-target id="section-17">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-15">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-17">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -526,9 +549,9 @@
 </doc-panel>
 <doc-panel id="spin" collapsed>
     <template #title><em>Spin</em></template>
-<doc-anchor-target id="section-16">
+<doc-anchor-target id="section-18">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-16">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-18">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -542,9 +565,9 @@
 </doc-panel>
 <doc-panel id="custom" collapsed>
     <template #title><em>Custom</em></template>
-<doc-anchor-target id="section-17">
+<doc-anchor-target id="section-19">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-17">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-19">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -555,9 +578,9 @@
 </li>
 </ul>
 <hr>
-<doc-anchor-target id="section-18">
+<doc-anchor-target id="section-20">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-18">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-20">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -587,9 +610,9 @@
 <p>Be careful, lowering it too much will make it voice sound &quot;inhumane&quot; &amp; suppress part of the words.</p>
 </blockquote>
 <hr>
-<doc-anchor-target id="section-19">
+<doc-anchor-target id="section-21">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-19">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-21">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -618,9 +641,9 @@
 <p>Basically, leave it at 0 if you want the audio to try to keep its original volume.</p>
 </blockquote>
 <hr>
-<doc-anchor-target id="section-20">
+<doc-anchor-target id="section-22">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-20">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-22">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -648,9 +671,9 @@
 </li>
 </ul>
 <hr>
-<doc-anchor-target id="section-21">
+<doc-anchor-target id="section-23">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-21">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-23">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
