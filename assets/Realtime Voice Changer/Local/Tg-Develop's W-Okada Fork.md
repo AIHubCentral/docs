@@ -40,7 +40,7 @@ Also, **HuggingFace has a <u>[Security Scanner](https://huggingface.co/docs/hub/
 - Lets you choose the Model Embedder Type, including ContentVec & Spin.
 ||| ❌ **CONS** 
 - Uses a Web User Interface, having issues on some browsers, and bugs with renaming or deleting models on it
-- Doesn't have a very active development recently
+- Doesn't have a very active development recently, it's more of a personal public fork with some Quality Of Life updates of the Wokada Deiteris' Fork, please don't have too much expectations and don't disturb the developer about it
 - Has Cut Off Issues Using an Extra superior to 2.7
 |||
 ===
