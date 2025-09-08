@@ -71,6 +71,8 @@ order: 100
 
 - Each one works in its own way, and has its pros & cons.       
 
+- There's a <u>[Pitch Benchmark](https://github.com/lars76/pitch-benchmark)</u>, but this is generally speaking and not only taken in the context of RVC.
+
 - As the majority of them are obsolete, we'll focus on the 3 best ones: **RMVPE**, **Mangio-Crepe** & **FCPE**.
 
     ==- *RMVPE*
@@ -109,6 +111,16 @@ order: 100
     - Very fast, less precise and prone to noise
     - Useful for Realtime. If you have poor performance in Realtime, use this over RMVPE
     - Might be better with human softness
+    ###### ‎ 
+
+    ===
+
+    ==- *Switft*
+    ###### ‎  
+    - Pretty new
+    - Might be more precise than RMVPE, but it's not as much tested yet for RVC
+    - Fast, which is good for realtime
+    - Check https://github.com/lars76/swift-f0/ for more info
     ###### ‎ 
 
     ===
