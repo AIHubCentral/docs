@@ -98,41 +98,57 @@ Download this: <u>[VAC Lite (Virtual-Audio-Cable by Muzychenko)](https://softwar
 
 ***
 
-## Windows
+## Download & Installation
 
 - Make sure you have a Nvidia and a good enough one to run Vonovox. You don't know what GPU you have? Open Task Manager > Performance tab and check for your GPU0 and GPU1 names.
 
-<img src="../wokada-img/cap.png" alt="Task Manager" width="600" height="auto">
+<img src="../vonovox-img/cap.png" alt="Task Manager" width="600" height="auto">
 
-####
+!!!danger Unsupported Hardware
+Use Cloud if you:
+- Have an integrated GPU (AMD Radeon Graphics ; AMD Radeon Vega ; Intel UHD).
+- Don't have a GPU at all.
+- Hve a GTX 800 card or below.
 !!!
-Use Online Hosted if you have an integrated GPU (AMD Radeon Graphics ; AMD Radeon Vega ; Intel UHD) and if you do not have a GPU at all
-!!!
+
 ***
 
-### Download NVIDIA on Windows
-
+!!!warning Before Downloading:
 - Make sure you have the <u>[Microsoft Visual C++ Redistributable Package](https://aka.ms/vs/16/release/vc_redist.x64.exe)</u>, if you don't already.
 
+- It's suggested to use <u>[7zip](https://www.7-zip.org/)</u> or <u>[WinRAR](https://www.win-rar.com/download.html)</u> for extracting / unzipping such large files.
+!!!
+
+***
+### Precompiled Setup NVIDIA on Windows
+
+!!!tip Why it's recommended:
+- Easier.
+- Can help users who have 3rd-party/modifed-versions of Windows like Tiny11.
+- Can help users with weird issues related to curl certificates or no cuda available despite having a modern Nvidia GPU.
+!!!
+
+- Download the Latest [Precompiled Version of Vonovox](https://huggingface.co/dr87/vonovox/tree/main/latest)
+
+- After downloading, extract the zip file.
+
+***
+### Manual Setup NVIDIA on Windows
 
 - Go to Vonovox's <u>[Github Repository](https://github.com/dr87/Vonovox/releases)</u> and download the Latest Stable Release Source Code.
 
 - You could also *optionally* get access to *Beta* / Early Access versions via <u>[Becoming a Vonovox Supporter (and also gaining Premium Effects)](https://www.patreon.com/dr87/membership)</u> or checking for any Free Versions in the <u>[Vonovox Official Discord Server](https://discord.gg/c9mbMGxEbR)</u>. They may have bugs, fixes or settings/options not explained in the guide yet.
 
-!!!danger
-If you have a GTX 800 card or below you can't use Vonovox.
-!!!
+- After downloading, extract the zip file. Open the folder and run `setup.bat`.
+
+- Vonovox will start downloading everything it needs to run. Be patient as it can take up to some minutes to download everything it needs depending on your internet speed.
+
+- Once it's done downloading everything it will display `Setup complete!` in the command line.
 
 ***
 ### Opening on Windows
 
-- First Make sure you have <u>[7zip](https://www.7-zip.org/)</u> or <u>[WinRAR](https://www.win-rar.com/download.html)</u> for extracting / unzipping.
-
-- After the download extract the zip file. Open the folders until you see an .bat file called `setup.bat` and run that.
-
-- Vonovox will start downloading everything it needs to run. Be patient as it can take up to 5 minutes to download everything it needs.
-
-- Once it's done downloading everything it will display `Setup complete!` in the command line. You can now go ahead and run `start.bat`. 
+Run `start.bat` in the folder. 
 
 ***
 ### Opening on Multi-GPU Systems
@@ -153,7 +169,7 @@ This will hide the other GPU from being used by the application which is require
 
 ### Adding Models
 
-<img src="../vonovox-img/select.png" alt="Add Models in Vonovox" width="800" height="auto">
+<img src="../vonovox-img/add-model.png" alt="Add Models in Vonovox" width="800" height="auto">
 
 #####
 
