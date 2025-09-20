@@ -204,13 +204,17 @@ On discord and games, you select:
 ### Settings
 
 ***
-#### `Current Model Settings:`
+#### `Per Model Settings:`
 
 - `Embedder:` Select between contentvec or spin trained models. Most current models are trained on contentvec. Make sure you read the model's description to find out what embedder it uses. Spin has kinda better breaths, more robust to noise, has some training related differences, but it's less used and newer.
+
+- `Output volume:` Controls how loud the output volume is.
 
 - `Pitch:` This is the pitch. Going into negative will make it lower pitch (masculine), going higher will make it higher pitch (feminine). If you have a male voice using a female voice, aim for 10 - 14, this depends on your voice, try around those numbers until you find a sweet spot.
 
 - `Formant:` Alters harmonic frequencies and changes the voice timbre without affecting the pitch (AKA Formant Shift).
+
+- `Index Rate:` This controls the accent of the voice model. In most cases, using Index on Realtime Voice Changer can add realism if you speak the language the model was trained in. If you have a heavy foreign accent, you may use this at a low rate. Beware, this increases CPU usage
 
 ***
 #### `Audio Device Settings:`
@@ -225,7 +229,7 @@ On discord and games, you select:
 
 - `Pitch Smoothing Factor:` Pitch smoothing will dampen pitch changes. It still follows the exact curve of the f0 predictor allowing it to maintain 100% accuracy, just to a lower magnitude. This allows normal speaking voices to have better stability, since sometimes f0 can be over aggressive and cause pitch wobble on minor pitch fluctuations.
 
-- `Output volume:` Controls how loud the output volume is.
+- `Input volume:` Controls how loud the input volume is.
 
 ***
 #### `Noise Reduction:`
