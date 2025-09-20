@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.811683343647">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.811696768512">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -34,11 +34,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../../img/b.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.11.0.811683343647" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.11.0.811696768512" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.811683343647" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.811696768512" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.811683343647" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.811696768512" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -597,18 +597,22 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
     </h3>
 </doc-anchor-target>
 <hr>
-<doc-anchor-target id="current-model-settings">
+<doc-anchor-target id="per-model-settings">
     <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#current-model-settings">#</doc-anchor-trigger>
-        <span><code v-pre>Current Model Settings:</code></span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#per-model-settings">#</doc-anchor-trigger>
+        <span><code v-pre>Per Model Settings:</code></span>
     </h4>
 </doc-anchor-target>
 <ul>
 <li><p><code v-pre>Embedder:</code> Select between contentvec or spin trained models. Most current models are trained on contentvec. Make sure you read the model&#x27;s description to find out what embedder it uses. Spin has kinda better breaths, more robust to noise, has some training related differences, but it&#x27;s less used and newer.</p>
 </li>
+<li><p><code v-pre>Output volume:</code> Controls how loud the output volume is.</p>
+</li>
 <li><p><code v-pre>Pitch:</code> This is the pitch. Going into negative will make it lower pitch (masculine), going higher will make it higher pitch (feminine). If you have a male voice using a female voice, aim for 10 - 14, this depends on your voice, try around those numbers until you find a sweet spot.</p>
 </li>
 <li><p><code v-pre>Formant:</code> Alters harmonic frequencies and changes the voice timbre without affecting the pitch (AKA Formant Shift).</p>
+</li>
+<li><p><code v-pre>Index Rate:</code> This controls the accent of the voice model. In most cases, using Index on Realtime Voice Changer can add realism if you speak the language the model was trained in. If you have a heavy foreign accent, you may use this at a low rate. Beware, this increases CPU usage</p>
 </li>
 </ul>
 <hr>
@@ -629,7 +633,7 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
 </li>
 <li><p><code v-pre>Pitch Smoothing Factor:</code> Pitch smoothing will dampen pitch changes. It still follows the exact curve of the f0 predictor allowing it to maintain 100% accuracy, just to a lower magnitude. This allows normal speaking voices to have better stability, since sometimes f0 can be over aggressive and cause pitch wobble on minor pitch fluctuations.</p>
 </li>
-<li><p><code v-pre>Output volume:</code> Controls how loud the output volume is.</p>
+<li><p><code v-pre>Input volume:</code> Controls how loud the input volume is.</p>
 </li>
 </ul>
 <hr>
