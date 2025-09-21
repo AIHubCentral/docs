@@ -38,7 +38,6 @@ Also, **HuggingFace has a <u>[Security Scanner](https://huggingface.co/docs/hub/
 - Currently stable
 - Faster interface
 - Automatic model upload
-- Has Mangio-Crepe
 - User-friendly UI
 ||| ❌ **CONS** 
 - Can't Train models
