@@ -125,7 +125,7 @@ a. Navigate to the third code cell, titled "Start Server **using Tunnels**". Thi
 b. **Select a Tunnel:** A tunnel securely exposes the application running in your private cloud environment to the public internet. The notebook gives you five different services to do this. Choose one from the `Tunnel` code menu in the code cell.
 
     - **Port Viewer (Recommended & Default method)**
-        - **How it works:** This is a built-in Lightning.AI feature. It's the most straightforward method as it doesn't require any external accounts or tokens.
+        - **How it works:** This is a built-in Lightning.AI feature. It's one of the most straightforward method as it doesn't require any external accounts or tokens.
         - **Steps:**
             1. Select "Port Viewer" from the `Tunnel` code.
             2. Click the + at the bottom of the right tab, click on Web Apps and install Port Viewer.
@@ -135,6 +135,12 @@ b. **Select a Tunnel:** A tunnel securely exposes the application running in you
             6. Enter `18888` as the Port Number and optionally give it a name (e.g., "Voice Changer").
             7. Click your Port in Port Viewer, you can also click Open to open it in an external tab.
             8. You can optionally go back to the Jupyter session in the right-hand sidebar of the Lightning.AI interface, to check if any error appears in the code output.
+
+    - **Gradio (Fast, Popular & Reliable)**
+        - **How it works:** This is a built-in <u>[Gradio](http://docs.aihub.gg/extra/glossary/#gradio)</u> feature. It's one of the most straightforward method as it doesn't require any external accounts or tokens.
+        - **Steps:**
+            1. Select "Gradio" from the `Tunnel` code.
+            2. Run the cell. The public Gradio URL (ending in `gradio.live`) will be printed in the output once the server is ready. Click on it to access the UI.
 
     - **Ngrok (Fast, Popular & Reliable)**
         - **How it works:** Ngrok is a popular service that creates secure tunnels. It requires a free account and an authentication token. It has a 1GB Bandwidth Free Monthly Limit https://ngrok.com/docs/pricing-limits/free-plan-limits/.
