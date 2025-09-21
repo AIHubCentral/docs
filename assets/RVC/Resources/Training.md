@@ -342,6 +342,10 @@ A: There is no "best pretrain" it all depends on your needs and what you're ok w
 
 Each of these are different in fidelity and require their own pretrains to use.
 
+!!!warning
+Applio might have currently hidden the other vocoders, except HiFi-GAN which is used by default, as the others might be too much experimental and give issues. You could also check the "exp/vocoders" branch.
+!!!
+
 ### HiFI-GAN
 
 The first vocoder choice is HiFi-GAN the original GAN used in RVC which is combatible with all version of RVC and forks. HiFI-GAN is pretty basic and has muddy high ends.
