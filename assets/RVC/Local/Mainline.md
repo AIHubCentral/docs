@@ -32,6 +32,7 @@ order: 2000
 - Has less features.     
 - Manual model upload.
 - Won't work for RTX 50 Series GPUs.
+- Older dependencies.
 ||| 
 ===
 ***

@@ -42,8 +42,6 @@ Also, **HuggingFace has a <u>[Security Scanner](https://huggingface.co/docs/hub/
 - Has an active development
 - Currently stable
 - Faster interface
-- Faster Training
-- Has (not Mangio) Crepe for Training
 - TTS features            
 - Automatic model upload
 - User-friendly UI
