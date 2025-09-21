@@ -943,14 +943,41 @@ You can find an extremely long and complex guide by the [Audio Separation's Disc
     ‎  
     <img src="../datasets-img/truncnew.png" alt="image" width="420" height="auto">    
     ***
-    ‎
-    #### Step 2.1: Audio Normalization (Optional)  
-- Go go to Effects -> Volume and Compression -> Loudness Normalization
-- Use these values:     
-‎       
-<img src="../datasets-img/norm.png" alt="image" width="500" height="auto"> 
+‎
+***
 
-> LUFS are used over db because hifigan needs perceptual quality and db doesnt offer that.
+### Step 2.1: Audio Normalization (Optional)
+
+- LUFS are used over db because hifigan needs perceptual quality and db doesnt offer that.
+- You can perform this step directly within Applio or using Audacity (for any RVCs).
+
+***
+#### Method 1: Using Applio's Built-in Normalization
+
+Applio includes a convenient built-in normalization feature that can process your audio during the slicing step.
+
+1.  Go to Applio -> Training -> Preprocess -> Advanced Settings -> Normalization mode.
+2.  Select the **`post`** option.
+
+This will normalize each audio slice individually after it has been separated from the main file.
+
+<img src="../datasets-img/applio-normalization.png" alt="Applio Normalization Setting" width="500" height="auto">
+
+***
+#### Method 2: Using Audacity
+
+!!!danger
+The model learns the (normalized) sliced audios, not the whole dataset at once, otherwise the model doesn't properly learn the frequencies. For using this method, you would have to manually 3 seconds slice dataset which might not be perfect, unlike Applio which already slices it (unless you manually turn that off) and then normalizes it with the other method. Usually the Applio method is more suggested
+!!!
+
+1.  Open your audio file in Audacity.
+2.  Go to `Effects` -> `Volume and Compression` -> `Loudness Normalization`.
+3.  Use the following values:
+    - **Normalize:** perceived loudness
+    - **Loudness:** -23.0 LUFS
+    - **Treat mono as dual-mono:** checked (recommended)
+
+<img src="../datasets-img/norm.png" alt="Audacity Loudness Normalization Settings" width="500" height="auto">
 
 ***
 #### Step 2.2: Combining Audio  
