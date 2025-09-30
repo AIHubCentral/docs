@@ -104,6 +104,10 @@ You can find all of the community made pretrains in the "pretrain-models" channe
 
 Here is a list of all publicly available pretrains: 
 
+!!!warning About the current publicily available pretrains
+Most of the publicily available pretrains, have been trained with a version inferior to Applio 3.4.0, which was before of the fix the broken discriminator.
+!!!
+
 ||| TITAN by blaise-tk
 TITAN is a fine-tuned based on the original RVC V2 pretrained, leveraging an 11.15-hours dataset sourced from Expresso. It gives cleaner results compared to the original pretrained, also handles the accent and noise better due to its robustness, being able to generate high quality results. Like Ov2 Super, it allows models to be trained with few epochs.
 
@@ -337,6 +341,10 @@ A: There is no "best pretrain" it all depends on your needs and what you're ok w
     - RefineGAN
 
 Each of these are different in fidelity and require their own pretrains to use.
+
+!!!warning
+Applio might have currently hidden the other vocoders, except HiFi-GAN which is used by default, as the others might be too much experimental and give issues. You could also check the "exp/vocoders" branch.
+!!!
 
 ### HiFI-GAN
 

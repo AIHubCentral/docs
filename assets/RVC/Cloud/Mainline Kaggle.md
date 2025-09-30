@@ -39,7 +39,6 @@ You only get 30 free GPU hours per week.
 ||| ❌ **CONS**       
 - Reached End Of Life.
 - Takes some time to set up.      
-- Doesn't have Mangio-Crepe
  
 |||
 ===

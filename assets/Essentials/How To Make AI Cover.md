@@ -58,9 +58,8 @@ For local users, first ensure you meet the <u>[minimum requirements](https://doc
 ‎   
 - Regarding what to do with the **backing vocals**, you have 4 options:
     1. Simply leave the original ones in.
-    2. Convert them using <u>[Mangio-Crepe](https://docs.aihub.gg/rvc/resources/inference-settings/#mangio-crepe)</u> with a higher hop length.
-    3. Record yourself singing them & convert the audio with RVC.
-    4. Make vocals from scratch using a voice synthesizer (like SynthV) & convert them with RVC.
+    2. Record yourself singing them & convert the audio with RVC.
+    3. Make vocals from scratch using a voice synthesizer (like SynthV) & convert them with RVC.
 ***
 ###### ‎
 :::content-center

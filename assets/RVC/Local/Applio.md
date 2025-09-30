@@ -14,7 +14,7 @@ order: 3000
 :::content-center
 ## Introduction ‎
 :::
-- Applio is a VITS-based Voice Conversion Tool developed by the <u>[IA Hispano</u>](https://github.com/IAHispano)</u> team. It's a <u>[Fork</u>](https://docs.aihub.gg/essentials/whats-rvc/#forks) of Original/Mainline RVC.
+- Applio is a <u>[Fork</u>](https://docs.aihub.gg/essentials/whats-rvc/#forks) of <u>[Original/Mainline RVC](https://docs.aihub.gg/rvc/local/mainline/)</u>, developed by the <u>[IA Hispano</u>](https://github.com/IAHispano)</u> team. It's a
 
 - It's liked for its great **UI**, **performance** improvements and **lots** of extra features, such as TTS (with RVC models too), plugins, automatic model upload, customizable theme & more.
 
@@ -42,8 +42,6 @@ Also, **HuggingFace has a <u>[Security Scanner](https://huggingface.co/docs/hub/
 - Has an active development
 - Currently stable
 - Faster interface
-- Faster Training
-- Has (not Mangio) Crepe for Training
 - TTS features            
 - Automatic model upload
 - User-friendly UI

@@ -65,7 +65,7 @@ To upload your Voice Models in the <u>[AI HUB Discord Server](https://discord.gg
 ###### ‎ 
 #### :icon-chevron-right: An outdated extraction method was used.
 {.list-icon}
-- :icon-check-circle: Only **Mangio-Crepe** & **RMVPE** are allowed. Learn about them <u>[here](https://docs.aihub.gg/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u>
+- :icon-check-circle: Only **Crepe** & **RMVPE** are allowed. Learn about them <u>[here](https://docs.aihub.gg/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u>
 
 - :icon-x-circle: Harvest, Dio, Crepe-Tiny, PM, etc. are obsolete.
 

@@ -73,7 +73,7 @@ order: 100
 
 - There's a <u>[Pitch Benchmark](https://github.com/lars76/pitch-benchmark)</u>, but this is generally speaking and not only taken in the context of RVC.
 
-- As the majority of them are obsolete, we'll focus on the 3 best ones: **RMVPE**, **Mangio-Crepe** & **FCPE**.
+- As the majority of them are obsolete, we'll focus on the 3 best ones: **RMVPE**, **Crepe** & **FCPE**.
 
     ==- *RMVPE*
     ###### ‎       

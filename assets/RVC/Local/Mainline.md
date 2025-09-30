@@ -30,9 +30,9 @@ order: 2000
 ||| ❌ **CONS** 
 - Doesn't have an active development.
 - Has less features.     
-- Doesn't include <u>[Mangio-Crepe</u>](https://docs.aihub.gg/rvc/resources/inference-settings/#pitch-extraction-algorithm).      
 - Manual model upload.
 - Won't work for RTX 50 Series GPUs.
+- Older dependencies.
 ||| 
 ===
 ***

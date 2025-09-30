@@ -33,7 +33,6 @@ The Hina Modified Mainline Google Colab has reached EOL (End Of Life), meaning i
 - Inconvenient.   
 - Takes some time to set up.      
 - You can't leave training unsupervised.
-- Doesn't have Mangio-crepe.
 |||
 ===
 ***
