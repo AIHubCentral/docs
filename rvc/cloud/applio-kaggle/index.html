@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.812989281998">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.813001881547">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -34,11 +34,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../../img/b.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.11.0.812989281998" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.11.0.813001881547" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.812989281998" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.813001881547" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.812989281998" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.813001881547" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -481,17 +481,30 @@ g: (Optional) To ensure your session doesn&#x27;t time out during long training 
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-            <h5>Why Gradio + LocalTunnel is Default and Ngrok isn&#x27;t?</h5>
-<p>Gradio + LocalTunnel is the default tunnel option. Ngrok has significantly lowered its free tier request rate limit from 4k to 120, which can cause connection issues. If you still wish to use Ngrok, you may need a paid plan for stable performance, or use to use it for free you could try to open the Ngrok Applio Tunnel, interact with anything to get the connection errored out issue, quickly refresh the page to see the request per minute error, then after 1 minute refresh the page and everything should be fine.</p>
+            <h5>Warning about Tunneling Services Limitations</h5>
+<p>Keep in mind that all free tunneling methods, including Ngrok, have limitations and may stop working unexpectedly from one day to the next. If you get an Ngrok rate limit issue, to use it for free you could try to open the Ngrok Applio Tunnel, interact with anything to get the connection errored out issue, quickly refresh the page to see the request per minute error, then after 1 minute refresh the page and everything should be fine.</p>
         </div>
     </div>
 </div>
 <ol type="a" start="2">
 <li><p><strong>Select a Tunnel:</strong> A tunnel securely exposes the application running in your private cloud environment to the public internet. The notebook gives you four different services to do this. Choose one from the <code v-pre>Tunnel</code> dropdown menu in the code cell.</p>
 <ul>
-<li><p><strong>Gradio + LocalTunnel (Recommended &amp; Default method)</strong></p>
+<li><p><strong>Ngrok (Recommended &amp; Default method)</strong></p>
 <ul>
-<li><strong>How it works:</strong> This is the default and recommended method. It uses Gradio&#x27;s built-in tunnel for the main Applio interface and LocalTunnel for the Tensorboard and Filebrowser services. It does not require any external accounts or tokens.</li>
+<li><strong>How it works:</strong> This is the default and recommended method. Ngrok is a popular service that creates secure tunnels. It requires a free account and an authentication token. Note that the free tier has limitations on request rates which can sometimes cause interruptions.</li>
+<li><strong>Steps:</strong>
+<ol>
+<li>Go to the <a href="https://dashboard.ngrok.com/get-started/your-authtoken">Ngrok Dashboard</a> to get your free authtoken.</li>
+<li>In the notebook cell, paste your token into the <code v-pre>ngrok_authtoken</code> field.</li>
+<li>Select &quot;Ngrok&quot; from the <code v-pre>Tunnel</code> dropdown.</li>
+<li>Run the cell. The public Ngrok URLs for Applio, Tensorboard, and the Filebrowser will be printed in the output once the server is ready. Click on them to access the services.</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><p>**Gradio + LocalTunnel (No Account &amp; Password Protected) **</p>
+<ul>
+<li><strong>How it works:</strong> It uses Gradio&#x27;s built-in tunnel for the main Applio interface and LocalTunnel for the Tensorboard and Filebrowser services. It does not require any external accounts or tokens.</li>
 <li><strong>Steps:</strong>
 <ol>
 <li>Select &quot;Gradio + LocalTunnel&quot; from the <code v-pre>Tunnel</code> dropdown.</li>
@@ -499,19 +512,6 @@ g: (Optional) To ensure your session doesn&#x27;t time out during long training 
 <li>Click the <strong>Gradio Public URL</strong> to open the Applio UI.</li>
 <li>To access Tensorboard or the Filebrowser, click their respective <strong>LocalTunnel Public URL</strong>. A new page will ask for a password.</li>
 <li>Copy the <strong>LocalTunnels Password</strong> from the notebook output and paste it into the password prompt in your browser.</li>
-</ol>
-</li>
-</ul>
-</li>
-<li><p><strong>Ngrok (Fast, Popular &amp; Reliable)</strong></p>
-<ul>
-<li><strong>How it works:</strong> Ngrok is a popular service that creates secure tunnels. It requires a free account and an authentication token. Note that the free tier has limitations on request rates which can sometimes cause interruptions.</li>
-<li><strong>Steps:</strong>
-<ol>
-<li>Go to the <a href="https://dashboard.ngrok.com/get-started/your-authtoken">Ngrok Dashboard</a> to get your free authtoken.</li>
-<li>In the notebook cell, paste your token into the <code v-pre>ngrok_authtoken</code> field.</li>
-<li>Select &quot;Ngrok&quot; from the <code v-pre>Tunnel</code> dropdown.</li>
-<li>Run the cell. The public Ngrok URLs for Applio, Tensorboard, and the Filebrowser will be printed in the output once the server is ready. Click on them to access the services.</li>
 </ol>
 </li>
 </ul>
