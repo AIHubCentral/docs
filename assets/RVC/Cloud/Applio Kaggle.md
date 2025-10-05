@@ -114,28 +114,28 @@ a. Start by running the first few cells of the notebook to install the necessary
 #### 4. <u>Configure and Run Tunnels</u>
 a. The next cell is for setting up the tunneling service, which exposes the Applio interface to the internet.
 
-!!!warning Why Gradio + LocalTunnel is Default and Ngrok isn't?
-Gradio + LocalTunnel is the default tunnel option. Ngrok has significantly lowered its free tier request rate limit from 4k to 120, which can cause connection issues. If you still wish to use Ngrok, you may need a paid plan for stable performance, or use to use it for free you could try to open the Ngrok Applio Tunnel, interact with anything to get the connection errored out issue, quickly refresh the page to see the request per minute error, then after 1 minute refresh the page and everything should be fine.
+!!!warning Warning about Tunneling Services Limitations
+Keep in mind that all free tunneling methods, including Ngrok, have limitations and may stop working unexpectedly from one day to the next. If you get an Ngrok rate limit issue, to use it for free you could try to open the Ngrok Applio Tunnel, interact with anything to get the connection errored out issue, quickly refresh the page to see the request per minute error, then after 1 minute refresh the page and everything should be fine.
 !!!
 
 b. **Select a Tunnel:** A tunnel securely exposes the application running in your private cloud environment to the public internet. The notebook gives you four different services to do this. Choose one from the `Tunnel` dropdown menu in the code cell.
 
-    - **Gradio + LocalTunnel (Recommended & Default method)**
-        - **How it works:** This is the default and recommended method. It uses Gradio's built-in tunnel for the main Applio interface and LocalTunnel for the Tensorboard and Filebrowser services. It does not require any external accounts or tokens.
+    - **Ngrok (Recommended & Default method)**
+        - **How it works:** This is the default and recommended method. Ngrok is a popular service that creates secure tunnels. It requires a free account and an authentication token. Note that the free tier has limitations on request rates which can sometimes cause interruptions.
+        - **Steps:**
+            1. Go to the [Ngrok Dashboard](https://dashboard.ngrok.com/get-started/your-authtoken) to get your free authtoken.
+            2. In the notebook cell, paste your token into the `ngrok_authtoken` field.
+            3. Select "Ngrok" from the `Tunnel` dropdown.
+            4. Run the cell. The public Ngrok URLs for Applio, Tensorboard, and the Filebrowser will be printed in the output once the server is ready. Click on them to access the services.
+
+    - **Gradio + LocalTunnel (No Account & Password Protected) **
+        - **How it works:** It uses Gradio's built-in tunnel for the main Applio interface and LocalTunnel for the Tensorboard and Filebrowser services. It does not require any external accounts or tokens.
         - **Steps:**
             1. Select "Gradio + LocalTunnel" from the `Tunnel` dropdown.
             2. Run the code cell. Wait for the output to show the public URLs.
             3. Click the **Gradio Public URL** to open the Applio UI.
             4. To access Tensorboard or the Filebrowser, click their respective **LocalTunnel Public URL**. A new page will ask for a password.
             5. Copy the **LocalTunnels Password** from the notebook output and paste it into the password prompt in your browser.
-
-    - **Ngrok (Fast, Popular & Reliable)**
-        - **How it works:** Ngrok is a popular service that creates secure tunnels. It requires a free account and an authentication token. Note that the free tier has limitations on request rates which can sometimes cause interruptions.
-        - **Steps:**
-            1. Go to the [Ngrok Dashboard](https://dashboard.ngrok.com/get-started/your-authtoken) to get your free authtoken.
-            2. In the notebook cell, paste your token into the `ngrok_authtoken` field.
-            3. Select "Ngrok" from the `Tunnel` dropdown.
-            4. Run the cell. The public Ngrok URLs for Applio, Tensorboard, and the Filebrowser will be printed in the output once the server is ready. Click on them to access the services.
 
     - **LocalTunnel (No Account, Password Protected)**
         - **How it works:** LocalTunnel is another free service that doesn't require an account. For security, it generates a unique URL that is protected by a password.
