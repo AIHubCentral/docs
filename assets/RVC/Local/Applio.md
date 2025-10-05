@@ -14,7 +14,7 @@ order: 3000
 :::content-center
 ## Introduction ‎
 :::
-- Applio is a <u>[Fork</u>](https://docs.aihub.gg/essentials/whats-rvc/#forks) of <u>[Original/Mainline RVC](https://docs.aihub.gg/rvc/local/mainline/)</u>, developed by the <u>[IA Hispano</u>](https://github.com/IAHispano)</u> team. It's a
+- Applio is a <u>[Fork</u>](https://docs.aihub.gg/essentials/whats-rvc/#forks) of <u>[Original/Mainline RVC](https://docs.aihub.gg/rvc/local/mainline/)</u>, developed by the <u>[IA Hispano</u>](https://github.com/IAHispano)</u> team.
 
 - It's liked for its great **UI**, **performance** improvements and **lots** of extra features, such as TTS (with RVC models too), plugins, automatic model upload, customizable theme & more.
 
@@ -432,7 +432,7 @@ It'll finish when it says `extracted successfully`.
     <img src="..\applio-img\4-freq.png" alt="image" width="420">‎   
 ‎   
 ‎   
-- E.g: with a value of ``10``, they will be saved after the epoch 10, 20, 30, etc.   
+- E.g: with a value of `10`, they will be saved after the epoch 10, 20, 30, etc.   
 ***
 ###### ‎  
 ##### c. Total Epoch

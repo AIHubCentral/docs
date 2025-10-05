@@ -300,29 +300,7 @@ The second way being:
 This section contains miscellaneous information about pretrains. 
 
 +++ GPU 
-To make a pretrain you are going to need a pretty good GPU, because without one it will take a very long time to train. Here is a GPU tier list for training pretrains:
-- S Tier:
-     - H100
-     - A100 (80gb and 40gb)
-- A Tier:
-     - L40S
-     - 4090
-     - 4080 (Super)
-- B Tier:
-     - 4070 (Ti) (Super)
-     - V 100
-     - 3090 (Ti)
-     - A40
-- C Tier:
-     - 4070 (Ti)
-     - 3080 (Ti)
-     - 3070 (Ti)
-     - P 100
-- D Tier:
-     - L4
-     - A10, T4
-     - 4060 (Ti) (8/16gb)
-     - 3060 (Ti)
+To make a pretrain you are going to need a pretty good GPU, because without one it will take a very long time to train, people also use multiple ones.
      
 +++ Q&A
 Q: What is the best pretrain? 
