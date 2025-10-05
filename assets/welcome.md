@@ -68,6 +68,8 @@ icon: home-fill
 
 - **Copyright:** Users are responsible for ensuring they have the necessary rights and permissions for any content they use with these tools. We do not condone copyright infringement.
 
+- **AI-Assisted Content:** Some AI tools (LLMs/Chatbots) might be used sometimes to help us refine some of our guides. Every piece of content is still reviewed and approved by humans, which our AI Hub team takes authorship, to make sure it's accurate and helpful. Since not every Chatbot is up-to-date/aware of things like RVC, they are mostly used for refining/rewording.
+
 - **Responsibility:** By using the information and tools provided, you agree that the creators and contributors of this documentation are not liable for any damages or issues that may arise from your actions.
 
 
