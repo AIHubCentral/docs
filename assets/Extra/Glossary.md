@@ -106,8 +106,6 @@ order: 1000
 - It deploys the program on a Local URL, which is the one running locally on the machine, and a Public Share Link, which is a tunnel that exposes the Local URL. The Public Share Link is used, for example, in Google Colabs, powered by their Share API. Sometimes, the Share API goes down, you can check its <u>[status](https://status.gradio.app/)</u>.
 
 
-Of course. Here is a standalone section about Jupyter Notebooks, written in the same glossary style.
-
 ***
 ### :icon-chevron-down:Jupyter Notebook
 - An interactive, web-based document that lets you combine runnable code, explanatory text, and media (like images and charts) into a single file.
