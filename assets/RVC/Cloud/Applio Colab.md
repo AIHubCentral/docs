@@ -202,14 +202,14 @@ ii. In Colab click the folder on the left ( :icon-file-directory-fill: ) & click
 ‎   
     (For mobile users: tap the three lines on the top left & `Show file browser`)       
 ‎   
-iii. Open `drive`, localize your dataset, right-click it & click `Copy path`.     
+iii. Open `drive`, localize your dataset, right-click it & click `Copy path`, be sure it's only the path folder and not the file with the extension..     
 ‎   
-    <img src="..\appliocolab-img\4-dtpath.png" alt="image" width="320">‎    
+    <img src="..\appliocolab-img\copy-path-drive-colab.png" alt="Copy the Google Drive Path from Google Colab" width="320">‎    
 ‎    
 ‎   
 iv. Then paste it on the `Dataset Path` bar.       
 ‎     
-    <img src="..\appliocolab-img\4-dataset.png" alt="image" width="550">‎  
+    <img src="..\appliocolab-img\applio-gdrive-dataset-path.png" alt="Applio pasted Google Drive Dataset Path" width="550">‎  
 
 ***
 ###### ‎     
