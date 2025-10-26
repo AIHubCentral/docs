@@ -49,43 +49,51 @@ order: 7000
 Then log in to your Google account.
 ***
 ###### ‎
-2. Execute the **Install Applio** cell. This will take around 2 minutes.
+2. Execute the **Install Applio** cells section. This will take around 2 minutes and will require you to grant permission to use Google Drive to save your models.
 
-    <img src="..\appliocolab-img\2-install.png" alt="image" width="260">‎     
+    <img src="..\appliocolab-img\install-applio-cell-section.png" alt="Install Applio Cell Section" width="400">
 ‎   
 - It'll finish when you see a tick symbol on the left.
 
-    <img src="..\appliocolab-img\2-instdone.png" alt="image" width="260">‎     
+    <img src="..\appliocolab-img\finished-installation.png" alt="Finished Installation" width="400">‎     
 
 ***
 ###### ‎
-3. If you are going to train models, upload your dataset to your Google Drive storage & run the **Extra** cell.
+3. Sync with Google Drive to automatically save or load models.
 
-    <img src="..\appliocolab-img\2-extra.png" alt="image" width="260">‎     
-‎       
-- To save time, unfold it & cancel the custom pretrain download, if you aren't going to use them.       
-
-    <img src="..\appliocolab-img\2-pretrain.png" alt="image" width="300">‎
+    <img src="..\appliocolab-img\sync-google-drive-cell.png" alt="Sync with Google Drive" width="500">‎     
 
 ***
 ###### ‎
-4. Grant the permissions to Google Drive.     
-‎   
-    <img src="../rvcdisconnected-img/4.png" alt="image" width="400" height="auto">‎   
+4. Select a Sharing and Run the Server, using a tunnel that securely exposes the application running in your private cloud environment to the public internet. The notebook gives you 3 different services to do this. Choose one from the `method` dropdown menu in the code cell.
 
-***
-###### ‎
-5. Select your sharing method then execute **Start Applio**. 
+    - **Gradio (Fast, Popular, Reliable & Default)**
+        - **How it works:** This is a built-in <u>[Gradio](http://docs.aihub.gg/extra/glossary/#gradio)</u> feature. It's one of the most straightforward method as it doesn't require any external accounts or tokens.
+        - **Steps:**
+            1. Select "Gradio" from the `method` dropdown menu.
+            2. Run the cell. The public Gradio URL (ending in `gradio.live`) will be printed in the output once the server is ready. Click on it to access the UI.
 
-<img src="..\appliocolab-img\start-applio.png" alt="image" width="550">‎  
-‎     
-- Then open the **public URL**.
+    - **Ngrok (Fast, Popular & Reliable)**
+        - **How it works:** Ngrok is a popular service that creates secure tunnels. It requires a free account and an authentication token. It has a 1GB Bandwidth Free Monthly Limit https://ngrok.com/docs/pricing-limits/free-plan-limits/.
+        - **Steps:**
+            1. Go to the [Ngrok Dashboard](https://dashboard.ngrok.com/get-started/your-authtoken) to get your free authtoken.
+            2. In the notebook cell, paste your token into the `ngron_token` field.
+            3. (Optional) To potentially reduce latency, select a geographical `Region` from the list of parameter options next to it, that is closest to you.
+            4. Run the cell. The public Ngrok URL (ending in `ngrok.io`) will be printed in the output once the server is ready. Click on it to access the UI.
 
-    <img src="..\appliocolab-img\2-url.png" alt="image" width="430">‎
+    - **LocalTunnel (No Account, Password Protected)**
+        - **How it works:** LocalTunnel is another free service that doesn't require an account. For security, it generates a unique URL that is protected by a password.
+        - **Steps:**
+            1. Select "LocalTunnel" from the `method` codropdown menude.
+            2. Run the cell.
+            3. The output will display two key pieces of information: the public URL (ending in `loca.lt`) and a `Local Tunnel Password` below it.
+            4. Click the URL. A new page will ask for a password.
+            5. Copy the password from the notebook output and paste it into the password prompt in your browser to access the voice changer.
 
-- If you select **ngrok** put your ngrok token, which can be found <u>[here](https://dashboard.ngrok.com/get-started/your-authtoken)</u> in the text box.
 
-!!!warning Don't close Colab until you're done using it, or it will stop working.     
+<img src="..\appliocolab-img\start-server-cell.png" alt="Start Serverl Cell" width="550">‎  
+
+!!!warning Don't close Google Colab until you're done using it, or it will stop working.     
 !!! 
 ***
 ###### ‎       
@@ -372,14 +380,7 @@ iii. And that's all, have fun with your model. To test it, do a normal <u>[infer
  ‎     
 2. You can change the **save frequency** or increase the **Total Epoch** amount, in case you didn't input enough before.      
  ‎  
-3. If you're resuming from a new session, unfold the **Extra** cell in Colab & input the model name you assigned before.      
- ‎  
-        <img src="../appliocolab-img/4-retrain.png" alt="image" width="400" height="auto">   ‎       
- ‎  
-- For this, the Auto Backup cell must've ran in the previous session.        
- ‎  
-        <img src="../appliocolab-img/4-autobackup.png" alt="image" width="600" height="auto">   
- ‎  
+3. If you're resuming from a new session, run the "Sync with Google Drive"yy cell again to automatically load your models.
 4. Begin training again & remember to monitor <u>[TB</u>]https://docs.aihub.gg/rvc/resources/training/#tensorboard) as before.  
 ===
 
