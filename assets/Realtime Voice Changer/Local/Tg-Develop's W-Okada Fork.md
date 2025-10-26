@@ -2,7 +2,7 @@
 icon: chevron-right
 order: 3000
 ---
-``Last update: September 6, 2025``
+``Last update: October 26, 2025``
 ***
 :::content-center
 ## Introduction
@@ -33,7 +33,7 @@ Also, **HuggingFace has a <u>[Security Scanner](https://huggingface.co/docs/hub/
 ||| ✔️ **PROS** 
 - Currently stable
 - Good Performance
-- Has great support for Nvidia, AMD, Intel, Mac, Linux, Windows
+- Has great support for Nvidia, AMD, Intel, Linux, Windows
 - Uses a Web User Interface, meaning it can be run on the Cloud
 - Uses FP16 Inference by default, and let's you choose to use FP32 for better quality/precision
 - Has Audio Effects
@@ -41,6 +41,8 @@ Also, **HuggingFace has a <u>[Security Scanner](https://huggingface.co/docs/hub/
 ||| ❌ **CONS** 
 - Uses a Web User Interface, having issues on some browsers, and bugs with renaming or deleting models on it
 - Doesn't have a very active development recently, it's more of a personal public fork with some Quality Of Life updates of the Wokada Deiteris' Fork, please don't have too much expectations and don't disturb the developer about it
+- Doesn't have any Intel MacOS version.
+- Discontinued for Apple Silicon MacOS after version b2364.
 - Has Cut Off Issues Using an Extra superior to 2.7
 |||
 ===
@@ -54,7 +56,7 @@ Also, **HuggingFace has a <u>[Security Scanner](https://huggingface.co/docs/hub/
 ***
 
 - Windows 10 or Later
-- macOS 12 Monterey or later. With Apple Silicon or Intel CPU
+- macOS 12 Monterey or later. With Apple Silicon CPU
 - Any Linux Distro
 
 and
@@ -186,18 +188,19 @@ If nothing opens, then open a browser and type in `http://127.0.0.1:18888/`. Thi
 ***
 ## Mac
 
-- First, go to the latest release page: <u>[Latest Release (click here to go to Github)](https://github.com/tg-develop/voice-changer/releases/latest)</u>
-- On the release page, find the "Assets" section and download the file corresponding to your Mac's processor.
+!!!warning Mac Support
+- There's no Intel Mac support.
+- [b2364](https://github.com/tg-develop/voice-changer/releases/tag/b2364) is currently the last version that had Apple Silicon Mac Support.
+!!!
+
+- First, go to the last Apple Silicon Mac release page: <u>[Last Release for Apple Silicon Macs (click here to go to Github)](https://github.com/tg-develop/voice-changer/releases/tag/b2364)</u>
+- On the release page, find the "Assets" section and download the file corresponding to your Mac's processor (Only Apple Silicon is available).
 
 ***
 
 ### Download for Apple Silicon Mac
 
 - For Macs with an M1, M2, or newer Apple chip, download the file ending in `macos-arm64-cpu.tar.gz`.
-
-### Download for Intel Mac
-
-- For older Macs with an Intel processor, download the file ending in `macos-amd64-cpu.tar.gz`.
 
 ***
 
