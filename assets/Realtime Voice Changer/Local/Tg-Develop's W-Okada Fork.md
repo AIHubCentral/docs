@@ -38,8 +38,9 @@ Also, **HuggingFace has a <u>[Security Scanner](https://huggingface.co/docs/hub/
 - Uses FP16 Inference by default, and let's you choose to use FP32 for better quality/precision
 - Has Audio Effects
 - Lets you choose the Model Embedder Type, including ContentVec & Spin.
+- Fixed renaming and deleting models on the WebUI (version b2377+)
 ||| ❌ **CONS** 
-- Uses a Web User Interface, having issues on some browsers, and bugs with renaming or deleting models on it
+- Uses a Web User Interface, having issues on some browsers.
 - Doesn't have a very active development recently, it's more of a personal public fork with some Quality Of Life updates of the Wokada Deiteris' Fork, please don't have too much expectations and don't disturb the developer about it
 - Doesn't have any Intel MacOS version.
 - Discontinued for Apple Silicon MacOS after version b2364.
@@ -563,6 +564,10 @@ Two types of effect providers are available, each offering a different level of 
 - `MP3 Compressor:` Adds MP3 compression artifacts. 
     - `VBR Quality:` MP3 VBR quality (0=highest, 9=lowest). 
 - `GSM Compressor:` 2G cellular phone compression.
+
+#### Background Effects
+
+Background Effects, unlike Input & Output ones, should work as audio tracks manually uploaded by the user mixed with converted audio. Currently this feature doesn't seem to be working.
 
 ***
 ### Advanced Settings
