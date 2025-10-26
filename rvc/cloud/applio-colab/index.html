@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.814827137914">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.814831008604">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -34,11 +34,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../../img/b.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.11.0.814827137914" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.11.0.814831008604" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.814827137914" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.814831008604" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.814827137914" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.814831008604" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -346,14 +346,14 @@ Then log in to your Google account.</li>
     </h6>
 </doc-anchor-target>
 <ol start="2">
-<li><p>Execute the <strong>Install Applio</strong> cell. This will take around 2 minutes.</p>
-<p><img src="..\appliocolab-img\2-install.png" alt="image" width="260">‎<br />
-‎</p>
+<li><p>Execute the <strong>Install Applio</strong> cells section. This will take around 2 minutes and will require you to grant permission to use Google Drive to save your models.</p>
+ <img src="..\appliocolab-img\install-applio-cell-section.png" alt="Install Applio Cell Section" width="400">
 </li>
 </ol>
+<p>‎</p>
 <ul>
 <li><p>It&#x27;ll finish when you see a tick symbol on the left.</p>
-<p><img src="..\appliocolab-img\2-instdone.png" alt="image" width="260">‎</p>
+<p><img src="..\appliocolab-img\finished-installation.png" alt="Finished Installation" width="400">‎</p>
 </li>
 </ul>
 <hr>
@@ -364,16 +364,10 @@ Then log in to your Google account.</li>
     </h6>
 </doc-anchor-target>
 <ol start="3">
-<li><p>If you are going to train models, upload your dataset to your Google Drive storage &amp; run the <strong>Extra</strong> cell.</p>
-<p><img src="..\appliocolab-img\2-extra.png" alt="image" width="260">‎<br />
-‎</p>
+<li><p>Sync with Google Drive to automatically save or load models.</p>
+<p><img src="..\appliocolab-img\sync-google-drive-cell.png" alt="Sync with Google Drive" width="500">‎</p>
 </li>
 </ol>
-<ul>
-<li><p>To save time, unfold it &amp; cancel the custom pretrain download, if you aren&#x27;t going to use them.</p>
-<p><img src="..\appliocolab-img\2-pretrain.png" alt="image" width="300">‎</p>
-</li>
-</ul>
 <hr>
 <doc-anchor-target id="section-4">
     <h6>
@@ -382,29 +376,50 @@ Then log in to your Google account.</li>
     </h6>
 </doc-anchor-target>
 <ol start="4">
-<li>Grant the permissions to Google Drive.<br />
-‎<br />
-<img src="../rvcdisconnected-img/4.png" alt="image" width="400" height="auto">‎</li>
-</ol>
-<hr>
-<doc-anchor-target id="section-5">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-5">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
-<ol start="5">
-<li>Select your sharing method then execute <strong>Start Applio</strong>.</li>
-</ol>
-<p><img src="..\appliocolab-img\start-applio.png" alt="image" width="550">‎<br />
-‎</p>
+<li>Select a Sharing and Run the Server, using a tunnel that securely exposes the application running in your private cloud environment to the public internet. The notebook gives you 3 different services to do this. Choose one from the <code v-pre>method</code> dropdown menu in the code cell.
 <ul>
-<li><p>Then open the <strong>public URL</strong>.</p>
-<p><img src="..\appliocolab-img\2-url.png" alt="image" width="430">‎</p>
-</li>
-<li><p>If you select <strong>ngrok</strong> put your ngrok token, which can be found <u><a href="https://dashboard.ngrok.com/get-started/your-authtoken">here</a></u> in the text box.</p>
+<li><p><strong>Gradio (Fast, Popular, Reliable &amp; Default)</strong></p>
+<ul>
+<li><strong>How it works:</strong> This is a built-in <u><a href="http://docs.aihub.gg/extra/glossary/#gradio">Gradio</a></u> feature. It&#x27;s one of the most straightforward method as it doesn&#x27;t require any external accounts or tokens.</li>
+<li><strong>Steps:</strong>
+<ol>
+<li>Select &quot;Gradio&quot; from the <code v-pre>method</code> dropdown menu.</li>
+<li>Run the cell. The public Gradio URL (ending in <code v-pre>gradio.live</code>) will be printed in the output once the server is ready. Click on it to access the UI.</li>
+</ol>
 </li>
 </ul>
+</li>
+<li><p><strong>Ngrok (Fast, Popular &amp; Reliable)</strong></p>
+<ul>
+<li><strong>How it works:</strong> Ngrok is a popular service that creates secure tunnels. It requires a free account and an authentication token. It has a 1GB Bandwidth Free Monthly Limit <a href="https://ngrok.com/docs/pricing-limits/free-plan-limits/">https://ngrok.com/docs/pricing-limits/free-plan-limits/</a>.</li>
+<li><strong>Steps:</strong>
+<ol>
+<li>Go to the <a href="https://dashboard.ngrok.com/get-started/your-authtoken">Ngrok Dashboard</a> to get your free authtoken.</li>
+<li>In the notebook cell, paste your token into the <code v-pre>ngron_token</code> field.</li>
+<li>(Optional) To potentially reduce latency, select a geographical <code v-pre>Region</code> from the list of parameter options next to it, that is closest to you.</li>
+<li>Run the cell. The public Ngrok URL (ending in <code v-pre>ngrok.io</code>) will be printed in the output once the server is ready. Click on it to access the UI.</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><p><strong>LocalTunnel (No Account, Password Protected)</strong></p>
+<ul>
+<li><strong>How it works:</strong> LocalTunnel is another free service that doesn&#x27;t require an account. For security, it generates a unique URL that is protected by a password.</li>
+<li><strong>Steps:</strong>
+<ol>
+<li>Select &quot;LocalTunnel&quot; from the <code v-pre>method</code> codropdown menude.</li>
+<li>Run the cell.</li>
+<li>The output will display two key pieces of information: the public URL (ending in <code v-pre>loca.lt</code>) and a <code v-pre>Local Tunnel Password</code> below it.</li>
+<li>Click the URL. A new page will ask for a password.</li>
+<li>Copy the password from the notebook output and paste it into the password prompt in your browser to access the voice changer.</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p><img src="..\appliocolab-img\start-server-cell.png" alt="Start Serverl Cell" width="550">‎</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-warning"></div>
     <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
@@ -417,14 +432,14 @@ Then log in to your Google account.</li>
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-            <h5>Don&#x27;t close Colab until you&#x27;re done using it, or it will stop working.</h5>
+            <h5>Don&#x27;t close Google Colab until you&#x27;re done using it, or it will stop working.</h5>
         </div>
     </div>
 </div>
 <hr>
-<doc-anchor-target id="section-6">
+<doc-anchor-target id="section-5">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-6">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-5">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -451,9 +466,9 @@ Then log in to your Google account.</li>
     </div>
 </div>
 </div>
-<doc-anchor-target id="section-7">
+<doc-anchor-target id="section-6">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-7">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-6">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -512,9 +527,9 @@ It must be from Hugging Face or Google Drive.<br />
 </li>
 </ol>
 <hr>
-<doc-anchor-target id="section-8">
+<doc-anchor-target id="section-7">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-8">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-7">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -578,9 +593,9 @@ It must be from Hugging Face or Google Drive.<br />
 </li>
 </ul>
 <hr>
-<doc-anchor-target id="section-9">
+<doc-anchor-target id="section-8">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-9">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-8">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -599,15 +614,15 @@ To download it, press the download symbol on its right.</p>
 </li>
 </ol>
 <hr>
-<doc-anchor-target id="section-10">
+<doc-anchor-target id="section-9">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-10">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-9">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
-<doc-anchor-target id="section-11">
+<doc-anchor-target id="section-10">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-11">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-10">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -617,9 +632,9 @@ To download it, press the download symbol on its right.</p>
         <span>Training <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M8.75 11a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5a.75.75 0 0 1 .75-.75Zm7.25.75a.75.75 0 0 0-1.5 0v3.5a.75.75 0 0 0 1.5 0v-3.5Z"/><path d="M9.813 1h2.437a.75.75 0 0 1 .75.75V5h6.75A2.25 2.25 0 0 1 22 7.25v5.25h1.25a.75.75 0 0 1 0 1.5H22v5.75A2.25 2.25 0 0 1 19.75 22H4.25A2.25 2.25 0 0 1 2 19.75V14H.75a.75.75 0 0 1 0-1.5H2V7.25A2.25 2.25 0 0 1 4.25 5h7.25V2.5H9.813A.75.75 0 0 1 9.812 1ZM3.5 7.25v12.5c0 .414.336.75.75.75h15.5a.75.75 0 0 0 .75-.75V7.25a.75.75 0 0 0-.75-.75H4.25a.75.75 0 0 0-.75.75Z"/></g></g></svg></span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="section-12">
+<doc-anchor-target id="section-11">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-12">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-11">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -627,9 +642,9 @@ To download it, press the download symbol on its right.</p>
 <div class="content-center"></div>
 <doc-panel id="1-preprocess" collapsed>
     <template #title>1. PREPROCESS</template>
-<doc-anchor-target id="section-13">
+<doc-anchor-target id="section-12">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-13">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-12">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -639,9 +654,9 @@ To download it, press the download symbol on its right.</p>
         <span>a. Model Name</span>
     </h5>
 </doc-anchor-target>
-<doc-anchor-target id="section-14">
+<doc-anchor-target id="section-13">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-14">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-13">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -652,9 +667,9 @@ Don&#x27;t include spaces/special characters.</p>
 </li>
 </ul>
 <hr>
-<doc-anchor-target id="section-15">
+<doc-anchor-target id="section-14">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-15">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-14">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -664,9 +679,9 @@ Don&#x27;t include spaces/special characters.</p>
         <span>b. Dataset Path</span>
     </h5>
 </doc-anchor-target>
-<doc-anchor-target id="section-16">
+<doc-anchor-target id="section-15">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-16">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-15">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -693,9 +708,9 @@ Don&#x27;t include spaces/special characters.</p>
 </li>
 </ol>
 <hr>
-<doc-anchor-target id="section-17">
+<doc-anchor-target id="section-16">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-17">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-16">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -705,9 +720,9 @@ Don&#x27;t include spaces/special characters.</p>
         <span>c. Sampling Rate</span>
     </h5>
 </doc-anchor-target>
-<doc-anchor-target id="section-18">
+<doc-anchor-target id="section-17">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-18">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-17">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -717,9 +732,9 @@ Don&#x27;t include spaces/special characters.</p>
 </li>
 </ul>
 <hr>
-<doc-anchor-target id="section-19">
+<doc-anchor-target id="section-18">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-19">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-18">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -729,9 +744,9 @@ Don&#x27;t include spaces/special characters.</p>
         <span>d. Preprocess Dataset</span>
     </h5>
 </doc-anchor-target>
-<doc-anchor-target id="section-20">
+<doc-anchor-target id="section-19">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-20">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-19">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -744,9 +759,9 @@ Don&#x27;t include spaces/special characters.</p>
 </doc-panel>
 <doc-panel id="2-extract" collapsed>
     <template #title>2. EXTRACT</template>
-<doc-anchor-target id="section-21">
+<doc-anchor-target id="section-20">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-21">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-20">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -756,9 +771,9 @@ Don&#x27;t include spaces/special characters.</p>
         <span>a. Pitch extraction algorithm</span>
     </h5>
 </doc-anchor-target>
-<doc-anchor-target id="section-22">
+<doc-anchor-target id="section-21">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-22">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-21">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -768,9 +783,9 @@ Don&#x27;t include spaces/special characters.</p>
 </li>
 </ul>
 <hr>
-<doc-anchor-target id="section-23">
+<doc-anchor-target id="section-22">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-23">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-22">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -780,9 +795,9 @@ Don&#x27;t include spaces/special characters.</p>
         <span>b. Extract Features</span>
     </h5>
 </doc-anchor-target>
-<doc-anchor-target id="section-24">
+<doc-anchor-target id="section-23">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-24">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-23">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -795,9 +810,9 @@ It&#x27;ll finish when it says <code v-pre>extracted successfully</code>.</p>
 </doc-panel>
 <doc-panel id="3-train" collapsed>
     <template #title>3. TRAIN</template>
-<doc-anchor-target id="section-25">
+<doc-anchor-target id="section-24">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-25">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-24">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -807,9 +822,9 @@ It&#x27;ll finish when it says <code v-pre>extracted successfully</code>.</p>
         <span>a. Batch Size</span>
     </h5>
 </doc-anchor-target>
-<doc-anchor-target id="section-26">
+<doc-anchor-target id="section-25">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-26">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-25">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -819,9 +834,9 @@ It&#x27;ll finish when it says <code v-pre>extracted successfully</code>.</p>
 </li>
 </ul>
 <hr>
-<doc-anchor-target id="section-27">
+<doc-anchor-target id="section-26">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-27">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-26">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -831,9 +846,9 @@ It&#x27;ll finish when it says <code v-pre>extracted successfully</code>.</p>
         <span>b. Save Every Epoch</span>
     </h5>
 </doc-anchor-target>
-<doc-anchor-target id="section-28">
+<doc-anchor-target id="section-27">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-28">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-27">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -850,9 +865,9 @@ It&#x27;ll finish when it says <code v-pre>extracted successfully</code>.</p>
 </li>
 </ul>
 <hr>
-<doc-anchor-target id="section-29">
+<doc-anchor-target id="section-28">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-29">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-28">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -862,9 +877,9 @@ It&#x27;ll finish when it says <code v-pre>extracted successfully</code>.</p>
         <span>c. Total Epoch</span>
     </h5>
 </doc-anchor-target>
-<doc-anchor-target id="section-30">
+<doc-anchor-target id="section-29">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-30">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-29">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -877,9 +892,9 @@ It&#x27;ll finish when it says <code v-pre>extracted successfully</code>.</p>
 </li>
 </ul>
 <hr>
-<doc-anchor-target id="section-31">
+<doc-anchor-target id="section-30">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-31">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-30">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -889,9 +904,9 @@ It&#x27;ll finish when it says <code v-pre>extracted successfully</code>.</p>
         <span>d. Generate Index</span>
     </h5>
 </doc-anchor-target>
-<doc-anchor-target id="section-32">
+<doc-anchor-target id="section-31">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-32">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-31">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -899,9 +914,9 @@ It&#x27;ll finish when it says <code v-pre>extracted successfully</code>.</p>
 <li>Click <code v-pre>Generate Index</code>. This will create the model&#x27;s <u><a href="https://docs.aihub.gg/essentials/voice-models/#voice-model-files">.INDEX</a></u> file.</li>
 </ul>
 <hr>
-<doc-anchor-target id="section-33">
+<doc-anchor-target id="section-32">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-33">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-32">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -911,9 +926,9 @@ It&#x27;ll finish when it says <code v-pre>extracted successfully</code>.</p>
         <span>e. Start Training</span>
     </h5>
 </doc-anchor-target>
-<doc-anchor-target id="section-34">
+<doc-anchor-target id="section-33">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-34">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-33">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -929,9 +944,9 @@ It&#x27;ll finish when it says <code v-pre>extracted successfully</code>.</p>
 </li>
 </ol>
 <hr>
-<doc-anchor-target id="section-35">
+<doc-anchor-target id="section-34">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-35">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-34">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -941,9 +956,9 @@ It&#x27;ll finish when it says <code v-pre>extracted successfully</code>.</p>
         <span>f. Monitor training</span>
     </h5>
 </doc-anchor-target>
-<doc-anchor-target id="section-36">
+<doc-anchor-target id="section-35">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-36">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-35">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -987,9 +1002,9 @@ It&#x27;ll finish when it says <code v-pre>extracted successfully</code>.</p>
 </doc-panel>
 <doc-panel id="4-download" collapsed>
     <template #title>4. DOWNLOAD</template>
-<doc-anchor-target id="section-37">
+<doc-anchor-target id="section-36">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-37">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-36">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -999,9 +1014,9 @@ It&#x27;ll finish when it says <code v-pre>extracted successfully</code>.</p>
         <span>a. Stop training</span>
     </h5>
 </doc-anchor-target>
-<doc-anchor-target id="section-38">
+<doc-anchor-target id="section-37">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-38">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-37">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1014,9 +1029,9 @@ It&#x27;ll finish when it says <code v-pre>extracted successfully</code>.</p>
 </li>
 </ul>
 <hr>
-<doc-anchor-target id="section-39">
+<doc-anchor-target id="section-38">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-39">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-38">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1026,9 +1041,9 @@ It&#x27;ll finish when it says <code v-pre>extracted successfully</code>.</p>
         <span>b. Get the INDEX</span>
     </h5>
 </doc-anchor-target>
-<doc-anchor-target id="section-40">
+<doc-anchor-target id="section-39">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-40">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-39">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1043,9 +1058,9 @@ It&#x27;ll finish when it says <code v-pre>extracted successfully</code>.</p>
 </li>
 </ol>
 <hr>
-<doc-anchor-target id="section-41">
+<doc-anchor-target id="section-40">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-41">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-40">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1055,9 +1070,9 @@ It&#x27;ll finish when it says <code v-pre>extracted successfully</code>.</p>
         <span>c. Get the PTH</span>
     </h5>
 </doc-anchor-target>
-<doc-anchor-target id="section-42">
+<doc-anchor-target id="section-41">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-42">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-41">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1087,9 +1102,9 @@ Example: <code v-pre>arianagrande_60e.pth</code><br />
 </doc-panel>
 <doc-panel id="5-resuming" collapsed>
     <template #title>5. RESUMING</template>
-<doc-anchor-target id="section-43">
+<doc-anchor-target id="section-42">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-43">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-42">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1097,37 +1112,21 @@ Example: <code v-pre>arianagrande_60e.pth</code><br />
 <li>In case the training finished but the model still needed training, you don&#x27;t have to start from scratch.</li>
 </ul>
 <ol>
-<li><p>Simply enter the <strong>same settings &amp; criteria</strong> that you had previously inserted. You don&#x27;t have to do preprocess, extract feature or train the .INDEX again.<br />
-‎</p>
-</li>
-<li><p>You can change the <strong>save frequency</strong> or increase the <strong>Total Epoch</strong> amount, in case you didn&#x27;t input enough before.<br />
-‎</p>
-</li>
-<li><p>If you&#x27;re resuming from a new session, unfold the <strong>Extra</strong> cell in Colab &amp; input the model name you assigned before.<br />
-‎<br />
-<img src="../appliocolab-img/4-retrain.png" alt="image" width="400" height="auto">   ‎<br />
-‎</p>
-</li>
-</ol>
-<ul>
-<li>For this, the Auto Backup cell must&#x27;ve ran in the previous session.<br />
-‎<br />
-<img src="../appliocolab-img/4-autobackup.png" alt="image" width="600" height="auto"><br />
-‎</li>
-</ul>
-<ol start="4">
+<li>Simply enter the <strong>same settings &amp; criteria</strong> that you had previously inserted. You don&#x27;t have to do preprocess, extract feature or train the .INDEX again.‎</li>
+<li>You can change the <strong>save frequency</strong> or increase the <strong>Total Epoch</strong> amount, in case you didn&#x27;t input enough before.‎</li>
+<li>If you&#x27;re resuming from a new session, run the &quot;Sync with Google Drive&quot;yy cell again to automatically load your models.</li>
 <li>Begin training again &amp; remember to monitor <u>[TB</u>]https://docs.aihub.gg/rvc/resources/training/#tensorboard) as before.</li>
 </ol>
 </doc-panel>
-<doc-anchor-target id="section-44">
+<doc-anchor-target id="section-43">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-44">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-43">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
-<doc-anchor-target id="section-45">
+<doc-anchor-target id="section-44">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-45">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-44">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1139,9 +1138,9 @@ Example: <code v-pre>arianagrande_60e.pth</code><br />
 </doc-anchor-target>
 <p><em><code v-pre>+ with any RVC model</code></em></p>
 </div>
-<doc-anchor-target id="section-46">
+<doc-anchor-target id="section-45">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-46">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-45">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1154,9 +1153,9 @@ Example: <code v-pre>arianagrande_60e.pth</code><br />
 </li>
 </ul>
 <hr>
-<doc-anchor-target id="section-47">
+<doc-anchor-target id="section-46">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-47">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-46">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1172,9 +1171,9 @@ Example: <code v-pre>arianagrande_60e.pth</code><br />
 </li>
 </ol>
 <hr>
-<doc-anchor-target id="section-48">
+<doc-anchor-target id="section-47">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-48">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-47">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1188,9 +1187,9 @@ Example: <code v-pre>arianagrande_60e.pth</code><br />
 <li>To modify the <u><a href="https://docs.aihub.gg/rvc/resources/inference-settings/">inference settings</a></u> or the output folder for the TTS/RVC audio, unfold <code v-pre>Advanced Settings</code>.</li>
 </ul>
 <hr>
-<doc-anchor-target id="section-49">
+<doc-anchor-target id="section-48">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-49">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-48">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1205,9 +1204,9 @@ Example: <code v-pre>arianagrande_60e.pth</code><br />
 <li>If you are using an RVC model, select a voice that matches the model the most, to guarantee great results.</li>
 </ul>
 <hr>
-<doc-anchor-target id="section-50">
+<doc-anchor-target id="section-49">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-50">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-49">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1217,15 +1216,15 @@ Example: <code v-pre>arianagrande_60e.pth</code><br />
 </li>
 </ol>
 <hr>
-<doc-anchor-target id="section-51">
+<doc-anchor-target id="section-50">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-51">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-50">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
-<doc-anchor-target id="section-52">
+<doc-anchor-target id="section-51">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-52">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-51">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1236,9 +1235,9 @@ Example: <code v-pre>arianagrande_60e.pth</code><br />
     </h2>
 </doc-anchor-target>
 </div>
-<doc-anchor-target id="section-53">
+<doc-anchor-target id="section-52">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-53">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-52">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1251,9 +1250,9 @@ Example: <code v-pre>arianagrande_60e.pth</code><br />
 </li>
 </ul>
 <hr>
-<doc-anchor-target id="section-54">
+<doc-anchor-target id="section-53">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-54">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-53">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1269,9 +1268,9 @@ Example: <code v-pre>arianagrande_60e.pth</code><br />
 </li>
 </ol>
 <hr>
-<doc-anchor-target id="section-55">
+<doc-anchor-target id="section-54">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-55">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-54">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1279,9 +1278,9 @@ Example: <code v-pre>arianagrande_60e.pth</code><br />
 <li>Once it&#x27;s done uploading, click <code v-pre>Get information about the audio</code>.</li>
 </ol>
 <hr>
-<doc-anchor-target id="section-56">
+<doc-anchor-target id="section-55">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-56">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-55">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1290,9 +1289,9 @@ Example: <code v-pre>arianagrande_60e.pth</code><br />
 <p><img src="../appliocolab-img/6-samplerate.png" alt="image" width="470" height="auto">‎</p>
 </li>
 </ol>
-<doc-anchor-target id="section-57">
+<doc-anchor-target id="section-56">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-57">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-56">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1313,9 +1312,9 @@ Example: <code v-pre>arianagrande_60e.pth</code><br />
         </div>
     </div>
 </div>
-<doc-anchor-target id="section-58">
+<doc-anchor-target id="section-57">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-58">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-57">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1334,15 +1333,15 @@ Example: <code v-pre>arianagrande_60e.pth</code><br />
 <p>Here it reached 20 kHz. <strong>Doubling</strong> it gives 40kHz. Therefore the ideal target sample rate would be <code v-pre>40k</code></p>
 </blockquote>
 <hr>
-<doc-anchor-target id="section-59">
+<doc-anchor-target id="section-58">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-59">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-58">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
-<doc-anchor-target id="section-60">
+<doc-anchor-target id="section-59">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-60">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-59">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1362,9 +1361,9 @@ Example: <code v-pre>arianagrande_60e.pth</code><br />
 </li>
 </ul>
 <hr>
-<doc-anchor-target id="section-61">
+<doc-anchor-target id="section-60">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-61">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-60">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1380,9 +1379,9 @@ Example: <code v-pre>arianagrande_60e.pth</code><br />
 </li>
 </ol>
 <hr>
-<doc-anchor-target id="section-62">
+<doc-anchor-target id="section-61">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-62">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-61">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1398,9 +1397,9 @@ Example: <code v-pre>arianagrande_60e.pth</code><br />
 </li>
 </ul>
 <hr>
-<doc-anchor-target id="section-63">
+<doc-anchor-target id="section-62">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-63">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-62">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1410,9 +1409,9 @@ Example: <code v-pre>arianagrande_60e.pth</code><br />
 </li>
 </ol>
 <hr>
-<doc-anchor-target id="section-64">
+<doc-anchor-target id="section-63">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-64">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-63">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1423,15 +1422,15 @@ Example: <code v-pre>arianagrande_60e.pth</code><br />
 </li>
 </ol>
 <hr>
-<doc-anchor-target id="section-65">
+<doc-anchor-target id="section-64">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-65">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-64">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
-<doc-anchor-target id="section-66">
+<doc-anchor-target id="section-65">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-66">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-65">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1442,17 +1441,17 @@ Example: <code v-pre>arianagrande_60e.pth</code><br />
     </h2>
 </doc-anchor-target>
 </div>
-<doc-anchor-target id="section-67">
+<doc-anchor-target id="section-66">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-67">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-66">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
 <doc-panel id="theres-no-public-url" collapsed>
     <template #title><em>There&#x27;s no public URL.</em></template>
-<doc-anchor-target id="section-68">
+<doc-anchor-target id="section-67">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-68">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-67">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1474,9 +1473,9 @@ Example: <code v-pre>arianagrande_60e.pth</code><br />
 </doc-panel>
 <doc-panel id="theres-no-option-for-my-sample-rate" collapsed>
     <template #title><em>There&#x27;s no option for my sample rate.</em></template>
-<doc-anchor-target id="section-69">
+<doc-anchor-target id="section-68">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-69">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-68">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1493,9 +1492,9 @@ Example: <code v-pre>arianagrande_60e.pth</code><br />
 </doc-panel>
 <doc-panel id="the-voice-glitches-out" collapsed>
     <template #title><em>The voice glitches out.</em></template>
-<doc-anchor-target id="section-70">
+<doc-anchor-target id="section-69">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-70">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-69">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1505,9 +1504,9 @@ Example: <code v-pre>arianagrande_60e.pth</code><br />
 </doc-panel>
 <doc-panel id="cannot-connect-to-gpu-backend" collapsed>
     <template #title><em>Cannot connect to GPU backend.</em></template>
-<doc-anchor-target id="section-71">
+<doc-anchor-target id="section-70">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-71">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-70">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1517,9 +1516,9 @@ Example: <code v-pre>arianagrande_60e.pth</code><br />
 </doc-panel>
 <doc-panel id="i-couldnt-find-my-answer" collapsed>
     <template #title><em>I couldn&#x27;t find my answer.</em></template>
-<doc-anchor-target id="section-72">
+<doc-anchor-target id="section-71">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-72">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-71">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
@@ -1528,9 +1527,9 @@ Example: <code v-pre>arianagrande_60e.pth</code><br />
 </ul>
 </doc-panel>
 <hr>
-<doc-anchor-target id="section-73">
+<doc-anchor-target id="section-72">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-73">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-72">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>
