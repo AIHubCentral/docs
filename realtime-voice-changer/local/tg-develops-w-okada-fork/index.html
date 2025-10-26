@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.813587031801">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.814827137914">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -14,7 +14,7 @@
     <!-- Primary Meta Tags -->
     <title>Tg Develop&#39;s W Okada Fork</title>
     <meta name="title" content="Tg Develop's W Okada Fork">
-    <meta name="description" content="Last update: September 6, 2025">
+    <meta name="description" content="Last update: October 26, 2025">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://docs.aihub.gg/realtime-voice-changer/local/tg-develops-w-okada-fork/">
@@ -23,23 +23,23 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.aihub.gg/realtime-voice-changer/local/tg-develops-w-okada-fork/">
     <meta property="og:title" content="Tg Develop's W Okada Fork">
-    <meta property="og:description" content="Last update: September 6, 2025">
+    <meta property="og:description" content="Last update: October 26, 2025">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.aihub.gg/realtime-voice-changer/local/tg-develops-w-okada-fork/">
     <meta property="twitter:title" content="Tg Develop's W Okada Fork">
-    <meta property="twitter:description" content="Last update: September 6, 2025">
+    <meta property="twitter:description" content="Last update: October 26, 2025">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../../img/b.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.11.0.813587031801" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.11.0.814827137914" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.813587031801" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.814827137914" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.813587031801" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=3.11.0.813587031801" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.814827137914" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=3.11.0.814827137914" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -231,7 +231,7 @@
         <span>Tg Develop&#x27;s W Okada Fork</span>
     </h1>
 </doc-anchor-target>
-<p><code v-pre>Last update: September 6, 2025</code></p>
+<p><code v-pre>Last update: October 26, 2025</code></p>
 <hr>
 <div class="content-center"><doc-anchor-target id="introduction">
     <h2>
@@ -299,17 +299,20 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
 <ul>
 <li>Currently stable</li>
 <li>Good Performance</li>
-<li>Has great support for Nvidia, AMD, Intel, Mac, Linux, Windows</li>
+<li>Has great support for Nvidia, AMD, Intel, Linux, Windows</li>
 <li>Uses a Web User Interface, meaning it can be run on the Cloud</li>
 <li>Uses FP16 Inference by default, and let&#x27;s you choose to use FP32 for better quality/precision</li>
 <li>Has Audio Effects</li>
 <li>Lets you choose the Model Embedder Type, including ContentVec &amp; Spin.</li>
+<li>Fixed renaming and deleting models on the WebUI (version b2377+)</li>
 </ul>
     </div>
     <div class="px-5 py-3 docs-columns-content">
 <ul>
-<li>Uses a Web User Interface, having issues on some browsers, and bugs with renaming or deleting models on it</li>
+<li>Uses a Web User Interface, having issues on some browsers.</li>
 <li>Doesn&#x27;t have a very active development recently, it&#x27;s more of a personal public fork with some Quality Of Life updates of the Wokada Deiteris&#x27; Fork, please don&#x27;t have too much expectations and don&#x27;t disturb the developer about it</li>
+<li>Doesn&#x27;t have any Intel MacOS version.</li>
+<li>Discontinued for Apple Silicon MacOS after version b2364.</li>
 <li>Has Cut Off Issues Using an Extra superior to 2.7</li>
 </ul>
     </div>
@@ -332,7 +335,7 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
 <hr>
 <ul>
 <li>Windows 10 or Later</li>
-<li>macOS 12 Monterey or later. With Apple Silicon or Intel CPU</li>
+<li>macOS 12 Monterey or later. With Apple Silicon CPU</li>
 <li>Any Linux Distro</li>
 </ul>
 <p>and</p>
@@ -606,9 +609,29 @@ or
         <span>Mac</span>
     </h2>
 </doc-anchor-target>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-warning"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-warning" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M22.48 15.59L14.01 1.45A2.968 2.968 0 0012.16.09c-.78-.19-1.58-.07-2.27.35-.41.25-.76.6-1.01 1.01v.01L.4 15.6c-.83 1.43-.33 3.27 1.1 4.1.45.26.95.4 1.48.4h16.95c.8-.01 1.55-.33 2.11-.9.56-.57.87-1.33.86-2.13a3.04 3.04 0 00-.42-1.48zm-1.87 2.21c-.19.19-.44.3-.69.3H2.99c-.17 0-.34-.05-.49-.13a.992.992 0 01-.37-1.35L10.6 2.48c.08-.14.2-.25.34-.33a.992.992 0 011.37.33l8.46 14.13c.09.15.13.32.13.49 0 .26-.1.51-.29.7z"></path>
+                    <path d="M11.45 12.1c.55 0 1-.45 1-1v-4c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .56.45 1 1 1zM11.46 14.1c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Mac Support</h5>
 <ul>
-<li>First, go to the latest release page: <u><a href="https://github.com/tg-develop/voice-changer/releases/latest">Latest Release (click here to go to Github)</a></u></li>
-<li>On the release page, find the &quot;Assets&quot; section and download the file corresponding to your Mac&#x27;s processor.</li>
+<li>There&#x27;s no Intel Mac support.</li>
+<li><a href="https://github.com/tg-develop/voice-changer/releases/tag/b2364">b2364</a> is currently the last version that had Apple Silicon Mac Support.</li>
+</ul>
+        </div>
+    </div>
+</div>
+<ul>
+<li>First, go to the last Apple Silicon Mac release page: <u><a href="https://github.com/tg-develop/voice-changer/releases/tag/b2364">Last Release for Apple Silicon Macs (click here to go to Github)</a></u></li>
+<li>On the release page, find the &quot;Assets&quot; section and download the file corresponding to your Mac&#x27;s processor (Only Apple Silicon is available).</li>
 </ul>
 <hr>
 <doc-anchor-target id="download-for-apple-silicon-mac">
@@ -619,15 +642,6 @@ or
 </doc-anchor-target>
 <ul>
 <li>For Macs with an M1, M2, or newer Apple chip, download the file ending in <code v-pre>macos-arm64-cpu.tar.gz</code>.</li>
-</ul>
-<doc-anchor-target id="download-for-intel-mac">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#download-for-intel-mac">#</doc-anchor-trigger>
-        <span>Download for Intel Mac</span>
-    </h3>
-</doc-anchor-target>
-<ul>
-<li>For older Macs with an Intel processor, download the file ending in <code v-pre>macos-amd64-cpu.tar.gz</code>.</li>
 </ul>
 <hr>
 <doc-anchor-target id="opening-on-mac">
@@ -1242,6 +1256,13 @@ tar xzf voice-changer-linux-amd64-cpu.tar.gz</code></pre>
 </li>
 <li><code v-pre>GSM Compressor:</code> 2G cellular phone compression.</li>
 </ul>
+<doc-anchor-target id="background-effects">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#background-effects">#</doc-anchor-trigger>
+        <span>Background Effects</span>
+    </h4>
+</doc-anchor-target>
+<p>Background Effects, unlike Input &amp; Output ones, should work as audio tracks manually uploaded by the user mixed with converted audio. Currently this feature doesn&#x27;t seem to be working.</p>
 <hr>
 <doc-anchor-target id="advanced-settings">
     <h3>
