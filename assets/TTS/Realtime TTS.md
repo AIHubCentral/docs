@@ -25,7 +25,7 @@ order: 5000
 ### TTS Program
 :::
 
-Choose any TTS in our <u>[TTS Tools](https://docs.aihub.gg/tts-tools/)</u>.
+Choose any TTS in our <u>[TTS Tools](https://docs.aihub.gg/tts/tts-tools/)</u>.
 
 
 ***
