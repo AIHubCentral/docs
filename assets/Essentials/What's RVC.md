@@ -4,13 +4,13 @@ order: 2000
 visibility:
 ---
 
-``Last update: August 9, 2025``
+``Last update: November 9, 2025``
 
 ***
 
 ## Introduction :icon-book:
 ***
-- RVC (*Retrieval-Based Voice Conversion*) is an advanced AI **voice cloning** software based on <u>[VITS](https://github.com/jaywalnut310/vits]</u>, developed by the <u>[RVC-Project team](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI)</u>. It's considered the best **free & open-source** one to date.
+- RVC (*Retrieval-Based Voice Conversion*) is an advanced AI **voice cloning** software based on <u>[VITS](https://github.com/jaywalnut310/vits)</u>, developed by the <u>[RVC-Project team](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI)</u>. It's considered the best **free & open-source** one to date.
 
 - It was designed for desktop, requiring **great specs** to run it effectively, specially **GPU** for training models.
 
