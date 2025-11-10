@@ -2,7 +2,7 @@
 icon: chevron-right
 order: 3000
 ---
-``Last update: September 6, 2025``
+``Last update: November 10, 2025``
 ***
 :::content-center
 ## Introduction
@@ -67,7 +67,7 @@ and
 ***
 ##### For GPU-conversion
 
-TLDR: Make sure you have Nvidia RTX 20xx better. GTX 10xx or RX 900 will also work, but may run into issues with games and higher delay. If you have an iGPU (mostly AMD Radeon Graphics or Vega) use Wokada Deiteris Fork Cloud instead.
+TLDR: Make sure you have Nvidia RTX 20xx better. GTX 900 Series  will also work, but may run into issues with games and higher delay. If you have an iGPU (mostly AMD Radeon Graphics or Vega) use Wokada Deiteris Fork Cloud instead.
 
  Long answer:
 
