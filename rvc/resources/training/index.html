@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.816097230234">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.816467491354">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -34,11 +34,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../../img/b.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.11.0.816097230234" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.11.0.816467491354" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.816097230234" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.816467491354" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.816097230234" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.816467491354" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -458,19 +458,25 @@
 </div>
 <div class="mb-6 overflow-hidden border rounded-md docs-columns dark:border-base-border" style="grid-template-columns: repeat(1, minmax(0, 1fr));">
     <div class="flex items-center px-5 py-3 font-medium leading-snug text-gray-900 border-b border-base-border dark:text-white">
-        <span>Legacy Core by lyery</span>
+        <span>Legacy Core 2.5 by lyery</span>
     </div>
     <div class="px-5 py-3 docs-columns-content">
-<p>This is a perfect recreation of the original pretrain of RVC, which means you can train both speech datasets and singing datasets while also enjoying the benefits of the <a href="http://docs.aihub.gg/rvc/resources/inference-settings/#spin">Spin Embedder Model</a>. Every language supported, english pronunciation is vastly improved compared to the original pretrain, potential improvements in other languages as well. This recreation also has higher singing range than the og pretrain, and better generation of both speech and singing.</p>
+<p>The pretrain was trained using a bigger dataset this time, with both singing and speech.
+This pretrain produces less robotic results, and might be more accurate and more stable than the OG pretrain (less glitching).
+For better results don&#x27;t use a batch size below 8 and use a dataset of 10 minutes minimum.
+Don&#x27;t enable multi scale mel loss, just use the default mel, it&#x27;s better.
+Lyery recommends training for 40 to 100 epochs maximum. If you plan to go beyond 100 epochs, make sure to listen to your model starting from epoch 40 to monitor its quality.
+Be sure to not confuse it with the previous Legacy Core pretrains, that were using the Spin Embedder.</p>
 <ul>
 <li>Training Info:
 <ul>
-<li>dataset: vctk + m4singer</li>
-<li>batch size: 32 x 2</li>
+<li>dataset: <a href="https://huggingface.co/datasets/alibabasglab/LJSpeech-1.1-48kHz">ljspeech (upscaled)</a> + m4singer</li>
+<li>batch size: 64</li>
 <li>f0: rmvpe</li>
 <li>sample rate: 32k</li>
-<li>embedder: SPIN</li>
+<li>embedder: ContentVec</li>
 <li>vocoder: hifigan</li>
+<li>steps: 120k</li>
 </ul>
 </li>
 </ul>
@@ -478,8 +484,90 @@
 <ul>
 <li><strong>32k Download:</strong>
 <ul>
-<li><u><a href="https://huggingface.co/lyery/legacy-core/resolve/main/D_lcore.pth?download=true"><strong>D Download</strong></a></u></li>
-<li><u><a href="https://huggingface.co/lyery/legacy-core/resolve/main/G_lcore.pth?download=true"><strong>G Download</strong></a></u></li>
+<li><u><a href="https://huggingface.co/lyery/legacy-core-2.5/resolve/main/D_LSpeechV2.5.pth?download=true"><strong>D Download</strong></a></u></li>
+<li><u><a href="https://huggingface.co/lyery/legacy-core-2.5/resolve/main/G_LSpeechV2.5.pth?download=true"><strong>G Download</strong></a></u></li>
+</ul>
+</li>
+</ul>
+    </div>
+</div>
+<div class="mb-6 overflow-hidden border rounded-md docs-columns dark:border-base-border" style="grid-template-columns: repeat(1, minmax(0, 1fr));">
+    <div class="flex items-center px-5 py-3 font-medium leading-snug text-gray-900 border-b border-base-border dark:text-white">
+        <span>Spin V2 Test Pretrain by noobies</span>
+    </div>
+    <div class="px-5 py-3 docs-columns-content">
+<p>A test Pretrain for the Spin V2 Embedder by noobies, that could help for even better realtime models and pronunciation.</p>
+<ul>
+<li><strong>15 Epochs:</strong>
+<ul>
+<li><strong>32k Download:</strong>
+<ul>
+<li><u><a href="https://huggingface.co/Aznamir/spin/resolve/main/spin-v2/f0D32k_spin-v2.pth?download=true"><strong>D Download</strong></a></u></li>
+<li><u><a href="https://huggingface.co/Aznamir/spin/resolve/main/spin-v2/f0G32k_spin-v2.pth?download=true"><strong>G Download</strong></a></u></li>
+</ul>
+</li>
+<li><strong>40k Download:</strong>
+<ul>
+<li><u><a href="https://huggingface.co/Aznamir/spin/resolve/main/spin-v2/f0D40k_spin-v2.pth?download=true"><strong>D Download</strong></a></u></li>
+<li><u><a href="https://huggingface.co/Aznamir/spin/resolve/main/spin-v2/f0G40k_spin-v2.pth?download=true"><strong>G Download</strong></a></u></li>
+</ul>
+</li>
+<li><strong>48k Download:</strong>
+<ul>
+<li><u><a href="https://huggingface.co/Aznamir/spin/resolve/main/spin-v2/f0D48k_spin-v2.pth?download=true"><strong>D Download</strong></a></u></li>
+<li><u><a href="https://huggingface.co/Aznamir/spin/resolve/main/spin-v2/f0G48k_spin-v2.pth?download=true"><strong>G Download</strong></a></u></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>10 Epochs:</strong>
+<ul>
+<li><strong>32k Download:</strong>
+<ul>
+<li><u><a href="https://huggingface.co/Aznamir/spin/resolve/main/spin-v2/f0D32k_spin-v2_10e.pth?download=true"><strong>D Download</strong></a></u></li>
+<li><u><a href="https://huggingface.co/Aznamir/spin/resolve/main/spin-v2/f0G32k_spin-v2_10e.pth?download=true"><strong>G Download</strong></a></u></li>
+</ul>
+</li>
+<li><strong>40k Download:</strong>
+<ul>
+<li><u><a href="https://huggingface.co/Aznamir/spin/resolve/main/spin-v2/f0D40k_spin-v2_10e.pth?download=true"><strong>D Download</strong></a></u></li>
+<li><u><a href="https://huggingface.co/Aznamir/spin/resolve/main/spin-v2/f0G40k_spin-v2_10e.pth?download=true"><strong>G Download</strong></a></u></li>
+</ul>
+</li>
+<li><strong>48k Download:</strong>
+<ul>
+<li><u><a href="https://huggingface.co/Aznamir/spin/resolve/main/spin-v2/f0D48k_spin-v2_10e.pth?download=true"><strong>D Download</strong></a></u></li>
+<li><u><a href="https://huggingface.co/Aznamir/spin/resolve/main/spin-v2/f0G48k_spin-v2_10e.pth?download=true"><strong>G Download</strong></a></u></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+    </div>
+</div>
+<div class="mb-6 overflow-hidden border rounded-md docs-columns dark:border-base-border" style="grid-template-columns: repeat(1, minmax(0, 1fr));">
+    <div class="flex items-center px-5 py-3 font-medium leading-snug text-gray-900 border-b border-base-border dark:text-white">
+        <span>Spin Test Pretrain by noobies</span>
+    </div>
+    <div class="px-5 py-3 docs-columns-content">
+<p>A test Pretrain for the Spin Embedder by noobies, that could help for realtime models and pronunciation.</p>
+<ul>
+<li><strong>32k Download:</strong>
+<ul>
+<li><u><a href="https://huggingface.co/Aznamir/spin/resolve/main/f0D32k_spin7-12_single.pth?download=true"><strong>D Download</strong></a></u></li>
+<li><u><a href="https://huggingface.co/Aznamir/spin/resolve/main/f0G32k_spin7-12_single.pth?download=true"><strong>G Download</strong></a></u></li>
+</ul>
+</li>
+<li><strong>40k Download:</strong>
+<ul>
+<li><u><a href="https://huggingface.co/Aznamir/spin/resolve/main/f0D40k_spin7-12_single.pth?download=true"><strong>D Download</strong></a></u></li>
+<li><u><a href="https://huggingface.co/Aznamir/spin/resolve/main/f0G40k_spin7-12_single.pth?download=true"><strong>G Download</strong></a></u></li>
+</ul>
+</li>
+<li><strong>48k Download:</strong>
+<ul>
+<li><u><a href="https://huggingface.co/Aznamir/spin/resolve/main/f0D48k_spin7-12_single.pth?download=true"><strong>D Download</strong></a></u></li>
+<li><u><a href="https://huggingface.co/Aznamir/spin/resolve/main/f0G48k_spin7-12_single.pth?download=true"><strong>G Download</strong></a></u></li>
 </ul>
 </li>
 </ul>
