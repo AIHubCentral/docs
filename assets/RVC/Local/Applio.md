@@ -390,7 +390,7 @@ Don't include spaces/special characters.
 ###### ‎  
 ##### c. Custom Embedder Model
 ###### ‎  
-- If you select "custom" for embedders, you can add your own, like [Spin](http://docs.aihub.gg/rvc/resources/inference-settings/#spin) (which seems to have better pronunciation than contentvec and better for realtime as it handles context differently)
+- If you select "custom" for embedders, you can add your own, like [Spin](http://docs.aihub.gg/rvc/resources/inference-settings/#spin) or [Spin V2](http://docs.aihub.gg/rvc/resources/inference-settings/#spin-v2) (which seems to have better pronunciation than contentvec and better for realtime as it handles context differently)
 
     <img src="..\applio-img\embedder-custom-option.png" alt="image" width="400">
 

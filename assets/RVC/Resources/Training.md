@@ -128,24 +128,66 @@ Nanashi V1.7 is a fine-tuned based on TITAN pretrained and made with 11 hours of
     - <u>[**D Download**](https://huggingface.co/shiromiya/nanashi-pretrain/resolve/main/v1.7/D_nanashi_v1_7.pth?download=true)</u>
     - <u>[**G Download**](https://huggingface.co/shiromiya/nanashi-pretrain/resolve/main/v1.7/G_nanashi_v1_7.pth?download=true)</u>
 |||
-||| Legacy Core by lyery
-This is a perfect recreation of the original pretrain of RVC, which means you can train both speech datasets and singing datasets while also enjoying the benefits of the [Spin Embedder Model](http://docs.aihub.gg/rvc/resources/inference-settings/#spin). Every language supported, english pronunciation is vastly improved compared to the original pretrain, potential improvements in other languages as well. This recreation also has higher singing range than the og pretrain, and better generation of both speech and singing.
-
+||| Legacy Core 2.5 by lyery
+The pretrain was trained using a bigger dataset this time, with both singing and speech.
+This pretrain produces less robotic results, and might be more accurate and more stable than the OG pretrain (less glitching).
+For better results don't use a batch size below 8 and use a dataset of 10 minutes minimum.
+Don't enable multi scale mel loss, just use the default mel, it's better.
+Lyery recommends training for 40 to 100 epochs maximum. If you plan to go beyond 100 epochs, make sure to listen to your model starting from epoch 40 to monitor its quality.
+Be sure to not confuse it with the previous Legacy Core pretrains, that were using the Spin Embedder.
 
 - Training Info:
-    - dataset: vctk + m4singer
-    - batch size: 32 x 2
+    - dataset: [ljspeech (upscaled)](https://huggingface.co/datasets/alibabasglab/LJSpeech-1.1-48kHz) + m4singer
+    - batch size: 64
     - f0: rmvpe
     - sample rate: 32k
-    - embedder: SPIN
+    - embedder: ContentVec
     - vocoder: hifigan 
+    - steps: 120k
 
 
 <br>
 
 - **32k Download:**
-    - <u>[**D Download**](https://huggingface.co/lyery/legacy-core/resolve/main/D_lcore.pth?download=true)</u>
-    - <u>[**G Download**](https://huggingface.co/lyery/legacy-core/resolve/main/G_lcore.pth?download=true)</u>
+    - <u>[**D Download**](https://huggingface.co/lyery/legacy-core-2.5/resolve/main/D_LSpeechV2.5.pth?download=true)</u>
+    - <u>[**G Download**](https://huggingface.co/lyery/legacy-core-2.5/resolve/main/G_LSpeechV2.5.pth?download=true)</u>
+|||
+||| Spin V2 Test Pretrain by noobies
+A test Pretrain for the Spin V2 Embedder by noobies, that could help for even better realtime models and pronunciation.
+
+- **15 Epochs:**
+    - **32k Download:**
+        - <u>[**D Download**](https://huggingface.co/Aznamir/spin/resolve/main/spin-v2/f0D32k_spin-v2.pth?download=true)</u>
+        - <u>[**G Download**](https://huggingface.co/Aznamir/spin/resolve/main/spin-v2/f0G32k_spin-v2.pth?download=true)</u>
+    - **40k Download:**
+        - <u>[**D Download**](https://huggingface.co/Aznamir/spin/resolve/main/spin-v2/f0D40k_spin-v2.pth?download=true)</u>
+        - <u>[**G Download**](https://huggingface.co/Aznamir/spin/resolve/main/spin-v2/f0G40k_spin-v2.pth?download=true)</u>
+    - **48k Download:**
+        - <u>[**D Download**](https://huggingface.co/Aznamir/spin/resolve/main/spin-v2/f0D48k_spin-v2.pth?download=true)</u>
+        - <u>[**G Download**](https://huggingface.co/Aznamir/spin/resolve/main/spin-v2/f0G48k_spin-v2.pth?download=true)</u>
+- **10 Epochs:**
+    - **32k Download:**
+        - <u>[**D Download**](https://huggingface.co/Aznamir/spin/resolve/main/spin-v2/f0D32k_spin-v2_10e.pth?download=true)</u>
+        - <u>[**G Download**](https://huggingface.co/Aznamir/spin/resolve/main/spin-v2/f0G32k_spin-v2_10e.pth?download=true)</u>
+    - **40k Download:**
+        - <u>[**D Download**](https://huggingface.co/Aznamir/spin/resolve/main/spin-v2/f0D40k_spin-v2_10e.pth?download=true)</u>
+        - <u>[**G Download**](https://huggingface.co/Aznamir/spin/resolve/main/spin-v2/f0G40k_spin-v2_10e.pth?download=true)</u>
+    - **48k Download:**
+        - <u>[**D Download**](https://huggingface.co/Aznamir/spin/resolve/main/spin-v2/f0D48k_spin-v2_10e.pth?download=true)</u>
+        - <u>[**G Download**](https://huggingface.co/Aznamir/spin/resolve/main/spin-v2/f0G48k_spin-v2_10e.pth?download=true)</u>
+|||
+||| Spin Test Pretrain by noobies
+A test Pretrain for the Spin Embedder by noobies, that could help for realtime models and pronunciation.
+
+- **32k Download:**
+    - <u>[**D Download**](https://huggingface.co/Aznamir/spin/resolve/main/f0D32k_spin7-12_single.pth?download=true)</u>
+    - <u>[**G Download**](https://huggingface.co/Aznamir/spin/resolve/main/f0G32k_spin7-12_single.pth?download=true)</u>
+- **40k Download:**
+    - <u>[**D Download**](https://huggingface.co/Aznamir/spin/resolve/main/f0D40k_spin7-12_single.pth?download=true)</u>
+    - <u>[**G Download**](https://huggingface.co/Aznamir/spin/resolve/main/f0G40k_spin7-12_single.pth?download=true)</u>
+- **48k Download:**
+    - <u>[**D Download**](https://huggingface.co/Aznamir/spin/resolve/main/f0D48k_spin7-12_single.pth?download=true)</u>
+    - <u>[**G Download**](https://huggingface.co/Aznamir/spin/resolve/main/f0G48k_spin7-12_single.pth?download=true)</u>
 |||
 ||| KLM 4.1 by SeoulStreamingStation
 KLM 4.1 is a fine-tuned based on KLM V7 pretrained and made with around 100 hours dataset (Korean vocal/speech, Japanese vocal/speech and English speech), so it will work better with those languages. Unlike typical pretrained models KLM is a pretrained model created to make vocal guides using short voice recordings from a studio, this means that even with short dataset high pitch information it is possible to implement high-pitched sounds but it is sensitive to noise so it is recommended to use it with high quality datasets
@@ -164,7 +206,6 @@ KLM 4.2 maintains the same highly extensive pitch range as before and was develo
 - **32k Download:**
     - <u>[**D Download**](https://huggingface.co/SeoulStreamingStation/KLM4.2/resolve/main/D_KLM42_32k_x10.pth?download=true)</u>
     - <u>[**G Download**](https://huggingface.co/SeoulStreamingStation/KLM4.2/resolve/main/G_KLM42_32k_x10.pth?download=true)</u>
-
 |||
 ||| KLM 4 by SeoulStreamingStation :icon-star-fill:
 KLM 4 is the final HiFi-GAN pretrain that is going to be made by SSS. This version of klm is like all of the others but it follows the original structure of training and contains noise in the dataset so it can handle it better. This was trained with 800 hours of data, with a large portion of it being in Korean.
@@ -178,7 +219,6 @@ KLM 4 is the final HiFi-GAN pretrain that is going to be made by SSS. This versi
 - **48k Download:**
     - <u>[**D Download**](https://huggingface.co/SeoulStreamingStation/KLM49_HFG/resolve/main/D_KLM_HFG_48k.pth?download=true)</u>
     - <u>[**G Download**](https://huggingface.co/SeoulStreamingStation/KLM49_HFG/resolve/main/G_KLM_HFG_48k.pth?download=true)</u>
-
 |||
 ||| DMR V2 by Razer
 This is a fine-tuned based on the original RVC V2 pretrained and made with 22 hours of dataset aimed towards e-girl, soft male/female and deep male/female voices.
@@ -255,7 +295,6 @@ Rigel is a fine-tuned pretrain based on Rigel Base. Rigel Base has 1921 of speec
 - **Fine-Tuned 32k Download:**
     - <u>[**D Download**](https://huggingface.co/MUSTAR/Rigel-rvc-base-pretrained-model/resolve/main/Rigel_32k_Base_and_FineTuned/FineTuned-model_32k_fp32/D_Rigel_32k_fp32_2854856.pth?download=true)</u>
     - <u>[**G Download**](https://huggingface.co/MUSTAR/Rigel-rvc-base-pretrained-model/resolve/main/Rigel_32k_Base_and_FineTuned/FineTuned-model_32k_fp32/G_Rigel_32k_fp32_2854856.pth?download=true)</u>
-
 |||
 ||| SingerPreTrain by Sztef
 SingerPetrain is a fine-tuned based on Ov2 Super pretrained and made with 14 hours dataset (English singers). It is most suitable for training singers but it works for everything, the vocal range dataset is c1 to db7 so it works well with bass, baritone, tenor, alto, mezzo-soprano, soprano voices.

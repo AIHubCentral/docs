@@ -181,7 +181,17 @@ order: 100
     - Excels at separating the speaker's unique vocal timbre from the actual phonetic content (the words being spoken).
     - This could result in clearer and more accurate pronunciation compared to older models like ContentVec.
     - Its architecture is well-suited for realtime models.
-    - It can be downloaded at: https://huggingface.co/IAHispano/Applio/tree/main/Resources/embedders/spin .
+    - It can be downloaded at: https://huggingface.co/IAHispano/Applio/tree/main/Resources/embedders/spin.
+
+    ===
+
+    ==- *Spin V2*
+    ###### ‎  
+    - An even newer, more advanced embedder based on the "Speaker-invariant Clustering" method.
+    - It's better at separating the speaker's unique vocal timbre from the actual phonetic content (the words being spoken).
+    - This could result in clearer and more accurate pronunciation compared to older models like ContentVec and Spin.
+    - Its architecture is well-suited for realtime models.
+    - It can be downloaded at: https://huggingface.co/IAHispano/Applio/tree/main/Resources/embedders/spin-v2.
 
     ===
 
