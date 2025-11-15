@@ -3,7 +3,7 @@ icon: chevron-right
 order: 2000
 ---
 
-``Last update: August 18, 2025``
+``Last update: November 16, 2025``
 ***
 :::content-center
 ## Introduction
@@ -102,12 +102,35 @@ Remember that the cleaner your input audio is, the better the results.
 
 - For RVC users, the best app is Ultimate Vocal Remover 5 (or **UVR**). It can be used either <u>[locally](https://docs.aihub.gg/extra/glossary/#local-running)</u> or through the <u>[cloud](https://docs.aihub.gg/rvc/resources/dataset-isolation/#cloud-uvr)</u>.
 
-- If you need to remove multiple noises, follow this pipeline for the best results: ``Remove instrumental -> Remove reverb -> Extract main vocals -> Remove noise``  
+- If you need to remove multiple noises, follow this pipeline for the best results: `Remove instrumental -> Remove reverb -> Extract main vocals -> Remove noise`  
 
 - If you want to remove noise manually to avoid ai artifacts you can use RX 11, which is mentioned in this guide. 
 
 ‎ 
+:::content-center
+### Voice Restoration
+:::
+For restoring and enhancing voice quality, especially from low-quality sources, dedicated restoration models (like AI Audio Upscaling) can be used.
 
+!!!warning Using Upscaled/Restored Audio as an RVC Dataset can cause issues
+It's not the best option for RVC training and it may cause issues as the model trains on fake data.
+!!!
+
+- **Apollo**:
+    - By itself, it's an MP3 uncompressor. Can be found on: [MVSP](https://mvsep.com) | [Jarredou's Apollo Audio Restoration Google Colab](https://colab.research.google.com/github/jarredou/Apollo-Colab-Inference/blob/main/Apollo_Audio_Restoration_Colab.ipynb) | [Web UI Fork of Jarredou's Apollo Audio Restoration Google Colab](https://colab.research.google.com/drive/1E4zgWF-C_0-tSG0rYmLoSM7uUh7fzW8q?usp=sharing)
+    - Apollo by Lew is a Vocal Enhancer. Can be found on: [MVSP](https://mvsep.com) | [X-minus](https://x-minus.pro/ai) | [Jarredou's Apollo Audio Restoration Google Colab](https://colab.research.google.com/github/jarredou/Apollo-Colab-Inference/blob/main/Apollo_Audio_Restoration_Colab.ipynb) | [Web UI Fork of Jarredou's Apollo Audio Restoration Google Colab](https://colab.research.google.com/drive/1E4zgWF-C_0-tSG0rYmLoSM7uUh7fzW8q?usp=sharing)
+    - Apollo Universal is for both music and vocals. Can be found on: [MVSP](https://mvsep.com) | [X-minus](https://x-minus.pro/ai) | [Jarredou's Apollo Audio Restoration Google Colab](https://colab.research.google.com/github/jarredou/Apollo-Colab-Inference/blob/main/Apollo_Audio_Restoration_Colab.ipynb) | [Web UI Fork of Jarredou's Apollo Audio Restoration Google Colab](https://colab.research.google.com/drive/1E4zgWF-C_0-tSG0rYmLoSM7uUh7fzW8q?usp=sharing)
+    - Apollo by baicai1145 is a Vocal Enhancer for muddy vocals. Can be found on: [MVSP](https://mvsep.com) | [Jarredou's Apollo Audio Restoration Google Colab](https://colab.research.google.com/github/jarredou/Apollo-Colab-Inference/blob/main/Apollo_Audio_Restoration_Colab.ipynb) | [Web UI Fork of Jarredou's Apollo Audio Restoration Google Colab](https://colab.research.google.com/drive/1E4zgWF-C_0-tSG0rYmLoSM7uUh7fzW8q?usp=sharing)
+- **ClearerVoice-Studio's Clear Voice**: It has an active development. Can be found on: [GitHub Repository](https://github.com/modelscope/ClearerVoice-Studio) | [ModelScope Demo](https://modelscope.cn/studios/iic/ClearerVoice-Studio)
+- **A2SB**: Nvidia's own Upscaler. Can be found on: [GitHub Repository](https://github.com/NVIDIA/diffusion-audio-restoration#readme) | [Google Colab by Sir Joseph](https://colab.research.google.com/drive/1ThenZDCRTJKV1I_ax17XGWmkB1qoKrFs?usp=sharing)
+- **AudioSR**: It doesn't have active development, it has a basic and speech model. Can be found on: [GitHub Repository](https://github.com/haoheliu/versatile_audio_super_resolution) | [MVSEP](https://mvsep.com) (in the Experimental section, automatic cutoff search, but rather no mid/side processing) | [Nick088's Huggingface ZeroGPU Space](https://huggingface.co/spaces/Nick088/Audio-SR) | [Audacity Plugin](https://github.com/intel/openvino-plugins-ai-audacity/blob/main/doc/feature_doc/super_resolution/README.md) (CPU with SSE 4.2 required, or at least Intel i/GPU for acceleration, as it doesn't run with Nvidia/AMD GPUs for acceleration) | [Web UI Fork of Jarredou's Google Colab](https://colab.research.google.com/drive/1e9CjxMDyYnggKKQBPpGLufuVzt_yJJrL)
+
+
+These tools can be a separate step in your pipeline, used before or after initial noise reduction, depending on the audio source.
+
+You can also check the Audio Separation community AI Upscalers section in [here](https://docs.google.com/document/d/1GLWvwNG5Ity2OpTe_HARHQxgwYuoosseYcxpzVjL_wY/edit?tab=t.0#heading=h.i7mm2bj53u07) linked on thier [Discord](https://discord.gg/ZPtAU5R6rP). Please be aware that even if it's a good resource, it may contain some outdated info as it's long.
+
+‎
 
 +++ Local UVR
 
@@ -187,15 +210,16 @@ b. Now click the long `Start Processing` button.
 
 #### Best models for UVR:
 
-Note: they actually are all MelBand Roformer models, but there isn't a proper list yet for them
+Note: most actually are all MelBand Roformer models, but there isn't a proper list yet for them
 
 Extraction | Process Method | Model
 :---: | :---: | :---:
-Vocals | MDX-Net | Gabox's voc_fv4
-Instrumental | MDX-Net | INST Gabox V7
-De-Reverb | MDX-Net | Anvuew mel dereverb v2
-Extract Backing Vocals | MDX-Net | Mel roformer karaoke
-De-Noise | MDX-Net | Mel denoiser v2
+Vocals | MDX-Net | Gabox's `voc_fv4`
+Instrumental | MDX-Net | Instrumental | Unwa's `Inst V1 Plus` or `Inst V1 (E) Plus` (the e is emphasis for fullness, making the output sound full but possibly raising noise and lowering bleedlessness, so it might sound less clean)
+De-Reverb | MDX-Net | Anvuew's `mel_dereverb_v2` or `room_mono_v1`
+Extract Leading Vocals | MDX-Net | `bs roformer karaoke by anvuew`
+De-Noise | MDX-Net | `Mel denoiser v2`
+De-Echo  | MDX-Net | `uvr de-echo` and `uvr de-echo aggressive` (use aggressive only if there's still some echo left after the first model, their output has a cutoff around 15–16 kHz)
 
 ‎
 ### Troubleshooting :icon-tools:
@@ -263,11 +287,11 @@ b. Playable audios will then appear in the output boxes below. To download the o
 
 Extraction | Model
 :---: | :---:
-Vocals | ``MelBand Roformer | Vocals FV4 by Gabox``
-Instrumental | ``MelBand Roformer | INSTV7 by Gabox``
-De-Reverb | ``MelBand Roformer | De-Reverb by anvuew``
-Extract Backing Vocals | Mel-Roformer-Karaoke-Aufr33-Viperx
-De-Noise | Mel-Roformer-Denoise-Aufr33-Aggr
+Vocals | `MelBand Roformer | Vocals FV4 by Gabox`
+Instrumental | `MelBand Roformer Kim | Inst V1 Plus by Unwa` or `MelBand Roformer Kim | Inst V1 (E) Plus by Unwa` (the e is emphasis for fullness, making the output sound full but possibly raising noise and lowering bleedlessness, so it might sound less clean)
+De-Reverb | `MelBand Roformer | De-Reverb v2 by anvuew`
+Extract Leading Vocals | `MelBand Roformer | Karaoke by becruily`
+De-Noise | `MelBand Roformer | Denoise by Aufr33 (Aggressive)`
 
 
 ***
@@ -323,11 +347,11 @@ b. Playable audios will then appear in the output boxes below. To download the o
 
 Extraction | Model
 :---: | :---:
-Vocals | ``MelBand Roformer | Vocals FV4 by Gabox``
-Instrumental | ``MelBand Roformer | INSTV7 by Gabox``
-De-Reverb | ``MelBand Roformer | De-Reverb by anvuew``
-Extract Backing Vocals | Mel-Roformer-Karaoke-Aufr33-Viperx
-De-Noise | Mel-Roformer-Denoise-Aufr33-Aggr
+Vocals | `MelBand Roformer | Vocals FV4 by Gabox`
+Instrumental | `MelBand Roformer Kim | Inst V1 Plus by Unwa` or `MelBand Roformer Kim | Inst V1 (E) Plus by Unwa` (the e is emphasis for fullness, making the output sound full but possibly raising noise and lowering bleedlessness, so it might sound less clean)
+De-Reverb | `MelBand Roformer | De-Reverb v2 by anvuew`
+Extract Leading Vocals | `MelBand Roformer | Karaoke by becruily`
+De-Noise | `MelBand Roformer | Denoise by Aufr33 (Aggressive)`
 
 
 ***
@@ -387,11 +411,11 @@ ZeroGPU HuggingFace Spaces have a quota per account, if you aren’t signed in y
 
 Extraction | Model
 :---: | :---:
-Vocals | ``MelBand Roformer | Vocals FV4 by Gabox``
-Instrumental | ``MelBand Roformer | INSTV7 by Gabox``
-De-Reverb | ``MelBand Roformer | De-Reverb by anvuew``
-Extract Backing Vocals | Mel-Roformer-Karaoke-Aufr33-Viperx
-De-Noise | Mel-Roformer-Denoise-Aufr33-Aggr
+Vocals | `MelBand Roformer | Vocals FV4 by Gabox`
+Instrumental | `MelBand Roformer Kim | Inst V1 Plus by Unwa` or `MelBand Roformer Kim | Inst V1 (E) Plus by Unwa` (the e is emphasis for fullness, making the output sound full but possibly raising noise and lowering bleedlessness, so it might sound less clean)
+De-Reverb | `MelBand Roformer | De-Reverb v2 by anvuew`
+Extract Leading Vocals | `MelBand Roformer | Karaoke by becruily`
+De-Noise | `MelBand Roformer | Denoise by Aufr33 (Aggressive)`
 
 
 ***
@@ -408,7 +432,7 @@ De-Noise | Mel-Roformer-Denoise-Aufr33-Aggr
 ## MSST Colab
 :::
 
-This is jarredou's Music Source Separation Training (MMST) (Colab Inference).
+This is jarredou's Music Source Separation Training (MSST) (Colab Inference).
 
 ### How to Use :icon-checklist:
 
@@ -464,11 +488,11 @@ b. Download the result located in the output folder.
 
 Extraction | Model
 :---: | :---:
-Vocals | Gabox's voc_fv4
-Instrumental | INST Gabox V7
-De-Reverb | Anvuew mel dereverb v2
-Extract Backing Vocals | Mel roformer karaoke
-De-Noise | Mel denoiser v2
+Vocals | Gabox's `voc_fv4`
+Instrumental | `inst_v1_plus (by unwa)` or `inst_v1e_plus (by unwa)` (the e is emphasis for fullness, making the output sound full but possibly raising noise and lowering bleedlessness, so it might sound less clean)
+De-Reverb | Anvuew's `mel_dereverb_v2`
+Extract Leading Vocals | `bs_roformer_karaoke_frazer_becruily`
+De-Noise | `DENOISE-MelBand-Roformer-2 (by aufr33)`
 
 
 ‎
@@ -553,11 +577,11 @@ b. Same thing for the **Instrumental**, if you wish to keep it.
 
 Extraction | Separation Type | Model
 :---: | :---: | :---:
-Vocals | MelBand Roformer | `either:` unwa big beta v5e `OR` 2024.10
-Instrumental | MelBand Roformer | `either:` unwa instrumental v1e plus `OR` 2024.10
-De-Reverb | Reverb Removal | Reverb removal by `either`: Sucial V2 (MelRoformer) `OR` Anvuew V2 (MelRoformer)
-Extract Backing Vocals | MelBand Karaoke | Model fuzed gabox & aufr33/viperx (SDR: 9.85)
-De-Noise | DeNoise by aufr33 | Aggresive
+Vocals | MelBand Roformer | `BS-Roformer 2025.07`
+Instrumental | MelBand Roformer | `BS-Roformer 2025.07`
+De-Reverb | Reverb Removal | `Sucial V2` (MelRoformer) or `Anvuew V2` (MelRoformer)
+Extract Backing Vocals | MVSep Karaoke | BS Roformer by MVSep Team (SDR: 10.41)
+De-Noise | DeNoise by aufr33 | `Aggressive`
 
 
 ***
@@ -613,11 +637,11 @@ d. You can now click "Vocals" to download the vocals and "Other" to download the
 
 Extraction | Model
 :---: | :---: 
-Vocals/Instrumental | Mel-RoFormer by Gabox Fv7z
-De-Echo / De-Reverb | De-reverb & De-echo by Sucial v2
-Extract Backing Vocals | Mel-RoFormer Lead/Back (the only, invisible, available one)
-De-Noise (found in Restoration) | Mel Roformer De-Noise 
-Restoration | Apollo Universal by Lew (to enhance mp3 and other low quality files)
+Vocals/Instrumental | `Mel-RoFormer by Gabox Fv7z`
+De-Echo / De-Reverb | `De-reverb & De-echo by Sucial v2`
+Extract backing Vocals | Mel-RoFormer Lead/Back A.K.A mel_roformer_lv_bv_chain1 (the only one, visible in the site's code)
+De-Noise (found in Restoration) | `Mel Roformer De-Noise`
+Restoration | `Apollo Universal by Lew` (to enhance mp3 and other low quality files)
 
 
 +++ RX11
@@ -903,7 +927,7 @@ Now go in the RVC folder and place all these files in datasets folder. Zip it up
 
 +++
 
-You can find an extremely long and complex guide by the [Audio Separation's Discord](https://discord.gg/ZPtAU5R6rP): [here](https://docs.google.com/document/d/17fjNvJzj8ZGSer7c7OFe_CNfUKbAxEh_OBv94ZdRG5c/edit?tab=t.0), but it's not suggested and might have some outdated info as it got hundrends of pages.
+You can find an extremely long and complex guide from the Audio Separation community, linked from their [Discord](https://discord.gg/ZPtAU5R6rP). The full document is available [here](https://docs.google.com/document/d/17fjNvJzj8ZGSer7c7OFe_CNfUKbAxEh_OBv94ZdRG5c/edit?tab=t.0). Please be aware that while comprehensive, it may contain some outdated info as it spans hundreds of pages.
 
 
 ***
