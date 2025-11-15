@@ -107,9 +107,7 @@ Your GPU quota will continue to be used as long as the session is active with th
 ## Installation & Tunnels Setup
 ###### ‎  
 #### 3. <u>Run Installation Cells</u>
-a. Start by running the first few cells of the notebook to install the necessary dependencies. The first cell will look like this:
-
-   <img src="../kaggle-img/install-cell.png" alt="image" width="900" height=""> 
+a. Start by running the first few cells of the notebook to install the necessary dependencies. 
 
 #### 4. <u>Configure and Run Tunnels</u>
 a. The next cell is for setting up the tunneling service, which exposes the Applio interface to the internet.
