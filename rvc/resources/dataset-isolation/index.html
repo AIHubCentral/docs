@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.816535217024">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.816564260776">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -14,7 +14,7 @@
     <!-- Primary Meta Tags -->
     <title>Dataset &amp; Isolation</title>
     <meta name="title" content="Dataset & Isolation">
-    <meta name="description" content="Last update: August 18, 2025">
+    <meta name="description" content="Last update: November 16, 2025">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://docs.aihub.gg/rvc/resources/dataset-isolation/">
@@ -23,22 +23,22 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.aihub.gg/rvc/resources/dataset-isolation/">
     <meta property="og:title" content="Dataset & Isolation">
-    <meta property="og:description" content="Last update: August 18, 2025">
+    <meta property="og:description" content="Last update: November 16, 2025">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.aihub.gg/rvc/resources/dataset-isolation/">
     <meta property="twitter:title" content="Dataset & Isolation">
-    <meta property="twitter:description" content="Last update: August 18, 2025">
+    <meta property="twitter:description" content="Last update: November 16, 2025">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../../img/b.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.11.0.816535217024" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.11.0.816564260776" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.816535217024" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.816564260776" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.816535217024" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.816564260776" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -230,7 +230,7 @@
         <span>Dataset &amp; Isolation</span>
     </h1>
 </doc-anchor-target>
-<p><code v-pre>Last update: August 18, 2025</code></p>
+<p><code v-pre>Last update: November 16, 2025</code></p>
 <hr>
 <div class="content-center"><doc-anchor-target id="introduction">
     <h2>
@@ -430,6 +430,47 @@ This occurs after the <u><a href="https://docs.aihub.gg/extra/glossary/#inferenc
 <li><p>If you want to remove noise manually to avoid ai artifacts you can use RX 11, which is mentioned in this guide.</p>
 </li>
 </ul>
+<p>‎</p>
+<div class="content-center"><doc-anchor-target id="voice-restoration">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#voice-restoration">#</doc-anchor-trigger>
+        <span>Voice Restoration</span>
+    </h3>
+</doc-anchor-target>
+</div>
+<p>For restoring and enhancing voice quality, especially from low-quality sources, dedicated restoration models (like AI Audio Upscaling) can be used.</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-warning"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-warning" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M22.48 15.59L14.01 1.45A2.968 2.968 0 0012.16.09c-.78-.19-1.58-.07-2.27.35-.41.25-.76.6-1.01 1.01v.01L.4 15.6c-.83 1.43-.33 3.27 1.1 4.1.45.26.95.4 1.48.4h16.95c.8-.01 1.55-.33 2.11-.9.56-.57.87-1.33.86-2.13a3.04 3.04 0 00-.42-1.48zm-1.87 2.21c-.19.19-.44.3-.69.3H2.99c-.17 0-.34-.05-.49-.13a.992.992 0 01-.37-1.35L10.6 2.48c.08-.14.2-.25.34-.33a.992.992 0 011.37.33l8.46 14.13c.09.15.13.32.13.49 0 .26-.1.51-.29.7z"></path>
+                    <path d="M11.45 12.1c.55 0 1-.45 1-1v-4c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .56.45 1 1 1zM11.46 14.1c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Using Upscaled/Restored Audio as an RVC Dataset can cause issues</h5>
+<p>It&#x27;s not the best option for RVC training and it may cause issues as the model trains on fake data.</p>
+        </div>
+    </div>
+</div>
+<ul>
+<li><strong>Apollo</strong>:
+<ul>
+<li>By itself, it&#x27;s an MP3 uncompressor. Can be found on: <a href="https://mvsep.com">MVSP</a> | <a href="https://colab.research.google.com/github/jarredou/Apollo-Colab-Inference/blob/main/Apollo_Audio_Restoration_Colab.ipynb">Jarredou&#x27;s Apollo Audio Restoration Google Colab</a> | <a href="https://colab.research.google.com/drive/1E4zgWF-C_0-tSG0rYmLoSM7uUh7fzW8q?usp=sharing">Web UI Fork of Jarredou&#x27;s Apollo Audio Restoration Google Colab</a></li>
+<li>Apollo by Lew is a Vocal Enhancer. Can be found on: <a href="https://mvsep.com">MVSP</a> | <a href="https://x-minus.pro/ai">X-minus</a> | <a href="https://colab.research.google.com/github/jarredou/Apollo-Colab-Inference/blob/main/Apollo_Audio_Restoration_Colab.ipynb">Jarredou&#x27;s Apollo Audio Restoration Google Colab</a> | <a href="https://colab.research.google.com/drive/1E4zgWF-C_0-tSG0rYmLoSM7uUh7fzW8q?usp=sharing">Web UI Fork of Jarredou&#x27;s Apollo Audio Restoration Google Colab</a></li>
+<li>Apollo Universal is for both music and vocals. Can be found on: <a href="https://mvsep.com">MVSP</a> | <a href="https://x-minus.pro/ai">X-minus</a> | <a href="https://colab.research.google.com/github/jarredou/Apollo-Colab-Inference/blob/main/Apollo_Audio_Restoration_Colab.ipynb">Jarredou&#x27;s Apollo Audio Restoration Google Colab</a> | <a href="https://colab.research.google.com/drive/1E4zgWF-C_0-tSG0rYmLoSM7uUh7fzW8q?usp=sharing">Web UI Fork of Jarredou&#x27;s Apollo Audio Restoration Google Colab</a></li>
+<li>Apollo by baicai1145 is a Vocal Enhancer for muddy vocals. Can be found on: <a href="https://mvsep.com">MVSP</a> | <a href="https://colab.research.google.com/github/jarredou/Apollo-Colab-Inference/blob/main/Apollo_Audio_Restoration_Colab.ipynb">Jarredou&#x27;s Apollo Audio Restoration Google Colab</a> | <a href="https://colab.research.google.com/drive/1E4zgWF-C_0-tSG0rYmLoSM7uUh7fzW8q?usp=sharing">Web UI Fork of Jarredou&#x27;s Apollo Audio Restoration Google Colab</a></li>
+</ul>
+</li>
+<li><strong>ClearerVoice-Studio&#x27;s Clear Voice</strong>: It has an active development. Can be found on: <a href="https://github.com/modelscope/ClearerVoice-Studio">GitHub Repository</a> | <a href="https://modelscope.cn/studios/iic/ClearerVoice-Studio">ModelScope Demo</a></li>
+<li><strong>A2SB</strong>: Nvidia&#x27;s own Upscaler. Can be found on: <a href="https://github.com/NVIDIA/diffusion-audio-restoration#readme">GitHub Repository</a> | <a href="https://colab.research.google.com/drive/1ThenZDCRTJKV1I_ax17XGWmkB1qoKrFs?usp=sharing">Google Colab by Sir Joseph</a></li>
+<li><strong>AudioSR</strong>: It doesn&#x27;t have active development, it has a basic and speech model. Can be found on: <a href="https://github.com/haoheliu/versatile_audio_super_resolution">GitHub Repository</a> | <a href="https://mvsep.com">MVSEP</a> (in the Experimental section, automatic cutoff search, but rather no mid/side processing) | <a href="https://huggingface.co/spaces/Nick088/Audio-SR">Nick088&#x27;s Huggingface ZeroGPU Space</a> | <a href="https://github.com/intel/openvino-plugins-ai-audacity/blob/main/doc/feature_doc/super_resolution/README.md">Audacity Plugin</a> (CPU with SSE 4.2 required, or at least Intel i/GPU for acceleration, as it doesn&#x27;t run with Nvidia/AMD GPUs for acceleration) | <a href="https://colab.research.google.com/drive/1e9CjxMDyYnggKKQBPpGLufuVzt_yJJrL">Web UI Fork of Jarredou&#x27;s Google Colab</a></li>
+</ul>
+<p>These tools can be a separate step in your pipeline, used before or after initial noise reduction, depending on the audio source.</p>
+<p>You can also check the Audio Separation community AI Upscalers section in <a href="https://docs.google.com/document/d/1GLWvwNG5Ity2OpTe_HARHQxgwYuoosseYcxpzVjL_wY/edit?tab=t.0#heading=h.i7mm2bj53u07">here</a> linked on thier <a href="https://discord.gg/ZPtAU5R6rP">Discord</a>. Please be aware that even if it&#x27;s a good resource, it may contain some outdated info as it&#x27;s long.</p>
 <p>‎</p>
 <doc-tabs>
 <doc-tab v-cloak id="local-uvr">
@@ -644,7 +685,7 @@ We recommend picking <code v-pre>FLAC</code>. Learn why <u><a href="https://docs
         <span>Best models for UVR:</span>
     </h4>
 </doc-anchor-target>
-<p>Note: they actually are all MelBand Roformer models, but there isn&#x27;t a proper list yet for them</p>
+<p>Note: most actually are all MelBand Roformer models, but there isn&#x27;t a proper list yet for them</p>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -652,33 +693,45 @@ We recommend picking <code v-pre>FLAC</code>. Learn why <u><a href="https://docs
 <th style="text-align: center;">Extraction</th>
 <th style="text-align: center;">Process Method</th>
 <th style="text-align: center;">Model</th>
+<th style="text-align: center;"></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: center;">Vocals</td>
 <td style="text-align: center;">MDX-Net</td>
-<td style="text-align: center;">Gabox&#x27;s voc_fv4</td>
+<td style="text-align: center;">Gabox&#x27;s <code v-pre>voc_fv4</code></td>
+<td style="text-align: center;"></td>
 </tr>
 <tr>
 <td style="text-align: center;">Instrumental</td>
 <td style="text-align: center;">MDX-Net</td>
-<td style="text-align: center;">INST Gabox V7</td>
+<td style="text-align: center;">Instrumental</td>
+<td style="text-align: center;">Unwa&#x27;s <code v-pre>Inst V1 Plus</code> or <code v-pre>Inst V1 (E) Plus</code> (the e is emphasis for fullness, making the output sound full but possibly raising noise and lowering bleedlessness, so it might sound less clean)</td>
 </tr>
 <tr>
 <td style="text-align: center;">De-Reverb</td>
 <td style="text-align: center;">MDX-Net</td>
-<td style="text-align: center;">Anvuew mel dereverb v2</td>
+<td style="text-align: center;">Anvuew&#x27;s <code v-pre>mel_dereverb_v2</code> or <code v-pre>room_mono_v1</code></td>
+<td style="text-align: center;"></td>
 </tr>
 <tr>
-<td style="text-align: center;">Extract Backing Vocals</td>
+<td style="text-align: center;">Extract Leading Vocals</td>
 <td style="text-align: center;">MDX-Net</td>
-<td style="text-align: center;">Mel roformer karaoke</td>
+<td style="text-align: center;"><code v-pre>bs roformer karaoke by anvuew</code></td>
+<td style="text-align: center;"></td>
 </tr>
 <tr>
 <td style="text-align: center;">De-Noise</td>
 <td style="text-align: center;">MDX-Net</td>
-<td style="text-align: center;">Mel denoiser v2</td>
+<td style="text-align: center;"><code v-pre>Mel denoiser v2</code></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">De-Echo</td>
+<td style="text-align: center;">MDX-Net</td>
+<td style="text-align: center;"><code v-pre>uvr de-echo</code> and <code v-pre>uvr de-echo aggressive</code> (use aggressive only if there&#x27;s still some echo left after the first model, their output has a cutoff around 15–16 kHz)</td>
+<td style="text-align: center;"></td>
 </tr>
 </tbody>
 </table>
@@ -851,19 +904,19 @@ We recommend picking <code v-pre>FLAC</code>. Learn why <u><a href="https://docs
 </tr>
 <tr>
 <td style="text-align: center;">Instrumental</td>
-<td style="text-align: center;"><code v-pre>MelBand Roformer | INSTV7 by Gabox</code></td>
+<td style="text-align: center;"><code v-pre>MelBand Roformer Kim | Inst V1 Plus by Unwa</code> or <code v-pre>MelBand Roformer Kim | Inst V1 (E) Plus by Unwa</code> (the e is emphasis for fullness, making the output sound full but possibly raising noise and lowering bleedlessness, so it might sound less clean)</td>
 </tr>
 <tr>
 <td style="text-align: center;">De-Reverb</td>
-<td style="text-align: center;"><code v-pre>MelBand Roformer | De-Reverb by anvuew</code></td>
+<td style="text-align: center;"><code v-pre>MelBand Roformer | De-Reverb v2 by anvuew</code></td>
 </tr>
 <tr>
-<td style="text-align: center;">Extract Backing Vocals</td>
-<td style="text-align: center;">Mel-Roformer-Karaoke-Aufr33-Viperx</td>
+<td style="text-align: center;">Extract Leading Vocals</td>
+<td style="text-align: center;"><code v-pre>MelBand Roformer | Karaoke by becruily</code></td>
 </tr>
 <tr>
 <td style="text-align: center;">De-Noise</td>
-<td style="text-align: center;">Mel-Roformer-Denoise-Aufr33-Aggr</td>
+<td style="text-align: center;"><code v-pre>MelBand Roformer | Denoise by Aufr33 (Aggressive)</code></td>
 </tr>
 </tbody>
 </table>
@@ -1006,19 +1059,19 @@ We recommend picking <code v-pre>FLAC</code>. Learn why <u><a href="https://docs
 </tr>
 <tr>
 <td style="text-align: center;">Instrumental</td>
-<td style="text-align: center;"><code v-pre>MelBand Roformer | INSTV7 by Gabox</code></td>
+<td style="text-align: center;"><code v-pre>MelBand Roformer Kim | Inst V1 Plus by Unwa</code> or <code v-pre>MelBand Roformer Kim | Inst V1 (E) Plus by Unwa</code> (the e is emphasis for fullness, making the output sound full but possibly raising noise and lowering bleedlessness, so it might sound less clean)</td>
 </tr>
 <tr>
 <td style="text-align: center;">De-Reverb</td>
-<td style="text-align: center;"><code v-pre>MelBand Roformer | De-Reverb by anvuew</code></td>
+<td style="text-align: center;"><code v-pre>MelBand Roformer | De-Reverb v2 by anvuew</code></td>
 </tr>
 <tr>
-<td style="text-align: center;">Extract Backing Vocals</td>
-<td style="text-align: center;">Mel-Roformer-Karaoke-Aufr33-Viperx</td>
+<td style="text-align: center;">Extract Leading Vocals</td>
+<td style="text-align: center;"><code v-pre>MelBand Roformer | Karaoke by becruily</code></td>
 </tr>
 <tr>
 <td style="text-align: center;">De-Noise</td>
-<td style="text-align: center;">Mel-Roformer-Denoise-Aufr33-Aggr</td>
+<td style="text-align: center;"><code v-pre>MelBand Roformer | Denoise by Aufr33 (Aggressive)</code></td>
 </tr>
 </tbody>
 </table>
@@ -1150,19 +1203,19 @@ We recommend picking <code v-pre>FLAC</code>. Learn why <u><a href="https://docs
 </tr>
 <tr>
 <td style="text-align: center;">Instrumental</td>
-<td style="text-align: center;"><code v-pre>MelBand Roformer | INSTV7 by Gabox</code></td>
+<td style="text-align: center;"><code v-pre>MelBand Roformer Kim | Inst V1 Plus by Unwa</code> or <code v-pre>MelBand Roformer Kim | Inst V1 (E) Plus by Unwa</code> (the e is emphasis for fullness, making the output sound full but possibly raising noise and lowering bleedlessness, so it might sound less clean)</td>
 </tr>
 <tr>
 <td style="text-align: center;">De-Reverb</td>
-<td style="text-align: center;"><code v-pre>MelBand Roformer | De-Reverb by anvuew</code></td>
+<td style="text-align: center;"><code v-pre>MelBand Roformer | De-Reverb v2 by anvuew</code></td>
 </tr>
 <tr>
-<td style="text-align: center;">Extract Backing Vocals</td>
-<td style="text-align: center;">Mel-Roformer-Karaoke-Aufr33-Viperx</td>
+<td style="text-align: center;">Extract Leading Vocals</td>
+<td style="text-align: center;"><code v-pre>MelBand Roformer | Karaoke by becruily</code></td>
 </tr>
 <tr>
 <td style="text-align: center;">De-Noise</td>
-<td style="text-align: center;">Mel-Roformer-Denoise-Aufr33-Aggr</td>
+<td style="text-align: center;"><code v-pre>MelBand Roformer | Denoise by Aufr33 (Aggressive)</code></td>
 </tr>
 </tbody>
 </table>
@@ -1194,7 +1247,7 @@ We recommend picking <code v-pre>FLAC</code>. Learn why <u><a href="https://docs
     </h2>
 </doc-anchor-target>
 </div>
-<p>This is jarredou&#x27;s Music Source Separation Training (MMST) (Colab Inference).</p>
+<p>This is jarredou&#x27;s Music Source Separation Training (MSST) (Colab Inference).</p>
 <doc-anchor-target id="how-to-use-4">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-use-4">#</doc-anchor-trigger>
@@ -1323,23 +1376,23 @@ We recommend picking <code v-pre>FLAC</code>. Learn why <u><a href="https://docs
 <tbody>
 <tr>
 <td style="text-align: center;">Vocals</td>
-<td style="text-align: center;">Gabox&#x27;s voc_fv4</td>
+<td style="text-align: center;">Gabox&#x27;s <code v-pre>voc_fv4</code></td>
 </tr>
 <tr>
 <td style="text-align: center;">Instrumental</td>
-<td style="text-align: center;">INST Gabox V7</td>
+<td style="text-align: center;"><code v-pre>inst_v1_plus (by unwa)</code> or <code v-pre>inst_v1e_plus (by unwa)</code> (the e is emphasis for fullness, making the output sound full but possibly raising noise and lowering bleedlessness, so it might sound less clean)</td>
 </tr>
 <tr>
 <td style="text-align: center;">De-Reverb</td>
-<td style="text-align: center;">Anvuew mel dereverb v2</td>
+<td style="text-align: center;">Anvuew&#x27;s <code v-pre>mel_dereverb_v2</code></td>
 </tr>
 <tr>
-<td style="text-align: center;">Extract Backing Vocals</td>
-<td style="text-align: center;">Mel roformer karaoke</td>
+<td style="text-align: center;">Extract Leading Vocals</td>
+<td style="text-align: center;"><code v-pre>bs_roformer_karaoke_frazer_becruily</code></td>
 </tr>
 <tr>
 <td style="text-align: center;">De-Noise</td>
-<td style="text-align: center;">Mel denoiser v2</td>
+<td style="text-align: center;"><code v-pre>DENOISE-MelBand-Roformer-2 (by aufr33)</code></td>
 </tr>
 </tbody>
 </table>
@@ -1543,27 +1596,27 @@ We recommend selecting FLAC from now on. Learn more <u><a href="https://docs.aih
 <tr>
 <td style="text-align: center;">Vocals</td>
 <td style="text-align: center;">MelBand Roformer</td>
-<td style="text-align: center;"><code v-pre>either:</code> unwa big beta v5e <code v-pre>OR</code> 2024.10</td>
+<td style="text-align: center;"><code v-pre>BS-Roformer 2025.07</code></td>
 </tr>
 <tr>
 <td style="text-align: center;">Instrumental</td>
 <td style="text-align: center;">MelBand Roformer</td>
-<td style="text-align: center;"><code v-pre>either:</code> unwa instrumental v1e plus <code v-pre>OR</code> 2024.10</td>
+<td style="text-align: center;"><code v-pre>BS-Roformer 2025.07</code></td>
 </tr>
 <tr>
 <td style="text-align: center;">De-Reverb</td>
 <td style="text-align: center;">Reverb Removal</td>
-<td style="text-align: center;">Reverb removal by <code v-pre>either</code>: Sucial V2 (MelRoformer) <code v-pre>OR</code> Anvuew V2 (MelRoformer)</td>
+<td style="text-align: center;"><code v-pre>Sucial V2</code> (MelRoformer) or <code v-pre>Anvuew V2</code> (MelRoformer)</td>
 </tr>
 <tr>
 <td style="text-align: center;">Extract Backing Vocals</td>
-<td style="text-align: center;">MelBand Karaoke</td>
-<td style="text-align: center;">Model fuzed gabox &amp; aufr33/viperx (SDR: 9.85)</td>
+<td style="text-align: center;">MVSep Karaoke</td>
+<td style="text-align: center;">BS Roformer by MVSep Team (SDR: 10.41)</td>
 </tr>
 <tr>
 <td style="text-align: center;">De-Noise</td>
 <td style="text-align: center;">DeNoise by aufr33</td>
-<td style="text-align: center;">Aggresive</td>
+<td style="text-align: center;"><code v-pre>Aggressive</code></td>
 </tr>
 </tbody>
 </table>
@@ -1684,23 +1737,23 @@ This determines the depth of the extraction.</li>
 <tbody>
 <tr>
 <td style="text-align: center;">Vocals/Instrumental</td>
-<td style="text-align: center;">Mel-RoFormer by Gabox Fv7z</td>
+<td style="text-align: center;"><code v-pre>Mel-RoFormer by Gabox Fv7z</code></td>
 </tr>
 <tr>
 <td style="text-align: center;">De-Echo / De-Reverb</td>
-<td style="text-align: center;">De-reverb &amp; De-echo by Sucial v2</td>
+<td style="text-align: center;"><code v-pre>De-reverb &amp; De-echo by Sucial v2</code></td>
 </tr>
 <tr>
-<td style="text-align: center;">Extract Backing Vocals</td>
-<td style="text-align: center;">Mel-RoFormer Lead/Back (the only, invisible, available one)</td>
+<td style="text-align: center;">Extract backing Vocals</td>
+<td style="text-align: center;">Mel-RoFormer Lead/Back A.K.A mel_roformer_lv_bv_chain1 (the only one, visible in the site&#x27;s code)</td>
 </tr>
 <tr>
 <td style="text-align: center;">De-Noise (found in Restoration)</td>
-<td style="text-align: center;">Mel Roformer De-Noise</td>
+<td style="text-align: center;"><code v-pre>Mel Roformer De-Noise</code></td>
 </tr>
 <tr>
 <td style="text-align: center;">Restoration</td>
-<td style="text-align: center;">Apollo Universal by Lew (to enhance mp3 and other low quality files)</td>
+<td style="text-align: center;"><code v-pre>Apollo Universal by Lew</code> (to enhance mp3 and other low quality files)</td>
 </tr>
 </tbody>
 </table>
@@ -2068,7 +2121,7 @@ Open the menu for labeling.
 <p>Now go in the RVC folder and place all these files in datasets folder. Zip it up if needed.</p>
 </doc-tab>
 </doc-tabs>
-<p>You can find an extremely long and complex guide by the <a href="https://discord.gg/ZPtAU5R6rP">Audio Separation&#x27;s Discord</a>: <a href="https://docs.google.com/document/d/17fjNvJzj8ZGSer7c7OFe_CNfUKbAxEh_OBv94ZdRG5c/edit?tab=t.0">here</a>, but it&#x27;s not suggested and might have some outdated info as it got hundrends of pages.</p>
+<p>You can find an extremely long and complex guide from the Audio Separation community, linked from their <a href="https://discord.gg/ZPtAU5R6rP">Discord</a>. The full document is available <a href="https://docs.google.com/document/d/17fjNvJzj8ZGSer7c7OFe_CNfUKbAxEh_OBv94ZdRG5c/edit?tab=t.0">here</a>. Please be aware that while comprehensive, it may contain some outdated info as it spans hundreds of pages.</p>
 <hr>
 <div class="content-center"><doc-anchor-target id="preparing-the-dataset">
     <h2>
