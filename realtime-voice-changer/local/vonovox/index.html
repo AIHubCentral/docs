@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.816564260776">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.817002451507">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -14,7 +14,7 @@
     <!-- Primary Meta Tags -->
     <title>Vonovox</title>
     <meta name="title" content="Vonovox">
-    <meta name="description" content="Last update: November 10, 2025">
+    <meta name="description" content="Last update: November 21, 2025">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://docs.aihub.gg/realtime-voice-changer/local/vonovox/">
@@ -23,22 +23,22 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.aihub.gg/realtime-voice-changer/local/vonovox/">
     <meta property="og:title" content="Vonovox">
-    <meta property="og:description" content="Last update: November 10, 2025">
+    <meta property="og:description" content="Last update: November 21, 2025">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.aihub.gg/realtime-voice-changer/local/vonovox/">
     <meta property="twitter:title" content="Vonovox">
-    <meta property="twitter:description" content="Last update: November 10, 2025">
+    <meta property="twitter:description" content="Last update: November 21, 2025">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../../img/b.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.11.0.816564260776" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.11.0.817002451507" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.816564260776" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.817002451507" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.816564260776" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.817002451507" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -230,7 +230,7 @@
         <span>Vonovox</span>
     </h1>
 </doc-anchor-target>
-<p><code v-pre>Last update: November 10, 2025</code></p>
+<p><code v-pre>Last update: November 21, 2025</code></p>
 <hr>
 <div class="content-center"><doc-anchor-target id="introduction">
     <h2>
@@ -661,9 +661,9 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
     </div>
 </div>
 <ul>
-<li><p><code v-pre>RNNoise Reduction:</code> Greatly filters input background noise for very minimum latency. This can mitigate the chances of Vonovox trying to infer on noise.</p>
+<li><p><code v-pre>Smart SINE:</code> It works by not processing noise like a filter, it&#x27;s best to leave it on. This features replaces the old <code v-pre>Silero VAD</code> (an on off switch, that muted your output if voice isn&#x27;t detected, really fast) ij version 1.6.5. Smart SINE is a smart algorithm that will disable the SINE generator&#x27;s ability to translate noise to speech. Most noise like isolated static and random noises can no longer be mapped to false speech and generate static, NSF generator will not process them. Extremely loud and consistent noises like slamming on a surface may still trigger false positives but most noise should be stopped.</p>
 </li>
-<li><p><code v-pre>VAD Noise Reduction:</code> Completely mutes the output when speech is not detected. When speech is detected, it uses a 400ms release window. It is also much better at filtering breathe noises than RNNoise.</p>
+<li><p><code v-pre>RNNoise Reduction:</code> Greatly filters input background noise for very minimum latency. This can mitigate the chances of Vonovox trying to infer on noise.</p>
 </li>
 <li><p><code v-pre>AP-BWE 48k Upscaler:</code> This is an upscaler that extends the bandwidth of speech by adding missing frequency information up to 48k.</p>
 </li>
