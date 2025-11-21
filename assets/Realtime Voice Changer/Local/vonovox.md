@@ -2,7 +2,7 @@
 icon: chevron-right
 order: 3000
 ---
-``Last update: November 10, 2025``
+``Last update: November 21, 2025``
 ***
 :::content-center
 ## Introduction
@@ -238,9 +238,9 @@ On discord and games, you select:
 Noise reduction algorithms are not compatible with singing or whispering. Turn them off if you need to sing or whisper.
 !!!
 
-- `RNNoise Reduction:` Greatly filters input background noise for very minimum latency. This can mitigate the chances of Vonovox trying to infer on noise.
+- `Smart SINE:` It works by not processing noise like a filter, it's best to leave it on. This features replaces the old `Silero VAD` (an on off switch, that muted your output if voice isn't detected, really fast) ij version 1.6.5. Smart SINE is a smart algorithm that will disable the SINE generator's ability to translate noise to speech. Most noise like isolated static and random noises can no longer be mapped to false speech and generate static, NSF generator will not process them. Extremely loud and consistent noises like slamming on a surface may still trigger false positives but most noise should be stopped.
 
-- `VAD Noise Reduction:` Completely mutes the output when speech is not detected. When speech is detected, it uses a 400ms release window. It is also much better at filtering breathe noises than RNNoise.
+- `RNNoise Reduction:` Greatly filters input background noise for very minimum latency. This can mitigate the chances of Vonovox trying to infer on noise.
 
 - `AP-BWE 48k Upscaler:` This is an upscaler that extends the bandwidth of speech by adding missing frequency information up to 48k.
 
