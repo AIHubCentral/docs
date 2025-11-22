@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.817002451507">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.817150053055">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -14,7 +14,7 @@
     <!-- Primary Meta Tags -->
     <title>Tg Develop&#39;s W Okada Fork</title>
     <meta name="title" content="Tg Develop's W Okada Fork">
-    <meta name="description" content="Last update: October 26, 2025">
+    <meta name="description" content="Last update: November 22, 2025">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://docs.aihub.gg/realtime-voice-changer/local/tg-develops-w-okada-fork/">
@@ -23,23 +23,23 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.aihub.gg/realtime-voice-changer/local/tg-develops-w-okada-fork/">
     <meta property="og:title" content="Tg Develop's W Okada Fork">
-    <meta property="og:description" content="Last update: October 26, 2025">
+    <meta property="og:description" content="Last update: November 22, 2025">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.aihub.gg/realtime-voice-changer/local/tg-develops-w-okada-fork/">
     <meta property="twitter:title" content="Tg Develop's W Okada Fork">
-    <meta property="twitter:description" content="Last update: October 26, 2025">
+    <meta property="twitter:description" content="Last update: November 22, 2025">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../../img/b.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.11.0.817002451507" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.11.0.817150053055" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.817002451507" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.817150053055" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.817002451507" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=3.11.0.817002451507" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.817150053055" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=3.11.0.817150053055" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -231,7 +231,7 @@
         <span>Tg Develop&#x27;s W Okada Fork</span>
     </h1>
 </doc-anchor-target>
-<p><code v-pre>Last update: October 26, 2025</code></p>
+<p><code v-pre>Last update: November 22, 2025</code></p>
 <hr>
 <div class="content-center"><doc-anchor-target id="introduction">
     <h2>
@@ -303,8 +303,10 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
 <li>Uses a Web User Interface, meaning it can be run on the Cloud</li>
 <li>Uses FP16 Inference by default, and let&#x27;s you choose to use FP32 for better quality/precision</li>
 <li>Has Audio Effects</li>
-<li>Lets you choose the Model Embedder Type, including ContentVec &amp; Spin.</li>
+<li>Lets you choose the Model Embedder Type, including ContentVec, Spin and from version b2397 even Spin V2.</li>
 <li>Fixed renaming and deleting models on the WebUI (version b2377+)</li>
+<li>Supports installing models via .zip files (version b2397+)</li>
+<li>Saves storage by downloading only the required pretrains and has a downloader for optional ones (version b2397+)</li>
 </ul>
     </div>
     <div class="px-5 py-3 docs-columns-content">
@@ -803,9 +805,27 @@ tar xzf voice-changer-linux-amd64-cpu.tar.gz</code></pre>
 </li>
 <li><p>After that, you create another file with the file extension ending <code v-pre>.bat</code>, open it up with a notepad, copy paste what is needed in there again from the <u><a href="https://github.com/deiteris/voice-changer/issues/180#issuecomment-2359166278">GitHub link</a></u>.</p>
 </li>
-<li><p>Now run the bat file. After it starts, you should be able to open the link. For example, if you specified <code v-pre>HOST=192.168.0.1</code> and <code v-pre>ALLOWED_ORIGINS='[&quot;https://192.168.0.1:18888&quot;]')</code>, you should be able to open <code v-pre>https://192.168.0.1:18888</code> in your browser and use the realtime voice changer UI from other machines in your local network.</p>
+<li><p>Now run the bat file. After it starts, you should be able to open the link. For example, if you specified <code v-pre>HOST=192.168.0.1</code> and <code v-pre>ALLOWED_ORIGINS='[&quot;https://192.168.0.1:18888&quot;]')</code>, you should be able to open <code v-pre>https://192.168.0.1:18888</code> in your browser.</p>
 </li>
 </ul>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-info"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-info" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Automatic HTTPS Certificates (b2397+)</h5>
+<p>As of version <strong>b2397</strong>, if you configure the server to run on an IP other than <code v-pre>127.0.0.1</code>, the web server will automatically generate a self-signed certificate. This is required to establish the audio context in browsers (giving permission to the microphone) when connecting from another machine on the network.</p>
+        </div>
+    </div>
+</div>
 <hr>
 <doc-anchor-target id="voice-models">
     <h2>
@@ -836,8 +856,10 @@ tar xzf voice-changer-linux-amd64-cpu.tar.gz</code></pre>
 <ul>
 <li>Click on <code v-pre>+</code> on the left sidebar Model Selector menu.</li>
 <li>Only RVC models will work. If you have a gpt-sovits one or any other, they will not work.</li>
-<li>Upload the Model File (.pth, .safetensors, .onnx), give it a Name (this is currently bugged, no matter what name you give it, it will always use the actual model&#x27;s name), and Select between Hubert_Base/ContentVec &amp; SPIN for the Embedder Type</li>
-<li>Optionally Upload the Index File (.index), this controls the Trained Model Accent.</li>
+<li>Upload the Model File (<code v-pre>.pth</code>, <code v-pre>.safetensors</code>, <code v-pre>.onnx</code>) or a <strong><code v-pre>.zip</code> file containing the model and index</strong>.</li>
+<li>Give it a Name (this is currently bugged, no matter what name you give it, it will always use the actual model&#x27;s name).</li>
+<li>Select between Hubert_Base/ContentVec &amp; SPIN for the Embedder Type.</li>
+<li>If you didn&#x27;t upload a zip, optionally Upload the Index File (.index), this controls the Trained Model Accent.</li>
 <li>Optionally Upload a Thumbnail Image.</li>
 <li>Optionally check &quot;Select model after upload&quot;, to automatically select it after it gets uploaded.</li>
 </ul>
@@ -1270,6 +1292,12 @@ tar xzf voice-changer-linux-amd64-cpu.tar.gz</code></pre>
         <span>Advanced Settings</span>
     </h3>
 </doc-anchor-target>
+<doc-anchor-target id="settings">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#settings">#</doc-anchor-trigger>
+        <span>Settings</span>
+    </h4>
+</doc-anchor-target>
 <ul>
 <li><code v-pre>UI Language:</code> Select the Web User Interface Language, currently there is only English, German and Japanese.</li>
 <li><code v-pre>Protocol:</code> rest (Use SIO if you want less delay but if you encounter any issues with SIO switch back to rest. Rest has slightly more delay than SIO)</li>
@@ -1281,6 +1309,34 @@ tar xzf voice-changer-linux-amd64-cpu.tar.gz</code></pre>
 <li><code v-pre>Protect:</code> Reduces the occurrence of robotic sibilants and robotic breathing, but also reduces the effect of the index file. Lower values increase this protection, higher values decrease it. The default value is 0.5, which means that the protection is disabled, reduce this value to 0.33 to enable it</li>
 <li><code v-pre>Interface - Switch To Classic UI:</code> It should use the same Web User Interface as the Original Wokada and Deiteris Fork, it&#x27;s not suggested as it won&#x27;t have all the new features, and is currently broken.</li>
 <li><code v-pre>Skip Pass through confirmation:</code> It will skip the confirmation when you enable Passthrough, not suggested.</li>
+</ul>
+<doc-anchor-target id="downloader">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#downloader">#</doc-anchor-trigger>
+        <span>Downloader</span>
+    </h4>
+</doc-anchor-target>
+<p>This was added in version b2397 and allows you to manage which pretrained models are installed, since that version no longer downloads all pretrains at startup. The <code v-pre>RMVPE</code> &amp; <code v-pre>RMVPE (Onnx)</code> Pitch Extraction Algorithms and the <code v-pre>ContentVec</code> Embedder are downloaded by default since they are required.</p>
+<ul>
+<li>Embedders:
+<ul>
+<li><a href="http://docs.aihub.gg/rvc/resources/inference-settings/#contentvec"><code v-pre>ContentVec / Hubert (REQUIRED)</code></a>.</li>
+<li><a href="http://docs.aihub.gg/rvc/resources/inference-settings/#spin"><code v-pre>SPIN</code></a>.</li>
+<li><a href="http://docs.aihub.gg/rvc/resources/inference-settings/#spin-v2"><code v-pre>SPIN V2</code></a>.</li>
+</ul>
+</li>
+<li>Pitch Extraction Algorithms:
+<ul>
+<li><a href="http://docs.aihub.gg/rvc/resources/inference-settings/#rmvpe"><code v-pre>RMVPE (REQUIRED)</code></a>.</li>
+<li><a href="http://docs.aihub.gg/rvc/resources/inference-settings/#rmvpe"><code v-pre>RMVPE (Onnx) (REQUIRED)</code></a>.</li>
+<li><a href="http://docs.aihub.gg/rvc/resources/inference-settings/#mangio-crepe--crepe"><code v-pre>Crepe Full (Onnx)</code></a>.</li>
+<li><a href="http://docs.aihub.gg/rvc/resources/inference-settings/#mangio-crepe--crepe"><code v-pre>Crepe Full (PyTorch)</code></a>.</li>
+<li><a href="http://docs.aihub.gg/rvc/resources/inference-settings/#mangio-crepe--crepe"><code v-pre>Crepe Tiny (Onnx)</code></a>.</li>
+<li><a href="http://docs.aihub.gg/rvc/resources/inference-settings/#mangio-crepe--crepe"><code v-pre>Crepe Tiny (PyTorch)</code></a>.</li>
+<li><a href="http://docs.aihub.gg/rvc/resources/inference-settings/#fcpe"><code v-pre>FCPE</code></a>.</li>
+<li><a href="http://docs.aihub.gg/rvc/resources/inference-settings/#fcpe"><code v-pre>FCPE (Onnx)</code></a>.</li>
+</ul>
+</li>
 </ul>
 <hr>
 <doc-anchor-target id="finding-my-own-settings-for-chunk-size-and-extra-processing-time">
@@ -1664,8 +1720,14 @@ tar xzf voice-changer-linux-amd64-cpu.tar.gz</code></pre>
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-            <h5>Method 1</h5>
-<p>Retry with a better connection later.</p>
+            <h5>Method 1 (Use the Manager)</h5>
+<p>As of version <strong>b2397</strong>, the program does not download all files at once.</p>
+<ol>
+<li>Open the WebUI.</li>
+<li>Go to <strong>Advanced Settings</strong>.</li>
+<li>Look for the <strong>Download Manager</strong>.</li>
+<li>Manually download the specific pretrain files you are missing or that failed.</li>
+</ol>
         </div>
     </div>
 </div>
@@ -1682,13 +1744,14 @@ tar xzf voice-changer-linux-amd64-cpu.tar.gz</code></pre>
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-            <h5>Method 2</h5>
+            <h5>Method 2 (Manual Fix)</h5>
+<p>If the manager is not working or you cannot access the WebUI:</p>
 <ol>
 <li>Go to the &quot;pretrain&quot; folder in the MMVCServerSIO folder.</li>
 <li>Delete everything inside it if there is anything.</li>
 <li>Download the <a href="https://github.com/Nick088Official/Wokada-Tg-Develop-Fork-Pretrain/releases/download/b2364/pretrain.zip">Zipped Version of the Pretrained folder</a></li>
 <li>Extract the pretrain.zip, be sure the pretrain folder contains only the files, not a pretrain folder inside another pretrain folder with the files.</li>
-<li>Then run MMVCServerSIO.exe again, this time it should work.</li>
+<li>Then run MMVCServerSIO.exe again.</li>
 </ol>
         </div>
     </div>
