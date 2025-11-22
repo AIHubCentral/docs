@@ -2,7 +2,7 @@
 icon: chevron-right
 order: 3000
 ---
-``Last update: October 26, 2025``
+``Last update: November 22, 2025``
 ***
 :::content-center
 ## Introduction
@@ -37,8 +37,10 @@ Also, **HuggingFace has a <u>[Security Scanner](https://huggingface.co/docs/hub/
 - Uses a Web User Interface, meaning it can be run on the Cloud
 - Uses FP16 Inference by default, and let's you choose to use FP32 for better quality/precision
 - Has Audio Effects
-- Lets you choose the Model Embedder Type, including ContentVec & Spin.
+- Lets you choose the Model Embedder Type, including ContentVec, Spin and from version b2397 even Spin V2.
 - Fixed renaming and deleting models on the WebUI (version b2377+)
+- Supports installing models via .zip files (version b2397+)
+- Saves storage by downloading only the required pretrains and has a downloader for optional ones (version b2397+)
 ||| ❌ **CONS** 
 - Uses a Web User Interface, having issues on some browsers.
 - Doesn't have a very active development recently, it's more of a personal public fork with some Quality Of Life updates of the Wokada Deiteris' Fork, please don't have too much expectations and don't disturb the developer about it
@@ -293,8 +295,11 @@ This is only for the people that have 2 PCs, and want to use 1 PC for Gaming, th
 
 - After that, you create another file with the file extension ending `.bat`, open it up with a notepad, copy paste what is needed in there again from the <u>[GitHub link](https://github.com/deiteris/voice-changer/issues/180#issuecomment-2359166278)</u>. 
 
+- Now run the bat file. After it starts, you should be able to open the link. For example, if you specified `HOST=192.168.0.1` and `ALLOWED_ORIGINS='["https://192.168.0.1:18888"]')`, you should be able to open `https://192.168.0.1:18888` in your browser.
 
-- Now run the bat file. After it starts, you should be able to open the link. For example, if you specified `HOST=192.168.0.1` and `ALLOWED_ORIGINS='["https://192.168.0.1:18888"]')`, you should be able to open `https://192.168.0.1:18888` in your browser and use the realtime voice changer UI from other machines in your local network.
+!!!info Automatic HTTPS Certificates (b2397+)
+As of version **b2397**, if you configure the server to run on an IP other than `127.0.0.1`, the web server will automatically generate a self-signed certificate. This is required to establish the audio context in browsers (giving permission to the microphone) when connecting from another machine on the network.
+!!!
 
 
 ***
@@ -311,8 +316,10 @@ This is only for the people that have 2 PCs, and want to use 1 PC for Gaming, th
 
 - Click on `+` on the left sidebar Model Selector menu.
 - Only RVC models will work. If you have a gpt-sovits one or any other, they will not work.
-- Upload the Model File (.pth, .safetensors, .onnx), give it a Name (this is currently bugged, no matter what name you give it, it will always use the actual model's name), and Select between Hubert_Base/ContentVec & SPIN for the Embedder Type
-- Optionally Upload the Index File (.index), this controls the Trained Model Accent.
+- Upload the Model File (`.pth`, `.safetensors`, `.onnx`) or a **`.zip` file containing the model and index**.
+- Give it a Name (this is currently bugged, no matter what name you give it, it will always use the actual model's name).
+- Select between Hubert_Base/ContentVec & SPIN for the Embedder Type.
+- If you didn't upload a zip, optionally Upload the Index File (.index), this controls the Trained Model Accent.
 - Optionally Upload a Thumbnail Image.
 - Optionally check "Select model after upload", to automatically select it after it gets uploaded.
 
@@ -572,6 +579,8 @@ Background Effects, unlike Input & Output ones, should work as audio tracks manu
 ***
 ### Advanced Settings
 
+#### Settings
+
 - `UI Language:` Select the Web User Interface Language, currently there is only English, German and Japanese.
 - `Protocol:` rest (Use SIO if you want less delay but if you encounter any issues with SIO switch back to rest. Rest has slightly more delay than SIO)
 - `Crossfade Overlap:` Controls how smoothly the AI stitches different processed parts "chunks" of your voice back together. 0.1 or 0.15 (0.1 for fastest voice, 0.15 for improved quality but increases delay by 50 ms)
@@ -583,6 +592,24 @@ Background Effects, unlike Input & Output ones, should work as audio tracks manu
 - `Interface - Switch To Classic UI:` It should use the same Web User Interface as the Original Wokada and Deiteris Fork, it's not suggested as it won't have all the new features, and is currently broken.
 - `Skip Pass through confirmation:` It will skip the confirmation when you enable Passthrough, not suggested.
 
+
+#### Downloader
+
+This was added in version b2397 and allows you to manage which pretrained models are installed, since that version no longer downloads all pretrains at startup. The `RMVPE` & `RMVPE (Onnx)` Pitch Extraction Algorithms and the `ContentVec` Embedder are downloaded by default since they are required.
+
+- Embedders:
+    - [`ContentVec / Hubert (REQUIRED)`](http://docs.aihub.gg/rvc/resources/inference-settings/#contentvec).
+    - [`SPIN`](http://docs.aihub.gg/rvc/resources/inference-settings/#spin).
+    - [`SPIN V2`](http://docs.aihub.gg/rvc/resources/inference-settings/#spin-v2).
+- Pitch Extraction Algorithms:
+    - [`RMVPE (REQUIRED)`](http://docs.aihub.gg/rvc/resources/inference-settings/#rmvpe).
+    - [`RMVPE (Onnx) (REQUIRED)`](http://docs.aihub.gg/rvc/resources/inference-settings/#rmvpe).
+    - [`Crepe Full (Onnx)`](http://docs.aihub.gg/rvc/resources/inference-settings/#mangio-crepe--crepe).
+    - [`Crepe Full (PyTorch)`](http://docs.aihub.gg/rvc/resources/inference-settings/#mangio-crepe--crepe).
+    - [`Crepe Tiny (Onnx)`](http://docs.aihub.gg/rvc/resources/inference-settings/#mangio-crepe--crepe).
+    - [`Crepe Tiny (PyTorch)`](http://docs.aihub.gg/rvc/resources/inference-settings/#mangio-crepe--crepe).
+    - [`FCPE`](http://docs.aihub.gg/rvc/resources/inference-settings/#fcpe).
+    - [`FCPE (Onnx)`](http://docs.aihub.gg/rvc/resources/inference-settings/#fcpe).
 
 ***
 ### Finding my own settings for Chunk Size and Extra Processing Time
@@ -732,16 +759,21 @@ You did not match the sample rate of your virtual audio cable to your microphone
 
 After you start the program for the first time and it finished downloading files, but you have slow/unstable internet connection it might say Failed to download or verify: ... followed by "Press Enter to continue" at the end, then the pretrain download failed. To fix it, you can either:
 
-!!! Method 1
-Retry with a better connection later.
+!!! Method 1 (Use the Manager)
+As of version **b2397**, the program does not download all files at once.
+1. Open the WebUI.
+2. Go to **Advanced Settings**.
+3. Look for the **Download Manager**.
+4. Manually download the specific pretrain files you are missing or that failed.
 !!!
 
-!!! Method 2
+!!! Method 2 (Manual Fix)
+If the manager is not working or you cannot access the WebUI:
 1. Go to the "pretrain" folder in the MMVCServerSIO folder.
 2. Delete everything inside it if there is anything.
 3. Download the [Zipped Version of the Pretrained folder](https://github.com/Nick088Official/Wokada-Tg-Develop-Fork-Pretrain/releases/download/b2364/pretrain.zip)
 4. Extract the pretrain.zip, be sure the pretrain folder contains only the files, not a pretrain folder inside another pretrain folder with the files.
-5. Then run MMVCServerSIO.exe again, this time it should work.
+5. Then run MMVCServerSIO.exe again.
 !!!
 
 ### Crackle Fix

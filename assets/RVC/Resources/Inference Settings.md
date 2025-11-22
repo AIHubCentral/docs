@@ -73,6 +73,8 @@ order: 100
 
 - There's a <u>[Pitch Benchmark](https://github.com/lars76/pitch-benchmark)</u>, but this is generally speaking and not only taken in the context of RVC.
 
+- Most of those Algorithms are `PyTorch` models, but they got their own `ONNX` version, found like in Realtime Voice Changers, which can provide better performance especially for Non-Nvidia GPUs like AMD GPUs.
+
 - As the majority of them are obsolete, we'll focus on the 3 best ones: **RMVPE**, **Crepe** & **FCPE**.
 
     ==- *RMVPE*
@@ -97,7 +99,8 @@ order: 100
     ==- *Mangio-Crepe / Crepe*
     ###### ‎  
     - **NOTE THAT MANGIO CREPE IS ONLY A PLACEBO**: 160 hop is required to match with feature extraction, if you ran hop 40, that made f0 output 4x longer than needed and it had to be interpolated back required size. That's why it got removed from Applio, it would be better to use Crepe, or even better just use RMVPE.
-    - Mangio Crepe: It's crepe, but you can adjust its hop_length. It determines the time it takes the voice to hit a note. The lower the value, the more detailed results you'll get, but will take longer to process
+    - Mangio Crepe: It's Crepe, but you can adjust its hop_length. It determines the time it takes the voice to hit a note. The lower the value, the more detailed results you'll get, but will take longer to process
+    - There can be Crepe variations like Crepe Tiny and Crepe Full in Realtime Voice Changers like W-Okada and its forks, the Tiny one is lighter.
     - If you have really clean audio use this over RMVPE
     - Better with soft, whspery or voices with feminine timbres
     ###### ‎ 
