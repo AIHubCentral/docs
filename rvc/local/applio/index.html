@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.817150096114">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.818472667551">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -34,12 +34,12 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../../img/b.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.11.0.817150096114" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.11.0.818472667551" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.817150096114" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.818472667551" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.817150096114" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=3.11.0.817150096114" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.818472667551" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=3.11.0.818472667551" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -515,12 +515,58 @@ find &quot;.venv&quot; -type f -exec sed -i -e 's/\r$//' -e &quot;s|/home/runner
         </div>
         <div class="pr-5 ml-3 w-full">
             <h5>&quot;Unofficial Method&quot;</h5>
-<p>This guide is for AMD GPU users on Windows. It uses Zluda to enable CUDA compatibility.</p>
+<p>These guides are for AMD GPU users on Windows using Zluda to enable CUDA compatibility. Select the tab corresponding to your driver version.</p>
         </div>
     </div>
 </div>
-<p>For AMD GPU users, follow these steps to set up Applio:</p>
-<hr>
+<doc-tabs>
+<doc-tab v-cloak id="adrenalin-2551-newer">
+<template #title>Adrenalin 25.5.1+ (Newer)</template>
+<p><strong>For Adrenalin 25.5.1 driver or newer</strong></p>
+<ol>
+<li><p>Download a compiled version of Applio <strong>v3.5.0 or newer</strong> from the <u><a href="https://huggingface.co/IAHispano/Applio/tree/main/Compiled">Hugging Face repo</a></u>, and unzip it to your desired folder.</p>
+</li>
+<li><p>Download <strong>HIP SDK 6.2.4</strong> from the <u><a href="https://www.amd.com/en/developer/resources/rocm-hub/hip-sdk.html">AMD ROCm Hub</a></u>.</p>
+<ul>
+<li>Run the installer.</li>
+<li><strong>Important:</strong> Install the components but <strong>exclude/deselect the video driver</strong> at the bottom of the installer list.</li>
+</ul>
+</li>
+<li><p>Add the following path to your System Environment Variables (Path):
+<code v-pre>C:\Program Files\AMD\ROCm\6.2\bin</code></p>
+</li>
+<li><p>Open a command line (CMD) inside the Applio folder and run the following commands to update PyTorch:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-bash"><code v-pre class="language-bash">env\python -m pip uninstall torch torchvision torchaudio
+env\python -m pip install torch torchvision torchaudio --upgrade --index-url https://download.pytorch.org/whl/cu118</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>Download the necessary patch files into your Applio root folder:</p>
+<ul>
+<li><u><a href="https://github.com/IAHispano/Applio/blob/main/assets/zluda/patch-zluda-hip62.bat">patch-zluda-hip62.bat</a></u></li>
+<li><u><a href="https://github.com/IAHispano/Applio/blob/main/assets/zluda/run-applio-amd.bat">run-applio-amd.bat</a></u></li>
+</ul>
+</li>
+<li><p>Edit the file located at <code v-pre>rvc/lib/zluda.py</code>. Replace the content with the following:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-python"><code v-pre class="language-python">import torch
+
+if torch.cuda.is_available() and torch.cuda.get_device_name().endswith(&quot;[ZLUDA]&quot;):
+    # disabling unsupported cudnn
+    torch.backends.cudnn.enabled = False
+    torch.backends.cuda.enable_flash_sdp(False)
+    torch.backends.cuda.enable_math_sdp(True)
+    torch.backends.cuda.enable_mem_efficient_sdp(False)</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>Run <code v-pre>patch-zluda-hip62.bat</code>.</p>
+</li>
+<li><p>Run <code v-pre>run-applio-amd.bat</code> to start Applio.</p>
+</li>
+</ol>
+</doc-tab>
+<doc-tab v-cloak id="older-drivers--legacy">
+<template #title>Older Drivers / Legacy</template>
 <ol>
 <li>Download and install the <u><a href="https://aka.ms/vs/17/release/vc_redist.x64.exe">VC++ Runtime</a></u>.</li>
 </ol>
@@ -607,6 +653,8 @@ env\python -m pip install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 --u
 <ol start="9">
 <li>Run <code v-pre>run-applio-amd.bat</code> to start Applio.</li>
 </ol>
+</doc-tab>
+</doc-tabs>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-warning"></div>
     <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
