@@ -98,7 +98,7 @@ icon: home-fill
 ###### ‎  
 ## Credits :icon-heart:
 - **Lead by:** Nick088, Eddy, Julia (Used to)
-- **General Help:** Poopmaster Raid, Light, Faze Masta, Alexolotl, Delik, Razer, Nick088
+- **General Help:** Poopmaster Raid, Light, Faze Masta, Alexolotl, Delik, Razer, Nick088, Noobies
 - **Reviewing:** Faze Masta, Alexolotl, SimplCup, Delik, Litsa, Lyery, Razer
 - **OG Guides:** Litsa, Faze Masta, MrM0dz, FDG, Eddy, Julia, Nick088
 - **Backend:** Eddy & Yui

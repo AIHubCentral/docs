@@ -155,13 +155,48 @@ chmod +x run-applio.sh
 ### AMD on Windows (Precompiled Fix)
 
 !!!info "Unofficial Method"
-This guide is for AMD GPU users on Windows. It uses Zluda to enable CUDA compatibility.
+These guides are for AMD GPU users on Windows using Zluda to enable CUDA compatibility. Select the tab corresponding to your driver version.
 !!!
 
-For AMD GPU users, follow these steps to set up Applio:
++++ Adrenalin 25.5.1+ (Newer)
+**For Adrenalin 25.5.1 driver or newer**
 
-***
+1. Download a compiled version of Applio **v3.5.0 or newer** from the <u>[Hugging Face repo](https://huggingface.co/IAHispano/Applio/tree/main/Compiled)</u>, and unzip it to your desired folder.
 
+2. Download **HIP SDK 6.2.4** from the <u>[AMD ROCm Hub](https://www.amd.com/en/developer/resources/rocm-hub/hip-sdk.html)</u>.
+    - Run the installer.
+    - **Important:** Install the components but **exclude/deselect the video driver** at the bottom of the installer list.
+
+3. Add the following path to your System Environment Variables (Path):
+   `C:\Program Files\AMD\ROCm\6.2\bin`
+
+4. Open a command line (CMD) inside the Applio folder and run the following commands to update PyTorch:
+   ```bash
+   env\python -m pip uninstall torch torchvision torchaudio
+   env\python -m pip install torch torchvision torchaudio --upgrade --index-url https://download.pytorch.org/whl/cu118
+   ```
+
+5. Download the necessary patch files into your Applio root folder:
+    - <u>[patch-zluda-hip62.bat](https://github.com/IAHispano/Applio/blob/main/assets/zluda/patch-zluda-hip62.bat)</u>
+    - <u>[run-applio-amd.bat](https://github.com/IAHispano/Applio/blob/main/assets/zluda/run-applio-amd.bat)</u>
+
+6. Edit the file located at `rvc/lib/zluda.py`. Replace the content with the following:
+   ```python
+   import torch
+
+   if torch.cuda.is_available() and torch.cuda.get_device_name().endswith("[ZLUDA]"):
+       # disabling unsupported cudnn
+       torch.backends.cudnn.enabled = False
+       torch.backends.cuda.enable_flash_sdp(False)
+       torch.backends.cuda.enable_math_sdp(True)
+       torch.backends.cuda.enable_mem_efficient_sdp(False)
+   ```
+
+7. Run `patch-zluda-hip62.bat`.
+
+8. Run `run-applio-amd.bat` to start Applio.
+
++++ Older Drivers / Legacy
 1. Download and install the <u>[VC++ Runtime](https://aka.ms/vs/17/release/vc_redist.x64.exe)</u>.
 
 ***
@@ -220,6 +255,9 @@ For AMD GPU users, follow these steps to set up Applio:
 ***
 
 9.  Run `run-applio-amd.bat` to start Applio.
++++
+
+
 !!!warning "Check your GPU Index"
 It's assumed your primary AMD GPU has an index of **0**. If you have an iGPU that is listed first in Device Manager (under 'Display Adapters'), you must edit the `run-applio-amd.bat` file and change the value from `"0"` to `"1"`.
 !!!
@@ -227,6 +265,7 @@ It's assumed your primary AMD GPU has an index of **0**. If you have an iGPU tha
 !!!info "Initial Compilation Will Be Slow"
 The very first time you run a task (like inference or training), Applio may appear to freeze for **15-20 minutes**. This is normal. Zluda is compiling the necessary kernel code in the background. Subsequent runs will be fast.
 !!!
+
 
 ‎       
 - A console tab will appear, and after a moment your default browser, with Applio ready to use.     
