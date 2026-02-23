@@ -3,7 +3,7 @@ icon: chevron-right
 order: 9000
 ---
 
-`Last update: August 3, 2025` 
+`Last update: February 23, 2026` 
 
 
 ***
@@ -21,6 +21,38 @@ order: 9000
 - The platform is designed to be user-friendly, catering to both beginners and experienced users. You can train your own custom voice models or use a vast library of high-quality, community-made models, from both the [AI Hub Discord](https://discord.gg/aihub) & the [Weights.com Models Page](https://weights.com/models).
 - [Weights](https://discord.gg/weights) is partnered with [AI HUB](https://discord.gg/aihub) & [DreamTavern](https://discord.gg/dreamtavern).
 - It's named Weights, as it was originally meant only for RVC with the domain Weights.gg, storing RVC Models, which are PyTorch *Weights*. Later on, the domain changed to Weights.com and expanded to other things, but for this specific guide, we will focus on the RVC-related side.
+
+!!!danger
+# Goodbye to Weights
+
+After much reflection, we’ve made the difficult decision to shut down Weights, Voyages, and our family of apps on **March 31st, 2026**.
+
+# What to Know
+
+**Before March 31st, 2026:**
+- Download any content, models, or creations you want to keep
+- Request a full data export from your account settings
+- Active subscriptions will be canceled automatically
+- Credits can be used until the shutdown date
+
+**After March 31st, 2026:**
+- The website, apps, and all services will be permanently offline
+- Content and accounts will no longer be accessible
+- Support for Weights, Voyages, and other products will end
+
+#  Replay
+
+[Replay](https://www.weights.com/replay) is not affected by this shutdown. It will remain available and usable, though no new updates will be released. **NOTE:** Since Replay needs to download required files, it might not work if you didn't set it up before the shutdown.
+
+# ❤️ Thank You
+
+Thank you for being part of the Weights community. We’ve loved seeing what you built and how you pushed the boundaries of AI creativity. This platform wouldn’t have existed without you.
+
+# ❓ Questions
+If you need help with exports, subscriptions, or anything else, contact us at support@weights.com or here on the Discord server. We'll be here until the end.
+
+!!!
+***
 
 #### Pros & Cons :icon-tasklist:
 ==- *Learn more*

@@ -3,7 +3,7 @@ icon: image
 order: 2000
 ---
 
-`Last update: August 11, 2025` 
+`Last update: February 23, 2026` 
 
 ***
 :::content-center
@@ -19,6 +19,38 @@ order: 2000
 - The platform is designed for a broad audience, from beginners to experienced artists, offering a user-friendly web interface that removes the need for powerful local hardware.
 - Users can either utilize a wide variety of official and community-created styles or design their own.
 - Originally known as Weights.com with a focus on RVC models, the platform has expanded into a broader creative suite with the introduction of Voyages for image generation.
+
+!!!danger
+# Goodbye to Weights
+
+After much reflection, we’ve made the difficult decision to shut down Weights, Voyages, and our family of apps on **March 31st, 2026**.
+
+# What to Know
+
+**Before March 31st, 2026:**
+- Download any content, models, or creations you want to keep
+- Request a full data export from your account settings
+- Active subscriptions will be canceled automatically
+- Credits can be used until the shutdown date
+
+**After March 31st, 2026:**
+- The website, apps, and all services will be permanently offline
+- Content and accounts will no longer be accessible
+- Support for Weights, Voyages, and other products will end
+
+#  Replay
+
+[Replay](https://www.weights.com/replay) is not affected by this shutdown. It will remain available and usable, though no new updates will be released. **NOTE:** Since Replay needs to download required files, it might not work if you didn't set it up before the shutdown.
+
+# ❤️ Thank You
+
+Thank you for being part of the Weights community. We’ve loved seeing what you built and how you pushed the boundaries of AI creativity. This platform wouldn’t have existed without you.
+
+# ❓ Questions
+If you need help with exports, subscriptions, or anything else, contact us at support@weights.com or here on the Discord server. We'll be here until the end.
+
+!!!
+***
 
 #### Pros & Cons :icon-tasklist:
 ==- *Learn more*

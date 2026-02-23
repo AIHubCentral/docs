@@ -6,7 +6,7 @@ order: 3000
 
 # :icon-dependabot: Voice Models
 
-``Last update: July 17, 2025``        
+``Last update: February 23, 2026``        
 
 ***
 
@@ -56,6 +56,39 @@ As people sometimes upload them incorrectly.
 - Models uploaded in **AI Hub** get automatically stored here too.  
 - Users can read/share feedback about the models through comments & likes.     
 ***
+
+!!!danger
+# Goodbye to Weights
+
+After much reflection, we’ve made the difficult decision to shut down Weights, Voyages, and our family of apps on **March 31st, 2026**.
+
+# What to Know
+
+**Before March 31st, 2026:**
+- Download any content, models, or creations you want to keep
+- Request a full data export from your account settings
+- Active subscriptions will be canceled automatically
+- Credits can be used until the shutdown date
+
+**After March 31st, 2026:**
+- The website, apps, and all services will be permanently offline
+- Content and accounts will no longer be accessible
+- Support for Weights, Voyages, and other products will end
+
+#  Replay
+
+[Replay](https://www.weights.com/replay) is not affected by this shutdown. It will remain available and usable, though no new updates will be released. **NOTE:** Since Replay needs to download required files, it might not work if you didn't set it up before the shutdown.
+
+# ❤️ Thank You
+
+Thank you for being part of the Weights community. We’ve loved seeing what you built and how you pushed the boundaries of AI creativity. This platform wouldn’t have existed without you.
+
+# ❓ Questions
+If you need help with exports, subscriptions, or anything else, contact us at support@weights.com or here on the Discord server. We'll be here until the end.
+
+!!!
+***
+
 ###### ‎
 #### 1. Log in 
 - Access the website <u>[here</u>](https://weights.com/models) & login by clicking the icon on the top right corner.
