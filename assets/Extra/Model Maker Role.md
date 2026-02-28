@@ -89,13 +89,18 @@ To upload your Voice Models in the <u>[AI HUB Discord Server](https://discord.gg
 - However once you get model maker you will be able to post robotic, sound effect or drum models.
 ###### ‎  
 ***
-###### ‎
-#### Step 3: Prepare the submission.
+
+:::content-center
+###### ‎ 
+## How to Submit
+:::
+
+#### Step 1: Prepare the submission.
 - Once your model is ready, head over to the <u>[AI HUB](https://discord.gg/aihub)</u>'s <u>[`#model-maker-role`](https://discord.com/channels/1159260121998827560/1305524365810470963)</u> channel.  
 
 - Click the `Submit Model` button.    
 
-<img src="../modelmaker-img/1.png" alt="image" width="600" height="auto">‎               
+<img src="../modelmaker-img/submit-model-button.png" alt="Submit Model Button" width="600" height="auto">‎               
 ‎     
 :::content-center
 #### ``Now fill up the information about your model:``  
@@ -105,22 +110,60 @@ To upload your Voice Models in the <u>[AI HUB Discord Server](https://discord.gg
 :     Its name.   
 
 **technology**
-:     The technology used for its training.
+:     The technology used for its training:
+      - RVC
+      - GPT-SoVITS
 
 **extraction**
-:     The <u>[extraction method](https://docs.aihub.gg/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u> you used.
+:     The <u>[extraction method](https://docs.aihub.gg/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u> you used:
+      - RMVPE
+      - Crepe
+      - Mangio-Crepe (Obsolete)
+      - Harvest (Obsolete)
+      - PM (Obsolete)
+      - DIO (Obsolete)
+
+**vocoder**
+:     The <u>[vocoder](http://docs.aihub.gg/rvc/resources/training/#vocoders)</u> you used:
+      - HifiGan
+      - RefineGan
+
 
 **epochs**
 :     Total <u>[epochs](https://docs.aihub.gg/rvc/resources/training/#tensorboard)</u> amount.
 
-**link**
-:     Its download link from Hugging Face or Weights. 
+***
 
-**demo**
+#### Step 2: Complete the submission.
+- You will get a DM by **Wally** asking for you to Complete the Submission.
+
+- Click the `Complete Submission` button.    
+
+<img src="../modelmaker-img/complete-submission.png" alt="Complete Submission Button" width="600" height="auto">‎               
+‎     
+:::content-center
+#### ``Now fill up the information about your model:``  
+:::
+
+**Embedder**
+:     The <u>[Embedder Model](http://docs.aihub.gg/rvc/resources/inference-settings/#embedder-model)</u> you used:
+      - ContentVec
+      - Spin
+      - SpinV2
+
+**Pretrain**
+:     The [Pretrain](http://docs.aihub.gg/rvc/resources/training/#pretrains) you used.
+
+**Model Link**
+:     Its download link from Hugging Face (right click and copy link the download icon of the model zip, for example https://huggingface.co/Nick088/TADC_Bubble/resolve/main/TADC_Bubble.zip?download=true) or Weights.
+
+**Sample File**
 :     An audio sample of it talking/singing.
 
-**note** 
+**Additional Information** 
 :   Optional. Add more context about the model if you want.
+
+- Click the `Submit` button.
 
 ***
 !!!success 
@@ -133,18 +176,12 @@ You can attach more samples when you repost the model to ``#voice-models``.
 
    <img src="../modelmaker-img/submitted.png" alt="image" width="" height="auto">‎ 
 ‎     
-- Now, wait for a **QC** (quality checker) to verify your model. You'll be notified once it has been reviewed.
-
-- If you made a mistake in your submission or you want to change something you can cancel your submission by clicking on the cancel button that is attatched to the message you get when you send a submission.
-
-  <img src="../modelmaker-img/2.png" alt="image" width="600">‎
+- Now, your model will be posted in ``#model-maker-submissions`` where other model makers will upvote or downvote your model reviewing it. After one week, the model maker submission will be accepted or rejected based on voting.
 
 
-- If your model gets approved, the bot will notify you with a message like this:    
+- If you made a mistake in your submission or you want to change something, you can try to contact staff or talk about in the ``#model-maker-role`` discussion.
 
-   <img src="../modelmaker-img/approved.png" alt="image" width="" height="auto">‎     
-‎    
-- You can then repost the model (& future models) to the ``#voice-models`` forum.
+- If your model gets approved, you can then repost the model (& future models) to the ``#voice-models`` forum.
 
 ***
 ###### ‎
