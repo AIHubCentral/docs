@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.0.1.825591886492">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.0.1.825604946171">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.0.1">
@@ -31,11 +31,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../../img/b.png" />
-    <link href="../../../resources/css/retype.css?v=4.0.1.825591886492" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=4.0.1.825604946171" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.0.1.825591886492" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.0.1.825604946171" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=4.0.1" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.0.1.825591886492" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.0.1.825604946171" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -430,34 +430,60 @@
 </div>
 <div class="mb-6 overflow-hidden border rounded-md docs-columns dark:border-base-border" style="grid-template-columns: repeat(1, minmax(0, 1fr));">
     <div class="flex items-center px-5 py-3 font-medium leading-snug text-gray-900 border-b border-base-border dark:text-white">
-        <span>Legacy Core 2.5 by lyery</span>
+        <span>Legacy Core 1.5 by lyery</span>
     </div>
     <div class="px-5 py-3 docs-columns-content">
-<p>The pretrain was trained using a bigger dataset this time, with both singing and speech.
-This pretrain produces less robotic results, and might be more accurate and more stable than the OG pretrain (less glitching).
-For better results don&#x27;t use a batch size below 8 and use a dataset of 10 minutes minimum.
-Don&#x27;t enable multi scale mel loss, just use the default mel, it&#x27;s better.
-Lyery recommends training for 40 to 100 epochs maximum. If you plan to go beyond 100 epochs, make sure to listen to your model starting from epoch 40 to monitor its quality.
-Be sure to not confuse it with the previous Legacy Core pretrains, that were using the Spin Embedder.</p>
+<p>Uses the same dataset as legacy core v1 but improved. Needs more testing in realtime but we know works fine in local non realtime</p>
+<p><strong>Note: Don&#x27;t use Legacy Core 2.5, Lyery said it&#x27;s flawed, it has wobbly pitch problems</strong></p>
 <ul>
 <li>Training Info:
 <ul>
-<li>dataset: <a href="https://huggingface.co/datasets/alibabasglab/LJSpeech-1.1-48kHz">ljspeech (upscaled)</a> + m4singer</li>
-<li>batch size: 64</li>
-<li>f0: rmvpe</li>
-<li>sample rate: 32k</li>
-<li>embedder: ContentVec</li>
-<li>vocoder: hifigan</li>
-<li>steps: 120k</li>
+<li>dataset: m4singer</li>
 </ul>
 </li>
 </ul>
 <br>
 <ul>
+<li><strong>HifiGan Vocoder, ContentVec Embedder Model:</strong>
+<ul>
 <li><strong>32k Download:</strong>
 <ul>
-<li><u><a href="https://huggingface.co/lyery/legacy-core-2.5/resolve/main/D_LSpeechV2.5.pth?download=true"><strong>D Download</strong></a></u></li>
-<li><u><a href="https://huggingface.co/lyery/legacy-core-2.5/resolve/main/G_LSpeechV2.5.pth?download=true"><strong>G Download</strong></a></u></li>
+<li><u><a href="https://huggingface.co/lyery/mode4/resolve/main/G_15.pth?download=true"><strong>G Download</strong></a></u></li>
+<li><u><a href="https://huggingface.co/lyery/mode4/resolve/main/D_15.pth?download=true"><strong>D Download</strong></a></u></li>
+</ul>
+</li>
+<li><strong>40k Download:</strong>
+<ul>
+<li><u><a href="https://huggingface.co/lyery/mode4/resolve/main/G_40.pth?download=true"><strong>G Download</strong></a></u></li>
+<li><u><a href="https://huggingface.co/lyery/mode4/resolve/main/D_40.pth?download=true"><strong>D Download</strong></a></u></li>
+</ul>
+</li>
+<li><strong>48k Download:</strong>
+<ul>
+<li><u><a href="https://huggingface.co/lyery/mode4/resolve/main/G_48.pth?download=true"><strong>G Download</strong></a></u></li>
+<li><u><a href="https://huggingface.co/lyery/mode4/resolve/main/D_48.pth?download=true"><strong>D Download</strong></a></u></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>HifiGan Vocoder, SpinV2 Embedder Model:</strong>
+<ul>
+<li><strong>32k Download:</strong>
+<ul>
+<li><u><a href="https://huggingface.co/lyery/mode4/resolve/main/G_Spin.pth?download=true"><strong>G Download</strong></a></u></li>
+<li><u><a href="https://huggingface.co/lyery/mode4/resolve/main/D_Spin.pth?download=true"><strong>D Download</strong></a></u></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>RefineGan Vocoder, ContentVec Embedder Model:</strong>
+<ul>
+<li><strong>32k Download:</strong>
+<ul>
+<li><u><a href="https://huggingface.co/lyery/mode4/resolve/main/G_14refine.pth?download=true"><strong>G Download</strong></a></u></li>
+<li><u><a href="https://huggingface.co/lyery/mode4/resolve/main/D_14refine.pth?download=true"><strong>D Download</strong></a></u></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
