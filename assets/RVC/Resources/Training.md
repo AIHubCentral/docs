@@ -128,29 +128,36 @@ Nanashi V1.7 is a fine-tuned based on TITAN pretrained and made with 11 hours of
     - <u>[**D Download**](https://huggingface.co/shiromiya/nanashi-pretrain/resolve/main/v1.7/D_nanashi_v1_7.pth?download=true)</u>
     - <u>[**G Download**](https://huggingface.co/shiromiya/nanashi-pretrain/resolve/main/v1.7/G_nanashi_v1_7.pth?download=true)</u>
 |||
-||| Legacy Core 2.5 by lyery
-The pretrain was trained using a bigger dataset this time, with both singing and speech.
-This pretrain produces less robotic results, and might be more accurate and more stable than the OG pretrain (less glitching).
-For better results don't use a batch size below 8 and use a dataset of 10 minutes minimum.
-Don't enable multi scale mel loss, just use the default mel, it's better.
-Lyery recommends training for 40 to 100 epochs maximum. If you plan to go beyond 100 epochs, make sure to listen to your model starting from epoch 40 to monitor its quality.
-Be sure to not confuse it with the previous Legacy Core pretrains, that were using the Spin Embedder.
+||| Legacy Core 1.5 by lyery
+Uses the same dataset as legacy core v1 but improved. Needs more testing in realtime but we know works fine in local non realtime
+
+
+**Note: Don't use Legacy Core 2.5, Lyery said it's flawed, it has wobbly pitch problems**
 
 - Training Info:
-    - dataset: [ljspeech (upscaled)](https://huggingface.co/datasets/alibabasglab/LJSpeech-1.1-48kHz) + m4singer
-    - batch size: 64
-    - f0: rmvpe
-    - sample rate: 32k
-    - embedder: ContentVec
-    - vocoder: hifigan 
-    - steps: 120k
+    - dataset: m4singer
 
 
 <br>
 
-- **32k Download:**
-    - <u>[**D Download**](https://huggingface.co/lyery/legacy-core-2.5/resolve/main/D_LSpeechV2.5.pth?download=true)</u>
-    - <u>[**G Download**](https://huggingface.co/lyery/legacy-core-2.5/resolve/main/G_LSpeechV2.5.pth?download=true)</u>
+- **HifiGan Vocoder, ContentVec Embedder Model:**
+    - **32k Download:**
+        - <u>[**G Download**](https://huggingface.co/lyery/mode4/resolve/main/G_15.pth?download=true)</u>
+        - <u>[**D Download**](https://huggingface.co/lyery/mode4/resolve/main/D_15.pth?download=true)</u>
+    - **40k Download:**
+        - <u>[**G Download**](https://huggingface.co/lyery/mode4/resolve/main/G_40.pth?download=true)</u>
+        - <u>[**D Download**](https://huggingface.co/lyery/mode4/resolve/main/D_40.pth?download=true)</u>
+    - **48k Download:**
+        - <u>[**G Download**](https://huggingface.co/lyery/mode4/resolve/main/G_48.pth?download=true)</u>
+        - <u>[**D Download**](https://huggingface.co/lyery/mode4/resolve/main/D_48.pth?download=true)</u>
+- **HifiGan Vocoder, SpinV2 Embedder Model:**
+    - **32k Download:**
+        - <u>[**G Download**](https://huggingface.co/lyery/mode4/resolve/main/G_Spin.pth?download=true)</u>
+        - <u>[**D Download**](https://huggingface.co/lyery/mode4/resolve/main/D_Spin.pth?download=true)</u>
+- **RefineGan Vocoder, ContentVec Embedder Model:**
+    - **32k Download:**
+        - <u>[**G Download**](https://huggingface.co/lyery/mode4/resolve/main/G_14refine.pth?download=true)</u>
+        - <u>[**D Download**](https://huggingface.co/lyery/mode4/resolve/main/D_14refine.pth?download=true)</u>
 |||
 ||| Spin V2 Test Pretrain by noobies
 A test Pretrain for the Spin V2 Embedder by noobies, that could help for even better realtime models and pronunciation.
