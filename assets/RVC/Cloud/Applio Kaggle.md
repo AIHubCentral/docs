@@ -126,7 +126,7 @@ b. **Select a Tunnel:** A tunnel securely exposes the application running in you
             3. Select "Ngrok" from the `Tunnel` dropdown.
             4. Run the cell. The public Ngrok URLs for Applio, Tensorboard, and the Filebrowser will be printed in the output once the server is ready. Click on them to access the services.
 
-    - **Gradio + LocalTunnel (No Account & Password Protected) **
+    - **Gradio + LocalTunnel (No Account & Password Protected)**
         - **How it works:** It uses Gradio's built-in tunnel for the main Applio interface and LocalTunnel for the Tensorboard and Filebrowser services. It does not require any external accounts or tokens.
         - **Steps:**
             1. Select "Gradio + LocalTunnel" from the `Tunnel` dropdown.
