@@ -806,6 +806,14 @@ Sometimes your GPU will start idling after the program is in the background for 
 - Once you no longer want your gpu clock speed to be forced anymore you can run `reset_gpu_clocks.bat`.
 
 ***
+### "Pipeline not initialized"
+If the Web UI Interface is up and running, but when you try to Start Server you get "Pipeline not initialized" in the CMD, be sure:
+- To be on the latest OS Version and GPU Drivers.
+- To have selected the RVC Model before clicking start server.
+- To not have any special characters in the RVC Model Name nor the Program Path.
+
+
+***
 ## FAQ
 ***
 ### Why does it run in a browser and not it's own window?
