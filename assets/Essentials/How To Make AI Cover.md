@@ -33,7 +33,7 @@ order: 6000
 - There are plenty of versions of RVC, but these are the **best** ones for beginners. Pick according to your needs:
 
     {.list-icon}   
-    - #### :icon-device-desktop: ‎ <u>[Locally](https://docs.aihub.gg/rvc/local/mainline/)</u>
+    - #### :icon-device-desktop: ‎ <u>[Locally](https://docs.aihub.gg/rvc/local/applio/)</u>
 
     - #### :icon-cloud: ‎ <u>[On the cloud](https://docs.aihub.gg/rvc/cloud/applio-colab/)</u>        
 ###### ‎
