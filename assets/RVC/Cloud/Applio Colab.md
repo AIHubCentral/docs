@@ -13,10 +13,10 @@ order: 7000
 :::content-center
 ## Introduction
 :::
-- This is a <u>[cloud-based](http://docs.aihub.gg/extra/glossary/#cloud-based)</u> alternative to run [Applio](https://docs.aihub.gg/rvc/local/applio/), RVC Fork, only for people who don't have a good PC GPU, via the <u>[Google Colab Service](http://docs.aihub.gg/extra/glossary/#google-colab)</u>. With a Web User Interface.
+- This is a <u>[cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based)</u> alternative to run [Applio](https://docs.aihub.gg/rvc/local/applio/), RVC Fork, only for people who don't have a good PC GPU, via the <u>[Google Colab Service](https://docs.aihub.gg/extra/glossary/#google-colab)</u>. With a Web User Interface.
 
 !!!danger Google Colab Service
-**Check the <u>[Google Colab Glossary](http://docs.aihub.gg/extra/glossary/#google-colab)</u> for more info on Free Tier, Limits, Verification, Pricing and other things.**
+**Check the <u>[Google Colab Glossary](https://docs.aihub.gg/extra/glossary/#google-colab)</u> for more info on Free Tier, Limits, Verification, Pricing and other things.**
 !!!
 
 
@@ -68,7 +68,7 @@ Then log in to your Google account.
 4. Select a Sharing and Run the Server, using a tunnel that securely exposes the application running in your private cloud environment to the public internet. The notebook gives you 3 different services to do this. Choose one from the `method` dropdown menu in the code cell.
 
     - **Gradio (Fast, Popular, Reliable & Default)**
-        - **How it works:** This is a built-in <u>[Gradio](http://docs.aihub.gg/extra/glossary/#gradio)</u> feature. It's one of the most straightforward method as it doesn't require any external accounts or tokens.
+        - **How it works:** This is a built-in <u>[Gradio](https://docs.aihub.gg/extra/glossary/#gradio)</u> feature. It's one of the most straightforward method as it doesn't require any external accounts or tokens.
         - **Steps:**
             1. Select "Gradio" from the `method` dropdown menu.
             2. Run the cell. The public Gradio URL (ending in `gradio.live`) will be printed in the output once the server is ready. Click on it to access the UI.
@@ -193,7 +193,7 @@ Beyond offline inference, Applio features a powerful built-in **Realtime** tab, 
 - It uses the same RVC technology but is optimized for low-latency performance.
 - Features include Voice Activity Detection (VAD), input/output device selection, and advanced performance tweaking.
 
-For a full step-by-step setup and configuration guide, please visit the <u>[Applio Realtime Guide](http://docs.aihub.gg/realtime-voice-changer/local/applio-realtime/)</u>.
+For a full step-by-step setup and configuration guide, please visit the <u>[Applio Realtime Guide](https://docs.aihub.gg/realtime-voice-changer/local/applio-realtime/)</u>.
 
 
 ***

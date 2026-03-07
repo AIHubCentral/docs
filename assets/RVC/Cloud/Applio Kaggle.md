@@ -14,10 +14,10 @@ order: 8000
 :::content-center
 ## Introduction ‎
 :::
-- This is a <u>[cloud-based](http://docs.aihub.gg/extra/glossary/#cloud-based)</u> alternative to run [Applio](https://docs.aihub.gg/rvc/local/applio/), RVC Fork, for people who don't have a powerful local GPU. It runs via the <u>[Kaggle Service](http://docs.aihub.gg/extra/glossary/#kaggle)</u> and provides a Web User Interface.
+- This is a <u>[cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based)</u> alternative to run [Applio](https://docs.aihub.gg/rvc/local/applio/), RVC Fork, for people who don't have a powerful local GPU. It runs via the <u>[Kaggle Service](https://docs.aihub.gg/extra/glossary/#kaggle)</u> and provides a Web User Interface.
 
 !!!danger Kaggle Service
-**Check the <u>[Kaggle Glossary](http://docs.aihub.gg/extra/glossary/#kaggle)</u> for more info on Free Tier, Limits, Verification, Pricing and other things.**
+**Check the <u>[Kaggle Glossary](https://docs.aihub.gg/extra/glossary/#kaggle)</u> for more info on Free Tier, Limits, Verification, Pricing and other things.**
 !!!
 
 

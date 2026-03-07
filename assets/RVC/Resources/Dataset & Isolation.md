@@ -143,7 +143,7 @@ You can also check the Audio Separation community AI Upscalers section in [here]
 :::
 
 !!!warning 
-*You'll require great specs & GPU to run it effectively. Otherwise, use either the <u>[Eddy's UVR5 UI Google Colab](https://docs.aihub.gg/rvc/resources/dataset-isolation/#uvr5-ui-colab)</u> or the <u>[HuggingFace Space](http://docs.aihub.gg/rvc/resources/dataset-isolation/#uvr5-ui-hf)</u>.*
+*You'll require great specs & GPU to run it effectively. Otherwise, use either the <u>[Eddy's UVR5 UI Google Colab](https://docs.aihub.gg/rvc/resources/dataset-isolation/#uvr5-ui-colab)</u> or the <u>[HuggingFace Space](https://docs.aihub.gg/rvc/resources/dataset-isolation/#uvr5-ui-hf)</u>.*
 !!!
 
 ### Installation :icon-download:
@@ -249,7 +249,7 @@ De-Echo  | MDX-Net | `uvr de-echo` and `uvr de-echo aggressive` (use aggressive 
 :::
 
 !!!warning 
-*You'll require great specs & GPU to run it effectively. Otherwise, use either the <u>[Eddy's UVR5 UI Google Colab ](https://docs.aihub.gg/rvc/resources/dataset-isolation/#uvr5-ui-colab)</u> or the <u>[HuggingFace Space](http://docs.aihub.gg/rvc/resources/dataset-isolation/#uvr5-ui-hf)</u>.*
+*You'll require great specs & GPU to run it effectively. Otherwise, use either the <u>[Eddy's UVR5 UI Google Colab ](https://docs.aihub.gg/rvc/resources/dataset-isolation/#uvr5-ui-colab)</u> or the <u>[HuggingFace Space](https://docs.aihub.gg/rvc/resources/dataset-isolation/#uvr5-ui-hf)</u>.*
 !!!
 
 ### Installation :icon-download:
@@ -272,7 +272,7 @@ a. Tap the **Input Audio** box & select your audio, or simply drag & drop.
 ‎ 
 #### 2. Select model
 ###### ‎  
-b. Once it's done uploading, select a Model by the [List of the Best Models](http://docs.aihub.gg/rvc/resources/dataset-isolation/#best-models-for-local-eddy-uvr5-ui). Under that you can change **Segment Size** and **Overlap**, the defaults are fine.   
+b. Once it's done uploading, select a Model by the [List of the Best Models](https://docs.aihub.gg/rvc/resources/dataset-isolation/#best-models-for-local-eddy-uvr5-ui). Under that you can change **Segment Size** and **Overlap**, the defaults are fine.   
     <img src="../localeddyuvr5ui-img/model-selection.png" alt="Model Selection" width="1000" height="auto">‎              
 
 ‎
@@ -332,7 +332,7 @@ a. Tap the **Input Audio** box & select your audio, or simply drag & drop.
 ‎ 
 #### 3. Select model
 ###### ‎  
-b. Once it's done uploading, select a Model by the [List of the Best Models](http://docs.aihub.gg/rvc/resources/dataset-isolation/#best-models-for-uvr5-ui-hf). Under that you can change **Segment Size** and **Overlap**, the defaults are fine.   
+b. Once it's done uploading, select a Model by the [List of the Best Models](https://docs.aihub.gg/rvc/resources/dataset-isolation/#best-models-for-uvr5-ui-hf). Under that you can change **Segment Size** and **Overlap**, the defaults are fine.   
     <img src="../hugging-img/model-selection.png" alt="Model Selection" width="1000" height="auto">‎              
 
 ‎

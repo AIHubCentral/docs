@@ -11,10 +11,10 @@ order: 2000
 :::
  
 ## </u>Introduction</u>
-- This is a <u>[cloud-based](http://docs.aihub.gg/extra/glossary/#cloud-based)</u> alternative to run [Mainline/Original RVC](https://docs.aihub.gg/rvc/local/mainline/), RVC Fork, only for people who don't have a good PC GPU, via the <u>[Kaggle Service](http://docs.aihub.gg/extra/glossary/#kaggle)</u>. With a Web User Interface.
+- This is a <u>[cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based)</u> alternative to run [Mainline/Original RVC](https://docs.aihub.gg/rvc/local/mainline/), RVC Fork, only for people who don't have a good PC GPU, via the <u>[Kaggle Service](https://docs.aihub.gg/extra/glossary/#kaggle)</u>. With a Web User Interface.
 
 !!!danger Kaggle Service
-**Check the <u>[Google Colab Glossary](http://docs.aihub.gg/extra/glossary/#kaggle)</u> for more info on Free Tier, Limits, Verification, Pricing and other things.**
+**Check the <u>[Google Colab Glossary](https://docs.aihub.gg/extra/glossary/#kaggle)</u> for more info on Free Tier, Limits, Verification, Pricing and other things.**
 !!!
 
 !!!danger End Of Life

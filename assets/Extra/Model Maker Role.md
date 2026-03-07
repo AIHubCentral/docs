@@ -124,7 +124,7 @@ To upload your Voice Models in the <u>[AI HUB Discord Server](https://discord.gg
       - DIO (Obsolete)
 
 **vocoder**
-:     The <u>[vocoder](http://docs.aihub.gg/rvc/resources/training/#vocoders)</u> you used:
+:     The <u>[vocoder](https://docs.aihub.gg/rvc/resources/training/#vocoders)</u> you used:
       - HifiGan
       - RefineGan
 
@@ -146,13 +146,13 @@ To upload your Voice Models in the <u>[AI HUB Discord Server](https://discord.gg
 :::
 
 **Embedder**
-:     The <u>[Embedder Model](http://docs.aihub.gg/rvc/resources/inference-settings/#embedder-model)</u> you used:
+:     The <u>[Embedder Model](https://docs.aihub.gg/rvc/resources/inference-settings/#embedder-model)</u> you used:
       - ContentVec
       - Spin
       - SpinV2
 
 **Pretrain**
-:     The [Pretrain](http://docs.aihub.gg/rvc/resources/training/#pretrains) you used.
+:     The [Pretrain](https://docs.aihub.gg/rvc/resources/training/#pretrains) you used.
 
 **Model Link**
 :     Its download link from Hugging Face (right click and copy link the download icon of the model zip, for example https://huggingface.co/Nick088/TADC_Bubble/resolve/main/TADC_Bubble.zip?download=true) or Weights.

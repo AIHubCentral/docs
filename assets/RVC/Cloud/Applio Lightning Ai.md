@@ -8,12 +8,12 @@ order: 6000
 <img src="../lightning-applio-img/logo.png" alt="image" width="600">        
 :::
 ## </u>Introduction</u>
-- This is a <u>[cloud-based](http://docs.aihub.gg/extra/glossary/#cloud-based)</u> alternative to run [Applio](https://docs.aihub.gg/rvc/local/applio/), RVC Fork, only for people who don't have a good PC GPU, via the <u>[Lightning.AI Service](http://docs.aihub.gg/extra/glossary/#lightningai)</u>. With a Web User Interface.
+- This is a <u>[cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based)</u> alternative to run [Applio](https://docs.aihub.gg/rvc/local/applio/), RVC Fork, only for people who don't have a good PC GPU, via the <u>[Lightning.AI Service](https://docs.aihub.gg/extra/glossary/#lightningai)</u>. With a Web User Interface.
 
 - It's a great alternative for training RVC voice models through the cloud, since it has the best GPUs with tons of VRAM.
 
 !!!danger Lightning.AI Service
-**Check the <u>[Lightning.AI Glossary](http://docs.aihub.gg/extra/glossary/#lightningai)</u> for more info on Free Tier, Limits, Verification, Pricing and other things.**
+**Check the <u>[Lightning.AI Glossary](https://docs.aihub.gg/extra/glossary/#lightningai)</u> for more info on Free Tier, Limits, Verification, Pricing and other things.**
 !!!
 
 #### Pros & Cons :icon-tasklist:
@@ -105,7 +105,7 @@ b. **Select a Tunnel:** A tunnel securely exposes the application running in you
             8. You can optionally go back to the Jupyter session in the right-hand sidebar of the Lightning.AI interface, to check if any error appears in the code output.
 
     - **Gradio (Fast, Popular & Reliable)**
-        - **How it works:** This is a built-in <u>[Gradio](http://docs.aihub.gg/extra/glossary/#gradio)</u> feature. It's one of the most straightforward method as it doesn't require any external accounts or tokens.
+        - **How it works:** This is a built-in <u>[Gradio](https://docs.aihub.gg/extra/glossary/#gradio)</u> feature. It's one of the most straightforward method as it doesn't require any external accounts or tokens.
         - **Steps:**
             1. Select "Gradio" from the `Tunnel` code.
             2. Run the cell. The public Gradio URL (ending in `gradio.live`) will be printed in the output once the server is ready. Click on it to access the UI.

@@ -599,18 +599,18 @@ Background Effects, unlike Input & Output ones, should work as audio tracks manu
 This was added in version b2397 and allows you to manage which pretrained models are installed, since that version no longer downloads all pretrains at startup. The `RMVPE` & `RMVPE (Onnx)` Pitch Extraction Algorithms and the `ContentVec` Embedder are downloaded by default since they are required.
 
 - Embedders:
-    - [`ContentVec / Hubert (REQUIRED)`](http://docs.aihub.gg/rvc/resources/inference-settings/#contentvec).
-    - [`SPIN`](http://docs.aihub.gg/rvc/resources/inference-settings/#spin).
-    - [`SPIN V2`](http://docs.aihub.gg/rvc/resources/inference-settings/#spin-v2).
+    - [`ContentVec / Hubert (REQUIRED)`](https://docs.aihub.gg/rvc/resources/inference-settings/#contentvec).
+    - [`SPIN`](https://docs.aihub.gg/rvc/resources/inference-settings/#spin).
+    - [`SPIN V2`](https://docs.aihub.gg/rvc/resources/inference-settings/#spin-v2).
 - Pitch Extraction Algorithms:
-    - [`RMVPE (REQUIRED)`](http://docs.aihub.gg/rvc/resources/inference-settings/#rmvpe).
-    - [`RMVPE (Onnx) (REQUIRED)`](http://docs.aihub.gg/rvc/resources/inference-settings/#rmvpe).
-    - [`Crepe Full (Onnx)`](http://docs.aihub.gg/rvc/resources/inference-settings/#mangio-crepe--crepe).
-    - [`Crepe Full (PyTorch)`](http://docs.aihub.gg/rvc/resources/inference-settings/#mangio-crepe--crepe).
-    - [`Crepe Tiny (Onnx)`](http://docs.aihub.gg/rvc/resources/inference-settings/#mangio-crepe--crepe).
-    - [`Crepe Tiny (PyTorch)`](http://docs.aihub.gg/rvc/resources/inference-settings/#mangio-crepe--crepe).
-    - [`FCPE`](http://docs.aihub.gg/rvc/resources/inference-settings/#fcpe).
-    - [`FCPE (Onnx)`](http://docs.aihub.gg/rvc/resources/inference-settings/#fcpe).
+    - [`RMVPE (REQUIRED)`](https://docs.aihub.gg/rvc/resources/inference-settings/#rmvpe).
+    - [`RMVPE (Onnx) (REQUIRED)`](https://docs.aihub.gg/rvc/resources/inference-settings/#rmvpe).
+    - [`Crepe Full (Onnx)`](https://docs.aihub.gg/rvc/resources/inference-settings/#mangio-crepe--crepe).
+    - [`Crepe Full (PyTorch)`](https://docs.aihub.gg/rvc/resources/inference-settings/#mangio-crepe--crepe).
+    - [`Crepe Tiny (Onnx)`](https://docs.aihub.gg/rvc/resources/inference-settings/#mangio-crepe--crepe).
+    - [`Crepe Tiny (PyTorch)`](https://docs.aihub.gg/rvc/resources/inference-settings/#mangio-crepe--crepe).
+    - [`FCPE`](https://docs.aihub.gg/rvc/resources/inference-settings/#fcpe).
+    - [`FCPE (Onnx)`](https://docs.aihub.gg/rvc/resources/inference-settings/#fcpe).
 
 ***
 ### Finding my own settings for Chunk Size and Extra Processing Time
@@ -850,7 +850,7 @@ RVC works by downsampling your audio voice to 16khz because f0 estimators only w
 
 ***
 ### Are there unique Voice Models?
-RVC Voice Models need to be trained on something, so the models themselves can't be unique, but you can use the [Merge Lab](http://docs.aihub.gg/realtime-voice-changer/local/tg-develops-w-okada-fork/#merging-models-merge-lab) to create a new unique merged model.
+RVC Voice Models need to be trained on something, so the models themselves can't be unique, but you can use the [Merge Lab](https://docs.aihub.gg/realtime-voice-changer/local/tg-develops-w-okada-fork/#merging-models-merge-lab) to create a new unique merged model.
 
 
 ***

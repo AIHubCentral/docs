@@ -93,8 +93,8 @@ sudo pacman -Syu portaudio
 ***
 ## Get Applio
 
-1. Install and Run Applio according to the <u>[main Applio installation guide](http://docs.aihub.gg/rvc/local/applio/#download--installation)</u>.
-2. [Upload your RVC Voice Model](http://docs.aihub.gg/rvc/local/applio/#upload-models).
+1. Install and Run Applio according to the <u>[main Applio installation guide](https://docs.aihub.gg/rvc/local/applio/#download--installation)</u>.
+2. [Upload your RVC Voice Model](https://docs.aihub.gg/rvc/local/applio/#upload-models).
 2. Navigate to the **Realtime** tab in the top navigation menu.
 3. You must agree to the **Terms of Use** before the settings become accessible.
 

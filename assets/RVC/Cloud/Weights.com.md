@@ -122,7 +122,7 @@ You can review the full legal documents here:
 <img src="../weights-com-img/train-voice-models-2.png" alt="Start training options on Weights." width="600" height="auto">
 
 !!!
-Learn more about Free Premium Items via [Streaks](http://docs.aihub.gg/rvc/cloud/weights-com/#streaks).
+Learn more about Free Premium Items via [Streaks](https://docs.aihub.gg/rvc/cloud/weights-com/#streaks).
 !!!
 
 ***

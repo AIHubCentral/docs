@@ -59,10 +59,10 @@ Also, **HuggingFace has a <u>[Security Scanner](https://huggingface.co/docs/hub/
 Check if you meet the <u>[requirements](https://docs.aihub.gg/essentials/whats-rvc/#what-are-the-requirements-for-rvc-locally/)</u> to run it locally.
 
 If you don't meet the requirements, there are 4 Cloud Versions:
-- <u>[Applio UI Kaggle](http://docs.aihub.gg/rvc/cloud/applio-kaggle/)</u>
-- <u>[Applio UI Google Colab](http://docs.aihub.gg/rvc/cloud/applio-colab/)</u>
-- <u>[Applio NO UI Google Colab](http://docs.aihub.gg/rvc/cloud/applio-no-ui-colab/)</u>
-- <u>[Applio UI Lightning.AI](http://docs.aihub.gg/rvc/cloud/applio-lightning-ai/)</u>
+- <u>[Applio UI Kaggle](https://docs.aihub.gg/rvc/cloud/applio-kaggle/)</u>
+- <u>[Applio UI Google Colab](https://docs.aihub.gg/rvc/cloud/applio-colab/)</u>
+- <u>[Applio NO UI Google Colab](https://docs.aihub.gg/rvc/cloud/applio-no-ui-colab/)</u>
+- <u>[Applio UI Lightning.AI](https://docs.aihub.gg/rvc/cloud/applio-lightning-ai/)</u>
 
 
 ###### ‎
@@ -434,7 +434,7 @@ Don't include spaces/special characters.
 ###### ‎  
 ##### c. Custom Embedder Model
 ###### ‎  
-- If you select "custom" for embedders, you can add your own, like [Spin](http://docs.aihub.gg/rvc/resources/inference-settings/#spin) or [Spin V2](http://docs.aihub.gg/rvc/resources/inference-settings/#spin-v2) (which seems to have better pronunciation than contentvec and better for realtime as it handles context differently)
+- If you select "custom" for embedders, you can add your own, like [Spin](https://docs.aihub.gg/rvc/resources/inference-settings/#spin) or [Spin V2](https://docs.aihub.gg/rvc/resources/inference-settings/#spin-v2) (which seems to have better pronunciation than contentvec and better for realtime as it handles context differently)
 
     <img src="..\applio-img\embedder-custom-option.png" alt="image" width="400">
 
@@ -694,7 +694,7 @@ Beyond offline inference, Applio features a powerful built-in **Realtime** tab, 
 - It uses the same RVC technology but is optimized for low-latency performance.
 - Features include Voice Activity Detection (VAD), input/output device selection, and advanced performance tweaking.
 
-For a full step-by-step setup and configuration guide, please visit the <u>[Applio Realtime Guide](http://docs.aihub.gg/realtime-voice-changer/local/applio-realtime/)</u>.
+For a full step-by-step setup and configuration guide, please visit the <u>[Applio Realtime Guide](https://docs.aihub.gg/realtime-voice-changer/local/applio-realtime/)</u>.
 
 
 ***
