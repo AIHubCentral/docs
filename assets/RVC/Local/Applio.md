@@ -367,21 +367,6 @@ b. Once it's done, you can hear the results in the **Export Audio** box below.
 ###### ‎     
 ###### ‎  
 :::content-center
-## Realtime Voice Conversion :icon-broadcast:
-###### ‎   
-
-Beyond offline inference, Applio features a powerful built-in **Realtime** tab, allowing you to convert your voice live during calls, streaming, or recordings.
-
-- It uses the same RVC technology but is optimized for low-latency performance.
-- Features include Voice Activity Detection (VAD), input/output device selection, and advanced performance tweaking.
-
-For a full step-by-step setup and configuration guide, please visit the <u>[Applio Realtime Guide](http://docs.aihub.gg/realtime-voice-changer/local/applio-realtime/)</u>.
-
-
-***
-###### ‎     
-###### ‎  
-:::content-center
 ## Training :icon-dependabot:
 ###### ‎   
 !!!warning
@@ -658,6 +643,58 @@ iii. And that's all, have fun with your model. To test it, do a normal <u>[infer
 :::
 ###### ‎  
 To Update Applio, you need to firstly Save your audios and models, then Delete the current Applio folder and reinstall the latest version.
+
+
+***
+###### ‎  
+###### ‎  
+:::content-center
+## Voice Blender :icon-git-merge:
+:::
+###### ‎  
+The Voice Blender (also known as Model Fusion) allows you to combine the weights of two different RVC models to create an entirely new, hybrid voice. This is ideal for creating unique characters or fine-tuning a model's tonal characteristics.
+
+#### 1. Setup Models
+- Go to the **Voice Blender** tab.
+- **Model Name:** Enter the name for your new hybrid model.
+- **Upload Models:** You can either drag and drop the two `.pth` files into the upload boxes or paste their local file paths in the "Path to Model" bars.
+
+<img src="../applio-img/voice-blender-1.png" alt="Applio Voice Blender Model Setup" width="800" height="auto">
+
+***
+
+#### 2. Blend & Fuse
+- **Blend Ratio:** Adjust the slider to determine the influence of each model. 
+    - A value of `0.5` is a perfect 50/50 split. 
+    - Moving it closer to `0` favors the first model, while `1` favors the second.
+- **Fusion:** Click the `Fusion` button to begin the process.
+
+<img src="../applio-img/voice-blender-2.png" alt="Applio Voice Blender Fusion" width="800" height="auto">
+
+***
+
+#### 3. Export Information
+- **Output Information:** Once finished, the console log and the output box will confirm the successful creation of the model.
+- **Download/Save:** The new fused model will be generated and can be found in your Applio `logs` or downloaded directly from the interface.
+
+!!!danger Index Blending
+Note that Voice Blender only merges the **.pth** (weight) files. It does **not** merge `.index` files. To get the best results with a fused model, you may need to use it without an index or create a new index using the training tab with a combined dataset.
+!!!
+
+
+***
+###### ‎     
+###### ‎  
+:::content-center
+## Realtime Voice Conversion :icon-broadcast:
+###### ‎   
+
+Beyond offline inference, Applio features a powerful built-in **Realtime** tab, allowing you to convert your voice live during calls, streaming, or recordings.
+
+- It uses the same RVC technology but is optimized for low-latency performance.
+- Features include Voice Activity Detection (VAD), input/output device selection, and advanced performance tweaking.
+
+For a full step-by-step setup and configuration guide, please visit the <u>[Applio Realtime Guide](http://docs.aihub.gg/realtime-voice-changer/local/applio-realtime/)</u>.
 
 
 ***

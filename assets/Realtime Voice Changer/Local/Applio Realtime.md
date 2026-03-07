@@ -175,6 +175,11 @@ We had a conversation about this in https://discord.com/channels/115926012199882
 RVC works by downsampling your audio voice to 16khz because f0 estimators only works at that sample rate, after that the model outputs the results using it's original sample rate (without any upscaling). So there won't be the need of having a super extremely expensive, a decent one should do the job.
 
 ***
+### Are there unique Voice Models?
+RVC Voice Models need to be trained on something, so the models themselves can't be unique, but you can use the [Voice Blender](https://docs.aihub.gg/rvc/local/applio/#voice-blender) to create a new unique merged model.
+
+
+***
 
 :::content-center
 #### `You have reached the end.`
