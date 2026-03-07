@@ -2,7 +2,7 @@
 icon: chevron-right
 order: 3000
 ---
-``Last update: November 21, 2025``
+``Last update: March 7, 2027``
 ***
 :::content-center
 ## Introduction
@@ -252,6 +252,161 @@ Noise reduction algorithms are not compatible with singing or whispering. Turn t
 - `Extra Time:` Gives the model more or less context to work with. Recommended 2.0 for best quality/latency ratio. The added latency of this setting is far less impactful than the block size. This setting is known as `Extra` in Wokada Deiteris Fork, and Vonovox fixed the certain cut off issues experienced in some models over the value 2.7.
 
 - `Crossfade Duration:` Controls how smoothly the AI stitches different processed parts "chunks" of your voice back together. 0.08-0.1 or 0.15 (0.08-0.1 for fastest voice, 0.15 for improved quality but increases delay by ~50 ms)
+
+
+## Dual-PC Setup via SonoBus (Cross-OS)
+***
+
+If you want to run Vonovox on a dedicated PC (PC A) to save resources, but use the converted voice on your main gaming/work PC (PC B), you can stream the audio over your network with extremely low latency using **SonoBus**.
+
+!!!info Cross-OS Info:
+Vonovox exclusively runs on **Windows 10 or 11 with an Nvidia GPU**. Therefore, **PC A (Host)** must be a Windows machine. However, your **PC B (Main PC)** can run any operating system (Windows, macOS, or Linux) since SonoBus is fully cross-platform.
+!!!
+
+#### Why SonoBus instead of VBAN?
+While VB-Audio's VBAN is a popular choice for audio routing, SonoBus is highly recommended for Realtime Voice Changing for several key reasons:
+- **Better Network Handling:** It features built-in, auto-adjusting jitter buffers that prevent audio popping and crackling if your network experiences micro-stutters.
+- **Cross-Platform & Standalone:** It works natively on macOS and Linux without needing command-line tools.
+- **Internet Support:** VBAN is strictly meant for local networks (LAN) unless you configure a complex VPN. SonoBus works seamlessly over the Internet right out of the box.
+
+***
+### 1. Installing SonoBus
+
+You will need to install SonoBus on both computers.
+
+!!! Windows (Host PC A & Main PC B)
+Download the installer directly from the <u>[Official SonoBus Website](https://sonobus.net/)</u>.
+!!!
+
+!!! macOS (Main PC B)
+Download the `.dmg` from the <u>[Official SonoBus Website](https://sonobus.net/)</u> or install via Homebrew: `brew install --cask sonobus`
+!!!
+
+!!! Linux (Main PC B)
+Install via Snap: `sudo snap install sonobus`
+Or via Flatpak: `flatpak install flathub net.sonobus.SonoBus`
+!!!
+
+***
+### 2. Installing Virtual Audio Cables
+
+You will need a Virtual Audio Cable (VAC) on **both PCs** to bridge audio between programs, and an additional internal pipe cable on **PC A only** to route audio into Vonovox.
+
+!!! For Windows
+Download this: <u>[VAC Lite (Virtual-Audio-Cable by Muzychenko)](https://software.muzychenko.net/freeware/vac470lite.zip)</u>.
+(Be sure to not use any toher vac like VB Audio Cable.)
+!!!
+
+- Run `setup64`, not 64a, after extracting the zip to a new folder
+
+- After installing the VAC Lite, it changes your default audio system. Click **Yes** when it asks you to open the audio device settings (or press WIN+R, type "mmsys.cpl" if you closed it already), and change your **Recording** and **Playback** devices back to your usual devices. Same for communications device aswell (right click -> set as default communication device)
+
+!!! For Mac
+Download either: 
+<u>[Blackhole Virtual Audio Cable](https://existential.audio/blackhole)</u>
+or
+<u>[VB-Audio](https://vb-audio.com/Cable)</u>
+!!!
+
+!!! For Linux
+For Debian / Ubuntu-based Systems (Ubuntu, Mint, Pop!_OS), run in the terminal:
+```bash
+sudo apt-get update && sudo apt-get install -y portaudio19-dev
+```
+
+
+For Fedora / RHEL-based Systems (CentOS, Rocky Linux), run in the terminal:
+```bash
+sudo yum install -y portaudio
+```
+
+For Arch / Arch-based Systems (Endeavour, Manjaro Linux), run in the terminal:
+```bash
+sudo pacman -Syu portaudio
+```
+!!!
+
+***
+### 3. Audio Routing Setup
+
+There are two setups depending on where your physical microphone is plugged in.
+
+==- Scenario 1: Mic plugged into Host PC A (Recommended for lowest latency)
+Use this setup if the Vonovox PC is sitting right next to you.
+
+**On PC A (Host / Vonovox PC):**
+1. In Vonovox, set **Input** to your physical Microphone.
+2. Set **Output** to your VAC (e.g. VAC Lite).
+3. Open SonoBus → **Setup Audio**.
+4. Set **Input** to the VAC. Output can be left to default or muted.
+
+**On PC B (Main PC):**
+1. Open SonoBus → **Setup Audio**.
+2. Set **Input** to None / Muted.
+3. Set **Output** to your VAC on PC B.
+4. In Discord, games, or OBS, set your microphone input to that VAC.
+
+**Signal flow:**
+> Mic → Vonovox (PC A) → VAC (PC A) → SonoBus → VAC (PC B) → Discord/Games
+===
+
+==- Scenario 2: Mic plugged into Main PC B (Remote Processing)
+Use this setup if your Vonovox PC is in another room or accessed over the internet. Your raw mic audio is sent to PC A for conversion, and the converted voice is sent back.
+
+**Requirements:**
+- A VAC installed on **both PCs**
+- <u>[VB-Audio Virtual Cable](https://vb-audio.com/Cable/)</u> installed on **PC A only** (used as an internal pipe between SonoBus and Vonovox)
+
+**On PC A (Host / Vonovox PC):**
+1. Open **SonoBus** → **Setup Audio**:
+   - **Input:** Your VAC (e.g. VAC Lite) ← picks up Vonovox's converted output
+   - **Output:** VB-Audio Virtual Cable Input ← feeds incoming mic audio into Vonovox
+2. Open **Vonovox**:
+   - **Input:** VB-Audio Virtual Cable Output ← receives the raw mic from PC B
+   - **Output:** Your VAC (e.g. VAC Lite) ← sends converted voice to SonoBus
+
+**On PC B (Main PC):**
+1. Open **SonoBus** → **Setup Audio**:
+   - **Input:** Your physical Microphone
+   - **Output:** Your VAC (e.g. VAC Lite)
+2. In Discord, games, or OBS, set your microphone input to your VAC.
+
+**Signal flow:**
+> Mic (PC B) → SonoBus → VB Cable (PC A) → Vonovox converts → VAC (PC A) → SonoBus → VAC (PC B) → Discord/Games
+===
+
+***
+### 4. Connecting the PCs
+
+==- Local Network (Recommended - Lowest Latency)
+For the best experience, both PCs should be connected to the same router, ideally via Ethernet.
+
+1. On **PC A**, open SonoBus and click **Connect**.
+2. Enter a unique **Group Name** (e.g. `MyVonovoxStream`) and an optional password. Click **Connect**.
+3. On **PC B**, click **Connect**, enter the exact same Group Name and password, and connect.
+4. SonoBus will automatically detect they are on the same local network and establish a direct peer-to-peer LAN connection.
+===
+
+==- Over the Internet (Remote Setup)
+1. Follow the exact same steps as the Local Network setup using the same Group Name and password.
+2. SonoBus servers will match your clients and automatically establish a peer-to-peer internet connection.
+3. In SonoBus, click on the connected user and set **Send Quality** to `PCM 16-bit` uncompressed for best quality, or high-bitrate `Opus` if your upload speed is limited.
+4. If you hear audio dropouts, slightly increase the **Jitter Buffer** (Auto or manual), though this adds a small amount of latency.
+===
+
+***
+### 5. Modify Vonovox Settings Remotely
+
+Since Vonovox opens as a standalone window on PC A, you will need a way to control it from PC B. Here are the best options:
+
+- **Sunshine / Moonlight** — Ultra-low latency game-streaming-grade remote desktop. Run Sunshine (or forks like Apollo/VibeShine) on PC A, and Moonlight (or forks like Artemis) on PC B.
+- **RustDesk / AnyDesk / TeamViewer** — Free, cross-platform remote desktop tools. Install on both PCs and connect instantly.
+- **Parsec** — Originally built for cloud gaming, offering near-zero latency screen sharing.
+- **Windows Remote Desktop (Windows Only)** — Built into Windows 10/11 Pro, no extra software needed.
+
+!!!danger RDP Audio Warning
+Windows RDP redirects all audio to the viewing client by default, which will break the VAC routing on PC A. If using RDP, go to Remote Desktop Connection settings → **Local Resources** → **Remote audio settings** → select **"Play on remote computer"** so audio stays on PC A for SonoBus to capture.
+!!!
 
 
 ***
