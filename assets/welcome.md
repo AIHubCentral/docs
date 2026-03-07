@@ -107,6 +107,5 @@ icon: home-fill
 ###### ‎     
 ## To-Do :icon-checklist:
 
-- Applio Voice Blender
 - General Revamps
 ***
