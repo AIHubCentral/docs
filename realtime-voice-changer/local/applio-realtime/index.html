@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0.826237231312">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0.826237554972">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.1.0">
@@ -31,12 +31,12 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../../img/b.png" />
-    <link href="../../../resources/css/retype.css?v=4.1.0.826237231312" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=4.1.0.826237554972" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.1.0.826237231312" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.1.0.826237554972" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=4.1.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.1.0.826237231312" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=4.1.0.826237231312" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.1.0.826237554972" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=4.1.0.826237554972" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -494,6 +494,14 @@ Applio uses a Web User Interface (WebUI) coded in Gradio, allowing the tool to r
 </doc-anchor-target>
 <p>We had a conversation about this in <a href="https://discord.com/channels/1159260121998827560/1159290161683767298/1352325982689951765">https://discord.com/channels/1159260121998827560/1159290161683767298/1352325982689951765</a> &amp; <a href="https://discord.com/channels/1159260121998827560/1159290161683767298/1356265862704926907">https://discord.com/channels/1159260121998827560/1159290161683767298/1356265862704926907</a>,
 RVC works by downsampling your audio voice to 16khz because f0 estimators only works at that sample rate, after that the model outputs the results using it&#x27;s original sample rate (without any upscaling). So there won&#x27;t be the need of having a super extremely expensive, a decent one should do the job.</p>
+<hr>
+<doc-anchor-target id="are-there-unique-voice-models">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#are-there-unique-voice-models">#</doc-anchor-trigger>
+        <span>Are there unique Voice Models?</span>
+    </h3>
+</doc-anchor-target>
+<p>RVC Voice Models need to be trained on something, so the models themselves can&#x27;t be unique, but you can use the <a href="https://docs.aihub.gg/rvc/local/applio/#voice-blender">Voice Blender</a> to create a new unique merged model.</p>
 <hr>
 <div class="content-center"><doc-anchor-target id="you-have-reached-the-end">
     <h4>
