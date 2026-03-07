@@ -814,6 +814,17 @@ If the Web UI Interface is up and running, but when you try to Start Server you 
 
 
 ***
+### Client Audio Processing isn't working or "Client audio not available" or "Select Audio Device first"
+
+<img src="../wokada-tg-develop-img/client-audio-processing-not-available.png" alt="Client audio not available Wokada Tg-Develop's Fork" width="430" height="auto">
+
+If it displays a warning that the client audio isn't available, it says to select an audio device first but it's already selected or it's available but not working:
+- Be sure you gave the Microphone Permission and chose the right one in your Browser.
+- Try different Browsers and versions.
+- Under the Client Audio Processing Tab, change your audio devices (input, audio) to another option and then switch back to the right ones
+
+
+***
 ## FAQ
 ***
 ### Why does it run in a browser and not it's own window?
