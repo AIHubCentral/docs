@@ -3,7 +3,7 @@ icon: chevron-right
 order: 7000
 ---
 
-``Last update: August 7, 2025``
+``Last update: March 7, 2026``
 
 ***
 :::content-center
@@ -179,6 +179,22 @@ b. Once it's done, you can hear the results in the **Export Audio** box below.
 To download it, press the download symbol on its right.
 
     <img src="..\appliocolab-img/3-output.png" alt="image" width="450">‎   
+
+
+***
+###### ‎     
+###### ‎  
+:::content-center
+## Realtime Voice Conversion :icon-broadcast:
+###### ‎   
+
+Beyond offline inference, Applio features a powerful built-in **Realtime** tab, allowing you to convert your voice live during calls, streaming, or recordings.
+
+- It uses the same RVC technology but is optimized for low-latency performance.
+- Features include Voice Activity Detection (VAD), input/output device selection, and advanced performance tweaking.
+
+For a full step-by-step setup and configuration guide, please visit the <u>[Applio Realtime Guide](http://docs.aihub.gg/realtime-voice-changer/local/applio-realtime/)</u>.
+
 
 ***
 ###### ‎     

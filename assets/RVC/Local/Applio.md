@@ -3,7 +3,7 @@ icon: chevron-right
 order: 3000
 ---
 
-``Last update: August 9, 2025``
+``Last update: March 7, 2026``
 
 ***
 :::content-center
@@ -278,10 +278,7 @@ The very first time you run a task (like inference or training), Applio may appe
 ###### ‎       
 ###### ‎   
 :::content-center
-## Inference :icon-unmute:   
-!!!success
-If you encounter an issue, be sure to read the <u>[Troubleshooting](https://docs.aihub.gg/rvc/local/mainline/#troubleshooting-)</u> chapter.
-!!!
+## Upload Models
 :::
 ###### ‎  
 ###### ‎   
@@ -304,8 +301,17 @@ You have two ways of uploading it: through <u>[**its link**](https://docs.aihub.
     b. Then drag the .INDEX.
     +++ 
 
-‎  
-#### 2. Select voice model.
+
+
+***
+###### ‎       
+###### ‎   
+:::content-center
+## Inference :icon-unmute:   
+:::
+###### ‎  
+###### ‎   
+#### 1. Select voice model.
 a. Return to the **Inference** tab & click the ``Refresh`` button on the right.
 
     <img src="..\applio-img\3-refresh.png" alt="image" width="500">   
@@ -317,8 +323,7 @@ b. Select your model in the ``Voice Model`` dropdown.
     <img src="..\applio-img\3-voice-model.png" alt="image" width="500">   
 
   ***
-###### ‎  
-#### 3. Input vocals.      
+#### 2. Input vocals.      
 - With Applio you can convert audios individually or in batches:
     +++ Single file
     a. Drag & drop the audio or click the upload box to search it.      
@@ -342,20 +347,35 @@ b. Select your model in the ``Voice Model`` dropdown.
     +++
 
 ‎  
-#### 4. Modify settings. (optional)      
+#### 3. Modify settings. (optional)      
 -  Unfold `Advanced Settings` if you wish to modify the <u>[inference settings](https://docs.aihub.gg/rvc/resources/inference-settings/)</u> for better results, or to determine the output folder.
 
     <img src="..\applio-img/3-advanced.png" alt="image" width="600">‎   
 ***
 
 ###### ‎  
-#### 5. Convert.
+#### 4. Convert.
 a. Click ``Convert`` at the bottom. The audio will begin to process.       
 The processing time will mainly depend on your specs, length of audio & the algorithm picked.
 
 b. Once it's done, you can hear the results in the **Export Audio** box below.
 
     By default the output files will be in the "**audios**" folder: ``\ApplioV3.0.7\assets\audios``
+
+
+***
+###### ‎     
+###### ‎  
+:::content-center
+## Realtime Voice Conversion :icon-broadcast:
+###### ‎   
+
+Beyond offline inference, Applio features a powerful built-in **Realtime** tab, allowing you to convert your voice live during calls, streaming, or recordings.
+
+- It uses the same RVC technology but is optimized for low-latency performance.
+- Features include Voice Activity Detection (VAD), input/output device selection, and advanced performance tweaking.
+
+For a full step-by-step setup and configuration guide, please visit the <u>[Applio Realtime Guide](http://docs.aihub.gg/realtime-voice-changer/local/applio-realtime/)</u>.
 
 
 ***

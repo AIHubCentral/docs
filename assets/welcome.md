@@ -2,7 +2,7 @@
 icon: home-fill
 ---
 # :icon-home-fill: Home
-``Last update: August 5, 2025``         
+``Last update: March 7, 2026``
 ***
 :::content-center
 <img src=".\img\a.png" alt="image" width="345" height="auto">
@@ -107,5 +107,6 @@ icon: home-fill
 ###### ‎     
 ## To-Do :icon-checklist:
 
-- Nothing :smile:
+- Applio Voice Blender
+- General Revamps
 ***
