@@ -148,6 +148,10 @@ The Model Settings tab is split into two sections:
     - Compressor
     - Delay
 
+!!!danger Bitcrush Error:
+The Bitcrush Post Process Option seems to give users an error when enabled on Applio V3.6.2. Don't use it for now.
+!!!
+
 **Part 2: Advanced Tuning**
 <img src="../applio-realtime-img/model-settings-2.png" alt="Advanced Model Tuning" width="800" height="auto">
 
