@@ -128,7 +128,7 @@ Use Cloud if you:
 - Can help users with weird issues related to curl certificates or no cuda available despite having a modern Nvidia GPU.
 !!!
 
-- Download the Latest [Precompiled Version of Vonovox](https://huggingface.co/dr87/vonovox/tree/main/)
+- Download the Latest [Precompiled Version of Vonovox](https://huggingface.co/dr87/vonovox/tree/main/). Be aware that there could be also some Free Beta Versions there.
 
 - After downloading, extract the zip file.
 
