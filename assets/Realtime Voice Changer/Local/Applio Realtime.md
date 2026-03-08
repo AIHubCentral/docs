@@ -11,9 +11,9 @@ order: 2000
 ## Introduction
 :::
 
-- Applio is an all-in-one RVC (Retrieval-based-Voice-Conversion) software that includes a powerful Realtime module for live voice changing.
+- Applio is an all-in-one RVC (Retrieval-based-Voice-Conversion) software that in v3.5.0 introduced a powerful Realtime tab for live voice changing.
 
-- This guide focuses on the Applio Realtime interface, for Realtime Voice Changing.
+- This guide focuses on the Applio Realtime interface, for Realtime Voice Changing. It will link to the guides to setup Applio.
 
 - RVC does **NOT** mean Realtime Voice Changer. RVC means Retrieval-based-Voice-Conversion.
 
