@@ -117,7 +117,7 @@ order: 1000
 ***
 ### :icon-chevron-down:Google Colab
 - Google Colaboratory, also known as Google Colab or just Colab, is a <u>[cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based)</u> platform by Google to run <u>[Jupyter Notebooks](https://docs.aihub.gg/extra/glossary/#jupyter-notebook)</u>.
-- Learn how to bypass their limitations <u>[here](https://docs.google.com/document/d/1Pr-AZndodmWgsbOeuHQU4IrgbatFgYc1ChOq_ZAf_5s/edit?usp=sharing)</u>.
+- Learn how to bypass their limitations <u>[here](https://rentry.co/GoogleColabBypassLimits)</u>.
 
 #### Pros & Cons :icon-tasklist:
 ==- *Learn more*
@@ -127,7 +127,7 @@ order: 1000
 - Free access to T4 GPU and v5e-1 TPU.
 - No phone number verification required.
 ||| ❌ **CONS** 
-- Strict usage limit for free users: max around 4 hours/day, with a 12-24 hour reload.
+- Strict usage limit for free users: max ~4 hours/day, with around 12-24 hour reload.
 - It requires a Google Account.
 - Random disconnects if left unsupervised.
 - No persistent storage (files are deleted when disconnected).
