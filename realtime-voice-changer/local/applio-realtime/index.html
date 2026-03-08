@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0.826302390201">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0.826308237125">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.1.0">
@@ -15,7 +15,7 @@
     <!-- Primary Meta Tags -->
     <title>Applio Realtime</title>
     <meta name="title" content="Applio Realtime">
-    <meta name="description" content="Last update: March 7, 2026">
+    <meta name="description" content="Last update: March 8, 2026">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://docs.aihub.gg/realtime-voice-changer/local/applio-realtime/">
@@ -24,19 +24,19 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.aihub.gg/realtime-voice-changer/local/applio-realtime/">
     <meta property="og:title" content="Applio Realtime">
-    <meta property="og:description" content="Last update: March 7, 2026">
+    <meta property="og:description" content="Last update: March 8, 2026">
     <meta property="og:site_name" content="">
     <meta property="og:locale" content="en_US">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../../img/b.png" />
-    <link href="../../../resources/css/retype.css?v=4.1.0.826302390201" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=4.1.0.826308237125" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.1.0.826302390201" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.1.0.826308237125" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=4.1.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.1.0.826302390201" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=4.1.0.826302390201" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.1.0.826308237125" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=4.1.0.826308237125" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -203,7 +203,7 @@
         <span>Applio Realtime</span>
     </h1>
 </doc-anchor-target>
-<p><code translate="no" v-pre>Last update: March 7, 2026</code></p>
+<p><code translate="no" v-pre>Last update: March 8, 2026</code></p>
 <hr>
 <div class="content-center"><doc-anchor-target id="introduction">
     <h2>
@@ -275,7 +275,7 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
     </div>
     <div class="px-5 py-3 docs-columns-content">
 <ul>
-<li>Doesn&#x27;t have Audio Effects like VST Plugins.</li>
+<li>Might not be as good as Vonovox and Wokada Tg Develop Fork as Realtime isn&#x27;t its entire focus.</li>
 </ul>
     </div>
 </div>
@@ -380,17 +380,18 @@ or
     </div>
 </div>
 <hr>
-<doc-anchor-target id="get-applio">
+<doc-anchor-target id="get--start-applio">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#get-applio">#</doc-anchor-trigger>
-        <span>Get Applio</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#get--start-applio">#</doc-anchor-trigger>
+        <span>Get &amp; Start Applio</span>
     </h2>
 </doc-anchor-target>
 <ol>
 <li>Install and Run Applio according to the <u><a href="https://docs.aihub.gg/rvc/local/applio/#download--installation">main Applio installation guide</a></u>.</li>
 <li><a href="https://docs.aihub.gg/rvc/local/applio/#upload-models">Upload your RVC Voice Model</a>.</li>
 <li>Navigate to the <strong>Realtime</strong> tab in the top navigation menu.</li>
-<li>You must agree to the <strong>Terms of Use</strong> before the settings become accessible.</li>
+<li>You must agree to the <strong>Terms of Use</strong> before the settings become accessible.+</li>
+<li>After you adjust the Settings, you can click start and will be able to use it shortly after!</li>
 </ol>
 <img src="../applio-realtime-img/realtime-tab.png" alt="Applio Realtime Terms of Use" width="800" height="auto">
 <hr>
@@ -437,6 +438,23 @@ or
 <li><strong>Voice Model / Index:</strong> Select your model and corresponding index.</li>
 <li><strong>Pitch:</strong> Adjusts your vocal pitch (-24 to +24).</li>
 <li><strong>Processing:</strong> Toggle Autotune, Proposed Pitch, and Clean Audio as needed for your specific vocal style.</li>
+</ul>
+<img src="../applio-realtime-img/post-process.png" alt="Post Process Audio Effects" width="400" height="auto">
+<ul>
+<li><strong>Post-Proces:</strong> Multiple Audio Effects such as:
+<ul>
+<li>Reverb</li>
+<li>Pitch Shift</li>
+<li>Limiter</li>
+<li>Gain</li>
+<li>Distortion</li>
+<li>Chorus</li>
+<li>Bitcrush</li>
+<li>Clipping</li>
+<li>Compressor</li>
+<li>Delay</li>
+</ul>
+</li>
 </ul>
 <p><strong>Part 2: Advanced Tuning</strong>
 <img src="../applio-realtime-img/model-settings-2.png" alt="Advanced Model Tuning" width="800" height="auto"></p>
