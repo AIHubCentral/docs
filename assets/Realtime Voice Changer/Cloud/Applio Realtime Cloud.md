@@ -25,7 +25,7 @@ To use Applio on the cloud, follow the installation guide for your preferred pla
 ### 2. Realtime Setup on Cloud
 Once you have the Applio WebUI open from your cloud provider:
 
-[!button text="Continue with the Local PC Guide" icon="arrow-right" target="blank"](https://docs.aihub.gg/realtime-voice-changer/local/applio-realtime/)
+[!button text="Continue with the Local Guide" icon="arrow-right" target="blank"](https://docs.aihub.gg/realtime-voice-changer/local/applio-realtime/)
 
 ***
 

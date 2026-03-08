@@ -191,9 +191,9 @@ a. If you want to go back to the notebook simply click on the `Jupyter` icon on 
 ## Usage
 Now that you have the web interface running via Lightning.AI, the rest of the process is **identical to using a local installation.**
 
-For all subsequent steps, including application settings and model usage, please continue by following the Local PC guide.
+For all subsequent steps, including application settings and model usage, please continue by following the Local Guide.
 
-[!button text="Continue with the Local PC Guide" icon="arrow-right" target="blank"](https://docs.aihub.gg/rvc/local/applio/#inference)
+[!button text="Continue with the Local Guide" icon="arrow-right" target="blank"](https://docs.aihub.gg/rvc/local/applio/#inference)
 
 
 ***

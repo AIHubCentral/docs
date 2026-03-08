@@ -161,9 +161,9 @@ c. From here it's pretty much the same as using local W-Okada.
 
 Now that you have the web interface running via Kaggle, the rest of the process is **identical to using a local installation.**
 
-For *mostly* all subsequent steps, including audio routing, application settings, and model usage, please continue by following the Local PC guide.
+For *mostly* all subsequent steps, including audio routing, application settings, and model usage, please continue by following the Local Guide.
 
-[!button text="Continue with the Local PC Guide" icon="arrow-right" target="blank"](https://docs.aihub.gg/realtime-voice-changer/local/deiteris-w-okada-fork/#voice-models)
+[!button text="Continue with the Local Guide" icon="arrow-right" target="blank"](https://docs.aihub.gg/realtime-voice-changer/local/deiteris-w-okada-fork/#voice-models)
 
 
 

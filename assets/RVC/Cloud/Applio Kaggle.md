@@ -166,9 +166,9 @@ a. After the setup cell finishes running, it will output several public URLs. Th
 
    <img src="../applio-kaggle-img/urls.png" alt="image" width="800" height=""> 
 
-b. Click the **Applio Public URL** to open the user interface. For all subsequent steps, including application settings and model usage, please continue by following the Local PC guide.
+b. Click the **Applio Public URL** to open the user interface. For all subsequent steps, including application settings and model usage, please continue by following the Local Guide.
 
-[!button text="Continue with the Local PC Guide" icon="arrow-right" target="blank"](https://docs.aihub.gg/rvc/local/applio/#inference)
+[!button text="Continue with the Local Guide" icon="arrow-right" target="blank"](https://docs.aihub.gg/rvc/local/applio/#inference)
 
 ***
 
