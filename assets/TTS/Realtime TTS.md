@@ -34,7 +34,7 @@ Choose any TTS in our <u>[TTS Tools](https://docs.aihub.gg/tts/tts-tools/)</u>.
 :::
 
 - A VAC (Virtual Audio Cable) makes a fake audio device, used to re-route the audio of different programs.
-- In Wokada Deiteris Fork context, it's used to get the output of Wokada Deiteris Fork as the input in other programs such as Discord.
+- In AI Realtime Voice Changing context, it's used to get the output of AI Converted Voice Output as the input in other programs such as Discord.
 
 !!! For Windows
 Download this: <u>[VAC Lite (Virtual-Audio-Cable by Muzychenko)](https://software.muzychenko.net/freeware/vac470lite.zip)</u>.

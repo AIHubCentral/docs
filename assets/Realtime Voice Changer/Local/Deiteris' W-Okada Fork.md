@@ -156,7 +156,6 @@ For Debian / Ubuntu-based Systems (Ubuntu, Mint, Pop!_OS), run in the terminal:
 sudo apt-get update && sudo apt-get install -y portaudio19-dev
 ```
 
-
 For Fedora / RHEL-based Systems (CentOS, Rocky Linux), run in the terminal:
 ```bash
 sudo yum install -y portaudio

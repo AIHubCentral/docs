@@ -53,7 +53,7 @@ Also, **HuggingFace has a <u>[Security Scanner](https://huggingface.co/docs/hub/
 #### A Virtual Audio Cable (VAC) is what you need to use the realtime voice changer on Discord & Games.
 
 - A VAC (Virtual Audio Cable) makes a fake audio device, used to re-route the audio of different programs.
-- In Wokada Deiteris Fork context, it's used to get the output of Wokada Deiteris Fork as the input in other programs such as Discord.
+- In AI Realtime Voice Changing context, it's used to get the output of AI Converted Voice Output as the input in other programs such as Discord.
 
 !!! For Windows
 Download this: <u>[VAC Lite (Virtual-Audio-Cable by Muzychenko)](https://software.muzychenko.net/freeware/vac470lite.zip)</u>.
@@ -76,7 +76,6 @@ For Debian / Ubuntu-based Systems (Ubuntu, Mint, Pop!_OS), run in the terminal:
 ```bash
 sudo apt-get update && sudo apt-get install -y portaudio19-dev
 ```
-
 
 For Fedora / RHEL-based Systems (CentOS, Rocky Linux), run in the terminal:
 ```bash

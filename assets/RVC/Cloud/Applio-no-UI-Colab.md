@@ -36,7 +36,8 @@ order: 5000
 - TensorBoard included
 - Extra features: (plugins, model fusion, etc)
 ||| ❌ **CONS** 
-- Usage limit for free users
+- Low usge limit for free users
+- Can't use Realtime.
 ||| 
 ===
 

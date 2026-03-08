@@ -88,7 +88,7 @@ b. This step may take a few minutes to complete. It will print "Installed!" when
 #### 5. Launch the Server via Tunnels
 This final code cell is the most important one—it starts the voice changer's server and uses a "tunneling" service to create a secure, public web address (URL) for you to access it from your own computer.
 
-a. Navigate to the third code cell, titled "Start Server **using Tunnels**". This cell boots up the Wokada Deiteris Fork application inside your Lightning.AI Studio.
+a. Navigate to the third code cell, titled "Start Server **using Tunnels**". This cell boots up the Application inside your Lightning.AI Studio.
 
 b. **Select a Tunnel:** A tunnel securely exposes the application running in your private cloud environment to the public internet. The notebook gives you five different services to do this. Choose one from the `Tunnel` code menu in the code cell.
 
