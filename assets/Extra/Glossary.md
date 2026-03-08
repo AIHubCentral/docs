@@ -117,7 +117,7 @@ order: 1000
 ***
 ### :icon-chevron-down:Google Colab
 - Google Colaboratory, also known as Google Colab or just Colab, is a <u>[cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based)</u> platform by Google to run <u>[Jupyter Notebooks](https://docs.aihub.gg/extra/glossary/#jupyter-notebook)</u>.
-- Learn how to bypass their limitations <u>[here](https://rentry.co/GoogleColabBypassLimits)</u>.
+- Learn how to bypass their limitations <u>[here](https://rentry.co/googlecolabworkarounds)</u>.
 
 #### Pros & Cons :icon-tasklist:
 ==- *Learn more*
