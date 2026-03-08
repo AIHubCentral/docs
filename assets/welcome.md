@@ -104,8 +104,3 @@ icon: home-fill
 - **Backend:** Eddy & Yui
 - **Branding:** Grvyscale & Cthulhu
 ***
-###### ‎     
-## To-Do :icon-checklist:
-
-- General Revamps
-***

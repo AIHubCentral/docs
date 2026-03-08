@@ -15,14 +15,14 @@ To ensure a smooth collaboration experience, please review the following guideli
 
 ---
 
-## 1. Code of Conduct & Ethics :icon-shield:
+## Code of Conduct & Ethics :icon-shield:
 AI HUB follows a strict **[Code of Conduct](https://github.com/AIHubCentral/docs/blob/main/.github/CODE_OF_CONDUCT.md)** that establishes standards for respectful and inclusive participation.
 * **Ethical Use:** We strictly prohibit the use of our guides for illegal activities, scamming, catfishing, and any form of fraud. 
 * **Respect:** We ask all contributors to adhere to these guidelines, show empathy, and respect different opinions when participating in AI HUB projects.
 
 ---
 
-## 2. Issues & Feedback :icon-comment-discussion:
+## Issues & Feedback :icon-comment-discussion:
 If you don't want to write code/markdown but still want to help, we appreciate any feedback!
 - **Suggestions:** Leave suggestions in the <u>[#suggestions](https://discord.com/channels/1159260121998827560/1159516963014451302)</u> channel. 
 - **Report Issues/Bugs:** Use the <u>[#ai-help-forum](https://discord.com/channels/1159260121998827560/1192011222023950368)</u> or open an Issue on our <u>[GitHub Repository](https://github.com/AIHubCentral/docs/issues)</u>.
@@ -30,7 +30,7 @@ If you don't want to write code/markdown but still want to help, we appreciate a
 
 ---
 
-## 3. How to Contribute to the Docs :icon-tools:
+## How to Contribute to the Docs :icon-tools:
 
 We use **[Retype](https://retype.com/)** for building our docs. It's simply Markdown with special effects. You can use two types of environments to start editing the docs:
 
@@ -65,7 +65,7 @@ We use **[Retype](https://retype.com/)** for building our docs. It's simply Mark
 
 ---
 
-## 4. Pull Request Guidelines :icon-git-pull-request:
+## Pull Request Guidelines :icon-git-pull-request:
 When submitting a pull request, please ensure:
 - You provide a clear and descriptive title for the PR.
 - You include a summary of the changes made and why they were made.
@@ -74,7 +74,22 @@ When submitting a pull request, please ensure:
 
 ---
 
-## 5. Communication :icon-people:
+## Current To-Do List :icon-checklist:
+Looking for something to work on? Here is our current roadmap of things we need help adding or fixing:
+- General Revamps
+- Add some useful r3gm tools like RVC [Zero](https://huggingface.co/spaces/r3gm/rvc_zero)/[Colab](https://github.com/R3gm/rvc_zero_ui?tab=readme-ov-file#rvczero), AICoverGen [CPU](https://huggingface.co/spaces/r3gm/AICoverGen_old_stable_cpu)/[ZeroGPU](https://huggingface.co/spaces/r3gm/AICoverGen)/[Colab](https://github.com/R3gm/AICoverGen?tab=readme-ov-file#aicovergen), [UltimateVocalRemoverWebUI CPU](https://huggingface.co/spaces/r3gm/Ultimate-Vocal-Remover-WebUI), Audio Separator [ZeroGPU](https://huggingface.co/spaces/r3gm/Audio_separator)/[Colab](https://github.com/R3gm/Audio_separator_ui?tab=readme-ov-file#audio-separator), [RVC Voice Model Finder](https://huggingface.co/spaces/r3gm/Model_Voice_Finder). Need to check which is still working.
+- Archive/Fix(?) Broken Ilaria HuggingFace Spaces.
+- Add the other [Mainline Download methods](<https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI/blob/main/docs/en/README.en.md>) (AMD/Intel Windows, AMD Linux, Intel Linux) and more info https://discord.com/channels/1159260121998827560/1159290096458149938/1403086698895638570, https://discord.com/channels/1159260121998827560/1159290096458149938/1419361265314431067.
+- Add [Applio HF Space](https://huggingface.co/spaces/IAHispano/Applio).
+- Add RVC Termux Android (not a necessity).
+- Update TTS Section.
+- Add more to the Image Gen Section.
+- Add and update other AI stuff, such as LLMs.
+- Remove/Archive Weights.gg/.com related things after its shutdown on March 31st 2026.
+
+---
+
+## Communication :icon-people:
 We value open and transparent communication. 
 - **Website:** [docs.aihub.gg](https://docs.aihub.gg)
 - **Discord:** [AI HUB](https://discord.gg/aihub)
