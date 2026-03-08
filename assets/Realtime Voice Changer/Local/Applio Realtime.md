@@ -3,7 +3,7 @@ icon: chevron-right
 order: 2000
 ---
 
-``Last update: March 7, 2026``
+``Last update: March 8, 2026``
 
 ***
 
@@ -40,7 +40,7 @@ Also, **HuggingFace has a <u>[Security Scanner](https://huggingface.co/docs/hub/
 - Supports the latest RVC V2 advancements and embedders
 - Includes powerful audio effect racks
 ||| ❌ **CONS** 
-- Doesn't have Audio Effects like VST Plugins.
+- Might not be as good as Vonovox and Wokada Tg Develop Fork as Realtime isn't its entire focus.
 |||
 ===
 ***
@@ -90,12 +90,13 @@ sudo pacman -Syu portaudio
 
 
 ***
-## Get Applio
+## Get & Start Applio
 
 1. Install and Run Applio according to the <u>[main Applio installation guide](https://docs.aihub.gg/rvc/local/applio/#download--installation)</u>.
 2. [Upload your RVC Voice Model](https://docs.aihub.gg/rvc/local/applio/#upload-models).
-2. Navigate to the **Realtime** tab in the top navigation menu.
-3. You must agree to the **Terms of Use** before the settings become accessible.
+3. Navigate to the **Realtime** tab in the top navigation menu.
+4. You must agree to the **Terms of Use** before the settings become accessible.+
+5. After you adjust the Settings, you can click start and will be able to use it shortly after!
 
 <img src="../applio-realtime-img/realtime-tab.png" alt="Applio Realtime Terms of Use" width="800" height="auto">
 
@@ -132,6 +133,20 @@ The Model Settings tab is split into two sections:
 - **Voice Model / Index:** Select your model and corresponding index.
 - **Pitch:** Adjusts your vocal pitch (-24 to +24).
 - **Processing:** Toggle Autotune, Proposed Pitch, and Clean Audio as needed for your specific vocal style.
+
+<img src="../applio-realtime-img/post-process.png" alt="Post Process Audio Effects" width="400" height="auto">
+
+- **Post-Proces:** Multiple Audio Effects such as:
+    - Reverb
+    - Pitch Shift
+    - Limiter
+    - Gain
+    - Distortion
+    - Chorus
+    - Bitcrush
+    - Clipping
+    - Compressor
+    - Delay
 
 **Part 2: Advanced Tuning**
 <img src="../applio-realtime-img/model-settings-2.png" alt="Advanced Model Tuning" width="800" height="auto">
