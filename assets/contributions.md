@@ -80,7 +80,6 @@ Looking for something to work on? Here is our current roadmap of things we need 
 - Add some useful r3gm tools like RVC [Zero](https://huggingface.co/spaces/r3gm/rvc_zero)/[Colab](https://github.com/R3gm/rvc_zero_ui?tab=readme-ov-file#rvczero), AICoverGen [CPU](https://huggingface.co/spaces/r3gm/AICoverGen_old_stable_cpu)/[ZeroGPU](https://huggingface.co/spaces/r3gm/AICoverGen)/[Colab](https://github.com/R3gm/AICoverGen?tab=readme-ov-file#aicovergen), [UltimateVocalRemoverWebUI CPU](https://huggingface.co/spaces/r3gm/Ultimate-Vocal-Remover-WebUI), Audio Separator [ZeroGPU](https://huggingface.co/spaces/r3gm/Audio_separator)/[Colab](https://github.com/R3gm/Audio_separator_ui?tab=readme-ov-file#audio-separator), [RVC Voice Model Finder](https://huggingface.co/spaces/r3gm/Model_Voice_Finder). Need to check which is still working.
 - Archive/Fix(?) Broken Ilaria HuggingFace Spaces.
 - Add the other [Mainline Download methods](<https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI/blob/main/docs/en/README.en.md>) (AMD/Intel Windows, AMD Linux, Intel Linux) and more info https://discord.com/channels/1159260121998827560/1159290096458149938/1403086698895638570, https://discord.com/channels/1159260121998827560/1159290096458149938/1419361265314431067.
-- Add [Applio HF Space](https://huggingface.co/spaces/IAHispano/Applio).
 - Add RVC Termux Android (not a necessity).
 - Update TTS Section.
 - Add more to the Image Gen Section.

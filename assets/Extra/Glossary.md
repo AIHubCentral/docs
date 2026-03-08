@@ -3,7 +3,7 @@ icon: chevron-right
 order: 1000
 ---
 
-``Last update: August 9, 2025``
+``Last update: March 8, 2026``
 ***
 :::content-center
 
@@ -117,32 +117,69 @@ order: 1000
 ***
 ### :icon-chevron-down:Google Colab
 - Google Colaboratory, also known as Google Colab or just Colab, is a <u>[cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based)</u> platform by Google to run <u>[Jupyter Notebooks](https://docs.aihub.gg/extra/glossary/#jupyter-notebook)</u>.
-- It requires a Google Account.
-- It doesn't Web User Interfaces in the Free Tier, meaning it needs encrypted <u>[Jupyter Notebooks](https://docs.aihub.gg/extra/glossary/#jupyter-notebook)</u>) and has ban risk like Kaggle.
-- It's free tier offers **max 4 hours a day of T4 GPU**, but it's random. Once you exhaust it, you'll have to wait 12 - 24 hours or [get a paid tier](https://colab.research.google.com/signup).
 - Learn how to bypass their limitations <u>[here](https://docs.google.com/document/d/1Pr-AZndodmWgsbOeuHQU4IrgbatFgYc1ChOq_ZAf_5s/edit?usp=sharing)</u>.
+
+#### Pros & Cons :icon-tasklist:
+==- *Learn more*
+!!! *The pros & cons are subjective to your necessities.*        
+!!! 
+||| ✔️ **PROS** 
+- Free access to T4 GPU and v5e-1 TPU.
+- No phone number verification required.
+||| ❌ **CONS** 
+- Strict usage limit for free users: max around 4 hours/day, with a 12-24 hour reload.
+- It requires a Google Account.
+- Random disconnects if left unsupervised.
+- No persistent storage (files are deleted when disconnected).
+- Risk of ban when running WebUI on the free tier.
+||| 
+===
+
+***
+### :icon-chevron-down:HuggingFace Space
+- A <u>[cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based)</u> hosting platform for machine learning demos and apps directly accessible via a web browser.
+
+#### Pros & Cons :icon-tasklist:
+==- *Learn more*
+!!! *The pros & cons are subjective to your necessities.*        
+!!! 
+||| ✔️ **PROS** 
+- Extremely easy to use; runs directly in the browser with no installation.
+- No phone number verification required.
+||| ❌ **CONS** 
+- Strict GPU quotas and maximum inference time limits.
+- It requires an HUggingFace Account.
+- Hardware depends on the Space creator, which is shared and may cause queues.
+- Not made for training or realtime things, just simple inference.
+||| 
+===
 
 
 ***
 ### :icon-chevron-down:Kaggle
-- A <u>[cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based)</u> is a <u>[cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based)</u> platform by Google to run <u>[Jupyter Notebooks](https://docs.aihub.gg/extra/glossary/#jupyter-notebook)</u>.
+- A <u>[cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based)</u> platform by Google to run <u>[Jupyter Notebooks](https://docs.aihub.gg/extra/glossary/#jupyter-notebook)</u>.
 - It's focused on data science and machine learning.
-- It doesn't Web User Interfaces, meaning it needs encrypted <u>[Jupyter Notebooks](https://docs.aihub.gg/extra/glossary/#jupyter-notebook)</u>) and has ban risk like Google Colab.
 - If you have trouble verifying your phone number, [Contact Kaggle](https://www.kaggle.com/contact).
-- It requires a phone number verification to access the internet (which is needed to run most <u>[Jupyter Notebooks](https://docs.aihub.gg/extra/glossary/#jupyter-notebook)</u>).
-- The free tier provides a limited quota of **30 free GPU hours per week** of either T4x2 (2 T4 GPUs at once) or P100, which you can swap at any time, using either will consume the quota, which resets weekly.
+
+#### Pros & Cons :icon-tasklist:
+==- *Learn more*
+!!! *The pros & cons are subjective to your necessities.*        
+!!! 
+||| ✔️ **PROS** 
+- Access to powerful GPUs (T4x2, P100).
+- Includes 30 hours of free GPU usage per week.
+- You can leave training unsupervised.
+||| ❌ **CONS** 
+- Initial setup takes some time.
+- Requires a Kaggle account and Phone Number Verification.
+- Risk of ban when running WebUI on the free tier.
+||| 
+===
 
 
 ***
 ### :icon-chevron-down:Lightning.AI
 - A <u>[cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based)</u> platform designed for developing and running AI applications in persistent environments called "Studios.", and one of the options is via (but not limited to) running <u>[Jupyter Notebooks](https://docs.aihub.gg/extra/glossary/#jupyter-notebook)</u>.
-- It requires a phone number verification to full access.
-- It features persistent storage, meaning your files are saved between sessions.
-- It allows Web User Interfaces on the Free tier, avoiding any encryption or ban risk unlike Google Colab or Kaggle.
-- Studios Auto Sleep (stop running) after 10 minutes of inactivity (such as closing the site or not running anything in the background) in the Free tier.
-- Users inactive for a 6 month period and do not have an active paid subscription will be scheduled for deletion. Users will be notified 30 days before the scheduled deletion, with several reminders sent during this period.
-- Free tier users get free 15 monthly credits that can be used on CPUs or GPUs. Be sure to monitor your usage and stop the Studio when not in use.
-- "free studios" are considerated the free *CPU* studios, which have a 4 hour limit session, after that they will become paid CPU studios using your credits unless you restart them. Unlike GPU Studios which directly use credits.
 - In Free tier you can change GPU/CPUs at any time, but if you used all free 15 credits **monthly** only on a specific computing, you'd have:     
     - **GPUs (Powerful, Recommended):**   
         - **T4** (16GB VRAM): **75 hours**
@@ -153,6 +190,26 @@ order: 1000
         - **Large (CPU)**: (8 cores, 32GB RAM): **29 hours**
         - **X-Large (CPU)**: (16 cores, 64GB RAM): **15 hours**
 - You can check the [pricing](https://lightning.ai/pricing) for more info.
+
+#### Pros & Cons :icon-tasklist:
+==- *Learn more*
+!!! *The pros & cons are subjective to your necessities.*        
+!!! 
+||| ✔️ **PROS** 
+- Has excellent GPUs with lots of VRAM.
+- Free tier users get free 15 monthly credits that can be used on CPUs or GPUs. Be sure to monitor your usage and stop the Studio when not in use.
+- "free studios" are considerated the free *CPU* studios, which have a 4 hour limit session, after that they will become paid CPU studios using your credits unless you restart them. Unlike GPU Studios which directly use credits.
+- You can leave training unsupervised.
+- Features persistent storage (files are saved between sessions).
+- Web UI allowed on free tier without ban risk.
+||| ❌ **CONS** 
+- Takes some time to set up.
+- Needs an Account and Phone Number for Verification (2-3 day wait time).
+- Limited GPU time based on monthly credits.
+- Studios Auto Sleep (stop running) after 10 minutes of inactivity (such as closing the site or not running anything in the background) in the Free tier.
+- Users inactive for a 6 month period and do not have an active paid subscription will be scheduled for deletion. Users will be notified 30 days before the scheduled deletion, with several reminders sent during this period.
+||| 
+===
 
 
 ***
