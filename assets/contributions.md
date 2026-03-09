@@ -84,6 +84,7 @@ Looking for something to work on? Here is our current roadmap of things we need 
 - Update TTS Section.
 - Add more to the Image Gen Section.
 - Add and update other AI stuff, such as LLMs.
+- Adapt all guides in the #guides discord channel to the Docs, to replace that channel.
 - Remove/Archive Weights.gg/.com related things after its shutdown on March 31st 2026.
 
 ---
