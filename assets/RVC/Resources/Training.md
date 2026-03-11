@@ -102,7 +102,7 @@ Creating a pretrain is pretty much the same as training a normal model but the d
 
 There are two ways of making a pretrain:
 - **From scratch:** This means you don't use a base pretrain when training. To make a decent from-scratch pretrain, you are going to need a massive dataset (at **least** 50+ hours of low, mid, and high-quality speech with many different speakers). 
-- **Finetuning:** This means you use an existing pretrain to train your new pretrain. You still need a very large dataset of high-quality speech with many speakers. While some might try with around 10 hours of data, this is generally considered too low to be highly viable, and a pretrain trained with a much bigger dataset will easily beat it.
+- **Finetuning:** This means you use an existing pretrain to train your new pretrain. You still need a very large dataset of high-quality speech with many speakers. While around 10 hours of data will work, you are going to get a significantly better result by using a much larger dataset.
      - The big pro of making a Finetune is that you can tailor it to anything, like you can tailor it to improve a certain language, improve accents, types of speech and more. It can even improve the graphs (like grads, g/total etc.) if trained properly.
 ***
 ###### 
