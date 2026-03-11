@@ -135,7 +135,9 @@ order: 2000
   - 🤗 [Hugging Face](https://huggingface.co/spaces/Nick088/Edge-TTS)
 
   +++ :icon-dependabot: RVC FORKS
-  - [Ilaria RVC](https://docs.aihub.gg/rvc/cloud/ilaria-rvc/#tts-) 
+  %%
+  - [Ilaria RVC Zero](https://docs.aihub.gg/rvc/cloud/ilaria-rvc/#tts-) 
+  %%
   - [Applio Colab](https://docs.aihub.gg/rvc/cloud/applio-colab/#tts)
   - [Local Applio](https://docs.aihub.gg/rvc/local/applio/)   
   ‎
