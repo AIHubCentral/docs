@@ -2,7 +2,7 @@
 icon: chevron-right
 order: 3000
 ---
-``Last update: March 7, 2026``
+``Last update: March 11, 2026``
 ***
 :::content-center
 ## Introduction
@@ -146,9 +146,35 @@ Use Cloud if you:
 - Once it's done downloading everything it will display `Setup complete!` in the command line.
 
 ***
+
+### Post-Installation Configuration for Older Nvidia GPUs
+
+!!!warning Important Notice
+If you are using a GTX 900 or 10 series GPU, you must run the following commands after completing the **Manual** or **Precompiled** installation. 
+**Note:** Since those commands will install older requirements versions with the latest CUDA Version supported for those older GPUs, it might break some application features or cause instability.
+!!!
+
+- **For GTX 900 Series GPUs:**
+Run this in the command prompt (cmd) inside the Vonovox folder:
+```cmd
+runtime\python.exe -m pip uninstall torch torchvision torchaudio
+
+runtime\python.exe -m pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+```
+
+- **For GTX 10 Series GPUs:**
+Run this in the command prompt (cmd) inside the Vonovox folder:
+```cmd
+runtime\python.exe -m pip uninstall torch torchvision torchaudio
+
+runtime\python.exe -m pip install torch torchaudio torchvision --index-url https://download.pytorch.org/whl/cu126
+```
+
+***
+
 ### Opening on Windows
 
-Run `start.bat` in the folder. 
+Run `start.bat` in the folder. If you would like to start it but hide the CMD Window, you can use `start_hidden.bat` instead.
 
 ***
 ### Opening on Multi-GPU Systems
