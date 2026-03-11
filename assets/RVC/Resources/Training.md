@@ -15,7 +15,7 @@ order: 1000
 - It won't be explained how to process a dataset and how to actually train a model since that is different from fork to fork, please look at the guide for your fork to find this info. 
 ***
 :::content-center
-## Epochs & Overtraining
+## Epochs
 :::
 
 - "Epoch" is a unit of measuring the training cycles of an AI model.     
@@ -25,26 +25,16 @@ order: 1000
 #### *:icon-chevron-right: How many epochs should I use for my dataset?*
 - **There isn't a way to know the right amount previous to training.** It depends on the length, quality and diversity of the dataset.
 
-- If you aim towards a quality model, it's not convenient to input a semi-arbitrary amount of epochs, as it makes it prone to underfitting/overtraining.
+- If you aim towards a quality model, it's not convenient to input a semi-arbitrary amount of epochs, as it makes it prone to losing generalization.
 
 - The best way to know when to stop training is to **test and hear each saved epoch** during the training process. Other tools or "overtrain detectors" are generally unreliable and might end training prematurely.
 
 #### *:icon-chevron-right: Do more epochs equal a better model?*
-- **No it doesn't**, since using a disproportionate amount will overtrain the model, which will affect the quality of it.                 
+- **No.** The pretrain gives the model a wide range of general vocal knowledge. Finetuning focuses that range toward your target voice, but too many epochs narrow it too much. 
 
-- In the field of AI, this is when an AI model learns its <u>[dataset](https://docs.aihub.gg/rvc/resources/datasets/)</u> too well, to the point where it centers too much around it & starts replicating undesired data.
+- The model still handles inputs similar to the training data just fine, but anything further outside that range comes out increasingly distorted and robotic. More epochs past the sweet spot means a less flexible model, not a better one. 
 
-- The model performs very well with data of the dataset, but poorly with new data, as it has lost its ability to replicate anything that deviates from it (losing generalization from the pretrain).
-
-#### *:icon-chevron-right: What is overtraining?*
-
-- Overtraining (also known as overfitting) is when the model doesn't actually learn the underlying patterns of the data and memorizes them instead. It happens when the model starts to sound very similar to the dataset, losing generalization from the pretrain.
-
-- Some signs of overfitting are when the sibilances are robotic, when the model sounds bad during inference compared to how it sounds in the dataset, or when the model is unable to produce high-end harmonics/notes. 
-
-<img src="../tensorboard-img/overtrained.png" alt="image" width="1000" height="700">‎
-
-This image is a bit extreme but it gives you a good idea. If you notice your model is poorly creating high end harmonics try using a model several epochs back.
+- This phenomenon of the model losing generalization is commonly, but incorrectly, referred to as "overtraining" in the RVC community. True overtraining would actually cause the model to generate pure static on unseen data. This explains why some models trained for 1K+ epochs still technically work, they just become extremely limited.
 
 ***
 :::content-center
@@ -61,7 +51,7 @@ A batch size is the number of training examples used in one iteration before upd
 - Bigger batch size:
     - Promotes smoother, more stable gradients.
     - Can be beneficial in cases where your dataset is big and diverse.
-    - Can lead to early overtraining or flat / 'stuck' graphs.
+    - Can lead to early generalization loss or flat / 'stuck' graphs.
     - Generalization might be worsened.
 
 Be aware that if you're training with 2 GPUs, like in Kaggle's T4x2, the batch size has to be splitted, as each GPU runs the same batch size, for example if you want to train batch size 8, you have to put 4 in the program.
@@ -133,9 +123,8 @@ A: There is no "best pretrain" it all depends on your needs and what you're ok w
 ## Vocoders
 :::
 
--   In Applio you are given the choice between three vocoders:
+-   In Applio you are given the choice between two vocoders:
     - HiFi-GAN
-    - MRF HiFi-GAN
     - RefineGAN
 
 Each of these are different in fidelity and require their own pretrains to use.
@@ -146,26 +135,11 @@ Applio might have currently hidden the other vocoders, except HiFi-GAN which is 
 
 ### HiFI-GAN
 
-The first vocoder choice is HiFi-GAN the original GAN used in RVC which is combatible with all version of RVC and forks. HiFI-GAN is pretty basic and has muddy high ends.
-
-### MRF HiFI-GAN
-
-The second choice is MRF HiFI-GAN, this is a modfied version of HiFi-GAN with MRF instead of MPD, new loss functions and non-simplified version of the resolution block. 
-
-- Pros:
-    - Higher fidelity
-    - 44.1k Training
-- Cons:
-    - Only a slight upgrade from Hifi-GAN
-    - Not many pretrains for it
+This is the original vocoder used in RVC, compatible with every realtime and rvc client such as Applio, Mainline, Vonovox and W-Okada.
 
 ### RefineGAN
 
-The third and final choice is RefineGAN, this is an entirely different GAN then HiFi. This GAN uses noise to fill in the gaps and has a different resolution block.
-
-- Pros:
-    - Higher fidelity and quality
-    - 44.1k Training
+Alternative vocoder based on the paper https://arxiv.org/abs/2111.00962. Currently experimental and only compatible with Vonovox and Applio.
 
 ***
 :::content-center
@@ -176,7 +150,7 @@ The third and final choice is RefineGAN, this is an entirely different GAN then 
 
 - It is mainly useful to see whether there's something weird going on, like the model exploding into NaNs or super high values. It is highly useful when debugging or experimenting with new architectures/pretrains.
 
-- **Tensorboard is NOT a good guide to tell you when the training is done.** The metrics only show how well the model is able to reproduce its own dataset, not how well it can generalize to other audio. For regular RVC users, it is better to listen to the saved epochs manually to spot overtraining.
+- **Tensorboard is NOT a good guide to tell you when the training is done.** The metrics only show how well the model is able to reproduce its own dataset, not how well it can generalize to other audio. For regular RVC users, it is better to listen to the saved epochs manually to spot generalization loss.
 
 ***
 ###### ‎
@@ -260,7 +234,7 @@ When casually checking TensorBoard during training, you generally only need to l
 
 - **Check every loss** to make sure they are generally going down and do not explode into NaNs (Not a Number) or super high values. In RVC, NaNs mostly happen when you are experimenting with weird architectures/tools.
 - **Ensure the `kl loss` is not negative** or too close to being negative.
-- **Keep in mind:** The "lowest point" of the `g/total` graph is **not** necessarily the best epoch, and the graph going up does not automatically mean the model is overtraining (the model can get worse before that). 
+- **Keep in mind:** The "lowest point" of the `g/total` graph is **not** necessarily the best epoch, and the graph going up does not automatically mean the model is losing generalization (the model can get worse before that). 
 - Always test and listen to the epochs manually to accurately find the best one!
 
 +++ Advanced Guide ‎     
