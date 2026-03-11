@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0.826568136378">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0.826573486274">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.1.0">
@@ -31,11 +31,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../../img/b.png" />
-    <link href="../../../resources/css/retype.css?v=4.1.0.826568136378" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=4.1.0.826573486274" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.1.0.826568136378" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.1.0.826573486274" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=4.1.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.1.0.826568136378" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.1.0.826573486274" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -220,10 +220,10 @@
 </li>
 </ul>
 <hr>
-<div class="content-center"><doc-anchor-target id="epochs--overtraining">
+<div class="content-center"><doc-anchor-target id="epochs">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#epochs--overtraining">#</doc-anchor-trigger>
-        <span>Epochs &amp; Overtraining</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#epochs">#</doc-anchor-trigger>
+        <span>Epochs</span>
     </h2>
 </doc-anchor-target>
 </div>
@@ -242,7 +242,7 @@
 <ul>
 <li><p><strong>There isn&#x27;t a way to know the right amount previous to training.</strong> It depends on the length, quality and diversity of the dataset.</p>
 </li>
-<li><p>If you aim towards a quality model, it&#x27;s not convenient to input a semi-arbitrary amount of epochs, as it makes it prone to underfitting/overtraining.</p>
+<li><p>If you aim towards a quality model, it&#x27;s not convenient to input a semi-arbitrary amount of epochs, as it makes it prone to losing generalization.</p>
 </li>
 <li><p>The best way to know when to stop training is to <strong>test and hear each saved epoch</strong> during the training process. Other tools or &quot;overtrain detectors&quot; are generally unreliable and might end training prematurely.</p>
 </li>
@@ -254,27 +254,13 @@
     </h4>
 </doc-anchor-target>
 <ul>
-<li><p><strong>No it doesn&#x27;t</strong>, since using a disproportionate amount will overtrain the model, which will affect the quality of it.</p>
+<li><p><strong>No.</strong> The pretrain gives the model a wide range of general vocal knowledge. Finetuning focuses that range toward your target voice, but too many epochs narrow it too much.</p>
 </li>
-<li><p>In the field of AI, this is when an AI model learns its <u><a href="https://docs.aihub.gg/rvc/resources/datasets/">dataset</a></u> too well, to the point where it centers too much around it &amp; starts replicating undesired data.</p>
+<li><p>The model still handles inputs similar to the training data just fine, but anything further outside that range comes out increasingly distorted and robotic. More epochs past the sweet spot means a less flexible model, not a better one.</p>
 </li>
-<li><p>The model performs very well with data of the dataset, but poorly with new data, as it has lost its ability to replicate anything that deviates from it (losing generalization from the pretrain).</p>
-</li>
-</ul>
-<doc-anchor-target id="what-is-overtraining">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#what-is-overtraining">#</doc-anchor-trigger>
-        <span><em><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/></g></g></svg> What is overtraining?</em></span>
-    </h4>
-</doc-anchor-target>
-<ul>
-<li><p>Overtraining (also known as overfitting) is when the model doesn&#x27;t actually learn the underlying patterns of the data and memorizes them instead. It happens when the model starts to sound very similar to the dataset, losing generalization from the pretrain.</p>
-</li>
-<li><p>Some signs of overfitting are when the sibilances are robotic, when the model sounds bad during inference compared to how it sounds in the dataset, or when the model is unable to produce high-end harmonics/notes.</p>
+<li><p>This phenomenon of the model losing generalization is commonly, but incorrectly, referred to as &quot;overtraining&quot; in the RVC community. True overtraining would actually cause the model to generate pure static on unseen data. This explains why some models trained for 1K+ epochs still technically work, they just become extremely limited.</p>
 </li>
 </ul>
-<p><img src="../tensorboard-img/overtrained.png" alt="image" width="1000" height="700">‎</p>
-<p>This image is a bit extreme but it gives you a good idea. If you notice your model is poorly creating high end harmonics try using a model several epochs back.</p>
 <hr>
 <div class="content-center"><doc-anchor-target id="batch-size">
     <h2>
@@ -297,7 +283,7 @@
 <ul>
 <li>Promotes smoother, more stable gradients.</li>
 <li>Can be beneficial in cases where your dataset is big and diverse.</li>
-<li>Can lead to early overtraining or flat / &#x27;stuck&#x27; graphs.</li>
+<li>Can lead to early generalization loss or flat / &#x27;stuck&#x27; graphs.</li>
 <li>Generalization might be worsened.</li>
 </ul>
 </li>
@@ -444,10 +430,9 @@ The second way being:</p>
 </doc-anchor-target>
 </div>
 <ul>
-<li>In Applio you are given the choice between three vocoders:
+<li>In Applio you are given the choice between two vocoders:
 <ul>
 <li>HiFi-GAN</li>
-<li>MRF HiFi-GAN</li>
 <li>RefineGAN</li>
 </ul>
 </li>
@@ -475,43 +460,14 @@ The second way being:</p>
         <span>HiFI-GAN</span>
     </h3>
 </doc-anchor-target>
-<p>The first vocoder choice is HiFi-GAN the original GAN used in RVC which is combatible with all version of RVC and forks. HiFI-GAN is pretty basic and has muddy high ends.</p>
-<doc-anchor-target id="mrf-hifi-gan">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#mrf-hifi-gan">#</doc-anchor-trigger>
-        <span>MRF HiFI-GAN</span>
-    </h3>
-</doc-anchor-target>
-<p>The second choice is MRF HiFI-GAN, this is a modfied version of HiFi-GAN with MRF instead of MPD, new loss functions and non-simplified version of the resolution block.</p>
-<ul>
-<li>Pros:
-<ul>
-<li>Higher fidelity</li>
-<li>44.1k Training</li>
-</ul>
-</li>
-<li>Cons:
-<ul>
-<li>Only a slight upgrade from Hifi-GAN</li>
-<li>Not many pretrains for it</li>
-</ul>
-</li>
-</ul>
+<p>This is the original vocoder used in RVC, compatible with every realtime and rvc client such as Applio, Mainline, Vonovox and W-Okada.</p>
 <doc-anchor-target id="refinegan">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#refinegan">#</doc-anchor-trigger>
         <span>RefineGAN</span>
     </h3>
 </doc-anchor-target>
-<p>The third and final choice is RefineGAN, this is an entirely different GAN then HiFi. This GAN uses noise to fill in the gaps and has a different resolution block.</p>
-<ul>
-<li>Pros:
-<ul>
-<li>Higher fidelity and quality</li>
-<li>44.1k Training</li>
-</ul>
-</li>
-</ul>
+<p>Alternative vocoder based on the paper <a href="https://arxiv.org/abs/2111.00962">https://arxiv.org/abs/2111.00962</a>. Currently experimental and only compatible with Vonovox and Applio.</p>
 <hr>
 <div class="content-center"><doc-anchor-target id="tensorboard">
     <h2>
@@ -525,7 +481,7 @@ The second way being:</p>
 </li>
 <li><p>It is mainly useful to see whether there&#x27;s something weird going on, like the model exploding into NaNs or super high values. It is highly useful when debugging or experimenting with new architectures/pretrains.</p>
 </li>
-<li><p><strong>Tensorboard is NOT a good guide to tell you when the training is done.</strong> The metrics only show how well the model is able to reproduce its own dataset, not how well it can generalize to other audio. For regular RVC users, it is better to listen to the saved epochs manually to spot overtraining.</p>
+<li><p><strong>Tensorboard is NOT a good guide to tell you when the training is done.</strong> The metrics only show how well the model is able to reproduce its own dataset, not how well it can generalize to other audio. For regular RVC users, it is better to listen to the saved epochs manually to spot generalization loss.</p>
 </li>
 </ul>
 <hr>
@@ -712,7 +668,7 @@ You can always manually refresh with the refresh symbol (<span class="docs-emoji
 <ul>
 <li><strong>Check every loss</strong> to make sure they are generally going down and do not explode into NaNs (Not a Number) or super high values. In RVC, NaNs mostly happen when you are experimenting with weird architectures/tools.</li>
 <li><strong>Ensure the <code translate="no" v-pre>kl loss</code> is not negative</strong> or too close to being negative.</li>
-<li><strong>Keep in mind:</strong> The &quot;lowest point&quot; of the <code translate="no" v-pre>g/total</code> graph is <strong>not</strong> necessarily the best epoch, and the graph going up does not automatically mean the model is overtraining (the model can get worse before that).</li>
+<li><strong>Keep in mind:</strong> The &quot;lowest point&quot; of the <code translate="no" v-pre>g/total</code> graph is <strong>not</strong> necessarily the best epoch, and the graph going up does not automatically mean the model is losing generalization (the model can get worse before that).</li>
 <li>Always test and listen to the epochs manually to accurately find the best one!</li>
 </ul>
 </doc-tab>
