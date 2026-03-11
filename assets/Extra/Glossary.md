@@ -3,7 +3,7 @@ icon: chevron-right
 order: 1000
 ---
 
-``Last update: March 8, 2026``
+``Last update: March 11, 2026``
 ***
 :::content-center
 
@@ -148,9 +148,10 @@ order: 1000
 - No phone number verification required.
 ||| ❌ **CONS** 
 - Strict GPU quotas and maximum inference time limits.
-- It requires an HUggingFace Account.
+- It requires a HuggingFace Account.
 - Hardware depends on the Space creator, which is shared and may cause queues.
 - Not made for training or realtime things, just simple inference.
+- **RVC-related Spaces Paused:** HuggingFace Staff has recently been pausing RVC-related spaces (like Applio and Ilaria RVC) without providing a reason.
 ||| 
 ===
 

@@ -3,7 +3,7 @@ icon: chevron-right
 order: 3000
 visibility: private
 ---
-``Last update: August 24, 2025`` 
+``Last update: March 11, 2026`` 
 ***
 
 ## </u>Introduction</u>
@@ -13,11 +13,23 @@ visibility: private
 
 - Here is the link to the space <u>[Ilaria RVC Zero](https://huggingface.co/spaces/TheStinger/Ilaria_RVC)</u>.
 
-!!!danger
-This space is only for inference which means you can not train a model here.
-!!!
-***
 
+!!!danger HuggingFace Space Service
+**Check the <u>[HuggingFace Space Glossary](https://docs.aihub.gg/extra/glossary/#huggingface-space)</u> for more info on Free Tier, Limits, Quotas and other things.**
+!!!
+
+
+!!!danger Ilaria RVC Zero HuggingFace Space Limits
+- The Ilaria RVC Zero HuggingFace Space is made only for Inference.
+!!!
+
+
+!!!danger HuggingFace Spaces Pausing Issue
+**Please be aware that HuggingFace has recently been pausing RVC-related Spaces (such as the old Applio and Ilaria RVC) without providing any reason.**
+!!!
+
+
+***
 ## </u>Model Downloader</u>
 ***
 

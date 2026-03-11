@@ -2,7 +2,7 @@
 icon: chevron-right
 order: 3000
 ---
-``Last update: March 8, 2026`` 
+``Last update: March 11, 2026`` 
 ***
 
 ## </u>Introduction</u>
@@ -14,11 +14,18 @@ order: 3000
 **Check the <u>[HuggingFace Space Glossary](https://docs.aihub.gg/extra/glossary/#huggingface-space)</u> for more info on Free Tier, Limits, Quotas and other things.**
 !!!
 
+
 !!!danger ApplioX HuggingFace Space Limits
 - The Space is Running on CPU. You may click the 3 dots -> Duplicate it in your own HuggingFace account with your own paid hardware.
 - The ApplioX HuggingFace Space doesn't have Training, Realtime, Plugins, Report a Bug, Settings Tabs. Only Inference, TTS, Voice Blender, Download and Extra Tabs.
 - The ApplioX HuggingFace Space might be less frequently updated compared to Applio.
 !!!
+
+
+!!!danger HuggingFace Spaces Pausing Issue
+**Please be aware that HuggingFace has recently been pausing RVC-related Spaces (such as the old Applio and Ilaria RVC) without providing any reason.**
+!!!
+
 
 
 ***
