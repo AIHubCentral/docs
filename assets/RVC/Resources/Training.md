@@ -68,7 +68,6 @@ Pretrains are an integral part of making a model, they are basically models that
 - There are three types of pretrains:
      - Scratch: Trained with no previous pretrain.
      - Finetune: Trained with a pretrain.
-     - Merge: Made by merging pretrains. (These are considered the worst)
 ***
 ###### ‎ 
 ### How do I use Pretrains?
