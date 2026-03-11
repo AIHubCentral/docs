@@ -151,7 +151,7 @@ order: 1000
 - It requires a HuggingFace Account.
 - Hardware depends on the Space creator, which is shared and may cause queues.
 - Not made for training or realtime things, just simple inference.
-- **RVC-related Spaces Paused:** HuggingFace Staff has recently been pausing RVC-related spaces (like Applio and Ilaria RVC) without providing a reason.
+- **RVC-related Spaces Paused:** HuggingFace Staff has recently been pausing RVC-related spaces (like [Applio Old](https://huggingface.co/spaces/IAHispano/Applio-Old) and [Ilaria RVC Zero](https://huggingface.co/spaces/TheStinger/Ilaria_RVC)) without providing a reason.
 ||| 
 ===
 
