@@ -65,9 +65,6 @@ Pretrains are an integral part of making a model, they are basically models that
 
  <img src="../pretrain-img/pretrain.png" alt="image" width="1000" height="auto">
 
-- There are three types of pretrains:
-     - Scratch: Trained with no previous pretrain.
-     - Finetune: Trained with a pretrain.
 ***
 ###### ‎ 
 ### How do I use Pretrains?
