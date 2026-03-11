@@ -93,12 +93,16 @@ In many cases, the original (og) base RVC pretrain could work better than custom
 ***
 ###### ‎ 
 ### How do I make Pretrain?      
-Creating a pretrain is pretty much the same as training a normal model but the dataset is bigger and longer. 
 
-There are two ways of making a pretrain the first being:
-- From scratch which means you don't use a pretrain when training this. To make a decent from scratch pretrain you are going to need at **least** 50 hours of low, mid and high quality speech with many different speakers. 
-The second way being:
-- Finetuning which means you use a pretrain to train this pretrain. To make a good one you are going to need at **least** 10 hours of high quality speech with many speakers.
+!!!warning Advanced Topic
+Creating pretrains is an advanced process. This information is provided for users who want to experiment, but casual or new users generally do not need to create their own pretrains.
+!!!
+
+Creating a pretrain is pretty much the same as training a normal model but the dataset is significantly bigger and longer. **A bigger dataset for the pretrain equals the best results, regardless of the method you choose.**
+
+There are two ways of making a pretrain:
+- **From scratch:** This means you don't use a base pretrain when training. To make a decent from-scratch pretrain, you are going to need a massive dataset (at **least** 50+ hours of low, mid, and high-quality speech with many different speakers). 
+- **Finetuning:** This means you use an existing pretrain to train your new pretrain. You still need a very large dataset of high-quality speech with many speakers. While some might try with around 10 hours of data, this is generally considered too low to be highly viable, and a pretrain trained with a much bigger dataset will easily beat it.
      - The big pro of making a Finetune is that you can tailor it to anything, like you can tailor it to improve a certain language, improve accents, types of speech and more. It can even improve the graphs (like grads, g/total etc.) if trained properly.
 ***
 ###### 
