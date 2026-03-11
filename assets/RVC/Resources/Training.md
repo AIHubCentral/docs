@@ -3,7 +3,7 @@ icon: chevron-right
 order: 1000
 ---
 
-``Last update: February 28, 2026``
+``Last update: March 11, 2026``
 ***
 :::content-center
 ## Introduction
@@ -12,7 +12,7 @@ order: 1000
 
 - **Properly** training a model is just as important as having a great dataset.
 
-- It won't be explained how to prosess a dataset and how to acutally train a model since that is difference from fork to fork, please look at the guide for your fork to find this info. 
+- It won't be explained how to process a dataset and how to actually train a model since that is different from fork to fork, please look at the guide for your fork to find this info. 
 ***
 :::content-center
 ## Epochs & Overtraining
@@ -21,37 +21,36 @@ order: 1000
 - "Epoch" is a unit of measuring the training cycles of an AI model.     
 
 - In other words, the amount of times the model went over its <u>[dataset](https://docs.aihub.gg/rvc/resources/datasets/)</u> and learned from it.         
+
 #### *:icon-chevron-right: How many epochs should I use for my dataset?*
 - **There isn't a way to know the right amount previous to training.** It depends on the length, quality and diversity of the dataset.
 
-- If you aim towards a quality model, it's not convenient to input a semi-arbitrary amount of epochs, as it makes it prone to underfitting/overtraining. (explained later)
+- If you aim towards a quality model, it's not convenient to input a semi-arbitrary amount of epochs, as it makes it prone to underfitting/overtraining.
 
-- So it's best to use TensorBoard. With it you can determine **exactly** for how long you should train. (explained later)  
+- The best way to know when to stop training is to **test and hear each saved epoch** during the training process. Other tools or "overtrain detectors" are generally unreliable and might end training prematurely.
+
 #### *:icon-chevron-right: Do more epochs equal a better model?*
 - **No it doesn't**, since using a disproportionate amount will overtrain the model, which will affect the quality of it.                 
-- In the field of AI, is when an AI model learns its <u>[dataset](https://docs.aihub.gg/rvc/resources/datasets/)</u> too well, to the point where it centers too much around it & starts replicating undesired data.
 
-- The model performs very well with data of the dataset, but poorly with new data, as it has lost its ability to replicate anything that deviates from it.
+- In the field of AI, this is when an AI model learns its <u>[dataset](https://docs.aihub.gg/rvc/resources/datasets/)</u> too well, to the point where it centers too much around it & starts replicating undesired data.
 
-- It happens when the model is trained for **too long**/is too complex. So to avoid this, RVC users use a tool called ***TensorBoard***.
+- The model performs very well with data of the dataset, but poorly with new data, as it has lost its ability to replicate anything that deviates from it (losing generalization from the pretrain).
 
 #### *:icon-chevron-right: What is overtraining?*
 
-- Overtraining also know as overfitting is where the model doesn't actually learn the underlying patterns of the data and memorizes them instead. 
+- Overtraining (also known as overfitting) is when the model doesn't actually learn the underlying patterns of the data and memorizes them instead. It happens when the model starts to sound very similar to the dataset, losing generalization from the pretrain.
 
-- Some signs of overfitting are when the sibilances are robotic, when the graphs in the <u>[Tensorboard](https://docs.aihub.gg/rvc/resources/training/#tensorboard)</u> are going up or when the model is unable to produce high end harmonics because it's learning your dataset to well and your dataset doesn't have these high end harmonics. 
+- Some signs of overfitting are when the sibilances are robotic, when the model sounds bad during inference compared to how it sounds in the dataset, or when the model is unable to produce high-end harmonics/notes. 
 
 <img src="../tensorboard-img/overtrained.png" alt="image" width="1000" height="700">‎
 
 This image is a bit extreme but it gives you a good idea. If you notice your model is poorly creating high end harmonics try using a model several epochs back.
 
-
-
 ***
 :::content-center
 ## Batch Size
 :::
-A batch size is the number of training examples used in one iteration before updaing the model's parameters. For 30+ minutes of data batch size 8 is recommended and for less than 30 minutes batch size 4 is recommended.
+A batch size is the number of training examples used in one iteration before updating the model's parameters. For 30+ minutes of data batch size 8 is recommended and for less than 30 minutes batch size 4 is recommended.
 
 - Smaller batch size:
     - Promotes noisier, less stable gradients.
@@ -61,10 +60,9 @@ A batch size is the number of training examples used in one iteration before upd
 ‎ 
 - Bigger batch size:
     - Promotes smoother, more stable gradients.
-    - Can beneficial in cases where your dataset is big and diverse.
+    - Can be beneficial in cases where your dataset is big and diverse.
     - Can lead to early overtraining or flat / 'stuck' graphs.
     - Generalization might be worsened.
-
 
 Be aware that if you're training with 2 GPUs, like in Kaggle's T4x2, the batch size has to be splitted, as each GPU runs the same batch size, for example if you want to train batch size 8, you have to put 4 in the program.
 
@@ -83,7 +81,7 @@ Pretrains are an integral part of making a model, they are basically models that
      - Merge: Made by merging pretrains. (These are considered the worst)
 ***
 ###### ‎ 
-### How do i use Pretrains?
+### How do I use Pretrains?
 
 [!badge size="xl" variant="success" text="Applio"]        
 - Go into the training tab and check the 'Custom Pretrained' box and use the drop down to select the pretrain's D and G file.
@@ -91,254 +89,30 @@ Pretrains are an integral part of making a model, they are basically models that
      - If you want to upload pretrains manually go into your Applio folder then go to `rvc\models\pretraineds\pretraineds_custom` and place your D and G files there.
 
 [!badge size="xl" text="Mainline"] 
-- Asssuming you have the pretrain you want to use go into your mainline folder then go to `assets\pretrained_v2` and place you D and G files there.
+- Assuming you have the pretrain you want to use go into your mainline folder then go to `assets\pretrained_v2` and place your D and G files there.
 - Then in the 'Train' tab near the train button you can input the location of your pretrain, replace the ending so it's the name of the pretrain you put in `pretrained_v2`. 
 
 <img src="../pretrain-img/pretrain-mainline.png" alt="image" width="200" height="auto">
 
 ***
 ###### ‎ 
-### Where do i find Pretrains?       
+### Where do I find Pretrains?       
 
-You can find all of the community made pretrains in the "pretrain-models" channel in <u>[AI HUB](https://discord.gg/aihub)</u>. 
+You can find all of the community made custom pretrains in the [`pretrain-models`](https://discord.com/channels/1159260121998827560/1235952130855010365) channel in <u>[AI HUB](https://discord.gg/aihub)</u> if you are interested in experimenting. 
 
-Here is a list of all publicly available pretrains: 
-
-!!!warning About the current publicily available pretrains
-Most of the publicily available pretrains, have been trained with a version inferior to Applio 3.4.0, which was before of the fix the broken discriminator.
+!!!warning Keep in mind
+In many cases, the original (og) base RVC pretrain could work better than custom ones. Custom pretrains can be somewhat confusing for new users, so sticking to the defaults is generally the safest and best route unless you are looking to experiment.
 !!!
 
-||| TITAN by blaise-tk
-TITAN is a fine-tuned based on the original RVC V2 pretrained, leveraging an 11.15-hours dataset sourced from Expresso. It gives cleaner results compared to the original pretrained, also handles the accent and noise better due to its robustness, being able to generate high quality results. Like Ov2 Super, it allows models to be trained with few epochs.
-
-- **32k Download:**
-    - <u>[**D Download**](https://huggingface.co/blaise-tk/TITAN/resolve/main/models/medium/32k/pretrained/D-f032k-TITAN-Medium.pth?download=true)</u>
-    - <u>[**G Download**](https://huggingface.co/blaise-tk/TITAN/resolve/main/models/medium/32k/pretrained/G-f032k-TITAN-Medium.pth?download=true)</u>
-- **40k Download:**
-    - <u>[**D Download**](https://huggingface.co/blaise-tk/TITAN/resolve/main/models/medium/40k/pretrained/D-f040k-TITAN-Medium.pth?download=true)</u>
-    - <u>[**G Download**](https://huggingface.co/blaise-tk/TITAN/resolve/main/models/medium/40k/pretrained/G-f040k-TITAN-Medium.pth?download=true)</u>
-- **48k Download:**
-    - <u>[**D Download**](https://huggingface.co/blaise-tk/TITAN/resolve/main/models/medium/48k/pretrained/D-f048k-TITAN-Medium.pth?download=true)</u>
-    - <u>[**G Download**](https://huggingface.co/blaise-tk/TITAN/resolve/main/models/medium/48k/pretrained/G-f048k-TITAN-Medium.pth?download=true)</u>
-|||
-||| Nanashi V1.7 by shiromiya
-Nanashi V1.7 is a fine-tuned based on TITAN pretrained and made with 11 hours of Brazilian music, so it will work better with this language but it can work with other languages without any problems, like TITAN, it allows models to be trained with few epochs and handles the noise better.
-
-- **32k Download:**
-    - <u>[**D Download**](https://huggingface.co/shiromiya/nanashi-pretrain/resolve/main/v1.7/D_nanashi_v1_7.pth?download=true)</u>
-    - <u>[**G Download**](https://huggingface.co/shiromiya/nanashi-pretrain/resolve/main/v1.7/G_nanashi_v1_7.pth?download=true)</u>
-|||
-||| Legacy Core 1.5 by lyery
-Uses the same dataset as legacy core v1 but improved. Needs more testing in realtime but we know works fine in local non realtime
-
-
-**Note: Don't use Legacy Core 2.5, Lyery said it's flawed, it has wobbly pitch problems**
-
-- Training Info:
-    - dataset: m4singer
-
-
-<br>
-
-- **HifiGan Vocoder, ContentVec Embedder Model:**
-    - **32k Download:**
-        - <u>[**G Download**](https://huggingface.co/lyery/mode4/resolve/main/G_15.pth?download=true)</u>
-        - <u>[**D Download**](https://huggingface.co/lyery/mode4/resolve/main/D_15.pth?download=true)</u>
-    - **40k Download:**
-        - <u>[**G Download**](https://huggingface.co/lyery/mode4/resolve/main/G_40.pth?download=true)</u>
-        - <u>[**D Download**](https://huggingface.co/lyery/mode4/resolve/main/D_40.pth?download=true)</u>
-    - **48k Download:**
-        - <u>[**G Download**](https://huggingface.co/lyery/mode4/resolve/main/G_48.pth?download=true)</u>
-        - <u>[**D Download**](https://huggingface.co/lyery/mode4/resolve/main/D_48.pth?download=true)</u>
-- **HifiGan Vocoder, SpinV2 Embedder Model:**
-    - **32k Download:**
-        - <u>[**G Download**](https://huggingface.co/lyery/mode4/resolve/main/G_Spin.pth?download=true)</u>
-        - <u>[**D Download**](https://huggingface.co/lyery/mode4/resolve/main/D_Spin.pth?download=true)</u>
-- **RefineGan Vocoder, ContentVec Embedder Model:**
-    - **32k Download:**
-        - <u>[**G Download**](https://huggingface.co/lyery/mode4/resolve/main/G_14refine.pth?download=true)</u>
-        - <u>[**D Download**](https://huggingface.co/lyery/mode4/resolve/main/D_14refine.pth?download=true)</u>
-|||
-||| Spin V2 Test Pretrain by noobies
-A test Pretrain for the Spin V2 Embedder by noobies, that could help for even better realtime models and pronunciation.
-
-- **15 Epochs:**
-    - **32k Download:**
-        - <u>[**D Download**](https://huggingface.co/Aznamir/spin/resolve/main/spin-v2/f0D32k_spin-v2.pth?download=true)</u>
-        - <u>[**G Download**](https://huggingface.co/Aznamir/spin/resolve/main/spin-v2/f0G32k_spin-v2.pth?download=true)</u>
-    - **40k Download:**
-        - <u>[**D Download**](https://huggingface.co/Aznamir/spin/resolve/main/spin-v2/f0D40k_spin-v2.pth?download=true)</u>
-        - <u>[**G Download**](https://huggingface.co/Aznamir/spin/resolve/main/spin-v2/f0G40k_spin-v2.pth?download=true)</u>
-    - **48k Download:**
-        - <u>[**D Download**](https://huggingface.co/Aznamir/spin/resolve/main/spin-v2/f0D48k_spin-v2.pth?download=true)</u>
-        - <u>[**G Download**](https://huggingface.co/Aznamir/spin/resolve/main/spin-v2/f0G48k_spin-v2.pth?download=true)</u>
-- **10 Epochs:**
-    - **32k Download:**
-        - <u>[**D Download**](https://huggingface.co/Aznamir/spin/resolve/main/spin-v2/f0D32k_spin-v2_10e.pth?download=true)</u>
-        - <u>[**G Download**](https://huggingface.co/Aznamir/spin/resolve/main/spin-v2/f0G32k_spin-v2_10e.pth?download=true)</u>
-    - **40k Download:**
-        - <u>[**D Download**](https://huggingface.co/Aznamir/spin/resolve/main/spin-v2/f0D40k_spin-v2_10e.pth?download=true)</u>
-        - <u>[**G Download**](https://huggingface.co/Aznamir/spin/resolve/main/spin-v2/f0G40k_spin-v2_10e.pth?download=true)</u>
-    - **48k Download:**
-        - <u>[**D Download**](https://huggingface.co/Aznamir/spin/resolve/main/spin-v2/f0D48k_spin-v2_10e.pth?download=true)</u>
-        - <u>[**G Download**](https://huggingface.co/Aznamir/spin/resolve/main/spin-v2/f0G48k_spin-v2_10e.pth?download=true)</u>
-|||
-||| Spin Test Pretrain by noobies
-A test Pretrain for the Spin Embedder by noobies, that could help for realtime models and pronunciation.
-
-- **32k Download:**
-    - <u>[**D Download**](https://huggingface.co/Aznamir/spin/resolve/main/f0D32k_spin7-12_single.pth?download=true)</u>
-    - <u>[**G Download**](https://huggingface.co/Aznamir/spin/resolve/main/f0G32k_spin7-12_single.pth?download=true)</u>
-- **40k Download:**
-    - <u>[**D Download**](https://huggingface.co/Aznamir/spin/resolve/main/f0D40k_spin7-12_single.pth?download=true)</u>
-    - <u>[**G Download**](https://huggingface.co/Aznamir/spin/resolve/main/f0G40k_spin7-12_single.pth?download=true)</u>
-- **48k Download:**
-    - <u>[**D Download**](https://huggingface.co/Aznamir/spin/resolve/main/f0D48k_spin7-12_single.pth?download=true)</u>
-    - <u>[**G Download**](https://huggingface.co/Aznamir/spin/resolve/main/f0G48k_spin7-12_single.pth?download=true)</u>
-|||
-||| KLM 4.1 by SeoulStreamingStation
-KLM 4.1 is a fine-tuned based on KLM V7 pretrained and made with around 100 hours dataset (Korean vocal/speech, Japanese vocal/speech and English speech), so it will work better with those languages. Unlike typical pretrained models KLM is a pretrained model created to make vocal guides using short voice recordings from a studio, this means that even with short dataset high pitch information it is possible to implement high-pitched sounds but it is sensitive to noise so it is recommended to use it with high quality datasets
-
-- **32k Download:**
-    - <u>[**D Download**](https://huggingface.co/SeoulStreamingStation/KLM4.1/resolve/main/D_KLM41_32k.pth?download=true)</u>
-    - <u>[**G Download**](https://huggingface.co/SeoulStreamingStation/KLM4.1/resolve/main/G_KLM41_32k.pth?download=true)</u>
-
-- **48k Download:**
-    - <u>[**D Download**](https://huggingface.co/SeoulStreamingStation/KLM4.1/resolve/main/D_KLM41_48k.pth?download=true)</u>
-    - <u>[**G Download**](https://huggingface.co/SeoulStreamingStation/KLM4.1/resolve/main/G_KLM41_48k.pth?download=true)</u>
-|||
-||| KLM 4.2 by SeoulStreamingStation
-KLM 4.2 maintains the same highly extensive pitch range as before and was developed to be able to handle high-pitched vocal inference even without having the corresponding vocal data of the model you wish to generate. KLM 4.2 was trained with 146 hours of data which mostly contains Korean, Japanese and some English.
-
-- **32k Download:**
-    - <u>[**D Download**](https://huggingface.co/SeoulStreamingStation/KLM4.2/resolve/main/D_KLM42_32k_x10.pth?download=true)</u>
-    - <u>[**G Download**](https://huggingface.co/SeoulStreamingStation/KLM4.2/resolve/main/G_KLM42_32k_x10.pth?download=true)</u>
-|||
-||| KLM 4 by SeoulStreamingStation :icon-star-fill:
-KLM 4 is the final HiFi-GAN pretrain that is going to be made by SSS. This version of klm is like all of the others but it follows the original structure of training and contains noise in the dataset so it can handle it better. This was trained with 800 hours of data, with a large portion of it being in Korean.
-
-- **32k Download:**
-    - <u>[**D Download**](https://huggingface.co/SeoulStreamingStation/KLM49_HFG/resolve/main/D_KLM_HFG_32k.pth?download=true)</u>
-    - <u>[**G Download**](https://huggingface.co/SeoulStreamingStation/KLM49_HFG/resolve/main/G_KLM_HFG_32k.pth?download=true)</u>
-- **40k Download:**
-    - <u>[**D Download**](https://huggingface.co/SeoulStreamingStation/KLM49_HFG/resolve/main/D_KLM_HFG_40k.pth?download=true)</u>
-    - <u>[**G Download**](https://huggingface.co/SeoulStreamingStation/KLM49_HFG/resolve/main/G_KLM_HFG_40k.pth?download=true)</u>
-- **48k Download:**
-    - <u>[**D Download**](https://huggingface.co/SeoulStreamingStation/KLM49_HFG/resolve/main/D_KLM_HFG_48k.pth?download=true)</u>
-    - <u>[**G Download**](https://huggingface.co/SeoulStreamingStation/KLM49_HFG/resolve/main/G_KLM_HFG_48k.pth?download=true)</u>
-|||
-||| DMR V2 by Razer
-This is a fine-tuned based on the original RVC V2 pretrained and made with 22 hours of dataset aimed towards e-girl, soft male/female and deep male/female voices.
-
-- **32k Download:**
-    -  <u>[**D Download**](https://huggingface.co/Razer112/DMR_Pretrain/resolve/main/D_DMR-V2.pth?download=true)</u>
-    -  <u>[**G Download**](https://huggingface.co/Razer112/DMR_Pretrain/resolve/main/G_DMR-V2.pth?download=true)</u> 
-|||
-||| GuideVocalPretrain by Essid
-GuideVocalPretrain is a fine-tuned pretrain based on the original pretrain. This contains 58 hours of Korean speech with the goal being to improve Korean speech.  
-
-- **48k Download:**
-    - <u> [**D Download**](https://huggingface.co/Essid/GuideVocalPretrain/resolve/main/D_GuideVocalPretrain.pth?download=true)</u> 
-    - <u> [**G Download**](https://huggingface.co/Essid/GuideVocalPretrain/resolve/main/G_GuideVocalPretrain.pth?download=true)</u> 
-|||
-||| Itaila V1.0 by Ilaria
-This is a fine-tuned pretrain based on the original pretrains and was made with 10 hours of Italian speech. Itaila was made to improve Italian speech.
-
-- **32k Download:**
-    - <u>[**D Download**](https://huggingface.co/TheStinger/itaila/resolve/main/ItaIla_32k_D.pth?download=true)</u>
-    - <u>[**G Download**](https://huggingface.co/TheStinger/itaila/resolve/main/ItaIla_32k_G.pth?download=true)</u>
-|||
-||| IMA by Loren85
-This is a fine-tuned pretrain based on the original pretrains and was made with 2 hours of robotic speech which aims to make robotic voices better.
-
-- **32k Download:**
-    - <u>[**D Download**](https://huggingface.co/Loren85/IMA-TEST-V1/resolve/main/D_2333333.pth?download=true)</u>
-    - <u>[**G Download**](https://huggingface.co/Loren85/IMA-TEST-V1/resolve/main/G_2333333.pth?download=true)</u>
-|||
-||| KLM BeatzForge by SeoulStreamingStation
-This is a fine-tuned pretrain based on the original pretrain that improves drum models. 
-
-- **32k Download:**
-    - <u>[**D Download**](https://huggingface.co/SeoulStreamingStation/KLM_BEATMASTER/resolve/main/D_BeatzForge_V2_32k.pth?download=true)</u>
-    - <u>[**G Download**](https://huggingface.co/SeoulStreamingStation/KLM_BEATMASTER/resolve/main/G_BeatzForge_V2_32k.pth?download=true)</u>
-|||
-||| Nanashi Anime v1 by shiromiya
-This is a fine-tuned pretrain based off of the original pretrain which aims to improve anime-style speech. This was train with 11 hours of speech.
-
-- **32k Download:**
-    - <u>[**D Download**](https://huggingface.co/shiromiya/nanashi-pretrain/resolve/main/v1_anime/normal/D_nanashi_anime_384e.pth?download=true)</u>
-    - <u>[**G Download**](https://huggingface.co/shiromiya/nanashi-pretrain/resolve/main/v1_anime/normal/G_nanashi_anime_384e.pth?download=true)</u>
-|||
-||| Nezox V1 by noxty
-Nezox is a fine-tuned pretrain based on the original pretrain. This pretrain contains 43 hours of Indonesian speech with the goal of the pretrain to make Indonesian speech better. 
-
-- **32k Download:**
-    - <u>[**D Download**](https://huggingface.co/theNeofr/Nezox/resolve/main/Nezox_32k_D.pth?download=true)</u>
-    - <u>[**G Download**](https://huggingface.co/theNeofr/Nezox/resolve/main/Nezox_32k_G.pth?download=true)</u>
-|||
-||| OV2 Super by SimplCup
-Ov2Super is a fine-tuned based on the original RVC V2 pretrained and made with 30 minutes dataset, works well for small datasets and English language, this pretrained was trained on a precisely chosen clean speech and singing dataset, with bright and emotional voices. Additionally, it allows models to train with very few epochs compared to regular pretrains.
-
-- **32k Download:**
-    - <u>[**D Download**](https://huggingface.co/poiqazwsx/Ov2Super32kfix/resolve/main/f0Ov2Super32kD.pth?download=true)</u>
-    - <u>[**G Download**](https://huggingface.co/poiqazwsx/Ov2Super32kfix/resolve/main/f0Ov2Super32kG.pth?download=true)</u>
-- **40k Download:**
-    - <u>[**D Download**](https://huggingface.co/ORVC/Ov2Super/resolve/main/f0Ov2Super40kD.pth?download=true)</u>
-    - <u>[**G Download**](https://huggingface.co/ORVC/Ov2Super/resolve/main/f0Ov2Super40kG.pth?download=true)</u>
-|||
-||| RIN_E3 by MUSTAR
-This pretrain is made from scratch with a 140 hour dataset. It is suggested to use this with high quality datasets due to its sensitivity to noise.
-
-- **40k Download:**
-    - <u>[**D Download**](https://huggingface.co/MUSTAR/RIN_E3/resolve/main/RIN_E3_D.pth?download=true)</u>
-    - <u>[**G Download**](https://huggingface.co/MUSTAR/RIN_E3/resolve/main/RIN_E3_G.pth?download=true)</u>
-|||
-||| Rigel by MUSTAR
-Rigel is a fine-tuned pretrain based on Rigel Base. Rigel Base has 1921 of speech from most langauges, Rigel fine-tuned has 102 of high quality speech also from a ton of langauges. The goal of this pretrain is to be a better base then the original pretrain.
-
-- **Base 32k Download:**
-    - <u>[**D Download**](https://huggingface.co/MUSTAR/Rigel-rvc-base-pretrained-model/resolve/main/Rigel_32k_Base_and_FineTuned/Base-model_32k_fp32/D_Rigel_32k_3890220.pth?download=true)</u>
-    - <u>[**G Download**](https://huggingface.co/MUSTAR/Rigel-rvc-base-pretrained-model/resolve/main/Rigel_32k_Base_and_FineTuned/Base-model_32k_fp32/G_Rigel_32k_3890220.pth?download=true)</u>
-- **Fine-Tuned 32k Download:**
-    - <u>[**D Download**](https://huggingface.co/MUSTAR/Rigel-rvc-base-pretrained-model/resolve/main/Rigel_32k_Base_and_FineTuned/FineTuned-model_32k_fp32/D_Rigel_32k_fp32_2854856.pth?download=true)</u>
-    - <u>[**G Download**](https://huggingface.co/MUSTAR/Rigel-rvc-base-pretrained-model/resolve/main/Rigel_32k_Base_and_FineTuned/FineTuned-model_32k_fp32/G_Rigel_32k_fp32_2854856.pth?download=true)</u>
-|||
-||| SingerPreTrain by Sztef
-SingerPetrain is a fine-tuned based on Ov2 Super pretrained and made with 14 hours dataset (English singers). It is most suitable for training singers but it works for everything, the vocal range dataset is c1 to db7 so it works well with bass, baritone, tenor, alto, mezzo-soprano, soprano voices.
-
-- **32k Download:**
-    - <u>[**D Download**](https://huggingface.co/Sztef/SingerPreTrained/resolve/main/update/f0D_SingerPreTrain.pth?download=true)</u>
-    - <u>[**G Download**](https://huggingface.co/Sztef/SingerPreTrained/resolve/main/update/f0G_SingerPreTrain.pth?download=true)</u>
-|||
-||| SnowieV3 X RIN_E3 by MUSTAR
-SnowieV3 X RIN_E3 continues the training with Snowie dataset and then finetuned with additional data, so it will work better with English, Russian and Japanese language and also helps models of other languages to pronounce them well.
-
-- **40k Download:**
-    - <u>[**D Download**](https://huggingface.co/MUSTAR/SnowieV3.1-X-RinE3-40K/resolve/main/D_Snowie-X-Rin_40k.pth?download=true)</u>
-    - <u>[**G Download**](https://huggingface.co/MUSTAR/SnowieV3.1-X-RinE3-40K/resolve/main/G_Snowie-X-Rin_40k.pth?download=true)</u>
-|||
-||| SnowieV3.1 by MUSTAR
-SnowieV3.1 is a fine-tuned based on Snowie base pretrained (not publicly available) and made with 58 hours dataset (Russian and Japanese), so it will work better with those languages and also helps models of other languages to pronounce them well. 
-
-- **32k Download:**
-    - <u>[**D Download**](https://huggingface.co/MUSTAR/SnowieV3.1-32k/resolve/main/D_SnowieV3.1_32k.pth?download=true)</u>
-    - <u>[**G Download**](https://huggingface.co/MUSTAR/SnowieV3.1-32k/resolve/main/G_SnowieV3.1_32k.pth?download=true)</u>
-- **40k Download:**
-    - <u>[**D Download**](https://huggingface.co/MUSTAR/SnowieV3.1-40k/resolve/main/D_SnowieV3.1_40k.pth?download=true)</u>
-    - <u>[**G Download**](https://huggingface.co/MUSTAR/SnowieV3.1-40k/resolve/main/G_SnowieV3.1_40k.pth?download=true)</u>
-- **48k Download:**
-    - <u>[**D Download**](https://huggingface.co/MUSTAR/SnowieV3.1-48k/resolve/main/D_SnowieV3.1_48k.pth?download=true)</u>
-    - <u>[**G Download**](https://huggingface.co/MUSTAR/SnowieV3.1-48k/resolve/main/G_SnowieV3.1_48k.pth?download=true)</u>
-|||
 ***
 ###### ‎ 
-### How do i make Pretrain?      
+### How do I make Pretrain?      
 Creating a pretrain is pretty much the same as training a normal model but the dataset is bigger and longer. 
 
 There are two ways of making a pretrain the first being:
 - From scratch which means you don't use a pretrain when training this. To make a decent from scratch pretrain you are going to need at **least** 50 hours of low, mid and high quality speech with many different speakers. 
 The second way being:
-- Finetuning which means you use a pretrain to train this pretrain. To make a good you are going to need at **least** 10 hours of high quality speech with many speakers.
+- Finetuning which means you use a pretrain to train this pretrain. To make a good one you are going to need at **least** 10 hours of high quality speech with many speakers.
      - The big pro of making a Finetune is that you can tailor it to anything, like you can tailor it to improve a certain language, improve accents, types of speech and more. It can even improve the graphs (like grads, g/total etc.) if trained properly.
 ***
 ###### 
@@ -400,9 +174,10 @@ The third and final choice is RefineGAN, this is an entirely different GAN then 
 
 - TensorBoard is a tool that allows you to visualize & measure the training of an AI model, through graphs & metrics.
 
-- It's specially useful for determining when to stop training a voice model, since with it you can detect when the <u><u>[overtraining</u>](https://docs.aihub.gg/rvc/resources/training/#epochs--overtraining)</u> point begins.    
+- It is mainly useful to see whether there's something weird going on, like the model exploding into NaNs or super high values. It is highly useful when debugging or experimenting with new architectures/pretrains.
 
-- Because of this, TB is the most convenient tool for RVC users for perfecting a voice model.     
+- **Tensorboard is NOT a good guide to tell you when the training is done.** The metrics only show how well the model is able to reproduce its own dataset, not how well it can generalize to other audio. For regular RVC users, it is better to listen to the saved epochs manually to spot overtraining.
+
 ***
 ###### ‎
 ### :icon-chevron-down: Installing & Opening
@@ -454,7 +229,7 @@ The third and final choice is RefineGAN, this is an entirely different GAN then 
         ‎        
 
 ***
-#### :icon-chevron-down: <u>GRAPH</u>
+#### :icon-chevron-down: <u>GRAPH NAVIGATION</u>
 ***
 - #### In the left panel:  
     1. Activate `Ignore outliers in chart scaling`.  
@@ -481,72 +256,56 @@ The third and final choice is RefineGAN, this is an entirely different GAN then 
 ***
  #### :icon-chevron-down: <u> MONITORING</u>
 ***
-- Now let the training go for some time.  
+When casually checking TensorBoard during training, you generally only need to look out for a few things:
 
-- You'll detect **OT** (overtraining) when the graph hits the **lowest point**, then stay **flat**/**rising** indefinitely.  
-    ‎       
-     **<u>Example of OT:</u>**
-        
-    <img src="../tensorboard-img/10.png" alt="image" width="370" height="auto">‎     
-    ‎    
-- There will be various low points, one after the other, so don't get too anxious if it's OT or not. You can always use a previous checkpoint either way.
-
-- If it reaches a low point, let it run for **longer** until it's **very clear** it's OT.
-
-- Then zoom out & lower the smoothening. Then in the avg graph look for low points around where it started to overtrain.
-
-- Then over your mouse over these low points and take note of the step counts. Since this is using the avg graphs you may not find the exact epoch connected to the step count so just choose the closest point.
-
-    <img src="../tensorboard-img/avg.png" alt="image" width="1000" height="auto">‎ 
-
-- As you can see in the image above there is an area with several low points, so in this scenario you would try several epochs in that area to find the best sounding epoch.
-
-> If you want you can just use the lowest avg g/total point.
+- **Check every loss** to make sure they are generally going down and do not explode into NaNs (Not a Number) or super high values. In RVC, NaNs mostly happen when you are experimenting with weird architectures/tools.
+- **Ensure the `kl loss` is not negative** or too close to being negative.
+- **Keep in mind:** The "lowest point" of the `g/total` graph is **not** necessarily the best epoch, and the graph going up does not automatically mean the model is overtraining (the model can get worse before that). 
+- Always test and listen to the epochs manually to accurately find the best one!
 
 +++ Advanced Guide ‎     
 #### :icon-chevron-down: <u>Other Graphs</u>
 ***
 
-#### `FM` Feature Matching: 
-FM shows how well the generator is able to make synthetic data that has similar features to the dataset.
-
-If the graph is increasing that indicates that the generator is able to make audio that has similar features to the dataset.
-
-> you can think of this as how well the model can match timbral, spatial and temporal characteristics. 
+#### `mel loss` Spectrogram / Quality: 
+ The mel spectrogram loss compares both the real and synthetic mel spectrograms. This loss encourages the generator to produce audio that sounds similar to the dataset.
+ If the graph is decreasing that shows that the generator is producing audio with similar spectral distribution to the dataset.
+ > You can think of this as clarity / fidelity.
 ***
 
-#### `KL` Kullback-Leibler: 
-KL makes the generator create similar distribution of latest variables to real data. The KL loss ensures that the generator is not just memorizing real data but it's learning to capture the underlying patterns in the data. 
+#### `fm loss` Feature Matching / Realism: 
+FM shows how well the generator is able to make synthetic data that has similar features to the dataset.
+If the graph is decreasing that indicates that the generator is able to make audio that has similar features to the dataset.
+> You can think of this as how well the model can match timbral, spatial and temporal characteristics. 
+***
 
-If the graph is decreasing that shows that the generator is making audio with similar distribution of latent variables to real data.
-
+#### `kl loss` Distribution Matching / Acoustic Details: 
+KL makes the generator create similar distribution of latent variables to real data. The KL loss ensures that the generator is not just memorizing real data but it's learning to capture the underlying patterns in the data. 
+If the graph is decreasing that shows that the generator is making audio with similar distribution of latent variables to real data. This loss should not be negative or too close to being negative.
 > You can think of this as how well it can replicate the speakers style. 
 ***
 
-#### `Mel` Mel Spectrogram: 
- The mel spectrogram loss compares both the real and synthetic mel spectrograms. This loss encourages the generator to produce audio that sounds similar to the dataset.
-
- If the graph is decreasing that shows that the generator is producing audio with similar spectral distribution to the dataset.
-
- > you can think of this as clarity / fidelity.
-***
-
-#### `d/total` Discriminator Loss: 
-d/total shows how well the discriminator is able to differentiate between real and generated audio. 
-
+#### `d adv` Discriminator Loss: 
+Trains the discriminator. Shows how well the discriminator is able to differentiate between real and generated audio. 
 If the graph is decreasing that means the discriminator is becoming better at distinguishing between real and synthetic data which usually means that the generator is producing realistic audio. 
 ***
 
-#### `grad_norm_g` Gradient norm for the generator: 
-grad_norm_g shows the magnitude of gradients during training. If the gradients are becoming too large (over 1,000 for fintuning) that can cause some training instabilities and if they are becoming small that can lead to slow learning.
+#### `g adv` Generator Loss: 
+Trains the generator to fool the discriminator.
+***
 
-> If you're fintuning it's best if the gradients don't go above 1,000. 
+#### `g/total` Generator Total Loss: 
+Every generator loss (everything but d adv) combined.
+***
+
+#### `grad_norm_g` Gradient norm for the generator: 
+grad_norm_g shows the magnitude of gradients during training. If the gradients are becoming too large (over 1,000 for finetuning) that can cause some training instabilities and if they are becoming small that can lead to slow learning.
+> If you're finetuning it's best if the gradients don't go above 1,000. 
 ***
 
 #### `grad_norm_d` Gradient norm for the discriminator: 
-grad_norm_d shows the magnitude of gradients during training. If the gradients are becoming too large (over 100 for fintuning) that can cause some training instabilities and if they are becoming small that can lead to slow learning.
-
-> If you're fintuning it's best if the gradients don't go above 100. 
+grad_norm_d shows the magnitude of gradients during training. If the gradients are becoming too large (over 100 for finetuning) that can cause some training instabilities and if they are becoming small that can lead to slow learning.
+> If you're finetuning it's best if the gradients don't go above 100. 
 ***
 
 ***
