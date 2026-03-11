@@ -1029,6 +1029,33 @@ The model learns the (normalized) sliced audios, not the whole dataset at once, 
 
 ***
 :::content-center
+### Multi-Speaker Models (Advanced) (Applio Only)
+:::
+
+!!!danger Advanced Topic
+This Applio-only feature is for advanced users experimenting with custom model architectures. It is **not needed** for standard voice cloning and can lead to poor results if not handled correctly. It's mostly for [training Pretrains](https://docs.aihub.gg/rvc/resources/training/#how-do-i-make-pretrain). Do not use this if you are a beginner.
+!!!
+
+If you want to train a model with multiple speakers, you must structure your dataset folder specifically. You need to create a subfolder for each speaker inside your model's dataset folder. The speaker folders must be named numerically, starting from `0`.
+
+**Required Structure:**
+```text
+applio/assets/datasets/your-model-name/
+├── 0/
+│   ├── speaker0-audio1.wav
+│   └── speaker0-audio2.wav
+└── 1/
+    ├── speaker1-audio1.wav
+    └── speaker1-audio2.wav
+```
+
+**Important Requirements for Success:**
+- **Data Volume:** This method requires a significant amount of data. If you have only a small amount of data (e.g., 15 minutes per speaker), the model will likely fail to learn them correctly, resulting in voice-switching during inference or the model combining all speakers into a single, muddy voice.
+- **Minimum Data:** To successfully train a multi-speaker model (like a band or a group), your total dataset should ideally be **over 24 hours** of high-quality audio.
+
+
+***
+:::content-center
 ## Communities :icon-people:
 :::
 

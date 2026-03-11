@@ -100,10 +100,14 @@ Creating pretrains is an advanced process. This information is provided for user
 
 Creating a pretrain is pretty much the same as training a normal model but the dataset is significantly bigger and longer. **A bigger dataset for the pretrain equals the best results, regardless of the method you choose.**
 
+If you are planning to make a multi-speaker pretrain on Applio, you must follow the [Applio-only Multi-Speaker dataset structure](https://docs.aihub.gg/rvc/resources/dataset-isolation/#multi-speaker-models-advanced-applio-only) to ensure the model learns the different identities correctly.
+
 There are two ways of making a pretrain:
 - **From scratch:** This means you don't use a base pretrain when training. To make a decent from-scratch pretrain, you are going to need a massive dataset (at **least** 50+ hours of low, mid, and high-quality speech with many different speakers). 
 - **Finetuning:** This means you use an existing pretrain to train your new pretrain. You still need a very large dataset of high-quality speech with many speakers. While around 10 hours of data will work, you are going to get a significantly better result by using a much larger dataset.
      - The big pro of making a Finetune is that you can tailor it to anything, like you can tailor it to improve a certain language, improve accents, types of speech and more. It can even improve the graphs (like grads, g/total etc.) if trained properly.
+
+
 ***
 ###### 
 ### Misc        
