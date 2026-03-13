@@ -3,7 +3,7 @@ icon: chevron-right
 order: 1000
 ---
 
-``Last update: March 11, 2026``
+``Last update: March 13, 2026``
 ***
 :::content-center
 ## Introduction
@@ -105,7 +105,7 @@ If you are planning to make a multi-speaker pretrain on Applio, you must follow 
 There are two ways of making a pretrain:
 - **From scratch:** This means you don't use a base pretrain when training. To make a decent from-scratch pretrain, you are going to need a massive dataset (at **least** 50+ hours of low, mid, and high-quality speech with many different speakers). 
 - **Finetuning:** This means you use an existing pretrain to train your new pretrain. You still need a very large dataset of high-quality speech with many speakers. While around 10 hours of data will work, you are going to get a significantly better result by using a much larger dataset.
-     - The big pro of making a Finetune is that you can tailor it to anything, like you can tailor it to improve a certain language, improve accents, types of speech and more. It can even improve the graphs (like grads, g/total etc.) if trained properly.
+     - The advantage of finetuning is that the training time is much shorter than training from scratch. Only a few epochs are needed for finetunes to be viable as pretrains.
 
 
 ***
@@ -153,8 +153,6 @@ Alternative vocoder based on the paper https://arxiv.org/abs/2111.00962. Current
 - TensorBoard is a tool that allows you to visualize & measure the training of an AI model, through graphs & metrics.
 
 - It is mainly useful to see whether there's something weird going on, like the model exploding into NaNs or super high values. It is highly useful when debugging or experimenting with new architectures/pretrains.
-
-- **Tensorboard is NOT a good guide to tell you when the training is done.** The metrics only show how well the model is able to reproduce its own dataset, not how well it can generalize to other audio. For regular RVC users, it is better to listen to the saved epochs manually to spot generalization loss.
 
 ***
 ###### ‎
@@ -212,17 +210,13 @@ Alternative vocoder based on the paper https://arxiv.org/abs/2111.00962. Current
 - #### In the left panel:  
     1. Activate `Ignore outliers in chart scaling`.  
 
-    2. Set **Smoothing** to ``0.987``.     
+    2. Set **Smoothing** to ``0.5`` if you're training in Applio (because avg 50 graphs are already smoothed, this isn't important info but just a curioisity), or to ``0.987`` if you're training in Mainline.     
 
     3. Select your model in the `Runs` section below. The models you tick will show in the graphs. (untick `/eval` if you want)        
     ‎       
     <img src="../tensorboard-img/18.png" alt="image" width="240" height="auto">‎      
 ‎       
-- In the search bar, type "**g/total**" then look for the avg graph. This will be the graph you'll monitor.        
-    ‎   
-        <img src="../tensorboard-img/19.png" alt="image" width="390" height="auto">‎        
-‎    
-‎  
+
 - Each graph has three buttons in the corner:       
     - Left one is for going **fullscreen**.       
     - Middle one to **disable** Y axis, for a fuller view.       
@@ -234,7 +228,7 @@ Alternative vocoder based on the paper https://arxiv.org/abs/2111.00962. Current
 ***
  #### :icon-chevron-down: <u> MONITORING</u>
 ***
-When casually checking TensorBoard during training, you generally only need to look out for a few things:
+When checking TensorBoard during training, you generally only need to look out for a few things:
 
 - **Check every loss** to make sure they are generally going down and do not explode into NaNs (Not a Number) or super high values. In RVC, NaNs mostly happen when you are experimenting with weird architectures/tools.
 - **Ensure the `kl loss` is not negative** or too close to being negative.
@@ -258,9 +252,7 @@ If the graph is decreasing that indicates that the generator is able to make aud
 ***
 
 #### `kl loss` Distribution Matching / Acoustic Details: 
-KL makes the generator create similar distribution of latent variables to real data. The KL loss ensures that the generator is not just memorizing real data but it's learning to capture the underlying patterns in the data. 
-If the graph is decreasing that shows that the generator is making audio with similar distribution of latent variables to real data. This loss should not be negative or too close to being negative.
-> You can think of this as how well it can replicate the speakers style. 
+KL loss keeps the model's internal understanding of audio and features well structured, so the rest of the model can do its job properly. This loss should not be negative or too close to being negative.
 ***
 
 #### `d adv` Discriminator Loss: 
