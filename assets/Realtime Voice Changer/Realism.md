@@ -1,7 +1,7 @@
 ---
 icon: person
 order: 1000
-visibility: private
+visibility: hidden
 ---
 ``Last update: July 4, 2025``
 

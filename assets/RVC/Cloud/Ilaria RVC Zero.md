@@ -1,7 +1,7 @@
 ---
 icon: chevron-right
 order: 3000
-visibility: private
+visibility: hidden
 ---
 ``Last update: March 11, 2026`` 
 ***

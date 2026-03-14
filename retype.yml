@@ -1,6 +1,11 @@
 input: ./assets
 output: .retype
 
+# exclude currently broken guides from being processed
+exclude:
+  - "Realtime Voice Changer/Realism.md"
+  - "RVC/Cloud/Ilaria RVC Zero.md"
+
 url: https://docs.aihub.gg/
 
 branding:
