@@ -226,8 +226,10 @@ On discord and games, you select:
 - Input: Virtual Cable
 - Output: Your headphones
 
+
+
 ***
-### Settings
+## Explained Settings
 
 ***
 #### `Per Model Settings:`
