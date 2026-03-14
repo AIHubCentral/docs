@@ -795,6 +795,16 @@ You did not match the sample rate of your virtual audio cable to your microphone
 - Ensure your model name and folder path contain **no spaces or special characters**.
 ===
 
+==- :icon-broadcast: Client Audio Processing Errors
+<img src="../wokada-tg-develop-img/client-audio-processing-not-available.png" alt="Client audio not available Wokada Tg-Develop's Fork" width="430" height="auto">
+
+If you see a warning that client audio is unavailable or that you must select a device when one is already chosen:
+- **Browser Permissions:** Ensure you have granted the browser permission to access your microphone.
+- **Select Device:** Confirm the correct microphone is selected in the browser's permission prompt.
+- **Browser Compatibility:** If the issue persists, try a different browser or a different version of your current browser.
+- **Refresh Device:** Under the "Client Audio Processing" tab, switch your input/output devices to a temporary option (like your default speakers/mic) and then switch them back to your target audio devices to force a re-initialization.
+===
+
 {{ include "troubleshooting/report-missing-issue.md" }}
 
 
