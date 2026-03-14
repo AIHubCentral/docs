@@ -783,6 +783,34 @@ Then you'll be able to see the plugin in the **Plugins** tab.
 
 ***
 :::content-center
+## Troubleshooting
+:::
+==- *There's no option for my sample rate.*
+- **If it's lower than <u>32k**</u>: select ``32k``.       
+
+- **If it's <u>44.1k**</u>: select ``40k``.   
+
+- **If i'ts higher than <u>48k</u>**: select ``48k``.
+
+===
+
+==- *The voice glitches out.*
+- This a phenomenon called artifacting. To fix it, read <u>[here](https://docs.aihub.gg/rvc/resources/dataset-isolation/#artifacts)</u>.
+
+===
+
+==- *Shoul.*
+- This a phenomenon called artifacting. To fix it, read <u>[here](https://docs.aihub.gg/rvc/resources/dataset-isolation/#artifacts)</u>.
+
+===
+
+==- *I couldn't find my answer.*
+- Report your issue <u>[here](https://docs.aihub.gg/contributions)</u>.
+===
+
+
+***
+:::content-center
 ## Communities :icon-people:
 :::
 
@@ -797,35 +825,6 @@ Then you'll be able to see the plugin in the **Plugins** tab.
     </a>
 </div>
 
-
-***
-###### ‎
-###### ‎
-:::content-center
-## Troubleshooting
-:::
-###### ‎ 
-==- *There's no option for my sample rate.*
-###### ‎   
-
-- **If it's lower than <u>32k**</u>: select ``32k``.       
-‎   
-- **If it's <u>44.1k**</u>: select ``40k``.   
-‎   
-- **If i'ts higher than <u>48k</u>**: select ``48k``.
-
-===
-
-==- *The voice glitches out.*
-###### ‎   
-- This a phenomenon called artifacting. To fix it, read <u>[here](https://docs.aihub.gg/rvc/resources/dataset-isolation/#artifacts)</u>.
-
-===
-
-==- *I couldn't find my answer.*
-###### ‎   
-- Report your issue <u>[here](https://docs.aihub.gg/contributions)</u>.
-===
 
 ***
 ###### ‎
