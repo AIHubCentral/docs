@@ -234,28 +234,46 @@ On discord and games, you select:
 
 - `Embedder:` Select between contentvec or spin trained models. Most current models are trained on contentvec. Make sure you read the model's description to find out what embedder it uses. Spin has kinda better breaths, more robust to noise, has some training related differences, but it's less used and newer.
 
+- `Index File:` Toggle and select/remove an index file (which in RVC's context, it contains the Trained Model Accent) to apply a specific trained accent to the model.
+
 - `Output volume:` Controls how loud the output volume is.
 
 - `Pitch:` This is the pitch. Going into negative will make it lower pitch (masculine), going higher will make it higher pitch (feminine). If you have a male voice using a female voice, aim for 10 - 14, this depends on your voice, try around those numbers until you find a sweet spot.
 
 - `Formant:` Alters harmonic frequencies and changes the voice timbre without affecting the pitch (AKA Formant Shift).
 
-- `Index Rate:` This controls the accent of the voice model. In most cases, using Index on Realtime Voice Changer can add realism if you speak the language the model was trained in. If you have a heavy foreign accent, you may use this at a low rate. Beware, this increases CPU usage
+- `Index Rate:` This controls the accent of the voice model. In most cases, using Index on Realtime Voice Changer can add realism if you speak the language the model was trained in. If you have a heavy foreign accent, you may use this at a low rate. Beware, this increases CPU usage.
 
 ***
 #### `Audio Device Settings:`
 
-- `Audio Backend:` Use WASAPI unless you have an ASIO interface and know what you're doing (advanced users)
+- `Audio Backend:` Use WASAPI unless you have an ASIO interface and know what you're doing.
 
-- `Exclusive Mode:` WASAPI exclusive mode. It has much lower latency but the issue is if you don't lock your gpu clocks with something like msi afterburner, it will pop nonstop , because it needs something like a ~45-50ms gpu delay max to function (advanced users)
+- `Exclusive Mode:` WASAPI exclusive mode. It has much lower latency but the issue is if you don't lock your gpu clocks with something like msi afterburner, it will pop nonstop, because it needs something like a ~45-50ms gpu delay max to function.
 
-- `Sample Rate:` Only 48000Hz is available. This is only the outgoing sample rate that matches your VAC line - It is compatible with 32000, 40000, or 48000 models
+- `Input/Output Device:` Select your physical microphone as Input and your Virtual Audio Cable (or desired output) as Output.
 
-- `F0 det:` Pitch extraction algorithm. Both RMVPE (for the best precision and robustness) and FCPE (for less precision & robustness but lower delay) are good options. There's a recently new Swift option which might be more precise than RMVPE but it's not as much tested for RVC yet.
+- `Sample Rate:` Only 48000Hz is available. This is only the outgoing sample rate that matches your VAC line - It is compatible with 32000, 40000, or 48000 models.
 
-- `Pitch Smoothing Factor:` Pitch smoothing will dampen pitch changes. It still follows the exact curve of the f0 predictor allowing it to maintain 100% accuracy, just to a lower magnitude. This allows normal speaking voices to have better stability, since sometimes f0 can be over aggressive and cause pitch wobble on minor pitch fluctuations.
+- `F0 Method:` Pitch extraction algorithm. Both RMVPE (for the best precision and robustness) and FCPE (for less precision & robustness but lower delay) are good options. There's a recently new Swift option which might be more precise than RMVPE.
+
+- `Pitch Smoothing Factor:` Pitch smoothing will dampen pitch changes. It still follows the exact curve of the f0 predictor allowing it to maintain 100% accuracy, just to a lower magnitude. This allows normal speaking voices to have better stability.
+
+- `GPU Delay:` Displays the current processing latency in milliseconds.
 
 - `Input volume:` Controls how loud the input volume is.
+
+***
+#### `Advanced Settings:`
+Can be found in the "Advanced Settings" button.
+
+- **Sine Wave Generator:** Sensitive settings for the audio synthesis. **Must press "Rebuild Generator" after changing.**
+    - `Harmonic Strength:` Controls how intense or prominent the synthesized "voice" effect is. Higher values create a much stronger, more noticeable robotic or synthetic sound, while lower values keep the effect subtle and closer to your natural voice.
+    - `Voice Texture:` Adjusts the amount of "noise" mixed into the synthesized voice. Increasing this adds a rougher, more textured quality to the sound.
+    - `SINE Noise Tolerance:` Determines how much background noise the generator is allowed to ignore before it tries to turn that noise into "voice". Higher settings help prevent the AI from trying to "sing" or "talk" when it picks up static or non-voice sounds.
+    - `SOLA Search Range:` Controls how the software lines up audio frames to keep your voice sounding smooth. A higher range allows for better alignment but can increase resource usage; it’s best left at default unless you are experiencing specific audio stuttering issues.
+    - `Snake Activation (DO NOT USE!):` Experimental, do not use.
+    - `Use BigVGAN (DO NOT USE!):` Experimental, do not use.
 
 ***
 #### `Noise Reduction:`
@@ -264,7 +282,7 @@ On discord and games, you select:
 Noise reduction algorithms are not compatible with singing or whispering. Turn them off if you need to sing or whisper.
 !!!
 
-- `Smart SINE:` It works by not processing noise like a filter, it's best to leave it on. This features replaces the old `Silero VAD` (an on off switch, that muted your output if voice isn't detected, really fast) ij version 1.6.5. Smart SINE is a smart algorithm that will disable the SINE generator's ability to translate noise to speech. Most noise like isolated static and random noises can no longer be mapped to false speech and generate static, NSF generator will not process them. Extremely loud and consistent noises like slamming on a surface may still trigger false positives but most noise should be stopped.
+- `Smart SINE:` It works by not processing noise like a filter, it's best to leave it on. This feature replaces the old Silero VAD. Smart SINE is a smart algorithm that will disable the SINE generator's ability to translate noise to speech. 
 
 - `RNNoise Reduction:` Greatly filters input background noise for very minimum latency. This can mitigate the chances of Vonovox trying to infer on noise.
 
@@ -273,11 +291,11 @@ Noise reduction algorithms are not compatible with singing or whispering. Turn t
 ***
 #### `Voice Settings:`
 
-- `Block Size:` Critical setting. The optimal block size is the lowest you can get without audio being choppy. Listen to your output. This is GPU dependent, the more powerful the gpu, the lower the block size you can use. However the optimizations I made allow much smaller block sizes to work on lower end GPUs. At extremely low block sizes, quality may be reduced. This setting is similar to the `Chunk` in Wokada Deiteris Fork. Vonovox 0.30 Block size = Wokada Deiteris Fork 300ms Chunk. Use the GPU Delay to adjust it.
+- `Block Size:` Critical setting. The optimal block size is the lowest you can get without audio being choppy. Listen to your output. Use the GPU Delay to adjust it.
 
-- `Extra Time:` Gives the model more or less context to work with. Recommended 2.0 for best quality/latency ratio. The added latency of this setting is far less impactful than the block size. This setting is known as `Extra` in Wokada Deiteris Fork, and Vonovox fixed the certain cut off issues experienced in some models over the value 2.7.
+- `Extra Time:` Gives the model more or less context to work with. Recommended 2.0 for best quality/latency ratio.
 
-- `Crossfade Duration:` Controls how smoothly the AI stitches different processed parts "chunks" of your voice back together. 0.08-0.1 or 0.15 (0.08-0.1 for fastest voice, 0.15 for improved quality but increases delay by ~50 ms)
+- `Crossfade Duration:` Controls how smoothly the AI stitches different processed parts "chunks" of your voice back together. 0.08-0.1 for fastest voice, 0.15 for improved quality.
 
 
 ## Dual-PC Setup via SonoBus (Cross-OS)
@@ -452,7 +470,8 @@ Note: If you move sliders while in the middle of speaking, sound will have some 
 
 - Those are the Free Effects.
 
-- `Noise Gate:` A simple noise gate so the application doesn't try to process low background noise that made it past RNNoise
+- `Noise Gate:` A simple noise gate so the application doesn't try to process low background noise that made it past RNNoise.
+    - `Threshold (dB):` The volume level at which the gate opens or closes.
 
 - `EQ Band (1 & 2):` Boosts or cuts specific frequency ranges of your voice to shape its overall tone.
     - `Frequency (Hz):` Selects the center of the frequency range you want to adjust.
