@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.2.0.826822412641">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.2.0.826834583691">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.2.0">
@@ -31,12 +31,12 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../../img/b.png" />
-    <link href="../../../resources/css/retype.css?v=4.2.0.826822412641" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=4.2.0.826834583691" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.2.0.826822412641" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.2.0.826834583691" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=4.2.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.2.0.826822412641" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=4.2.0.826822412641" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.2.0.826834583691" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=4.2.0.826834583691" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -622,13 +622,15 @@ runtime\python.exe -m pip install torch torchaudio torchvision --index-url https
 <ul>
 <li><p><code translate="no" v-pre>Embedder:</code> Select between contentvec or spin trained models. Most current models are trained on contentvec. Make sure you read the model&#x27;s description to find out what embedder it uses. Spin has kinda better breaths, more robust to noise, has some training related differences, but it&#x27;s less used and newer.</p>
 </li>
+<li><p><code translate="no" v-pre>Index File:</code> Toggle and select/remove an index file (which in RVC&#x27;s context, it contains the Trained Model Accent) to apply a specific trained accent to the model.</p>
+</li>
 <li><p><code translate="no" v-pre>Output volume:</code> Controls how loud the output volume is.</p>
 </li>
 <li><p><code translate="no" v-pre>Pitch:</code> This is the pitch. Going into negative will make it lower pitch (masculine), going higher will make it higher pitch (feminine). If you have a male voice using a female voice, aim for 10 - 14, this depends on your voice, try around those numbers until you find a sweet spot.</p>
 </li>
 <li><p><code translate="no" v-pre>Formant:</code> Alters harmonic frequencies and changes the voice timbre without affecting the pitch (AKA Formant Shift).</p>
 </li>
-<li><p><code translate="no" v-pre>Index Rate:</code> This controls the accent of the voice model. In most cases, using Index on Realtime Voice Changer can add realism if you speak the language the model was trained in. If you have a heavy foreign accent, you may use this at a low rate. Beware, this increases CPU usage</p>
+<li><p><code translate="no" v-pre>Index Rate:</code> This controls the accent of the voice model. In most cases, using Index on Realtime Voice Changer can add realism if you speak the language the model was trained in. If you have a heavy foreign accent, you may use this at a low rate. Beware, this increases CPU usage.</p>
 </li>
 </ul>
 <hr>
@@ -639,17 +641,41 @@ runtime\python.exe -m pip install torch torchaudio torchvision --index-url https
     </h4>
 </doc-anchor-target>
 <ul>
-<li><p><code translate="no" v-pre>Audio Backend:</code> Use WASAPI unless you have an ASIO interface and know what you&#x27;re doing (advanced users)</p>
+<li><p><code translate="no" v-pre>Audio Backend:</code> Use WASAPI unless you have an ASIO interface and know what you&#x27;re doing.</p>
 </li>
-<li><p><code translate="no" v-pre>Exclusive Mode:</code> WASAPI exclusive mode. It has much lower latency but the issue is if you don&#x27;t lock your gpu clocks with something like msi afterburner, it will pop nonstop , because it needs something like a ~45-50ms gpu delay max to function (advanced users)</p>
+<li><p><code translate="no" v-pre>Exclusive Mode:</code> WASAPI exclusive mode. It has much lower latency but the issue is if you don&#x27;t lock your gpu clocks with something like msi afterburner, it will pop nonstop, because it needs something like a ~45-50ms gpu delay max to function.</p>
 </li>
-<li><p><code translate="no" v-pre>Sample Rate:</code> Only 48000Hz is available. This is only the outgoing sample rate that matches your VAC line - It is compatible with 32000, 40000, or 48000 models</p>
+<li><p><code translate="no" v-pre>Input/Output Device:</code> Select your physical microphone as Input and your Virtual Audio Cable (or desired output) as Output.</p>
 </li>
-<li><p><code translate="no" v-pre>F0 det:</code> Pitch extraction algorithm. Both RMVPE (for the best precision and robustness) and FCPE (for less precision &amp; robustness but lower delay) are good options. There&#x27;s a recently new Swift option which might be more precise than RMVPE but it&#x27;s not as much tested for RVC yet.</p>
+<li><p><code translate="no" v-pre>Sample Rate:</code> Only 48000Hz is available. This is only the outgoing sample rate that matches your VAC line - It is compatible with 32000, 40000, or 48000 models.</p>
 </li>
-<li><p><code translate="no" v-pre>Pitch Smoothing Factor:</code> Pitch smoothing will dampen pitch changes. It still follows the exact curve of the f0 predictor allowing it to maintain 100% accuracy, just to a lower magnitude. This allows normal speaking voices to have better stability, since sometimes f0 can be over aggressive and cause pitch wobble on minor pitch fluctuations.</p>
+<li><p><code translate="no" v-pre>F0 Method:</code> Pitch extraction algorithm. Both RMVPE (for the best precision and robustness) and FCPE (for less precision &amp; robustness but lower delay) are good options. There&#x27;s a recently new Swift option which might be more precise than RMVPE.</p>
+</li>
+<li><p><code translate="no" v-pre>Pitch Smoothing Factor:</code> Pitch smoothing will dampen pitch changes. It still follows the exact curve of the f0 predictor allowing it to maintain 100% accuracy, just to a lower magnitude. This allows normal speaking voices to have better stability.</p>
+</li>
+<li><p><code translate="no" v-pre>GPU Delay:</code> Displays the current processing latency in milliseconds.</p>
 </li>
 <li><p><code translate="no" v-pre>Input volume:</code> Controls how loud the input volume is.</p>
+</li>
+</ul>
+<hr>
+<doc-anchor-target id="advanced-settings">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#advanced-settings">#</doc-anchor-trigger>
+        <span><code translate="no" v-pre>Advanced Settings:</code></span>
+    </h4>
+</doc-anchor-target>
+<p>Can be found in the &quot;Advanced Settings&quot; button.</p>
+<ul>
+<li><strong>Sine Wave Generator:</strong> Sensitive settings for the audio synthesis. <strong>Must press &quot;Rebuild Generator&quot; after changing.</strong>
+<ul>
+<li><code translate="no" v-pre>Harmonic Strength:</code> Controls how intense or prominent the synthesized &quot;voice&quot; effect is. Higher values create a much stronger, more noticeable robotic or synthetic sound, while lower values keep the effect subtle and closer to your natural voice.</li>
+<li><code translate="no" v-pre>Voice Texture:</code> Adjusts the amount of &quot;noise&quot; mixed into the synthesized voice. Increasing this adds a rougher, more textured quality to the sound.</li>
+<li><code translate="no" v-pre>SINE Noise Tolerance:</code> Determines how much background noise the generator is allowed to ignore before it tries to turn that noise into &quot;voice&quot;. Higher settings help prevent the AI from trying to &quot;sing&quot; or &quot;talk&quot; when it picks up static or non-voice sounds.</li>
+<li><code translate="no" v-pre>SOLA Search Range:</code> Controls how the software lines up audio frames to keep your voice sounding smooth. A higher range allows for better alignment but can increase resource usage; it’s best left at default unless you are experiencing specific audio stuttering issues.</li>
+<li><code translate="no" v-pre>Snake Activation (DO NOT USE!):</code> Experimental, do not use.</li>
+<li><code translate="no" v-pre>Use BigVGAN (DO NOT USE!):</code> Experimental, do not use.</li>
+</ul>
 </li>
 </ul>
 <hr>
@@ -677,7 +703,7 @@ runtime\python.exe -m pip install torch torchaudio torchvision --index-url https
     </div>
 </div>
 <ul>
-<li><p><code translate="no" v-pre>Smart SINE:</code> It works by not processing noise like a filter, it&#x27;s best to leave it on. This features replaces the old <code translate="no" v-pre>Silero VAD</code> (an on off switch, that muted your output if voice isn&#x27;t detected, really fast) ij version 1.6.5. Smart SINE is a smart algorithm that will disable the SINE generator&#x27;s ability to translate noise to speech. Most noise like isolated static and random noises can no longer be mapped to false speech and generate static, NSF generator will not process them. Extremely loud and consistent noises like slamming on a surface may still trigger false positives but most noise should be stopped.</p>
+<li><p><code translate="no" v-pre>Smart SINE:</code> It works by not processing noise like a filter, it&#x27;s best to leave it on. This feature replaces the old Silero VAD. Smart SINE is a smart algorithm that will disable the SINE generator&#x27;s ability to translate noise to speech.</p>
 </li>
 <li><p><code translate="no" v-pre>RNNoise Reduction:</code> Greatly filters input background noise for very minimum latency. This can mitigate the chances of Vonovox trying to infer on noise.</p>
 </li>
@@ -692,11 +718,11 @@ runtime\python.exe -m pip install torch torchaudio torchvision --index-url https
     </h4>
 </doc-anchor-target>
 <ul>
-<li><p><code translate="no" v-pre>Block Size:</code> Critical setting. The optimal block size is the lowest you can get without audio being choppy. Listen to your output. This is GPU dependent, the more powerful the gpu, the lower the block size you can use. However the optimizations I made allow much smaller block sizes to work on lower end GPUs. At extremely low block sizes, quality may be reduced. This setting is similar to the <code translate="no" v-pre>Chunk</code> in Wokada Deiteris Fork. Vonovox 0.30 Block size = Wokada Deiteris Fork 300ms Chunk. Use the GPU Delay to adjust it.</p>
+<li><p><code translate="no" v-pre>Block Size:</code> Critical setting. The optimal block size is the lowest you can get without audio being choppy. Listen to your output. Use the GPU Delay to adjust it.</p>
 </li>
-<li><p><code translate="no" v-pre>Extra Time:</code> Gives the model more or less context to work with. Recommended 2.0 for best quality/latency ratio. The added latency of this setting is far less impactful than the block size. This setting is known as <code translate="no" v-pre>Extra</code> in Wokada Deiteris Fork, and Vonovox fixed the certain cut off issues experienced in some models over the value 2.7.</p>
+<li><p><code translate="no" v-pre>Extra Time:</code> Gives the model more or less context to work with. Recommended 2.0 for best quality/latency ratio.</p>
 </li>
-<li><p><code translate="no" v-pre>Crossfade Duration:</code> Controls how smoothly the AI stitches different processed parts &quot;chunks&quot; of your voice back together. 0.08-0.1 or 0.15 (0.08-0.1 for fastest voice, 0.15 for improved quality but increases delay by ~50 ms)</p>
+<li><p><code translate="no" v-pre>Crossfade Duration:</code> Controls how smoothly the AI stitches different processed parts &quot;chunks&quot; of your voice back together. 0.08-0.1 for fastest voice, 0.15 for improved quality.</p>
 </li>
 </ul>
 <doc-anchor-target id="dual-pc-setup-via-sonobus-cross-os">
@@ -1048,7 +1074,10 @@ or
 <ul>
 <li><p>Those are the Free Effects.</p>
 </li>
-<li><p><code translate="no" v-pre>Noise Gate:</code> A simple noise gate so the application doesn&#x27;t try to process low background noise that made it past RNNoise</p>
+<li><p><code translate="no" v-pre>Noise Gate:</code> A simple noise gate so the application doesn&#x27;t try to process low background noise that made it past RNNoise.</p>
+<ul>
+<li><code translate="no" v-pre>Threshold (dB):</code> The volume level at which the gate opens or closes.</li>
+</ul>
 </li>
 <li><p><code translate="no" v-pre>EQ Band (1 &amp; 2):</code> Boosts or cuts specific frequency ranges of your voice to shape its overall tone.</p>
 <ul>
