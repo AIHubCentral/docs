@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.2.0.826816102041">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.2.0.826821997757">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.2.0">
@@ -15,7 +15,7 @@
     <!-- Primary Meta Tags -->
     <title>Mainline</title>
     <meta name="title" content="Mainline">
-    <meta name="description" content="Last update: August 3, 2025">
+    <meta name="description" content="Last update: March 14, 2026">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://docs.aihub.gg/rvc/local/mainline/">
@@ -24,18 +24,18 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.aihub.gg/rvc/local/mainline/">
     <meta property="og:title" content="Mainline">
-    <meta property="og:description" content="Last update: August 3, 2025">
+    <meta property="og:description" content="Last update: March 14, 2026">
     <meta property="og:site_name" content="">
     <meta property="og:locale" content="en_US">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../../img/b.png" />
-    <link href="../../../resources/css/retype.css?v=4.2.0.826816102041" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=4.2.0.826821997757" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.2.0.826816102041" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.2.0.826821997757" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=4.2.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.2.0.826816102041" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.2.0.826821997757" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -202,7 +202,7 @@
         <span>Mainline</span>
     </h1>
 </doc-anchor-target>
-<p><code translate="no" v-pre>Last update: August 3, 2025</code></p>
+<p><code translate="no" v-pre>Last update: March 14, 2026</code></p>
 <hr>
 <doc-anchor-target id="section">
     <h6>
@@ -892,12 +892,6 @@ To test the model, do a normal <u><a href="https://docs.aihub.gg/essentials/how-
 </li>
 </ul>
 <hr>
-<doc-anchor-target id="section-34">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-34">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
 <div class="content-center"><doc-anchor-target id="troubleshooting">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#troubleshooting">#</doc-anchor-trigger>
@@ -905,68 +899,46 @@ To test the model, do a normal <u><a href="https://docs.aihub.gg/essentials/how-
     </h2>
 </doc-anchor-target>
 </div>
-<doc-anchor-target id="section-35">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-35">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
+<doc-panel id="important-hags-on-windows-1011" collapsed>
+    <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M13 17.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm-.25-8.25a.75.75 0 0 0-1.5 0v4.5a.75.75 0 0 0 1.5 0v-4.5Z"/><path d="M9.836 3.244c.963-1.665 3.365-1.665 4.328 0l8.967 15.504c.963 1.667-.24 3.752-2.165 3.752H3.034c-1.926 0-3.128-2.085-2.165-3.752Zm3.03.751a1.002 1.002 0 0 0-1.732 0L2.168 19.499A1.002 1.002 0 0 0 3.034 21h17.932a1.002 1.002 0 0 0 .866-1.5L12.866 3.994Z"/></g></g></svg> Important: HAGS on Windows 10/11</template>
+<p>If you are experiencing lag, stuttering, or slow training speeds, <strong>disable HAGS</strong> (Hardware-Accelerated GPU Scheduling) on Windows 10/11. It is known to interfere with VRAM management for Local AI apps.
+<a href="https://docs.aihub.gg/extra/glossary/#hags-hardware-accelerated-gpu-scheduling">Read the HAGS Glossary Entry</a> for the full explanation and how to disable it.</p>
+</doc-panel>
 <doc-panel id="theres-no-option-for-my-sample-rate" collapsed>
-    <template #title><em>There&#x27;s no option for my sample rate.</em></template>
-<doc-anchor-target id="section-36">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-36">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
+    <template #title>There&#x27;s no option for my sample rate.</template>
 <ul>
-<li><p><strong>If it&#x27;s lower than <u>32k</strong></u>: select <code translate="no" v-pre>32k</code>.<br />
-‎</p>
+<li><p><strong>If it&#x27;s lower than <u>32k</strong></u>: select <code translate="no" v-pre>32k</code>.</p>
 </li>
-<li><p><strong>If it&#x27;s <u> 32k</strong></u>: on the right in <u>Version</u>, press <code translate="no" v-pre>v1</code> &amp; press <code translate="no" v-pre>v2</code> again. Ensure you leave it as <code translate="no" v-pre>v2</code>. You should be able to see a <code translate="no" v-pre>32k</code> option now.<br />
-‎</p>
+<li><p><strong>If it&#x27;s <u> 32k</strong></u>: on the right in <u>Version</u>, press <code translate="no" v-pre>v1</code> &amp; press <code translate="no" v-pre>v2</code> again. Ensure you leave it as <code translate="no" v-pre>v2</code>. You should be able to see a <code translate="no" v-pre>32k</code> option now.</p>
 </li>
-<li><p><strong>If it&#x27;s <u>44.1k</strong></u>: select <code translate="no" v-pre>40k</code>.<br />
-‎</p>
+<li><p><strong>If it&#x27;s <u>44.1k</strong></u>: select <code translate="no" v-pre>40k</code>.</p>
 </li>
 <li><p><strong>If i&#x27;ts higher than <u>48k</u></strong>: select <code translate="no" v-pre>48k</code>.</p>
 </li>
 </ul>
 </doc-panel>
 <doc-panel id="the-voice-glitches-out" collapsed>
-    <template #title><em>The voice glitches out.</em></template>
-<doc-anchor-target id="section-37">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-37">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
+    <template #title>The voice glitches out.</template>
 <ul>
 <li>This a phenomenon called artifacting. To fix it, read <u><a href="https://docs.aihub.gg/rvc/resources/dataset-isolation/#artifacts">here</a></u>.</li>
 </ul>
 </doc-panel>
 <doc-panel id="i-dont-see-the-stop-training-button" collapsed>
-    <template #title><em>I don&#x27;t see the Stop Training button.</em></template>
+    <template #title>I don&#x27;t see the Stop Training button.</template>
 <ul>
 <li>This is a common bug. Close the console to stop RVC entirely.</li>
 </ul>
 </doc-panel>
 <doc-panel id="i-couldnt-find-my-answer" collapsed>
-    <template #title><em>I couldn&#x27;t find my answer.</em></template>
-<doc-anchor-target id="section-38">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-38">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
+    <template #title><span class="docs-emoji">&#x2753;</span> I couldn&#x27;t find my answer.</template>
 <ul>
 <li>Report your issue <u><a href="https://docs.aihub.gg/contributions">here</a></u>.</li>
 </ul>
 </doc-panel>
 <hr>
-<doc-anchor-target id="section-39">
+<doc-anchor-target id="section-34">
     <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-39">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#section-34">#</doc-anchor-trigger>
         <span>‎</span>
     </h6>
 </doc-anchor-target>

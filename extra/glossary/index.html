@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.2.0.826816102041">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.2.0.826821997757">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.2.0">
@@ -15,7 +15,7 @@
     <!-- Primary Meta Tags -->
     <title>Glossary</title>
     <meta name="title" content="Glossary">
-    <meta name="description" content="Last update: March 11, 2026">
+    <meta name="description" content="Last update: March 14, 2026">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://docs.aihub.gg/extra/glossary/">
@@ -24,18 +24,18 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.aihub.gg/extra/glossary/">
     <meta property="og:title" content="Glossary">
-    <meta property="og:description" content="Last update: March 11, 2026">
+    <meta property="og:description" content="Last update: March 14, 2026">
     <meta property="og:site_name" content="">
     <meta property="og:locale" content="en_US">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../img/b.png" />
-    <link href="../../resources/css/retype.css?v=4.2.0.826816102041" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.2.0.826821997757" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.2.0.826816102041" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.2.0.826821997757" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.2.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.2.0.826816102041" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.2.0.826821997757" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -202,7 +202,7 @@
         <span>Glossary</span>
     </h1>
 </doc-anchor-target>
-<p><code translate="no" v-pre>Last update: March 11, 2026</code></p>
+<p><code translate="no" v-pre>Last update: March 14, 2026</code></p>
 <hr>
 <div class="content-center"><doc-anchor-target id="list-of-smaller-keywords">
     <h4>
@@ -309,6 +309,50 @@
 <li>In AI training, is used for quick parallel independent computations, which increases the speed substantially.</li>
 <li>Basically the speed at which RVC/UVR will work will depend on how good your GPU is.</li>
 </ul>
+<hr>
+<doc-anchor-target id="hags-hardware-accelerated-gpu-scheduling">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#hags-hardware-accelerated-gpu-scheduling">#</doc-anchor-trigger>
+        <span><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M5.22 8.22a.749.749 0 0 0 0 1.06l6.25 6.25a.749.749 0 0 0 1.06 0l6.25-6.25a.749.749 0 1 0-1.06-1.06L12 13.939 6.28 8.22a.749.749 0 0 0-1.06 0Z"/></g></g></svg>HAGS (Hardware-Accelerated GPU Scheduling)</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li>A <strong>Windows 10/11 feature</strong> designed to reduce latency in video games by offloading scheduling tasks from the CPU directly to the GPU.</li>
+<li><strong>For LOCAL AI workloads, HAGS should usually be disabled.</strong></li>
+<li>Because <strong>local</strong> deep learning apps (like RVC, W-Okada, and Vonovox) require precise control over VRAM, HAGS heavily interferes with them. Here&#x27;s some cases:
+<ul>
+<li><strong>In Local Training:</strong> It causes VRAM to aggressively spill over into slower system RAM, drastically slowing down training speeds.</li>
+<li><strong>In Local Realtime Voice Changers:</strong> It prioritizes foreground games, starving the background AI voice changer of resources and causing robotic, lagging audio or massive game stutters.</li>
+</ul>
+</li>
+<li><p><em>Community Proof:</em> Many users report significant performance boosts and bug fixes after disabling it:</p>
+<img src="../glossary-img/disabled-hags-proof-1.png" alt="HAGS Discord Proof 1" width="450">
+<img src="../glossary-img/disabled-hags-proof-2.png" alt="HAGS Discord Proof 2" width="450">
+</li>
+</ul>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>How to Disable HAGS:</h5>
+<ol>
+<li>Open Windows <strong>Settings</strong> &gt; <strong>System</strong> &gt; <strong>Display</strong> &gt; <strong>Graphics</strong>.</li>
+<li>Click <strong>Advanced Graphic Settings</strong>.</li>
+<li>Toggle <strong>Hardware-accelerated GPU scheduling</strong> to <strong>Off</strong>.</li>
+<li>Restart your PC.</li>
+</ol>
+        </div>
+    </div>
+</div>
 <hr>
 <doc-anchor-target id="local-running">
     <h3>

@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.2.0.826816102041">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.2.0.826821997757">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.2.0">
@@ -15,7 +15,7 @@
     <!-- Primary Meta Tags -->
     <title>Applio Realtime</title>
     <meta name="title" content="Applio Realtime">
-    <meta name="description" content="Last update: March 8, 2026">
+    <meta name="description" content="Last update: March 14, 2026">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://docs.aihub.gg/realtime-voice-changer/local/applio-realtime/">
@@ -24,19 +24,19 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.aihub.gg/realtime-voice-changer/local/applio-realtime/">
     <meta property="og:title" content="Applio Realtime">
-    <meta property="og:description" content="Last update: March 8, 2026">
+    <meta property="og:description" content="Last update: March 14, 2026">
     <meta property="og:site_name" content="">
     <meta property="og:locale" content="en_US">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../../img/b.png" />
-    <link href="../../../resources/css/retype.css?v=4.2.0.826816102041" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=4.2.0.826821997757" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.2.0.826816102041" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.2.0.826821997757" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=4.2.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.2.0.826816102041" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=4.2.0.826816102041" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.2.0.826821997757" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=4.2.0.826821997757" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -203,7 +203,7 @@
         <span>Applio Realtime</span>
     </h1>
 </doc-anchor-target>
-<p><code translate="no" v-pre>Last update: March 8, 2026</code></p>
+<p><code translate="no" v-pre>Last update: March 14, 2026</code></p>
 <hr>
 <div class="content-center"><doc-anchor-target id="introduction">
     <h2>
@@ -495,6 +495,32 @@ or
 <li><strong>Extra Conversion Size (s):</strong> Provides context to the model to improve quality.</li>
 <li><strong>Silence Threshold (dB):</strong> Fine-tune the VAD sensitivity.</li>
 </ul>
+<hr>
+<div class="content-center"><doc-anchor-target id="troubleshooting">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#troubleshooting">#</doc-anchor-trigger>
+        <span>Troubleshooting</span>
+    </h2>
+</doc-anchor-target>
+</div>
+<doc-panel id="important-hags-on-windows-1011" collapsed>
+    <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M13 17.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm-.25-8.25a.75.75 0 0 0-1.5 0v4.5a.75.75 0 0 0 1.5 0v-4.5Z"/><path d="M9.836 3.244c.963-1.665 3.365-1.665 4.328 0l8.967 15.504c.963 1.667-.24 3.752-2.165 3.752H3.034c-1.926 0-3.128-2.085-2.165-3.752Zm3.03.751a1.002 1.002 0 0 0-1.732 0L2.168 19.499A1.002 1.002 0 0 0 3.034 21h17.932a1.002 1.002 0 0 0 .866-1.5L12.866 3.994Z"/></g></g></svg> Important: HAGS on Windows 10/11</template>
+<p>If you are experiencing lag, stuttering, or slow training speeds, <strong>disable HAGS</strong> (Hardware-Accelerated GPU Scheduling) on Windows 10/11. It is known to interfere with VRAM management for Local AI apps.
+<a href="https://docs.aihub.gg/extra/glossary/#hags-hardware-accelerated-gpu-scheduling">Read the HAGS Glossary Entry</a> for the full explanation and how to disable it.</p>
+</doc-panel>
+<doc-panel id="audio-glitchingrobotic-voice" collapsed>
+    <template #title><em>Audio glitching/robotic voice</em></template>
+<ul>
+<li>This usually happens when the GPU is overloaded. Try increasing your <strong>Chunk Size</strong> in the settings.</li>
+<li>Ensure your sample rates are matched in Windows Sound Settings (48kHz).</li>
+</ul>
+</doc-panel>
+<doc-panel id="i-couldnt-find-my-answer" collapsed>
+    <template #title><span class="docs-emoji">&#x2753;</span> I couldn&#x27;t find my answer.</template>
+<ul>
+<li>Report your issue <u><a href="https://docs.aihub.gg/contributions">here</a></u>.</li>
+</ul>
+</doc-panel>
 <hr>
 <doc-anchor-target id="faq">
     <h2>
