@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.2.0.826822018890">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.2.0.826822412641">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.2.0">
@@ -31,12 +31,12 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../../img/b.png" />
-    <link href="../../../resources/css/retype.css?v=4.2.0.826822018890" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=4.2.0.826822412641" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.2.0.826822018890" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.2.0.826822412641" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=4.2.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.2.0.826822018890" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=4.2.0.826822018890" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.2.0.826822412641" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=4.2.0.826822412641" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -1728,6 +1728,17 @@ tar xzf voice-changer-linux-amd64-cpu.tar.gz</code></pre>
 <li>Ensure you are on the latest OS version and GPU drivers.</li>
 <li>Ensure you have selected an RVC model in the UI <em>before</em> clicking &quot;Start Server&quot;.</li>
 <li>Ensure your model name and folder path contain <strong>no spaces or special characters</strong>.</li>
+</ul>
+</doc-panel>
+<doc-panel id="client-audio-processing-errors" collapsed>
+    <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M20.485 2.515a.75.75 0 0 0-1.06 1.06A10.465 10.465 0 0 1 22.5 11c0 2.9-1.174 5.523-3.075 7.424a.75.75 0 0 0 1.06 1.061A11.965 11.965 0 0 0 24 11c0-3.314-1.344-6.315-3.515-8.485Zm-15.91 1.06a.75.75 0 0 0-1.06-1.06A11.965 11.965 0 0 0 0 11c0 3.313 1.344 6.314 3.515 8.485a.75.75 0 0 0 1.06-1.06A10.465 10.465 0 0 1 1.5 11c0-2.9 1.174-5.524 3.075-7.425ZM8.11 7.11a.75.75 0 0 0-1.06-1.06A6.98 6.98 0 0 0 5 11a6.98 6.98 0 0 0 2.05 4.95.75.75 0 0 0 1.06-1.061 5.48 5.48 0 0 1-1.61-3.89 5.48 5.48 0 0 1 1.61-3.888Zm8.84-1.06a.75.75 0 1 0-1.06 1.06A5.48 5.48 0 0 1 17.5 11a5.48 5.48 0 0 1-1.61 3.889.75.75 0 1 0 1.06 1.06A6.98 6.98 0 0 0 19 11a6.98 6.98 0 0 0-2.05-4.949ZM14 11a2 2 0 0 1-1.25 1.855v8.395a.75.75 0 0 1-1.5 0v-8.395A2 2 0 1 1 14 11Z"/></g></g></svg> Client Audio Processing Errors</template>
+<img src="../wokada-tg-develop-img/client-audio-processing-not-available.png" alt="Client audio not available Wokada Tg-Develop's Fork" width="430" height="auto">
+<p>If you see a warning that client audio is unavailable or that you must select a device when one is already chosen:</p>
+<ul>
+<li><strong>Browser Permissions:</strong> Ensure you have granted the browser permission to access your microphone.</li>
+<li><strong>Select Device:</strong> Confirm the correct microphone is selected in the browser&#x27;s permission prompt.</li>
+<li><strong>Browser Compatibility:</strong> If the issue persists, try a different browser or a different version of your current browser.</li>
+<li><strong>Refresh Device:</strong> Under the &quot;Client Audio Processing&quot; tab, switch your input/output devices to a temporary option (like your default speakers/mic) and then switch them back to your target audio devices to force a re-initialization.</li>
 </ul>
 </doc-panel>
 <doc-panel id="i-couldnt-find-my-answer" collapsed>
