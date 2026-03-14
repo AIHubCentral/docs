@@ -2,7 +2,7 @@
 icon: chevron-right
 order: 1000
 ---
-``Last update: September 6, 2025``
+``Last update: March 14,2026``
 ***
 :::content-center
 ## Introduction
@@ -842,60 +842,50 @@ You did not match the sample rate of your virtual audio cable to your microphone
 
 
 ***
-## Help
-***
+:::content-center
+## Troubleshooting
+:::
 
-### How to fix "Failed to download or verify"
+{{ include "troubleshooting/hags-warning.md" }}
 
-After you start the program for the first time and it finished downloading files, but you have slow/unstable internet connection it might say Failed to download or verify: ... followed by "Press Enter to continue" at the end, then the pretrain download failed. To fix it, you can either:
+==- :icon-download: Failed to download or verify
+- After you start the program for the first time and it finished downloading files, but you have slow/unstable internet connection it might say Failed to download or verify: ... followed by "Press Enter to continue" at the end, then the pretrain download failed. You have 2 methods to fix it.
+- **Method 1:** Retry with a better connection later.
+- **Method 2:** 
+  1. Go to the "pretrain" folder in the `MMVCServerSIO` folder.
+  2. Delete everything inside it.
+  3. Download the [Zipped Version of the Pretrained folder](https://github.com/Nick088Official/Wokada-Deiteris-Fork-Pretrain/releases/download/b2332/pretrain.zip)
+  4. Extract the contents from pretrain.zip (ensure there is no nested "pretrain" folder).
+  5. Run the MMVCServerSIO.exe again.
+===
 
-!!! Method 1
-Retry with a better connection later.
-!!!
+==- :icon-zap: Crackle Fix
+1. Open Task Manager > Details.
+2. Right-click `audiodg.exe` > Set Priority > **High**.
+3. Right-click `audiodg.exe` > Set Affinity > Uncheck everything except **CPU 2** (only keep CPU 2 active).
+4. *Automation Tip:* Use [ProcessLasso](https://bitsum.com/) to automate this, or create a `.bat` file with: 
+  `powershell "ForEach($PROCESS in GET-PROCESS audiodg) { $PROCESS.ProcessorAffinity=4; $PROCESS.PriorityClass='High' }"`
+===
 
-!!! Method 2
-1. Go to the "pretrain" folder in the MMVCServerSIO folder.
-2. Delete everything inside it if there is anything.
-3. Download the [Zipped Version of the Pretrained folder](https://github.com/Nick088Official/Wokada-Deiteris-Fork-Pretrain/releases/download/b2332/pretrain.zip)
-4. Extract the pretrain.zip, be sure the pretrain folder contains only the files, not a pretrain folder inside another pretrain folder with the files.
-5. Then run MMVCServerSIO.exe again, this time it should work.
-!!!
+==- :studio_microphone: Discord Crackle Fix
+- Ensure you have performed the general Crackle Fixes above first.
+- If it only glitches in Discord:
+  - Turn off **Echo Cancellation** in Discord.
+  - Turn off **Noise Suppression** in Discord.
+===
 
-### Crackle Fix
-Open Task Manager > Details
+==- :icon-rocket: GPU Idling / Performance
+1. In the W-Okada folder, run `force_gpu_clocks.bat` to keep GPU speeds steady.
+2. Run `reset_gpu_clocks.bat` when you are finished using the app to return to normal GPU behavior.
+===
 
-Right click `audiodg.exe` and set priority to `High`
+==- :icon-alert: Pipeline not initialized
+- Ensure you are on the latest OS version and GPU drivers.
+- Ensure you have selected an RVC model in the UI *before* clicking "Start Server".
+- Ensure your model name and folder path contain **no spaces or special characters**.
+===
 
-Right click `audiodg.exe` again > set affinity > uncheck everything except CPU 2 (only ✅ CPU 2, turn off the rest)
-
-With a program called ProcessLasso you can automate this to always be active, since Windows resets these sometimes.
-Or you can open up CMD/Powershell (or make a bat file) and type in:
-
-`powershell "ForEach($PROCESS in GET-PROCESS audiodg) { $PROCESS.ProcessorAffinity=4; $PROCESS.PriorityClass='High' }"`
-
-***
-### Discord Crackle Fix
-Make sure to do the Crackle Fixes in this step before doing this to see if it fixes your issue
-
-If the voice sounds fine in the app AND it sounds fine in games, but ONLY sounds weird on discord, then:
-
-- Turn off Echo Cancellation
-- Turn off Noise Suppression (sometimes causes issues, maybe not. Check for yourself)
-
-***
-### GPU Idling
-Sometimes your GPU will start idling after the program is in the background for a while and affect performance. 
-
-
-- In the folder where w-okada is located there should be a .bat file called `force_gpu_clocks.bat`, run that and it should fix your gpu idling.
-- Once you no longer want your gpu clock speed to be forced anymore you can run `reset_gpu_clocks.bat`.
-
-***
-### "Pipeline not initialized"
-If the Web UI Interface is up and running, but when you try to Start Server you get "Pipeline not initialized" in the CMD, be sure:
-- To be on the latest OS Version and GPU Drivers.
-- To have selected the RVC Model before clicking start server.
-- To not have any special characters in the RVC Model Name nor the Program Path.
+{{ include "troubleshooting/report-missing-issue.md" }}
 
 
 ***

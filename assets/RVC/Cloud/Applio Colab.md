@@ -525,14 +525,10 @@ If the frequencies don't reach the top of the spectrogram, see at which number p
    <img src="../appliocolab-img/7-plugindled.png" alt="image" width="420" height="auto">‎ 
 
 ***
-###### ‎
-###### ‎
 :::content-center
 ## Troubleshooting
 :::
-###### ‎ 
-==- *There's no public URL.*
-###### ‎   
+==- There's no public URL.
 
 - In case the **public URL** doesn't show up, there might be a problem with <u>[Gradio</u>](https://docs.aihub.gg/extra/glossary/#gradio)</u>, you can check if it's down <u>[here</u>](https://status.gradio.app/)</u>.
 
@@ -548,32 +544,28 @@ If the frequencies don't reach the top of the spectrogram, see at which number p
 
 ===
 
-==- *There's no option for my sample rate.*
-###### ‎   
+==- There's no option for my sample rate.
 
 - **If it's lower than <u>32k**</u>: select ``32k``.       
-‎   
+
 - **If it's <u>44.1k**</u>: select ``40k``.   
-‎   
+
 - **If i'ts higher than <u>48k</u>**: select ``48k``.
 
 ===
 
-==- *The voice glitches out.*
-###### ‎   
+==- The voice glitches out.
 - This a phenomenon called artifacting. To fix it, read <u>[here](https://docs.aihub.gg/rvc/resources/dataset-isolation/#artifacts)</u>.
 
 ===
 
-==- *Cannot connect to GPU backend.*
-###### ‎   
+==- Cannot connect to GPU backend.
 - You have exhausted the <u>[GPU runtime](https://docs.aihub.gg/rvc/extra/glossary/#google-colab)</u> of Colab.
 ===
 
-==- *I couldn't find my answer.*
-###### ‎   
-- Report your issue <u>[here](https://docs.aihub.gg/contributions)</u>.
-===
+{{ include "troubleshooting/report-missing-issue.md" }}
+
+
 ***
 ###### ‎
 :::content-center

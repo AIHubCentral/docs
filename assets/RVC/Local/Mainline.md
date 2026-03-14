@@ -3,7 +3,7 @@ icon: chevron-right
 order: 2000
 ---
 
-``Last update: August 3, 2025``
+``Last update: March 14, 2026``
 
 ***
 ###### ‎
@@ -329,38 +329,35 @@ If the training finished but the model still needed training, you don't have to 
 - Begin training again & remember to monitor TB & console like before.
 
 ***
-###### ‎ 
 :::content-center
 ## Troubleshooting :icon-tools:
 :::
-###### ‎ 
-==- *There's no option for my sample rate.*
-###### ‎   
+
+{{ include "troubleshooting/hags-warning.md" }}
+
+==- There's no option for my sample rate.
 
 - **If it's lower than <u>32k**</u>: select ``32k``.     
-‎   
+
 - **If it's <u> 32k**</u>: on the right in <u>Version</u>, press `v1` & press `v2` again. Ensure you leave it as `v2`. You should be able to see a `32k` option now.        
-‎   
+
 - **If it's <u>44.1k**</u>: select ``40k``.   
-‎   
+
 - **If i'ts higher than <u>48k</u>**: select ``48k``.
 
 ===
 
-==- *The voice glitches out.*
-###### ‎   
+==- The voice glitches out.
 - This a phenomenon called artifacting. To fix it, read <u>[here](https://docs.aihub.gg/rvc/resources/dataset-isolation/#artifacts)</u>.
 
 ===
 
-==- *I don't see the Stop Training button.*
+==- I don't see the Stop Training button.
 - This is a common bug. Close the console to stop RVC entirely.
 ===
 
-==- *I couldn't find my answer.*
-###### ‎   
-- Report your issue <u>[here](https://docs.aihub.gg/contributions)</u>.
-===
+{{ include "troubleshooting/report-missing-issue.md" }}
+
 
 ***
 ###### ‎

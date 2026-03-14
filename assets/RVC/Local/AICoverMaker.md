@@ -3,7 +3,7 @@ icon: chevron-right
 order: 1000
 ---
 
-``Last update: August 3, 2025``
+``Last update: March 14, 2026``
 
 ***
 :::content-center
@@ -190,6 +190,20 @@ A. Open AICoverMaker's folder & execute the script `update.sh` for Linux, or `up
 <br>
 
 B. Download the latest precompiled the next time a new version comes out and replace the files.
+
+
+***
+:::content-center
+## Troubleshooting :icon-bug:
+:::
+
+{{ include "troubleshooting/hags-warning.md" }}
+
+==- The voice glitches out.
+- This is a phenomenon called artifacting. To fix it, read <u>[here](https://docs.aihub.gg/rvc/resources/dataset-isolation/#artifacts)</u>.
+===
+
+{{ include "troubleshooting/report-missing-issue.md" }}
 
 
 ###### ‎

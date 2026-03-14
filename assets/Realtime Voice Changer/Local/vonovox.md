@@ -2,7 +2,7 @@
 icon: chevron-right
 order: 3000
 ---
-``Last update: March 11, 2026``
+``Last update: March 14, 2026``
 ***
 :::content-center
 ## Introduction
@@ -543,13 +543,25 @@ Supports wav, mp3 and flac.
 
 
 ***
+:::content-center
+## Troubleshooting
+:::
 
+{{ include "troubleshooting/hags-warning.md" }}
 
+==- :icon-info: License Caching Issues
+- License caching is currently unstable. If you have trouble activating your license, check the #announcements channel in the [Vonovox Official Discord](https://discord.gg/c9mbMGxEbR).
+===
 
-***
-## Known Issues / Bugs
-***
-License caching is currently not working, meaning *some* licenses might not work.
+==- :headphones: How can I hear myself (Monitor) on Windows 10/11?
+- Vonovox currently lacks an in-app monitor feature. Use the Windows workaround:
+  1. Press `Win + R`, type `mmsys.cpl` and hit Enter.
+  2. Go to the **Recording** tab.
+  3. Right-click your Virtual Cable (Line 1) > Properties.
+  4. Go to the **Listen** tab and check **"Listen to this device"**.
+===
+
+{{ include "troubleshooting/report-missing-issue.md" }}
 
 
 ***
@@ -560,16 +572,6 @@ License caching is currently not working, meaning *some* licenses might not work
 We had a conversation about this in https://discord.com/channels/1159260121998827560/1159290161683767298/1352325982689951765 & https://discord.com/channels/1159260121998827560/1159290161683767298/1356265862704926907,
 RVC works by downsampling your audio voice to 16khz because f0 estimators only works at that sample rate, after that the model outputs the results using it's original sample rate (without any upscaling). So there won't be the need of having a super extremely expensive, a decent one should do the job.
 
-***
-### How can I hear myself?
-
-Currently, Vonovox is missing the `Monitor` feature in Wokada Deiteris Fork, till it get's added, you have to use some workarounds:
-
-!!! For Windows Only
-Press WINDOWS+R, type "mmsys.cpl" and press Enter. Go to the **Recording** devices, find Line 1 and check it's Properties, go to the Listen tab and check "Listen to this device".
-
-<img src="../vonovox-img/monitor-windows-workaround.png" alt="Windows Only Monitor Workaround" width="400" height="auto">
-!!!
 
 ***
 ### What are the benefits of premium? Is it forever or monthly?

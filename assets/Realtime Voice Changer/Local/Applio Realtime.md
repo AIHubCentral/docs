@@ -3,7 +3,7 @@ icon: chevron-right
 order: 2000
 ---
 
-``Last update: March 8, 2026``
+``Last update: March 14, 2026``
 
 ***
 
@@ -168,6 +168,21 @@ The Bitcrush Post Process Option seems to give users an error when enabled on Ap
 - **Crossfade Overlap Size (s):** Prevents "clicks" in audio transitions.
 - **Extra Conversion Size (s):** Provides context to the model to improve quality.
 - **Silence Threshold (dB):** Fine-tune the VAD sensitivity.
+
+
+***
+:::content-center
+## Troubleshooting
+:::
+
+{{ include "troubleshooting/hags-warning.md" }}
+
+==- *Audio glitching/robotic voice*
+- This usually happens when the GPU is overloaded. Try increasing your **Chunk Size** in the settings.
+- Ensure your sample rates are matched in Windows Sound Settings (48kHz).
+===
+
+{{ include "troubleshooting/report-missing-issue.md" }}
 
 
 ***

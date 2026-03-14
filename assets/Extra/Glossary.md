@@ -3,7 +3,7 @@ icon: chevron-right
 order: 1000
 ---
 
-``Last update: March 11, 2026``
+``Last update: March 14, 2026``
 ***
 :::content-center
 
@@ -65,6 +65,26 @@ order: 1000
 - It stands for Graphics Processing Unit. It's designed to rapidly manipulate and alter memory to accelerate creation of images.
 - In AI training, is used for quick parallel independent computations, which increases the speed substantially.     
 - Basically the speed at which RVC/UVR will work will depend on how good your GPU is.       
+
+
+***
+### :icon-chevron-down:HAGS (Hardware-Accelerated GPU Scheduling)
+- A **Windows 10/11 feature** designed to reduce latency in video games by offloading scheduling tasks from the CPU directly to the GPU. 
+- **For LOCAL AI workloads, HAGS should usually be disabled.** 
+- Because **local** deep learning apps (like RVC, W-Okada, and Vonovox) require precise control over VRAM, HAGS heavily interferes with them. Here's some cases:
+    - **In Local Training:** It causes VRAM to aggressively spill over into slower system RAM, drastically slowing down training speeds. 
+    - **In Local Realtime Voice Changers:** It prioritizes foreground games, starving the background AI voice changer of resources and causing robotic, lagging audio or massive game stutters.
+- *Community Proof:* Many users report significant performance boosts and bug fixes after disabling it:
+
+  <img src="../glossary-img/disabled-hags-proof-1.png" alt="HAGS Discord Proof 1" width="450">
+  <img src="../glossary-img/disabled-hags-proof-2.png" alt="HAGS Discord Proof 2" width="450">
+
+!!! How to Disable HAGS:
+1. Open Windows **Settings** > **System** > **Display** > **Graphics**.
+2. Click **Advanced Graphic Settings**.
+3. Toggle **Hardware-accelerated GPU scheduling** to **Off**.
+4. Restart your PC.
+!!!
 
 
 ***
