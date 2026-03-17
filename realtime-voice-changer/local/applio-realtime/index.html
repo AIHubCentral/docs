@@ -7,10 +7,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.2.0.826834763813">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.3.0.827101977601">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.2.0">
+    <meta name="generator" content="Retype 4.3.0">
 
     <!-- Primary Meta Tags -->
     <title>Applio Realtime</title>
@@ -28,15 +28,21 @@
     <meta property="og:site_name" content="">
     <meta property="og:locale" content="en_US">
 
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://docs.aihub.gg/realtime-voice-changer/local/applio-realtime/">
+    <meta name="twitter:title" content="Applio Realtime">
+    <meta name="twitter:description" content="Last update: March 14, 2026">
+
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../../img/b.png" />
-    <link href="../../../resources/css/retype.css?v=4.2.0.826834763813" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=4.3.0.827101977601" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.2.0.826834763813" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../../resources/js/retype.js?v=4.2.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.2.0.826834763813" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=4.2.0.826834763813" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.3.0.827101977601" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/retype.js?v=4.3.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.3.0.827101977601" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=4.3.0.827101977601" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -51,10 +57,10 @@
             <!-- Logo -->
             <div class="flex items-center justify-between h-full py-2 md:w-75">
                 <div class="flex items-center px-2 md:px-6">
-                    <a id="retype-branding-logo" href="../../../" class="flex items-center leading-snug text-2xl">
+                    <a id="retype-branding-logo" href="https://docs.aihub.gg/" class="flex items-center leading-snug text-2xl">
                         <span class="grow-0 shrink-0 overflow-hidden">
-                            <img class="max-h-10 dark:hidden md:inline-block" src="../../../img/a.png">
-                            <img class="max-h-10 hidden dark:inline-block" src="../../../img/a.png">
+                            <img class="max-h-10 dark:hidden md:inline-block" src="../../../img/a.png" alt="" width="1032" height="316">
+                            <img class="max-h-10 hidden dark:inline-block" src="../../../img/a.png" alt="" width="1032" height="316">
                         </span>
                     </a>
                 </div>
@@ -68,30 +74,24 @@
                     <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
                         <li class="mr-6">
                             <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://discord.gg/aihub">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
-                                    <g fill="currentColor">
-                                        <path d="M10.97 8.265a1.45 1.45 0 0 0-.487.57.75.75 0 0 1-1.341-.67c.2-.402.513-.826.997-1.148C10.627 6.69 11.244 6.5 12 6.5c.658 0 1.369.195 1.934.619a2.45 2.45 0 0 1 1.004 2.006c0 1.033-.513 1.72-1.027 2.215-.19.183-.399.358-.579.508l-.147.123a4.329 4.329 0 0 0-.435.409v1.37a.75.75 0 1 1-1.5 0v-1.473c0-.237.067-.504.247-.736.22-.28.486-.517.718-.714l.183-.153.001-.001c.172-.143.324-.27.47-.412.368-.355.569-.676.569-1.136a.953.953 0 0 0-.404-.806C12.766 8.118 12.384 8 12 8c-.494 0-.814.121-1.03.265ZM13 17a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/><path d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1ZM2.5 12a9.5 9.5 0 0 0 9.5 9.5 9.5 9.5 0 0 0 9.5-9.5A9.5 9.5 0 0 0 12 2.5 9.5 9.5 0 0 0 2.5 12Z"/>
-                                    </g>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <path d="M10.97 8.265a1.45 1.45 0 0 0-.487.57.75.75 0 0 1-1.341-.67c.2-.402.513-.826.997-1.148C10.627 6.69 11.244 6.5 12 6.5c.658 0 1.369.195 1.934.619a2.45 2.45 0 0 1 1.004 2.006c0 1.033-.513 1.72-1.027 2.215-.19.183-.399.358-.579.508l-.147.123a4.329 4.329 0 0 0-.435.409v1.37a.75.75 0 1 1-1.5 0v-1.473c0-.237.067-.504.247-.736.22-.28.486-.517.718-.714l.183-.153.001-.001c.172-.143.324-.27.47-.412.368-.355.569-.676.569-1.136a.953.953 0 0 0-.404-.806C12.766 8.118 12.384 8 12 8c-.494 0-.814.121-1.03.265ZM13 17a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/><path d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1ZM2.5 12a9.5 9.5 0 0 0 9.5 9.5 9.5 9.5 0 0 0 9.5-9.5A9.5 9.5 0 0 0 12 2.5 9.5 9.5 0 0 0 2.5 12Z"/>
                                 </svg>
                                 <span>Need Help?</span>
                             </a>
                         </li>
                         <li class="mr-6">
                             <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://docs.aihub.gg/#contributions">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
-                                    <g fill="currentColor">
-                                        <path d="M12 7a.75.75 0 0 1 .75.75v4.5a.75.75 0 0 1-1.5 0v-4.5A.75.75 0 0 1 12 7Zm0 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/><path d="M7.328 1.47a.749.749 0 0 1 .53-.22h8.284c.199 0 .389.079.53.22l5.858 5.858c.141.14.22.33.22.53v8.284a.749.749 0 0 1-.22.53l-5.858 5.858a.749.749 0 0 1-.53.22H7.858a.749.749 0 0 1-.53-.22L1.47 16.672a.749.749 0 0 1-.22-.53V7.858c0-.199.079-.389.22-.53Zm.84 1.28L2.75 8.169v7.662l5.419 5.419h7.662l5.419-5.418V8.168L15.832 2.75Z"/>
-                                    </g>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <path d="M12 7a.75.75 0 0 1 .75.75v4.5a.75.75 0 0 1-1.5 0v-4.5A.75.75 0 0 1 12 7Zm0 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/><path d="M7.328 1.47a.749.749 0 0 1 .53-.22h8.284c.199 0 .389.079.53.22l5.858 5.858c.141.14.22.33.22.53v8.284a.749.749 0 0 1-.22.53l-5.858 5.858a.749.749 0 0 1-.53.22H7.858a.749.749 0 0 1-.53-.22L1.47 16.672a.749.749 0 0 1-.22-.53V7.858c0-.199.079-.389.22-.53Zm.84 1.28L2.75 8.169v7.662l5.419 5.419h7.662l5.419-5.418V8.168L15.832 2.75Z"/>
                                 </svg>
                                 <span>Report Issues</span>
                             </a>
                         </li>
                         <li class="mr-6">
                             <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://github.com/AIHubCentral/docs">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
-                                    <g fill="currentColor">
-                                        <path d="M10.303 16.652c-2.837-.344-4.835-2.385-4.835-5.028 0-1.074.387-2.235 1.031-3.008-.279-.709-.236-2.214.086-2.837.86-.107 2.02.344 2.708.967.816-.258 1.676-.386 2.728-.386 1.053 0 1.913.128 2.686.365.666-.602 1.848-1.053 2.708-.946.3.581.344 2.085.064 2.815.688.817 1.053 1.913 1.053 3.03 0 2.643-1.998 4.641-4.877 5.006.73.473 1.224 1.504 1.224 2.686v2.235c0 .644.537 1.01 1.182.752 3.889-1.483 6.94-5.372 6.94-10.185 0-6.081-4.942-11.044-11.022-11.044-6.081 0-10.98 4.963-10.98 11.044a10.84 10.84 0 0 0 7.112 10.206c.58.215 1.139-.172 1.139-.752v-1.719a2.768 2.768 0 0 1-1.032.215c-1.418 0-2.256-.773-2.857-2.213-.237-.58-.495-.924-.989-.988-.258-.022-.344-.129-.344-.258 0-.258.43-.451.86-.451.623 0 1.16.386 1.719 1.181.43.623.881.903 1.418.903.537 0 .881-.194 1.375-.688.365-.365.645-.687.903-.902Z"/>
-                                    </g>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <path d="M10.303 16.652c-2.837-.344-4.835-2.385-4.835-5.028 0-1.074.387-2.235 1.031-3.008-.279-.709-.236-2.214.086-2.837.86-.107 2.02.344 2.708.967.816-.258 1.676-.386 2.728-.386 1.053 0 1.913.128 2.686.365.666-.602 1.848-1.053 2.708-.946.3.581.344 2.085.064 2.815.688.817 1.053 1.913 1.053 3.03 0 2.643-1.998 4.641-4.877 5.006.73.473 1.224 1.504 1.224 2.686v2.235c0 .644.537 1.01 1.182.752 3.889-1.483 6.94-5.372 6.94-10.185 0-6.081-4.942-11.044-11.022-11.044-6.081 0-10.98 4.963-10.98 11.044a10.84 10.84 0 0 0 7.112 10.206c.58.215 1.139-.172 1.139-.752v-1.719a2.768 2.768 0 0 1-1.032.215c-1.418 0-2.256-.773-2.857-2.213-.237-.58-.495-.924-.989-.988-.258-.022-.344-.129-.344-.258 0-.258.43-.451.86-.451.623 0 1.16.386 1.719 1.181.43.623.881.903 1.418.903.537 0 .881-.194 1.375-.688.365-.365.645-.687.903-.902Z"/>
                                 </svg>
                                 <span>GitHub</span>
                             </a>
@@ -147,30 +147,24 @@
                             <ul class="flex flex-wrap justify-center items-center">
                                 <li class="mr-6">
                                     <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://discord.gg/aihub">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
-                                            <g fill="currentColor">
-                                                <path d="M10.97 8.265a1.45 1.45 0 0 0-.487.57.75.75 0 0 1-1.341-.67c.2-.402.513-.826.997-1.148C10.627 6.69 11.244 6.5 12 6.5c.658 0 1.369.195 1.934.619a2.45 2.45 0 0 1 1.004 2.006c0 1.033-.513 1.72-1.027 2.215-.19.183-.399.358-.579.508l-.147.123a4.329 4.329 0 0 0-.435.409v1.37a.75.75 0 1 1-1.5 0v-1.473c0-.237.067-.504.247-.736.22-.28.486-.517.718-.714l.183-.153.001-.001c.172-.143.324-.27.47-.412.368-.355.569-.676.569-1.136a.953.953 0 0 0-.404-.806C12.766 8.118 12.384 8 12 8c-.494 0-.814.121-1.03.265ZM13 17a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/><path d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1ZM2.5 12a9.5 9.5 0 0 0 9.5 9.5 9.5 9.5 0 0 0 9.5-9.5A9.5 9.5 0 0 0 12 2.5 9.5 9.5 0 0 0 2.5 12Z"/>
-                                            </g>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                            <path d="M10.97 8.265a1.45 1.45 0 0 0-.487.57.75.75 0 0 1-1.341-.67c.2-.402.513-.826.997-1.148C10.627 6.69 11.244 6.5 12 6.5c.658 0 1.369.195 1.934.619a2.45 2.45 0 0 1 1.004 2.006c0 1.033-.513 1.72-1.027 2.215-.19.183-.399.358-.579.508l-.147.123a4.329 4.329 0 0 0-.435.409v1.37a.75.75 0 1 1-1.5 0v-1.473c0-.237.067-.504.247-.736.22-.28.486-.517.718-.714l.183-.153.001-.001c.172-.143.324-.27.47-.412.368-.355.569-.676.569-1.136a.953.953 0 0 0-.404-.806C12.766 8.118 12.384 8 12 8c-.494 0-.814.121-1.03.265ZM13 17a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/><path d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1ZM2.5 12a9.5 9.5 0 0 0 9.5 9.5 9.5 9.5 0 0 0 9.5-9.5A9.5 9.5 0 0 0 12 2.5 9.5 9.5 0 0 0 2.5 12Z"/>
                                         </svg>
                                         <span>Need Help?</span>
                                     </a>
                                 </li>
                                 <li class="mr-6">
                                     <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://docs.aihub.gg/#contributions">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
-                                            <g fill="currentColor">
-                                                <path d="M12 7a.75.75 0 0 1 .75.75v4.5a.75.75 0 0 1-1.5 0v-4.5A.75.75 0 0 1 12 7Zm0 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/><path d="M7.328 1.47a.749.749 0 0 1 .53-.22h8.284c.199 0 .389.079.53.22l5.858 5.858c.141.14.22.33.22.53v8.284a.749.749 0 0 1-.22.53l-5.858 5.858a.749.749 0 0 1-.53.22H7.858a.749.749 0 0 1-.53-.22L1.47 16.672a.749.749 0 0 1-.22-.53V7.858c0-.199.079-.389.22-.53Zm.84 1.28L2.75 8.169v7.662l5.419 5.419h7.662l5.419-5.418V8.168L15.832 2.75Z"/>
-                                            </g>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                            <path d="M12 7a.75.75 0 0 1 .75.75v4.5a.75.75 0 0 1-1.5 0v-4.5A.75.75 0 0 1 12 7Zm0 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/><path d="M7.328 1.47a.749.749 0 0 1 .53-.22h8.284c.199 0 .389.079.53.22l5.858 5.858c.141.14.22.33.22.53v8.284a.749.749 0 0 1-.22.53l-5.858 5.858a.749.749 0 0 1-.53.22H7.858a.749.749 0 0 1-.53-.22L1.47 16.672a.749.749 0 0 1-.22-.53V7.858c0-.199.079-.389.22-.53Zm.84 1.28L2.75 8.169v7.662l5.419 5.419h7.662l5.419-5.418V8.168L15.832 2.75Z"/>
                                         </svg>
                                         <span>Report Issues</span>
                                     </a>
                                 </li>
                                 <li class="mr-6">
                                     <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://github.com/AIHubCentral/docs">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
-                                            <g fill="currentColor">
-                                                <path d="M10.303 16.652c-2.837-.344-4.835-2.385-4.835-5.028 0-1.074.387-2.235 1.031-3.008-.279-.709-.236-2.214.086-2.837.86-.107 2.02.344 2.708.967.816-.258 1.676-.386 2.728-.386 1.053 0 1.913.128 2.686.365.666-.602 1.848-1.053 2.708-.946.3.581.344 2.085.064 2.815.688.817 1.053 1.913 1.053 3.03 0 2.643-1.998 4.641-4.877 5.006.73.473 1.224 1.504 1.224 2.686v2.235c0 .644.537 1.01 1.182.752 3.889-1.483 6.94-5.372 6.94-10.185 0-6.081-4.942-11.044-11.022-11.044-6.081 0-10.98 4.963-10.98 11.044a10.84 10.84 0 0 0 7.112 10.206c.58.215 1.139-.172 1.139-.752v-1.719a2.768 2.768 0 0 1-1.032.215c-1.418 0-2.256-.773-2.857-2.213-.237-.58-.495-.924-.989-.988-.258-.022-.344-.129-.344-.258 0-.258.43-.451.86-.451.623 0 1.16.386 1.719 1.181.43.623.881.903 1.418.903.537 0 .881-.194 1.375-.688.365-.365.645-.687.903-.902Z"/>
-                                            </g>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                            <path d="M10.303 16.652c-2.837-.344-4.835-2.385-4.835-5.028 0-1.074.387-2.235 1.031-3.008-.279-.709-.236-2.214.086-2.837.86-.107 2.02.344 2.708.967.816-.258 1.676-.386 2.728-.386 1.053 0 1.913.128 2.686.365.666-.602 1.848-1.053 2.708-.946.3.581.344 2.085.064 2.815.688.817 1.053 1.913 1.053 3.03 0 2.643-1.998 4.641-4.877 5.006.73.473 1.224 1.504 1.224 2.686v2.235c0 .644.537 1.01 1.182.752 3.889-1.483 6.94-5.372 6.94-10.185 0-6.081-4.942-11.044-11.022-11.044-6.081 0-10.98 4.963-10.98 11.044a10.84 10.84 0 0 0 7.112 10.206c.58.215 1.139-.172 1.139-.752v-1.719a2.768 2.768 0 0 1-1.032.215c-1.418 0-2.256-.773-2.857-2.213-.237-.58-.495-.924-.989-.988-.258-.022-.344-.129-.344-.258 0-.258.43-.451.86-.451.623 0 1.16.386 1.719 1.181.43.623.881.903 1.418.903.537 0 .881-.194 1.375-.688.365-.365.645-.687.903-.902Z"/>
                                         </svg>
                                         <span>GitHub</span>
                                     </a>
@@ -197,20 +191,10 @@
                 <!-- Rendered if sidebar right is enabled -->
                 <div id="retype-sidebar-right-toggle"></div>
                 <!-- Page content  -->
-<doc-anchor-target id="applio-realtime" class="break-words">
-    <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#applio-realtime">#</doc-anchor-trigger>
-        <span>Applio Realtime</span>
-    </h1>
-</doc-anchor-target>
+<h1 id="applio-realtime">Applio Realtime</h1>
 <p><code translate="no" v-pre>Last update: March 14, 2026</code></p>
 <hr>
-<div class="content-center"><doc-anchor-target id="introduction">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#introduction">#</doc-anchor-trigger>
-        <span>Introduction</span>
-    </h2>
-</doc-anchor-target>
+<div class="content-center"><h2 id="introduction">Introduction</h2>
 </div>
 <ul>
 <li><p>Applio is an all-in-one RVC (Retrieval-based-Voice-Conversion) software that in v3.5.0 introduced a powerful Realtime tab for live voice changing.</p>
@@ -221,23 +205,13 @@
 </li>
 </ul>
 <hr>
-<doc-anchor-target id="is-applio-safe">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#is-applio-safe">#</doc-anchor-trigger>
-        <span>Is Applio Safe?</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="is-applio-safe">Is Applio Safe?</h4>
 <p>RVC Models are PyTorch Models, a Python library used for AI.
 PyTorch uses serialization via Pythons&#x27; Pickle Module, converting the model to a file.
 Since pickle can execute arbitrary code when loading a model, it could be theoretically used for malware, but Applio has a <strong>built-in feature to prevent code execution along the model.</strong>
 Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/security-pickle#hubs-security-scanner">Security Scanner</a></u></strong> which scans for any unsafe pickle exploits and uses also ClamAV for scanning dangerous files.</p>
 <hr>
-<doc-anchor-target id="pros--cons">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#pros--cons">#</doc-anchor-trigger>
-        <span>Pros &amp; Cons <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 6a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1Zm1.5 4.5h4v-4h-4Zm8.25-5a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 0 0-1.5h-7.5Zm0 6a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 0 0-1.5h-7.5Zm0 6a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 0 0-1.5h-7.5Zm-2.97-2.53a.75.75 0 0 1 0 1.06l-3.5 3.5a.75.75 0 0 1-1.06 0l-2-2a.75.75 0 1 1 1.06-1.06l1.47 1.47 2.97-2.97a.75.75 0 0 1 1.06 0Z"/></g></g></svg></span>
-    </h4>
-</doc-anchor-target>
+<h4 id="pros--cons">Pros &amp; Cons <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 6a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1Zm1.5 4.5h4v-4h-4Zm8.25-5a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 0 0-1.5h-7.5Zm0 6a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 0 0-1.5h-7.5Zm0 6a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 0 0-1.5h-7.5Zm-2.97-2.53a.75.75 0 0 1 0 1.06l-3.5 3.5a.75.75 0 0 1-1.06 0l-2-2a.75.75 0 1 1 1.06-1.06l1.47 1.47 2.97-2.97a.75.75 0 0 1 1.06 0Z"/></g></g></svg></h4>
 <doc-panel id="learn-more" collapsed>
     <template #title><em>Learn more</em></template>
 <div class="flex mb-6">
@@ -281,25 +255,10 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
 </div>
 </doc-panel>
 <hr>
-<doc-anchor-target id="section">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
+<h6 id="section">‎</h6>
 <hr>
-<doc-anchor-target id="virtual-audio-cable">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#virtual-audio-cable">#</doc-anchor-trigger>
-        <span>Virtual Audio Cable</span>
-    </h2>
-</doc-anchor-target>
-<doc-anchor-target id="a-virtual-audio-cable-vac-is-what-you-need-to-use-the-realtime-voice-changer-on-discord--games">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#a-virtual-audio-cable-vac-is-what-you-need-to-use-the-realtime-voice-changer-on-discord--games">#</doc-anchor-trigger>
-        <span>A Virtual Audio Cable (VAC) is what you need to use the realtime voice changer on Discord &amp; Games.</span>
-    </h4>
-</doc-anchor-target>
+<h2 id="virtual-audio-cable">Virtual Audio Cable</h2>
+<h4 id="a-virtual-audio-cable-vac-is-what-you-need-to-use-the-realtime-voice-changer-on-discord--games">A Virtual Audio Cable (VAC) is what you need to use the realtime voice changer on Discord &amp; Games.</h4>
 <ul>
 <li>A VAC (Virtual Audio Cable) makes a fake audio device, used to re-route the audio of different programs.</li>
 <li>In AI Realtime Voice Changing context, it&#x27;s used to get the output of AI Converted Voice Output as the input in other programs such as Discord.</li>
@@ -380,12 +339,7 @@ or
     </div>
 </div>
 <hr>
-<doc-anchor-target id="get--start-applio">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#get--start-applio">#</doc-anchor-trigger>
-        <span>Get &amp; Start Applio</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="get--start-applio">Get &amp; Start Applio</h2>
 <ol>
 <li>Install and Run Applio according to the <u><a href="https://docs.aihub.gg/rvc/local/applio/#download--installation">main Applio installation guide</a></u>.</li>
 <li><a href="https://docs.aihub.gg/rvc/local/applio/#upload-models">Upload your RVC Voice Model</a>.</li>
@@ -395,18 +349,8 @@ or
 </ol>
 <img src="../applio-realtime-img/realtime-tab.png" alt="Applio Realtime Terms of Use" width="800" height="auto">
 <hr>
-<doc-anchor-target id="settings-explained">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#settings-explained">#</doc-anchor-trigger>
-        <span>Settings Explained</span>
-    </h2>
-</doc-anchor-target>
-<doc-anchor-target id="1-audio-settings">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#1-audio-settings">#</doc-anchor-trigger>
-        <span>1. Audio Settings</span>
-    </h3>
-</doc-anchor-target>
+<h2 id="settings-explained">Settings Explained</h2>
+<h3 id="1-audio-settings">1. Audio Settings</h3>
 <img src="../applio-realtime-img/audio-settings.png" alt="Audio Settings" width="800" height="auto">
 <ul>
 <li><strong>Input Device:</strong> Your microphone.</li>
@@ -425,12 +369,7 @@ or
 <ul>
 <li><strong>Record Audio (Optional):</strong> Use this to save your live conversion output directly to a file.</li>
 </ul>
-<doc-anchor-target id="2-model-settings">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#2-model-settings">#</doc-anchor-trigger>
-        <span>2. Model Settings</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="2-model-settings">2. Model Settings</h3>
 <p>The Model Settings tab is split into two sections:</p>
 <p><strong>Part 1: Voice Selection</strong>
 <img src="../applio-realtime-img/model-settings-1.png" alt="Model Selection" width="800" height="auto"></p>
@@ -482,12 +421,7 @@ or
 <li><strong>Pitch Algorithm:</strong> Select <code translate="no" v-pre>rmvpe</code> for best quality or <code translate="no" v-pre>fcpe</code> for lower latency.</li>
 <li><strong>Embedder Model:</strong> Choose your model&#x27;s required embedder (ContentVec, Spin, etc.).</li>
 </ul>
-<doc-anchor-target id="3-performance-settings">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#3-performance-settings">#</doc-anchor-trigger>
-        <span>3. Performance Settings</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="3-performance-settings">3. Performance Settings</h3>
 <img src="../applio-realtime-img/performance-settings.png" alt="Performance Settings" width="800" height="auto">
 <ul>
 <li><strong>Chunk Size (ms):</strong> Lower values reduce latency but increase CPU load.</li>
@@ -496,12 +430,7 @@ or
 <li><strong>Silence Threshold (dB):</strong> Fine-tune the VAD sensitivity.</li>
 </ul>
 <hr>
-<div class="content-center"><doc-anchor-target id="troubleshooting">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#troubleshooting">#</doc-anchor-trigger>
-        <span>Troubleshooting</span>
-    </h2>
-</doc-anchor-target>
+<div class="content-center"><h2 id="troubleshooting">Troubleshooting</h2>
 </div>
 <doc-panel id="important-hags-on-windows-1011" collapsed>
     <template #title><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M13 17.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm-.25-8.25a.75.75 0 0 0-1.5 0v4.5a.75.75 0 0 0 1.5 0v-4.5Z"/><path d="M9.836 3.244c.963-1.665 3.365-1.665 4.328 0l8.967 15.504c.963 1.667-.24 3.752-2.165 3.752H3.034c-1.926 0-3.128-2.085-2.165-3.752Zm3.03.751a1.002 1.002 0 0 0-1.732 0L2.168 19.499A1.002 1.002 0 0 0 3.034 21h17.932a1.002 1.002 0 0 0 .866-1.5L12.866 3.994Z"/></g></g></svg> Important: HAGS on Windows 10/11</template>
@@ -522,54 +451,24 @@ or
 </ul>
 </doc-panel>
 <hr>
-<doc-anchor-target id="faq">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#faq">#</doc-anchor-trigger>
-        <span>FAQ</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="faq">FAQ</h2>
 <p><strong>Why does it run in a browser?</strong>
 Applio uses a Web User Interface (WebUI) coded in Gradio, allowing the tool to run consistently across local and cloud environments.</p>
 <hr>
-<doc-anchor-target id="what-browser-should-i-use">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#what-browser-should-i-use">#</doc-anchor-trigger>
-        <span>What browser should I use?</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="what-browser-should-i-use">What browser should I use?</h3>
 <p>It&#x27;s better you try and test, some people had issues on Chrome, some others on Firefox, it might depend on the settings you use and also Java/Type Script having issues. The browser that usually is reported by most people to have issues is OperaGX, which is why we don&#x27;t suggest it much.</p>
 <hr>
-<doc-anchor-target id="why-are-most-youtube-video-tutorials-old-is-there-going-to-be-an-updated-one">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#why-are-most-youtube-video-tutorials-old-is-there-going-to-be-an-updated-one">#</doc-anchor-trigger>
-        <span>Why are most YouTube (Video) Tutorials old? Is there going to be an updated one?</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="why-are-most-youtube-video-tutorials-old-is-there-going-to-be-an-updated-one">Why are most YouTube (Video) Tutorials old? Is there going to be an updated one?</h3>
 <p>YouTube Tutorials take way more time to make, and get outdated easily in this case, as AI progresses fast and continues to change in better, with more different settings and versions. Written guides are easier to update, since you don&#x27;t have to remake an entire video. It&#x27;s unknown if we will ever release a video since they easily get outdated, but if we will, it will be linked inside of this guide.</p>
 <hr>
-<doc-anchor-target id="do-i-need-an-extremely-expensive-mic-for-good-quality">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#do-i-need-an-extremely-expensive-mic-for-good-quality">#</doc-anchor-trigger>
-        <span>Do I need an extremely expensive mic for good quality?</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="do-i-need-an-extremely-expensive-mic-for-good-quality">Do I need an extremely expensive mic for good quality?</h3>
 <p>We had a conversation about this in <a href="https://discord.com/channels/1159260121998827560/1159290161683767298/1352325982689951765">https://discord.com/channels/1159260121998827560/1159290161683767298/1352325982689951765</a> &amp; <a href="https://discord.com/channels/1159260121998827560/1159290161683767298/1356265862704926907">https://discord.com/channels/1159260121998827560/1159290161683767298/1356265862704926907</a>,
 RVC works by downsampling your audio voice to 16khz because f0 estimators only works at that sample rate, after that the model outputs the results using it&#x27;s original sample rate (without any upscaling). So there won&#x27;t be the need of having a super extremely expensive, a decent one should do the job.</p>
 <hr>
-<doc-anchor-target id="are-there-unique-voice-models">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#are-there-unique-voice-models">#</doc-anchor-trigger>
-        <span>Are there unique Voice Models?</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="are-there-unique-voice-models">Are there unique Voice Models?</h3>
 <p>RVC Voice Models need to be trained on something, so the models themselves can&#x27;t be unique, but you can use the <a href="https://docs.aihub.gg/rvc/local/applio/#voice-blender">Voice Blender</a> to create a new unique merged model.</p>
 <hr>
-<div class="content-center"><doc-anchor-target id="you-have-reached-the-end">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#you-have-reached-the-end">#</doc-anchor-trigger>
-        <span><code translate="no" v-pre>You have reached the end.</code></span>
-    </h4>
-</doc-anchor-target>
+<div class="content-center"><h4 id="you-have-reached-the-end"><code translate="no" v-pre>You have reached the end.</code></h4>
 <p><a href="https://docs.aihub.gg/contributions/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border hover:text-badge-info-text-hover hover:bg-badge-info-hover hover:border-badge-info-border-hover transition-colors duration-200 ease-out h-8 px-4 text-base rounded-full">
     <span>Report Issues</span>
     <span><svg xmlns="http://www.w3.org/2000/svg" class="mb-px inline-flex ml-2" width="22" height="22" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M1.513 1.96a1.374 1.374 0 0 1 1.499-.21l19.335 9.215a1.147 1.147 0 0 1 0 2.07L3.012 22.25a1.374 1.374 0 0 1-1.947-1.46L2.49 12 1.065 3.21a1.375 1.375 0 0 1 .448-1.25Zm2.375 10.79-1.304 8.042L21.031 12 2.584 3.208l1.304 8.042h7.362a.75.75 0 0 1 0 1.5Z"/></g></svg></span>

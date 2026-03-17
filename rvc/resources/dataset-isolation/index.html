@@ -7,10 +7,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.2.0.826834763813">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.3.0.827101977601">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.2.0">
+    <meta name="generator" content="Retype 4.3.0">
 
     <!-- Primary Meta Tags -->
     <title>Dataset &amp; Isolation</title>
@@ -28,14 +28,20 @@
     <meta property="og:site_name" content="">
     <meta property="og:locale" content="en_US">
 
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://docs.aihub.gg/rvc/resources/dataset-isolation/">
+    <meta name="twitter:title" content="Dataset & Isolation">
+    <meta name="twitter:description" content="Last update: March 11, 2026">
+
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../../img/b.png" />
-    <link href="../../../resources/css/retype.css?v=4.2.0.826834763813" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=4.3.0.827101977601" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.2.0.826834763813" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../../resources/js/retype.js?v=4.2.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.2.0.826834763813" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.3.0.827101977601" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/retype.js?v=4.3.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.3.0.827101977601" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -50,10 +56,10 @@
             <!-- Logo -->
             <div class="flex items-center justify-between h-full py-2 md:w-75">
                 <div class="flex items-center px-2 md:px-6">
-                    <a id="retype-branding-logo" href="../../../" class="flex items-center leading-snug text-2xl">
+                    <a id="retype-branding-logo" href="https://docs.aihub.gg/" class="flex items-center leading-snug text-2xl">
                         <span class="grow-0 shrink-0 overflow-hidden">
-                            <img class="max-h-10 dark:hidden md:inline-block" src="../../../img/a.png">
-                            <img class="max-h-10 hidden dark:inline-block" src="../../../img/a.png">
+                            <img class="max-h-10 dark:hidden md:inline-block" src="../../../img/a.png" alt="" width="1032" height="316">
+                            <img class="max-h-10 hidden dark:inline-block" src="../../../img/a.png" alt="" width="1032" height="316">
                         </span>
                     </a>
                 </div>
@@ -67,30 +73,24 @@
                     <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
                         <li class="mr-6">
                             <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://discord.gg/aihub">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
-                                    <g fill="currentColor">
-                                        <path d="M10.97 8.265a1.45 1.45 0 0 0-.487.57.75.75 0 0 1-1.341-.67c.2-.402.513-.826.997-1.148C10.627 6.69 11.244 6.5 12 6.5c.658 0 1.369.195 1.934.619a2.45 2.45 0 0 1 1.004 2.006c0 1.033-.513 1.72-1.027 2.215-.19.183-.399.358-.579.508l-.147.123a4.329 4.329 0 0 0-.435.409v1.37a.75.75 0 1 1-1.5 0v-1.473c0-.237.067-.504.247-.736.22-.28.486-.517.718-.714l.183-.153.001-.001c.172-.143.324-.27.47-.412.368-.355.569-.676.569-1.136a.953.953 0 0 0-.404-.806C12.766 8.118 12.384 8 12 8c-.494 0-.814.121-1.03.265ZM13 17a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/><path d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1ZM2.5 12a9.5 9.5 0 0 0 9.5 9.5 9.5 9.5 0 0 0 9.5-9.5A9.5 9.5 0 0 0 12 2.5 9.5 9.5 0 0 0 2.5 12Z"/>
-                                    </g>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <path d="M10.97 8.265a1.45 1.45 0 0 0-.487.57.75.75 0 0 1-1.341-.67c.2-.402.513-.826.997-1.148C10.627 6.69 11.244 6.5 12 6.5c.658 0 1.369.195 1.934.619a2.45 2.45 0 0 1 1.004 2.006c0 1.033-.513 1.72-1.027 2.215-.19.183-.399.358-.579.508l-.147.123a4.329 4.329 0 0 0-.435.409v1.37a.75.75 0 1 1-1.5 0v-1.473c0-.237.067-.504.247-.736.22-.28.486-.517.718-.714l.183-.153.001-.001c.172-.143.324-.27.47-.412.368-.355.569-.676.569-1.136a.953.953 0 0 0-.404-.806C12.766 8.118 12.384 8 12 8c-.494 0-.814.121-1.03.265ZM13 17a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/><path d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1ZM2.5 12a9.5 9.5 0 0 0 9.5 9.5 9.5 9.5 0 0 0 9.5-9.5A9.5 9.5 0 0 0 12 2.5 9.5 9.5 0 0 0 2.5 12Z"/>
                                 </svg>
                                 <span>Need Help?</span>
                             </a>
                         </li>
                         <li class="mr-6">
                             <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://docs.aihub.gg/#contributions">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
-                                    <g fill="currentColor">
-                                        <path d="M12 7a.75.75 0 0 1 .75.75v4.5a.75.75 0 0 1-1.5 0v-4.5A.75.75 0 0 1 12 7Zm0 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/><path d="M7.328 1.47a.749.749 0 0 1 .53-.22h8.284c.199 0 .389.079.53.22l5.858 5.858c.141.14.22.33.22.53v8.284a.749.749 0 0 1-.22.53l-5.858 5.858a.749.749 0 0 1-.53.22H7.858a.749.749 0 0 1-.53-.22L1.47 16.672a.749.749 0 0 1-.22-.53V7.858c0-.199.079-.389.22-.53Zm.84 1.28L2.75 8.169v7.662l5.419 5.419h7.662l5.419-5.418V8.168L15.832 2.75Z"/>
-                                    </g>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <path d="M12 7a.75.75 0 0 1 .75.75v4.5a.75.75 0 0 1-1.5 0v-4.5A.75.75 0 0 1 12 7Zm0 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/><path d="M7.328 1.47a.749.749 0 0 1 .53-.22h8.284c.199 0 .389.079.53.22l5.858 5.858c.141.14.22.33.22.53v8.284a.749.749 0 0 1-.22.53l-5.858 5.858a.749.749 0 0 1-.53.22H7.858a.749.749 0 0 1-.53-.22L1.47 16.672a.749.749 0 0 1-.22-.53V7.858c0-.199.079-.389.22-.53Zm.84 1.28L2.75 8.169v7.662l5.419 5.419h7.662l5.419-5.418V8.168L15.832 2.75Z"/>
                                 </svg>
                                 <span>Report Issues</span>
                             </a>
                         </li>
                         <li class="mr-6">
                             <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://github.com/AIHubCentral/docs">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
-                                    <g fill="currentColor">
-                                        <path d="M10.303 16.652c-2.837-.344-4.835-2.385-4.835-5.028 0-1.074.387-2.235 1.031-3.008-.279-.709-.236-2.214.086-2.837.86-.107 2.02.344 2.708.967.816-.258 1.676-.386 2.728-.386 1.053 0 1.913.128 2.686.365.666-.602 1.848-1.053 2.708-.946.3.581.344 2.085.064 2.815.688.817 1.053 1.913 1.053 3.03 0 2.643-1.998 4.641-4.877 5.006.73.473 1.224 1.504 1.224 2.686v2.235c0 .644.537 1.01 1.182.752 3.889-1.483 6.94-5.372 6.94-10.185 0-6.081-4.942-11.044-11.022-11.044-6.081 0-10.98 4.963-10.98 11.044a10.84 10.84 0 0 0 7.112 10.206c.58.215 1.139-.172 1.139-.752v-1.719a2.768 2.768 0 0 1-1.032.215c-1.418 0-2.256-.773-2.857-2.213-.237-.58-.495-.924-.989-.988-.258-.022-.344-.129-.344-.258 0-.258.43-.451.86-.451.623 0 1.16.386 1.719 1.181.43.623.881.903 1.418.903.537 0 .881-.194 1.375-.688.365-.365.645-.687.903-.902Z"/>
-                                    </g>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <path d="M10.303 16.652c-2.837-.344-4.835-2.385-4.835-5.028 0-1.074.387-2.235 1.031-3.008-.279-.709-.236-2.214.086-2.837.86-.107 2.02.344 2.708.967.816-.258 1.676-.386 2.728-.386 1.053 0 1.913.128 2.686.365.666-.602 1.848-1.053 2.708-.946.3.581.344 2.085.064 2.815.688.817 1.053 1.913 1.053 3.03 0 2.643-1.998 4.641-4.877 5.006.73.473 1.224 1.504 1.224 2.686v2.235c0 .644.537 1.01 1.182.752 3.889-1.483 6.94-5.372 6.94-10.185 0-6.081-4.942-11.044-11.022-11.044-6.081 0-10.98 4.963-10.98 11.044a10.84 10.84 0 0 0 7.112 10.206c.58.215 1.139-.172 1.139-.752v-1.719a2.768 2.768 0 0 1-1.032.215c-1.418 0-2.256-.773-2.857-2.213-.237-.58-.495-.924-.989-.988-.258-.022-.344-.129-.344-.258 0-.258.43-.451.86-.451.623 0 1.16.386 1.719 1.181.43.623.881.903 1.418.903.537 0 .881-.194 1.375-.688.365-.365.645-.687.903-.902Z"/>
                                 </svg>
                                 <span>GitHub</span>
                             </a>
@@ -146,30 +146,24 @@
                             <ul class="flex flex-wrap justify-center items-center">
                                 <li class="mr-6">
                                     <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://discord.gg/aihub">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
-                                            <g fill="currentColor">
-                                                <path d="M10.97 8.265a1.45 1.45 0 0 0-.487.57.75.75 0 0 1-1.341-.67c.2-.402.513-.826.997-1.148C10.627 6.69 11.244 6.5 12 6.5c.658 0 1.369.195 1.934.619a2.45 2.45 0 0 1 1.004 2.006c0 1.033-.513 1.72-1.027 2.215-.19.183-.399.358-.579.508l-.147.123a4.329 4.329 0 0 0-.435.409v1.37a.75.75 0 1 1-1.5 0v-1.473c0-.237.067-.504.247-.736.22-.28.486-.517.718-.714l.183-.153.001-.001c.172-.143.324-.27.47-.412.368-.355.569-.676.569-1.136a.953.953 0 0 0-.404-.806C12.766 8.118 12.384 8 12 8c-.494 0-.814.121-1.03.265ZM13 17a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/><path d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1ZM2.5 12a9.5 9.5 0 0 0 9.5 9.5 9.5 9.5 0 0 0 9.5-9.5A9.5 9.5 0 0 0 12 2.5 9.5 9.5 0 0 0 2.5 12Z"/>
-                                            </g>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                            <path d="M10.97 8.265a1.45 1.45 0 0 0-.487.57.75.75 0 0 1-1.341-.67c.2-.402.513-.826.997-1.148C10.627 6.69 11.244 6.5 12 6.5c.658 0 1.369.195 1.934.619a2.45 2.45 0 0 1 1.004 2.006c0 1.033-.513 1.72-1.027 2.215-.19.183-.399.358-.579.508l-.147.123a4.329 4.329 0 0 0-.435.409v1.37a.75.75 0 1 1-1.5 0v-1.473c0-.237.067-.504.247-.736.22-.28.486-.517.718-.714l.183-.153.001-.001c.172-.143.324-.27.47-.412.368-.355.569-.676.569-1.136a.953.953 0 0 0-.404-.806C12.766 8.118 12.384 8 12 8c-.494 0-.814.121-1.03.265ZM13 17a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/><path d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1ZM2.5 12a9.5 9.5 0 0 0 9.5 9.5 9.5 9.5 0 0 0 9.5-9.5A9.5 9.5 0 0 0 12 2.5 9.5 9.5 0 0 0 2.5 12Z"/>
                                         </svg>
                                         <span>Need Help?</span>
                                     </a>
                                 </li>
                                 <li class="mr-6">
                                     <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://docs.aihub.gg/#contributions">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
-                                            <g fill="currentColor">
-                                                <path d="M12 7a.75.75 0 0 1 .75.75v4.5a.75.75 0 0 1-1.5 0v-4.5A.75.75 0 0 1 12 7Zm0 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/><path d="M7.328 1.47a.749.749 0 0 1 .53-.22h8.284c.199 0 .389.079.53.22l5.858 5.858c.141.14.22.33.22.53v8.284a.749.749 0 0 1-.22.53l-5.858 5.858a.749.749 0 0 1-.53.22H7.858a.749.749 0 0 1-.53-.22L1.47 16.672a.749.749 0 0 1-.22-.53V7.858c0-.199.079-.389.22-.53Zm.84 1.28L2.75 8.169v7.662l5.419 5.419h7.662l5.419-5.418V8.168L15.832 2.75Z"/>
-                                            </g>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                            <path d="M12 7a.75.75 0 0 1 .75.75v4.5a.75.75 0 0 1-1.5 0v-4.5A.75.75 0 0 1 12 7Zm0 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/><path d="M7.328 1.47a.749.749 0 0 1 .53-.22h8.284c.199 0 .389.079.53.22l5.858 5.858c.141.14.22.33.22.53v8.284a.749.749 0 0 1-.22.53l-5.858 5.858a.749.749 0 0 1-.53.22H7.858a.749.749 0 0 1-.53-.22L1.47 16.672a.749.749 0 0 1-.22-.53V7.858c0-.199.079-.389.22-.53Zm.84 1.28L2.75 8.169v7.662l5.419 5.419h7.662l5.419-5.418V8.168L15.832 2.75Z"/>
                                         </svg>
                                         <span>Report Issues</span>
                                     </a>
                                 </li>
                                 <li class="mr-6">
                                     <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://github.com/AIHubCentral/docs">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
-                                            <g fill="currentColor">
-                                                <path d="M10.303 16.652c-2.837-.344-4.835-2.385-4.835-5.028 0-1.074.387-2.235 1.031-3.008-.279-.709-.236-2.214.086-2.837.86-.107 2.02.344 2.708.967.816-.258 1.676-.386 2.728-.386 1.053 0 1.913.128 2.686.365.666-.602 1.848-1.053 2.708-.946.3.581.344 2.085.064 2.815.688.817 1.053 1.913 1.053 3.03 0 2.643-1.998 4.641-4.877 5.006.73.473 1.224 1.504 1.224 2.686v2.235c0 .644.537 1.01 1.182.752 3.889-1.483 6.94-5.372 6.94-10.185 0-6.081-4.942-11.044-11.022-11.044-6.081 0-10.98 4.963-10.98 11.044a10.84 10.84 0 0 0 7.112 10.206c.58.215 1.139-.172 1.139-.752v-1.719a2.768 2.768 0 0 1-1.032.215c-1.418 0-2.256-.773-2.857-2.213-.237-.58-.495-.924-.989-.988-.258-.022-.344-.129-.344-.258 0-.258.43-.451.86-.451.623 0 1.16.386 1.719 1.181.43.623.881.903 1.418.903.537 0 .881-.194 1.375-.688.365-.365.645-.687.903-.902Z"/>
-                                            </g>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                            <path d="M10.303 16.652c-2.837-.344-4.835-2.385-4.835-5.028 0-1.074.387-2.235 1.031-3.008-.279-.709-.236-2.214.086-2.837.86-.107 2.02.344 2.708.967.816-.258 1.676-.386 2.728-.386 1.053 0 1.913.128 2.686.365.666-.602 1.848-1.053 2.708-.946.3.581.344 2.085.064 2.815.688.817 1.053 1.913 1.053 3.03 0 2.643-1.998 4.641-4.877 5.006.73.473 1.224 1.504 1.224 2.686v2.235c0 .644.537 1.01 1.182.752 3.889-1.483 6.94-5.372 6.94-10.185 0-6.081-4.942-11.044-11.022-11.044-6.081 0-10.98 4.963-10.98 11.044a10.84 10.84 0 0 0 7.112 10.206c.58.215 1.139-.172 1.139-.752v-1.719a2.768 2.768 0 0 1-1.032.215c-1.418 0-2.256-.773-2.857-2.213-.237-.58-.495-.924-.989-.988-.258-.022-.344-.129-.344-.258 0-.258.43-.451.86-.451.623 0 1.16.386 1.719 1.181.43.623.881.903 1.418.903.537 0 .881-.194 1.375-.688.365-.365.645-.687.903-.902Z"/>
                                         </svg>
                                         <span>GitHub</span>
                                     </a>
@@ -196,20 +190,10 @@
                 <!-- Rendered if sidebar right is enabled -->
                 <div id="retype-sidebar-right-toggle"></div>
                 <!-- Page content  -->
-<doc-anchor-target id="dataset--isolation" class="break-words">
-    <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#dataset--isolation">#</doc-anchor-trigger>
-        <span>Dataset &amp; Isolation</span>
-    </h1>
-</doc-anchor-target>
+<h1 id="dataset--isolation">Dataset &amp; Isolation</h1>
 <p><code translate="no" v-pre>Last update: March 11, 2026</code></p>
 <hr>
-<div class="content-center"><doc-anchor-target id="introduction">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#introduction">#</doc-anchor-trigger>
-        <span>Introduction</span>
-    </h2>
-</doc-anchor-target>
+<div class="content-center"><h2 id="introduction">Introduction</h2>
 </div>
 <ul>
 <li><p>In this massive guide it will be explained how to <strong>properly</strong> prepare a dataset to make a RVC model.</p>
@@ -222,12 +206,7 @@
 </li>
 </ul>
 <hr>
-<div class="content-center"><doc-anchor-target id="length--variety">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#length--variety">#</doc-anchor-trigger>
-        <span>Length &amp; Variety</span>
-    </h2>
-</doc-anchor-target>
+<div class="content-center"><h2 id="length--variety">Length &amp; Variety</h2>
 </div>
 <ul>
 <li><p>For beginners we recommend sticking with a dataset length of <strong>15 minutes</strong> of pure data not counting silence, or if you desire a natural sounding model go for <strong>40+</strong> minutes of dataset. Just remember <strong>quality over quantity</strong>.</p>
@@ -244,55 +223,25 @@
 </li>
 </ul>
 <hr>
-<div class="content-center"><doc-anchor-target id="quality">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#quality">#</doc-anchor-trigger>
-        <span>Quality</span>
-    </h2>
-</doc-anchor-target>
+<div class="content-center"><h2 id="quality">Quality</h2>
 </div>
 <ul>
 <li>A quality dataset is super important for RVC since without one RVC will struggle to make anything good or believable.</li>
 </ul>
-<div class="content-center"><doc-anchor-target id="here-are-some-recommendations-for-a-quality-dataset">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#here-are-some-recommendations-for-a-quality-dataset">#</doc-anchor-trigger>
-        <span><code translate="no" v-pre>Here are some recommendations for a quality dataset.</code></span>
-    </h4>
-</doc-anchor-target>
+<div class="content-center"><h4 id="here-are-some-recommendations-for-a-quality-dataset"><code translate="no" v-pre>Here are some recommendations for a quality dataset.</code></h4>
 </div>
-<doc-anchor-target id="section">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
-<doc-anchor-target id="clean-vocals">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#clean-vocals">#</doc-anchor-trigger>
-        <span><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M5.22 8.22a.749.749 0 0 0 0 1.06l6.25 6.25a.749.749 0 0 0 1.06 0l6.25-6.25a.749.749 0 1 0-1.06-1.06L12 13.939 6.28 8.22a.749.749 0 0 0-1.06 0Z"/></g></g></svg> Clean vocals.</span>
-    </h4>
-</doc-anchor-target>
+<h6 id="section">‎</h6>
+<h4 id="clean-vocals"><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M5.22 8.22a.749.749 0 0 0 0 1.06l6.25 6.25a.749.749 0 0 0 1.06 0l6.25-6.25a.749.749 0 1 0-1.06-1.06L12 13.939 6.28 8.22a.749.749 0 0 0-1.06 0Z"/></g></g></svg> Clean vocals.</h4>
 <ul>
 <li>Ensure there isn&#x27;t much background noise, reverb, overlapping voices, music, distortion, or small silences. <em>Some</em> quiet natural background noise is fine and won&#x27;t ruin your model since the original pretrains for RVC were made with a noisy dataset, so RVC knows how to deal with noise. You&#x27;ll learn more on cleaning vocals in the <strong>Vocal Isolation &amp; Cleaning</strong> section below.<br />
 ‎</li>
 </ul>
-<doc-anchor-target id="audio-quality">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#audio-quality">#</doc-anchor-trigger>
-        <span><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M5.22 8.22a.749.749 0 0 0 0 1.06l6.25 6.25a.749.749 0 0 0 1.06 0l6.25-6.25a.749.749 0 1 0-1.06-1.06L12 13.939 6.28 8.22a.749.749 0 0 0-1.06 0Z"/></g></g></svg> Audio quality.</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="audio-quality"><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M5.22 8.22a.749.749 0 0 0 0 1.06l6.25 6.25a.749.749 0 0 0 1.06 0l6.25-6.25a.749.749 0 1 0-1.06-1.06L12 13.939 6.28 8.22a.749.749 0 0 0-1.06 0Z"/></g></g></svg> Audio quality.</h4>
 <ul>
 <li>The higher the audio quality, the better. If possible have it in a <u><a href="https://docs.aihub.gg/extra/glossary/#lossless-formats">lossless</a></u> format like <strong>WAV</strong> or <strong>FLAC</strong>, not a lossy one like MP3. No converting a MP3 to a FLAC or WAV won&#x27;t remove the compression.<br />
 ‎</li>
 </ul>
-<doc-anchor-target id="no-harsh-sibilancepopping">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#no-harsh-sibilancepopping">#</doc-anchor-trigger>
-        <span><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M5.22 8.22a.749.749 0 0 0 0 1.06l6.25 6.25a.749.749 0 0 0 1.06 0l6.25-6.25a.749.749 0 1 0-1.06-1.06L12 13.939 6.28 8.22a.749.749 0 0 0-1.06 0Z"/></g></g></svg> No harsh sibilance/popping.</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="no-harsh-sibilancepopping"><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M5.22 8.22a.749.749 0 0 0 0 1.06l6.25 6.25a.749.749 0 0 0 1.06 0l6.25-6.25a.749.749 0 1 0-1.06-1.06L12 13.939 6.28 8.22a.749.749 0 0 0-1.06 0Z"/></g></g></svg> No harsh sibilance/popping.</h4>
 <ul>
 <li>Additionally, don&#x27;t include harsh sibilance (loud &quot;S&quot; &amp; &quot;SH&quot; pronunciation) or popping sounds (loud &quot;P&quot; sound)
 <ul>
@@ -302,32 +251,17 @@
 </ul>
 </li>
 </ul>
-<doc-anchor-target id="no-audio-damage">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#no-audio-damage">#</doc-anchor-trigger>
-        <span><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M5.22 8.22a.749.749 0 0 0 0 1.06l6.25 6.25a.749.749 0 0 0 1.06 0l6.25-6.25a.749.749 0 1 0-1.06-1.06L12 13.939 6.28 8.22a.749.749 0 0 0-1.06 0Z"/></g></g></svg> No Audio Damage.</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="no-audio-damage"><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M5.22 8.22a.749.749 0 0 0 0 1.06l6.25 6.25a.749.749 0 0 0 1.06 0l6.25-6.25a.749.749 0 1 0-1.06-1.06L12 13.939 6.28 8.22a.749.749 0 0 0-1.06 0Z"/></g></g></svg> No Audio Damage.</h4>
 <ul>
 <li>The most inportant part of a clean dataset, if your audio is damaged RVC will struggle with it causing it to overall sound worse because RVC will create synthetic data and try to learn from it, so make sure your audio isn&#x27;t damged.<br />
 ‎</li>
 </ul>
 <hr>
-<div class="content-center"><doc-anchor-target id="artifacts">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#artifacts">#</doc-anchor-trigger>
-        <span>Artifacts</span>
-    </h2>
-</doc-anchor-target>
+<div class="content-center"><h2 id="artifacts">Artifacts</h2>
 </div>
 <p>In RVC, artifacting refers to an anomaly where the output voice sounds &quot;robotic&quot; &amp; glitchy.<br />
 This occurs after the <u><a href="https://docs.aihub.gg/extra/glossary/#inference">inference</a></u> or model training process.</p>
-<doc-anchor-target id="causes">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#causes">#</doc-anchor-trigger>
-        <span>Causes</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="causes">Causes</h4>
 <p>It usually occurs when the dataset/vocal sample meets any of these criteria:</p>
 <p>•  Audio is low-quality<br />
 •  Voice model was overfitted, undertrained or overtrained<br />
@@ -336,18 +270,8 @@ This occurs after the <u><a href="https://docs.aihub.gg/extra/glossary/#inferenc
 •  There is noise</p>
 <p>As you noticed, most of the issues boil down to the audio sample not being properly <strong>clean</strong>. RVC is built for purely working with voices, not other sounds.</p>
 <p>Remember that the cleaner your input audio is, the better the results.</p>
-<doc-anchor-target id="solutions">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#solutions">#</doc-anchor-trigger>
-        <span>Solutions</span>
-    </h4>
-</doc-anchor-target>
-<doc-anchor-target id="1-use-a-lossless-format">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#1-use-a-lossless-format">#</doc-anchor-trigger>
-        <span>1. Use a lossless format:</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="solutions">Solutions</h4>
+<h4 id="1-use-a-lossless-format">1. Use a lossless format:</h4>
 <ul>
 <li><p>If possible, it&#x27;s best if your audio is in a <u><a href="https://docs.aihub.gg/extra/glossary/#lossless-formats">lossless format</a></u> like <strong>WAV</strong> or <strong>FLAC</strong>, preserving its original quality.</p>
 </li>
@@ -355,12 +279,7 @@ This occurs after the <u><a href="https://docs.aihub.gg/extra/glossary/#inferenc
 ‎</p>
 </li>
 </ul>
-<doc-anchor-target id="2-if-doing-inference">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#2-if-doing-inference">#</doc-anchor-trigger>
-        <span>2. If doing inference:</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="2-if-doing-inference">2. If doing inference:</h4>
 <ul>
 <li><p>Remove undesired noises with an <u><a href="https://docs.aihub.gg/rvc/resources/vocal-isolation/">vocal isolation</a></u> software.</p>
 </li>
@@ -370,23 +289,13 @@ This occurs after the <u><a href="https://docs.aihub.gg/extra/glossary/#inferenc
 ‎</p>
 </li>
 </ul>
-<doc-anchor-target id="3-if-training-models">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#3-if-training-models">#</doc-anchor-trigger>
-        <span>3. If training models:</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="3-if-training-models">3. If training models:</h4>
 <ul>
 <li>Ensure to clean your dataset properly, this includes removing silences and distortions.</li>
 </ul>
 <hr>
 <p>‎</p>
-<div class="content-center"><doc-anchor-target id="vocal-isolation--cleaning">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#vocal-isolation--cleaning">#</doc-anchor-trigger>
-        <span>Vocal Isolation &amp; Cleaning</span>
-    </h2>
-</doc-anchor-target>
+<div class="content-center"><h2 id="vocal-isolation--cleaning">Vocal Isolation &amp; Cleaning</h2>
 </div>
 <ul>
 <li><p>A vocal isolation app is a software designed to extract a person&#x27;s vocals from an audio file, usually through the use of AI models.</p>
@@ -403,12 +312,7 @@ This occurs after the <u><a href="https://docs.aihub.gg/extra/glossary/#inferenc
 </li>
 </ul>
 <p>‎</p>
-<div class="content-center"><doc-anchor-target id="voice-restoration">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#voice-restoration">#</doc-anchor-trigger>
-        <span>Voice Restoration</span>
-    </h3>
-</doc-anchor-target>
+<div class="content-center"><h3 id="voice-restoration">Voice Restoration</h3>
 </div>
 <p>For restoring and enhancing voice quality, especially from low-quality sources, dedicated restoration models (like AI Audio Upscaling) can be used.</p>
 <div class="flex mb-6">
@@ -447,12 +351,7 @@ This occurs after the <u><a href="https://docs.aihub.gg/extra/glossary/#inferenc
 <doc-tabs>
 <doc-tab v-cloak id="local-uvr">
 <template #title>Local UVR</template>
-<div class="content-center"><doc-anchor-target id="local-uvr">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#local-uvr">#</doc-anchor-trigger>
-        <span>Local UVR</span>
-    </h2>
-</doc-anchor-target>
+<div class="content-center"><h2 id="local-uvr">Local UVR</h2>
 </div>
 <div class="content-center"><p><a href="https://www.buymeacoffee.com/uvr5" class="no-link inline-flex align-middle items-center font-medium cursor-pointer transition-colors duration-200 ease-out focus:outline-hidden bg-button-danger hover:bg-button-danger-hover text-button-danger-text px-4 h-10 text-sm rounded-full">
     <span>Support UVR5</span>
@@ -475,12 +374,7 @@ This occurs after the <u><a href="https://docs.aihub.gg/extra/glossary/#inferenc
         </div>
     </div>
 </div>
-<doc-anchor-target id="installation">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#installation">#</doc-anchor-trigger>
-        <span>Installation <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M4.75 17.25a.75.75 0 0 1 .75.75v2.25c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V18a.75.75 0 0 1 1.5 0v2.25A1.75 1.75 0 0 1 18.25 22H5.75A1.75 1.75 0 0 1 4 20.25V18a.75.75 0 0 1 .75-.75Z"/><path d="M5.22 9.97a.749.749 0 0 1 1.06 0l4.97 4.969V2.75a.75.75 0 0 1 1.5 0v12.189l4.97-4.969a.749.749 0 1 1 1.06 1.06l-6.25 6.25a.749.749 0 0 1-1.06 0l-6.25-6.25a.749.749 0 0 1 0-1.06Z"/></g></g></svg></span>
-    </h3>
-</doc-anchor-target>
+<h3 id="installation">Installation <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M4.75 17.25a.75.75 0 0 1 .75.75v2.25c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V18a.75.75 0 0 1 1.5 0v2.25A1.75 1.75 0 0 1 18.25 22H5.75A1.75 1.75 0 0 1 4 20.25V18a.75.75 0 0 1 .75-.75Z"/><path d="M5.22 9.97a.749.749 0 0 1 1.06 0l4.97 4.969V2.75a.75.75 0 0 1 1.5 0v12.189l4.97-4.969a.749.749 0 1 1 1.06 1.06l-6.25 6.25a.749.749 0 0 1-1.06 0l-6.25-6.25a.749.749 0 0 1 0-1.06Z"/></g></g></svg></h3>
 <hr>
 <ol>
 <li><p>Go to their <u><a href="https://ultimatevocalremover.com/">official website</a></u> &amp; press <code translate="no" v-pre>Download UVR</code>. If you want to use BS / Mel Roformer you are going to need to install <u><a href="https://github.com/Anjok07/ultimatevocalremovergui/releases/download/v5.6/UVR_1_15_25_22_30_BETA_full.exe">this</a></u>.</p>
@@ -488,23 +382,13 @@ This occurs after the <u><a href="https://docs.aihub.gg/extra/glossary/#inferenc
 </li>
 </ol>
 <hr>
-<doc-anchor-target id="section-1">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-1">#</doc-anchor-trigger>
-        <span></span>
-    </h6>
-</doc-anchor-target>
+<h6 id="section-1"></h6>
 <ol start="2">
 <li>It will redirect you their GitHub page. Click the download link for your <strong>operating system</strong>.<br />
 UVR is available both on <strong>Windows &amp; Mac</strong>.</li>
 </ol>
 <hr>
-<doc-anchor-target id="section-2">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-2">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
+<h6 id="section-2">‎</h6>
 <ol start="3">
 <li><p>Once the installer finishes downloading, execute it &amp; follow the instructions.<br />
 Make sure to tick <code translate="no" v-pre>🗹 Create a desktop shortcut</code> for an easier access to UVR.</p>
@@ -512,31 +396,11 @@ Make sure to tick <code translate="no" v-pre>🗹 Create a desktop shortcut</cod
 </li>
 </ol>
 <hr>
-<doc-anchor-target id="section-3">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-3">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
-<doc-anchor-target id="how-to-use">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-use">#</doc-anchor-trigger>
-        <span>How to Use <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3.5 3.75a.25.25 0 0 1 .25-.25h13.5a.25.25 0 0 1 .25.25v10a.75.75 0 0 0 1.5 0v-10A1.75 1.75 0 0 0 17.25 2H3.75A1.75 1.75 0 0 0 2 3.75v16.5c0 .966.784 1.75 1.75 1.75h7a.75.75 0 0 0 0-1.5h-7a.25.25 0 0 1-.25-.25V3.75Z"/><path d="M6.25 7a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Zm-.75 4.75a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75Zm16.28 4.53a.75.75 0 1 0-1.06-1.06l-4.97 4.97-1.97-1.97a.75.75 0 1 0-1.06 1.06l2.5 2.5a.75.75 0 0 0 1.06 0l5.5-5.5Z"/></g></g></svg></span>
-    </h3>
-</doc-anchor-target>
+<h6 id="section-3">‎</h6>
+<h3 id="how-to-use">How to Use <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3.5 3.75a.25.25 0 0 1 .25-.25h13.5a.25.25 0 0 1 .25.25v10a.75.75 0 0 0 1.5 0v-10A1.75 1.75 0 0 0 17.25 2H3.75A1.75 1.75 0 0 0 2 3.75v16.5c0 .966.784 1.75 1.75 1.75h7a.75.75 0 0 0 0-1.5h-7a.25.25 0 0 1-.25-.25V3.75Z"/><path d="M6.25 7a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Zm-.75 4.75a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75Zm16.28 4.53a.75.75 0 1 0-1.06-1.06l-4.97 4.97-1.97-1.97a.75.75 0 1 0-1.06 1.06l2.5 2.5a.75.75 0 0 0 1.06 0l5.5-5.5Z"/></g></g></svg></h3>
 <hr>
-<doc-anchor-target id="1-input-audio">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#1-input-audio">#</doc-anchor-trigger>
-        <span>1. Input audio.</span>
-    </h4>
-</doc-anchor-target>
-<doc-anchor-target id="section-4">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-4">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
+<h4 id="1-input-audio">1. Input audio.</h4>
+<h6 id="section-4">‎</h6>
 <ul>
 <li><p>Click <code translate="no" v-pre>Select input</code> to select your audio/s. Or just drag the files to it.<br />
 ‎</p>
@@ -563,18 +427,8 @@ Make sure to tick <code translate="no" v-pre>🗹 Create a desktop shortcut</cod
 </div>
 <hr>
 <p>‎</p>
-<doc-anchor-target id="2-select-flac--gpu-conversion">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#2-select-flac--gpu-conversion">#</doc-anchor-trigger>
-        <span>2. Select FLAC &amp; GPU Conversion.</span>
-    </h4>
-</doc-anchor-target>
-<doc-anchor-target id="section-5">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-5">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
+<h4 id="2-select-flac--gpu-conversion">2. Select FLAC &amp; GPU Conversion.</h4>
+<h6 id="section-5">‎</h6>
 <ol type="a" start="1">
 <li><p>At the right you can select the output format.<br />
 We recommend picking <code translate="no" v-pre>FLAC</code>. Learn why <u><a href="https://docs.aihub.gg/extra/glossary/#lossless-formats">here</a></u>.<br />
@@ -584,55 +438,25 @@ We recommend picking <code translate="no" v-pre>FLAC</code>. Learn why <u><a hre
  <img src="../uvr-img/flac-gpu-settings.png" alt="Setting FLAC & GPU Conversion" width="350" height="auto">   
 </li>
 </ol>
-<doc-anchor-target id="section-6">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-6">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
+<h6 id="section-6">‎</h6>
 <blockquote>
 <p>This step is not mandatory, but recommended for better results.</p>
 </blockquote>
 <hr>
 <p>‎</p>
-<doc-anchor-target id="3-extract-vocals">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#3-extract-vocals">#</doc-anchor-trigger>
-        <span>3. Extract vocals.</span>
-    </h4>
-</doc-anchor-target>
-<doc-anchor-target id="section-7">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-7">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
+<h4 id="3-extract-vocals">3. Extract vocals.</h4>
+<h6 id="section-7">‎</h6>
 <ol type="a" start="1">
 <li><p><strong>Select</strong> the Process Method and Model depending on your use case and <a href="https://docs.aihub.gg/rvc/resources/vocal-isolation/#best-models-for-uvr">the List of Best Models</a>.</p>
 <p><img src="../uvr-img/process-method-model.jpg" alt="UVR Process Method & Model Selection" width="250" height="auto">‎</p>
 </li>
 </ol>
-<doc-anchor-target id="section-8">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-8">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
-<doc-anchor-target id="section-9">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-9">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
+<h6 id="section-8">‎</h6>
+<h6 id="section-9">‎</h6>
 <ol type="a" start="2">
 <li>Now click the long <code translate="no" v-pre>Start Processing</code> button.</li>
 </ol>
-<doc-anchor-target id="section-10">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-10">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
+<h6 id="section-10">‎</h6>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-success"></div>
     <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
@@ -651,12 +475,7 @@ We recommend picking <code translate="no" v-pre>FLAC</code>. Learn why <u><a hre
 </div>
 <hr>
 <p>‎</p>
-<doc-anchor-target id="best-models-for-uvr">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#best-models-for-uvr">#</doc-anchor-trigger>
-        <span>Best models for UVR:</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="best-models-for-uvr">Best models for UVR:</h4>
 <p>Note: most actually are all MelBand Roformer models, but there isn&#x27;t a proper list yet for them</p>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
@@ -709,55 +528,30 @@ We recommend picking <code translate="no" v-pre>FLAC</code>. Learn why <u><a hre
 </table>
 </div>
 <p>‎</p>
-<doc-anchor-target id="troubleshooting">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#troubleshooting">#</doc-anchor-trigger>
-        <span>Troubleshooting <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M7.875 2.292a.114.114 0 0 0-.032.018A7.239 7.239 0 0 0 4.75 8.25a7.248 7.248 0 0 0 3.654 6.297c.57.327.982.955.941 1.682v.002l-.317 6.058a.75.75 0 1 1-1.498-.078l.317-6.062v-.004c.006-.09-.047-.215-.188-.296A8.749 8.749 0 0 1 3.25 8.25a8.738 8.738 0 0 1 3.732-7.169 1.547 1.547 0 0 1 1.709-.064c.484.292.809.835.809 1.46v4.714a.25.25 0 0 0 .119.213l2.25 1.385c.08.05.182.05.262 0l2.25-1.385a.25.25 0 0 0 .119-.213V2.478c0-.626.325-1.169.81-1.461a1.547 1.547 0 0 1 1.708.064 8.741 8.741 0 0 1 3.732 7.17 8.747 8.747 0 0 1-4.41 7.598c-.14.081-.193.206-.188.296v.004l.318 6.062a.75.75 0 1 1-1.498.078l-.317-6.058v-.002c-.041-.727.37-1.355.94-1.682A7.247 7.247 0 0 0 19.25 8.25a7.239 7.239 0 0 0-3.093-5.94.114.114 0 0 0-.032-.018l-.01-.001c-.003 0-.014 0-.031.01-.036.022-.084.079-.084.177V7.19c0 .608-.315 1.172-.833 1.49l-2.25 1.385a1.75 1.75 0 0 1-1.834 0l-2.25-1.384A1.752 1.752 0 0 1 8 7.192V2.477c0-.098-.048-.155-.084-.176a.068.068 0 0 0-.031-.011l-.01.001Z"/></g></g></svg></span>
-    </h3>
-</doc-anchor-target>
+<h3 id="troubleshooting">Troubleshooting <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M7.875 2.292a.114.114 0 0 0-.032.018A7.239 7.239 0 0 0 4.75 8.25a7.248 7.248 0 0 0 3.654 6.297c.57.327.982.955.941 1.682v.002l-.317 6.058a.75.75 0 1 1-1.498-.078l.317-6.062v-.004c.006-.09-.047-.215-.188-.296A8.749 8.749 0 0 1 3.25 8.25a8.738 8.738 0 0 1 3.732-7.169 1.547 1.547 0 0 1 1.709-.064c.484.292.809.835.809 1.46v4.714a.25.25 0 0 0 .119.213l2.25 1.385c.08.05.182.05.262 0l2.25-1.385a.25.25 0 0 0 .119-.213V2.478c0-.626.325-1.169.81-1.461a1.547 1.547 0 0 1 1.708.064 8.741 8.741 0 0 1 3.732 7.17 8.747 8.747 0 0 1-4.41 7.598c-.14.081-.193.206-.188.296v.004l.318 6.062a.75.75 0 1 1-1.498.078l-.317-6.058v-.002c-.041-.727.37-1.355.94-1.682A7.247 7.247 0 0 0 19.25 8.25a7.239 7.239 0 0 0-3.093-5.94.114.114 0 0 0-.032-.018l-.01-.001c-.003 0-.014 0-.031.01-.036.022-.084.079-.084.177V7.19c0 .608-.315 1.172-.833 1.49l-2.25 1.385a1.75 1.75 0 0 1-1.834 0l-2.25-1.384A1.752 1.752 0 0 1 8 7.192V2.477c0-.098-.048-.155-.084-.176a.068.068 0 0 0-.031-.011l-.01.001Z"/></g></g></svg></h3>
 <hr>
-<doc-anchor-target id="a-model-isnt-there">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#a-model-isnt-there">#</doc-anchor-trigger>
-        <span>A model isn&#x27;t there.</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="a-model-isnt-there">A model isn&#x27;t there.</h4>
 <ul>
 <li>Click the wrench (<span class="docs-emoji">&#x1F527;</span>) on the left &amp; go to <code translate="no" v-pre>Download Center</code></li>
 <li>Select the category of the model (Process Method)</li>
 <li>Unfold its dropdown &amp; select the model that you need</li>
 <li>Then click the download button (<span class="docs-emoji">&#x1F4E5;</span>). The model will download, which will take a few minutes</li>
 </ul>
-<doc-anchor-target id="uvr-extracted-too-littletoo-much">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#uvr-extracted-too-littletoo-much">#</doc-anchor-trigger>
-        <span>UVR extracted too little/too much.</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="uvr-extracted-too-littletoo-much">UVR extracted too little/too much.</h4>
 <ul>
 <li>Modify the <code translate="no" v-pre>Aggression Setting</code> value on the right.</li>
 <li>This determines the <strong>depth</strong> of the extraction. Only the <strong>VR</strong> method has it.</li>
 <li>A higher value will deepen the extraction, and a lower one will soften it.</li>
 <li>Each audio is different, so you&#x27;ll have to test the ideal value.</li>
 </ul>
-<doc-anchor-target id="i-cant-remove-some-of-the-backing-vocals">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#i-cant-remove-some-of-the-backing-vocals">#</doc-anchor-trigger>
-        <span>I can&#x27;t remove some of the backing vocals.</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="i-cant-remove-some-of-the-backing-vocals">I can&#x27;t remove some of the backing vocals.</h4>
 <ul>
 <li>Run the audio through BVE. Modify the <u><a href="https://docs.aihub.gg/rvc/resources/vocal-isolation/#uvr-extracted-too-little-too-much">Aggression Setting</a></u> if necessary.</li>
 </ul>
 </doc-tab>
 <doc-tab v-cloak id="local-eddy-uvr5-ui">
 <template #title>Local Eddy UVR5 UI</template>
-<div class="content-center"><doc-anchor-target id="local-eddys-uvr5-ui">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#local-eddys-uvr5-ui">#</doc-anchor-trigger>
-        <span>Local Eddy&#x27;s UVR5 UI</span>
-    </h2>
-</doc-anchor-target>
+<div class="content-center"><h2 id="local-eddys-uvr5-ui">Local Eddy&#x27;s UVR5 UI</h2>
 </div>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-warning"></div>
@@ -775,12 +569,7 @@ We recommend picking <code translate="no" v-pre>FLAC</code>. Learn why <u><a hre
         </div>
     </div>
 </div>
-<doc-anchor-target id="installation-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#installation-1">#</doc-anchor-trigger>
-        <span>Installation <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M4.75 17.25a.75.75 0 0 1 .75.75v2.25c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V18a.75.75 0 0 1 1.5 0v2.25A1.75 1.75 0 0 1 18.25 22H5.75A1.75 1.75 0 0 1 4 20.25V18a.75.75 0 0 1 .75-.75Z"/><path d="M5.22 9.97a.749.749 0 0 1 1.06 0l4.97 4.969V2.75a.75.75 0 0 1 1.5 0v12.189l4.97-4.969a.749.749 0 1 1 1.06 1.06l-6.25 6.25a.749.749 0 0 1-1.06 0l-6.25-6.25a.749.749 0 0 1 0-1.06Z"/></g></g></svg></span>
-    </h3>
-</doc-anchor-target>
+<h3 id="installation-1">Installation <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M4.75 17.25a.75.75 0 0 1 .75.75v2.25c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V18a.75.75 0 0 1 1.5 0v2.25A1.75 1.75 0 0 1 18.25 22H5.75A1.75 1.75 0 0 1 4 20.25V18a.75.75 0 0 1 .75-.75Z"/><path d="M5.22 9.97a.749.749 0 0 1 1.06 0l4.97 4.969V2.75a.75.75 0 0 1 1.5 0v12.189l4.97-4.969a.749.749 0 1 1 1.06 1.06l-6.25 6.25a.749.749 0 0 1-1.06 0l-6.25-6.25a.749.749 0 0 1 0-1.06Z"/></g></g></svg></h3>
 <hr>
 <ol>
 <li><p>Go to their <u><a href="https://github.com/Eddycrack864/UVR5-UI/releases/latest">Eddy&#x27;s UVR5 UI Latest Release</a></u> &amp; Follow the installation steps (<strong>Precompiled</strong> versions are suggested).</p>
@@ -788,30 +577,10 @@ We recommend picking <code translate="no" v-pre>FLAC</code>. Learn why <u><a hre
 </li>
 </ol>
 <hr>
-<doc-anchor-target id="section-11">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-11">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
-<doc-anchor-target id="how-to-use-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-use-1">#</doc-anchor-trigger>
-        <span>How to Use <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3.5 3.75a.25.25 0 0 1 .25-.25h13.5a.25.25 0 0 1 .25.25v10a.75.75 0 0 0 1.5 0v-10A1.75 1.75 0 0 0 17.25 2H3.75A1.75 1.75 0 0 0 2 3.75v16.5c0 .966.784 1.75 1.75 1.75h7a.75.75 0 0 0 0-1.5h-7a.25.25 0 0 1-.25-.25V3.75Z"/><path d="M6.25 7a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Zm-.75 4.75a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75Zm16.28 4.53a.75.75 0 1 0-1.06-1.06l-4.97 4.97-1.97-1.97a.75.75 0 1 0-1.06 1.06l2.5 2.5a.75.75 0 0 0 1.06 0l5.5-5.5Z"/></g></g></svg></span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="1-select-input--options">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#1-select-input--options">#</doc-anchor-trigger>
-        <span>1. Select input &amp; options</span>
-    </h4>
-</doc-anchor-target>
-<doc-anchor-target id="section-12">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-12">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
+<h6 id="section-11">‎</h6>
+<h3 id="how-to-use-1">How to Use <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3.5 3.75a.25.25 0 0 1 .25-.25h13.5a.25.25 0 0 1 .25.25v10a.75.75 0 0 0 1.5 0v-10A1.75 1.75 0 0 0 17.25 2H3.75A1.75 1.75 0 0 0 2 3.75v16.5c0 .966.784 1.75 1.75 1.75h7a.75.75 0 0 0 0-1.5h-7a.25.25 0 0 1-.25-.25V3.75Z"/><path d="M6.25 7a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Zm-.75 4.75a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75Zm16.28 4.53a.75.75 0 1 0-1.06-1.06l-4.97 4.97-1.97-1.97a.75.75 0 1 0-1.06 1.06l2.5 2.5a.75.75 0 0 0 1.06 0l5.5-5.5Z"/></g></g></svg></h3>
+<h4 id="1-select-input--options">1. Select input &amp; options</h4>
+<h6 id="section-12">‎</h6>
 <ol type="a" start="1">
 <li>Tap the <strong>Input Audio</strong> box &amp; select your audio, or simply drag &amp; drop.<br />
 ‎<br />
@@ -819,35 +588,15 @@ We recommend picking <code translate="no" v-pre>FLAC</code>. Learn why <u><a hre
 ‎</li>
 </ol>
 <p>‎</p>
-<doc-anchor-target id="2-select-model">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#2-select-model">#</doc-anchor-trigger>
-        <span>2. Select model</span>
-    </h4>
-</doc-anchor-target>
-<doc-anchor-target id="section-13">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-13">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
+<h4 id="2-select-model">2. Select model</h4>
+<h6 id="section-13">‎</h6>
 <ol type="a" start="2">
 <li>Once it&#x27;s done uploading, select a Model by the <a href="https://docs.aihub.gg/rvc/resources/dataset-isolation/#best-models-for-local-eddy-uvr5-ui">List of the Best Models</a>. Under that you can change <strong>Segment Size</strong> and <strong>Overlap</strong>, the defaults are fine.<br />
 <img src="../localeddyuvr5ui-img/model-selection.png" alt="Model Selection" width="1000" height="auto">‎</li>
 </ol>
 <p>‎</p>
-<doc-anchor-target id="3-start-processing">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#3-start-processing">#</doc-anchor-trigger>
-        <span>3. Start Processing</span>
-    </h4>
-</doc-anchor-target>
-<doc-anchor-target id="section-14">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-14">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
+<h4 id="3-start-processing">3. Start Processing</h4>
+<h6 id="section-14">‎</h6>
 <ol type="a" start="1">
 <li><p>Click <strong>Spererate!</strong> below. Wait a moment for the audio to process.<br />
 ‎</p>
@@ -855,12 +604,7 @@ We recommend picking <code translate="no" v-pre>FLAC</code>. Learn why <u><a hre
 <li><p>Playable audios will then appear in the output boxes below. To download the output, click the little download icon in the top right.</p>
 </li>
 </ol>
-<doc-anchor-target id="best-models-for-local-eddy-uvr5-ui">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#best-models-for-local-eddy-uvr5-ui">#</doc-anchor-trigger>
-        <span>Best Models for Local Eddy UVR5 UI</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="best-models-for-local-eddy-uvr5-ui">Best Models for Local Eddy UVR5 UI</h3>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -894,79 +638,34 @@ We recommend picking <code translate="no" v-pre>FLAC</code>. Learn why <u><a hre
 </table>
 </div>
 <hr>
-<doc-anchor-target id="troubleshooting-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#troubleshooting-1">#</doc-anchor-trigger>
-        <span>Troubleshooting <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M7.875 2.292a.114.114 0 0 0-.032.018A7.239 7.239 0 0 0 4.75 8.25a7.248 7.248 0 0 0 3.654 6.297c.57.327.982.955.941 1.682v.002l-.317 6.058a.75.75 0 1 1-1.498-.078l.317-6.062v-.004c.006-.09-.047-.215-.188-.296A8.749 8.749 0 0 1 3.25 8.25a8.738 8.738 0 0 1 3.732-7.169 1.547 1.547 0 0 1 1.709-.064c.484.292.809.835.809 1.46v4.714a.25.25 0 0 0 .119.213l2.25 1.385c.08.05.182.05.262 0l2.25-1.385a.25.25 0 0 0 .119-.213V2.478c0-.626.325-1.169.81-1.461a1.547 1.547 0 0 1 1.708.064 8.741 8.741 0 0 1 3.732 7.17 8.747 8.747 0 0 1-4.41 7.598c-.14.081-.193.206-.188.296v.004l.318 6.062a.75.75 0 1 1-1.498.078l-.317-6.058v-.002c-.041-.727.37-1.355.94-1.682A7.247 7.247 0 0 0 19.25 8.25a7.239 7.239 0 0 0-3.093-5.94.114.114 0 0 0-.032-.018l-.01-.001c-.003 0-.014 0-.031.01-.036.022-.084.079-.084.177V7.19c0 .608-.315 1.172-.833 1.49l-2.25 1.385a1.75 1.75 0 0 1-1.834 0l-2.25-1.384A1.752 1.752 0 0 1 8 7.192V2.477c0-.098-.048-.155-.084-.176a.068.068 0 0 0-.031-.011l-.01.001Z"/></g></g></svg></span>
-    </h3>
-</doc-anchor-target>
+<h3 id="troubleshooting-1">Troubleshooting <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M7.875 2.292a.114.114 0 0 0-.032.018A7.239 7.239 0 0 0 4.75 8.25a7.248 7.248 0 0 0 3.654 6.297c.57.327.982.955.941 1.682v.002l-.317 6.058a.75.75 0 1 1-1.498-.078l.317-6.062v-.004c.006-.09-.047-.215-.188-.296A8.749 8.749 0 0 1 3.25 8.25a8.738 8.738 0 0 1 3.732-7.169 1.547 1.547 0 0 1 1.709-.064c.484.292.809.835.809 1.46v4.714a.25.25 0 0 0 .119.213l2.25 1.385c.08.05.182.05.262 0l2.25-1.385a.25.25 0 0 0 .119-.213V2.478c0-.626.325-1.169.81-1.461a1.547 1.547 0 0 1 1.708.064 8.741 8.741 0 0 1 3.732 7.17 8.747 8.747 0 0 1-4.41 7.598c-.14.081-.193.206-.188.296v.004l.318 6.062a.75.75 0 1 1-1.498.078l-.317-6.058v-.002c-.041-.727.37-1.355.94-1.682A7.247 7.247 0 0 0 19.25 8.25a7.239 7.239 0 0 0-3.093-5.94.114.114 0 0 0-.032-.018l-.01-.001c-.003 0-.014 0-.031.01-.036.022-.084.079-.084.177V7.19c0 .608-.315 1.172-.833 1.49l-2.25 1.385a1.75 1.75 0 0 1-1.834 0l-2.25-1.384A1.752 1.752 0 0 1 8 7.192V2.477c0-.098-.048-.155-.084-.176a.068.068 0 0 0-.031-.011l-.01.001Z"/></g></g></svg></h3>
 <hr>
-<doc-anchor-target id="uvr-extracted-too-littletoo-much-1">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#uvr-extracted-too-littletoo-much-1">#</doc-anchor-trigger>
-        <span>UVR extracted too little/too much.</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="uvr-extracted-too-littletoo-much-1">UVR extracted too little/too much.</h4>
 <ul>
 <li>Modify the <code translate="no" v-pre>Aggression Setting</code> value on the right.</li>
 <li>This determines the depth of the extraction. Only the VR method has it.</li>
 <li>A higher value will deepen the extraction, and a lower one will soften it.</li>
 <li>Each audio is different, so you&#x27;ll have to test the ideal value.</li>
 </ul>
-<doc-anchor-target id="i-cant-remove-some-of-the-backing-vocals-1">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#i-cant-remove-some-of-the-backing-vocals-1">#</doc-anchor-trigger>
-        <span>I can&#x27;t remove some of the backing vocals.</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="i-cant-remove-some-of-the-backing-vocals-1">I can&#x27;t remove some of the backing vocals.</h4>
 <ul>
 <li>Run the audio through BVE. Modify the Aggression Setting if necessary.</li>
 </ul>
-<doc-anchor-target id="i-couldnt-find-my-answer">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#i-couldnt-find-my-answer">#</doc-anchor-trigger>
-        <span>I couldn&#x27;t find my answer.</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="i-couldnt-find-my-answer">I couldn&#x27;t find my answer.</h4>
 <ul>
 <li>Report your issue <u><a href="https://docs.aihub.gg/contributions/">here</a></u>.</li>
 </ul>
 </doc-tab>
 <doc-tab v-cloak id="uvr5-ui-hf">
 <template #title>UVR5 UI HF</template>
-<div class="content-center"><doc-anchor-target id="eddys-uvr5-ui-huggingface-zerogpu-space">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#eddys-uvr5-ui-huggingface-zerogpu-space">#</doc-anchor-trigger>
-        <span>Eddy&#x27;s UVR5 UI HuggingFace ZeroGPU Space</span>
-    </h2>
-</doc-anchor-target>
+<div class="content-center"><h2 id="eddys-uvr5-ui-huggingface-zerogpu-space">Eddy&#x27;s UVR5 UI HuggingFace ZeroGPU Space</h2>
 </div>
 <hr>
-<doc-anchor-target id="how-to-use-2">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-use-2">#</doc-anchor-trigger>
-        <span>How to use <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3.5 3.75a.25.25 0 0 1 .25-.25h13.5a.25.25 0 0 1 .25.25v10a.75.75 0 0 0 1.5 0v-10A1.75 1.75 0 0 0 17.25 2H3.75A1.75 1.75 0 0 0 2 3.75v16.5c0 .966.784 1.75 1.75 1.75h7a.75.75 0 0 0 0-1.5h-7a.25.25 0 0 1-.25-.25V3.75Z"/><path d="M6.25 7a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Zm-.75 4.75a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75Zm16.28 4.53a.75.75 0 1 0-1.06-1.06l-4.97 4.97-1.97-1.97a.75.75 0 1 0-1.06 1.06l2.5 2.5a.75.75 0 0 0 1.06 0l5.5-5.5Z"/></g></g></svg></span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="1-access-the-huggingface-space">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#1-access-the-huggingface-space">#</doc-anchor-trigger>
-        <span>1. Access the HuggingFace Space</span>
-    </h4>
-</doc-anchor-target>
+<h3 id="how-to-use-2">How to use <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3.5 3.75a.25.25 0 0 1 .25-.25h13.5a.25.25 0 0 1 .25.25v10a.75.75 0 0 0 1.5 0v-10A1.75 1.75 0 0 0 17.25 2H3.75A1.75 1.75 0 0 0 2 3.75v16.5c0 .966.784 1.75 1.75 1.75h7a.75.75 0 0 0 0-1.5h-7a.25.25 0 0 1-.25-.25V3.75Z"/><path d="M6.25 7a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Zm-.75 4.75a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75Zm16.28 4.53a.75.75 0 1 0-1.06-1.06l-4.97 4.97-1.97-1.97a.75.75 0 1 0-1.06 1.06l2.5 2.5a.75.75 0 0 0 1.06 0l5.5-5.5Z"/></g></g></svg></h3>
+<h4 id="1-access-the-huggingface-space">1. Access the HuggingFace Space</h4>
 <p>Access the space <u><a href="https://huggingface.co/spaces/TheStinger/UVR5_UI">here</a></u>, you don&#x27;t need an account to use this, but making one will get you more free time, and paying for HuggingFace PRO will give you the most ZeroGPU time.</p>
-<doc-anchor-target id="2-select-input--options">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#2-select-input--options">#</doc-anchor-trigger>
-        <span>2. Select input &amp; options</span>
-    </h4>
-</doc-anchor-target>
-<doc-anchor-target id="section-15">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-15">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
+<h4 id="2-select-input--options">2. Select input &amp; options</h4>
+<h6 id="section-15">‎</h6>
 <ol type="a" start="1">
 <li>Tap the <strong>Input Audio</strong> box &amp; select your audio, or simply drag &amp; drop.<br />
 ‎<br />
@@ -974,35 +673,15 @@ We recommend picking <code translate="no" v-pre>FLAC</code>. Learn why <u><a hre
 ‎</li>
 </ol>
 <p>‎</p>
-<doc-anchor-target id="3-select-model">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#3-select-model">#</doc-anchor-trigger>
-        <span>3. Select model</span>
-    </h4>
-</doc-anchor-target>
-<doc-anchor-target id="section-16">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-16">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
+<h4 id="3-select-model">3. Select model</h4>
+<h6 id="section-16">‎</h6>
 <ol type="a" start="2">
 <li>Once it&#x27;s done uploading, select a Model by the <a href="https://docs.aihub.gg/rvc/resources/dataset-isolation/#best-models-for-uvr5-ui-hf">List of the Best Models</a>. Under that you can change <strong>Segment Size</strong> and <strong>Overlap</strong>, the defaults are fine.<br />
 <img src="../hugging-img/model-selection.png" alt="Model Selection" width="1000" height="auto">‎</li>
 </ol>
 <p>‎</p>
-<doc-anchor-target id="4-start-processing">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#4-start-processing">#</doc-anchor-trigger>
-        <span>4. Start Processing</span>
-    </h4>
-</doc-anchor-target>
-<doc-anchor-target id="section-17">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-17">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
+<h4 id="4-start-processing">4. Start Processing</h4>
+<h6 id="section-17">‎</h6>
 <ol type="a" start="1">
 <li><p>Click <strong>Spererate!</strong> below. Wait a moment for the audio to process.<br />
 ‎</p>
@@ -1010,12 +689,7 @@ We recommend picking <code translate="no" v-pre>FLAC</code>. Learn why <u><a hre
 <li><p>Playable audios will then appear in the output boxes below. To download the output, click the little download icon in the top right.</p>
 </li>
 </ol>
-<doc-anchor-target id="best-models-for-uvr5-ui-hf">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#best-models-for-uvr5-ui-hf">#</doc-anchor-trigger>
-        <span>Best Models for UVR5-UI-HF</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="best-models-for-uvr5-ui-hf">Best Models for UVR5-UI-HF</h3>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -1049,56 +723,26 @@ We recommend picking <code translate="no" v-pre>FLAC</code>. Learn why <u><a hre
 </table>
 </div>
 <hr>
-<doc-anchor-target id="troubleshooting-2">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#troubleshooting-2">#</doc-anchor-trigger>
-        <span>Troubleshooting <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M7.875 2.292a.114.114 0 0 0-.032.018A7.239 7.239 0 0 0 4.75 8.25a7.248 7.248 0 0 0 3.654 6.297c.57.327.982.955.941 1.682v.002l-.317 6.058a.75.75 0 1 1-1.498-.078l.317-6.062v-.004c.006-.09-.047-.215-.188-.296A8.749 8.749 0 0 1 3.25 8.25a8.738 8.738 0 0 1 3.732-7.169 1.547 1.547 0 0 1 1.709-.064c.484.292.809.835.809 1.46v4.714a.25.25 0 0 0 .119.213l2.25 1.385c.08.05.182.05.262 0l2.25-1.385a.25.25 0 0 0 .119-.213V2.478c0-.626.325-1.169.81-1.461a1.547 1.547 0 0 1 1.708.064 8.741 8.741 0 0 1 3.732 7.17 8.747 8.747 0 0 1-4.41 7.598c-.14.081-.193.206-.188.296v.004l.318 6.062a.75.75 0 1 1-1.498.078l-.317-6.058v-.002c-.041-.727.37-1.355.94-1.682A7.247 7.247 0 0 0 19.25 8.25a7.239 7.239 0 0 0-3.093-5.94.114.114 0 0 0-.032-.018l-.01-.001c-.003 0-.014 0-.031.01-.036.022-.084.079-.084.177V7.19c0 .608-.315 1.172-.833 1.49l-2.25 1.385a1.75 1.75 0 0 1-1.834 0l-2.25-1.384A1.752 1.752 0 0 1 8 7.192V2.477c0-.098-.048-.155-.084-.176a.068.068 0 0 0-.031-.011l-.01.001Z"/></g></g></svg></span>
-    </h3>
-</doc-anchor-target>
+<h3 id="troubleshooting-2">Troubleshooting <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M7.875 2.292a.114.114 0 0 0-.032.018A7.239 7.239 0 0 0 4.75 8.25a7.248 7.248 0 0 0 3.654 6.297c.57.327.982.955.941 1.682v.002l-.317 6.058a.75.75 0 1 1-1.498-.078l.317-6.062v-.004c.006-.09-.047-.215-.188-.296A8.749 8.749 0 0 1 3.25 8.25a8.738 8.738 0 0 1 3.732-7.169 1.547 1.547 0 0 1 1.709-.064c.484.292.809.835.809 1.46v4.714a.25.25 0 0 0 .119.213l2.25 1.385c.08.05.182.05.262 0l2.25-1.385a.25.25 0 0 0 .119-.213V2.478c0-.626.325-1.169.81-1.461a1.547 1.547 0 0 1 1.708.064 8.741 8.741 0 0 1 3.732 7.17 8.747 8.747 0 0 1-4.41 7.598c-.14.081-.193.206-.188.296v.004l.318 6.062a.75.75 0 1 1-1.498.078l-.317-6.058v-.002c-.041-.727.37-1.355.94-1.682A7.247 7.247 0 0 0 19.25 8.25a7.239 7.239 0 0 0-3.093-5.94.114.114 0 0 0-.032-.018l-.01-.001c-.003 0-.014 0-.031.01-.036.022-.084.079-.084.177V7.19c0 .608-.315 1.172-.833 1.49l-2.25 1.385a1.75 1.75 0 0 1-1.834 0l-2.25-1.384A1.752 1.752 0 0 1 8 7.192V2.477c0-.098-.048-.155-.084-.176a.068.068 0 0 0-.031-.011l-.01.001Z"/></g></g></svg></h3>
 <hr>
-<doc-anchor-target id="uvr-extracted-too-littletoo-much-2">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#uvr-extracted-too-littletoo-much-2">#</doc-anchor-trigger>
-        <span>UVR extracted too little/too much.</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="uvr-extracted-too-littletoo-much-2">UVR extracted too little/too much.</h4>
 <ul>
 <li>Modify the <code translate="no" v-pre>Aggression Setting</code> value on the right.</li>
 <li>This determines the depth of the extraction. Only the VR method has it.</li>
 <li>A higher value will deepen the extraction, and a lower one will soften it.</li>
 <li>Each audio is different, so you&#x27;ll have to test the ideal value.</li>
 </ul>
-<doc-anchor-target id="i-cant-remove-some-of-the-backing-vocals-2">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#i-cant-remove-some-of-the-backing-vocals-2">#</doc-anchor-trigger>
-        <span>I can&#x27;t remove some of the backing vocals.</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="i-cant-remove-some-of-the-backing-vocals-2">I can&#x27;t remove some of the backing vocals.</h4>
 <ul>
 <li>Run the audio through BVE. Modify the Aggression Setting if necessary.</li>
 </ul>
-<doc-anchor-target id="i-couldnt-find-my-answer-1">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#i-couldnt-find-my-answer-1">#</doc-anchor-trigger>
-        <span>I couldn&#x27;t find my answer.</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="i-couldnt-find-my-answer-1">I couldn&#x27;t find my answer.</h4>
 <ul>
 <li>Report your issue <u><a href="https://docs.aihub.gg/contributions/">here</a></u>.</li>
 </ul>
-<doc-anchor-target id="gpu-task-aborted">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#gpu-task-aborted">#</doc-anchor-trigger>
-        <span>GPU task aborted:</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="gpu-task-aborted">GPU task aborted:</h3>
 <p>ZeroGPU HuggingFace Spaces have a max inference time duration, it’s the time it takes to do an Inference (use the model, not the time of your audio file itself), on default it’s around 1 minute which is what Eddy&#x27;s UVR5 UI uses. You need to retry with a shorter audio, you could also split your audio.</p>
-<doc-anchor-target id="you-have-exceeded-your-gpu-quota--number-s-left-vs-60s-requested-sign-up-on-hugging-face-to-get-more-quotas-or-retry-in-hourminutesseconds">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#you-have-exceeded-your-gpu-quota--number-s-left-vs-60s-requested-sign-up-on-hugging-face-to-get-more-quotas-or-retry-in-hourminutesseconds">#</doc-anchor-trigger>
-        <span>You have exceeded your GPU quota ( NUMBER s left vs. 60s requested). Sign-up on Hugging Face to get more quotas or retry in Hour:Minutes:Seconds</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="you-have-exceeded-your-gpu-quota--number-s-left-vs-60s-requested-sign-up-on-hugging-face-to-get-more-quotas-or-retry-in-hourminutesseconds">You have exceeded your GPU quota ( NUMBER s left vs. 60s requested). Sign-up on Hugging Face to get more quotas or retry in Hour:Minutes:Seconds</h3>
 <p>ZeroGPU HuggingFace Spaces have a quota per account, if you aren’t signed in you will get less quota so it’s better to login for more quota. You could get the ‘Sign-up’ part even if you are logged in. The ZeroGPU Quota can’t be seen but it isn’t unlimited. You can either:</p>
 <ul>
 <li>Login so you get more quota</li>
@@ -1108,32 +752,12 @@ We recommend picking <code translate="no" v-pre>FLAC</code>. Learn why <u><a hre
 </doc-tab>
 <doc-tab v-cloak id="uvr5-ui-colab">
 <template #title>UVR5 UI Colab</template>
-<div class="content-center"><doc-anchor-target id="eddys-uvr5-ui-google-colab">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#eddys-uvr5-ui-google-colab">#</doc-anchor-trigger>
-        <span>Eddy&#x27;s UVR5 UI Google Colab</span>
-    </h2>
-</doc-anchor-target>
+<div class="content-center"><h2 id="eddys-uvr5-ui-google-colab">Eddy&#x27;s UVR5 UI Google Colab</h2>
 </div>
 <hr>
-<doc-anchor-target id="how-to-use-3">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-use-3">#</doc-anchor-trigger>
-        <span>How to Use <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3.5 3.75a.25.25 0 0 1 .25-.25h13.5a.25.25 0 0 1 .25.25v10a.75.75 0 0 0 1.5 0v-10A1.75 1.75 0 0 0 17.25 2H3.75A1.75 1.75 0 0 0 2 3.75v16.5c0 .966.784 1.75 1.75 1.75h7a.75.75 0 0 0 0-1.5h-7a.25.25 0 0 1-.25-.25V3.75Z"/><path d="M6.25 7a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Zm-.75 4.75a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75Zm16.28 4.53a.75.75 0 1 0-1.06-1.06l-4.97 4.97-1.97-1.97a.75.75 0 1 0-1.06 1.06l2.5 2.5a.75.75 0 0 0 1.06 0l5.5-5.5Z"/></g></g></svg></span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="1-set-up-colab">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#1-set-up-colab">#</doc-anchor-trigger>
-        <span>1. Set up Colab</span>
-    </h4>
-</doc-anchor-target>
-<doc-anchor-target id="section-18">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-18">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
+<h3 id="how-to-use-3">How to Use <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3.5 3.75a.25.25 0 0 1 .25-.25h13.5a.25.25 0 0 1 .25.25v10a.75.75 0 0 0 1.5 0v-10A1.75 1.75 0 0 0 17.25 2H3.75A1.75 1.75 0 0 0 2 3.75v16.5c0 .966.784 1.75 1.75 1.75h7a.75.75 0 0 0 0-1.5h-7a.25.25 0 0 1-.25-.25V3.75Z"/><path d="M6.25 7a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Zm-.75 4.75a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75Zm16.28 4.53a.75.75 0 1 0-1.06-1.06l-4.97 4.97-1.97-1.97a.75.75 0 1 0-1.06 1.06l2.5 2.5a.75.75 0 0 0 1.06 0l5.5-5.5Z"/></g></g></svg></h3>
+<h4 id="1-set-up-colab">1. Set up Colab</h4>
+<h6 id="section-18">‎</h6>
 <ol>
 <li><p>First access <u><a href="https://colab.research.google.com/github/Eddycrack864/UVR5-UI/blob/main/UVR_UI.ipynb">Eddy&#x27;s UVR UI Google Colab</a></u>.<br />
 ‎</p>
@@ -1154,12 +778,7 @@ We recommend picking <code translate="no" v-pre>FLAC</code>. Learn why <u><a hre
 <li>Once it&#x27;s done open the public url, and it will be the same as using Eddy&#x27;s UVR5 UI Local/HF-Space.</li>
 </ul>
 <hr>
-<doc-anchor-target id="best-models-for-uvr5-ui-colab">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#best-models-for-uvr5-ui-colab">#</doc-anchor-trigger>
-        <span>Best Models for UVR5-UI-Colab</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="best-models-for-uvr5-ui-colab">Best Models for UVR5-UI-Colab</h3>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -1193,51 +812,21 @@ We recommend picking <code translate="no" v-pre>FLAC</code>. Learn why <u><a hre
 </table>
 </div>
 <hr>
-<doc-anchor-target id="troubleshooting-3">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#troubleshooting-3">#</doc-anchor-trigger>
-        <span>Troubleshooting <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M7.875 2.292a.114.114 0 0 0-.032.018A7.239 7.239 0 0 0 4.75 8.25a7.248 7.248 0 0 0 3.654 6.297c.57.327.982.955.941 1.682v.002l-.317 6.058a.75.75 0 1 1-1.498-.078l.317-6.062v-.004c.006-.09-.047-.215-.188-.296A8.749 8.749 0 0 1 3.25 8.25a8.738 8.738 0 0 1 3.732-7.169 1.547 1.547 0 0 1 1.709-.064c.484.292.809.835.809 1.46v4.714a.25.25 0 0 0 .119.213l2.25 1.385c.08.05.182.05.262 0l2.25-1.385a.25.25 0 0 0 .119-.213V2.478c0-.626.325-1.169.81-1.461a1.547 1.547 0 0 1 1.708.064 8.741 8.741 0 0 1 3.732 7.17 8.747 8.747 0 0 1-4.41 7.598c-.14.081-.193.206-.188.296v.004l.318 6.062a.75.75 0 1 1-1.498.078l-.317-6.058v-.002c-.041-.727.37-1.355.94-1.682A7.247 7.247 0 0 0 19.25 8.25a7.239 7.239 0 0 0-3.093-5.94.114.114 0 0 0-.032-.018l-.01-.001c-.003 0-.014 0-.031.01-.036.022-.084.079-.084.177V7.19c0 .608-.315 1.172-.833 1.49l-2.25 1.385a1.75 1.75 0 0 1-1.834 0l-2.25-1.384A1.752 1.752 0 0 1 8 7.192V2.477c0-.098-.048-.155-.084-.176a.068.068 0 0 0-.031-.011l-.01.001Z"/></g></g></svg></span>
-    </h3>
-</doc-anchor-target>
+<h3 id="troubleshooting-3">Troubleshooting <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M7.875 2.292a.114.114 0 0 0-.032.018A7.239 7.239 0 0 0 4.75 8.25a7.248 7.248 0 0 0 3.654 6.297c.57.327.982.955.941 1.682v.002l-.317 6.058a.75.75 0 1 1-1.498-.078l.317-6.062v-.004c.006-.09-.047-.215-.188-.296A8.749 8.749 0 0 1 3.25 8.25a8.738 8.738 0 0 1 3.732-7.169 1.547 1.547 0 0 1 1.709-.064c.484.292.809.835.809 1.46v4.714a.25.25 0 0 0 .119.213l2.25 1.385c.08.05.182.05.262 0l2.25-1.385a.25.25 0 0 0 .119-.213V2.478c0-.626.325-1.169.81-1.461a1.547 1.547 0 0 1 1.708.064 8.741 8.741 0 0 1 3.732 7.17 8.747 8.747 0 0 1-4.41 7.598c-.14.081-.193.206-.188.296v.004l.318 6.062a.75.75 0 1 1-1.498.078l-.317-6.058v-.002c-.041-.727.37-1.355.94-1.682A7.247 7.247 0 0 0 19.25 8.25a7.239 7.239 0 0 0-3.093-5.94.114.114 0 0 0-.032-.018l-.01-.001c-.003 0-.014 0-.031.01-.036.022-.084.079-.084.177V7.19c0 .608-.315 1.172-.833 1.49l-2.25 1.385a1.75 1.75 0 0 1-1.834 0l-2.25-1.384A1.752 1.752 0 0 1 8 7.192V2.477c0-.098-.048-.155-.084-.176a.068.068 0 0 0-.031-.011l-.01.001Z"/></g></g></svg></h3>
 <hr>
-<doc-anchor-target id="cannot-connect-to-gpu-backend">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#cannot-connect-to-gpu-backend">#</doc-anchor-trigger>
-        <span>Cannot connect to GPU backend.</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="cannot-connect-to-gpu-backend">Cannot connect to GPU backend.</h4>
 <ul>
 <li>You have exhausted the <u><a href="https://docs.aihub.gg/rvc/extra/glossary/#google-colab">GPU runtime</a></u> of Colab.</li>
 </ul>
 </doc-tab>
 <doc-tab v-cloak id="msst-colab">
 <template #title>MSST Colab</template>
-<div class="content-center"><doc-anchor-target id="msst-colab">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#msst-colab">#</doc-anchor-trigger>
-        <span>MSST Colab</span>
-    </h2>
-</doc-anchor-target>
+<div class="content-center"><h2 id="msst-colab">MSST Colab</h2>
 </div>
 <p>This is jarredou&#x27;s Music Source Separation Training (MSST) (Colab Inference).</p>
-<doc-anchor-target id="how-to-use-4">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-use-4">#</doc-anchor-trigger>
-        <span>How to Use <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3.5 3.75a.25.25 0 0 1 .25-.25h13.5a.25.25 0 0 1 .25.25v10a.75.75 0 0 0 1.5 0v-10A1.75 1.75 0 0 0 17.25 2H3.75A1.75 1.75 0 0 0 2 3.75v16.5c0 .966.784 1.75 1.75 1.75h7a.75.75 0 0 0 0-1.5h-7a.25.25 0 0 1-.25-.25V3.75Z"/><path d="M6.25 7a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Zm-.75 4.75a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75Zm16.28 4.53a.75.75 0 1 0-1.06-1.06l-4.97 4.97-1.97-1.97a.75.75 0 1 0-1.06 1.06l2.5 2.5a.75.75 0 0 0 1.06 0l5.5-5.5Z"/></g></g></svg></span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="1-set-up-colab-1">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#1-set-up-colab-1">#</doc-anchor-trigger>
-        <span>1. Set up Colab</span>
-    </h4>
-</doc-anchor-target>
-<doc-anchor-target id="section-19">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-19">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
+<h3 id="how-to-use-4">How to Use <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3.5 3.75a.25.25 0 0 1 .25-.25h13.5a.25.25 0 0 1 .25.25v10a.75.75 0 0 0 1.5 0v-10A1.75 1.75 0 0 0 17.25 2H3.75A1.75 1.75 0 0 0 2 3.75v16.5c0 .966.784 1.75 1.75 1.75h7a.75.75 0 0 0 0-1.5h-7a.25.25 0 0 1-.25-.25V3.75Z"/><path d="M6.25 7a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Zm-.75 4.75a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75Zm16.28 4.53a.75.75 0 1 0-1.06-1.06l-4.97 4.97-1.97-1.97a.75.75 0 1 0-1.06 1.06l2.5 2.5a.75.75 0 0 0 1.06 0l5.5-5.5Z"/></g></g></svg></h3>
+<h4 id="1-set-up-colab-1">1. Set up Colab</h4>
+<h6 id="section-19">‎</h6>
 <ol>
 <li><p>First access the Colab space <u><a href="https://colab.research.google.com/github/jarredou/Music-Source-Separation-Training-Colab-Inference/blob/main/Music_Source_Separation_Training_(Colab_Inference).ipynb">here</a></u>.<br />
 ‎</p>
@@ -1267,18 +856,8 @@ We recommend picking <code translate="no" v-pre>FLAC</code>. Learn why <u><a hre
 </ul>
 <hr>
 <p>‎</p>
-<doc-anchor-target id="2-set-up-folders">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#2-set-up-folders">#</doc-anchor-trigger>
-        <span>2. Set up folders</span>
-    </h4>
-</doc-anchor-target>
-<doc-anchor-target id="section-20">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-20">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
+<h4 id="2-set-up-folders">2. Set up folders</h4>
+<h6 id="section-20">‎</h6>
 <ul>
 <li>In Google Drive, make two folders, named <strong>input</strong> &amp; <strong>output</strong>.<br />
 ‎<br />
@@ -1288,18 +867,8 @@ We recommend picking <code translate="no" v-pre>FLAC</code>. Learn why <u><a hre
 </ul>
 <hr>
 <p>‎</p>
-<doc-anchor-target id="3-separate">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#3-separate">#</doc-anchor-trigger>
-        <span>3. Separate</span>
-    </h4>
-</doc-anchor-target>
-<doc-anchor-target id="section-21">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-21">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
+<h4 id="3-separate">3. Separate</h4>
+<h6 id="section-21">‎</h6>
 <ol type="a" start="1">
 <li>Select your model of choice and run the <strong>Separation</strong> cell. You can look for the <u><a href="https://docs.aihub.gg/rvc/resources/vocal-isolation/#best-models-for-msst">List of the Best Models</a></u>.</li>
 </ol>
@@ -1331,12 +900,7 @@ We recommend picking <code translate="no" v-pre>FLAC</code>. Learn why <u><a hre
 <li>Download the result located in the output folder.</li>
 </ol>
 <hr>
-<doc-anchor-target id="best-models-for-msst">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#best-models-for-msst">#</doc-anchor-trigger>
-        <span>Best models for MSST:</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="best-models-for-msst">Best models for MSST:</h4>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -1370,43 +934,23 @@ We recommend picking <code translate="no" v-pre>FLAC</code>. Learn why <u><a hre
 </table>
 </div>
 <p>‎</p>
-<doc-anchor-target id="troubleshooting-4">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#troubleshooting-4">#</doc-anchor-trigger>
-        <span>Troubleshooting <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M7.875 2.292a.114.114 0 0 0-.032.018A7.239 7.239 0 0 0 4.75 8.25a7.248 7.248 0 0 0 3.654 6.297c.57.327.982.955.941 1.682v.002l-.317 6.058a.75.75 0 1 1-1.498-.078l.317-6.062v-.004c.006-.09-.047-.215-.188-.296A8.749 8.749 0 0 1 3.25 8.25a8.738 8.738 0 0 1 3.732-7.169 1.547 1.547 0 0 1 1.709-.064c.484.292.809.835.809 1.46v4.714a.25.25 0 0 0 .119.213l2.25 1.385c.08.05.182.05.262 0l2.25-1.385a.25.25 0 0 0 .119-.213V2.478c0-.626.325-1.169.81-1.461a1.547 1.547 0 0 1 1.708.064 8.741 8.741 0 0 1 3.732 7.17 8.747 8.747 0 0 1-4.41 7.598c-.14.081-.193.206-.188.296v.004l.318 6.062a.75.75 0 1 1-1.498.078l-.317-6.058v-.002c-.041-.727.37-1.355.94-1.682A7.247 7.247 0 0 0 19.25 8.25a7.239 7.239 0 0 0-3.093-5.94.114.114 0 0 0-.032-.018l-.01-.001c-.003 0-.014 0-.031.01-.036.022-.084.079-.084.177V7.19c0 .608-.315 1.172-.833 1.49l-2.25 1.385a1.75 1.75 0 0 1-1.834 0l-2.25-1.384A1.752 1.752 0 0 1 8 7.192V2.477c0-.098-.048-.155-.084-.176a.068.068 0 0 0-.031-.011l-.01.001Z"/></g></g></svg></span>
-    </h3>
-</doc-anchor-target>
+<h3 id="troubleshooting-4">Troubleshooting <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M7.875 2.292a.114.114 0 0 0-.032.018A7.239 7.239 0 0 0 4.75 8.25a7.248 7.248 0 0 0 3.654 6.297c.57.327.982.955.941 1.682v.002l-.317 6.058a.75.75 0 1 1-1.498-.078l.317-6.062v-.004c.006-.09-.047-.215-.188-.296A8.749 8.749 0 0 1 3.25 8.25a8.738 8.738 0 0 1 3.732-7.169 1.547 1.547 0 0 1 1.709-.064c.484.292.809.835.809 1.46v4.714a.25.25 0 0 0 .119.213l2.25 1.385c.08.05.182.05.262 0l2.25-1.385a.25.25 0 0 0 .119-.213V2.478c0-.626.325-1.169.81-1.461a1.547 1.547 0 0 1 1.708.064 8.741 8.741 0 0 1 3.732 7.17 8.747 8.747 0 0 1-4.41 7.598c-.14.081-.193.206-.188.296v.004l.318 6.062a.75.75 0 1 1-1.498.078l-.317-6.058v-.002c-.041-.727.37-1.355.94-1.682A7.247 7.247 0 0 0 19.25 8.25a7.239 7.239 0 0 0-3.093-5.94.114.114 0 0 0-.032-.018l-.01-.001c-.003 0-.014 0-.031.01-.036.022-.084.079-.084.177V7.19c0 .608-.315 1.172-.833 1.49l-2.25 1.385a1.75 1.75 0 0 1-1.834 0l-2.25-1.384A1.752 1.752 0 0 1 8 7.192V2.477c0-.098-.048-.155-.084-.176a.068.068 0 0 0-.031-.011l-.01.001Z"/></g></g></svg></h3>
 <hr>
-<doc-anchor-target id="cannot-connect-to-gpu-backend-1">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#cannot-connect-to-gpu-backend-1">#</doc-anchor-trigger>
-        <span>Cannot connect to GPU backend.</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="cannot-connect-to-gpu-backend-1">Cannot connect to GPU backend.</h4>
 <ul>
 <li>You have exhausted the <u><a href="https://docs.aihub.gg/rvc/extra/glossary/#google-colab">GPU runtime</a></u> of Colab.</li>
 </ul>
 </doc-tab>
 <doc-tab v-cloak id="mvsep">
 <template #title>MVSEP</template>
-<div class="content-center"><doc-anchor-target id="mvsep">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#mvsep">#</doc-anchor-trigger>
-        <span>MVSEP</span>
-    </h2>
-</doc-anchor-target>
+<div class="content-center"><h2 id="mvsep">MVSEP</h2>
 </div>
 <div class="content-center"><p><a href="https://mvsep.com/billing" class="no-link inline-flex align-middle items-center font-medium cursor-pointer transition-colors duration-200 ease-out focus:outline-hidden bg-button-danger hover:bg-button-danger-hover text-button-danger-text px-4 h-10 text-sm rounded-full">
     <span>Support MVSEP by Paying</span>
     <span><svg xmlns="http://www.w3.org/2000/svg" class="mb-px inline-flex ml-2" width="18" height="18" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M14 20.408c-.492.308-.903.546-1.192.709-.153.086-.308.17-.463.252h-.002a.75.75 0 0 1-.686 0 16.709 16.709 0 0 1-.465-.252 31.147 31.147 0 0 1-4.803-3.34C3.8 15.572 1 12.331 1 8.513 1 5.052 3.829 2.5 6.736 2.5 9.03 2.5 10.881 3.726 12 5.605 13.12 3.726 14.97 2.5 17.264 2.5 20.17 2.5 23 5.052 23 8.514c0 3.818-2.801 7.06-5.389 9.262A31.146 31.146 0 0 1 14 20.408Z"/></g></svg></span>
 </a></p>
 </div>
-<doc-anchor-target id="important-notes-">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#important-notes-">#</doc-anchor-trigger>
-        <span>Important Notes ‎ <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M13 17.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm-.25-8.25a.75.75 0 0 0-1.5 0v4.5a.75.75 0 0 0 1.5 0v-4.5Z"/><path d="M9.836 3.244c.963-1.665 3.365-1.665 4.328 0l8.967 15.504c.963 1.667-.24 3.752-2.165 3.752H3.034c-1.926 0-3.128-2.085-2.165-3.752Zm3.03.751a1.002 1.002 0 0 0-1.732 0L2.168 19.499A1.002 1.002 0 0 0 3.034 21h17.932a1.002 1.002 0 0 0 .866-1.5L12.866 3.994Z"/></g></g></svg></span>
-    </h3>
-</doc-anchor-target>
+<h3 id="important-notes-">Important Notes ‎ <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M13 17.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm-.25-8.25a.75.75 0 0 0-1.5 0v4.5a.75.75 0 0 0 1.5 0v-4.5Z"/><path d="M9.836 3.244c.963-1.665 3.365-1.665 4.328 0l8.967 15.504c.963 1.667-.24 3.752-2.165 3.752H3.034c-1.926 0-3.128-2.085-2.165-3.752Zm3.03.751a1.002 1.002 0 0 0-1.732 0L2.168 19.499A1.002 1.002 0 0 0 3.034 21h17.932a1.002 1.002 0 0 0 .866-1.5L12.866 3.994Z"/></g></g></svg></h3>
 <hr>
 <ul>
 <li><p>MVSEP is a website for isolating vocals, that works similarly as UVR.</p>
@@ -1417,25 +961,10 @@ We recommend picking <code translate="no" v-pre>FLAC</code>. Learn why <u><a hre
 </li>
 </ul>
 <hr>
-<doc-anchor-target id="how-to-use-5">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-use-5">#</doc-anchor-trigger>
-        <span>How to Use <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3.5 3.75a.25.25 0 0 1 .25-.25h13.5a.25.25 0 0 1 .25.25v10a.75.75 0 0 0 1.5 0v-10A1.75 1.75 0 0 0 17.25 2H3.75A1.75 1.75 0 0 0 2 3.75v16.5c0 .966.784 1.75 1.75 1.75h7a.75.75 0 0 0 0-1.5h-7a.25.25 0 0 1-.25-.25V3.75Z"/><path d="M6.25 7a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Zm-.75 4.75a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75Zm16.28 4.53a.75.75 0 1 0-1.06-1.06l-4.97 4.97-1.97-1.97a.75.75 0 1 0-1.06 1.06l2.5 2.5a.75.75 0 0 0 1.06 0l5.5-5.5Z"/></g></g></svg></span>
-    </h3>
-</doc-anchor-target>
+<h3 id="how-to-use-5">How to Use <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3.5 3.75a.25.25 0 0 1 .25-.25h13.5a.25.25 0 0 1 .25.25v10a.75.75 0 0 0 1.5 0v-10A1.75 1.75 0 0 0 17.25 2H3.75A1.75 1.75 0 0 0 2 3.75v16.5c0 .966.784 1.75 1.75 1.75h7a.75.75 0 0 0 0-1.5h-7a.25.25 0 0 1-.25-.25V3.75Z"/><path d="M6.25 7a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Zm-.75 4.75a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75Zm16.28 4.53a.75.75 0 1 0-1.06-1.06l-4.97 4.97-1.97-1.97a.75.75 0 1 0-1.06 1.06l2.5 2.5a.75.75 0 0 0 1.06 0l5.5-5.5Z"/></g></g></svg></h3>
 <hr>
-<doc-anchor-target id="1-log-in">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#1-log-in">#</doc-anchor-trigger>
-        <span>1. Log in.</span>
-    </h4>
-</doc-anchor-target>
-<doc-anchor-target id="section-22">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-22">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
+<h4 id="1-log-in">1. Log in.</h4>
+<h6 id="section-22">‎</h6>
 <ol type="a" start="1">
 <li><p>First, <u><a href="https://mvsep.com/register">login</a></u>.
 ‎</p>
@@ -1462,18 +991,8 @@ We recommend picking <code translate="no" v-pre>FLAC</code>. Learn why <u><a hre
 </div>
 <hr>
 <p>‎</p>
-<doc-anchor-target id="2-select-audio">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#2-select-audio">#</doc-anchor-trigger>
-        <span>2. Select audio.</span>
-    </h4>
-</doc-anchor-target>
-<doc-anchor-target id="section-23">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-23">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
+<h4 id="2-select-audio">2. Select audio.</h4>
+<h6 id="section-23">‎</h6>
 <ol type="a" start="1">
 <li><p>Click <code translate="no" v-pre>Browse File</code> &amp; select your audio, or simply drag &amp; drop. The audio will begin to upload.</p>
  <img src="../mvsep-img/upload-input.png" alt="Upload Input" width="330" height="auto">
@@ -1481,18 +1000,8 @@ We recommend picking <code translate="no" v-pre>FLAC</code>. Learn why <u><a hre
 </ol>
 <hr>
 <p>‎</p>
-<doc-anchor-target id="3-model-usage">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#3-model-usage">#</doc-anchor-trigger>
-        <span>3. Model usage.</span>
-    </h4>
-</doc-anchor-target>
-<doc-anchor-target id="section-24">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-24">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
+<h4 id="3-model-usage">3. Model usage.</h4>
+<h6 id="section-24">‎</h6>
 <ol type="a" start="1">
 <li><p>In <strong>Separation type</strong> Select a Model based on the <a href="https://docs.aihub.gg/rvc/resources/vocal-isolation/#best-models-for-mvsep">Best Models List</a>.
 ‎</p>
@@ -1525,18 +1034,8 @@ We recommend selecting FLAC from now on. Learn more <u><a href="https://docs.aih
 </div>
 <hr>
 <p>‎</p>
-<doc-anchor-target id="4-download-output">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#4-download-output">#</doc-anchor-trigger>
-        <span>4. Download output.</span>
-    </h4>
-</doc-anchor-target>
-<doc-anchor-target id="section-25">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-25">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
+<h4 id="4-download-output">4. Download output.</h4>
+<h6 id="section-25">‎</h6>
 <ul>
 <li>When it&#x27;s done converting it will redirect you to a page where you can listen the results.</li>
 </ul>
@@ -1549,12 +1048,7 @@ We recommend selecting FLAC from now on. Learn more <u><a href="https://docs.aih
 </li>
 </ol>
 <hr>
-<doc-anchor-target id="best-models-for-mvsep">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#best-models-for-mvsep">#</doc-anchor-trigger>
-        <span>Best Models for MVSEP:</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="best-models-for-mvsep">Best Models for MVSEP:</h4>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -1594,57 +1088,27 @@ We recommend selecting FLAC from now on. Learn more <u><a href="https://docs.aih
 </table>
 </div>
 <hr>
-<doc-anchor-target id="troubleshooting-5">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#troubleshooting-5">#</doc-anchor-trigger>
-        <span>Troubleshooting <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M7.875 2.292a.114.114 0 0 0-.032.018A7.239 7.239 0 0 0 4.75 8.25a7.248 7.248 0 0 0 3.654 6.297c.57.327.982.955.941 1.682v.002l-.317 6.058a.75.75 0 1 1-1.498-.078l.317-6.062v-.004c.006-.09-.047-.215-.188-.296A8.749 8.749 0 0 1 3.25 8.25a8.738 8.738 0 0 1 3.732-7.169 1.547 1.547 0 0 1 1.709-.064c.484.292.809.835.809 1.46v4.714a.25.25 0 0 0 .119.213l2.25 1.385c.08.05.182.05.262 0l2.25-1.385a.25.25 0 0 0 .119-.213V2.478c0-.626.325-1.169.81-1.461a1.547 1.547 0 0 1 1.708.064 8.741 8.741 0 0 1 3.732 7.17 8.747 8.747 0 0 1-4.41 7.598c-.14.081-.193.206-.188.296v.004l.318 6.062a.75.75 0 1 1-1.498.078l-.317-6.058v-.002c-.041-.727.37-1.355.94-1.682A7.247 7.247 0 0 0 19.25 8.25a7.239 7.239 0 0 0-3.093-5.94.114.114 0 0 0-.032-.018l-.01-.001c-.003 0-.014 0-.031.01-.036.022-.084.079-.084.177V7.19c0 .608-.315 1.172-.833 1.49l-2.25 1.385a1.75 1.75 0 0 1-1.834 0l-2.25-1.384A1.752 1.752 0 0 1 8 7.192V2.477c0-.098-.048-.155-.084-.176a.068.068 0 0 0-.031-.011l-.01.001Z"/></g></g></svg></span>
-    </h3>
-</doc-anchor-target>
+<h3 id="troubleshooting-5">Troubleshooting <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M7.875 2.292a.114.114 0 0 0-.032.018A7.239 7.239 0 0 0 4.75 8.25a7.248 7.248 0 0 0 3.654 6.297c.57.327.982.955.941 1.682v.002l-.317 6.058a.75.75 0 1 1-1.498-.078l.317-6.062v-.004c.006-.09-.047-.215-.188-.296A8.749 8.749 0 0 1 3.25 8.25a8.738 8.738 0 0 1 3.732-7.169 1.547 1.547 0 0 1 1.709-.064c.484.292.809.835.809 1.46v4.714a.25.25 0 0 0 .119.213l2.25 1.385c.08.05.182.05.262 0l2.25-1.385a.25.25 0 0 0 .119-.213V2.478c0-.626.325-1.169.81-1.461a1.547 1.547 0 0 1 1.708.064 8.741 8.741 0 0 1 3.732 7.17 8.747 8.747 0 0 1-4.41 7.598c-.14.081-.193.206-.188.296v.004l.318 6.062a.75.75 0 1 1-1.498.078l-.317-6.058v-.002c-.041-.727.37-1.355.94-1.682A7.247 7.247 0 0 0 19.25 8.25a7.239 7.239 0 0 0-3.093-5.94.114.114 0 0 0-.032-.018l-.01-.001c-.003 0-.014 0-.031.01-.036.022-.084.079-.084.177V7.19c0 .608-.315 1.172-.833 1.49l-2.25 1.385a1.75 1.75 0 0 1-1.834 0l-2.25-1.384A1.752 1.752 0 0 1 8 7.192V2.477c0-.098-.048-.155-.084-.176a.068.068 0 0 0-.031-.011l-.01.001Z"/></g></g></svg></h3>
 <hr>
-<doc-anchor-target id="mvsep-extracted-too-muchtoo-little">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#mvsep-extracted-too-muchtoo-little">#</doc-anchor-trigger>
-        <span>MVSEP extracted too much/too little.</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="mvsep-extracted-too-muchtoo-little">MVSEP extracted too much/too little.</h4>
 <ul>
 <li>Using the <strong>Separation Type</strong> of <code translate="no" v-pre>DeNoise by aufr33</code>, you can modify the <code translate="no" v-pre>Aggressiveness</code>.
 This determines the depth of the extraction.</li>
 <li>A higher value will deepen the extraction, and a lower one will soften it.</li>
 <li>Each audio is different, so you&#x27;ll have to test the ideal value.</li>
 </ul>
-<doc-anchor-target id="i-cant-remove-some-of-the-backing-vocals-3">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#i-cant-remove-some-of-the-backing-vocals-3">#</doc-anchor-trigger>
-        <span>I can&#x27;t remove some of the backing vocals.</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="i-cant-remove-some-of-the-backing-vocals-3">I can&#x27;t remove some of the backing vocals.</h4>
 <ul>
 <li>Try running the audio through MelBand Karaoke or BVE. Modify the Aggression Setting if necessary.</li>
 </ul>
-<doc-anchor-target id="what-is-sdr">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#what-is-sdr">#</doc-anchor-trigger>
-        <span>What is SDR?</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="what-is-sdr">What is SDR?</h4>
 <p>Signal to distortion ratio, the higher is technically better, but your ears are more trustworthy.</p>
 </doc-tab>
 <doc-tab v-cloak id="x-minus">
 <template #title>X-Minus</template>
-<div class="content-center"><doc-anchor-target id="x-minus-aka-uvronline">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#x-minus-aka-uvronline">#</doc-anchor-trigger>
-        <span>X-Minus (aka UVROnline)</span>
-    </h2>
-</doc-anchor-target>
+<div class="content-center"><h2 id="x-minus-aka-uvronline">X-Minus (aka UVROnline)</h2>
 </div>
-<doc-anchor-target id="how-to-use-6">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-use-6">#</doc-anchor-trigger>
-        <span>How to use <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3.5 3.75a.25.25 0 0 1 .25-.25h13.5a.25.25 0 0 1 .25.25v10a.75.75 0 0 0 1.5 0v-10A1.75 1.75 0 0 0 17.25 2H3.75A1.75 1.75 0 0 0 2 3.75v16.5c0 .966.784 1.75 1.75 1.75h7a.75.75 0 0 0 0-1.5h-7a.25.25 0 0 1-.25-.25V3.75Z"/><path d="M6.25 7a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Zm-.75 4.75a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75Zm16.28 4.53a.75.75 0 1 0-1.06-1.06l-4.97 4.97-1.97-1.97a.75.75 0 1 0-1.06 1.06l2.5 2.5a.75.75 0 0 0 1.06 0l5.5-5.5Z"/></g></g></svg></span>
-    </h3>
-</doc-anchor-target>
+<h3 id="how-to-use-6">How to use <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3.5 3.75a.25.25 0 0 1 .25-.25h13.5a.25.25 0 0 1 .25.25v10a.75.75 0 0 0 1.5 0v-10A1.75 1.75 0 0 0 17.25 2H3.75A1.75 1.75 0 0 0 2 3.75v16.5c0 .966.784 1.75 1.75 1.75h7a.75.75 0 0 0 0-1.5h-7a.25.25 0 0 1-.25-.25V3.75Z"/><path d="M6.25 7a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Zm-.75 4.75a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75Zm16.28 4.53a.75.75 0 1 0-1.06-1.06l-4.97 4.97-1.97-1.97a.75.75 0 1 0-1.06 1.06l2.5 2.5a.75.75 0 0 0 1.06 0l5.5-5.5Z"/></g></g></svg></h3>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-warning"></div>
     <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
@@ -1661,12 +1125,7 @@ This determines the depth of the extraction.</li>
         </div>
     </div>
 </div>
-<doc-anchor-target id="1-choose-a-separator">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#1-choose-a-separator">#</doc-anchor-trigger>
-        <span>1. Choose a Separator</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="1-choose-a-separator">1. Choose a Separator</h4>
 <ol type="a" start="1">
 <li>First go to <u><a href="https://x-minus.pro">X-minus&#x27;s website</a></u> and click the &quot;Vocal Remover&quot; at the top right.</li>
 </ol>
@@ -1676,12 +1135,7 @@ This determines the depth of the extraction.</li>
 </ol>
 <img src="../x-minus-img/model-selection.png" alt="Select a Model in X-Minus" width="600" height="auto">
 <hr>
-<doc-anchor-target id="2-upload-your-audio-file">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#2-upload-your-audio-file">#</doc-anchor-trigger>
-        <span>2. Upload Your Audio File</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="2-upload-your-audio-file">2. Upload Your Audio File</h4>
 <ol type="a" start="3">
 <li>Then click &quot;select a file&quot; and choose a audio file, or you can drag and drop a file. And when it&#x27;s done it will look like this:</li>
 </ol>
@@ -1690,12 +1144,7 @@ This determines the depth of the extraction.</li>
 <li>You can now click &quot;Vocals&quot; to download the vocals and &quot;Other&quot; to download the instrumentals.</li>
 </ol>
 <ul>
-<li><doc-anchor-target id="best-models-for-x-minus">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#best-models-for-x-minus">#</doc-anchor-trigger>
-        <span>Best models for X-Minus:</span>
-    </h4>
-</doc-anchor-target>
+<li><h4 id="best-models-for-x-minus">Best models for X-Minus:</h4>
 </li>
 </ul>
 <div class="table-wrapper scrollbar overflow-hidden">
@@ -1733,31 +1182,16 @@ This determines the depth of the extraction.</li>
 </doc-tab>
 <doc-tab v-cloak id="rx11">
 <template #title>RX11</template>
-<div class="content-center"><doc-anchor-target id="rx-11">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#rx-11">#</doc-anchor-trigger>
-        <span>RX 11</span>
-    </h2>
-</doc-anchor-target>
+<div class="content-center"><h2 id="rx-11">RX 11</h2>
 </div>
 <p>Go to their <u><a href="https://www.izotope.com/en/shop/rx-11-advanced/">Official Website</a></u> &amp; buy it.</p>
 <hr>
-<div class="content-center"><doc-anchor-target id="getting-a-dataset">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#getting-a-dataset">#</doc-anchor-trigger>
-        <span>Getting a Dataset</span>
-    </h3>
-</doc-anchor-target>
+<div class="content-center"><h3 id="getting-a-dataset">Getting a Dataset</h3>
 </div>
 <p>Getting the highest quality audio works best for Izotope and will result in a better model. Ideally, you want to preserve the <strong>dynamic range</strong>, the <strong>frequencies</strong>, and the <strong>fidelity/clarity</strong>.
 If you&#x27;re working with low quality audio, RX cannot upscale or restore the missing details that were originally there. The end result will be audible as the voice model quality will be muddied with artifacts/tearing.</p>
 <p><strong>Mic proximity</strong> is also another factor to consider as you want the voice to be consistent since RVC does not handle <strong>audio frequency response</strong> well and will muffle the pronunciation of words. Keep this in mind for studio sessions and video game voice lines rips as it may have been bass boosted, compressed, or eq&#x27;d by default. Arguably, more variation of the voice will add to the vocal range of the model but we want to keep the accent consistent as well.</p>
-<doc-anchor-target id="for-youtube-ripping">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#for-youtube-ripping">#</doc-anchor-trigger>
-        <span>For Youtube ripping</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="for-youtube-ripping">For Youtube ripping</h4>
 <p>You can use <a href="https://cobalt.tools/">Cobalt</a>, <a href="https://github.com/yt-dlp/yt-dlp">yt-dlp</a>, or <a href="https://en.loader.to/4/">Loader.to</a>. Overall, yt-dlp is the best for ripping.
 Preferably rip the audios in Opus format so the downloaded audio will be 48khz, which can be resampled down to 44.1k on Izotope and trained on 40k via RVC. The quality depends on what is uploaded on the server side so this might not always be the case.</p>
 <p>For YT-dlp, the command prompt is:</p>
@@ -1773,12 +1207,7 @@ yt-dlp.exe --audio-format wav -x <a href="https://www.youtube.com/watch?v=5aYwU4
 </ul>
 <p>Whenever you export the dataset, you can export it to WAV 32-bit. For Flac files, use 24-bit. We never use MP3 files since RVC heavily compresses those audio files.</p>
 <hr>
-<div class="content-center"><doc-anchor-target id="loading-the-audio-and-changing-settings">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#loading-the-audio-and-changing-settings">#</doc-anchor-trigger>
-        <span>Loading The Audio And Changing Settings</span>
-    </h3>
-</doc-anchor-target>
+<div class="content-center"><h3 id="loading-the-audio-and-changing-settings">Loading The Audio And Changing Settings</h3>
 </div>
 <p>Open the WAV or FLAC file.</p>
 <p>Now that we have the file in RX, make sure to turn this slider to the right to show the Spectrogram only.
@@ -1820,24 +1249,14 @@ Mel is the best scaling in our case since it shows vocals better than Linear sca
     </div>
 </div>
 <hr>
-<div class="content-center"><doc-anchor-target id="trying-to-explain-a-spectrogram">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#trying-to-explain-a-spectrogram">#</doc-anchor-trigger>
-        <span>Trying To Explain a Spectrogram</span>
-    </h3>
-</doc-anchor-target>
+<div class="content-center"><h3 id="trying-to-explain-a-spectrogram">Trying To Explain a Spectrogram</h3>
 </div>
 <p>Spectrograms are graphical representations of frequencies which can determine whether your audio sample rate is 32k, 40k, or 48k.</p>
 <img src="../rx11-img/frequency.png" alt="frequency.png" width="auto" height="auto">
 <p>There is a distinction between <strong>high-end frequency</strong> and <strong>low-end frequency</strong> in a spectrogram. The high-end frequency (48k-40khz), or the air region in the chart isn&#x27;t audible for the human ears. But, it&#x27;ll help to handle <strong>aliasing</strong>. Aliasing is the effect of new frequencies appearing in the sampled signal after reconstruction, that were not present in the original signal. In other words, it creates artifacts to your model.</p>
 <p>Meanwhile you can hear some of the low-end frequencies. If you were to resample from 40k to 32k, then most of the high-end and low-end frequencies are gone at the cost of less harsher sibilances and -plosives sounds like I mentioned before.</p>
 <img src="../rx11-img/chart.png" alt="Chart.png" width="auto" height="auto">
-<doc-anchor-target id="example-of-audios-through-a-spectrogram">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#example-of-audios-through-a-spectrogram">#</doc-anchor-trigger>
-        <span>Example of Audios Through a Spectrogram</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="example-of-audios-through-a-spectrogram">Example of Audios Through a Spectrogram</h4>
 <p>For example, this is noise. The orange area may look like breathing that&#x27;s masked under the artifacts, but RVC will consider this noise as it&#x27;s barely audible and you&#x27;ll only hear static or dry air. The blue areas surrounding the audio are also noise. You can think of these as layers that needs to be removed when we use the Spectral Denoise module later.</p>
 <img src="../rx11-img/noiseprofile.png" alt="noiseprofile.png" width="auto" height="auto">
 <p>Now this is breathing. Keep in mind that RVC will consider &quot;soft breathing&quot; as a white noise if the breath sounds are too low (around -40db). Proper vocal breathing are grunts like &quot;huffs, &quot;hahhhhs, &quot;hoohhhhhs&quot;. There cannot be harsh inhaling sounds. Breathe sounds by itself without a voice or tone behind it will also cause RVC to think it is noise. Without breathes, the model sound will robotic.
@@ -1845,29 +1264,14 @@ Mel is the best scaling in our case since it shows vocals better than Linear sca
 <p>And this is speech:
 <img src="../rx11-img/speech.png" alt="Speech.png" width="auto" height="auto"></p>
 <hr>
-<div class="content-center"><doc-anchor-target id="preparing-the-dataset-through-musicsfx-removal">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#preparing-the-dataset-through-musicsfx-removal">#</doc-anchor-trigger>
-        <span>Preparing the Dataset Through Music/SFX Removal</span>
-    </h3>
-</doc-anchor-target>
+<div class="content-center"><h3 id="preparing-the-dataset-through-musicsfx-removal">Preparing the Dataset Through Music/SFX Removal</h3>
 </div>
 <p>The key principal behind preparing your dataset is doing the <em>least audio processing</em> as possible as you want to keep the overall robustness of the model. Excessively stacking vocal separator models such as <strong>UVR</strong> Inst Voc, Kim Vocals, Denoise, ensemble mode, and so forth can introduce noises to your dataset as it rips away frequencies from your audio. This harms the model fidelity and quality.</p>
 <hr>
-<doc-anchor-target id="rx-de-clipping">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#rx-de-clipping">#</doc-anchor-trigger>
-        <span>RX De-Clipping</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="rx-de-clipping">RX De-Clipping</h4>
 <p>This helps to remove most of the clipping that is occurring throughout the audio around the -0db range. Do not touch the make-up gain as it will alter the natural dynamic range of the audio. You can press &quot;preview&quot; to see that it is working as indicated with &quot;clipped intervals repaired&quot;. If it does nothing, then you can skip this part.</p>
 <img src="../rx11-img/de-clip-settings.png" alt="de-clip-settings.png" width="auto" height="auto">
-<doc-anchor-target id="removing-dc-offset">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#removing-dc-offset">#</doc-anchor-trigger>
-        <span>Removing DC Offset</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="removing-dc-offset">Removing DC Offset</h4>
 <p>Before starting the process for separation, make sure that the audio has zero DC offset to prevent further issues that would interrupt the processing due to the bottom line noise. The <strong>waveform statistics</strong> is under the Window tab in RX11.
 <img src="../rx11-img/dcoffset.png" alt="dcoffset.png" width="auto" height="auto"></p>
 <p>This can be done in audacity by going to the Effect tab &gt; Volume and Compression &gt; Normalize then check the box to remove the DC offset.
@@ -1879,20 +1283,10 @@ Without DC offset:
 <p>With DC offset:
 <img src="../rx11-img/with-dc-offset.png" alt="With-dc-offset.png" width="auto" height="auto"></p>
 <hr>
-<doc-anchor-target id="dereverbing-and-de-echo-the-audio">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#dereverbing-and-de-echo-the-audio">#</doc-anchor-trigger>
-        <span>Dereverbing and De-echo The Audio</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="dereverbing-and-de-echo-the-audio">Dereverbing and De-echo The Audio</h4>
 <p>While keeping in mind of doing the least processing, <em>you want to keep the audio as natural</em> as possible for RVC, or <strong>Hifigan</strong>. Hifigan is the generative adversarial network that makes up our discriminator and generator for cloning sounds and training stability. Having audio that has been damaged or reconstructed will affect the generalization of the graphs to fully replicate the clarity and accent of the voice.</p>
 <p><strong>Reverb</strong> is multiple sources of sound returning and <strong>echo</strong> is the delay. It is important to remove these from the dataset otherwise it&#x27;ll cause your model to have artifacts as Hifigan cannot replicate the model&#x27;s clarity.</p>
-<doc-anchor-target id="best-model-for-dereverb-and-de-echo">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#best-model-for-dereverb-and-de-echo">#</doc-anchor-trigger>
-        <span>Best Model for Dereverb And De-echo</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="best-model-for-dereverb-and-de-echo">Best Model for Dereverb And De-echo</h4>
 <p>The current best Dereverb plugin is the <strong>Clarity VX</strong> DeReverb Pro module, another paid software that you can get for free. The aggressiveness can be tweaked or finetuned to your liking as it cuts into the audio and does not reconstruct the frequencies. Clarity VX cannot de-echo the audio so you need to use UVR De-echo or RX Dialogue Isolate.</p>
 <img src="../rx11-img/clarity-vx.png" alt="Clarity-VX.png" width="auto" height="auto">
 <div class="flex mb-6">
@@ -1921,20 +1315,10 @@ Without DC offset:
 <img src="../rx11-img/aggression.png" alt="aggression.png" width="auto" height="auto"></p>
 <p>There may be leftover reverb or echo that weren&#x27;t removed so that&#x27;ll be addressed in the <strong>RX Dereverb</strong> module later in the <strong>Manual Denoising</strong> section. I will also troubleshoot the audio increasing in volume after dereverb and deecho in the <strong>FAQ Regarding Normalization and Compression</strong> section.</p>
 <hr>
-<div class="content-center"><doc-anchor-target id="rx11-modules">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#rx11-modules">#</doc-anchor-trigger>
-        <span>RX11 Modules</span>
-    </h3>
-</doc-anchor-target>
+<div class="content-center"><h3 id="rx11-modules">RX11 Modules</h3>
 </div>
 <hr>
-<doc-anchor-target id="spectral-denoising-the-audio">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#spectral-denoising-the-audio">#</doc-anchor-trigger>
-        <span>Spectral Denoising The Audio</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="spectral-denoising-the-audio">Spectral Denoising The Audio</h4>
 <p>Izotope&#x27;s Spectral Denoise provides natural noise reduction and will preserve the quality of your audio as it minimizes artifacts. It analyzes the signals of noise that we select and modifies the frequency components. Essentially, <strong>UVR Denoise</strong> is not needed afterwards since the cleaning has been processed in spectral. The rest of the the cleanup is done through our manual denoising via RX11.</p>
 <p>Here is the settings that were used in the previous guide, which is mostly fine if you can&#x27;t recognize patterns in a noise profile. <em>Artifact control, whitening, Release [ms], Smoothing, and Reduction</em> could be adjusted based on particular datasets. Again, don&#x27;t fix it if it aint broke.
 <img src="../rx11-img/spectral-denoise.png" alt="Spectral-denoise.png" width="auto" height="auto"></p>
@@ -1982,12 +1366,7 @@ Some noises may, or may not stay in tact even after the second pass with Spectra
 <p>The 2nd pass will remove the noise.
 <img src="../rx11-img/2pass.png" alt="2Pass.png" width="auto" height="auto"></p>
 <hr>
-<doc-anchor-target id="faq-regarding-normalization-and-compression">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#faq-regarding-normalization-and-compression">#</doc-anchor-trigger>
-        <span>FAQ Regarding Normalization and Compression</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="faq-regarding-normalization-and-compression">FAQ Regarding Normalization and Compression</h4>
 <p><strong>Why does my audio sounds like it&#x27;s clipping or distorted? Should I use the gain tool in RX?</strong>
 Audios will usually have crackling and clicking noises introduced if it&#x27;s over 1.0+db. We don&#x27;t want to use the gain tool to address this since it&#x27;s a compressor. If it doesn&#x27;t have any of those issues, then leave the dialogue alone to maintain its natural range.
 <img src="../rx11-img/too-loud.png" alt="too-loud.png" width="auto" height="auto"></p>
@@ -2053,12 +1432,7 @@ Use De-humming to take care of low or high frequency hums. There are no consiste
 <p><strong>EQ</strong>
 This has already been covered in the section for removing the <strong>Removing DC Offset</strong>. Do this if you haven&#x27;t done it already. It takes care of low-end noise, but if your dc offset is already at 0% then skip this module.</p>
 <hr>
-<doc-anchor-target id="manual-denoising">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#manual-denoising">#</doc-anchor-trigger>
-        <span>Manual Denoising</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="manual-denoising">Manual Denoising</h4>
 <p>You should have noticed that RX11 moves the audio closer to each other whenever you delete a space or speech. Use the <strong>Lasso</strong> or <strong>Brush tool</strong> to delete dialogue precisely, which should preserve the spacing in <strong>phonetics</strong>. Make sure it does not cause clipping on the waveform as it&#x27;ll look like a sharp spike. You can also clean up the leftover residuals left behind by spectral denoising.</p>
 <p>Audios with thumping, SFX sounds, ringing noises, and weird vocalizations or breaths that might affect the voice model should be removed from the dataset as it&#x27;ll have those characteristics. You can try to lasso out the possible source of the noise, but keep the audio as natural as possible without damaging the frequencies.</p>
 <img src="../rx11-img/lasso.png" alt="lasso.png" width="auto" height="auto">
@@ -2095,22 +1469,12 @@ Open the menu for labeling.
 </doc-tabs>
 <p>You can find an extremely long and complex guide from the Audio Separation community, linked from their <a href="https://discord.gg/ZPtAU5R6rP">Discord</a>. The full document is available <a href="https://docs.google.com/document/d/17fjNvJzj8ZGSer7c7OFe_CNfUKbAxEh_OBv94ZdRG5c/edit?tab=t.0">here</a>. Please be aware that while comprehensive, it may contain some outdated info as it spans hundreds of pages.</p>
 <hr>
-<div class="content-center"><doc-anchor-target id="preparing-the-dataset">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#preparing-the-dataset">#</doc-anchor-trigger>
-        <span>Preparing the dataset</span>
-    </h2>
-</doc-anchor-target>
+<div class="content-center"><h2 id="preparing-the-dataset">Preparing the dataset</h2>
 </div>
 <ul>
 <li>To do these next steps you are going to need <u><a href="https://www.spek.cc/p/download">Spek</a></u> and <u><a href="https://www.audacityteam.org">Audacity</a></u>.</li>
 </ul>
-<doc-anchor-target id="step-1-find-the-sample-rate">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#step-1-find-the-sample-rate">#</doc-anchor-trigger>
-        <span>Step 1: Find the Sample Rate</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="step-1-find-the-sample-rate">Step 1: Find the Sample Rate</h3>
 <div>
 <ul>
 <li><p>This is a unit in that defines the total amount of <strong>samples</strong> (data) that can <strong>fit</strong> within <strong>1 second</strong> of an audio. They are measured in kilohertz (kHz).</p>
@@ -2119,27 +1483,12 @@ Open the menu for labeling.
 </li>
 <li><p>While training in RVC, you&#x27;ll have to set the <strong>target sample rate</strong> as your dataset&#x27;s. This value affects the final quality.</p>
 </li>
-<li><doc-anchor-target id="a-simple-way-to-determine-it-is-with-spek">
-    <h5>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#a-simple-way-to-determine-it-is-with-spek">#</doc-anchor-trigger>
-        <span>A simple way to determine it is with <ins>Spek</ins>:</span>
-    </h5>
-</doc-anchor-target>
+<li><h5 id="a-simple-way-to-determine-it-is-with-spek">A simple way to determine it is with <ins>Spek</ins>:</h5>
 <ul>
-<li><doc-anchor-target id="step-1">
-    <h5>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#step-1">#</doc-anchor-trigger>
-        <span>STEP 1:</span>
-    </h5>
-</doc-anchor-target>
+<li><h5 id="step-1">STEP 1:</h5>
 <p>Download and install Spek <u><a href="https://www.spek.cc/p/download">here</a></u>.</p>
 </li>
-<li><doc-anchor-target id="step-2">
-    <h5>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#step-2">#</doc-anchor-trigger>
-        <span>STEP 2:</span>
-    </h5>
-</doc-anchor-target>
+<li><h5 id="step-2">STEP 2:</h5>
 <p>Open spek and just drag &amp; drop audio into it.</p>
 <p><img src="../audioformats-img/3.png" alt="image" width="500" height="auto">‎</p>
 </li>
@@ -2164,12 +1513,7 @@ Open the menu for labeling.
 </li>
 </ul>
 <hr>
-<doc-anchor-target id="step-2-truncating-silence">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#step-2-truncating-silence">#</doc-anchor-trigger>
-        <span>Step 2: Truncating Silence</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="step-2-truncating-silence">Step 2: Truncating Silence</h3>
 <ul>
 <li>In Audacity import your audio</li>
 <li>Go to Effects -&gt; Special -&gt; Truncate Silence</li>
@@ -2181,23 +1525,13 @@ Open the menu for labeling.
 </ul>
 <p>‎</p>
 <hr>
-<doc-anchor-target id="step-21-audio-normalization-optional">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#step-21-audio-normalization-optional">#</doc-anchor-trigger>
-        <span>Step 2.1: Audio Normalization (Optional)</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="step-21-audio-normalization-optional">Step 2.1: Audio Normalization (Optional)</h3>
 <ul>
 <li>LUFS are used over db because hifigan needs perceptual quality and db doesnt offer that.</li>
 <li>You can perform this step directly within Applio or using Audacity (for any RVCs).</li>
 </ul>
 <hr>
-<doc-anchor-target id="method-1-using-applios-built-in-normalization">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#method-1-using-applios-built-in-normalization">#</doc-anchor-trigger>
-        <span>Method 1: Using Applio&#x27;s Built-in Normalization</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="method-1-using-applios-built-in-normalization">Method 1: Using Applio&#x27;s Built-in Normalization</h4>
 <p>Applio includes a convenient built-in normalization feature that can process your audio during the slicing step.</p>
 <ol>
 <li>Go to Applio -&gt; Training -&gt; Preprocess -&gt; Advanced Settings -&gt; Normalization mode.</li>
@@ -2206,12 +1540,7 @@ Open the menu for labeling.
 <p>This will normalize each audio slice individually after it has been separated from the main file.</p>
 <img src="../datasets-img/applio-normalization.png" alt="Applio Normalization Setting" width="500" height="auto">
 <hr>
-<doc-anchor-target id="method-2-using-audacity">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#method-2-using-audacity">#</doc-anchor-trigger>
-        <span>Method 2: Using Audacity</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="method-2-using-audacity">Method 2: Using Audacity</h4>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-danger"></div>
     <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
@@ -2241,23 +1570,13 @@ Open the menu for labeling.
 </ol>
 <img src="../datasets-img/norm.png" alt="Audacity Loudness Normalization Settings" width="500" height="auto">
 <hr>
-<doc-anchor-target id="step-22-combining-audio">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#step-22-combining-audio">#</doc-anchor-trigger>
-        <span>Step 2.2: Combining Audio</span>
-    </h4>
-</doc-anchor-target>
+<h4 id="step-22-combining-audio">Step 2.2: Combining Audio</h4>
 <ul>
 <li>Go go to Tracks -&gt; Align Tracks -&gt; Align End to End</li>
 </ul>
 <img src="../datasets-img/combine.png" alt="image" width="420" height="auto"> 
 <hr>
-<doc-anchor-target id="step-3-export">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#step-3-export">#</doc-anchor-trigger>
-        <span>Step 3: Export</span>
-    </h3>
-</doc-anchor-target>
+<h3 id="step-3-export">Step 3: Export</h3>
 <ul>
 <li>On the upper right corner go to File and click <code translate="no" v-pre>Export Audio</code>.<br />
 ‎<br />
@@ -2270,24 +1589,14 @@ Open the menu for labeling.
 <li><strong>Format</strong>: <code translate="no" v-pre>WAV</code></li>
 <li><strong>Encoding</strong>: <code translate="no" v-pre>32-Bit Float</code></li>
 </ul>
-<doc-anchor-target id="section-26">
-    <h6>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#section-26">#</doc-anchor-trigger>
-        <span>‎</span>
-    </h6>
-</doc-anchor-target>
+<h6 id="section-26">‎</h6>
   <img src="../datasets-img/settings-wav.png" alt="image" width="650" height="auto">
 </li>
 </ul>
 </li>
 </ul>
 <hr>
-<div class="content-center"><doc-anchor-target id="multi-speaker-models-advanced-applio-only">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#multi-speaker-models-advanced-applio-only">#</doc-anchor-trigger>
-        <span>Multi-Speaker Models (Advanced) (Applio Only)</span>
-    </h3>
-</doc-anchor-target>
+<div class="content-center"><h3 id="multi-speaker-models-advanced-applio-only">Multi-Speaker Models (Advanced) (Applio Only)</h3>
 </div>
 </div>
 <div class="flex mb-6">
@@ -2324,12 +1633,7 @@ Open the menu for labeling.
 <li><strong>Minimum Data:</strong> To successfully train a multi-speaker model (like a band or a group), your total dataset should ideally be <strong>over 24 hours</strong> of high-quality audio.</li>
 </ul>
 <hr>
-<div class="content-center"><doc-anchor-target id="communities">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#communities">#</doc-anchor-trigger>
-        <span>Communities <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3.5 8a5.5 5.5 0 1 1 8.596 4.547 9.005 9.005 0 0 1 5.9 8.18.751.751 0 0 1-1.5.045 7.5 7.5 0 0 0-14.993 0 .75.75 0 0 1-1.499-.044 9.005 9.005 0 0 1 5.9-8.181A5.496 5.496 0 0 1 3.5 8ZM9 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm8.29 4c-.148 0-.292.01-.434.03a.75.75 0 1 1-.212-1.484 4.53 4.53 0 0 1 3.38 8.097 6.69 6.69 0 0 1 3.956 6.107.75.75 0 0 1-1.5 0 5.193 5.193 0 0 0-3.696-4.972l-.534-.16v-1.676l.41-.209A3.03 3.03 0 0 0 17.29 8Z"/></g></g></svg></span>
-    </h2>
-</doc-anchor-target>
+<div class="content-center"><h2 id="communities">Communities <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3.5 8a5.5 5.5 0 1 1 8.596 4.547 9.005 9.005 0 0 1 5.9 8.18.751.751 0 0 1-1.5.045 7.5 7.5 0 0 0-14.993 0 .75.75 0 0 1-1.499-.044 9.005 9.005 0 0 1 5.9-8.181A5.496 5.496 0 0 1 3.5 8ZM9 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm8.29 4c-.148 0-.292.01-.434.03a.75.75 0 1 1-.212-1.484 4.53 4.53 0 0 1 3.38 8.097 6.69 6.69 0 0 1 3.956 6.107.75.75 0 0 1-1.5 0 5.193 5.193 0 0 0-3.696-4.972l-.534-.16v-1.676l.41-.209A3.03 3.03 0 0 0 17.29 8Z"/></g></g></svg></h2>
 </div>
 <div style="display: flex; flex-direction: column; gap: 1rem; align-items: center; padding: 1rem 0;">
     <a href="https://discord.gg/aihub" style="display: inline-flex; align-items: center; gap: 0.5rem; background-color: #1a1c1d; color: white; padding: 0.6rem 1.2rem; border-radius: 9999px; text-decoration: none; font-weight: bold; font-size: 1rem; min-width: 150px; justify-content: center; border: 1.5px solid #555;">
@@ -2342,12 +1646,7 @@ Open the menu for labeling.
     </a>
 </div>
 <hr>
-<div class="content-center"><doc-anchor-target id="you-have-reached-the-end">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#you-have-reached-the-end">#</doc-anchor-trigger>
-        <span><code translate="no" v-pre>You have reached the end.</code></span>
-    </h4>
-</doc-anchor-target>
+<div class="content-center"><h4 id="you-have-reached-the-end"><code translate="no" v-pre>You have reached the end.</code></h4>
 <p><a href="https://docs.aihub.gg/contributions/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border hover:text-badge-info-text-hover hover:bg-badge-info-hover hover:border-badge-info-border-hover transition-colors duration-200 ease-out h-8 px-4 text-base rounded-full">
     <span>Report Issues</span>
     <span><svg xmlns="http://www.w3.org/2000/svg" class="mb-px inline-flex ml-2" width="22" height="22" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M1.513 1.96a1.374 1.374 0 0 1 1.499-.21l19.335 9.215a1.147 1.147 0 0 1 0 2.07L3.012 22.25a1.374 1.374 0 0 1-1.947-1.46L2.49 12 1.065 3.21a1.375 1.375 0 0 1 .448-1.25Zm2.375 10.79-1.304 8.042L21.031 12 2.584 3.208l1.304 8.042h7.362a.75.75 0 0 1 0 1.5Z"/></g></svg></span>
