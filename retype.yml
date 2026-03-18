@@ -13,8 +13,8 @@ branding:
   logo: ../assets/img/aihub-logo.png
   logoDark: 
   label: 
-  logoHeight: 46
-  logoWidth: 150
+  logoHeight: 40
+  logoWidth: 130
 
 links:
 - text: Need Help?
