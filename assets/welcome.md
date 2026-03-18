@@ -5,7 +5,7 @@ icon: home-fill
 ``Last update: March 8, 2026``
 ***
 :::content-center
-<img src=".\img\a.png" alt="image" width="345" height="auto">
+<img src=".\img\aihub-logo.png" alt="image" width="345" height="auto">
 
 ###### ‎
 

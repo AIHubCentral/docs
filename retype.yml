@@ -10,9 +10,11 @@ url: https://docs.aihub.gg/
 
 branding:
   title:
-  logo: ../assets/img/a.png
+  logo: ../assets/img/aihub-logo.png
   logoDark: 
-  label:
+  label: 
+  logoHeight: 30
+  logoWidth: 98
 
 links:
 - text: Need Help?
@@ -32,4 +34,4 @@ integrations:
   googleAnalytics:
     id: G-36D5RK6Y12
 
-favicon: ../assets/img/b.png
+favicon: ../assets/img/aihub-favicon.png
