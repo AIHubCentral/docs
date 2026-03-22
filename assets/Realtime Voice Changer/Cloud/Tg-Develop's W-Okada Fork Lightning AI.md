@@ -92,7 +92,7 @@ c. Once you are verified Lightning Ai will send you a email that contains this:
 ## Studio Setup & Installation
 
 #### 2. Access the Notebook
-a. After creating your Lightning.AI account, open the [Wokada-TgDevelop-Fork Notebook](https://lightning.ai/nick088/studios/wokada-tgdevelop-fork) and Clone it.
+a. After creating your Lightning.AI account, open the [Wokada-TgDevelop-Fork Notebook](https://lightning.ai/nick088/studios/wokada-tg-develop-fork) and Clone it.
 
 <img src="../lightning-img/lightning-ai-clone-studio.png" alt="LightningAI Clone Studio" width="300">
 
