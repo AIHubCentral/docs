@@ -12,10 +12,10 @@ order: 6000
 :::content-center
 ## Introduction ‎
 :::
-- This is a <u>[cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based)</u> alternative to run [Wokada Tg-Develop's Fork](https://docs.aihub.gg/realtime-voice-changer/local/tg-develops-w-okada-fork/#virtual-audio-cable), Realtime Voice Changer for calls/games, only for people who don't have a good PC GPU, via the <u>[Kaggle Service](https://docs.aihub.gg/extra/glossary/#kaggle)</u>.
+- This is a [cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based) alternative to run [Wokada Tg-Develop's Fork](https://docs.aihub.gg/realtime-voice-changer/local/tg-develops-w-okada-fork/#virtual-audio-cable), Realtime Voice Changer for calls/games, only for people who don't have a good PC GPU, via the [Kaggle Service](https://docs.aihub.gg/extra/glossary/#kaggle).
 
 !!!danger Kaggle Service
-**Check the <u>[Kaggle Glossary](https://docs.aihub.gg/extra/glossary/#kaggle)</u> for more info on Free Tier, Limits, Verification, Pricing and other things.**
+**Check the [Kaggle Glossary](https://docs.aihub.gg/extra/glossary/#kaggle) for more info on Free Tier, Limits, Verification, Pricing and other things.**
 !!!
 
 
@@ -28,7 +28,7 @@ order: 6000
 - In AI Realtime Voice Changing context, it's used to get the output of AI Converted Voice Output as the input in other programs such as Discord.
 
 !!! For Windows
-Download this: <u>[VAC Lite (Virtual-Audio-Cable by Muzychenko)](https://software.muzychenko.net/freeware/vac470lite.zip)</u>.
+Download this: [VAC Lite (Virtual-Audio-Cable by Muzychenko)](https://software.muzychenko.net/freeware/vac470lite.zip).
 (Be sure to not use any toher vac like VB Audio Cable.)
 !!!
 
@@ -38,9 +38,9 @@ Download this: <u>[VAC Lite (Virtual-Audio-Cable by Muzychenko)](https://softwar
 
 !!! For Mac
 Download either: 
-<u>[Blackhole Virtual Audio Cable](https://existential.audio/blackhole)</u>
+[Blackhole Virtual Audio Cable](https://existential.audio/blackhole)
 or
-<u>[VB-Audio](https://vb-audio.com/Cable)</u>
+[VB-Audio](https://vb-audio.com/Cable)
 !!!
 
 !!! For Linux
@@ -63,11 +63,9 @@ sudo pacman -Syu portaudio
 
 
 ***
-###### ‎   
 ## Create an Account   
-###### ‎   
 #### 1. <u>Set up account.</u>
-a. Start by making an account <u>[here](https://www.kaggle.com/account/login?phase=startRegisterTab&returnUrl=%2F)</u>.
+a. Start by making an account [here](https://www.kaggle.com/account/login?phase=startRegisterTab&returnUrl=%2F).
 ‎  
 
    <img src="../kaggle-img/kaggle-sign-in.png" alt="image" width="575" height="auto">
@@ -76,31 +74,11 @@ a. Start by making an account <u>[here](https://www.kaggle.com/account/login?pha
 
 b. Verify your acount with a phone number so you can turn on the "internet" option.  
 
- <img src="../kaggle-img/kaggle-phone.png" alt="image" width="575" height="auto">    
+ <img src="../kaggle-img/kaggle-phone.png" alt="image" width="575" height="auto">      
  
 
 ***
-###### ‎   
-## Create an Account   
-###### ‎   
-#### 1. <u>Set up account.</u>
-a. Start by making an account <u>[here](https://www.kaggle.com/account/login?phase=startRegisterTab&returnUrl=%2F)</u>.
-‎  
-
-   <img src="../kaggle-img/kaggle-sign-in.png" alt="image" width="575" height="auto">
-
-‎  
-
-b. Verify your acount with a phone number so you can turn on the "internet" option.  
-
- <img src="../kaggle-img/kaggle-phone.png" alt="image" width="575" height="auto">    
- 
-
-***  
-
-###### ‎  
 ## Notebook Creation & Setup
-###### ‎  
 #### 2. <u>Clone Notebook</u>
 a. Go to <u>[Kaggle](https://www.kaggle.com)</u> and click "Create" then "New Notebook" at the top left. 
 
@@ -163,7 +141,7 @@ b. Run the third cell which is:
 ### Ngrok & Sever Setup
 ###### ‎  
 #### 4. <u>Ngrok Setup</u>
-a. Scroll down to the last cell and you should see a section where you put your ngrok token. If you dont have a ngrok acount sign up <u>[here](https://ngrok.com/)</u>.             
+a. Scroll down to the last cell and you should see a section where you put your ngrok token. If you dont have a ngrok acount sign up [here](https://ngrok.com/).             
      a2. Once you have an acount you can authenticate your ngrok tunnel agent here: https://dashboard.ngrok.com/get-started/your-authtoken   
 ‎       
 b. put the Ngrok token in the last cell like so:
