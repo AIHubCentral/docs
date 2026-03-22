@@ -37,9 +37,9 @@ order: 1000
 ### :icon-chevron-down:DAW
 - It stands for **Digital Audio Workstation**, and it's any software used for making and mixing music.    
 
-- For **basic** audio editing, we recommend <u>[Audacity</u>](https://www.audacityteam.org/).     
+- For **basic** audio editing, we recommend [Audacity](https://www.audacityteam.org/).     
 
-- For **professional** mixing, <u>[FL Studio</u>](https://www.image-line.com/fl-studio-download/).
+- For **professional** mixing, [FL Studio](https://www.image-line.com/fl-studio-download/).
 
 
 ***
@@ -50,11 +50,11 @@ order: 1000
 - The rate at which they're saved is determined by the **save frequency** value (or save rate or similar names). **For newbies, it's recommended use a value of `15`.**      
 
 - **They are divided by two types:**  
-    - <u>**Weights:**</u>    
+    - **Weights:**    
         - These are actual models.
         - They're organized with this format: **modelname_epoch_step.pth**
         - Example: `Tyler_e60_s120.pth`    
-    - <u>**G and D:**</u>
+    - **G and D:**
         - Named **G_** and **D_**, followed by the step number & **.pth**.
         - Example: `G_70.pth` and `D_70.pth` 
         - These allow you to resume training, if G and D's numbers match.
@@ -90,15 +90,15 @@ order: 1000
 ***
 ### :icon-chevron-down:Local running
 - Running locally is a process that involves running apps in your own machine, using its resources.
-- Done by users with a powerful <u>[GPU](https://docs.aihub.gg/extra/glossary/#gpu)</u>.
-- The opposite of <u>[cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based)</u>.
+- Done by users with a powerful [GPU](https://docs.aihub.gg/extra/glossary/#gpu).
+- The opposite of [cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based).
 
 
 ***
 ### :icon-chevron-down:Cloud-based
 - Any software or application that's stored, managed, and available through the provider's virtual servers, and is accessed through a web browser.
-- Used by users with a weak <u>[GPU](https://docs.aihub.gg/extra/glossary/#gpu)</u>, which can't do <u>[local running</u>](https://docs.aihub.gg/extra/glossary/#local-running).
-- The opposite of <u>[local running</u>](https://docs.aihub.gg/extra/glossary/#local-running).       
+- Used by users with a weak [GPU](https://docs.aihub.gg/extra/glossary/#gpu), which can't do [local running](https://docs.aihub.gg/extra/glossary/#local-running).
+- The opposite of [local running](https://docs.aihub.gg/extra/glossary/#local-running).       
 
 
 ***
@@ -123,7 +123,7 @@ order: 1000
 ### :icon-chevron-down:Gradio
 - Gradio is an open-source Python packag that makes it easy for developers to create user-friendly web interfaces for machine learning models and other applications, such as RVC.
   
-- It deploys the program on a Local URL, which is the one running locally on the machine, and a Public Share Link, which is a tunnel that exposes the Local URL. The Public Share Link is used, for example, in Google Colabs, powered by their Share API. Sometimes, the Share API goes down, you can check its <u>[status](https://status.gradio.app/)</u>.
+- It deploys the program on a Local URL, which is the one running locally on the machine, and a Public Share Link, which is a tunnel that exposes the Local URL. The Public Share Link is used, for example, in Google Colabs, powered by their Share API. Sometimes, the Share API goes down, you can check its [status](https://status.gradio.app/).
 
 
 ***
@@ -136,8 +136,8 @@ order: 1000
 
 ***
 ### :icon-chevron-down:Google Colab
-- Google Colaboratory, also known as Google Colab or just Colab, is a <u>[cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based)</u> platform by Google to run <u>[Jupyter Notebooks](https://docs.aihub.gg/extra/glossary/#jupyter-notebook)</u>.
-- Learn how to bypass their limitations <u>[here](https://rentry.co/googlecolabworkarounds)</u>.
+- Google Colaboratory, also known as Google Colab or just Colab, is a [cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based) platform by Google to run [Jupyter Notebooks](https://docs.aihub.gg/extra/glossary/#jupyter-notebook).
+- Learn how to bypass their limitations [here](https://rentry.co/googlecolabworkarounds).
 
 #### Pros & Cons :icon-tasklist:
 ==- *Learn more*
@@ -157,7 +157,7 @@ order: 1000
 
 ***
 ### :icon-chevron-down:HuggingFace Space
-- A <u>[cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based)</u> hosting platform for machine learning demos and apps directly accessible via a web browser.
+- A [cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based) hosting platform for machine learning demos and apps directly accessible via a web browser.
 
 #### Pros & Cons :icon-tasklist:
 ==- *Learn more*
@@ -178,8 +178,9 @@ order: 1000
 
 ***
 ### :icon-chevron-down:Kaggle
-- A <u>[cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based)</u> platform by Google to run <u>[Jupyter Notebooks](https://docs.aihub.gg/extra/glossary/#jupyter-notebook)</u>.
+- A [cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based) platform by Google to run [Jupyter Notebooks](https://docs.aihub.gg/extra/glossary/#jupyter-notebook).
 - It's focused on data science and machine learning.
+- You can check [this article](https://medium.com/@anagha.srivasa/nvidia-t4-x2-v-s-p100-gpu-when-to-choose-which-one-87cf1c55f386) for some general AI technical comparisons between the P100 and T4x2 GPUs.
 - If you have trouble verifying your phone number, [Contact Kaggle](https://www.kaggle.com/contact).
 
 #### Pros & Cons :icon-tasklist:
@@ -200,7 +201,7 @@ order: 1000
 
 ***
 ### :icon-chevron-down:Lightning.AI
-- A <u>[cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based)</u> platform designed for developing and running AI applications in persistent environments called "Studios.", and one of the options is via (but not limited to) running <u>[Jupyter Notebooks](https://docs.aihub.gg/extra/glossary/#jupyter-notebook)</u>.
+- A [cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based) platform designed for developing and running AI applications in persistent environments called "Studios.", and one of the options is via (but not limited to) running [Jupyter Notebooks](https://docs.aihub.gg/extra/glossary/#jupyter-notebook).
 - In Free tier you can change GPU/CPUs at any time, but if you used all free 15 credits **monthly** only on a specific computing, you'd have:     
     - **GPUs (Powerful, Recommended):**   
         - **T4** (16GB VRAM): **75 hours**
@@ -285,20 +286,20 @@ Converting a lossy audio to a lossless one won't restore the lost quality.
 
 ***
 ### :icon-chevron-down:Specs
-- It refers to a computer's specifications. Hardware like <u>[GPU</u>](https://docs.aihub.gg/extra/glossary/#gpu), CPU, RAM, etc.     
+- It refers to a computer's specifications. Hardware like [GPU](https://docs.aihub.gg/extra/glossary/#gpu), CPU, RAM, etc.     
 
 - The performance of the hardware of a computer directly correlates to the performance of all its software.
 
 
 ***
 ### :icon-chevron-down:0 Shot Training
-- Doing <u>[inference](https://docs.aihub.gg/rvc/extra/glossary/#inference)</u> on an AI model without explicitly training on it. 
+- Doing [inference](https://docs.aihub.gg/rvc/extra/glossary/#inference) on an AI model without explicitly training on it. 
 
 - It's faster but with less quality, and you won't be able to save the model.
 
 - For example, in TTS you do inference by cloning a voice with an audio, a data it hasn't seen before.
 
-- Different from making a dataset & doing the long training process, based on lots of criteria such as <u>[epochs](https://docs.aihub.gg/rvc/resources/epochs--tensorboard/)</u>. 
+- Different from making a dataset & doing the long training process, based on lots of criteria such as [epochs](https://docs.aihub.gg/rvc/resources/epochs--tensorboard/). 
 
 - In some cases you can do it on GPU, some in CPU.
 
