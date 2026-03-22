@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.3.0.827515673377">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.3.0.827515781299">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.3.0">
@@ -37,11 +37,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../img/aihub-favicon.png" />
-    <link href="../../resources/css/retype.css?v=4.3.0.827515673377" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.3.0.827515781299" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.3.0.827515673377" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.3.0.827515781299" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.3.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.3.0.827515673377" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.3.0.827515781299" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -192,7 +192,7 @@
                 <!-- Page content  -->
 <h1 id="how-to-make-voice-models"><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M8.75 11a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5a.75.75 0 0 1 .75-.75Zm7.25.75a.75.75 0 0 0-1.5 0v3.5a.75.75 0 0 0 1.5 0v-3.5Z"/><path d="M9.813 1h2.437a.75.75 0 0 1 .75.75V5h6.75A2.25 2.25 0 0 1 22 7.25v5.25h1.25a.75.75 0 0 1 0 1.5H22v5.75A2.25 2.25 0 0 1 19.75 22H4.25A2.25 2.25 0 0 1 2 19.75V14H.75a.75.75 0 0 1 0-1.5H2V7.25A2.25 2.25 0 0 1 4.25 5h7.25V2.5H9.813A.75.75 0 0 1 9.812 1ZM3.5 7.25v12.5c0 .414.336.75.75.75h15.5a.75.75 0 0 0 .75-.75V7.25a.75.75 0 0 0-.75-.75H4.25a.75.75 0 0 0-.75.75Z"/></g></g></svg>  How to Make Voice Models</h1>
 <p><code translate="no" v-pre>Last update: July 17, 2025</code></p>
-<h4 id="--simple-model-training-tutorial-using-rvc--">- <em>Simple model training tutorial, using <u><a href="https://docs.aihub.gg/essentials/whats-rvc/">RVC</a></u></em> -</h4>
+<h4 id="--simple-model-training-tutorial-using-rvc--">- <em>Simple model training tutorial, using <a href="https://docs.aihub.gg/essentials/whats-rvc/">RVC</a></em> -</h4>
 <hr>
 <h6 id="section">‎</h6>
 <h3 id="1-prepare-dataset">1. Prepare dataset</h3>
@@ -201,7 +201,7 @@
 </li>
 <li><p>For the best results, having a <strong>clean</strong> dataset is crucial, so take the time to remove any undesired noises.</p>
 </li>
-<li><h4 id="learn-how"><u><a href="https://docs.aihub.gg/rvc/resources/dataset-isolation/">Learn how</u></a>.</h4>
+<li><h4 id="learn-how"><a href="https://docs.aihub.gg/rvc/resources/dataset-isolation/">Learn how</u></a>.</h4>
 </li>
 </ul>
 <hr>
@@ -211,8 +211,8 @@
 <li><p>With your dataset ready, it&#x27;s time to set up RVC to train the model.</p>
 </li>
 <li><p>There are plenty of versions of RVC, but these are the <strong>best</strong> ones for beginners. Pick according to your needs:</p>
-<h4 id="-locally"><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M8.954 17H2.75A1.75 1.75 0 0 1 1 15.25V3.75C1 2.784 1.784 2 2.75 2h18.5c.966 0 1.75.784 1.75 1.75v11.5A1.75 1.75 0 0 1 21.25 17h-6.204c.171 1.375.805 2.652 1.769 3.757A.752.752 0 0 1 16.25 22h-8.5a.75.75 0 0 1-.565-1.243c.964-1.105 1.598-2.382 1.769-3.757ZM21.5 3.75a.25.25 0 0 0-.25-.25H2.75a.25.25 0 0 0-.25.25v11.5c0 .138.112.25.25.25h18.5a.25.25 0 0 0 .25-.25ZM13.537 17h-3.074c-.126 1.266-.564 2.445-1.223 3.5h5.52c-.659-1.055-1.098-2.234-1.223-3.5Z"/></g></g></svg> ‎ <u><a href="https://docs.aihub.gg/rvc/local/applio/">Locally</a></u></h4>
-<h4 id="-on-the-cloud"><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3.103 10.107c0-4.244 3.445-7.607 7.733-7.607 3.19 0 5.912 1.858 7.099 4.563l.01.022.001.006C21.348 7.345 24 10.095 24 13.536 24 17.148 21.076 20 17.431 20H5.017C2.23 20 0 17.83 0 15.06a4.899 4.899 0 0 1 3.112-4.581 7.696 7.696 0 0 1-.009-.372ZM10.836 4c-3.485 0-6.233 2.717-6.233 6.107 0 .284.022.602.052.756a.75.75 0 0 1-.552.869c-1.52.385-2.603 1.712-2.603 3.328 0 1.917 1.532 3.44 3.517 3.44h12.414c2.843 0 5.069-2.206 5.069-4.964 0-2.759-2.226-4.965-5.069-4.965a.75.75 0 0 1-.696-.47l-.179-.446C15.606 5.5 13.424 4 10.836 4Z"/></g></g></svg> ‎ <u><a href="https://docs.aihub.gg/rvc/cloud/applio-colab/">On the cloud</a></u></h4>
+<h4 id="-locally"><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M8.954 17H2.75A1.75 1.75 0 0 1 1 15.25V3.75C1 2.784 1.784 2 2.75 2h18.5c.966 0 1.75.784 1.75 1.75v11.5A1.75 1.75 0 0 1 21.25 17h-6.204c.171 1.375.805 2.652 1.769 3.757A.752.752 0 0 1 16.25 22h-8.5a.75.75 0 0 1-.565-1.243c.964-1.105 1.598-2.382 1.769-3.757ZM21.5 3.75a.25.25 0 0 0-.25-.25H2.75a.25.25 0 0 0-.25.25v11.5c0 .138.112.25.25.25h18.5a.25.25 0 0 0 .25-.25ZM13.537 17h-3.074c-.126 1.266-.564 2.445-1.223 3.5h5.52c-.659-1.055-1.098-2.234-1.223-3.5Z"/></g></g></svg> ‎ <a href="https://docs.aihub.gg/rvc/local/applio/">Locally</a></h4>
+<h4 id="-on-the-cloud"><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3.103 10.107c0-4.244 3.445-7.607 7.733-7.607 3.19 0 5.912 1.858 7.099 4.563l.01.022.001.006C21.348 7.345 24 10.095 24 13.536 24 17.148 21.076 20 17.431 20H5.017C2.23 20 0 17.83 0 15.06a4.899 4.899 0 0 1 3.112-4.581 7.696 7.696 0 0 1-.009-.372ZM10.836 4c-3.485 0-6.233 2.717-6.233 6.107 0 .284.022.602.052.756a.75.75 0 0 1-.552.869c-1.52.385-2.603 1.712-2.603 3.328 0 1.917 1.532 3.44 3.517 3.44h12.414c2.843 0 5.069-2.206 5.069-4.964 0-2.759-2.226-4.965-5.069-4.965a.75.75 0 0 1-.696-.47l-.179-.446C15.606 5.5 13.424 4 10.836 4Z"/></g></g></svg> ‎ <a href="https://docs.aihub.gg/rvc/cloud/applio-colab/">On the cloud</a></h4>
 </li>
 </ul>
 <h6 id="section-2">‎</h6>
@@ -228,7 +228,7 @@
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>For local users, first ensure you meet the <u><a href="https://docs.aihub.gg/essentials/whats-rvc/#what-are-the-requirements-for-rvc-locally">local minimum requirements</a></u>.</p>
+<p>For local users, first ensure you meet the <a href="https://docs.aihub.gg/essentials/whats-rvc/#what-are-the-requirements-for-rvc-locally">local minimum requirements</a>.</p>
         </div>
     </div>
 </div>
@@ -236,7 +236,7 @@
 <h6 id="section-3">‎</h6>
 <h3 id="3-train-the-model">3. Train the model</h3>
 <ul>
-<li><p>Before you start training, we inform you that the training guides are oriented around using <u><a href="https://docs.aihub.gg/rvc/resources/training/#tensorboard">TensorBoard</a></u>. Read about it &amp; install it after setting up RVC.</p>
+<li><p>Before you start training, we inform you that the training guides are oriented around using <a href="https://docs.aihub.gg/rvc/resources/training/#tensorboard">TensorBoard</a>. Read about it &amp; install it after setting up RVC.</p>
 </li>
 <li><p>Good luck &amp; remember to be patient! As this won&#x27;t be an instant process.</p>
 </li>

@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.3.0.827515673377">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.3.0.827515781299">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.3.0">
@@ -37,12 +37,12 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../../img/aihub-favicon.png" />
-    <link href="../../../resources/css/retype.css?v=4.3.0.827515673377" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=4.3.0.827515781299" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.3.0.827515673377" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.3.0.827515781299" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=4.3.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.3.0.827515673377" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=4.3.0.827515673377" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.3.0.827515781299" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=4.3.0.827515781299" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -199,7 +199,7 @@
 <ul>
 <li><p>W-Okada is a realtime voice changer that uses RVC for its conversion.</p>
 </li>
-<li><p>There are 3 versions of this realtime voice changer, the <u><a href="https://github.com/w-okada/voice-changer">Offical Original W-Okada</a></u> made by Wok, the <u><a href="https://github.com/deiteris/voice-changer">Deiteris&#x27; Fork</a></u> made by Deiteris, and the <u><a href="https://github.com/tg-develop/voice-changer">Tg-Develop&#x27;s Fork</a></u> made by Tg-Develop. Note that those 3 links are just for reference to the Source Code Github Repositories of both projects, you should instead follow the guide below.</p>
+<li><p>There are 3 versions of this realtime voice changer, the <a href="https://github.com/w-okada/voice-changer">Offical Original W-Okada</a> made by Wok, the <a href="https://github.com/deiteris/voice-changer">Deiteris&#x27; Fork</a> made by Deiteris, and the <a href="https://github.com/tg-develop/voice-changer">Tg-Develop&#x27;s Fork</a> made by Tg-Develop. Note that those 3 links are just for reference to the Source Code Github Repositories of both projects, you should instead follow the guide below.</p>
 </li>
 <li><p>This guide will be about the Wokada Tg-Develop&#x27;s fork since it&#x27;s a fork of the Deiteris&#x27; Fork, containing the performance improvements, has an improved Web User Interface, supports Spin Embedder Models, and has Audio Effects.</p>
 </li>
@@ -211,7 +211,7 @@
 <p>RVC Models are PyTorch Models, a Python library used for AI.
 PyTorch uses serialization via Pythons&#x27; Pickle Module, converting the model to a file.
 Since pickle can execute arbitrary code when loading a model, it could be theoretically used for malware, but Wokada Tg-Develop&#x27;s Fork has a <strong>built-in feature to prevent code execution along the model.</strong>
-Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/security-pickle#hubs-security-scanner">Security Scanner</a></u></strong> which scans for any unsafe pickle exploits and uses also ClamAV for scanning dangerous files.</p>
+Also, <strong>HuggingFace has a <a href="https://huggingface.co/docs/hub/security-pickle#hubs-security-scanner">Security Scanner</a></strong> which scans for any unsafe pickle exploits and uses also ClamAV for scanning dangerous files.</p>
 <hr>
 <p>‎</p>
 <h4 id="pros--cons">Pros &amp; Cons <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M3 6a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1Zm1.5 4.5h4v-4h-4Zm8.25-5a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 0 0-1.5h-7.5Zm0 6a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 0 0-1.5h-7.5Zm0 6a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 0 0-1.5h-7.5Zm-2.97-2.53a.75.75 0 0 1 0 1.06l-3.5 3.5a.75.75 0 0 1-1.06 0l-2-2a.75.75 0 1 1 1.06-1.06l1.47 1.47 2.97-2.97a.75.75 0 0 1 1.06 0Z"/></g></g></svg></h4>
@@ -345,7 +345,7 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
         </div>
         <div class="pr-5 ml-3 w-full">
             <h5>For Windows</h5>
-<p>Download this: <u><a href="https://software.muzychenko.net/freeware/vac470lite.zip">VAC Lite (Virtual-Audio-Cable by Muzychenko)</a></u>.
+<p>Download this: <a href="https://software.muzychenko.net/freeware/vac470lite.zip">VAC Lite (Virtual-Audio-Cable by Muzychenko)</a>.
 (Be sure to not use any toher vac like VB Audio Cable.)</p>
         </div>
     </div>
@@ -371,9 +371,9 @@ Also, <strong>HuggingFace has a <u><a href="https://huggingface.co/docs/hub/secu
         <div class="pr-5 ml-3 w-full">
             <h5>For Mac</h5>
 <p>Download either:
-<u><a href="https://existential.audio/blackhole">Blackhole Virtual Audio Cable</a></u>
+<a href="https://existential.audio/blackhole">Blackhole Virtual Audio Cable</a>
 or
-<u><a href="https://vb-audio.com/Cable">VB-Audio</a></u></p>
+<a href="https://vb-audio.com/Cable">VB-Audio</a></p>
         </div>
     </div>
 </div>
@@ -409,7 +409,7 @@ or
 <hr>
 <h2 id="windows">Windows</h2>
 <ul>
-<li>First, go to the latest release page: <u><a href="https://github.com/tg-develop/voice-changer/releases/latest">Latest Release (click here to go to Github)</a></u></li>
+<li>First, go to the latest release page: <a href="https://github.com/tg-develop/voice-changer/releases/latest">Latest Release (click here to go to Github)</a></li>
 <li>On the release page, find the &quot;Assets&quot; section and download the files based on your GPU.</li>
 </ul>
 <div class="flex mb-6">
@@ -475,7 +475,7 @@ or
 <hr>
 <h3 id="opening-on-windows">Opening on Windows</h3>
 <ul>
-<li>Make sure you have <u><a href="https://www.7-zip.org/">7-Zip</a></u> or <u><a href="https://www.win-rar.com/download.html">WinRAR</a></u> installed to extract the files.</li>
+<li>Make sure you have <a href="https://www.7-zip.org/">7-Zip</a> or <a href="https://www.win-rar.com/download.html">WinRAR</a> installed to extract the files.</li>
 <li>To extract:
 <ul>
 <li><strong>For the NVIDIA version:</strong> Right-click on the file ending in <code translate="no" v-pre>.zip.001</code> (the first part of the archive) and choose to extract it. Your archiving program will automatically find the other parts and combine them.</li>
@@ -523,7 +523,7 @@ or
     </div>
 </div>
 <ul>
-<li>First, go to the last Apple Silicon Mac release page: <u><a href="https://github.com/tg-develop/voice-changer/releases/tag/b2364">Last Release for Apple Silicon Macs (click here to go to Github)</a></u></li>
+<li>First, go to the last Apple Silicon Mac release page: <a href="https://github.com/tg-develop/voice-changer/releases/tag/b2364">Last Release for Apple Silicon Macs (click here to go to Github)</a></li>
 <li>On the release page, find the &quot;Assets&quot; section and download the file corresponding to your Mac&#x27;s processor (Only Apple Silicon is available).</li>
 </ul>
 <hr>
@@ -583,7 +583,7 @@ For example, if you extracted the realtime voice changer to your desktop, the co
 <hr>
 <h2 id="linux">Linux</h2>
 <ul>
-<li>First, go to the latest release page: <u><a href="https://github.com/tg-develop/voice-changer/releases/latest">Latest Release (click here to go to Github)</a></u></li>
+<li>First, go to the latest release page: <a href="https://github.com/tg-develop/voice-changer/releases/latest">Latest Release (click here to go to Github)</a></li>
 <li>On the release page, find the &quot;Assets&quot; section and download the file(s) corresponding to your hardware.</li>
 </ul>
 <hr>
@@ -652,9 +652,9 @@ tar xzf voice-changer-linux-amd64-cpu.tar.gz</code></pre>
 <h2 id="opening-on-multi-pc-setups">Opening on Multi-PC Setups</h2>
 <p>This is only for the people that have 2 PCs, and want to use 1 PC for Gaming, the other only for Wokada Tg-Develop&#x27;s Fork.</p>
 <ul>
-<li><p>Create a file named <code translate="no" v-pre>.env</code> on the same folder where <code translate="no" v-pre>MMVCServerSIO.exe</code> is located. Open it up with a notepad, copy paste the settings from the <u><a href="https://github.com/deiteris/voice-changer/issues/180#issuecomment-2359166278">GitHub link</a></u>.</p>
+<li><p>Create a file named <code translate="no" v-pre>.env</code> on the same folder where <code translate="no" v-pre>MMVCServerSIO.exe</code> is located. Open it up with a notepad, copy paste the settings from the <a href="https://github.com/deiteris/voice-changer/issues/180#issuecomment-2359166278">GitHub link</a>.</p>
 </li>
-<li><p>After that, you create another file with the file extension ending <code translate="no" v-pre>.bat</code>, open it up with a notepad, copy paste what is needed in there again from the <u><a href="https://github.com/deiteris/voice-changer/issues/180#issuecomment-2359166278">GitHub link</a></u>.</p>
+<li><p>After that, you create another file with the file extension ending <code translate="no" v-pre>.bat</code>, open it up with a notepad, copy paste what is needed in there again from the <a href="https://github.com/deiteris/voice-changer/issues/180#issuecomment-2359166278">GitHub link</a>.</p>
 </li>
 <li><p>Now run the bat file. After it starts, you should be able to open the link. For example, if you specified <code translate="no" v-pre>HOST=192.168.0.1</code> and <code translate="no" v-pre>ALLOWED_ORIGINS='[&quot;https://192.168.0.1:18888&quot;]')</code>, you should be able to open <code translate="no" v-pre>https://192.168.0.1:18888</code> in your browser.</p>
 </li>
@@ -1267,12 +1267,12 @@ tar xzf voice-changer-linux-amd64-cpu.tar.gz</code></pre>
 </div>
 <h4 id="step-1-download-and-install-flexasio">Step 1: Download and Install FlexASIO</h4>
 <ul>
-<li>Download and run the installer from here: <u><a href="https://github.com/dechamps/FlexASIO/releases/download/flexasio-1.9/FlexASIO-1.9.exe">FlexASIO Download</a></u></li>
+<li>Download and run the installer from here: <a href="https://github.com/dechamps/FlexASIO/releases/download/flexasio-1.9/FlexASIO-1.9.exe">FlexASIO Download</a></li>
 </ul>
 <h4 id="step-2-download-and-install-flexasio-gui">Step 2: Download and Install FlexASIO GUI</h4>
 <ul>
-<li>First, you need the .NET Desktop runtime. Download and install it from here: <u><a href="https://dotnet.microsoft.com/en-us/download/dotnet/6.0">.NET 6.x Desktop runtime</a></u></li>
-<li>Afterwards, download and install the FlexASIO GUI: <u><a href="https://github.com/flipswitchingmonkey/FlexASIO_GUI/releases/download/v0.35/FlexASIO.GUIInstaller_0.35.exe">FlexASIO GUI Download</a></u></li>
+<li>First, you need the .NET Desktop runtime. Download and install it from here: <a href="https://dotnet.microsoft.com/en-us/download/dotnet/6.0">.NET 6.x Desktop runtime</a></li>
+<li>Afterwards, download and install the FlexASIO GUI: <a href="https://github.com/flipswitchingmonkey/FlexASIO_GUI/releases/download/v0.35/FlexASIO.GUIInstaller_0.35.exe">FlexASIO GUI Download</a></li>
 </ul>
 <h4 id="step-3-configuring-flexasio-gui">Step 3: Configuring FlexASIO GUI</h4>
 <p>Run <code translate="no" v-pre>FlexASIO GUI</code>. If it doesn&#x27;t open, you missed installing the .NET runtime from the previous step. Copy the following settings:</p>
@@ -1443,7 +1443,7 @@ tar xzf voice-changer-linux-amd64-cpu.tar.gz</code></pre>
 <doc-panel id="i-couldnt-find-my-answer" collapsed>
     <template #title><span class="docs-emoji">&#x2753;</span> I couldn&#x27;t find my answer.</template>
 <ul>
-<li>Report your issue <u><a href="https://docs.aihub.gg/contributions">here</a></u>.</li>
+<li>Report your issue <a href="https://docs.aihub.gg/contributions">here</a>.</li>
 </ul>
 </doc-panel>
 <hr>
