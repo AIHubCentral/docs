@@ -81,7 +81,7 @@ Looking for something to work on? Here is our current roadmap of things we need 
 - Archive/Fix(?) Broken Ilaria HuggingFace Spaces.
 - Add the other [Mainline Download methods](<https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI/blob/main/docs/en/README.en.md>) (AMD/Intel Windows, AMD Linux, Intel Linux) and more info https://discord.com/channels/1159260121998827560/1159290096458149938/1403086698895638570, https://discord.com/channels/1159260121998827560/1159290096458149938/1419361265314431067.
 - Add RVC Termux Android (not a necessity).
-- Update TTS Section.
+- Update TTS Section constantly with new tools. The GPT-SoVITS Guide is included.
 - Add more to the Image Gen Section.
 - Add and update other AI stuff, such as LLMs.
 - Adapt all guides in the #guides discord channel to the Docs, to replace that channel.
