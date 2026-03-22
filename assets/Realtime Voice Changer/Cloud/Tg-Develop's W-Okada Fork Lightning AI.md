@@ -1,8 +1,8 @@
 ---
 icon: ":zap:"
-order: 2000
+order: 6000
 ---
-`Last update: September 6, 2025`
+`Last update: March 22, 2026`
 ***
 :::content-center
 <img src="../lightning-img/lightning-ai-banner.png" alt="LightningAI Banner" width="600">
@@ -11,14 +11,18 @@ order: 2000
 :::content-center
 ## Introduction
 :::
-- This is a <u>[cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based)</u> alternative to run [Wokada Deiteris Fork](https://docs.aihub.gg/realtime-voice-changer/local/deiteris-w-okada-fork/#virtual-audio-cable), Realtime Voice Changer for calls/games, only for people who don't have a good PC GPU, via the <u>[Lightning.AI Service](https://docs.aihub.gg/extra/glossary/#lightningai)</u>.
+- This is a [cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based) alternative to run [Wokada Tg-Develop's Fork](https://docs.aihub.gg/realtime-voice-changer/local/tg-develops-w-okada-fork/#virtual-audio-cable), Realtime Voice Changer for calls/games, only for people who don't have a good PC GPU, via the [Lightning.AI Service](https://docs.aihub.gg/extra/glossary/#lightningai).
 
 !!!danger Lightning.AI Service
-**Check the <u>[Lightning.AI Glossary](https://docs.aihub.gg/extra/glossary/#lightningai)</u> for more info on Free Tier, Limits, Verification, Pricing and other things.**
+**Check the [Lightning.AI Glossary](https://docs.aihub.gg/extra/glossary/#lightningai) for more info on Free Tier, Limits, Verification, Pricing and other things.**
 !!!
 
 !!! Note on the Free Tier "10 Mins Inactivity Auto Sleep"
-This doesn't affect when the Wokada Deiteris Fork is running, this is affected only if no cell is running or the site is closed, which will shutdown the studio session. So you don't have to check every 10 minutes the site after you're sure the server cell is running and you're using the Web User Interface after starting it.
+This doesn't affect when the Wokada Tg-Develop Fork is running, this is affected only if no cell is running or the site is closed, which will shutdown the studio session. So you don't have to check every 10 minutes the site after you're sure the server cell is running and you're using the Web User Interface after starting it.
+!!!
+
+!!!warning
+**NOTE: ⚠️ "Server audio not available" is normal on cloud platforms as they have no physical sound card. Always use Client mode for audio input/output.**
 !!!
 
 
@@ -31,7 +35,7 @@ This doesn't affect when the Wokada Deiteris Fork is running, this is affected o
 - In AI Realtime Voice Changing context, it's used to get the output of AI Converted Voice Output as the input in other programs such as Discord.
 
 !!! For Windows
-Download this: <u>[VAC Lite (Virtual-Audio-Cable by Muzychenko)](https://software.muzychenko.net/freeware/vac470lite.zip)</u>.
+Download this: [VAC Lite (Virtual-Audio-Cable by Muzychenko)](https://software.muzychenko.net/freeware/vac470lite.zip).
 (Be sure to not use any other VAC like VB Audio Cable.)
 !!!
 
@@ -40,9 +44,9 @@ Download this: <u>[VAC Lite (Virtual-Audio-Cable by Muzychenko)](https://softwar
 
 !!! For Mac
 Download either:
-<u>[Blackhole Virtual Audio Cable](https://existential.audio/blackhole)</u>
+[Blackhole Virtual Audio Cable](https://existential.audio/blackhole)
 or
-<u>[VB-Audio](https://vb-audio.com/Cable)</u>
+[VB-Audio](https://vb-audio.com/Cable)
 !!!
 
 !!! For Linux
@@ -66,7 +70,7 @@ sudo pacman -Syu portaudio
 ***
 ## Create an Account   
 ### 1. Set up account.
-a. First make an account with <u>[Lightning Ai](https://lightning.ai)</u>
+a. First make an account with [Lightning Ai](https://lightning.ai)
 
 <img src="../lightning-img/signup.png" alt="LightningAI Signup" width="300">
 
@@ -78,7 +82,7 @@ b. Make sure you verify yourself with a phone number. Once you've done that you 
 You will need to wait 2-3 business days to become fully verified 
 !!!
 
-c. Once you are verified Lightning Ai will send you a email that conatins this: 
+c. Once you are verified Lightning Ai will send you a email that contains this: 
 
 <img src="../lightning-img/email-verification.png" alt="LightningAI Email Verification" width="500">
 
@@ -88,7 +92,7 @@ c. Once you are verified Lightning Ai will send you a email that conatins this:
 ## Studio Setup & Installation
 
 #### 2. Access the Notebook
-a. After creating your Lightning.AI account, open the [Wokada-Deiteris-Fork Notebook](https://lightning.ai/nick088/studios/wokada-deiteris-fork?view=public&section=featured) and Clone it.
+a. After creating your Lightning.AI account, open the [Wokada-TgDevelop-Fork Notebook](https://lightning.ai/nick088/studios/wokada-tgdevelop-fork) and Clone it.
 
 <img src="../lightning-img/lightning-ai-clone-studio.png" alt="LightningAI Clone Studio" width="300">
 
@@ -106,12 +110,12 @@ c. Click **Switch To GPU**, select an available GPU, and wait for the environmen
 !!!
 
 #### 4. Clone Repository and Install Dependencies
-a. Run the first code cell. This will download the latest version of the realtime voice changer and install necessary dependencies.
+a. Run the first code cell. This will download the latest version of the realtime voice changer and install necessary dependencies. It also automatically checks if you already have it installed and upgrades only if a newer version is available.
 b. This step may take a few minutes to complete. It will print "Installed!" when finished.
 
 #### 5. Set Server Configuration
 a. Run the second code cell to apply the server configuration.
-b. It will print "Server successfully configurated!" upon completion.
+b. It will print "Server successfully configured!" upon completion.
 
 
 ***
@@ -120,12 +124,12 @@ b. It will print "Server successfully configurated!" upon completion.
 #### 6. Launch the Server via Tunnels
 This final code cell is the most important one—it starts the voice changer's server and uses a "tunneling" service to create a secure, public web address (URL) for you to access it from your own computer.
 
-a. Navigate to the third code cell, titled "Start Server **using Tunnels**". This cell boots up the Wokada Deiteris Fork application inside your Lightning.AI Studio.
+a. Navigate to the third code cell, titled "Start Server **using Tunnels**". This cell boots up the Wokada Tg-Develop Fork application inside your Lightning.AI Studio.
 
 b. **Select a Tunnel:** A tunnel securely exposes the application running in your private cloud environment to the public internet. The notebook gives you five different services to do this. Choose one from the `Tunnel` code menu in the code cell.
 
     - **Port Viewer (Recommended & Default method)**
-        - **How it works:** This is a built-in Lightning.AI feature. It's one of the most straightforward method as it doesn't require any external accounts or tokens.
+        - **How it works:** This is a built-in Lightning.AI feature. It's the most straightforward method as it doesn't require any external accounts or tokens.
         - **Steps:**
             1. Select "Port Viewer" from the `Tunnel` code.
             2. Click the + at the bottom of the right tab, click on Web Apps and install Port Viewer.
@@ -136,19 +140,13 @@ b. **Select a Tunnel:** A tunnel securely exposes the application running in you
             7. Click your Port in Port Viewer, you can also click Open to open it in an external tab.
             8. You can optionally go back to the Jupyter session in the right-hand sidebar of the Lightning.AI interface, to check if any error appears in the code output.
 
-    - **Gradio (Fast, Popular & Reliable)**
-        - **How it works:** This is a built-in <u>[Gradio](https://docs.aihub.gg/extra/glossary/#gradio)</u> feature. It's one of the most straightforward method as it doesn't require any external accounts or tokens.
-        - **Steps:**
-            1. Select "Gradio" from the `Tunnel` code.
-            2. Run the cell. The public Gradio URL (ending in `gradio.live`) will be printed in the output once the server is ready. Click on it to access the UI.
-
     - **Ngrok (Fast, Popular & Reliable)**
         - **How it works:** Ngrok is a popular service that creates secure tunnels. It requires a free account and an authentication token. It has a 1GB Bandwidth Free Monthly Limit https://ngrok.com/docs/pricing-limits/free-plan-limits/.
         - **Steps:**
             1. Go to the [Ngrok Dashboard](https://dashboard.ngrok.com/get-started/your-authtoken) to get your free authtoken.
             2. In the notebook cell, paste your token into the `Token` field, replacing `'Ngrok | Horizon TOKEN'`.
             3. (Optional) To potentially reduce latency, select a geographical `Region` from the list of parameter options next to it, that is closest to you.
-            4. Run the cell. The public Ngrok URL (ending in `ngrok.io`) will be printed in the output once the server is ready. Click on it to access the UI.
+            4. Run the cell. The public Ngrok URL will be printed in the output once the server is ready. Click on it to access the UI.
 
     - **Cloudflare (Easy, No Account Needed)**
         - **How it works:** This option uses Cloudflare's free `trycloudflare` service. It's very easy to use as it requires no accounts or tokens.
@@ -175,7 +173,7 @@ b. **Select a Tunnel:** A tunnel securely exposes the application running in you
 
 c. After configuring your chosen tunnel, run the cell. The first time you run it, it will download the necessary voice models, which might take a minute or two.
 
-d. Once the setup is complete, the output will display a message: **"--------- SERVER READY! ---------"**, followed by your public URL. Click this link to open the Wokada Deiteris Fork interface and start using the voice changer.
+d. Once the setup is complete, the output will display a message: **"--------- SERVER READY! ---------"**, followed by your public URL. Click this link to open the Wokada Tg-Develop Fork interface and start using the voice changer.
 
 !!!danger Note:
 The server runs in the foreground. If you stop the cell or close the Lightning.AI site, the server will shut down. Keep the cell running to use the program.
@@ -188,14 +186,14 @@ Now that you have the web interface running via Lightning.AI, the rest of the pr
 
 For all subsequent steps, including audio routing, application settings, and model usage, please continue by following the Local Guide.
 
-[!button text="Continue with the Local Guide" icon="arrow-right" target="blank"](https://docs.aihub.gg/realtime-voice-changer/local/deiteris-w-okada-fork/#voice-models)
+[!button text="Continue with the Local Guide" icon="arrow-right" target="blank"](https://docs.aihub.gg/realtime-voice-changer/local/tg-develops-w-okada-fork/#voice-models)
 
 
 ***
 ## Maintenance
 ***
 #### Deleting Everything
-If you need to update the Wokada Deiteris Fork or start fresh, you can run the final cell in the notebook, "Delete everything". This will remove all downloaded files and configurations from your persistent storage, allowing for a clean installation.
+If you need to update the Wokada Tg-Develop Fork or start fresh, you can run the final cell in the notebook, "Delete everything". This will remove all downloaded files and configurations from your persistent storage, allowing for a clean installation.
 
 
 ***
