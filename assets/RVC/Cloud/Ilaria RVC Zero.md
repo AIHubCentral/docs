@@ -11,11 +11,11 @@ visibility: hidden
 
 - This is a fork of mainline RVC running on Hugging Face Spaces, it’s called this way because it runs on Hugging Face’s ZeroGPU, which currently is an A100 GPU.
 
-- Here is the link to the space <u>[Ilaria RVC Zero](https://huggingface.co/spaces/TheStinger/Ilaria_RVC)</u>.
+- Here is the link to the space [Ilaria RVC Zero](https://huggingface.co/spaces/TheStinger/Ilaria_RVC).
 
 
 !!!danger HuggingFace Space Service
-**Check the <u>[HuggingFace Space Glossary](https://docs.aihub.gg/extra/glossary/#huggingface-space)</u> for more info on Free Tier, Limits, Quotas and other things.**
+**Check the [HuggingFace Space Glossary](https://docs.aihub.gg/extra/glossary/#huggingface-space) for more info on Free Tier, Limits, Quotas and other things.**
 !!!
 
 
@@ -93,7 +93,7 @@ ZeroGPU HuggingFace Spaces have a quota per account, if you aren’t signed in y
 - Wait
 - Pay to be an HuggingFace PRO Member to get X5 times more quota
 
-You can find your ZeroGPU quota <u>[here](https://huggingface.co/settings/billing)</u>
+You can find your ZeroGPU quota [here](https://huggingface.co/settings/billing)
 ***
 #### No GPU is currently available for you after 60 seconds:
 As all ZeroGPU Spaces share this hardware, there might be times where ZeroGPU is busy, if you ever go through this error, you just need to wait a bit and retry.

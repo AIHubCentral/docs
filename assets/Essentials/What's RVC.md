@@ -10,11 +10,11 @@ visibility:
 
 ## Introduction :icon-book:
 ***
-- RVC (*Retrieval-Based Voice Conversion*) is an advanced AI **voice cloning** software based on <u>[VITS](https://github.com/jaywalnut310/vits)</u>, developed by the <u>[RVC-Project team](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI)</u>. It's considered the best **free & open-source** one to date.
+- RVC (*Retrieval-Based Voice Conversion*) is an advanced AI **voice cloning** software based on [VITS](https://github.com/jaywalnut310/vits), developed by the [RVC-Project team](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI). It's considered the best **free & open-source** one to date.
 
 - It was designed for desktop, requiring **great specs** to run it effectively, specially **GPU** for training models.
 
-- Though it can be executed through the <u>[cloud](https://docs.aihub.gg/extra/glossary/#cloud-based)</u> & be used in **any** device, in case you don't meet the previous requirement.        
+- Though it can be executed through the [cloud](https://docs.aihub.gg/extra/glossary/#cloud-based) & be used in **any** device, in case you don't meet the previous requirement.        
 
 - RVC doesn't have any major *quality* improvements since 2023, since its original devs are focused on other projects, RVC is hard to optimize, and it has limitations like non speech sounds such as realistic laughing, screaming, etc. Though, there are commmunity driven Forks that try to experiment with it, mostly about adding new features and performance improvements.
 
@@ -26,25 +26,25 @@ visibility:
 
 - RVC has quite a few forks made by the community, each one meeting different **needs** for the user, and with its pros & cons.     
 
-- These are the main ones, along with their <u>[cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based)</u> counterparts:       
+- These are the main ones, along with their [cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based) counterparts:       
 
     {.list-icon}
-    - #### :icon-chevron-right: <u>[Mainline](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI)</u> (Original RVC)
-        - ##### :icon-cloud: <u> [Mainline Kaggle](https://www.kaggle.com/code/hinabl/mainline)</u>
-         - ##### :icon-cloud: <u>[Mainline Colab](https://colab.research.google.com/github/hinabl/RVC-Online/blob/main/Mainline_Colab_Full.ipynb)</u>
+    - #### :icon-chevron-right: [Mainline](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI) (Original RVC)
+        - ##### :icon-cloud: <u> [Mainline Kaggle](https://www.kaggle.com/code/hinabl/mainline)
+         - ##### :icon-cloud: [Mainline Colab](https://colab.research.google.com/github/hinabl/RVC-Online/blob/main/Mainline_Colab_Full.ipynb)
     ###### ‎    
     {.list-icon}
-    - #### :icon-repo-forked: <u>[Applio](https://applio.org/)</u>
-        - ##### :icon-cloud: <u>[Applio Colab](https://colab.research.google.com/github/iahispano/applio/blob/master/assets/Applio.ipynb)</u>
-        - ##### :icon-cloud: <u>[Applio Kaggle](https://www.kaggle.com/code/deiant/applio)</u>
-        - ##### :icon-cloud: <u>[Applio Lightning Ai](https://lightning.ai/guilhermecardoso1/studios/applio-latest?section=all&query=applio)</u>
+    - #### :icon-repo-forked: [Applio](https://applio.org/)
+        - ##### :icon-cloud: [Applio Colab](https://colab.research.google.com/github/iahispano/applio/blob/master/assets/Applio.ipynb)
+        - ##### :icon-cloud: [Applio Kaggle](https://www.kaggle.com/code/deiant/applio)
+        - ##### :icon-cloud: [Applio Lightning Ai](https://lightning.ai/guilhermecardoso1/studios/applio-latest?section=all&query=applio)
 
         
     ###### ‎  
     {.list-icon} 
-    - #### :icon-repo-forked: <u>[RVC-AI-Cover-Maker-UI](https://github.com/Eddycrack864/RVC-AI-Cover-Maker-UI)</u>     
-        - ##### :icon-cloud: <u>[RVC-AI-Cover-Maker-UI Colab](https://colab.research.google.com/github/Eddycrack864/RVC-AI-Cover-Maker-UI/blob/main/assets/RVCAICoverMakerUI.ipynb)</u>
-        - ##### :icon-cloud: <u>[RVC-AI-Cover-Maker-UI Kaggle](https://www.kaggle.com/code/eddycrack864/rvc-ai-cover-maker-ui)</u>     
+    - #### :icon-repo-forked: [RVC-AI-Cover-Maker-UI](https://github.com/Eddycrack864/RVC-AI-Cover-Maker-UI)     
+        - ##### :icon-cloud: [RVC-AI-Cover-Maker-UI Colab](https://colab.research.google.com/github/Eddycrack864/RVC-AI-Cover-Maker-UI/blob/main/assets/RVCAICoverMakerUI.ipynb)
+        - ##### :icon-cloud: [RVC-AI-Cover-Maker-UI Kaggle](https://www.kaggle.com/code/eddycrack864/rvc-ai-cover-maker-ui)     
     ‎       
 ***
 ## FAQ :icon-question:
@@ -54,12 +54,12 @@ visibility:
 ==- *What's the best fork?*
 ###### ‎       
 - As explained before, it depends on your needs. It's best to try them yourself.
-- For **local** users, <u>[Applio](https://docs.aihub.gg/rvc/local/applio/)</u> is a great starting point. For **cloud** users you can use either the <u>[Applio Colab](https://docs.aihub.gg/rvc/cloud/applio-colab/)</u> or <u>[applio kaggle](https://docs.aihub.gg/rvc/cloud/applio-kaggle/)</u>.
+- For **local** users, [Applio](https://docs.aihub.gg/rvc/local/applio/) is a great starting point. For **cloud** users you can use either the [Applio Colab](https://docs.aihub.gg/rvc/cloud/applio-colab/) or [applio kaggle](https://docs.aihub.gg/rvc/cloud/applio-kaggle/).
 ===
 
 ==- *What are the requirements for RVC locally?*
 ###### ‎      
-> The minimum specs vary depending if it's for training models or <u>[inference](https://docs.aihub.gg/extra/glossary/#inference)</u>.
+> The minimum specs vary depending if it's for training models or [inference](https://docs.aihub.gg/extra/glossary/#inference).
 +++ Training
 **SPEC** | **MINIMUM REQUIREMENT** | 
 :---: | :---: | :---: |
@@ -100,21 +100,21 @@ Storage | 6 GB
 ==- *Can I use it on my AMD GPU?*
 ###### ‎  
 - You can, but it's going to be slower, as they don't have CUDA cores.
-- So it's more convenient using RVC through the <u>[cloud](https://docs.aihub.gg/extra/glossary/#cloud-based)</u>.
-- If you're willing to use a slower version you can go ahead and follow this guide on how to get zluda working with <u>[Applio Zluda](https://docs.aihub.gg/rvc/local/applio/#amd-on-windows-precompiled-fix)</u>.
+- So it's more convenient using RVC through the [cloud](https://docs.aihub.gg/extra/glossary/#cloud-based).
+- If you're willing to use a slower version you can go ahead and follow this guide on how to get zluda working with [Applio Zluda](https://docs.aihub.gg/rvc/local/applio/#amd-on-windows-precompiled-fix).
 === 
 
 ==- *How long does it take to train?*
 ###### ‎      
 - The total time depends on a lot of factors, like dataset length, batch size, pretrains, specs, etc.
 
-- A 10 min <u>[dataset](https://docs.aihub.gg/rvc/resources/dataset-isolation/)</u> with <u>[RMVPE](https://docs.aihub.gg/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u> may take around 1 to 2 hours.
+- A 10 min [dataset](https://docs.aihub.gg/rvc/resources/dataset-isolation/) with [RMVPE](https://docs.aihub.gg/rvc/resources/inference-settings/#pitch-extraction-algorithm) may take around 1 to 2 hours.
 === 
 
 ==- *Can I run it on a Mac?*
 ###### ‎      
 - Yes, on Macs of recent generations.
-- But you can only do <u>[inference](https://docs.aihub.gg/extra/glossary/#inference)</u> & it's a little unstable.  
+- But you can only do [inference](https://docs.aihub.gg/extra/glossary/#inference) & it's a little unstable.  
 ===
 
 ==- *Do I need internet to use it?*
@@ -125,7 +125,7 @@ Storage | 6 GB
 
 ==- *Is there a scientific paper for RVC to understand more about it?*
 ###### ‎      
-- There isn't an official one, but there's an <u>[unofficial complex blog](https://gudgud96.github.io/2024/09/26/annotated-rvc/)</u> to understand how it works.
+- There isn't an official one, but there's an [unofficial complex blog](https://gudgud96.github.io/2024/09/26/annotated-rvc/) to understand how it works.
 ===
 
 

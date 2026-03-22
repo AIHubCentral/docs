@@ -14,10 +14,10 @@ order: 8000
 :::content-center
 ## Introduction ‎
 :::
-- This is a <u>[cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based)</u> alternative to run [Applio](https://docs.aihub.gg/rvc/local/applio/), RVC Fork, for people who don't have a powerful local GPU. It runs via the <u>[Kaggle Service](https://docs.aihub.gg/extra/glossary/#kaggle)</u> and provides a Web User Interface.
+- This is a [cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based) alternative to run [Applio](https://docs.aihub.gg/rvc/local/applio/), RVC Fork, for people who don't have a powerful local GPU. It runs via the [Kaggle Service](https://docs.aihub.gg/extra/glossary/#kaggle) and provides a Web User Interface.
 
 !!!danger Kaggle Service
-**Check the <u>[Kaggle Glossary](https://docs.aihub.gg/extra/glossary/#kaggle)</u> for more info on Free Tier, Limits, Verification, Pricing and other things.**
+**Check the [Kaggle Glossary](https://docs.aihub.gg/extra/glossary/#kaggle) for more info on Free Tier, Limits, Verification, Pricing and other things.**
 !!!
 
 
@@ -44,7 +44,7 @@ order: 8000
 ## Create an Account   
 ###### ‎   
 #### 1. <u>Set up account.</u>
-a. Start by making an account <u>[here](https://www.kaggle.com/account/login?phase=startRegisterTab&returnUrl=%2F)</u>.
+a. Start by making an account [here](https://www.kaggle.com/account/login?phase=startRegisterTab&returnUrl=%2F).
 ‎  
 
    <img src="../kaggle-img/kaggle-sign-in.png" alt="image" width="575" height="auto">
@@ -62,7 +62,7 @@ b. Verify your account with a phone number. This is required to enable the "Inte
 ## Notebook Creation & Setup
 ###### ‎  
 #### 2. <u>Clone Notebook</u>
-a. Go to <u>[Kaggle](https://www.kaggle.com)</u> and click "Create" then "New Notebook" at the top left. 
+a. Go to [Kaggle](https://www.kaggle.com) and click "Create" then "New Notebook" at the top left. 
 
    <img src="../applio-kaggle-img/new.png" alt="image" width="400" height="auto"> 
 

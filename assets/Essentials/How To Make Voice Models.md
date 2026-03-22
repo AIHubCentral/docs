@@ -9,7 +9,7 @@ order: 5000
 ``Last update: July 17, 2025``
 
 
-#### - *Simple model training tutorial, using <u>[RVC](https://docs.aihub.gg/essentials/whats-rvc/)</u>* -
+#### - *Simple model training tutorial, using [RVC](https://docs.aihub.gg/essentials/whats-rvc/)* -
 ***
 ###### ‎ 
 ### 1. Prepare dataset
@@ -17,7 +17,7 @@ order: 5000
 
 - For the best results, having a **clean** dataset is crucial, so take the time to remove any undesired noises.
        
-- #### <u>[Learn how</u>](https://docs.aihub.gg/rvc/resources/dataset-isolation/).
+- #### [Learn how</u>](https://docs.aihub.gg/rvc/resources/dataset-isolation/).
 ***
 ###### ‎ 
 ### 2. Set up RVC
@@ -25,17 +25,17 @@ order: 5000
 
 - There are plenty of versions of RVC, but these are the **best** ones for beginners. Pick according to your needs:
 
-    #### :icon-device-desktop: ‎ <u>[Locally](https://docs.aihub.gg/rvc/local/applio/)</u>
+    #### :icon-device-desktop: ‎ [Locally](https://docs.aihub.gg/rvc/local/applio/)
 
-    #### :icon-cloud: ‎ <u>[On the cloud](https://docs.aihub.gg/rvc/cloud/applio-colab/)</u>
+    #### :icon-cloud: ‎ [On the cloud](https://docs.aihub.gg/rvc/cloud/applio-colab/)
 ###### ‎
 !!!warning
-For local users, first ensure you meet the <u>[local minimum requirements](https://docs.aihub.gg/essentials/whats-rvc/#what-are-the-requirements-for-rvc-locally)</u>.
+For local users, first ensure you meet the [local minimum requirements](https://docs.aihub.gg/essentials/whats-rvc/#what-are-the-requirements-for-rvc-locally).
 !!!
 ***
 ###### ‎ 
 ### 3. Train the model
-- Before you start training, we inform you that the training guides are oriented around using <u>[TensorBoard](https://docs.aihub.gg/rvc/resources/training/#tensorboard)</u>. Read about it & install it after setting up RVC.
+- Before you start training, we inform you that the training guides are oriented around using [TensorBoard](https://docs.aihub.gg/rvc/resources/training/#tensorboard). Read about it & install it after setting up RVC.
 
 - Good luck & remember to be patient! As this won't be an instant process.
 

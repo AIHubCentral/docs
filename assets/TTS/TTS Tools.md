@@ -10,30 +10,30 @@ order: 2000
 ***
 - TTS is an abbreviation of Text To Speech, an AI that converts any given text into vocal speech.
 
-- The ones listed here offer a decent variety of features & options, such as <u>[model training](https://docs.aihub.gg/extra/glossary/#model-training)</u>, <u>[fine-tuning](https://docs.aihub.gg/extra/glossary/#fine-tuning)</u>, <u>[0 shot training](https://docs.aihub.gg/extra/glossary/#0-shot-training)</u>, or being <u>[mixed with RVC](https://ominous-waffle-r44vr6g95vvj2wqrx-5000.app.github.dev/other-ai/tts-tools/#rvc-forks)</u>.
+- The ones listed here offer a decent variety of features & options, such as [model training](https://docs.aihub.gg/extra/glossary/#model-training), [fine-tuning](https://docs.aihub.gg/extra/glossary/#fine-tuning), [0 shot training](https://docs.aihub.gg/extra/glossary/#0-shot-training), or being [mixed with RVC](https://ominous-waffle-r44vr6g95vvj2wqrx-5000.app.github.dev/other-ai/tts-tools/#rvc-forks).
 
 - Here's an index of the best TTS tools out there:    
 ‎
 ***
 ## ElevenLabs/11Labs
-- <u>[ElevenLabs](https://elevenlabs.io/)</u> is a **freemium** service that offers TTS, training TTS models & translating videos from different languages.  
+- [ElevenLabs](https://elevenlabs.io/) is a **freemium** service that offers TTS, training TTS models & translating videos from different languages.  
 
 ‎
 ***
 ## Fish Speech
-- Fish speech is a 0shot multilingual TTS model created by <u>[Fish Audio](https://fish.audio)</u>. 
+- Fish speech is a 0shot multilingual TTS model created by [Fish Audio](https://fish.audio). 
 
 - This is one of the best 0shot TTS as of now, it rarely hallucinates.
 
 - It can be used either locally or on the cloud.
 
  +++ :icon-device-desktop: ‎ LOCAL
- - :icon-repo-forked: <u>[Offical github repo](https://github.com/fishaudio/fish-speech)</u>
+ - :icon-repo-forked: [Offical github repo](https://github.com/fishaudio/fish-speech)
 
  +++ :icon-cloud: ‎ CLOUD
 
-- :icon-rocket: <u>[Offical site](https://fish.audio/)</u>
-- :icon-rocket: <u>[HuggingFace Space](https://huggingface.co/spaces/fishaudio/fish-speech-1)</u>
+- :icon-rocket: [Offical site](https://fish.audio/)
+- :icon-rocket: [HuggingFace Space](https://huggingface.co/spaces/fishaudio/fish-speech-1)
 
  +++
 
@@ -48,11 +48,11 @@ order: 2000
 - It can be used either locally or on the cloud.
 
  +++ :icon-device-desktop: ‎ LOCAL
- - :icon-repo-forked: <u>[Offical github repo](https://github.com/SWivid/F5-TTS)</u>
+ - :icon-repo-forked: [Offical github repo](https://github.com/SWivid/F5-TTS)
 
  +++ :icon-cloud: ‎ CLOUD
 
-- :icon-rocket: <u>[HuggingFace Space](https://huggingface.co/spaces/mrfakename/E2-F5-TTS)</u>
+- :icon-rocket: [HuggingFace Space](https://huggingface.co/spaces/mrfakename/E2-F5-TTS)
 
  +++
 
@@ -68,11 +68,11 @@ order: 2000
 - It can be used either locally or on the cloud.
 
  +++ :icon-device-desktop: ‎ LOCAL
- - :icon-repo-forked: <u>[Offical github repo](https://github.com/nari-labs/dia)</u>
+ - :icon-repo-forked: [Offical github repo](https://github.com/nari-labs/dia)
 
  +++ :icon-cloud: ‎ CLOUD
 
-- :icon-rocket: <u>[HuggingFace Space](https://huggingface.co/spaces/nari-labs/Dia-1.6B)</u>
+- :icon-rocket: [HuggingFace Space](https://huggingface.co/spaces/nari-labs/Dia-1.6B)
 
  +++
 
@@ -84,7 +84,7 @@ order: 2000
 ***
 - This is Microsoft Edge TTS, which is good **quality**, multilingual & works great on long sentences. 
 
-- It can only be used online via their API, through their web browser, a HF/Colab space or **mixed with <u>[RVC](https://docs.aihub.gg/rvc/essentials/whats-rvc/)</u>**.
+- It can only be used online via their API, through their web browser, a HF/Colab space or **mixed with [RVC](https://docs.aihub.gg/rvc/essentials/whats-rvc/)**.
 
   +++ :icon-globe: ‎ BROWSER
   1. [Download the browser.](https://www.microsoft.com/en-us/edge/download?ch=1&form=MA13FJ)

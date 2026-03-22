@@ -94,8 +94,8 @@ Before you train your first model, Weights will present you with a disclaimer th
 
 
 You can review the full legal documents here:
-- **<u>[Terms of Service](https://www.weights.com/terms-of-service)</u>**
-- **<u>[End-User License Agreement (EULA)](https://www.weights.com/eula)</u>**
+- **[Terms of Service](https://www.weights.com/terms-of-service)**
+- **[End-User License Agreement (EULA)](https://www.weights.com/eula)**
 
 ***
 

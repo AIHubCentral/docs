@@ -20,7 +20,7 @@ order: 1000
 
 - "Epoch" is a unit of measuring the training cycles of an AI model.     
 
-- In other words, the amount of times the model went over its <u>[dataset](https://docs.aihub.gg/rvc/resources/datasets/)</u> and learned from it.         
+- In other words, the amount of times the model went over its [dataset](https://docs.aihub.gg/rvc/resources/datasets/) and learned from it.         
 
 #### *:icon-chevron-right: How many epochs should I use for my dataset?*
 - **There isn't a way to know the right amount previous to training.** It depends on the length, quality and diversity of the dataset.
@@ -84,7 +84,7 @@ Pretrains are an integral part of making a model, they are basically models that
 ###### ‎ 
 ### Where do I find Pretrains?       
 
-You can find all of the community made custom pretrains in the [`pretrain-models`](https://discord.com/channels/1159260121998827560/1235952130855010365) channel in <u>[AI HUB](https://discord.gg/aihub)</u> if you are interested in experimenting. 
+You can find all of the community made custom pretrains in the [`pretrain-models`](https://discord.com/channels/1159260121998827560/1235952130855010365) channel in [AI HUB](https://discord.gg/aihub) if you are interested in experimenting. 
 
 !!!warning Keep in mind
 In many cases, the original (og) base RVC pretrain could work better than custom ones. Custom pretrains can be somewhat confusing for new users, so sticking to the defaults is generally the safest and best route unless you are looking to experiment.

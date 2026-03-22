@@ -12,7 +12,7 @@ order: 1000
 ###### ‎ 
 
 #### 1. Upload
-   a. Go to the <u>[Illusion Diffusion Hugging Face Space](https://huggingface.co/spaces/AP123/IllusionDiffusion)</u>.
+   a. Go to the [Illusion Diffusion Hugging Face Space](https://huggingface.co/spaces/AP123/IllusionDiffusion).
    b. Click on ``Input Illusion``.
    c. Upload the image you wish to blend.      
 ‎     

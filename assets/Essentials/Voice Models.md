@@ -18,7 +18,7 @@ order: 3000
 
 - **In this case**, voice models are models trained to **replicate** a voice, and with AI they apply it to the input audio.
 
-- There are plenty of them uploaded to the internet, made by the public. And the best way to make them is with <u>[RVC</u>](https://docs.aihub.gg/essentials/how-to-make-voice-models/)</u>.   
+- There are plenty of them uploaded to the internet, made by the public. And the best way to make them is with [RVC</u>](https://docs.aihub.gg/essentials/how-to-make-voice-models/).   
 
 ###### ‎   
 ### Voice Model Files 
@@ -27,7 +27,7 @@ order: 3000
 ##### :icon-triangle-down: <u>PTH:</u>   
 - This file is the model itself.
 - Contains data regarding pitch.     
-- While training, RVC generates other .PTHs named `D_` and `G_`, but these are the <u>[checkpoints](https://docs.aihub.gg/extra/glossary/#checkpoints)</u>, not usable models.  
+- While training, RVC generates other .PTHs named `D_` and `G_`, but these are the [checkpoints](https://docs.aihub.gg/extra/glossary/#checkpoints), not usable models.  
 ###### ‎       
 ##### :icon-triangle-down: <u>INDEX:</u>
 - Contains data regarding the voice's accent and speech manner.       
@@ -91,7 +91,7 @@ If you need help with exports, subscriptions, or anything else, contact us at su
 
 ###### ‎
 #### 1. Log in 
-- Access the website <u>[here</u>](https://weights.com/models) & login by clicking the icon on the top right corner.
+- Access the website [here</u>](https://weights.com/models) & login by clicking the icon on the top right corner.
 ***
 ###### ‎
 #### 2. Search
@@ -113,7 +113,7 @@ If you get models from different years, remember, the person's voice changes ove
     <img src="../searchrvcmodels-img/3.png" alt="image" width="400" height="auto">
 
 !!!success
-If you're curious about the epochs, <u>[learn more here](https://docs.aihub.gg/rvc/resources/training/#tensorboard)</u>.
+If you're curious about the epochs, [learn more here](https://docs.aihub.gg/rvc/resources/training/#tensorboard).
 !!!
 ***
 ###### ‎
@@ -124,7 +124,7 @@ If you're curious about the epochs, <u>[learn more here](https://docs.aihub.gg/r
 ‎   
 - If you need a link for it, use the other methods.     
 
-- If it only exists in weights.com, download the .ZIP & <u>[upload it to HF](https://docs.aihub.gg/essentials/voice-models/#uploading-to-hugging-face)</u>.  
+- If it only exists in weights.com, download the .ZIP & [upload it to HF](https://docs.aihub.gg/essentials/voice-models/#uploading-to-hugging-face).  
 
 
 +++ Voice Models channel     
@@ -138,8 +138,8 @@ If you're curious about the epochs, <u>[learn more here](https://docs.aihub.gg/r
 ***
 ###### ‎   
 #### 1. Enter the channel   
-- If you haven't already, join AI Hub <u>[here</u>](https://discord.gg/aihub).         
-- Then go to the <u>[``#voice-models``](https://discord.com/channels/1159260121998827560/1175430844685484042)</u> forum channel.       
+- If you haven't already, join AI Hub [here</u>](https://discord.gg/aihub).         
+- Then go to the [``#voice-models``](https://discord.com/channels/1159260121998827560/1175430844685484042) forum channel.       
        
 <img src="../searchrvcmodels-img/5.png" alt="image" width="480" height="auto"> 
 
@@ -163,13 +163,13 @@ If you're curious about the epochs, <u>[learn more here](https://docs.aihub.gg/r
 ‎   
 - This is a Discord bot developed by the Weights.com team.
 - It searches the models uploaded on Weights.com/AI Hub Discord server.
-- There's also its <u>[web version](https://www.weights.com/models)</u>.
+- There's also its [web version](https://www.weights.com/models).
 ***
 
 ###### ‎
 #### 1. Enter the channel     
-- If you haven't already, join AI Hub <u>[here</u>](https://discord.gg/aihub).        
-- Head over to the <u>[``#find-models``](https://discord.com/channels/1159260121998827560/1163592055830880266)</u> channel.
+- If you haven't already, join AI Hub [here</u>](https://discord.gg/aihub).        
+- Head over to the [``#find-models``](https://discord.com/channels/1159260121998827560/1163592055830880266) channel.
 ***
 ###### ‎
 #### 2. Type command        
@@ -206,7 +206,7 @@ If you're curious about the epochs, <u>[learn more here](https://docs.aihub.gg/r
 !!!           
 ***
 ###### ‎
-1. Go to the <u>[models page](https://huggingface.co/models)</u> & search the model in the ``Filter by name`` bar.
+1. Go to the [models page](https://huggingface.co/models) & search the model in the ``Filter by name`` bar.
 
     <img src="../searchrvcmodels-img/9.png" alt="image" width="" height="auto">‎                   
 ‎       
@@ -220,16 +220,16 @@ If you're curious about the epochs, <u>[learn more here](https://docs.aihub.gg/r
 ###### ‎   
 
 !!! In case there isn't a .ZIP.
-Download the <u>[correct files](https://docs.aihub.gg/essentials/voice-models/#voice-model-files)</u> of the model. Then if you need its **link**, <u>[upload it to HF</u>](https://docs.aihub.gg/essentials/voice-models/#uploading-to-hugging-face).
+Download the [correct files](https://docs.aihub.gg/essentials/voice-models/#voice-model-files) of the model. Then if you need its **link**, [upload it to HF</u>](https://docs.aihub.gg/essentials/voice-models/#uploading-to-hugging-face).
 !!!
 
 +++
 
 ##### ‎ 
 #### If you couldn't find one, you have 3 options:   
-- <u>[Make the model yourself](https://docs.aihub.gg/essentials/how-to-make-voice-models/)</u>
+- [Make the model yourself](https://docs.aihub.gg/essentials/how-to-make-voice-models/)
 - Pick a different one.
-- Request a **free** model via <u>[AI HUB](https://discord.gg/aihub)</u>'s <u>[``#request-models``](https://discord.com/channels/1159260121998827560/1159289738314919936)</u> forum channel. Be aware that **we don't allow paid commissions**
+- Request a **free** model via [AI HUB](https://discord.gg/aihub)'s [``#request-models``](https://discord.com/channels/1159260121998827560/1159289738314919936) forum channel. Be aware that **we don't allow paid commissions**
 
 
 
@@ -242,18 +242,18 @@ Download the <u>[correct files](https://docs.aihub.gg/essentials/voice-models/#v
 :   ‎
 
 #### 1. Zip the model        
-- Select the correct <u>[.PTH & .INDEX](https://docs.aihub.gg/essentials/voice-models/#voice-model-files)</u> & <u>[zip</u>](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-8d28fa72-f2f9-712f-67df-f80cf89fd4e5) them into a **.ZIP** file.       
+- Select the correct [.PTH & .INDEX](https://docs.aihub.gg/essentials/voice-models/#voice-model-files) & [zip</u>](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-8d28fa72-f2f9-712f-67df-f80cf89fd4e5) them into a **.ZIP** file.       
 
 - Ensure it's .ZIP & not .RAR or .7ZIP.
 
 ***
 ###### ‎ 
 #### 2. Log in
-- If you haven't already, <u>[create an account</u>](https://weights.com/signup) & log in.
+- If you haven't already, [create an account</u>](https://weights.com/signup) & log in.
 ***
 ###### ‎  
 #### 3. Upload the Model
-a. Once logged in, go to  <u>[`Upload a Voice Model`](https://www.weights.com/share)</u> in the `train models` tab.       
+a. Once logged in, go to  [`Upload a Voice Model`](https://www.weights.com/share) in the `train models` tab.       
 
     <img src="../weightscomupload-img/weights-upload-model.png" alt="image" width="600" height="auto">
 
@@ -284,14 +284,14 @@ g. You're done!
 :   ‎
 
 #### 1. Zip the model        
-- Select the correct <u>[.PTH & .INDEX](https://docs.aihub.gg/essentials/voice-models/#voice-model-files)</u> & <u>[zip</u>](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-8d28fa72-f2f9-712f-67df-f80cf89fd4e5) them into a **.ZIP** file.       
+- Select the correct [.PTH & .INDEX](https://docs.aihub.gg/essentials/voice-models/#voice-model-files) & [zip</u>](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-8d28fa72-f2f9-712f-67df-f80cf89fd4e5) them into a **.ZIP** file.       
 
 - Ensure it's .ZIP & not .RAR or .7ZIP.
 
 ***
 ###### ‎ 
 #### 2. Log in
-- If you haven't already, <u>[create an account</u>](https://huggingface.co/join) & log in.
+- If you haven't already, [create an account</u>](https://huggingface.co/join) & log in.
 ***
 ###### ‎  
 #### 3. Make repository

@@ -10,7 +10,7 @@ order: 4000
 
 - W-Okada is a realtime voice changer that uses RVC for its conversion.
 
-- There are 3 versions of this realtime voice changer, the <u>[Offical Original W-Okada](https://github.com/w-okada/voice-changer)</u> made by Wok, the <u>[Deiteris' Fork](https://github.com/deiteris/voice-changer)</u> made by Deiteris, and the <u>[Tg-Develop's Fork](https://github.com/tg-develop/voice-changer)</u> made by Tg-Develop. Note that those 3 links are just for reference to the Source Code Github Repositories of both projects, you should instead follow the guide below.
+- There are 3 versions of this realtime voice changer, the [Offical Original W-Okada](https://github.com/w-okada/voice-changer) made by Wok, the [Deiteris' Fork](https://github.com/deiteris/voice-changer) made by Deiteris, and the [Tg-Develop's Fork](https://github.com/tg-develop/voice-changer) made by Tg-Develop. Note that those 3 links are just for reference to the Source Code Github Repositories of both projects, you should instead follow the guide below.
 
 - This guide will be about the Wokada Tg-Develop's fork since it's a fork of the Deiteris' Fork, containing the performance improvements, has an improved Web User Interface, supports Spin Embedder Models, and has Audio Effects.
 
@@ -22,7 +22,7 @@ order: 4000
 RVC Models are PyTorch Models, a Python library used for AI.
 PyTorch uses serialization via Pythons' Pickle Module, converting the model to a file.
 Since pickle can execute arbitrary code when loading a model, it could be theoretically used for malware, but Wokada Tg-Develop's Fork has a **built-in feature to prevent code execution along the model.**
-Also, **HuggingFace has a <u>[Security Scanner](https://huggingface.co/docs/hub/security-pickle#hubs-security-scanner)</u>** which scans for any unsafe pickle exploits and uses also ClamAV for scanning dangerous files.
+Also, **HuggingFace has a [Security Scanner](https://huggingface.co/docs/hub/security-pickle#hubs-security-scanner)** which scans for any unsafe pickle exploits and uses also ClamAV for scanning dangerous files.
 
 ***
 
@@ -111,7 +111,7 @@ If you plan on playing games at the same, do not use CPU-conversion. With CPU, t
 - In AI Realtime Voice Changing context, it's used to get the output of AI Converted Voice Output as the input in other programs such as Discord.
 
 !!! For Windows
-Download this: <u>[VAC Lite (Virtual-Audio-Cable by Muzychenko)](https://software.muzychenko.net/freeware/vac470lite.zip)</u>.
+Download this: [VAC Lite (Virtual-Audio-Cable by Muzychenko)](https://software.muzychenko.net/freeware/vac470lite.zip).
 (Be sure to not use any toher vac like VB Audio Cable.)
 !!!
 
@@ -121,9 +121,9 @@ Download this: <u>[VAC Lite (Virtual-Audio-Cable by Muzychenko)](https://softwar
 
 !!! For Mac
 Download either: 
-<u>[Blackhole Virtual Audio Cable](https://existential.audio/blackhole)</u>
+[Blackhole Virtual Audio Cable](https://existential.audio/blackhole)
 or
-<u>[VB-Audio](https://vb-audio.com/Cable)</u>
+[VB-Audio](https://vb-audio.com/Cable)
 !!!
 
 !!! For Linux
@@ -147,7 +147,7 @@ sudo pacman -Syu portaudio
 ***
 ## Windows
 
-- First, go to the latest release page: <u>[Latest Release (click here to go to Github)](https://github.com/tg-develop/voice-changer/releases/latest)</u>
+- First, go to the latest release page: [Latest Release (click here to go to Github)](https://github.com/tg-develop/voice-changer/releases/latest)
 - On the release page, find the "Assets" section and download the files based on your GPU.
 
 !!!
@@ -178,7 +178,7 @@ Some integrated graphics like Intel UHD may not be compatible. If it fails, you 
 
 ### Opening on Windows
 
-- Make sure you have <u>[7-Zip](https://www.7-zip.org/)</u> or <u>[WinRAR](https://www.win-rar.com/download.html)</u> installed to extract the files.
+- Make sure you have [7-Zip](https://www.7-zip.org/) or [WinRAR](https://www.win-rar.com/download.html) installed to extract the files.
 - To extract:
     - **For the NVIDIA version:** Right-click on the file ending in `.zip.001` (the first part of the archive) and choose to extract it. Your archiving program will automatically find the other parts and combine them.
     - **For the AMD/Intel or CPU version:** Right-click the single `.zip` file and extract it.
@@ -196,7 +196,7 @@ If nothing opens, then open a browser and type in `http://127.0.0.1:18888/`. Thi
 - [b2364](https://github.com/tg-develop/voice-changer/releases/tag/b2364) is currently the last version that had Apple Silicon Mac Support.
 !!!
 
-- First, go to the last Apple Silicon Mac release page: <u>[Last Release for Apple Silicon Macs (click here to go to Github)](https://github.com/tg-develop/voice-changer/releases/tag/b2364)</u>
+- First, go to the last Apple Silicon Mac release page: [Last Release for Apple Silicon Macs (click here to go to Github)](https://github.com/tg-develop/voice-changer/releases/tag/b2364)
 - On the release page, find the "Assets" section and download the file corresponding to your Mac's processor (Only Apple Silicon is available).
 
 ***
@@ -230,7 +230,7 @@ If nothing opens, then open a browser and type in `http://127.0.0.1:18888/`. Thi
 ***
 ## Linux
 
-- First, go to the latest release page: <u>[Latest Release (click here to go to Github)](https://github.com/tg-develop/voice-changer/releases/latest)</u>
+- First, go to the latest release page: [Latest Release (click here to go to Github)](https://github.com/tg-develop/voice-changer/releases/latest)
 - On the release page, find the "Assets" section and download the file(s) corresponding to your hardware.
 
 ***
@@ -291,9 +291,9 @@ After the server finishes loading in your terminal, it will not open a window on
 
 This is only for the people that have 2 PCs, and want to use 1 PC for Gaming, the other only for Wokada Tg-Develop's Fork.
 
-- Create a file named `.env` on the same folder where `MMVCServerSIO.exe` is located. Open it up with a notepad, copy paste the settings from the <u>[GitHub link](https://github.com/deiteris/voice-changer/issues/180#issuecomment-2359166278)</u>.
+- Create a file named `.env` on the same folder where `MMVCServerSIO.exe` is located. Open it up with a notepad, copy paste the settings from the [GitHub link](https://github.com/deiteris/voice-changer/issues/180#issuecomment-2359166278).
 
-- After that, you create another file with the file extension ending `.bat`, open it up with a notepad, copy paste what is needed in there again from the <u>[GitHub link](https://github.com/deiteris/voice-changer/issues/180#issuecomment-2359166278)</u>. 
+- After that, you create another file with the file extension ending `.bat`, open it up with a notepad, copy paste what is needed in there again from the [GitHub link](https://github.com/deiteris/voice-changer/issues/180#issuecomment-2359166278). 
 
 - Now run the bat file. After it starts, you should be able to open the link. For example, if you specified `HOST=192.168.0.1` and `ALLOWED_ORIGINS='["https://192.168.0.1:18888"]')`, you should be able to open `https://192.168.0.1:18888` in your browser.
 
@@ -704,11 +704,11 @@ Like WASAPI, ASIO accesses your audio devices directly, bypassing multiple layer
 !!!
 
 #### Step 1: Download and Install FlexASIO
-- Download and run the installer from here: <u>[FlexASIO Download](https://github.com/dechamps/FlexASIO/releases/download/flexasio-1.9/FlexASIO-1.9.exe)</u>
+- Download and run the installer from here: [FlexASIO Download](https://github.com/dechamps/FlexASIO/releases/download/flexasio-1.9/FlexASIO-1.9.exe)
 
 #### Step 2: Download and Install FlexASIO GUI
-- First, you need the .NET Desktop runtime. Download and install it from here: <u>[.NET 6.x Desktop runtime](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)</u>
-- Afterwards, download and install the FlexASIO GUI: <u>[FlexASIO GUI Download](https://github.com/flipswitchingmonkey/FlexASIO_GUI/releases/download/v0.35/FlexASIO.GUIInstaller_0.35.exe)</u>
+- First, you need the .NET Desktop runtime. Download and install it from here: [.NET 6.x Desktop runtime](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
+- Afterwards, download and install the FlexASIO GUI: [FlexASIO GUI Download](https://github.com/flipswitchingmonkey/FlexASIO_GUI/releases/download/v0.35/FlexASIO.GUIInstaller_0.35.exe)
 
 #### Step 3: Configuring FlexASIO GUI
 Run `FlexASIO GUI`. If it doesn't open, you missed installing the .NET runtime from the previous step. Copy the following settings:

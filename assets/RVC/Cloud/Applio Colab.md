@@ -13,10 +13,10 @@ order: 7000
 :::content-center
 ## Introduction
 :::
-- This is a <u>[cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based)</u> alternative to run [Applio](https://docs.aihub.gg/rvc/local/applio/), RVC Fork, only for people who don't have a good PC GPU, via the <u>[Google Colab Service](https://docs.aihub.gg/extra/glossary/#google-colab)</u>. With a Web User Interface.
+- This is a [cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based) alternative to run [Applio](https://docs.aihub.gg/rvc/local/applio/), RVC Fork, only for people who don't have a good PC GPU, via the [Google Colab Service](https://docs.aihub.gg/extra/glossary/#google-colab). With a Web User Interface.
 
 !!!danger Google Colab Service
-**Check the <u>[Google Colab Glossary](https://docs.aihub.gg/extra/glossary/#google-colab)</u> for more info on Free Tier, Limits, Verification, Pricing and other things.**
+**Check the [Google Colab Glossary](https://docs.aihub.gg/extra/glossary/#google-colab) for more info on Free Tier, Limits, Verification, Pricing and other things.**
 !!!
 
 
@@ -45,7 +45,7 @@ order: 7000
 ## Setting Up :icon-download:
 :::
 ###### ‎
-1. Access the Colab space <u>[here](https://colab.research.google.com/github/iahispano/applio/blob/master/assets/Applio.ipynb)</u>.
+1. Access the Colab space [here](https://colab.research.google.com/github/iahispano/applio/blob/master/assets/Applio.ipynb).
 Then log in to your Google account.
 ***
 ###### ‎
@@ -68,7 +68,7 @@ Then log in to your Google account.
 4. Select a Sharing and Run the Server, using a tunnel that securely exposes the application running in your private cloud environment to the public internet. The notebook gives you 3 different services to do this. Choose one from the `method` dropdown menu in the code cell.
 
     - **Gradio (Fast, Popular, Reliable & Default)**
-        - **How it works:** This is a built-in <u>[Gradio](https://docs.aihub.gg/extra/glossary/#gradio)</u> feature. It's one of the most straightforward method as it doesn't require any external accounts or tokens.
+        - **How it works:** This is a built-in [Gradio](https://docs.aihub.gg/extra/glossary/#gradio) feature. It's one of the most straightforward method as it doesn't require any external accounts or tokens.
         - **Steps:**
             1. Select "Gradio" from the `method` dropdown menu.
             2. Run the cell. The public Gradio URL (ending in `gradio.live`) will be printed in the output once the server is ready. Click on it to access the UI.
@@ -100,13 +100,13 @@ Then log in to your Google account.
 :::content-center
 ## Inference :icon-unmute:   
 !!!success
-Be sure to read the <u>[Troubleshooting](https://docs.aihub.gg/rvc/cloud/applio-colab/#troubleshooting)</u> chapter if any issue arises.
+Be sure to read the [Troubleshooting](https://docs.aihub.gg/rvc/cloud/applio-colab/#troubleshooting) chapter if any issue arises.
 !!!
 :::
 ###### ‎   
 #### 1. Upload voice model.
 - Go to the **Download** tab.       
-You have two ways of uploading it: through <u>[**its link**](https://docs.aihub.gg/essentials/voice-models/#how-to-search-voice-models)</u> or **manually** inputting its files.
+You have two ways of uploading it: through [**its link**](https://docs.aihub.gg/essentials/voice-models/#how-to-search-voice-models) or **manually** inputting its files.
 
     +++ Link
     a. Go to the **Download** tab & paste the link in the `Model Link` bar.     
@@ -166,7 +166,7 @@ b. Select the model in the ``Voice Model`` & `Index File` dropdown.
 
 ‎  
 #### 4. Modify settings. (optional)      
--  Unfold `Advanced Settings` if you wish to modify the <u>[inference settings](https://docs.aihub.gg/rvc/resources/inference-settings/)</u> for better results.
+-  Unfold `Advanced Settings` if you wish to modify the [inference settings](https://docs.aihub.gg/rvc/resources/inference-settings/) for better results.
 
     <img src="..\appliocolab-img/3-advanced.png" alt="image" width="550">‎   
 ***
@@ -193,7 +193,7 @@ Beyond offline inference, Applio features a powerful built-in **Realtime** tab, 
 - It uses the same RVC technology but is optimized for low-latency performance.
 - Features include Voice Activity Detection (VAD), input/output device selection, and advanced performance tweaking.
 
-For a full step-by-step setup and configuration guide, please visit the <u>[Applio Realtime Guide](https://docs.aihub.gg/realtime-voice-changer/local/applio-realtime/)</u>.
+For a full step-by-step setup and configuration guide, please visit the [Applio Realtime Guide](https://docs.aihub.gg/realtime-voice-changer/local/applio-realtime/).
 
 
 ***
@@ -239,7 +239,7 @@ iv. Then paste it on the `Dataset Path` bar.
 ###### ‎     
 ##### c. Sampling Rate
 ###### ‎    
-- Select your dataset's sample rate. If you don't know the amount, click <u>[here](https://docs.aihub.gg/rvc/cloud/applio-colab/#extra)</u>.
+- Select your dataset's sample rate. If you don't know the amount, click [here](https://docs.aihub.gg/rvc/cloud/applio-colab/#extra).
 
     <img src="..\appliocolab-img\4-samplerate.png" alt="image" width="300">‎  
 
@@ -259,7 +259,7 @@ iv. Then paste it on the `Dataset Path` bar.
 ###### ‎    
 ##### a. Pitch extraction algorithm
 ###### ‎  
-- Select the <u>[algorithm](https://docs.aihub.gg/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u> you want. Use either ``Crepe`` or ``RMVPE``, as the rest are outdated.
+- Select the [algorithm](https://docs.aihub.gg/rvc/resources/inference-settings/#pitch-extraction-algorithm) you want. Use either ``Crepe`` or ``RMVPE``, as the rest are outdated.
 
     <img src="..\appliocolab-img\4-f0.png" alt="image" width="400">
 
@@ -286,7 +286,7 @@ It'll finish when it says `extracted successfully`.
 ###### ‎  
 ##### b. Save Every Epoch
 ###### ‎  
-- Frequency of the <u>[saving checkpoints](https://docs.aihub.gg/extra/glossary/#checkpoints)</u>, based on the <u>[epochs](https://docs.aihub.gg/rvc/resources/training/#epochs--overtraining)</u>.    
+- Frequency of the [saving checkpoints](https://docs.aihub.gg/extra/glossary/#checkpoints), based on the [epochs](https://docs.aihub.gg/rvc/resources/training/#epochs--overtraining).    
 ‎   
 - If you are a newbie, simply leave it at `15`.              
 
@@ -298,9 +298,9 @@ It'll finish when it says `extracted successfully`.
 ###### ‎  
 ##### c. Total Epoch
 ###### ‎  
-- Input the total amount of <u>[epochs](https://docs.aihub.gg/rvc/resources/training/#tensorboard)</u> (training cycles) for the model.     
+- Input the total amount of [epochs](https://docs.aihub.gg/rvc/resources/training/#tensorboard) (training cycles) for the model.     
 ‎   
-- But since we'll use <u>[TensorBoard](https://docs.aihub.gg/rvc/resources/training/#tensorboard)</u>, use an arbitrarily large value like `1000`
+- But since we'll use [TensorBoard](https://docs.aihub.gg/rvc/resources/training/#tensorboard), use an arbitrarily large value like `1000`
 
     <img src="..\appliocolab-img\4-epoch.png" alt="image" width="420">‎   
 
@@ -308,7 +308,7 @@ It'll finish when it says `extracted successfully`.
 ###### ‎  
 ##### d. Generate Index
 ###### ‎  
-- Click `Generate Index`. This will create the model's <u>[.INDEX](https://docs.aihub.gg/essentials/voice-models/#voice-model-files)</u> file.
+- Click `Generate Index`. This will create the model's [.INDEX](https://docs.aihub.gg/essentials/voice-models/#voice-model-files) file.
 ***
 ###### ‎  
 ##### e. Start Training
@@ -325,22 +325,22 @@ ii.  Press `Start Training` below to begin the training process.
 ###### ‎  
 ##### f. Monitor training 
 ###### ‎  
-i. <u>[TB](https://docs.aihub.gg/rvc/resources/training/#tensorboard)</u> will be available in the Colab. Remember to monitor it, as well as the cell's logs just in case.             
+i. [TB](https://docs.aihub.gg/rvc/resources/training/#tensorboard) will be available in the Colab. Remember to monitor it, as well as the cell's logs just in case.             
 
     The latter will show you errors if they happen, and information about the epochs & checkpoints.   
 ‎  
     <img src="..\appliocolab-img\4-logs.png" alt="image" width="800">‎   
 ‎  
 ‎       
-ii. If after around 2:30 hours of training you don't detect <u>[OT](https://docs.aihub.gg/rvc/resources/training/#usage-guide)</u> <u>[download the model](https://docs.aihub.gg/rvc/cloud/applio-colab/#c-get-the-pth)</u> of the lowest point, in case it's already OT, and the <u>[.INDEX](https://docs.aihub.gg/rvc/cloud/applio-colab/#b-get-the-index)</u>.     
+ii. If after around 2:30 hours of training you don't detect [OT](https://docs.aihub.gg/rvc/resources/training/#usage-guide) [download the model](https://docs.aihub.gg/rvc/cloud/applio-colab/#c-get-the-pth) of the lowest point, in case it's already OT, and the [.INDEX](https://docs.aihub.gg/rvc/cloud/applio-colab/#b-get-the-index).     
 ‎    
-iii. Then once your GPU runtime resets, begin the <u>[retraining](https://docs.aihub.gg/rvc/cloud/applio-colab/#5-resuming)</U> procedure.       
+iii. Then once your GPU runtime resets, begin the [retraining](https://docs.aihub.gg/rvc/cloud/applio-colab/#5-resuming) procedure.       
 ***
 !!!warning While training, you might get disconnected if you:    
-- <u>[Stay AFK](https://docs.google.com/document/d/1Pr-AZndodmWgsbOeuHQU4IrgbatFgYc1ChOq_ZAf_5s/edit?usp=sharing)</u> for a long time.     
+- [Stay AFK](https://docs.google.com/document/d/1Pr-AZndodmWgsbOeuHQU4IrgbatFgYc1ChOq_ZAf_5s/edit?usp=sharing) for a long time.     
 - Disconnect from your Internet.       
 - Don't solve the captchas that (might) pop up occasionally.    
-- Run out of <u>[GPU runtime](https://docs.aihub.gg/rvc/extra/glossary/#google-colab)</u>. 
+- Run out of [GPU runtime](https://docs.aihub.gg/rvc/extra/glossary/#google-colab). 
 !!!
 ===
 
@@ -369,7 +369,7 @@ ii. Download the **.INDEX** named ``added_``.
 ###### ‎  
 ##### c. Get the PTH
 ###### ‎  
-i. In said folder you'll also find all the <u>[checkpoints](https://docs.aihub.gg/extra/glossary/#checkpoints)</u>.         
+i. In said folder you'll also find all the [checkpoints](https://docs.aihub.gg/extra/glossary/#checkpoints).         
 ‎  
 ii. Select the one **closest** to ***before*** the overtraining point, and move it to the new folder.
 
@@ -384,7 +384,7 @@ ii. Select the one **closest** to ***before*** the overtraining point, and move 
         <img src="../appliocolab-img/4-step.png" alt="image" width="600" height="auto">‎  
     ‎          
     ‎    
-iii. And that's all, have fun with your model. To test it, do a normal <u>[inference</u>](https://docs.aihub.gg/rvc/local/applio/#inference-) as usual.
+iii. And that's all, have fun with your model. To test it, do a normal [inference</u>](https://docs.aihub.gg/rvc/local/applio/#inference-) as usual.
 
 ===
 
@@ -397,7 +397,7 @@ iii. And that's all, have fun with your model. To test it, do a normal <u>[infer
 2. You can change the **save frequency** or increase the **Total Epoch** amount, in case you didn't input enough before.      
  ‎  
 3. If you're resuming from a new session, run the "Sync with Google Drive"yy cell again to automatically load your models.
-4. Begin training again & remember to monitor <u>[TB</u>]https://docs.aihub.gg/rvc/resources/training/#tensorboard) as before.  
+4. Begin training again & remember to monitor [TB</u>]https://docs.aihub.gg/rvc/resources/training/#tensorboard) as before.  
 ===
 
 ###### ‎  
@@ -409,9 +409,9 @@ iii. And that's all, have fun with your model. To test it, do a normal <u>[infer
 ###### ‎  
 - Applio is also known for having one TTS tool by default, with **plenty** of voices to choose for.
 
-- You can also use it with **RVC models** & apply the <u>[inference settings](https://docs.aihub.gg/rvc/resources/inference-settings/)</u> if you wish.
+- You can also use it with **RVC models** & apply the [inference settings](https://docs.aihub.gg/rvc/resources/inference-settings/) if you wish.
 
-- Additionally, you can download the **Eleven Labs** TTS <u>[plugin](https://docs.aihub.gg/rvc/cloud/applio-colab/#plugins)</u>.       
+- Additionally, you can download the **Eleven Labs** TTS [plugin](https://docs.aihub.gg/rvc/cloud/applio-colab/#plugins).       
 ***
 ###### ‎  
 #### <u>Instructions:</u>
@@ -422,11 +422,11 @@ iii. And that's all, have fun with your model. To test it, do a normal <u>[infer
 ***   
 ###### ‎   
 
-2. If you want to use an RVC model, <u>[download it](https://docs.aihub.gg/rvc/cloud/applio-colab/#1-upload-voice-model)</u>, go to **TTS**, click `Refresh` & select it in **Voice Model** & **Index File**.
+2. If you want to use an RVC model, [download it](https://docs.aihub.gg/rvc/cloud/applio-colab/#1-upload-voice-model), go to **TTS**, click `Refresh` & select it in **Voice Model** & **Index File**.
 
    <img src="../appliocolab-img/5-vm.png" alt="image" width="600" height="auto">‎    
 ‎             
-- To modify the <u>[inference settings](https://docs.aihub.gg/rvc/resources/inference-settings/)</u> or the output folder for the TTS/RVC audio, unfold `Advanced Settings`.
+- To modify the [inference settings](https://docs.aihub.gg/rvc/resources/inference-settings/) or the output folder for the TTS/RVC audio, unfold `Advanced Settings`.
 
 ***
 ###### ‎      
@@ -452,7 +452,7 @@ iii. And that's all, have fun with your model. To test it, do a normal <u>[infer
 ###### ‎  
 - Applio has an **Extra** menu, containing an **audio analyzer**, **F0 Curve** and **Model Information**.
 
-- Making it convenient for determining the <u>[sample rate](https://docs.aihub.gg/rvc/resources/dataset-isolation/#step-1-find-the-sample-rate)</u> of datasets when training models.
+- Making it convenient for determining the [sample rate](https://docs.aihub.gg/rvc/resources/dataset-isolation/#step-1-find-the-sample-rate) of datasets when training models.
 
 - It also contains the **model fusion** tool, ideal for advanced users.
 
@@ -493,7 +493,7 @@ If the frequencies don't reach the top of the spectrogram, see at which number p
 
 - These are made by the public, and are free & easy to install. 
 
-- You can find them on their <u>[GitHub page](https://github.com/IAHispano/Applio-Plugins/tree/main)</u>. More will be added in the future.
+- You can find them on their [GitHub page](https://github.com/IAHispano/Applio-Plugins/tree/main). More will be added in the future.
 ***
 ###### ‎
 #### <u>Installation:</u>
@@ -530,13 +530,13 @@ If the frequencies don't reach the top of the spectrogram, see at which number p
 :::
 ==- There's no public URL.
 
-- In case the **public URL** doesn't show up, there might be a problem with <u>[Gradio</u>](https://docs.aihub.gg/extra/glossary/#gradio)</u>, you can check if it's down <u>[here</u>](https://status.gradio.app/)</u>.
+- In case the **public URL** doesn't show up, there might be a problem with [Gradio</u>](https://docs.aihub.gg/extra/glossary/#gradio), you can check if it's down [here</u>](https://status.gradio.app/).
 
 - To fix this, instead of waiting until Gradio is back online, just check the **share_tunnel*** checkbox on the Start Applio cell.
 
     <img src="..\appliocolab-img\2-start-share-tunnel.png" alt="image" width="430">
 ‎ 
-- Applio will use <u>[localtunnel</u>](https://docs.aihub.gg/extra/glossary/#localtunnel) instead of the Gradio Public Share Link now, copy paste the **Password IP** (Don't worry, it's the Google PC's IP, not yours).
+- Applio will use [localtunnel</u>](https://docs.aihub.gg/extra/glossary/#localtunnel) instead of the Gradio Public Share Link now, copy paste the **Password IP** (Don't worry, it's the Google PC's IP, not yours).
 
 - Then open the **Share Link** given by the colab and paste the "Password IP" in "Tunnel Password", finally click Submit.
 
@@ -555,12 +555,12 @@ If the frequencies don't reach the top of the spectrogram, see at which number p
 ===
 
 ==- The voice glitches out.
-- This a phenomenon called artifacting. To fix it, read <u>[here](https://docs.aihub.gg/rvc/resources/dataset-isolation/#artifacts)</u>.
+- This a phenomenon called artifacting. To fix it, read [here](https://docs.aihub.gg/rvc/resources/dataset-isolation/#artifacts).
 
 ===
 
 ==- Cannot connect to GPU backend.
-- You have exhausted the <u>[GPU runtime](https://docs.aihub.gg/rvc/extra/glossary/#google-colab)</u> of Colab.
+- You have exhausted the [GPU runtime](https://docs.aihub.gg/rvc/extra/glossary/#google-colab) of Colab.
 ===
 
 {{ include "troubleshooting/report-missing-issue.md" }}

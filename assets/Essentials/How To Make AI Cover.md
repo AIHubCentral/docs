@@ -8,7 +8,7 @@ order: 6000
 
 ``Last update: July 17, 2025``
 
-#### - *Simple AI cover tutorial, using <u>[RVC](https://docs.aihub.gg/essentials/whats-rvc/)</u>* -
+#### - *Simple AI cover tutorial, using [RVC](https://docs.aihub.gg/essentials/whats-rvc/)* -
 
 ***
 
@@ -18,34 +18,34 @@ order: 6000
 
 - RVC is designed to work with only voices, so to get the best results the sample must be **clean**, without undesired noises.
 
-- #### <u>[Learn how](https://docs.aihub.gg/rvc/resources/dataset-isolation/)</u>.
+- #### [Learn how](https://docs.aihub.gg/rvc/resources/dataset-isolation/).
 ***
 ###### ‎
 ### 2. Get voice model
-- Learn about them & how to search one <u>[here](https://docs.aihub.gg/essentials/voice-models/)</u>. Be sure to leave credits to the model maker.
+- Learn about them & how to search one [here](https://docs.aihub.gg/essentials/voice-models/). Be sure to leave credits to the model maker.
 
-- In case the model doesn't exist, click <u>[here](https://docs.aihub.gg/essentials/how-to-make-voice-models/)</u>.
+- In case the model doesn't exist, click [here](https://docs.aihub.gg/essentials/how-to-make-voice-models/).
 ***
 ###### ‎
 ### 3. Convert the vocals
-- After obtaining the vocals & model, it's time to set up RVC & do <u>[*inference*](https://docs.aihub.gg/extra/glossary/#inference)</u>.
+- After obtaining the vocals & model, it's time to set up RVC & do [*inference*](https://docs.aihub.gg/extra/glossary/#inference).
 
 - There are plenty of versions of RVC, but these are the **best** ones for beginners. Pick according to your needs:
 
     {.list-icon}   
-    - #### :icon-device-desktop: ‎ <u>[Locally](https://docs.aihub.gg/rvc/local/applio/)</u>
+    - #### :icon-device-desktop: ‎ [Locally](https://docs.aihub.gg/rvc/local/applio/)
 
-    - #### :icon-cloud: ‎ <u>[On the cloud](https://docs.aihub.gg/rvc/cloud/applio-colab/)</u>        
+    - #### :icon-cloud: ‎ [On the cloud](https://docs.aihub.gg/rvc/cloud/applio-colab/)        
 ###### ‎
 !!!warning
-For local users, first ensure you meet the <u>[minimum requirements](https://docs.aihub.gg/essentials/whats-rvc/#what-are-the-requirements-for-rvc-locally/)</u>.
+For local users, first ensure you meet the [minimum requirements](https://docs.aihub.gg/essentials/whats-rvc/#what-are-the-requirements-for-rvc-locally/).
 !!!
 ***
 ###### ‎
 ### :icon-check: Tips
 - Congratulations, you've made it to the final part. Now it's to mix the song.       
 ‎   
-- You're free to use any <u>[DAW](https://docs.aihub.gg/extra/glossary/#daw)</u>, but we recommend **FL Studio** or **BandLab**, as they are beginner-friendly. You can start by searching some of their mixing tutorials on YouTube.      
+- You're free to use any [DAW](https://docs.aihub.gg/extra/glossary/#daw), but we recommend **FL Studio** or **BandLab**, as they are beginner-friendly. You can start by searching some of their mixing tutorials on YouTube.      
 ‎   
 - **Recommendations for the mix:**     
     - Match the volume of the vocals to the same level as the original ones.      

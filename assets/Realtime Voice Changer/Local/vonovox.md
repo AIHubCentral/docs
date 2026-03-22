@@ -21,7 +21,7 @@ order: 3000
 RVC Models are PyTorch Models, a Python library used for AI.
 PyTorch uses serialization via Pythons' Pickle Module, converting the model to a file.
 Since pickle can execute arbitrary code when loading a model, it could be theoretically used for malware, but Vonovox has a **built-in feature to prevent code execution along the model.**
-Also, **HuggingFace has a <u>[Security Scanner](https://huggingface.co/docs/hub/security-pickle#hubs-security-scanner)</u>** which scans for any unsafe pickle exploits and uses also ClamAV for scanning dangerous files.
+Also, **HuggingFace has a [Security Scanner](https://huggingface.co/docs/hub/security-pickle#hubs-security-scanner)** which scans for any unsafe pickle exploits and uses also ClamAV for scanning dangerous files.
 ***
 
 ‎      
@@ -89,7 +89,7 @@ TLDR: Make sure you have Nvidia RTX 20xx better. GTX 900 Series  will also work,
 - In AI Realtime Voice Changing context, it's used to get the output of AI Converted Voice Output as the input in other programs such as Discord.
 
 !!! For Windows
-Download this: <u>[VAC Lite (Virtual-Audio-Cable by Muzychenko)](https://software.muzychenko.net/freeware/vac470lite.zip)</u>
+Download this: [VAC Lite (Virtual-Audio-Cable by Muzychenko)](https://software.muzychenko.net/freeware/vac470lite.zip)
 !!!
 
 - Run `setup64`, not 64a, after extracting the zip to a new folder
@@ -114,9 +114,9 @@ Use Cloud if you:
 ***
 
 !!!warning Before Downloading:
-- Make sure you have the <u>[Microsoft Visual C++ Redistributable Package](https://aka.ms/vs/16/release/vc_redist.x64.exe)</u>, if you don't already.
+- Make sure you have the [Microsoft Visual C++ Redistributable Package](https://aka.ms/vs/16/release/vc_redist.x64.exe), if you don't already.
 
-- It's suggested to use <u>[7zip](https://www.7-zip.org/)</u> or <u>[WinRAR](https://www.win-rar.com/download.html)</u> for extracting / unzipping such large files.
+- It's suggested to use [7zip](https://www.7-zip.org/) or [WinRAR](https://www.win-rar.com/download.html) for extracting / unzipping such large files.
 !!!
 
 ***
@@ -135,9 +135,9 @@ Use Cloud if you:
 ***
 ### Manual Setup NVIDIA on Windows
 
-- Go to Vonovox's <u>[Github Repository](https://github.com/dr87/Vonovox/releases)</u> and download the Latest Stable Release Source Code.
+- Go to Vonovox's [Github Repository](https://github.com/dr87/Vonovox/releases) and download the Latest Stable Release Source Code.
 
-- You could also *optionally* get access to *Beta* / Early Access versions via <u>[Becoming a Vonovox Supporter (and also gaining Premium Effects)](https://www.patreon.com/dr87/membership)</u> or checking for any Free Versions in the <u>[Vonovox Official Discord Server](https://discord.gg/c9mbMGxEbR)</u>. They may have bugs, fixes or settings/options not explained in the guide yet.
+- You could also *optionally* get access to *Beta* / Early Access versions via [Becoming a Vonovox Supporter (and also gaining Premium Effects)](https://www.patreon.com/dr87/membership) or checking for any Free Versions in the [Vonovox Official Discord Server](https://discord.gg/c9mbMGxEbR). They may have bugs, fixes or settings/options not explained in the guide yet.
 
 - After downloading, extract the zip file. Open the folder and run `setup.bat`.
 
@@ -321,11 +321,11 @@ While VB-Audio's VBAN is a popular choice for audio routing, SonoBus is highly r
 You will need to install SonoBus on both computers.
 
 !!! Windows (Host PC A & Main PC B)
-Download the installer directly from the <u>[Official SonoBus Website](https://sonobus.net/)</u>.
+Download the installer directly from the [Official SonoBus Website](https://sonobus.net/).
 !!!
 
 !!! macOS (Main PC B)
-Download the `.dmg` from the <u>[Official SonoBus Website](https://sonobus.net/)</u> or install via Homebrew: `brew install --cask sonobus`
+Download the `.dmg` from the [Official SonoBus Website](https://sonobus.net/) or install via Homebrew: `brew install --cask sonobus`
 !!!
 
 !!! Linux (Main PC B)
@@ -339,7 +339,7 @@ Or via Flatpak: `flatpak install flathub net.sonobus.SonoBus`
 You will need a Virtual Audio Cable (VAC) on **both PCs** to bridge audio between programs, and an additional internal pipe cable on **PC A only** to route audio into Vonovox.
 
 !!! For Windows
-Download this: <u>[VAC Lite (Virtual-Audio-Cable by Muzychenko)](https://software.muzychenko.net/freeware/vac470lite.zip)</u>.
+Download this: [VAC Lite (Virtual-Audio-Cable by Muzychenko)](https://software.muzychenko.net/freeware/vac470lite.zip).
 (Be sure to not use any toher vac like VB Audio Cable.)
 !!!
 
@@ -349,9 +349,9 @@ Download this: <u>[VAC Lite (Virtual-Audio-Cable by Muzychenko)](https://softwar
 
 !!! For Mac
 Download either: 
-<u>[Blackhole Virtual Audio Cable](https://existential.audio/blackhole)</u>
+[Blackhole Virtual Audio Cable](https://existential.audio/blackhole)
 or
-<u>[VB-Audio](https://vb-audio.com/Cable)</u>
+[VB-Audio](https://vb-audio.com/Cable)
 !!!
 
 !!! For Linux
@@ -401,7 +401,7 @@ Use this setup if your Vonovox PC is in another room or accessed over the intern
 
 **Requirements:**
 - A VAC installed on **both PCs**
-- <u>[VB-Audio Virtual Cable](https://vb-audio.com/Cable/)</u> installed on **PC A only** (used as an internal pipe between SonoBus and Vonovox)
+- [VB-Audio Virtual Cable](https://vb-audio.com/Cable/) installed on **PC A only** (used as an internal pipe between SonoBus and Vonovox)
 
 **On PC A (Host / Vonovox PC):**
 1. Open **SonoBus** → **Setup Audio**:
@@ -596,11 +596,11 @@ RVC works by downsampling your audio voice to 16khz because f0 estimators only w
 
 ***
 ### What are the benefits of premium? Is it forever or monthly?
-You can get premium by a **monthly** subscription at <u>[dr87's Patreon](https://www.patreon.com/dr87/membership)</u>, but the creator said he *might* make a lifetime version.
+You can get premium by a **monthly** subscription at [dr87's Patreon](https://www.patreon.com/dr87/membership), but the creator said he *might* make a lifetime version.
 The benefits are:
 - Early access.
 - Premium Effects and Features.
-- Supporter role and access to the <u>[Vonovox Official Discord Server](https://discord.gg/c9mbMGxEbR)</u>.
+- Supporter role and access to the [Vonovox Official Discord Server](https://discord.gg/c9mbMGxEbR).
 
 
 ***

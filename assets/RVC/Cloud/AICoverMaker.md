@@ -8,9 +8,9 @@ order: 4000
 :::content-center
 ## Introduction
 :::
-- This is a <u>[cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based)</u> alternative to run [AICoverMaker](https://docs.aihub.gg/rvc/local/aicovermaker/), Applio RVC Fork, only for people who don't have a good PC GPU, via the <u>[Google Colab Service](https://docs.aihub.gg/extra/glossary/#google-colab)</u> & <u>[Kaggle Service](https://docs.aihub.gg/extra/glossary/#kaggle)</u>. With a Web User Interface.
+- This is a [cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based) alternative to run [AICoverMaker](https://docs.aihub.gg/rvc/local/aicovermaker/), Applio RVC Fork, only for people who don't have a good PC GPU, via the [Google Colab Service](https://docs.aihub.gg/extra/glossary/#google-colab) & [Kaggle Service](https://docs.aihub.gg/extra/glossary/#kaggle). With a Web User Interface.
 
-- ##### There are two versions this AI Cover maker which are: <u>[AICoverMaker Colab](https://docs.aihub.gg/rvc/cloud/aicovermaker/#aicovermaker-colab)</u> and <u>[AICoverMaker Kaggle](https://docs.aihub.gg/rvc/cloud/aicovermaker/#aicovermaker-kaggle)</u>.
+- ##### There are two versions this AI Cover maker which are: [AICoverMaker Colab](https://docs.aihub.gg/rvc/cloud/aicovermaker/#aicovermaker-colab) and [AICoverMaker Kaggle](https://docs.aihub.gg/rvc/cloud/aicovermaker/#aicovermaker-kaggle).
 
 
 ***
@@ -18,13 +18,13 @@ order: 4000
 ## AICoverMaker Colab
 
 !!!danger Google Colab Service
-**Check the <u>[Google Colab Glossary](https://docs.aihub.gg/extra/glossary/#google-colab)</u> for more info on Free Tier, Limits, Verification, Pricing and other things.**
+**Check the [Google Colab Glossary](https://docs.aihub.gg/extra/glossary/#google-colab) for more info on Free Tier, Limits, Verification, Pricing and other things.**
 !!!
 
 :::
 ### <u>Installation & Setup</u> :icon-book:
 
-**1.** Go to the <u>[AICoverMaker Colab](https://colab.research.google.com/github/Eddycrack864/RVC-AI-Cover-Maker-UI/blob/main/assets/RVCAICoverMakerUI.ipynb)</u> and run the first cell. 
+**1.** Go to the [AICoverMaker Colab](https://colab.research.google.com/github/Eddycrack864/RVC-AI-Cover-Maker-UI/blob/main/assets/RVCAICoverMakerUI.ipynb) and run the first cell. 
 
    <img src="../aicovermaker-img/1.png" alt="image" width="200" height="">
 
@@ -34,7 +34,7 @@ order: 4000
 Installation may take a couple of minutes, be patient.
 !!! 
 
-**2.** Next go to the second cell and put your ngrok token in the text box and run it. If you dont have a ngrok acount sign up <u>[here](https://ngrok.com/)</u> and you can authenticate your ngrok tunnel agent <u>[here](https://dashboard.ngrok.com/get-started/your-authtoken)</u>. 
+**2.** Next go to the second cell and put your ngrok token in the text box and run it. If you dont have a ngrok acount sign up [here](https://ngrok.com/) and you can authenticate your ngrok tunnel agent [here](https://dashboard.ngrok.com/get-started/your-authtoken). 
 
    <img src="../aicovermaker-img/2.png" alt="image" width="400" height="">
 
@@ -56,12 +56,12 @@ There is a monthly limit rate with Ngrok so dont be supprised if training is sud
 :::
 
 !!!danger Kaggle Service
-**Check the <u>[Kaggle Glossary](https://docs.aihub.gg/extra/glossary/#kaggle)</u> for more info on Free Tier, Limits, Verification, Pricing and other things.**
+**Check the [Kaggle Glossary](https://docs.aihub.gg/extra/glossary/#kaggle) for more info on Free Tier, Limits, Verification, Pricing and other things.**
 !!!
 
 ### <u>Installation & Setup</u> :icon-book:
 
-**1.** Go to the <u>[AICoverMaker Kaggle notebook](https://www.kaggle.com/code/eddycrack864/rvc-ai-cover-maker-ui)</u> and click `Copy & Edit` on the top right. 
+**1.** Go to the [AICoverMaker Kaggle notebook](https://www.kaggle.com/code/eddycrack864/rvc-ai-cover-maker-ui) and click `Copy & Edit` on the top right. 
 
    <img src="../aicovermaker-img/8.png" alt="image" width="900" height="">
 
@@ -77,7 +77,7 @@ There is a monthly limit rate with Ngrok so dont be supprised if training is sud
 Installation may take a couple of minutes, be patient.
 !!!
 
-**3.** Next go to the second cell and put your Ngrok token in the `TOKEN HERE` spot and run it. If you dont have a Ngrok acount sign up <u>[here](https://ngrok.com/)</u> and you can authenticate your ngrok tunnel agent <u>[here](https://dashboard.ngrok.com/get-started/your-authtoken)</u>. 
+**3.** Next go to the second cell and put your Ngrok token in the `TOKEN HERE` spot and run it. If you dont have a Ngrok acount sign up [here](https://ngrok.com/) and you can authenticate your ngrok tunnel agent [here](https://dashboard.ngrok.com/get-started/your-authtoken). 
 
    <img src="../aicovermaker-img/10.png" alt="image" width="900" height="">
 
@@ -132,7 +132,7 @@ There is a monthly limit rate with Ngrok so dont be supprised if training is sud
 
 ## Inference
 
-Please use our <u>[Inference Settings guide](https://docs.aihub.gg/rvc/resources/inference-settings/)</u> to find out the inference settings do what.
+Please use our [Inference Settings guide](https://docs.aihub.gg/rvc/resources/inference-settings/) to find out the inference settings do what.
 
 **TTA** - results in longer separation time, it gives a little better SDR score but hard to tell if it's really audible in most cases". it “means "test time augmentation", it will do 3 passes on the audio file instead of 1. 1 pass with be with original audio. 1 will be with inverted stereo (L becomes R, R become L). 1 will be with phase inverted and then results are averaged for final output. 
 

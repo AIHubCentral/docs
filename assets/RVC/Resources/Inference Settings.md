@@ -10,7 +10,7 @@ order: 100
 :::content-center
 ## Introduction
 :::
-- When doing [<u>inference</u>](https://docs.aihub.gg/extra/glossary/#inference)</u> in RVC, you'll come across to quite a few options that you can tweak, that influence the conversion process.
+- When doing [<u>inference</u>](https://docs.aihub.gg/extra/glossary/#inference) in RVC, you'll come across to quite a few options that you can tweak, that influence the conversion process.
 
 - Configuring them accordingly can improve the output quality by a lot, as well as reduce artifacting, so we highly recommend learning them.   
 
@@ -56,7 +56,7 @@ order: 100
 
 - Lowering it can **reduce [<u>artifacting</u>](https://docs.aihub.gg/rvc/resources/dataset-making/#artifacts)**.      
      
->Remember, if the <u>[dataset](https://docs.aihub.gg/rvc/resources/datasets/)</u> had other sounds like background noise, there will be noise in the .INDEX too.
+>Remember, if the [dataset](https://docs.aihub.gg/rvc/resources/datasets/) had other sounds like background noise, there will be noise in the .INDEX too.
 
 
 ***
@@ -71,7 +71,7 @@ order: 100
 
 - Each one works in its own way, and has its pros & cons.       
 
-- There's a <u>[Pitch Benchmark](https://github.com/lars76/pitch-benchmark)</u>, but this is generally speaking and not only taken in the context of RVC.
+- There's a [Pitch Benchmark](https://github.com/lars76/pitch-benchmark), but this is generally speaking and not only taken in the context of RVC.
 
 - Most of those Algorithms are `PyTorch` models, but they got their own `ONNX` version, found like in Realtime Voice Changers, which can provide better performance especially for Non-Nvidia GPUs like AMD GPUs.
 
@@ -86,7 +86,7 @@ order: 100
     - Should be your **go-to** algorithm, due to its convenience      
     - Better with harmonic-rich voices / fuller voices 
     ***
-    Some <u>[forks](https://docs.aihub.gg/essentials/whats-rvc/#forks)</u> include **RMVPE_GPU** & **RMVPE+**. Same algorithm, but with a modification:         
+    Some [forks](https://docs.aihub.gg/essentials/whats-rvc/#forks) include **RMVPE_GPU** & **RMVPE+**. Same algorithm, but with a modification:         
 
     <u>**RMVPE GPU**</u>:
     :   Training only. Uses more GPU power, making you train faster.

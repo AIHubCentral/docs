@@ -10,10 +10,10 @@ order: 1000
 :::content-center
 ## Introduction
 :::
-- This is a <u>[cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based)</u> alternative to run [Mainline/Original RVC](https://docs.aihub.gg/rvc/local/mainline/), RVC Fork, only for people who don't have a good PC GPU, via the <u>[Google Colab Service](https://docs.aihub.gg/extra/glossary/#google-colab)</u>. With a Web User Interface.
+- This is a [cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based) alternative to run [Mainline/Original RVC](https://docs.aihub.gg/rvc/local/mainline/), RVC Fork, only for people who don't have a good PC GPU, via the [Google Colab Service](https://docs.aihub.gg/extra/glossary/#google-colab). With a Web User Interface.
 
 !!!danger Google Colab Service
-**Check the <u>[Google Colab Glossary](https://docs.aihub.gg/extra/glossary/#google-colab)</u> for more info on Free Tier, Limits, Verification, Pricing and other things.**
+**Check the [Google Colab Glossary](https://docs.aihub.gg/extra/glossary/#google-colab) for more info on Free Tier, Limits, Verification, Pricing and other things.**
 !!!
 
 !!!danger End Of Life
@@ -43,7 +43,7 @@ The Hina Modified Mainline Google Colab has reached EOL (End Of Life), meaning i
 ## How to Setup   
 ###### ‎   
 #### 1. <u>Running cells.</u>
-a. Start by accessing the colab <u>[here](https://colab.research.google.com/github/hinabl/RVC-Online/blob/main/Mainline_Colab_Full.ipynb)</u>.
+a. Start by accessing the colab [here](https://colab.research.google.com/github/hinabl/RVC-Online/blob/main/Mainline_Colab_Full.ipynb).
 
 b. Then run the first two cells to install all the requirements.
  
@@ -67,7 +67,7 @@ c. Then in the new cell type in `!wget LINK TO PRETRAIN`
 ***
 ###### ‎   
 #### 3. <u>Ngrok.</u>
-a. Scroll down to the fifth cell and you should see a section where you put your ngrok token. If you don't have a ngrok acount sign up <u>[here](https://ngrok.com/)</u>.       
+a. Scroll down to the fifth cell and you should see a section where you put your ngrok token. If you don't have a ngrok acount sign up [here](https://ngrok.com/).       
 ‎       
      2. Once you have an acount you can authenticate your ngrok tunnel agent here: https://dashboard.ngrok.com/get-started/your-authtoken   
 ‎       

@@ -11,7 +11,7 @@ order: 2000
 :::content-center
 ## Introduction ‎
 :::
-To upload your Voice Models in the <u>[AI HUB Discord Server](https://discord.gg/aihub)</u>'s <u>[``#voice-models``](https://discord.com/channels/1159260121998827560/1175430844685484042)</u> forum channel, you need to pass a Quality Control (QC) check to be sure that you post good voice models.
+To upload your Voice Models in the [AI HUB Discord Server](https://discord.gg/aihub)'s [``#voice-models``](https://discord.com/channels/1159260121998827560/1175430844685484042) forum channel, you need to pass a Quality Control (QC) check to be sure that you post good voice models.
 
 ***
 
@@ -59,13 +59,13 @@ To upload your Voice Models in the <u>[AI HUB Discord Server](https://discord.gg
    - Is incapable of hitting certain notes.
    - Has slurred speech.
    - Is unable of pronouncing words correctly in its intended language.
-   - Has <u>[artifacting](https://docs.aihub.gg/rvc/resources/dataset-isolation/#artifacts)</u>.
+   - Has [artifacting](https://docs.aihub.gg/rvc/resources/dataset-isolation/#artifacts).
    - Has noise.
 ***
 ###### ‎ 
 #### :icon-chevron-right: An outdated extraction method was used.
 {.list-icon}
-- :icon-check-circle: Only **Crepe** & **RMVPE** are allowed. Learn about them <u>[here](https://docs.aihub.gg/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u>
+- :icon-check-circle: Only **Crepe** & **RMVPE** are allowed. Learn about them [here](https://docs.aihub.gg/rvc/resources/inference-settings/#pitch-extraction-algorithm)
 
 - :icon-x-circle: Harvest, Dio, Crepe-Tiny, PM, etc. are obsolete.
 
@@ -96,7 +96,7 @@ To upload your Voice Models in the <u>[AI HUB Discord Server](https://discord.gg
 :::
 
 #### Step 1: Prepare the submission.
-- Once your model is ready, head over to the <u>[AI HUB](https://discord.gg/aihub)</u>'s <u>[`#model-maker-role`](https://discord.com/channels/1159260121998827560/1305524365810470963)</u> channel.  
+- Once your model is ready, head over to the [AI HUB](https://discord.gg/aihub)'s [`#model-maker-role`](https://discord.com/channels/1159260121998827560/1305524365810470963) channel.  
 
 - Click the `Submit Model` button.    
 
@@ -115,7 +115,7 @@ To upload your Voice Models in the <u>[AI HUB Discord Server](https://discord.gg
       - GPT-SoVITS
 
 **extraction**
-:     The <u>[extraction method](https://docs.aihub.gg/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u> you used:
+:     The [extraction method](https://docs.aihub.gg/rvc/resources/inference-settings/#pitch-extraction-algorithm) you used:
       - RMVPE
       - Crepe
       - Mangio-Crepe (Obsolete)
@@ -124,13 +124,13 @@ To upload your Voice Models in the <u>[AI HUB Discord Server](https://discord.gg
       - DIO (Obsolete)
 
 **vocoder**
-:     The <u>[vocoder](https://docs.aihub.gg/rvc/resources/training/#vocoders)</u> you used:
+:     The [vocoder](https://docs.aihub.gg/rvc/resources/training/#vocoders) you used:
       - HifiGan
       - RefineGan
 
 
 **epochs**
-:     Total <u>[epochs](https://docs.aihub.gg/rvc/resources/training/#tensorboard)</u> amount.
+:     Total [epochs](https://docs.aihub.gg/rvc/resources/training/#tensorboard) amount.
 
 ***
 
@@ -146,7 +146,7 @@ To upload your Voice Models in the <u>[AI HUB Discord Server](https://discord.gg
 :::
 
 **Embedder**
-:     The <u>[Embedder Model](https://docs.aihub.gg/rvc/resources/inference-settings/#embedder-model)</u> you used:
+:     The [Embedder Model](https://docs.aihub.gg/rvc/resources/inference-settings/#embedder-model) you used:
       - ContentVec
       - Spin
       - SpinV2

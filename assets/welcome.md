@@ -12,9 +12,9 @@ icon: home-fill
 #### **``General AI and RVC-related guides.``**
 :::
 :::content-center
-##### <u>[LEARN MORE](https://docs.aihub.gg/#introduction)</u>
+##### [LEARN MORE](https://docs.aihub.gg/#introduction)
 
-##### <u>[JOIN US!](https://docs.aihub.gg/#communities)</u>
+##### [JOIN US!](https://docs.aihub.gg/#communities)
 :::
 
 ***
@@ -24,19 +24,19 @@ icon: home-fill
 #### - Starting point for beginners -      
 :::
 ###### ‎
-#### :icon-chevron-right: 🎵 <u>[How to Make AI Covers](https://docs.aihub.gg/essentials/how-to-make-ai-cover/)</u>
+#### :icon-chevron-right: 🎵 [How to Make AI Covers](https://docs.aihub.gg/essentials/how-to-make-ai-cover/)
 ***
-#### :icon-chevron-right: :icon-rocket: ‎ <u>[How to Make (RVC) Voice Models](https://docs.aihub.gg/essentials/how-to-make-voice-models/)</u>
+#### :icon-chevron-right: :icon-rocket: ‎ [How to Make (RVC) Voice Models](https://docs.aihub.gg/essentials/how-to-make-voice-models/)
 ***
-#### :icon-chevron-right: 💾 <u>[Voice Models](https://docs.aihub.gg/essentials/voice-models/)</u>
+#### :icon-chevron-right: 💾 [Voice Models](https://docs.aihub.gg/essentials/voice-models/)
 ***
-#### :icon-chevron-right: :icon-info: ‎ <u>[What's RVC](https://docs.aihub.gg/essentials/whats-rvc/)</u>
+#### :icon-chevron-right: :icon-info: ‎ [What's RVC](https://docs.aihub.gg/essentials/whats-rvc/)
 ***
-#### :icon-chevron-right: 🍏 <u>[Applio Guide](https://docs.aihub.gg/rvc/local/applio/)</u>
+#### :icon-chevron-right: 🍏 [Applio Guide](https://docs.aihub.gg/rvc/local/applio/)
 ***
-#### :icon-chevron-right: :icon-broadcast: ‎ <u>[Deiteris' W-okada Guide](https://docs.aihub.gg/realtime-voice-changer/local/deiteris-w-okada-fork/)</u>
+#### :icon-chevron-right: :icon-broadcast: ‎ [Deiteris' W-okada Guide](https://docs.aihub.gg/realtime-voice-changer/local/deiteris-w-okada-fork/)
 ***
-#### :icon-chevron-right: :icon-broadcast: ‎ <u>[Vonovox Guide](https://docs.aihub.gg/realtime-voice-changer/local/vonovox/)</u>
+#### :icon-chevron-right: :icon-broadcast: ‎ [Vonovox Guide](https://docs.aihub.gg/realtime-voice-changer/local/vonovox/)
 
 
 
@@ -44,17 +44,17 @@ icon: home-fill
 ***
 ###### ‎    
 ## Introduction :icon-book:
-- This site is a documentation of General AI tools, mostly <u>[RVC](https://docs.aihub.gg/essentials/whats-rvc/)</u>-related apps. Made by staffers/members of [<u>**AI HUB**</u>](https://discord.com/invite/aihub).
+- This site is a documentation of General AI tools, mostly [RVC](https://docs.aihub.gg/essentials/whats-rvc/)-related apps. Made by staffers/members of [<u>**AI HUB**</u>](https://discord.com/invite/aihub).
 
 - See **simple & convenient guides** regarding RVC model training, RVC inference, realtime voice changing, audio isolation, datasets, TensorBoard, & more. Verified by the experts & for **all** devices.      
 ***
 ###### ‎  
 
 ## Contributions :icon-code-of-conduct:
-- We'll appreciate any **feedback**, big or small. You can directly **contact us** in <u>[AI Hub](https://discord.gg/aihub)</u>: **@eddycrack864**
-- Leave **suggestions** in the <u>[#suggestions](https://discord.com/channels/1159260121998827560/1159516963014451302)</u> channel. To **report issues**, use <u>[#ai-help-forum](https://discord.com/channels/1159260121998827560/1192011222023950368)</u>.
+- We'll appreciate any **feedback**, big or small. You can directly **contact us** in [AI Hub](https://discord.gg/aihub): **@eddycrack864**
+- Leave **suggestions** in the [#suggestions](https://discord.com/channels/1159260121998827560/1159516963014451302) channel. To **report issues**, use [#ai-help-forum](https://discord.com/channels/1159260121998827560/1192011222023950368).
 
-- You can also send an issue/pull request to our <u>[GitHub Docs Repository](https://github.com/AIHubCentral/docs)</u>.
+- You can also send an issue/pull request to our [GitHub Docs Repository](https://github.com/AIHubCentral/docs).
 
 
 ***

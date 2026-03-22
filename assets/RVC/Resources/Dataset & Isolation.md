@@ -44,7 +44,7 @@ order: 2000
 - Ensure there isn't much background noise, reverb, overlapping voices, music, distortion, or small silences. *Some* quiet natural background noise is fine and won't ruin your model since the original pretrains for RVC were made with a noisy dataset, so RVC knows how to deal with noise. You'll learn more on cleaning vocals in the **Vocal Isolation & Cleaning** section below.   
 ‎   
 #### :icon-chevron-down: Audio quality.
-- The higher the audio quality, the better. If possible have it in a <u>[lossless](https://docs.aihub.gg/extra/glossary/#lossless-formats)</u> format like **WAV** or **FLAC**, not a lossy one like MP3. No converting a MP3 to a FLAC or WAV won't remove the compression.  
+- The higher the audio quality, the better. If possible have it in a [lossless](https://docs.aihub.gg/extra/glossary/#lossless-formats) format like **WAV** or **FLAC**, not a lossy one like MP3. No converting a MP3 to a FLAC or WAV won't remove the compression.  
 ‎   
 #### :icon-chevron-down: No harsh sibilance/popping.
 - Additionally, don't include harsh sibilance (loud "S" & "SH" pronunciation) or popping sounds (loud "P" sound) 
@@ -59,7 +59,7 @@ order: 2000
 ## Artifacts 
 :::       
 In RVC, artifacting refers to an anomaly where the output voice sounds "robotic" & glitchy.     
-This occurs after the <u>[inference](https://docs.aihub.gg/extra/glossary/#inference)</u> or model training process.     
+This occurs after the [inference](https://docs.aihub.gg/extra/glossary/#inference) or model training process.     
 #### Causes    
 It usually occurs when the dataset/vocal sample meets any of these criteria: 
 
@@ -75,16 +75,16 @@ Remember that the cleaner your input audio is, the better the results.
 
 #### Solutions    
 #### 1. Use a lossless format:
-- If possible, it's best if your audio is in a <u>[lossless format](https://docs.aihub.gg/extra/glossary/#lossless-formats)</u> like **WAV** or **FLAC**, preserving its original quality.
+- If possible, it's best if your audio is in a [lossless format](https://docs.aihub.gg/extra/glossary/#lossless-formats) like **WAV** or **FLAC**, preserving its original quality.
 
 - Avoid using lossy ones like MP3 or OGG.
 ‎   
 #### 2. If doing inference:
-- Remove undesired noises with an <u>[vocal isolation](https://docs.aihub.gg/rvc/resources/vocal-isolation/)</u> software.
+- Remove undesired noises with an [vocal isolation](https://docs.aihub.gg/rvc/resources/vocal-isolation/) software.
 
-- Lowering the <u>[search feature ratio](https://docs.aihub.gg/rvc/resources/inference-settings/)</u> can also minimize this issue.
+- Lowering the [search feature ratio](https://docs.aihub.gg/rvc/resources/inference-settings/) can also minimize this issue.
 
-- If breathing sounds produce it, lower the <u>[Protection](https://docs.aihub.gg/rvc/resources/inference-settings/)</u> value.
+- If breathing sounds produce it, lower the [Protection](https://docs.aihub.gg/rvc/resources/inference-settings/) value.
 ‎   
 #### 3. If training models:
 - Ensure to clean your dataset properly, this includes removing silences and distortions.
@@ -100,7 +100,7 @@ Remember that the cleaner your input audio is, the better the results.
 
 - The goal is to get an audio sample with clean and natural vocals, which is what RVC needs to give the most accurate & quality results.
 
-- For RVC users, the best app is Ultimate Vocal Remover 5 (or **UVR**). It can be used either <u>[locally](https://docs.aihub.gg/extra/glossary/#local-running)</u> or through the <u>[cloud](https://docs.aihub.gg/rvc/resources/dataset-isolation/#cloud-uvr)</u>.
+- For RVC users, the best app is Ultimate Vocal Remover 5 (or **UVR**). It can be used either [locally](https://docs.aihub.gg/extra/glossary/#local-running) or through the [cloud](https://docs.aihub.gg/rvc/resources/dataset-isolation/#cloud-uvr).
 
 - If you need to remove multiple noises, follow this pipeline for the best results: `Remove instrumental -> Remove reverb -> Extract main vocals -> Remove noise`  
 
@@ -143,12 +143,12 @@ You can also check the Audio Separation community AI Upscalers section in [here]
 :::
 
 !!!warning 
-*You'll require great specs & GPU to run it effectively. Otherwise, use either the <u>[Eddy's UVR5 UI Google Colab](https://docs.aihub.gg/rvc/resources/dataset-isolation/#uvr5-ui-colab)</u> or the <u>[HuggingFace Space](https://docs.aihub.gg/rvc/resources/dataset-isolation/#uvr5-ui-hf)</u>.*
+*You'll require great specs & GPU to run it effectively. Otherwise, use either the [Eddy's UVR5 UI Google Colab](https://docs.aihub.gg/rvc/resources/dataset-isolation/#uvr5-ui-colab) or the [HuggingFace Space](https://docs.aihub.gg/rvc/resources/dataset-isolation/#uvr5-ui-hf).*
 !!!
 
 ### Installation :icon-download:
 *** 
-1. Go to their <u>[official website](https://ultimatevocalremover.com/)</u> & press `Download UVR`. If you want to use BS / Mel Roformer you are going to need to install <u>[this](https://github.com/Anjok07/ultimatevocalremovergui/releases/download/v5.6/UVR_1_15_25_22_30_BETA_full.exe)</u>.
+1. Go to their [official website](https://ultimatevocalremover.com/) & press `Download UVR`. If you want to use BS / Mel Roformer you are going to need to install [this](https://github.com/Anjok07/ultimatevocalremovergui/releases/download/v5.6/UVR_1_15_25_22_30_BETA_full.exe).
 
     <img src="../uvr-img/website.jpg" alt="UVR Official Website Download Button" width="300" height="auto">   
 
@@ -176,16 +176,16 @@ Make sure to tick `🗹 Create a desktop shortcut` for an easier access to UVR.
     <img src="../uvr-img/input-output-folders.jpg" alt="Select input and outputs and folders" width="300" height="auto">         ‎    
 
 !!!success 
-For better results, have the audio in a <u>[lossless format](https://docs.aihub.gg/extra/glossary/#lossless-formats)</u> (**WAV** or **FLAC**), & not MP3.
+For better results, have the audio in a [lossless format](https://docs.aihub.gg/extra/glossary/#lossless-formats) (**WAV** or **FLAC**), & not MP3.
 !!!
 ***
 ‎ 
 #### 2. Select FLAC & GPU Conversion.
 ###### ‎  
 a. At the right you can select the output format.       
-We recommend picking `FLAC`. Learn why <u>[here](https://docs.aihub.gg/extra/glossary/#lossless-formats)</u>.   
+We recommend picking `FLAC`. Learn why [here](https://docs.aihub.gg/extra/glossary/#lossless-formats).   
 ‎  
-b. If your GPU is **compatible with <u>[CUDA](https://docs.aihub.gg/extra/glossary/#cuda)</u>**, toggle `GPU Conversion` on for a faster process.    
+b. If your GPU is **compatible with [CUDA](https://docs.aihub.gg/extra/glossary/#cuda)**, toggle `GPU Conversion` on for a faster process.    
 
     <img src="../uvr-img/flac-gpu-settings.png" alt="Setting FLAC & GPU Conversion" width="350" height="auto">   
 
@@ -239,7 +239,7 @@ De-Echo  | MDX-Net | `uvr de-echo` and `uvr de-echo aggressive` (use aggressive 
 - Each audio is different, so you'll have to test the ideal value.
 
 #### I can't remove some of the backing vocals.
-- Run the audio through BVE. Modify the <u>[Aggression Setting](https://docs.aihub.gg/rvc/resources/vocal-isolation/#uvr-extracted-too-little-too-much)</u> if necessary.
+- Run the audio through BVE. Modify the [Aggression Setting](https://docs.aihub.gg/rvc/resources/vocal-isolation/#uvr-extracted-too-little-too-much) if necessary.
 
 
 +++ Local Eddy UVR5 UI
@@ -249,12 +249,12 @@ De-Echo  | MDX-Net | `uvr de-echo` and `uvr de-echo aggressive` (use aggressive 
 :::
 
 !!!warning 
-*You'll require great specs & GPU to run it effectively. Otherwise, use either the <u>[Eddy's UVR5 UI Google Colab ](https://docs.aihub.gg/rvc/resources/dataset-isolation/#uvr5-ui-colab)</u> or the <u>[HuggingFace Space](https://docs.aihub.gg/rvc/resources/dataset-isolation/#uvr5-ui-hf)</u>.*
+*You'll require great specs & GPU to run it effectively. Otherwise, use either the [Eddy's UVR5 UI Google Colab ](https://docs.aihub.gg/rvc/resources/dataset-isolation/#uvr5-ui-colab) or the [HuggingFace Space](https://docs.aihub.gg/rvc/resources/dataset-isolation/#uvr5-ui-hf).*
 !!!
 
 ### Installation :icon-download:
 *** 
-1. Go to their <u>[Eddy's UVR5 UI Latest Release](https://github.com/Eddycrack864/UVR5-UI/releases/latest)</u> & Follow the installation steps (**Precompiled** versions are suggested).
+1. Go to their [Eddy's UVR5 UI Latest Release](https://github.com/Eddycrack864/UVR5-UI/releases/latest) & Follow the installation steps (**Precompiled** versions are suggested).
 
     <img src="../localeddyuvr5ui-img/installation-steps.png" alt="Eddy's UVR5 UI Local Installation Steps" width="700" height="auto">   
 
@@ -307,7 +307,7 @@ De-Noise | `MelBand Roformer | Denoise by Aufr33 (Aggressive)`
 - Run the audio through BVE. Modify the Aggression Setting if necessary.
 
 #### I couldn't find my answer.
-- Report your issue <u>[here](https://docs.aihub.gg/contributions/)</u>.
+- Report your issue [here](https://docs.aihub.gg/contributions/).
 
 
 +++ UVR5 UI HF
@@ -320,7 +320,7 @@ De-Noise | `MelBand Roformer | Denoise by Aufr33 (Aggressive)`
 ### How to use :icon-checklist:
 
 #### 1. Access the HuggingFace Space
-Access the space <u>[here](https://huggingface.co/spaces/TheStinger/UVR5_UI)</u>, you don't need an account to use this, but making one will get you more free time, and paying for HuggingFace PRO will give you the most ZeroGPU time.
+Access the space [here](https://huggingface.co/spaces/TheStinger/UVR5_UI), you don't need an account to use this, but making one will get you more free time, and paying for HuggingFace PRO will give you the most ZeroGPU time.
     
 #### 2. Select input & options
 ###### ‎  
@@ -367,7 +367,7 @@ De-Noise | `MelBand Roformer | Denoise by Aufr33 (Aggressive)`
 - Run the audio through BVE. Modify the Aggression Setting if necessary.
 
 #### I couldn't find my answer.
-- Report your issue <u>[here](https://docs.aihub.gg/contributions/)</u>.
+- Report your issue [here](https://docs.aihub.gg/contributions/).
 
 ### GPU task aborted:
 ZeroGPU HuggingFace Spaces have a max inference time duration, it’s the time it takes to do an Inference (use the model, not the time of your audio file itself), on default it’s around 1 minute which is what Eddy's UVR5 UI uses. You need to retry with a shorter audio, you could also split your audio.
@@ -390,7 +390,7 @@ ZeroGPU HuggingFace Spaces have a quota per account, if you aren’t signed in y
      
 #### 1. Set up Colab
 ###### ‎ 
-1. First access <u>[Eddy's UVR UI Google Colab](https://colab.research.google.com/github/Eddycrack864/UVR5-UI/blob/main/UVR_UI.ipynb)</u>.   
+1. First access [Eddy's UVR UI Google Colab](https://colab.research.google.com/github/Eddycrack864/UVR5-UI/blob/main/UVR_UI.ipynb).   
 ‎       
 2. Then **Log in** to your Google account.      
 ‎   
@@ -423,7 +423,7 @@ De-Noise | `MelBand Roformer | Denoise by Aufr33 (Aggressive)`
 ***
 
 #### Cannot connect to GPU backend.
-- You have exhausted the <u>[GPU runtime](https://docs.aihub.gg/rvc/extra/glossary/#google-colab)</u> of Colab.
+- You have exhausted the [GPU runtime](https://docs.aihub.gg/rvc/extra/glossary/#google-colab) of Colab.
 
 
 +++ MSST Colab
@@ -438,7 +438,7 @@ This is jarredou's Music Source Separation Training (MSST) (Colab Inference).
 
 #### 1. Set up Colab
 ###### ‎ 
-1. First access the Colab space <u>[here](https://colab.research.google.com/github/jarredou/Music-Source-Separation-Training-Colab-Inference/blob/main/Music_Source_Separation_Training_(Colab_Inference).ipynb)</u>.   
+1. First access the Colab space [here](https://colab.research.google.com/github/jarredou/Music-Source-Separation-Training-Colab-Inference/blob/main/Music_Source_Separation_Training_(Colab_Inference).ipynb).   
 ‎       
 2. Then **Log in** to your Google account.      
 ‎   
@@ -471,7 +471,7 @@ This is jarredou's Music Source Separation Training (MSST) (Colab Inference).
 ‎  
 #### 3. Separate
 ###### ‎   
-a. Select your model of choice and run the **Separation** cell. You can look for the <u>[List of the Best Models](https://docs.aihub.gg/rvc/resources/vocal-isolation/#best-models-for-msst)</u>.
+a. Select your model of choice and run the **Separation** cell. You can look for the [List of the Best Models](https://docs.aihub.gg/rvc/resources/vocal-isolation/#best-models-for-msst).
 
 ‎   
     <img src="../msstcolab-img/model-selection.png" alt="image" width="500" height="auto">‎   
@@ -500,7 +500,7 @@ De-Noise | `DENOISE-MelBand-Roformer-2 (by aufr33)`
 ***
 
 #### Cannot connect to GPU backend.
-- You have exhausted the <u>[GPU runtime](https://docs.aihub.gg/rvc/extra/glossary/#google-colab)</u> of Colab.
+- You have exhausted the [GPU runtime](https://docs.aihub.gg/rvc/extra/glossary/#google-colab) of Colab.
 
 
 +++ MVSEP  
@@ -526,9 +526,9 @@ De-Noise | `DENOISE-MelBand-Roformer-2 (by aufr33)`
 
 #### 1. Log in.  
 ###### ‎
-a. First, <u>[login](https://mvsep.com/register)</u>.
+a. First, [login](https://mvsep.com/register).
 ‎       
-b. Once logged in, go to the <u>[main page](https://mvsep.com)</u>.
+b. Once logged in, go to the [main page](https://mvsep.com).
 
 !!!
 Logging in is not mandatory, but recommended for **shorter waiting lists**.
@@ -549,7 +549,7 @@ a. Click `Browse File` & select your audio, or simply drag & drop. The audio wil
 a. In **Separation type** Select a Model based on the [Best Models List](https://docs.aihub.gg/rvc/resources/vocal-isolation/#best-models-for-mvsep).
 ‎     
 b. In **Output encoding** select `FLAC`.          
-We recommend selecting FLAC from now on. Learn more <u>[here](https://docs.aihub.gg/extra/glossary/#lossless-formats)</u>.        
+We recommend selecting FLAC from now on. Learn more [here](https://docs.aihub.gg/extra/glossary/#lossless-formats).        
 ‎     
 c. Once the audio is done uploading, click `Separate`       
 
@@ -614,7 +614,7 @@ Most of the extraction model are behind a pay wall.
 
 
 #### 1. Choose a Separator
-a. First go to <u>[X-minus's website](https://x-minus.pro)</u> and click the "Vocal Remover" at the top right. 
+a. First go to [X-minus's website](https://x-minus.pro) and click the "Vocal Remover" at the top right. 
 
 <img src="../x-minus-img/homepage.png" alt="X-Minus Homepage" width="600" height="auto"> 
 
@@ -650,7 +650,7 @@ Restoration | `Apollo Universal by Lew` (to enhance mp3 and other low quality fi
 ## RX 11
 :::
 
-Go to their <u>[Official Website](https://www.izotope.com/en/shop/rx-11-advanced/)</u> & buy it.
+Go to their [Official Website](https://www.izotope.com/en/shop/rx-11-advanced/) & buy it.
 
 ***
 :::content-center
@@ -936,7 +936,7 @@ You can find an extremely long and complex guide from the Audio Separation commu
 ## Preparing the dataset
 :::
 
-- To do these next steps you are going to need <u>[Spek](https://www.spek.cc/p/download)</u> and <u>[Audacity](https://www.audacityteam.org)</u>.
+- To do these next steps you are going to need [Spek](https://www.spek.cc/p/download) and [Audacity](https://www.audacityteam.org).
 
 ### Step 1: Find the Sample Rate
 :::
@@ -949,7 +949,7 @@ You can find an extremely long and complex guide from the Audio Separation commu
 - ##### A simple way to determine it is with <ins>Spek</ins>:  
 
     - ##### STEP 1:   
-        Download and install Spek <u>[here](https://www.spek.cc/p/download)</u>.
+        Download and install Spek [here](https://www.spek.cc/p/download).
     - ##### STEP 2:   
         Open spek and just drag & drop audio into it. 
 

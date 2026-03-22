@@ -24,7 +24,7 @@ order: 2000
 RVC Models are PyTorch Models, a Python library used for AI.
 PyTorch uses serialization via Pythons' Pickle Module, converting the model to a file.
 Since pickle can execute arbitrary code when loading a model, it could be theoretically used for malware, but Applio has a **built-in feature to prevent code execution along the model.**
-Also, **HuggingFace has a <u>[Security Scanner](https://huggingface.co/docs/hub/security-pickle#hubs-security-scanner)</u>** which scans for any unsafe pickle exploits and uses also ClamAV for scanning dangerous files.
+Also, **HuggingFace has a [Security Scanner](https://huggingface.co/docs/hub/security-pickle#hubs-security-scanner)** which scans for any unsafe pickle exploits and uses also ClamAV for scanning dangerous files.
 
 ***
 
@@ -56,7 +56,7 @@ Also, **HuggingFace has a <u>[Security Scanner](https://huggingface.co/docs/hub/
 - In AI Realtime Voice Changing context, it's used to get the output of AI Converted Voice Output as the input in other programs such as Discord.
 
 !!! For Windows
-Download this: <u>[VAC Lite (Virtual-Audio-Cable by Muzychenko)](https://software.muzychenko.net/freeware/vac470lite.zip)</u>.
+Download this: [VAC Lite (Virtual-Audio-Cable by Muzychenko)](https://software.muzychenko.net/freeware/vac470lite.zip).
 (Be sure to not use any toher vac like VB Audio Cable.)
 !!!
 
@@ -66,9 +66,9 @@ Download this: <u>[VAC Lite (Virtual-Audio-Cable by Muzychenko)](https://softwar
 
 !!! For Mac
 Download either: 
-<u>[Blackhole Virtual Audio Cable](https://existential.audio/blackhole)</u>
+[Blackhole Virtual Audio Cable](https://existential.audio/blackhole)
 or
-<u>[VB-Audio](https://vb-audio.com/Cable)</u>
+[VB-Audio](https://vb-audio.com/Cable)
 !!!
 
 !!! For Linux
@@ -92,7 +92,7 @@ sudo pacman -Syu portaudio
 ***
 ## Get & Start Applio
 
-1. Install and Run Applio according to the <u>[main Applio installation guide](https://docs.aihub.gg/rvc/local/applio/#download--installation)</u>.
+1. Install and Run Applio according to the [main Applio installation guide](https://docs.aihub.gg/rvc/local/applio/#download--installation).
 2. [Upload your RVC Voice Model](https://docs.aihub.gg/rvc/local/applio/#upload-models).
 3. Navigate to the **Realtime** tab in the top navigation menu.
 4. You must agree to the **Terms of Use** before the settings become accessible.+

@@ -25,7 +25,7 @@ order: 5000
 ### TTS Program
 :::
 
-Choose any TTS in our <u>[TTS Tools](https://docs.aihub.gg/tts/tts-tools/)</u>.
+Choose any TTS in our [TTS Tools](https://docs.aihub.gg/tts/tts-tools/).
 
 
 ***
@@ -37,7 +37,7 @@ Choose any TTS in our <u>[TTS Tools](https://docs.aihub.gg/tts/tts-tools/)</u>.
 - In AI Realtime Voice Changing context, it's used to get the output of AI Converted Voice Output as the input in other programs such as Discord.
 
 !!! For Windows
-Download this: <u>[VAC Lite (Virtual-Audio-Cable by Muzychenko)](https://software.muzychenko.net/freeware/vac470lite.zip)</u>.
+Download this: [VAC Lite (Virtual-Audio-Cable by Muzychenko)](https://software.muzychenko.net/freeware/vac470lite.zip).
 (Be sure to not use any toher vac like VB Audio Cable.)
 !!!
 
@@ -47,9 +47,9 @@ Download this: <u>[VAC Lite (Virtual-Audio-Cable by Muzychenko)](https://softwar
 
 !!! For Mac
 Download either: 
-<u>[Blackhole Virtual Audio Cable](https://existential.audio/blackhole)</u>
+[Blackhole Virtual Audio Cable](https://existential.audio/blackhole)
 or
-<u>[VB-Audio](https://vb-audio.com/Cable)</u>
+[VB-Audio](https://vb-audio.com/Cable)
 !!!
 
 !!! For Linux

@@ -29,7 +29,7 @@ visibility: hidden
 ## Installing Voicemeeter
 ***
 
-1. Download Voicemeeter from <u>[here](https://download.vb-audio.com/Download_CABLE/VoicemeeterSetup_v2119.zip)</u>. You can either install Voicemeeter Banana or Potato. 
+1. Download Voicemeeter from [here](https://download.vb-audio.com/Download_CABLE/VoicemeeterSetup_v2119.zip). You can either install Voicemeeter Banana or Potato. 
 
 2. Unzip the folder then run `voicemeeterprosetup.exe`. 
 
@@ -97,7 +97,7 @@ Set `Monitor:` Your headphones if you want to hear the model
 ## Installing Light Host
 ***
 
-1. Download <u>[Light Host](https://github.com/rolandoislas/LightHost/releases/download/v1.2.1/Light.Host.1.2.1.Win64.zip)</u>.
+1. Download [Light Host](https://github.com/rolandoislas/LightHost/releases/download/v1.2.1/Light.Host.1.2.1.Win64.zip).
 
 2. Unzip the folder then run `Light Host.exe`
 
@@ -134,7 +134,7 @@ Set `Monitor:` Your headphones if you want to hear the model
 
 ### VSTs
 
-- First you will need some VST's, you can find plenty of free ones at <u>[Kilohearts website](https://kilohearts.com/products/kilohearts_essentials)</u>. I suggest their Bitcrush, Filter and Phase Distortion but you can use whatever VSTs you want.
+- First you will need some VST's, you can find plenty of free ones at [Kilohearts website](https://kilohearts.com/products/kilohearts_essentials). I suggest their Bitcrush, Filter and Phase Distortion but you can use whatever VSTs you want.
 
 - There is no "prefect setting" for these VSTs so set their settings to whatever you think sounds good.
 
@@ -167,7 +167,7 @@ The more VSTs you add the more delay there is going to be.
 ***
 ### Background Noise
 
-- First you are going to need noise to play, you can get those at <u>[freesound](https://freesound.org/)</u> or just record your own room noise using Audacity.
+- First you are going to need noise to play, you can get those at [freesound](https://freesound.org/) or just record your own room noise using Audacity.
 
 
 1. When you have the noise you want you are going to need to open "Windows Media Player" then drag the audio you downloaded into it. 

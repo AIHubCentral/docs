@@ -14,13 +14,13 @@ order: 4000
 :::content-center
 ## Introduction ‎
 :::
-- Applio is a <u>[Fork</u>](https://docs.aihub.gg/essentials/whats-rvc/#forks) of <u>[Original/Mainline RVC](https://docs.aihub.gg/rvc/local/mainline/)</u>, developed by the <u>[IA Hispano</u>](https://github.com/IAHispano)</u> team.
+- Applio is a [Fork</u>](https://docs.aihub.gg/essentials/whats-rvc/#forks) of [Original/Mainline RVC](https://docs.aihub.gg/rvc/local/mainline/), developed by the [IA Hispano</u>](https://github.com/IAHispano) team.
 
 - It's liked for its great **UI**, **performance** improvements and **lots** of extra features, such as TTS (with RVC models too), plugins, automatic model upload, customizable theme & more.
 
 - Because of its user-friendly experience & active development, it's considered to be one of the best forks.     
 
-- Applio has <u>[it's own Applio Docs](https://docs.applio.org/)</u>, which may have more info about the tool.
+- Applio has [it's own Applio Docs](https://docs.applio.org/), which may have more info about the tool.
 
 
 ***
@@ -29,7 +29,7 @@ order: 4000
 RVC Models are PyTorch Models, a Python library used for AI.
 PyTorch uses serialization via Pythons' Pickle Module, converting the model to a file.
 Since pickle can execute arbitrary code when loading a model, it could be theoretically used for malware, but this fork has a **built-in feature to prevent code execution along the model.**
-Also, **HuggingFace has a <u>[Security Scanner](https://huggingface.co/docs/hub/security-pickle#hubs-security-scanner)</u>** which scans for any unsafe pickle exploits and uses also ClamAV for scanning dangerous files.
+Also, **HuggingFace has a [Security Scanner](https://huggingface.co/docs/hub/security-pickle#hubs-security-scanner)** which scans for any unsafe pickle exploits and uses also ClamAV for scanning dangerous files.
 ***
 
 ‎      
@@ -56,13 +56,13 @@ Also, **HuggingFace has a <u>[Security Scanner](https://huggingface.co/docs/hub/
 
 ## System & Hardware Requirements
 
-Check if you meet the <u>[requirements](https://docs.aihub.gg/essentials/whats-rvc/#what-are-the-requirements-for-rvc-locally/)</u> to run it locally.
+Check if you meet the [requirements](https://docs.aihub.gg/essentials/whats-rvc/#what-are-the-requirements-for-rvc-locally/) to run it locally.
 
 If you don't meet the requirements, there are 4 Cloud Versions:
-- <u>[Applio UI Kaggle](https://docs.aihub.gg/rvc/cloud/applio-kaggle/)</u>
-- <u>[Applio UI Google Colab](https://docs.aihub.gg/rvc/cloud/applio-colab/)</u>
-- <u>[Applio NO UI Google Colab](https://docs.aihub.gg/rvc/cloud/applio-no-ui-colab/)</u>
-- <u>[Applio UI Lightning.AI](https://docs.aihub.gg/rvc/cloud/applio-lightning-ai/)</u>
+- [Applio UI Kaggle](https://docs.aihub.gg/rvc/cloud/applio-kaggle/)
+- [Applio UI Google Colab](https://docs.aihub.gg/rvc/cloud/applio-colab/)
+- [Applio NO UI Google Colab](https://docs.aihub.gg/rvc/cloud/applio-no-ui-colab/)
+- [Applio UI Lightning.AI](https://docs.aihub.gg/rvc/cloud/applio-lightning-ai/)
 
 
 ###### ‎
@@ -82,7 +82,7 @@ If you don't meet the requirements, there are 4 Cloud Versions:
 
 RTX 5000 Series Users require version 3.3.0 or newer.
 
-1. The easiest way to download Applio is by going to Applio's <u>[Hugging Face repo](https://huggingface.co/IAHispano/Applio/tree/main/Compiled)</u>, and clicking the [ :icon-download: **download** ] button on the right-hand side.
+1. The easiest way to download Applio is by going to Applio's [Hugging Face repo](https://huggingface.co/IAHispano/Applio/tree/main/Compiled), and clicking the [ :icon-download: **download** ] button on the right-hand side.
 
     <img src="..\applio-img\2-localappliodl.png" alt="image" width="400">
 
@@ -103,7 +103,7 @@ RTX 5000 Series Users require version 3.3.0 or newer.
 
 ### Linux & macOS
 
-1. The easiest way to download Applio is by going to Applio's <u>[Hugging Face repo](https://huggingface.co/IAHispano/Applio/tree/main/Compiled)</u>, and clicking the [ :icon-download: **download** ] button on the right-hand side.
+1. The easiest way to download Applio is by going to Applio's [Hugging Face repo](https://huggingface.co/IAHispano/Applio/tree/main/Compiled), and clicking the [ :icon-download: **download** ] button on the right-hand side.
 
     <img src="..\applio-img\2-localappliodl.png" alt="image" width="400">
 
@@ -161,9 +161,9 @@ These guides are for AMD GPU users on Windows using Zluda to enable CUDA compati
 +++ Adrenalin 25.5.1+ (Newer)
 **For Adrenalin 25.5.1 driver or newer**
 
-1. Download a compiled version of Applio **v3.5.0 or newer** from the <u>[Hugging Face repo](https://huggingface.co/IAHispano/Applio/tree/main/Compiled)</u>, and unzip it to your desired folder.
+1. Download a compiled version of Applio **v3.5.0 or newer** from the [Hugging Face repo](https://huggingface.co/IAHispano/Applio/tree/main/Compiled), and unzip it to your desired folder.
 
-2. Download **HIP SDK 6.2.4** from the <u>[AMD ROCm Hub](https://www.amd.com/en/developer/resources/rocm-hub/hip-sdk.html)</u>.
+2. Download **HIP SDK 6.2.4** from the [AMD ROCm Hub](https://www.amd.com/en/developer/resources/rocm-hub/hip-sdk.html).
     - Run the installer.
     - **Important:** Install the components but **exclude/deselect the video driver** at the bottom of the installer list.
 
@@ -177,8 +177,8 @@ These guides are for AMD GPU users on Windows using Zluda to enable CUDA compati
    ```
 
 5. Download the necessary patch files into your Applio root folder:
-    - <u>[patch-zluda-hip62.bat](https://github.com/IAHispano/Applio/blob/main/assets/zluda/patch-zluda-hip62.bat)</u>
-    - <u>[run-applio-amd.bat](https://github.com/IAHispano/Applio/blob/main/assets/zluda/run-applio-amd.bat)</u>
+    - [patch-zluda-hip62.bat](https://github.com/IAHispano/Applio/blob/main/assets/zluda/patch-zluda-hip62.bat)
+    - [run-applio-amd.bat](https://github.com/IAHispano/Applio/blob/main/assets/zluda/run-applio-amd.bat)
 
 6. Edit the file located at `rvc/lib/zluda.py`. Replace the content with the following:
    ```python
@@ -197,20 +197,20 @@ These guides are for AMD GPU users on Windows using Zluda to enable CUDA compati
 8. Run `run-applio-amd.bat` to start Applio.
 
 +++ Older Drivers / Legacy
-1. Download and install the <u>[VC++ Runtime](https://aka.ms/vs/17/release/vc_redist.x64.exe)</u>.
+1. Download and install the [VC++ Runtime](https://aka.ms/vs/17/release/vc_redist.x64.exe).
 
 ***
 
-2. First, check the official <u>[System Requirements](https://rocm.docs.amd.com/projects/install-on-windows/en/develop/reference/system-requirements.html)</u> on the AMD ROCm™ documentation site. In the "Windows-supported GPUs" section, determine which steps to follow below.
+2. First, check the official [System Requirements](https://rocm.docs.amd.com/projects/install-on-windows/en/develop/reference/system-requirements.html) on the AMD ROCm™ documentation site. In the "Windows-supported GPUs" section, determine which steps to follow below.
 
 ==- GPU has a green check in the HIP SDK column
-- Install either v6.1.2 or v5.7.1 HIP SDK from the <u>[AMD ROCm Hub](https://www.amd.com/en/developer/resources/rocm-hub/hip-sdk.html)</u>.
+- Install either v6.1.2 or v5.7.1 HIP SDK from the [AMD ROCm Hub](https://www.amd.com/en/developer/resources/rocm-hub/hip-sdk.html).
 ===
 ==- GPU is RX 6600, 6600XT, 6650XT, 6700, 6700XT, or 6750XT
-1. Install **v5.7.1** HIP SDK from the <u>[AMD ROCm Hub](https://www.amd.com/en/developer/resources/rocm-hub/hip-sdk.html)</u>.
+1. Install **v5.7.1** HIP SDK from the [AMD ROCm Hub](https://www.amd.com/en/developer/resources/rocm-hub/hip-sdk.html).
 2. Download the correct archive for your GPU:
-    - For 6700, 6700XT, 6750XT, download the <u>[gfx1031 archive](https://github.com/brknsoul/ROCmLibs/raw/main/Optimised_ROCmLibs_gfx1031.7z)</u>.
-    - For 6600, 6600XT, 6650XT, download the <u>[gfx1032 archive](https://github.com/brknsoul/ROCmLibs/raw/main/Optimised_ROCmLibs_gfx1032.7z)</u>.
+    - For 6700, 6700XT, 6750XT, download the [gfx1031 archive](https://github.com/brknsoul/ROCmLibs/raw/main/Optimised_ROCmLibs_gfx1031.7z).
+    - For 6600, 6600XT, 6650XT, download the [gfx1032 archive](https://github.com/brknsoul/ROCmLibs/raw/main/Optimised_ROCmLibs_gfx1032.7z).
 3. Navigate to `C:\Program Files\AMD\ROCm\5.7\bin\rocblas\` and rename the `library` folder to `library.old`.
 4. Create a new, empty folder named `library` in its place.
 5. Unzip the content of the archive you downloaded into this new `library` folder.
@@ -220,18 +220,18 @@ These guides are for AMD GPU users on Windows using Zluda to enable CUDA compati
 2. Follow the steps for your corresponding `gfx` value:
 
     +++ `gfx803, gfx900, gfx906, gfx1010, gfx1011, gfx1012, gfx1030, gfx1100, gfx1101, gfx1102`
-    1. Install **v5.7.1** HIP SDK from the <u>[AMD ROCm Hub](https://www.amd.com/en/developer/resources/rocm-hub/hip-sdk.html)</u>.
-    2. Download <u>[this archive](https://github.com/brknsoul/ROCmLibs/raw/main/ROCmLibs.7z)</u>.
+    1. Install **v5.7.1** HIP SDK from the [AMD ROCm Hub](https://www.amd.com/en/developer/resources/rocm-hub/hip-sdk.html).
+    2. Download [this archive](https://github.com/brknsoul/ROCmLibs/raw/main/ROCmLibs.7z).
     3. Navigate to `C:\Program Files\AMD\ROCm\5.7\bin\rocblas\` and rename the `library` folder to `library.old`.
     4. Unzip the content of the archive directly into the `C:\Program Files\AMD\ROCm\5.7\bin\rocblas\` folder.
     +++ Other GPUs
-    - Visit <u>[this repository](https://github.com/likelovewant/ROCmLibs-for-gfx1103-AMD780M-APU)</u> and follow the specific instructions provided there.
+    - Visit [this repository](https://github.com/likelovewant/ROCmLibs-for-gfx1103-AMD780M-APU) and follow the specific instructions provided there.
     +++
 ===
 
 ***
 
-3. Download a <u>[compiled version of Applio](https://huggingface.co/IAHispano/Applio/tree/main/Compiled)</u> (v3.2.5 or higher) and unzip it to your desired folder.
+3. Download a [compiled version of Applio](https://huggingface.co/IAHispano/Applio/tree/main/Compiled) (v3.2.5 or higher) and unzip it to your desired folder.
 
     <img src="..\applio-img\2-localappliodl.png" alt="image" width="400">
 
@@ -284,7 +284,7 @@ The very first time you run a task (like inference or training), Applio may appe
 ###### ‎   
 #### 1. Upload voice model.
 - Go to the **Download** tab.       
-You have two ways of uploading it: through <u>[**its link**](https://docs.aihub.gg/essentials/voice-models/#how-to-search-voice-models)</u> or **manually** inputting its files.
+You have two ways of uploading it: through [**its link**](https://docs.aihub.gg/essentials/voice-models/#how-to-search-voice-models) or **manually** inputting its files.
 
     +++ Link
     a. Go to the **Download** tab & paste the link of the model in the `Model Link` bar. It must be from Hugging Face or Google Drive.        
@@ -348,7 +348,7 @@ b. Select your model in the ``Voice Model`` dropdown.
 
 ‎  
 #### 3. Modify settings. (optional)      
--  Unfold `Advanced Settings` if you wish to modify the <u>[inference settings](https://docs.aihub.gg/rvc/resources/inference-settings/)</u> for better results, or to determine the output folder.
+-  Unfold `Advanced Settings` if you wish to modify the [inference settings](https://docs.aihub.gg/rvc/resources/inference-settings/) for better results, or to determine the output folder.
 
     <img src="..\applio-img/3-advanced.png" alt="image" width="600">‎   
 ***
@@ -370,8 +370,8 @@ b. Once it's done, you can hear the results in the **Export Audio** box below.
 ## Training :icon-dependabot:
 ###### ‎   
 !!!warning
-The training guide will be centered around using <u>[TensorBoard](https://docs.aihub.gg/rvc/resources/training/#tensorboard)</u>. Read about it first if you haven't already.      
-If you encounter an issue, be sure to read the <u>[Troubleshooting](https://docs.aihub.gg/rvc/local/mainline/#troubleshooting-)</u> chapter.
+The training guide will be centered around using [TensorBoard](https://docs.aihub.gg/rvc/resources/training/#tensorboard). Read about it first if you haven't already.      
+If you encounter an issue, be sure to read the [Troubleshooting](https://docs.aihub.gg/rvc/local/mainline/#troubleshooting-) chapter.
 !!!
 :::
 ###### ‎     
@@ -398,7 +398,7 @@ Don't include spaces/special characters.
 ###### ‎     
 ##### c. Sampling Rate
 ###### ‎    
-- Select your dataset's sample rate. If you don't know the amount, click <u>[here](https://docs.aihub.gg/rvc/local/applio/#extra)</u>.
+- Select your dataset's sample rate. If you don't know the amount, click [here](https://docs.aihub.gg/rvc/local/applio/#extra).
 
     <img src="..\applio-img\4-samplerate.png" alt="image" width="300">‎  
 
@@ -418,7 +418,7 @@ Don't include spaces/special characters.
 ###### ‎    
 ##### a. Pitch extraction algorithm
 ###### ‎  
-- Select the <u>[algorithm](https://docs.aihub.gg/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u> you want. Use either ``RMVPE`` (most suggested) or ``Crepe``. Applio removed pm. dio and harvest as they are outdated.
+- Select the [algorithm](https://docs.aihub.gg/rvc/resources/inference-settings/#pitch-extraction-algorithm) you want. Use either ``RMVPE`` (most suggested) or ``Crepe``. Applio removed pm. dio and harvest as they are outdated.
 
     <img src="..\applio-img\pitch-extraction-algorithms.png" alt="image" width="400">
 
@@ -426,7 +426,7 @@ Don't include spaces/special characters.
 ###### ‎  
 ##### b. Embedder Model
 ###### ‎  
-- Select the <u>[Embedder Model](https://docs.aihub.gg/rvc/resources/inference-settings/#embedder-model)</u> you want. Contentvec is the most used.
+- Select the [Embedder Model](https://docs.aihub.gg/rvc/resources/inference-settings/#embedder-model) you want. Contentvec is the most used.
 
     <img src="..\applio-img\embedder.png" alt="image" width="400">
 
@@ -469,7 +469,7 @@ It'll finish when it says `extracted successfully`.
 ###### ‎  
 ##### b. Save Every Epoch
 ###### ‎  
-- Frequency of the <u>[saving checkpoints](https://docs.aihub.gg/extra/glossary/#checkpoints)</u>, based on the <u>[epochs](https://docs.aihub.gg/rvc/resources/training/#epochs--overtraining)</u>.      
+- Frequency of the [saving checkpoints](https://docs.aihub.gg/extra/glossary/#checkpoints), based on the [epochs](https://docs.aihub.gg/rvc/resources/training/#epochs--overtraining).      
 ‎   
 - If you are a newbie, simply leave it at `15`, but if you wish to be percise set it to `1`.              
 
@@ -481,9 +481,9 @@ It'll finish when it says `extracted successfully`.
 ###### ‎  
 ##### c. Total Epoch
 ###### ‎  
-- Input the total amount of <u>[epochs](https://docs.aihub.gg/rvc/resources/training/#epochs--overtraining)</u> (training cycles) for the model.     
+- Input the total amount of [epochs](https://docs.aihub.gg/rvc/resources/training/#epochs--overtraining) (training cycles) for the model.     
 ‎   
-- But since we'll use <u>[TensorBoard](https://docs.aihub.gg/rvc/resources/training/#tensorboard)</u>, use an arbitrarily large value like `1000`
+- But since we'll use [TensorBoard](https://docs.aihub.gg/rvc/resources/training/#tensorboard), use an arbitrarily large value like `1000`
 
     <img src="..\applio-img\4-epoch.png" alt="image" width="420">‎   
 ***
@@ -526,14 +526,14 @@ It'll finish when it says `extracted successfully`.
 ###### ‎  
 ##### g. Generate Index
 ###### ‎  
-- Click `Generate Index`. This will create the model's <u>[.INDEX](https://docs.aihub.gg/essentials/voice-models/#voice-model-files)</u> file.
+- Click `Generate Index`. This will create the model's [.INDEX](https://docs.aihub.gg/essentials/voice-models/#voice-model-files) file.
 ***
 ###### ‎  
 ##### h. Start Training
 ###### ‎  
 - Press `Start Training` to begin the training process.     
 ‎   
-- To open <u>[TB](https://docs.aihub.gg/rvc/resources/training/#tensorboard)</u>, execute `run-tensorboard` in Applio's folder. Remember to monitor it, as well as the console just in case.           
+- To open [TB](https://docs.aihub.gg/rvc/resources/training/#tensorboard), execute `run-tensorboard` in Applio's folder. Remember to monitor it, as well as the console just in case.           
 ‎   
 - The latter will show you errors if they happen, and information about the epochs & checkpoints.   
 
@@ -566,7 +566,7 @@ iii. Select the **.INDEX** named ``added_`` & move it to your newly made folder.
 ###### ‎  
 ##### c. Get the PTH
 ###### ‎  
-i. In said folder you'll also find all the <u>[checkpoints](https://docs.aihub.gg/extra/glossary/#checkpoints)</u>.         
+i. In said folder you'll also find all the [checkpoints](https://docs.aihub.gg/extra/glossary/#checkpoints).         
 ‎  
 ii. Select the one **closest** to ***before*** the overtraining point, and move it to the new folder.
 
@@ -575,7 +575,7 @@ ii. Select the one **closest** to ***before*** the overtraining point, and move 
 
 ‎  
     ‎            
-iii. And that's all, have fun with your model. To test it, do a normal <u>[inference</u>](https://docs.aihub.gg/rvc/local/applio/#inference-) as usual.
+iii. And that's all, have fun with your model. To test it, do a normal [inference</u>](https://docs.aihub.gg/rvc/local/applio/#inference-) as usual.
 
 ===
 
@@ -599,9 +599,9 @@ iii. And that's all, have fun with your model. To test it, do a normal <u>[infer
 ###### ‎  
 - Applio is also known for having one TTS tool by default, with **plenty** of voices to choose for.
 
-- You can also use it with **RVC models** & apply the <u>[inference settings](https://docs.aihub.gg/rvc/resources/inference-settings/)</u> if you wish.
+- You can also use it with **RVC models** & apply the [inference settings](https://docs.aihub.gg/rvc/resources/inference-settings/) if you wish.
 
-- Aditionally, you can download the **Eleven Labs** TTS <u>[plugin](https://docs.aihub.gg/rvc/local/applio/#plugins)</u>.       
+- Aditionally, you can download the **Eleven Labs** TTS [plugin](https://docs.aihub.gg/rvc/local/applio/#plugins).       
 ***
 ###### ‎  
 #### <u>Instructions:</u>
@@ -612,11 +612,11 @@ iii. And that's all, have fun with your model. To test it, do a normal <u>[infer
 ***   
 ###### ‎   
 
-2. If you want to use an RVC model, <u>[download it](https://docs.aihub.gg/rvc/local/applio/#1-upload-voice-model)</u>, go to **TTS**, click `Refresh` & select it in **Voice Model** & **Index File**.
+2. If you want to use an RVC model, [download it](https://docs.aihub.gg/rvc/local/applio/#1-upload-voice-model), go to **TTS**, click `Refresh` & select it in **Voice Model** & **Index File**.
 
    <img src="../applio-img/5-vm.png" alt="image" width="600" height="auto">‎    
 ‎             
-- To modify the <u>[inference settings](https://docs.aihub.gg/rvc/resources/inference-settings/)</u> or the output folder for the TTS/RVC audio, unfold `Advanced Settings`.
+- To modify the [inference settings](https://docs.aihub.gg/rvc/resources/inference-settings/) or the output folder for the TTS/RVC audio, unfold `Advanced Settings`.
 
 ***
 ###### ‎      
@@ -694,7 +694,7 @@ Beyond offline inference, Applio features a powerful built-in **Realtime** tab, 
 - It uses the same RVC technology but is optimized for low-latency performance.
 - Features include Voice Activity Detection (VAD), input/output device selection, and advanced performance tweaking.
 
-For a full step-by-step setup and configuration guide, please visit the <u>[Applio Realtime Guide](https://docs.aihub.gg/realtime-voice-changer/local/applio-realtime/)</u>.
+For a full step-by-step setup and configuration guide, please visit the [Applio Realtime Guide](https://docs.aihub.gg/realtime-voice-changer/local/applio-realtime/).
 
 
 ***
@@ -747,7 +747,7 @@ If the frequencies don't reach the top of the spectrogram, see at which number p
 
 - These are made by the public, and are free & easy to install. 
 
-- You can find them on their <u>[GitHub page](https://github.com/IAHispano/Applio-Plugins/tree/main)</u>. More will be added in the future.
+- You can find them on their [GitHub page](https://github.com/IAHispano/Applio-Plugins/tree/main). More will be added in the future.
 ***
 ###### ‎
 #### <u>Installation:</u>
@@ -798,7 +798,7 @@ Then you'll be able to see the plugin in the **Plugins** tab.
 ===
 
 ==- The voice glitches out.
-- This a phenomenon called artifacting. To fix it, read <u>[here](https://docs.aihub.gg/rvc/resources/dataset-isolation/#artifacts)</u>.
+- This a phenomenon called artifacting. To fix it, read [here](https://docs.aihub.gg/rvc/resources/dataset-isolation/#artifacts).
 
 ===
 

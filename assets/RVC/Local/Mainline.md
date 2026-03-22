@@ -11,9 +11,9 @@ order: 3000
 ## Introduction ‎ :icon-book:
 :::
 
-- Mainline RVC is the base, **original**, & unmodified official version of RVC. Made by the <u>[RVC-Project</u>](https://github.com/RVC-Project) team. It can be called either Original/Mainline RVC.
+- Mainline RVC is the base, **original**, & unmodified official version of RVC. Made by the [RVC-Project</u>](https://github.com/RVC-Project) team. It can be called either Original/Mainline RVC.
 
-- It has less features compared to other <u>[forks</u>](https://docs.aihub.gg/essentials/whats-rvc/#forks), but still has the necessary tools to do a decent job.
+- It has less features compared to other [forks</u>](https://docs.aihub.gg/essentials/whats-rvc/#forks), but still has the necessary tools to do a decent job.
 
 - It's specially liked because it's a little faster than other forks, as it's less bloated in a way. 
 
@@ -41,7 +41,7 @@ order: 3000
 ## Installing & Opening Nvidia on Windows (Precompiled) :icon-download:
 :::
 ###### ‎
-1. Go to their download page <u>[here](https://huggingface.co/lj1995/VoiceConversionWebUI/blob/main/RVC1006Nvidia.7z)</u>    
+1. Go to their download page [here](https://huggingface.co/lj1995/VoiceConversionWebUI/blob/main/RVC1006Nvidia.7z)    
 
 3. Click the <u>``Download``</u> word. RVC will begin to download.      
     ‎       
@@ -67,17 +67,17 @@ order: 3000
 :::content-center
 ## Inference :icon-unmute:   
 !!!success
-If you encounter an issue, be sure to read the <u>[Troubleshooting](https://docs.aihub.gg/rvc/local/mainline/#troubleshooting-)</u> chapter.
+If you encounter an issue, be sure to read the [Troubleshooting](https://docs.aihub.gg/rvc/local/mainline/#troubleshooting-) chapter.
 !!!
 :::
 ###### ‎   
 #### 1. Upload voice model.
-a. Open RVC's folder, go to the `assets` folder and put your model's <u>[**.PTH**</u>](https://docs.aihub.gg/essentials/voice-models/#voice-model-files) file inside the `weights` folder.       
+a. Open RVC's folder, go to the `assets` folder and put your model's [**.PTH**</u>](https://docs.aihub.gg/essentials/voice-models/#voice-model-files) file inside the `weights` folder.       
     ‎       
     <img src="../mainline-img/5.png" alt="image" width="520" height="auto">      
 ‎       
        
-b. Return to the previous folder & put the model's <u>[**.INDEX**</u>](https://docs.aihub.gg/essentials/voice-models/#voice-model-files) file in the `logs` folder.
+b. Return to the previous folder & put the model's [**.INDEX**</u>](https://docs.aihub.gg/essentials/voice-models/#voice-model-files) file in the `logs` folder.
 
     <img src="../mainline-img/6.png" alt="image" width="520" height="auto"> 
 
@@ -96,14 +96,14 @@ b. In its left, click `Inferencing voice` & select your model.
 ***
 ###### ‎  
 #### 3. Select vocals.      
-In ``Enter the path of the audio file`` paste the <u>[path file</u>](https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2023/09/shift-right-click-copy-as-path.png?q=50&fit=crop&w=767&dpr=1.5) of your audio. Ensure the path doesn't include spaces or special characters.
+In ``Enter the path of the audio file`` paste the [path file</u>](https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2023/09/shift-right-click-copy-as-path.png?q=50&fit=crop&w=767&dpr=1.5) of your audio. Ensure the path doesn't include spaces or special characters.
 
 <img src="../mainline-img/8.png" alt="image" width="650" height="auto"> 
 
 ***
 ###### ‎  
 #### 4. Modify settings. (optional)      
-If you wish, modify the <u><u>[inference settings</u>](https://docs.aihub.gg/rvc/resources/inference-settings/)</u> on display accordingly for better results.
+If you wish, modify the <u>[inference settings</u>](https://docs.aihub.gg/rvc/resources/inference-settings/) on display accordingly for better results.
 ***
 ###### ‎  
 #### 5. Convert.
@@ -126,7 +126,7 @@ To download, click the three dots on the right & hit `Download`.
 !!!warning <u> NOTES: </u>
 The training guide will be centered around using [TensorBoard](https://docs.aihub.gg/rvc/resources/training/#tensorboard). Read about it first if you haven't already.      
 
-If you encounter an issue, be sure to read the <u>[Troubleshooting](https://docs.aihub.gg/rvc/local/mainline/#troubleshooting-)</u> chapter.
+If you encounter an issue, be sure to read the [Troubleshooting](https://docs.aihub.gg/rvc/local/mainline/#troubleshooting-) chapter.
 !!!
 :::
 ###### ‎     
@@ -150,7 +150,7 @@ In `Enter the experiment name` you insert a name for your model. Don't include s
 
 ###### ‎  
 #### 3. Select Target Sample Rate.
-In `Target sample rate` select the number that matches your datasets' <u>[sample rate</u>](https://docs.aihub.gg/rvc/resources/dataset-isolation/#step-1-find-the-sample-rate).        
+In `Target sample rate` select the number that matches your datasets' [sample rate</u>](https://docs.aihub.gg/rvc/resources/dataset-isolation/#step-1-find-the-sample-rate).        
 Inputting an incorrect one might screw up the final quality.
 
 <img src="../mainline-img/g.png" alt="image" width="" height="auto">         
@@ -162,7 +162,7 @@ Inputting an incorrect one might screw up the final quality.
 :::
 ###### ‎  
 #### 4. Select dataset.
-In `Enter the path of the training folder` paste the <u>[path file</u>](https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2023/09/shift-right-click-copy-as-path.png?q=50&fit=crop&w=767&dpr=1.5) of your dataset.       
+In `Enter the path of the training folder` paste the [path file</u>](https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2023/09/shift-right-click-copy-as-path.png?q=50&fit=crop&w=767&dpr=1.5) of your dataset.       
 Ensure the path doesn't include special characters/spaces.
 
 <img src="../mainline-img/13.png" alt="image" width="" height="auto">  
@@ -202,7 +202,7 @@ In `Enter the GPU index(es)` determine which GPU(s) you'll use for training, by 
 ***
 ###### ‎  
 #### 7. Select pitch extraction algorithm.
-a. At the right select the <u>[**Pitch extraction algorithm**](https://docs.aihub.gg/rvc/resources/inference-settings/#pitch-extraction-algorithm)</u>.       
+a. At the right select the [**Pitch extraction algorithm**](https://docs.aihub.gg/rvc/resources/inference-settings/#pitch-extraction-algorithm).       
 Only use ``RMVPE_GPU`` or ``Crepe``, as the rest are obsolete.      
 
     <img src="../mainline-img/16.png" alt="image" width="" height="auto"> ‎      
@@ -221,7 +221,7 @@ b. Now click the `Feature extraction` button on the right.
 ###### ‎  
 #### 8. Create .INDEX.
 Press `Train feature index` at the bottom center.       
-This will create the <u>[.INDEX</u>](https://docs.aihub.gg/essentials/voice-models/#voice-model-files) file.
+This will create the [.INDEX</u>](https://docs.aihub.gg/essentials/voice-models/#voice-model-files) file.
 
 <img src="../mainline-img/i.png" alt="image" width="250" height="auto">‎     
 ‎       
@@ -236,7 +236,7 @@ It'll finish when the output box says something like this:
 :::
 ###### ‎           
 #### 9. Select save frequency.
-Frequency of the <u>[saving checkpoints](https://docs.aihub.gg/extra/glossary/#checkpoints)</u>, based on the <u>[epochs](https://docs.aihub.gg/rvc/resources/training/#tensorboard)</u>.        
+Frequency of the [saving checkpoints](https://docs.aihub.gg/extra/glossary/#checkpoints), based on the [epochs](https://docs.aihub.gg/rvc/resources/training/#tensorboard).        
 
 If you are a newbie, simply leave it at `15`.        
     
@@ -248,7 +248,7 @@ E.g: with a value of ``10``, they will be saved after the epoch 10, 20, 30, etc.
 ***
 ###### ‎  
 #### 10. Input epochs amount.
-In `Total training epochs` you determine the total amount of <u>[epochs](https://docs.aihub.gg/rvc/resources/training/#epochs--overtraining)</u> (training cycles) for the model.     
+In `Total training epochs` you determine the total amount of [epochs](https://docs.aihub.gg/rvc/resources/training/#epochs--overtraining) (training cycles) for the model.     
 
 But since we'll use [TensorBoard](https://docs.aihub.gg/rvc/resources/training/#tensorboard), use an arbitrarily large value like `2000`.
 
@@ -268,7 +268,7 @@ If your dataset is short (around 2 minutes or less), use ``4`` instead.
 #### 12. Launch TensorBoard.
 Now before you start training, open TB.     
 
-If you haven't already, start reading about it here <u><u>[here</u>](https://docs.aihub.gg/rvc/resources/training/#tensorboard)</u>.
+If you haven't already, start reading about it here <u>[here</u>](https://docs.aihub.gg/rvc/resources/training/#tensorboard).
 ***
 ###### ‎  
 #### 13. Begin training.
@@ -299,7 +299,7 @@ Select the `.INDEX` named ``added_`` & move it to your newly made folder.
 
 ‎   
 
-c. Now go to the ``weights`` folder. Here you'll find the model's <u>[checkpoints](https://docs.aihub.gg/extra/glossary/#checkpoints)</u>.      
+c. Now go to the ``weights`` folder. Here you'll find the model's [checkpoints](https://docs.aihub.gg/extra/glossary/#checkpoints).      
 
     Select the one **closest** to ***before*** the overtraining point, and move it to the new folder      
 
@@ -311,7 +311,7 @@ c. Now go to the ``weights`` folder. Here you'll find the model's <u>[checkpoint
     ‎            
 
     And that's all. Have fun with your model.   
-    To test the model, do a normal <u>[inference</u>](https://docs.aihub.gg/essentials/how-to-make-ai-cover/) as usual.
+    To test the model, do a normal [inference</u>](https://docs.aihub.gg/essentials/how-to-make-ai-cover/) as usual.
 
 ***
 ###### ‎   
@@ -322,7 +322,7 @@ c. Now go to the ``weights`` folder. Here you'll find the model's <u>[checkpoint
 If the training finished but the model still needed training, you don't have to start from scratch.       
 **Follow this procedure:**
 
-- Simply enter the **same settings and criteria** that you previously inserted. Model name, sample rate, dataset, batch size, etc. You don't have to press ``Process Data`` or train the <u>[.INDEX</u>](https://docs.aihub.gg/essentials/voice-models/#voice-model-files) again.
+- Simply enter the **same settings and criteria** that you previously inserted. Model name, sample rate, dataset, batch size, etc. You don't have to press ``Process Data`` or train the [.INDEX</u>](https://docs.aihub.gg/essentials/voice-models/#voice-model-files) again.
 
 - You can change the **save frequency**, or increase the **epochs** amount in case you didn't input enough before.
 
@@ -348,7 +348,7 @@ If the training finished but the model still needed training, you don't have to 
 ===
 
 ==- The voice glitches out.
-- This a phenomenon called artifacting. To fix it, read <u>[here](https://docs.aihub.gg/rvc/resources/dataset-isolation/#artifacts)</u>.
+- This a phenomenon called artifacting. To fix it, read [here](https://docs.aihub.gg/rvc/resources/dataset-isolation/#artifacts).
 
 ===
 

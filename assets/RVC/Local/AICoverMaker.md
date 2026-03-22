@@ -15,7 +15,7 @@ order: 2000
 :::content-center
 ## Introduction ‎
 :::
-- AICoverMaker (or known as RVC-AI-Cover-Maker-WebUI) is an Applio RVC <u>[Fork](https://docs.aihub.gg/essentials/whats-rvc/#forks)</u> developed by the <u>[Eddy](https://github.com/Eddycrack864)</u>, as a better and updated version of the old AICoverGen.
+- AICoverMaker (or known as RVC-AI-Cover-Maker-WebUI) is an Applio RVC [Fork](https://docs.aihub.gg/essentials/whats-rvc/#forks) developed by the [Eddy](https://github.com/Eddycrack864), as a better and updated version of the old AICoverGen.
 
 - It's liked for its great **UI** & **Automated AI Cover Process**, making it the easiest way to make AI Covers, as it automatically separates instrumentals & vocals, and mixes them back with the converted vocals.
 
@@ -25,7 +25,7 @@ order: 2000
 RVC Models are PyTorch Models, a Python library used for AI.
 PyTorch uses serialization via Pythons' Pickle Module, converting the model to a file.
 Since pickle can execute arbitrary code when loading a model, it could be theoretically used for malware, but this fork has a **built-in feature to prevent code execution along the model.**
-Also, **HuggingFace has a <u>[Security Scanner](https://huggingface.co/docs/hub/security-pickle#hubs-security-scanner)</u>** which scans for any unsafe pickle exploits and uses also ClamAV for scanning dangerous files.
+Also, **HuggingFace has a [Security Scanner](https://huggingface.co/docs/hub/security-pickle#hubs-security-scanner)** which scans for any unsafe pickle exploits and uses also ClamAV for scanning dangerous files.
 ***
 
 ‎      
@@ -63,7 +63,7 @@ RAM | 6GB+
 Storage | 6GB+
 
 
-In case you don't meet the <u>[requirements](https://docs.aihub.gg//rvc/local/aicovermaker/#system--hardware-requirements/)</u> to run it locally, it also has a <u>[2 Cloud Versions: Kaggle & Colab](https://docs.aihub.gg/rvc/cloud/aicovermaker/)</u>
+In case you don't meet the [requirements](https://docs.aihub.gg//rvc/local/aicovermaker/#system--hardware-requirements/) to run it locally, it also has a [2 Cloud Versions: Kaggle & Colab](https://docs.aihub.gg/rvc/cloud/aicovermaker/)
 
 ***
 ###### ‎
@@ -81,7 +81,7 @@ In case you don't meet the <u>[requirements](https://docs.aihub.gg//rvc/local/ai
 
 ### Precompiled (Windows)
 
-1. The easiest way to download RVC-AI-Cover-Maker-WebUI is by going to Eddy's <u>[Latest GitHub Release](https://github.com/Eddycrack864/RVC-AI-Cover-Maker-UI/releases/latest)</u>, and clicking the **Precompiled** version.
+1. The easiest way to download RVC-AI-Cover-Maker-WebUI is by going to Eddy's [Latest GitHub Release](https://github.com/Eddycrack864/RVC-AI-Cover-Maker-UI/releases/latest), and clicking the **Precompiled** version.
 
     <img src="..\aicovermaker-img\precompiled-github.png" alt="image" width="400">
 
@@ -100,7 +100,7 @@ In case you don't meet the <u>[requirements](https://docs.aihub.gg//rvc/local/ai
 
 <img src="..\aicovermaker-img\aicovermaker-normal-install.png" alt="image" width="700">‎     
 
-1.  Download the source code, either .zip (which is the most suggested usually) or .tar.gz, from the latest release <u>[link](https://github.com/Eddycrack864/RVC-AI-Cover-Maker-UI/releases/latest)</u>.
+1.  Download the source code, either .zip (which is the most suggested usually) or .tar.gz, from the latest release [link](https://github.com/Eddycrack864/RVC-AI-Cover-Maker-UI/releases/latest).
 
     <img src="..\aicovermaker-img\aicovermaker-sources.png" alt="image" width="700">‎    
 ‎       
@@ -169,7 +169,7 @@ In case you don't meet the <u>[requirements](https://docs.aihub.gg//rvc/local/ai
 :::
 ###### ‎
 
-Please use our <u>[Inference Settings guide](https://docs.aihub.gg/rvc/resources/inference-settings/)</u> to find out the inference settings do what.
+Please use our [Inference Settings guide](https://docs.aihub.gg/rvc/resources/inference-settings/) to find out the inference settings do what.
 
 **TTA** - results in longer separation time, it gives a little better SDR score but hard to tell if it's really audible in most cases". it “means "test time augmentation", it will do 3 passes on the audio file instead of 1. 1 pass with be with original audio. 1 will be with inverted stereo (L becomes R, R become L). 1 will be with phase inverted and then results are averaged for final output. 
 
@@ -200,7 +200,7 @@ B. Download the latest precompiled the next time a new version comes out and rep
 {{ include "troubleshooting/hags-warning.md" }}
 
 ==- The voice glitches out.
-- This is a phenomenon called artifacting. To fix it, read <u>[here](https://docs.aihub.gg/rvc/resources/dataset-isolation/#artifacts)</u>.
+- This is a phenomenon called artifacting. To fix it, read [here](https://docs.aihub.gg/rvc/resources/dataset-isolation/#artifacts).
 ===
 
 {{ include "troubleshooting/report-missing-issue.md" }}

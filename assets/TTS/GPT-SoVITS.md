@@ -16,7 +16,7 @@ order: 1000
 
 :::
 
-- GPT-SoVITS is an open-source repository focused on TTS & cross-language inference, with a Colab port coming soon. Credits to <u>[RVC-Boss](https://space.bilibili.com/5760446)</u>.		
+- GPT-SoVITS is an open-source repository focused on TTS & cross-language inference, with a Colab port coming soon. Credits to [RVC-Boss](https://space.bilibili.com/5760446).		
 		
 - Currently it only supports Chinese, English & Japanese. More languages are coming soon.		
 	
@@ -33,13 +33,13 @@ order: 1000
 
 ###### ‎
 #### 1. Download prezip
-- Download the prezip of the **latest version** <u>[here](https://huggingface.co/datasets/Delik/gptsovits_i18nfix/tree/main)</u>.
+- Download the prezip of the **latest version** [here](https://huggingface.co/datasets/Delik/gptsovits_i18nfix/tree/main).
 
 ***
 ###### ‎
 #### 2. Extract
 
-- Unzip the folder. It's advisable to use <u>[7-ZIP](https://www.7-zip.org)</u> to do so.
+- Unzip the folder. It's advisable to use [7-ZIP](https://www.7-zip.org) to do so.
 ***
 ###### ‎
 #### 3. Launch
@@ -59,7 +59,7 @@ order: 1000
 
 - GPT-So-VITS is made for **TTS only**, so it's also best to remove any singing/muffly voice parts.
 
-- #### <u>[Learn how to clean datasets](https://docs.aihub.gg/rvc/resources/datasets/)</u>.
+- #### [Learn how to clean datasets](https://docs.aihub.gg/rvc/resources/datasets/).
 ***
 ###### ‎
 #### 2. Audio Slicer

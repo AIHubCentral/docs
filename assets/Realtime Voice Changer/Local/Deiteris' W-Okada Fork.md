@@ -10,7 +10,7 @@ order: 1000
 
 - W-Okada is a realtime voice changer that uses RVC for its conversion.
 
-- There are 3 versions of this realtime voice changer, the <u>[Offical Original W-Okada](https://github.com/w-okada/voice-changer)</u> made by Wok, the <u>[Deiteris' Fork](https://github.com/deiteris/voice-changer)</u> made by Deiteris, and the <u>[Tg-Develop's Fork](https://github.com/tg-develop/voice-changer)</u> made by Tg-Develop. Note that those 3 links are just for reference to the Source Code Github Repositories of both projects, you should instead follow the guide below.
+- There are 3 versions of this realtime voice changer, the [Offical Original W-Okada](https://github.com/w-okada/voice-changer) made by Wok, the [Deiteris' Fork](https://github.com/deiteris/voice-changer) made by Deiteris, and the [Tg-Develop's Fork](https://github.com/tg-develop/voice-changer) made by Tg-Develop. Note that those 3 links are just for reference to the Source Code Github Repositories of both projects, you should instead follow the guide below.
 
 - This guide will be about the Wokada Deiteris' fork since it has better preformance and quality compared to the Original Wokada.
 
@@ -22,7 +22,7 @@ order: 1000
 RVC Models are PyTorch Models, a Python library used for AI.
 PyTorch uses serialization via Pythons' Pickle Module, converting the model to a file.
 Since pickle can execute arbitrary code when loading a model, it could be theoretically used for malware, but Wokada Deiteris Fork has a **built-in feature to prevent code execution along the model.**
-Also, **HuggingFace has a <u>[Security Scanner](https://huggingface.co/docs/hub/security-pickle#hubs-security-scanner)</u>** which scans for any unsafe pickle exploits and uses also ClamAV for scanning dangerous files.
+Also, **HuggingFace has a [Security Scanner](https://huggingface.co/docs/hub/security-pickle#hubs-security-scanner)** which scans for any unsafe pickle exploits and uses also ClamAV for scanning dangerous files.
 ***
 
 ‎      
@@ -105,7 +105,7 @@ If you plan on playing games at the same, do not use CPU-conversion. With CPU, t
 It's free, but you will need a phone number verification.
 !!!
 
-<u>[Read the Tutorial HERE](https://docs.aihub.gg/realtime-voice-changer/cloud/deiteris-w-okada-fork-kaggle/)</u>
+[Read the Tutorial HERE](https://docs.aihub.gg/realtime-voice-changer/cloud/deiteris-w-okada-fork-kaggle/)
 
 ***
 #### Lightning.AI
@@ -114,7 +114,7 @@ It's free, but you will need a phone number verification.
 It has free credits, but you will need a phone number verification.
 !!!
 
-<u>[Read the Tutorial HERE](https://docs.aihub.gg/realtime-voice-changer/cloud/deiteris-w-okada-fork-lightning-ai/)</u>
+[Read the Tutorial HERE](https://docs.aihub.gg/realtime-voice-changer/cloud/deiteris-w-okada-fork-lightning-ai/)
 
 ***
 #### Google Colab
@@ -123,7 +123,7 @@ It has free credits, but you will need a phone number verification.
 You need the Google Colab Paid Tier to run this, as it uses a Web User Interface, else you could risk getting disconnected or getting banned off Colab.
 !!!
 
-<u>[Read the tutorial HERE](https://docs.aihub.gg/realtime-voice-changer/cloud/deiteris-w-okada-fork-colab/)</u>
+[Read the tutorial HERE](https://docs.aihub.gg/realtime-voice-changer/cloud/deiteris-w-okada-fork-colab/)
 
 ***
 
@@ -135,7 +135,7 @@ You need the Google Colab Paid Tier to run this, as it uses a Web User Interface
 - In AI Realtime Voice Changing context, it's used to get the output of AI Converted Voice Output as the input in other programs such as Discord.
 
 !!! For Windows
-Download this: <u>[VAC Lite (Virtual-Audio-Cable by Muzychenko)](https://software.muzychenko.net/freeware/vac470lite.zip)</u>.
+Download this: [VAC Lite (Virtual-Audio-Cable by Muzychenko)](https://software.muzychenko.net/freeware/vac470lite.zip).
 (Be sure to not use any toher vac like VB Audio Cable.)
 !!!
 
@@ -145,9 +145,9 @@ Download this: <u>[VAC Lite (Virtual-Audio-Cable by Muzychenko)](https://softwar
 
 !!! For Mac
 Download either: 
-<u>[Blackhole Virtual Audio Cable](https://existential.audio/blackhole)</u>
+[Blackhole Virtual Audio Cable](https://existential.audio/blackhole)
 or
-<u>[VB-Audio](https://vb-audio.com/Cable)</u>
+[VB-Audio](https://vb-audio.com/Cable)
 !!!
 
 !!! For Linux
@@ -183,7 +183,7 @@ Use Online Hosted if you have an integrated GPU (AMD Radeon Graphics ; AMD Radeo
 
 ### Download NVIDIA on Windows
 
-- The latest version as of December 7th 2024 is: <u>[nvidia-b2332 (click here to download)](https://huggingface.co/Shadicti/deiteris-Fork/blob/main/voice-changer-windows-nvidia-b2332.zip)</u>
+- The latest version as of December 7th 2024 is: [nvidia-b2332 (click here to download)](https://huggingface.co/Shadicti/deiteris-Fork/blob/main/voice-changer-windows-nvidia-b2332.zip)
 
 !!!danger
 If you have a GTX 700 card or below, use AMD/Intel version instead.
@@ -192,7 +192,7 @@ If you have a GTX 700 card or below, use AMD/Intel version instead.
 ***
 ### Download NVIDIA RTX 5000-series on Windows
 
-- NVIDIA RTX-5000 series, the newest release of GPU's, require a separate download. You do not need it if you have an older GPU, follow the normal Nvidia link in that case. <u>[nvidia-5000-Series (click here to download)](https://github.com/IllIlIlIllIl/voice-changer/releases/tag/b2335)</u>
+- NVIDIA RTX-5000 series, the newest release of GPU's, require a separate download. You do not need it if you have an older GPU, follow the normal Nvidia link in that case. [nvidia-5000-Series (click here to download)](https://github.com/IllIlIlIllIl/voice-changer/releases/tag/b2335)
 
 !!!danger
 Download all 3 files, then extract the .zip file, it will automatically extract ALL 3 FILES into one. Then open the `MMVCServerSIO` folder and run `MMVCServerSIO.exe` (or called `MMVCServerSIO` if you don't have extensions activated).
@@ -201,7 +201,7 @@ Download all 3 files, then extract the .zip file, it will automatically extract 
 ***
 ### Download AMD, INTEL and CPU on Windows
 
-- The latest version as of December 7th 2024 is: <u>[dml-b2332 (click here to download)](https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-windows-amd64-dml.zip)</u>
+- The latest version as of December 7th 2024 is: [dml-b2332 (click here to download)](https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-windows-amd64-dml.zip)
 
 !!!danger
 Intel UHD Graphics do NOT work at this point in time. Use Online Alternative.
@@ -210,7 +210,7 @@ Intel UHD Graphics do NOT work at this point in time. Use Online Alternative.
 ***
 ### Opening on Windows
 
-- First Make sure you have <u>[7zip](https://www.7-zip.org/)</u> or <u>[WinRAR](https://www.win-rar.com/download.html)</u> for extracting / unzipping.
+- First Make sure you have [7zip](https://www.7-zip.org/) or [WinRAR](https://www.win-rar.com/download.html) for extracting / unzipping.
 
 - After the download, you extract the zip file. You open the folders until you see an exe application called `MMVCServerSIO` and run that.
 
@@ -225,12 +225,12 @@ If nothing opens, then open a browser and type in `http://127.0.0.1:18888/`. Thi
 ***
 ### Download Mac Silicon
 
-- The latest version as of December 7th 2024 is: <u>[arm-b2332 (click here to download)](https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-macos-arm64-cpu.tar.gz)</u>
+- The latest version as of December 7th 2024 is: [arm-b2332 (click here to download)](https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-macos-arm64-cpu.tar.gz)
 
 ***
 ### Download Mac Intel
 
-- The latest version as of December 7th 2024 is: <u>[macos-amd-b2332 (click here to download)](https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-macos-amd64-cpu.tar.gz)</u>
+- The latest version as of December 7th 2024 is: [macos-amd-b2332 (click here to download)](https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-macos-amd64-cpu.tar.gz)
 
 ***
 ### Opening on Mac
@@ -319,9 +319,9 @@ After the server finishes loading in your terminal, it will not open a window on
 
 This is only for the people that have 2 PCs, and want to use 1 PC for Gaming, the other only for Wokada Deiteris Fork.
 
-- Create a file named `.env` on the same folder where `MMVCServerSIO.exe` is located. Open it up with a notepad, copy paste the settings from the <u>[GitHub link](https://github.com/deiteris/voice-changer/issues/180#issuecomment-2359166278)</u>.
+- Create a file named `.env` on the same folder where `MMVCServerSIO.exe` is located. Open it up with a notepad, copy paste the settings from the [GitHub link](https://github.com/deiteris/voice-changer/issues/180#issuecomment-2359166278).
 
-- After that, you create another file with the file extension ending `.bat`, open it up with a notepad, copy paste what is needed in there again from the <u>[GitHub link](https://github.com/deiteris/voice-changer/issues/180#issuecomment-2359166278)</u>. 
+- After that, you create another file with the file extension ending `.bat`, open it up with a notepad, copy paste what is needed in there again from the [GitHub link](https://github.com/deiteris/voice-changer/issues/180#issuecomment-2359166278). 
 
 
 - Now run the bat file. After it starts, you should be able to open the link. For example, if you specified `HOST=192.168.0.1` and `ALLOWED_ORIGINS='["https://192.168.0.1:18888"]')`, you should be able to open `https://192.168.0.1:18888` in your browser and use the realtime voice changer UI from other machines in your local network.
@@ -790,11 +790,11 @@ Like WASAPI, ASIO accesses your audio devices directly, bypassing multiple layer
 !!!
 
 #### Step 1: Download and Install FlexASIO
-- Download and run the installer from here: <u>[FlexASIO Download](https://github.com/dechamps/FlexASIO/releases/download/flexasio-1.9/FlexASIO-1.9.exe)</u>
+- Download and run the installer from here: [FlexASIO Download](https://github.com/dechamps/FlexASIO/releases/download/flexasio-1.9/FlexASIO-1.9.exe)
 
 #### Step 2: Download and Install FlexASIO GUI
-- First, you need the .NET Desktop runtime. Download and install it from here: <u>[.NET 6.x Desktop runtime](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)</u>
-- Afterwards, download and install the FlexASIO GUI: <u>[FlexASIO GUI Download](https://github.com/flipswitchingmonkey/FlexASIO_GUI/releases/download/v0.35/FlexASIO.GUIInstaller_0.35.exe)</u>
+- First, you need the .NET Desktop runtime. Download and install it from here: [.NET 6.x Desktop runtime](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
+- Afterwards, download and install the FlexASIO GUI: [FlexASIO GUI Download](https://github.com/flipswitchingmonkey/FlexASIO_GUI/releases/download/v0.35/FlexASIO.GUIInstaller_0.35.exe)
 
 #### Step 3: Configuring FlexASIO GUI
 Run `FlexASIO GUI`. If it doesn't open, you missed installing the .NET runtime from the previous step. Copy the following settings:

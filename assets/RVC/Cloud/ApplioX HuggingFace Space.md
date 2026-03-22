@@ -8,10 +8,10 @@ order: 3000
 ## </u>Introduction</u>
 ***
 
-- This is a <u>[cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based)</u> alternative to run [Applio](https://docs.aihub.gg/rvc/local/applio/), RVC Fork, only for people who don't have a good PC GPU, via the <u>[HuggingFace Space Service](https://docs.aihub.gg/extra/glossary/#huggingface-space)</u>. With a Web User Interface.
+- This is a [cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based) alternative to run [Applio](https://docs.aihub.gg/rvc/local/applio/), RVC Fork, only for people who don't have a good PC GPU, via the [HuggingFace Space Service](https://docs.aihub.gg/extra/glossary/#huggingface-space). With a Web User Interface.
 
 !!!danger HuggingFace Space Service
-**Check the <u>[HuggingFace Space Glossary](https://docs.aihub.gg/extra/glossary/#huggingface-space)</u> for more info on Free Tier, Limits, Quotas and other things.**
+**Check the [HuggingFace Space Glossary](https://docs.aihub.gg/extra/glossary/#huggingface-space) for more info on Free Tier, Limits, Quotas and other things.**
 !!!
 
 

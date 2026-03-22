@@ -13,10 +13,10 @@ order: 5000
 :::content-center
 ## Introduction
 :::
-- This is a <u>[cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based)</u> alternative to run [Applio](https://docs.aihub.gg/rvc/local/applio/), RVC Fork, only for people who don't have a good PC GPU, via the <u>[Google Colab Service](https://docs.aihub.gg/extra/glossary/#google-colab)</u>. Without a Web User Interface.
+- This is a [cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based) alternative to run [Applio](https://docs.aihub.gg/rvc/local/applio/), RVC Fork, only for people who don't have a good PC GPU, via the [Google Colab Service](https://docs.aihub.gg/extra/glossary/#google-colab). Without a Web User Interface.
 
 !!!danger Google Colab Service
-**Check the <u>[Google Colab Glossary](https://docs.aihub.gg/extra/glossary/#google-colab)</u> for more info on Free Tier, Limits, Verification, Pricing and other things.**
+**Check the [Google Colab Glossary](https://docs.aihub.gg/extra/glossary/#google-colab) for more info on Free Tier, Limits, Verification, Pricing and other things.**
 !!!
 
 
@@ -47,7 +47,7 @@ order: 5000
 ## Installation   
 ###### ‎   
 #### 1. <u>Running cells.</u>
-a. Start by accessing the colab <u>[here](https://colab.research.google.com/github/IAHispano/Applio/blob/main/assets/Applio_NoUI.ipynb)</u>.
+a. Start by accessing the colab [here](https://colab.research.google.com/github/IAHispano/Applio/blob/main/assets/Applio_NoUI.ipynb).
 
 b. Then run the `Installation` cell to install all the requirements.
 
@@ -66,7 +66,7 @@ b. Then run the `Installation` cell to install all the requirements.
 <img src="../applio-no-ui-img/two.png" alt="image" width="1200" height="">
 ‎ 
 
-4. Select your <u>[sample rate](https://docs.aihub.gg/rvc/resources/dataset-isolation/#step-1-find-the-sample-rate)</u>.
+4. Select your [sample rate](https://docs.aihub.gg/rvc/resources/dataset-isolation/#step-1-find-the-sample-rate).
 
 5. Run the cell.
 ###### ‎   
@@ -83,7 +83,7 @@ b. Then run the `Installation` cell to install all the requirements.
 #### 4. <u>Training.</u>
 1. Set the total number of epoch you want to train for. 
 
-2. Choose your <u>[batch size](https://docs.aihub.gg/rvc/resources/training/#batch-size)</u>, 8 is the best for most cases. 
+2. Choose your [batch size](https://docs.aihub.gg/rvc/resources/training/#batch-size), 8 is the best for most cases. 
 
 3. Enable `cleanup` if this is your first time training a model and you're not resuming. 
 

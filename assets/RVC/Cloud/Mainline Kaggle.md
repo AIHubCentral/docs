@@ -11,10 +11,10 @@ order: 2000
 :::
  
 ## </u>Introduction</u>
-- This is a <u>[cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based)</u> alternative to run [Mainline/Original RVC](https://docs.aihub.gg/rvc/local/mainline/), RVC Fork, only for people who don't have a good PC GPU, via the <u>[Kaggle Service](https://docs.aihub.gg/extra/glossary/#kaggle)</u>. With a Web User Interface.
+- This is a [cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based) alternative to run [Mainline/Original RVC](https://docs.aihub.gg/rvc/local/mainline/), RVC Fork, only for people who don't have a good PC GPU, via the [Kaggle Service](https://docs.aihub.gg/extra/glossary/#kaggle). With a Web User Interface.
 
 !!!danger Kaggle Service
-**Check the <u>[Google Colab Glossary](https://docs.aihub.gg/extra/glossary/#kaggle)</u> for more info on Free Tier, Limits, Verification, Pricing and other things.**
+**Check the [Google Colab Glossary](https://docs.aihub.gg/extra/glossary/#kaggle) for more info on Free Tier, Limits, Verification, Pricing and other things.**
 !!!
 
 !!!danger End Of Life
@@ -49,7 +49,7 @@ You only get 30 free GPU hours per week.
 ## How to Setup   
 ###### ‎   
 #### 1. <u>Set up account.</u>
-a. Start by making an account <u>[here](https://www.kaggle.com/account/login?phase=startRegisterTab&returnUrl=%2F)</u>.
+a. Start by making an account [here](https://www.kaggle.com/account/login?phase=startRegisterTab&returnUrl=%2F).
 
    <img src="../kaggle-img/kaggle-sign-in.png" alt="image" width="575" height="auto">
 
@@ -61,7 +61,7 @@ b. Verify your acount with a phone number so you can turn on the "internet" opti
 ***  
 ######
 #### 2. <u>Clone notebook and setup.</u>
-a. Go to <u>[Hina's mainline notebook](https://www.kaggle.com/code/hinabl/mainline)</u> and click "Copy and Edit"
+a. Go to [Hina's mainline notebook](https://www.kaggle.com/code/hinabl/mainline) and click "Copy and Edit"
 
    <img src="../kaggle-img/kaggle-copy.png" alt="image" width="1000" height="auto"> 
 
@@ -86,7 +86,7 @@ Your runtime will continue draining when you're not running any cells with this 
 ***
 ###### ‎   
 #### 3. <u>Ngrok.</u>
-a. Scroll down to the fifth cell and you should see a section where you put your ngrok token. If you dont have a ngrok acount sign up <u>[here](https://ngrok.com/)</u>.       
+a. Scroll down to the fifth cell and you should see a section where you put your ngrok token. If you dont have a ngrok acount sign up [here](https://ngrok.com/).       
 ‎       
      2. Once you have an acount you can authenticate your ngrok tunnel agent here: https://dashboard.ngrok.com/get-started/your-authtoken   
 ‎       
