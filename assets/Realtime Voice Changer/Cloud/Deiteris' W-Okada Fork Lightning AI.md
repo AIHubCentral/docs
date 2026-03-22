@@ -11,14 +11,18 @@ order: 2000
 :::content-center
 ## Introduction
 :::
-- This is a <u>[cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based)</u> alternative to run [Wokada Deiteris Fork](https://docs.aihub.gg/realtime-voice-changer/local/deiteris-w-okada-fork/#virtual-audio-cable), Realtime Voice Changer for calls/games, only for people who don't have a good PC GPU, via the <u>[Lightning.AI Service](https://docs.aihub.gg/extra/glossary/#lightningai)</u>.
+- This is a [cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based) alternative to run [Wokada Deiteris Fork](https://docs.aihub.gg/realtime-voice-changer/local/deiteris-w-okada-fork/#virtual-audio-cable), Realtime Voice Changer for calls/games, only for people who don't have a good PC GPU, via the [Lightning.AI Service](https://docs.aihub.gg/extra/glossary/#lightningai).
 
 !!!danger Lightning.AI Service
-**Check the <u>[Lightning.AI Glossary](https://docs.aihub.gg/extra/glossary/#lightningai)</u> for more info on Free Tier, Limits, Verification, Pricing and other things.**
+**Check the [Lightning.AI Glossary](https://docs.aihub.gg/extra/glossary/#lightningai) for more info on Free Tier, Limits, Verification, Pricing and other things.**
 !!!
 
 !!! Note on the Free Tier "10 Mins Inactivity Auto Sleep"
 This doesn't affect when the Wokada Deiteris Fork is running, this is affected only if no cell is running or the site is closed, which will shutdown the studio session. So you don't have to check every 10 minutes the site after you're sure the server cell is running and you're using the Web User Interface after starting it.
+!!!
+
+!!!warning Server Audio not available
+**NOTE: ⚠️ "Server audio not available" is normal on cloud platforms as they have no physical sound card. Always use Client mode for audio input/output.**
 !!!
 
 
@@ -31,7 +35,7 @@ This doesn't affect when the Wokada Deiteris Fork is running, this is affected o
 - In AI Realtime Voice Changing context, it's used to get the output of AI Converted Voice Output as the input in other programs such as Discord.
 
 !!! For Windows
-Download this: <u>[VAC Lite (Virtual-Audio-Cable by Muzychenko)](https://software.muzychenko.net/freeware/vac470lite.zip)</u>.
+Download this: [VAC Lite (Virtual-Audio-Cable by Muzychenko)](https://software.muzychenko.net/freeware/vac470lite.zip).
 (Be sure to not use any other VAC like VB Audio Cable.)
 !!!
 
@@ -40,9 +44,9 @@ Download this: <u>[VAC Lite (Virtual-Audio-Cable by Muzychenko)](https://softwar
 
 !!! For Mac
 Download either:
-<u>[Blackhole Virtual Audio Cable](https://existential.audio/blackhole)</u>
+[Blackhole Virtual Audio Cable](https://existential.audio/blackhole)
 or
-<u>[VB-Audio](https://vb-audio.com/Cable)</u>
+[VB-Audio](https://vb-audio.com/Cable)
 !!!
 
 !!! For Linux
@@ -66,7 +70,7 @@ sudo pacman -Syu portaudio
 ***
 ## Create an Account   
 ### 1. Set up account.
-a. First make an account with <u>[Lightning Ai](https://lightning.ai)</u>
+a. First make an account with [Lightning Ai](https://lightning.ai)
 
 <img src="../lightning-img/signup.png" alt="LightningAI Signup" width="300">
 
@@ -137,7 +141,7 @@ b. **Select a Tunnel:** A tunnel securely exposes the application running in you
             8. You can optionally go back to the Jupyter session in the right-hand sidebar of the Lightning.AI interface, to check if any error appears in the code output.
 
     - **Gradio (Fast, Popular & Reliable)**
-        - **How it works:** This is a built-in <u>[Gradio](https://docs.aihub.gg/extra/glossary/#gradio)</u> feature. It's one of the most straightforward method as it doesn't require any external accounts or tokens.
+        - **How it works:** This is a built-in [Gradio](https://docs.aihub.gg/extra/glossary/#gradio) feature. It's one of the most straightforward method as it doesn't require any external accounts or tokens.
         - **Steps:**
             1. Select "Gradio" from the `Tunnel` code.
             2. Run the cell. The public Gradio URL (ending in `gradio.live`) will be printed in the output once the server is ready. Click on it to access the UI.

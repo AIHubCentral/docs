@@ -6,19 +6,21 @@ order: 5000
 ``Last update: March 22, 2026``
 
 ***
-:::
-###### ‎
 :::content-center
-## Introduction ‎
+## Introduction
 :::
-- This is a <u>[cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based)</u> alternative to run [Wokada Tg-Develop's Fork](https://docs.aihub.gg/realtime-voice-changer/local/tg-develops-w-okada-fork/#virtual-audio-cable), Realtime Voice Changer for calls/games, only for people who don't have a good PC GPU, via the <u>[Google Colab Service](https://docs.aihub.gg/extra/glossary/#google-colab)</u>.
+- This is a [cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based) alternative to run [Wokada Tg-Develop's Fork](https://docs.aihub.gg/realtime-voice-changer/local/tg-develops-w-okada-fork/#virtual-audio-cable), Realtime Voice Changer for calls/games, only for people who don't have a good PC GPU, via the [Google Colab Service](https://docs.aihub.gg/extra/glossary/#google-colab).
 
 !!!danger Google Colab Service
-**Check the <u>[Google Colab Glossary](https://docs.aihub.gg/extra/glossary/#google-colab)</u> for more info on Free Tier, Limits, Verification, Pricing and other things.**
+**Check the [Google Colab Glossary](https://docs.aihub.gg/extra/glossary/#google-colab) for more info on Free Tier, Limits, Verification, Pricing and other things.**
 !!!
 
 !!!danger
 You need the Google Colab Paid Tier to run this, as it uses a Web User Interface, else you could risk getting disconnected or banned off Colab.
+!!!
+
+!!!warning Server Audio not available
+**NOTE: ⚠️ "Server audio not available" is normal on cloud platforms as they have no physical sound card. Always use Client mode for audio input/output.**
 !!!
 
 
@@ -31,7 +33,7 @@ You need the Google Colab Paid Tier to run this, as it uses a Web User Interface
 - In AI Realtime Voice Changing context, it's used to get the output of AI Converted Voice Output as the input in other programs such as Discord.
 
 !!! For Windows
-Download this: <u>[VAC Lite (Virtual-Audio-Cable by Muzychenko)](https://software.muzychenko.net/freeware/vac470lite.zip)</u>.
+Download this: [VAC Lite (Virtual-Audio-Cable by Muzychenko)](https://software.muzychenko.net/freeware/vac470lite.zip).
 (Be sure to not use any toher vac like VB Audio Cable.)
 !!!
 
@@ -41,9 +43,9 @@ Download this: <u>[VAC Lite (Virtual-Audio-Cable by Muzychenko)](https://softwar
 
 !!! For Mac
 Download either: 
-<u>[Blackhole Virtual Audio Cable](https://existential.audio/blackhole)</u>
+[Blackhole Virtual Audio Cable](https://existential.audio/blackhole)
 or
-<u>[VB-Audio](https://vb-audio.com/Cable)</u>
+[VB-Audio](https://vb-audio.com/Cable)
 !!!
 
 !!! For Linux
@@ -69,8 +71,8 @@ sudo pacman -Syu portaudio
 ###### ‎   
 ## Installation
 ###### ‎  
-#### 1. <u>Installation Cells</u>
-a. Click <u>[here](https://colab.research.google.com/github/tg-develop/voice-changer/blob/master-custom/Colab_RealtimeVoiceChanger.ipynb)</u> to access the colab. Then starting from the top run the first cell:
+#### 1. Installation Cells
+a. Click [here](https://colab.research.google.com/github/tg-develop/voice-changer/blob/master-custom/Colab_RealtimeVoiceChanger.ipynb) to access the colab. Then starting from the top run the first cell:
 
    <img src="../colab-img/colab1.png" alt="image" width="900" height=""> 
 
@@ -85,8 +87,8 @@ b. Run the second cell:
 ###### ‎   
 ### Ngrok & Sever Setup
 ###### ‎  
-#### 2. <u>Ngrok Setup</u>
-a. Scroll down to the last cell and you should see a section where you put your ngrok token. If you dont have a ngrok acount sign up <u>[here](https://ngrok.com/)</u>.             
+#### 2. Ngrok Setup
+a. Scroll down to the last cell and you should see a section where you put your ngrok token. If you dont have a ngrok acount sign up [here](https://ngrok.com/).
      a2. Once you have an acount you can authenticate your ngrok tunnel agent here: https://dashboard.ngrok.com/get-started/your-authtoken   
 ‎       
 b. When you have your ngrok token place it in the text box that says `TOKEN_HERE`

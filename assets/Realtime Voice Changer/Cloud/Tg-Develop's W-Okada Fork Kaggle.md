@@ -8,14 +8,17 @@ order: 7000
 <img src="..\kaggle-img\kaggle.png" alt="image" width="600">
 :::
 
-###### ‎
 :::content-center
-## Introduction ‎
+## Introduction
 :::
 - This is a [cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based) alternative to run [Wokada Tg-Develop's Fork](https://docs.aihub.gg/realtime-voice-changer/local/tg-develops-w-okada-fork/#virtual-audio-cable), Realtime Voice Changer for calls/games, only for people who don't have a good PC GPU, via the [Kaggle Service](https://docs.aihub.gg/extra/glossary/#kaggle).
 
 !!!danger Kaggle Service
 **Check the [Kaggle Glossary](https://docs.aihub.gg/extra/glossary/#kaggle) for more info on Free Tier, Limits, Verification, Pricing and other things.**
+!!!
+
+!!!warning Server Audio not available
+**NOTE: ⚠️ "Server audio not available" is normal on cloud platforms as they have no physical sound card. Always use Client mode for audio input/output.**
 !!!
 
 
@@ -64,7 +67,7 @@ sudo pacman -Syu portaudio
 
 ***
 ## Create an Account   
-#### 1. <u>Set up account.</u>
+#### 1. Set up account.
 a. Start by making an account [here](https://www.kaggle.com/account/login?phase=startRegisterTab&returnUrl=%2F).
 ‎  
 
@@ -79,8 +82,8 @@ b. Verify your acount with a phone number so you can turn on the "internet" opti
 
 ***
 ## Notebook Creation & Setup
-#### 2. <u>Clone Notebook</u>
-a. Go to <u>[Kaggle](https://www.kaggle.com)</u> and click "Create" then "New Notebook" at the top left. 
+#### 2. Clone Notebook
+a. Go to [Kaggle](https://www.kaggle.com) and click "Create" then "New Notebook" at the top left. 
 
    <img src="../kaggle-img/new.png" alt="image" width="400" height="auto"> 
 
@@ -124,7 +127,7 @@ Your runtime will continue draining when you're not running any cells with this 
 ###### ‎   
 ### Installation
 ###### ‎  
-#### 3. <u>Installation Cells</u>
+#### 3. Installation Cells
 a. Starting from the top run the first cells, with the first being:
 
    <img src="../kaggle-img/install-1.png" alt="image" width="900" height=""> 
@@ -140,7 +143,7 @@ b. Run the third cell which is:
 ###### ‎   
 ### Ngrok & Sever Setup
 ###### ‎  
-#### 4. <u>Ngrok Setup</u>
+#### 4. Ngrok Setup
 a. Scroll down to the last cell and you should see a section where you put your ngrok token. If you dont have a ngrok acount sign up [here](https://ngrok.com/).             
      a2. Once you have an acount you can authenticate your ngrok tunnel agent here: https://dashboard.ngrok.com/get-started/your-authtoken   
 ‎       

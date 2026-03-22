@@ -8,14 +8,17 @@ order: 3000
 <img src="..\kaggle-img\kaggle.png" alt="image" width="600">
 :::
 
-###### ‎
 :::content-center
-## Introduction ‎
+## Introduction
 :::
 - This is a <u>[cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based)</u> alternative to run [Wokada Deiteris Fork](https://docs.aihub.gg/realtime-voice-changer/local/deiteris-w-okada-fork/#virtual-audio-cable), Realtime Voice Changer for calls/games, only for people who don't have a good PC GPU, via the <u>[Kaggle Service](https://docs.aihub.gg/extra/glossary/#kaggle)</u>.
 
 !!!danger Kaggle Service
 **Check the <u>[Kaggle Glossary](https://docs.aihub.gg/extra/glossary/#kaggle)</u> for more info on Free Tier, Limits, Verification, Pricing and other things.**
+!!!
+
+!!!warning Server Audio not available
+**NOTE: ⚠️ "Server audio not available" is normal on cloud platforms as they have no physical sound card. Always use Client mode for audio input/output.**
 !!!
 
 

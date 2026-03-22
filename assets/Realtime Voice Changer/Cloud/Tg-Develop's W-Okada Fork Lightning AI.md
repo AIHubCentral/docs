@@ -21,7 +21,7 @@ order: 6000
 This doesn't affect when the Wokada Tg-Develop Fork is running, this is affected only if no cell is running or the site is closed, which will shutdown the studio session. So you don't have to check every 10 minutes the site after you're sure the server cell is running and you're using the Web User Interface after starting it.
 !!!
 
-!!!warning
+!!!warning Server Audio not available
 **NOTE: ⚠️ "Server audio not available" is normal on cloud platforms as they have no physical sound card. Always use Client mode for audio input/output.**
 !!!
 
