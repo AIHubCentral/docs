@@ -218,15 +218,72 @@ Limits and features are subject to change. Always check the [**Voyages.weights.c
 ## Mobile Apps :icon-device-mobile:
 :::
 
-<div style="display: flex; flex-direction: column; gap: 1rem; align-items: center; padding: 1rem 0;">
-  <a href="https://apps.apple.com/it/app/voyages-by-weights/id6740836360" style="display: inline-flex; align-items: center; gap: 0.5rem; background-color: #1a1c1d; color: white; padding: 0.6rem 1.2rem; border-radius: 9999px; text-decoration: none; font-weight: bold; font-size: 1rem; min-width: 150px; justify-content: center; border: 1.5px solid #555;">
-    <img src="/img/app-store-ios-icon.svg" alt="App Store iOS Icon" style="width: 20px; height: 20px;"/>
-    <span>iOS</span>
-  </a>
-  <a href="https://play.google.com/store/apps/details?id=com.weights.images" style="display: inline-flex; align-items: center; gap: 0.5rem; background-color: #1a1c1d; color: white; padding: 0.6rem 1.2rem; border-radius: 9999px; text-decoration: none; font-weight: bold; font-size: 1rem; min-width: 150px; justify-content: center; border: 1.5px solid #555;">
-    <img src="/img/google-play-2022-current-icon.svg" alt="Google Play Android Icon" style="width: 20px; height: 20px;"/>
-    <span>Android</span>
-  </a>
+<style>
+  .app-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    justify-content: center;
+    margin: 1.5rem 0;
+  }
+  .app-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 1rem 1.5rem;
+    min-width: 180px;
+    border: 1px solid rgba(150, 150, 150, 0.2);
+    border-radius: 12px;
+    text-decoration: none !important;
+    color: inherit !important;
+    background: rgba(128, 128, 128, 0.05);
+    transition: all 0.2s ease;
+  }
+  .app-card:hover {
+    transform: translateY(-3px);
+    background: rgba(128, 128, 128, 0.12);
+    border-color: rgba(150, 150, 150, 0.5);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+  }
+  .app-card img {
+    width: 28px;
+    height: 28px;
+  }
+  .app-card-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  .app-card-text .store-name {
+    font-size: 0.75rem;
+    opacity: 0.6;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .app-card-text .platform-name {
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 1.1;
+  }
+</style>
+
+<div class="app-grid">
+    <!-- iOS Link -->
+    <a href="https://apps.apple.com/it/app/voyages-by-weights/id6740836360" class="app-card">
+        <img src="/img/app-store-ios-icon.svg" alt="App Store">
+        <div class="app-card-text">
+            <span class="store-name">Download on</span>
+            <span class="platform-name">App Store</span>
+        </div>
+    </a>
+    <!-- Android Link -->
+    <a href="https://play.google.com/store/apps/details?id=com.weights.images" class="app-card">
+        <img src="/img/google-play-2022-current-icon.svg" alt="Play Store">
+        <div class="app-card-text">
+            <span class="store-name">Get it on</span>
+            <span class="platform-name">Google Play</span>
+        </div>
+    </a>
 </div>
 
 
