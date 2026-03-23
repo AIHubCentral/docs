@@ -2,7 +2,7 @@
 icon: chevron-right
 order: 3000
 ---
-``Last update: March 11, 2026`` 
+``Last update: March 24, 2026`` 
 ***
 
 ## </u>Introduction</u>
@@ -22,7 +22,7 @@ order: 3000
 !!!
 
 
-!!!danger HuggingFace Spaces Pausing Issue
+!!!danger RVC HuggingFace Spaces Pausing Issue
 **Please be aware that HuggingFace has recently been pausing RVC-related Spaces (such as the [Applio-Old](https://huggingface.co/spaces/IAHispano/Applio-Old) and [Ilaria RVC Zero](https://huggingface.co/spaces/TheStinger/Ilaria_RVC)) without providing any reason.**
 !!!
 
