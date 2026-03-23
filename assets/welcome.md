@@ -2,7 +2,7 @@
 icon: home-fill
 ---
 # :icon-home-fill: Home
-``Last update: March 8, 2026``
+``Last update: March 24, 2026``
 ***
 :::content-center
 <img src=".\img\aihub-logo.png" alt="image" width="345" height="auto">
@@ -78,17 +78,53 @@ icon: home-fill
 ## Communities :icon-people:
 :::
 
-<div style="display: flex; flex-direction: column; gap: 1rem; align-items: center; padding: 1rem 0;">
-    <a href="https://discord.gg/aihub" style="display: inline-flex; align-items: center; gap: 0.5rem; background-color: #1a1c1d; color: white; padding: 0.6rem 1.2rem; border-radius: 9999px; text-decoration: none; font-weight: bold; font-size: 1rem; min-width: 150px; justify-content: center; border: 1.5px solid #555;">
-        <img src="/img/discord-logo.svg" alt="Discord Icon" style="width: 20px; height: 20px;"/>
+<style>
+  .social-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin: 1.5rem 0;
+  }
+  .social-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0.8rem 1.2rem;
+    min-width: 240px;
+    border: 1px solid rgba(150, 150, 150, 0.2);
+    border-radius: 10px;
+    text-decoration: none !important;
+    color: inherit !important;
+    background: rgba(128, 128, 128, 0.05);
+    transition: all 0.2s ease;
+  }
+  .social-card:hover {
+    transform: translateY(-2px);
+    background: rgba(128, 128, 128, 0.12);
+    border-color: rgba(150, 150, 150, 0.5);
+  }
+  .social-card img {
+    width: 24px;
+    height: 24px;
+  }
+  .social-card span {
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+</style>
+
+<div class="social-grid">
+    <a href="https://discord.gg/aihub" class="social-card">
+        <img src="/img/discord-logo.svg" alt="Discord">
         <span>AI HUB's Discord</span>
     </a>
-    <a href="https://discord.gg/weights" style="display: inline-flex; align-items: center; gap: 0.5rem; background-color: #1a1c1d; color: white; padding: 0.6rem 1.2rem; border-radius: 9999px; text-decoration: none; font-weight: bold; font-size: 1rem; min-width: 150px; justify-content: center; border: 1.5px solid #555;">
-        <img src="/img/discord-logo.svg" alt="Discord Icon" style="width: 20px; height: 20px;"/>
+    <a href="https://discord.gg/weights" class="social-card">
+        <img src="/img/discord-logo.svg" alt="Discord">
         <span>Weights' Discord</span>
     </a>
-    <a href="https://www.reddit.com/r/weights/" style="display: inline-flex; align-items: center; gap: 0.5rem; background-color: #1a1c1d; color: white; padding: 0.6rem 1.2rem; border-radius: 9999px; text-decoration: none; font-weight: bold; font-size: 1rem; min-width: 150px; justify-content: center; border: 1.5px solid #555;">
-        <img src="/img/reddit-logo-fullcolor.svg" alt="Reddit Icon" style="width: 20px; height: 20px;"/>
+    <a href="https://www.reddit.com/r/weights/" class="social-card">
+        <img src="/img/reddit-logo-fullcolor.svg" alt="Reddit">
         <span>Weights' Reddit</span>
     </a>
 </div>
