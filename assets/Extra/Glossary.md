@@ -135,7 +135,7 @@ order: 1000
 
 
 ***
-### :icon-chevron-down:Google Colab
+### <img src="/img/google-colaboratory-logo.svg" style="width: 28px; height: 28px; vertical-align: middle; margin-right: 12px;"> Google Colab
 - Google Colaboratory, also known as Google Colab or just Colab, is a [cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based) platform by Google to run [Jupyter Notebooks](https://docs.aihub.gg/extra/glossary/#jupyter-notebook).
 - Learn how to bypass their limitations [here](https://rentry.co/googlecolabworkarounds).
 
@@ -156,7 +156,7 @@ order: 1000
 ===
 
 ***
-### :icon-chevron-down:HuggingFace Space
+### <img src="/img/huggingface-icon.svg" style="width: 28px; height: 28px; vertical-align: middle; margin-right: 12px;"> HuggingFace Space
 - A [cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based) hosting platform for machine learning demos and apps directly accessible via a web browser.
 
 #### Pros & Cons :icon-tasklist:
@@ -177,7 +177,7 @@ order: 1000
 
 
 ***
-### :icon-chevron-down:Kaggle
+### <img src="/img/kaggle-icon.svg" style="width: 28px; height: 28px; vertical-align: middle; margin-right: 10px;"> Kaggle
 - A [cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based) platform by Google to run [Jupyter Notebooks](https://docs.aihub.gg/extra/glossary/#jupyter-notebook).
 - It's focused on data science and machine learning.
 - You can check [this article](https://medium.com/@anagha.srivasa/nvidia-t4-x2-v-s-p100-gpu-when-to-choose-which-one-87cf1c55f386) for some general AI technical comparisons between the P100 and T4x2 GPUs.
@@ -200,7 +200,7 @@ order: 1000
 
 
 ***
-### :icon-chevron-down:Lightning.AI
+### <img src="/img/lightning-ai-logo.svg" style="width: 28px; height: 28px; vertical-align: middle; margin-right: 10px;"> Lightning.AI
 - A [cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based) platform designed for developing and running AI applications in persistent environments called "Studios.", and one of the options is via (but not limited to) running [Jupyter Notebooks](https://docs.aihub.gg/extra/glossary/#jupyter-notebook).
 - In Free tier you can change GPU/CPUs at any time, but if you used all free 15 credits **monthly** only on a specific computing, you'd have:     
     - **GPUs (Powerful, Recommended):**   
