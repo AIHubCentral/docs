@@ -30,21 +30,21 @@ ElevenLabs' older v1 TTS models are deprecated as of December 2025. Make sure to
 
 ‎
 ***
-## Fish Speech / FishAudio S1
-- Fish Speech is a 0-shot multilingual TTS developed by [Fish Audio](https://fish.audio). The project has since rebranded: the current flagship model is **FishAudio S1** (also known as **OpenAudio S1**).
+## Fish Speech / Fish Audio S2 Pro
+- Fish Speech is a 0-shot multilingual TTS developed by [Fish Audio](https://fish.audio). The current flagship model is **S2 Pro**, released March 9, 2026.
 
-- S1 is a 4B parameter model focused on generating speech that sounds genuinely human — natural intonation, pauses, and emotional intent rather than polished studio audio. A distilled **S1-mini** (0.5B params) is also available open-source on HuggingFace.
+- S2 Pro uses a **Dual Autoregressive (Dual-AR)** architecture: a 4B-param Slow AR handles linguistic and prosodic structure, while a 400M-param Fast AR handles fine acoustic detail. Trained on **10M+ hours of audio across 80+ languages**.
 
-- Achieves **#1 ranking on TTS-Arena2** (the main public TTS leaderboard), with **0.008 WER** and **0.004 CER** on English — significantly better than prior models.
+- Supports **free-form inline emotion control** using natural language tags anywhere in the text (e.g. `[whisper in small voice]`, `[excited]`, `[laugh]`, `[sigh]`) — no fixed tag set to memorize.
 
-- Supports **fine-grained open-domain emotion control** with a large set of explicit tags. Basic emotions include: `(angry)` `(sad)` `(excited)` `(surprised)` `(scared)` `(nervous)` `(confused)` `(joyful)` and many more. Tone markers include `(shouting)` `(whispering)` `(soft tone)`. Special audio effects include `(laughing)` `(chuckling)` `(sobbing)` `(sighing)`. Tags work across English, Chinese, Japanese, German, French, Spanish, Korean, Arabic, Russian, and more.
+- Achieves **sub-150ms time-to-first-audio** and an RTF of 0.195 on H200. Natively supports **multi-speaker and multi-turn generation** in a single pass.
 
-- Zero-shot voice cloning from a 10–30 second reference sample, with no additional fine-tuning required.
+- On benchmarks, S2 Pro outperforms all evaluated models including closed-source systems from Google and OpenAI on Seed-TTS Eval.
 
 - It can be used either locally or on the cloud.
 
 !!!
-The codebase is **Apache 2.0**; model weights are **CC-BY-NC-SA-4.0** (non-commercial). Commercial use of S1 is available via the Fish Audio API/platform.
+S2 Pro is licensed under the Fish Audio Research License — free for research & non-commercial use. Commercial use is available via the Fish Audio API/platform.
 !!!
 
  +++ :icon-device-desktop: ‎ LOCAL
@@ -52,8 +52,8 @@ The codebase is **Apache 2.0**; model weights are **CC-BY-NC-SA-4.0** (non-comme
 
  +++ :icon-cloud: ‎ CLOUD
 
-- :icon-rocket: [Official site / App](https://fish.audio/)
-- :icon-rocket: [HuggingFace Space (S1-mini)](https://huggingface.co/spaces/fishaudio/openaudio-s1-mini)
+- :icon-rocket: [Official site / App](https://fish.audio/app/text-to-speech/)
+- :icon-rocket: [HuggingFace Space (S2 Pro)](https://huggingface.co/spaces/artificialguybr/fish-s2-pro-zero)
 
  +++
 
@@ -203,6 +203,35 @@ The precise **duration control** feature exists in the research paper but is **n
 +++
 
 ***
+## VoxCPM
+- VoxCPM is a **tokenizer-free open-source TTS** developed by [OpenBMB](https://github.com/OpenBMB) (Tsinghua University / ModelBest), now on **v1.5**, released under the **Apache 2.0 license**.
+
+- Unlike mainstream TTS models that convert speech to discrete tokens, VoxCPM models speech directly in a continuous space via an end-to-end diffusion autoregressive architecture — eliminating the information loss of tokenization. Built on the **MiniCPM-4** backbone (0.5B params), keeping it compact and efficient.
+
+- Trained on over 1.8 million hours of bilingual Chinese–English corpus, achieving state-of-the-art performance among open-source systems on multiple TTS benchmarks.
+
+- Two flagship capabilities:
+  - **Context-Aware Speech Generation** — automatically infers and generates appropriate prosody, tone, and pacing from the meaning of the text itself, with no need for emotion tags.
+  - **0-shot Voice Cloning** — replicates timbre, speaking style, accent, and even background ambiance from just **3–10 seconds** of reference audio, including cross-language cloning between Chinese and English.
+
+- Achieves an RTF of 0.17 on a consumer-grade NVIDIA RTX 4090, making real-time generation feasible. The v1.5 update halved the LM token rate (12.5Hz → 6.25Hz), reducing compute per second of audio and paving the way for longer-form generation.
+
+- Has a strong community ecosystem: ComfyUI nodes, ONNX export for CPU inference, Apple Neural Engine backend, and LoRA fine-tuning support.
+
+- Supports **full fine-tuning and LoRA fine-tuning**.
+
+- Currently supports **Chinese and English**, with multilingual support under active development.
+
+!!!
+Needs 12GB+ VRAM for full-precision inference. ONNX export (CPU) is available via [VoxCPM-ONNX](https://github.com/OpenBMB/VoxCPM) for lower-resource setups.
+!!!
+
++++ :icon-device-desktop: LOCAL
+- [Official GitHub Repo](https://github.com/OpenBMB/VoxCPM)
+
++++ :icon-cloud: ONLINE
+- [Official HuggingFace Space (v1.5)](https://huggingface.co/spaces/openbmb/VoxCPM-Demo)
++++
 ###### ‎
 ***
 ## Dia TTS
