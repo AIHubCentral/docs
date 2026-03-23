@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.3.0.827623827694">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.3.0.827624810554">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.3.0">
@@ -37,11 +37,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../../img/aihub-favicon.png" />
-    <link href="../../../resources/css/retype.css?v=4.3.0.827623827694" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=4.3.0.827624810554" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.3.0.827623827694" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.3.0.827624810554" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=4.3.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.3.0.827623827694" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.3.0.827624810554" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -516,15 +516,71 @@
 <hr>
 <div class="content-center"><h2 id="mobile-apps">Mobile Apps <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M10.25 5.25A.75.75 0 0 1 11 4.5h2A.75.75 0 0 1 13 6h-2a.75.75 0 0 1-.75-.75ZM12 19.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/><path d="M4 2.75C4 1.784 4.784 1 5.75 1h12.5c.966 0 1.75.784 1.75 1.75v18.5A1.75 1.75 0 0 1 18.25 23H5.75A1.75 1.75 0 0 1 4 21.25Zm1.75-.25a.25.25 0 0 0-.25.25v18.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V2.75a.25.25 0 0 0-.25-.25Z"/></g></g></svg></h2>
 </div>
-<div style="display: flex; flex-direction: column; gap: 1rem; align-items: center; padding: 1rem 0;">
-  <a href="https://apps.apple.com/us/app/weights-create-with-ai/id6480142052" style="display: inline-flex; align-items: center; gap: 0.5rem; background-color: #1a1c1d; color: white; padding: 0.6rem 1.2rem; border-radius: 9999px; text-decoration: none; font-weight: bold; font-size: 1rem; min-width: 150px; justify-content: center; border: 1.5px solid #555;">
-    <img src="/img/app-store-ios-icon.svg" alt="App Store iOS Icon" style="width: 20px; height: 20px;"/>
-    <span>iOS</span>
-  </a>
-  <a href="https://play.google.com/store/apps/details?id=com.weights.app" style="display: inline-flex; align-items: center; gap: 0.5rem; background-color: #1a1c1d; color: white; padding: 0.6rem 1.2rem; border-radius: 9999px; text-decoration: none; font-weight: bold; font-size: 1rem; min-width: 150px; justify-content: center; border: 1.5px solid #555;">
-    <img src="/img/google-play-2022-current-icon.svg" alt="Google Play Android Icon" style="width: 20px; height: 20px;"/>
-    <span>Android</span>
-  </a>
+<style>
+  .app-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    justify-content: center;
+    margin: 1.5rem 0;
+  }
+  .app-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 1rem 1.5rem;
+    min-width: 180px;
+    border: 1px solid rgba(150, 150, 150, 0.2);
+    border-radius: 12px;
+    text-decoration: none !important;
+    color: inherit !important;
+    background: rgba(128, 128, 128, 0.05);
+    transition: all 0.2s ease;
+  }
+  .app-card:hover {
+    transform: translateY(-3px);
+    background: rgba(128, 128, 128, 0.12);
+    border-color: rgba(150, 150, 150, 0.5);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+  }
+  .app-card img {
+    width: 28px;
+    height: 28px;
+  }
+  .app-card-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  .app-card-text .store-name {
+    font-size: 0.75rem;
+    opacity: 0.6;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .app-card-text .platform-name {
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 1.1;
+  }
+</style>
+<div class="app-grid">
+    <!-- iOS Link -->
+    <a href="https://apps.apple.com/us/app/weights-create-with-ai/id6480142052" class="app-card">
+        <img src="/img/app-store-ios-icon.svg" alt="App Store">
+        <div class="app-card-text">
+            <span class="store-name">Download on</span>
+            <span class="platform-name">App Store</span>
+        </div>
+    </a>
+    <!-- Android Link -->
+    <a href="https://play.google.com/store/apps/details?id=com.weights.app" class="app-card">
+        <img src="/img/google-play-2022-current-icon.svg" alt="Play Store">
+        <div class="app-card-text">
+            <span class="store-name">Get it on</span>
+            <span class="platform-name">Google Play</span>
+        </div>
+    </a>
 </div>
 <hr>
 <h6 id="section-1"></h6>
