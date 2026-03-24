@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.4.0.827680913680">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.4.0.827688291425">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.4.0">
@@ -37,11 +37,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../../img/aihub-favicon.png" />
-    <link href="../../../resources/css/retype.css?v=4.4.0.827680913680" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=4.4.0.827688291425" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.4.0.827680913680" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.4.0.827688291425" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=4.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.4.0.827680913680" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.4.0.827688291425" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -302,8 +302,12 @@
     </div>
 </div>
 <h4 id="setting-up"><u>Setting Up</u> <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M4.75 17.25a.75.75 0 0 1 .75.75v2.25c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V18a.75.75 0 0 1 1.5 0v2.25A1.75 1.75 0 0 1 18.25 22H5.75A1.75 1.75 0 0 1 4 20.25V18a.75.75 0 0 1 .75-.75Z"/><path d="M5.22 9.97a.749.749 0 0 1 1.06 0l4.97 4.969V2.75a.75.75 0 0 1 1.5 0v12.189l4.97-4.969a.749.749 0 1 1 1.06 1.06l-6.25 6.25a.749.749 0 0 1-1.06 0l-6.25-6.25a.749.749 0 0 1 0-1.06Z"/></g></g></svg></h4>
-<p><strong>1.</strong> Access the Colab space <a href="https://colab.research.google.com/github/iahispano/applio/blob/master/assets/Applio.ipynb">here</a>. Then log in to your Google account.</p>
-<p><strong>2.</strong> Execute the <strong>Install Applio</strong> cells section. This will take around 2 minutes and will require you to grant permission to use Google Drive to save your models.</p>
+<ul>
+<li><p>Access the Colab space <a href="https://colab.research.google.com/github/iahispano/applio/blob/master/assets/Applio.ipynb">here</a>. Then log in to your Google account.</p>
+</li>
+<li><p>Execute the <strong>Install Applio</strong> cells section. This will take around 2 minutes and will require you to grant permission to use Google Drive to save your models.</p>
+</li>
+</ul>
 <img src="../applio-cloud-img/google-colab-web-ui-img/install-applio-cell-section.png" alt="Install Applio Cell Section" width="400">
 <ul>
 <li>It&#x27;ll finish when you see a tick symbol on the left.</li>
@@ -311,12 +315,15 @@
 <img src="../applio-cloud-img/google-colab-web-ui-img/finished-installation.png" alt="Finished Installation" width="400">
 <hr>
 <h6 id="section">‎</h6>
-<p><strong>3.</strong> Sync with Google Drive to automatically save or load models.</p>
+<ul>
+<li>Sync with Google Drive to automatically save or load models.</li>
+</ul>
 <img src="../applio-cloud-img/google-colab-web-ui-img/sync-google-drive-cell.png" alt="Sync with Google Drive" width="500">
 <hr>
 <h6 id="section-1">‎</h6>
-<p><strong>4.</strong> Select a Sharing method and Run the Server, using a tunnel that securely exposes the application running in your private cloud environment to the public internet. The notebook gives you 3 different services to do this. Choose one from the <code translate="no" v-pre>method</code> dropdown menu in the code cell.</p>
 <ul>
+<li><p>Select a Sharing method and Run the Server, using a tunnel that securely exposes the application running in your private cloud environment to the public internet. The notebook gives you 3 different services to do this. Choose one from the <code translate="no" v-pre>method</code> dropdown menu in the code cell.</p>
+</li>
 <li><p><strong>Gradio (Fast, Popular, Reliable &amp; Default)</strong></p>
 <ul>
 <li><strong>How it works:</strong> This is a built-in <a href="https://docs.aihub.gg/extra/glossary/#gradio">Gradio</a> feature. It&#x27;s one of the most straightforward methods as it doesn&#x27;t require any external accounts or tokens.</li>
@@ -357,22 +364,6 @@
 </li>
 </ul>
 <img src="../applio-cloud-img/google-colab-web-ui-img/start-server-cell.png" alt="Start Server Cell" width="550">
-<div class="flex mb-6">
-    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-warning"></div>
-    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="block text-callout-warning" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M22.48 15.59L14.01 1.45A2.968 2.968 0 0012.16.09c-.78-.19-1.58-.07-2.27.35-.41.25-.76.6-1.01 1.01v.01L.4 15.6c-.83 1.43-.33 3.27 1.1 4.1.45.26.95.4 1.48.4h16.95c.8-.01 1.55-.33 2.11-.9.56-.57.87-1.33.86-2.13a3.04 3.04 0 00-.42-1.48zm-1.87 2.21c-.19.19-.44.3-.69.3H2.99c-.17 0-.34-.05-.49-.13a.992.992 0 01-.37-1.35L10.6 2.48c.08-.14.2-.25.34-.33a.992.992 0 011.37.33l8.46 14.13c.09.15.13.32.13.49 0 .26-.1.51-.29.7z"></path>
-                    <path d="M11.45 12.1c.55 0 1-.45 1-1v-4c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .56.45 1 1 1zM11.46 14.1c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>Don&#x27;t close Google Colab until you&#x27;re done using it, or it will stop working.</p>
-        </div>
-    </div>
-</div>
 <hr>
 <div class="content-center"><h3 id="kaggle">Kaggle</h3>
 </div>
@@ -404,46 +395,41 @@
 <img src="/img/cloud-services/kaggle-img/kaggle-phone.png" alt="Kaggle Phone Verification" width="575">
 <hr>
 <h4 id="notebook-creation--setup"><u>Notebook Creation &amp; Setup</u></h4>
-<p><strong>3.</strong> Go to <a href="https://www.kaggle.com">Kaggle</a> and click <strong>Create</strong> then <strong>New Notebook</strong> at the top left.</p>
+<ul>
+<li>Go to <a href="https://www.kaggle.com">Kaggle</a> and click <strong>Create</strong> then <strong>New Notebook</strong> at the top left.</li>
+</ul>
 <img src="/img/cloud-services/kaggle-img/new.png" alt="New Notebook" width="400">
-<p><strong>4.</strong> Under your session&#x27;s name click <strong>File</strong> then <strong>Import Notebook</strong>.</p>
+<ul>
+<li>Under your session&#x27;s name click <strong>File</strong> then <strong>Import Notebook</strong>.</li>
+</ul>
 <img src="/img/cloud-services/kaggle-img/import.png" alt="Import Notebook" width="450">
-<p><strong>5.</strong> In the new window, click the <strong>Link</strong> tab and paste the following URL into the box: <code translate="no" v-pre>https://github.com/IAHispano/Applio/blob/main/assets/Applio_Kaggle.ipynb</code>. Click <strong>Import</strong> on the bottom right once you&#x27;ve done this.</p>
+<ul>
+<li>In the new window, click the <strong>Link</strong> tab and paste the following URL into the box: <code translate="no" v-pre>https://github.com/IAHispano/Applio/blob/main/assets/Applio_Kaggle.ipynb</code>. Click <strong>Import</strong> on the bottom right once you&#x27;ve done this.</li>
+</ul>
 <img src="/img/cloud-services/kaggle-img/link.png" alt="Link Tab" width="700">
-<p><strong>6.</strong> In the sidebar on the right, under &quot;Session options&quot;, turn on the <strong>Internet</strong> switch. Make sure persistence is set to <strong>Files and variables</strong>.</p>
+<ul>
+<li>In the sidebar on the right, under &quot;Session options&quot;, turn on the <strong>Internet</strong> switch. Make sure persistence is set to <strong>Files and variables</strong>.</li>
+</ul>
 <img src="/img/cloud-services/kaggle-img/kaggle-internet.png" alt="Kaggle Internet Toggle" width="250"> 
-<p><strong>7.</strong> Under &quot;Accelerator&quot;, select the <strong>T4 x2</strong> GPU.</p>
+<ul>
+<li>Under &quot;Accelerator&quot;, select the <strong>T4 x2</strong> GPU.</li>
+</ul>
 <img src="/img/cloud-services/kaggle-img/kaggle-gpu.png" alt="Kaggle GPU Toggle" width="250">
-<p><strong>8.</strong> <em>(Optional)</em> To ensure your session doesn&#x27;t time out during long training processes, you can enable &quot;Save version&quot;. Go to the top right, click <strong>Save version</strong>, and choose <strong>Save &amp; Run All (Commit)</strong> from the dropdown. In the advanced settings, select <strong>Always save output</strong> for the notebook.</p>
+<ul>
+<li><em>(Optional)</em> To ensure your session doesn&#x27;t time out during long training processes, you can enable &quot;Save version&quot;. Go to the top right, click <strong>Save version</strong>, and choose <strong>Save &amp; Run All (Commit)</strong> from the dropdown. In the advanced settings, select <strong>Always save output</strong> for the notebook.</li>
+</ul>
 <img src="/img/cloud-services/kaggle-img/kaggle-pers.png" alt="Kaggle Persistence" width="250">
-<div class="flex mb-6">
-    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-warning"></div>
-    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="block text-callout-warning" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M22.48 15.59L14.01 1.45A2.968 2.968 0 0012.16.09c-.78-.19-1.58-.07-2.27.35-.41.25-.76.6-1.01 1.01v.01L.4 15.6c-.83 1.43-.33 3.27 1.1 4.1.45.26.95.4 1.48.4h16.95c.8-.01 1.55-.33 2.11-.9.56-.57.87-1.33.86-2.13a3.04 3.04 0 00-.42-1.48zm-1.87 2.21c-.19.19-.44.3-.69.3H2.99c-.17 0-.34-.05-.49-.13a.992.992 0 01-.37-1.35L10.6 2.48c.08-.14.2-.25.34-.33a.992.992 0 011.37.33l8.46 14.13c.09.15.13.32.13.49 0 .26-.1.51-.29.7z"></path>
-                    <path d="M11.45 12.1c.55 0 1-.45 1-1v-4c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .56.45 1 1 1zM11.46 14.1c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-            <h5>Warning</h5>
-<p>Your GPU quota will continue to be used as long as the session is active with this option. Remember to shut down the session when you are finished.</p>
-        </div>
-    </div>
-</div>
 <hr>
 <h4 id="installation--tunnels-setup"><u>Installation &amp; Tunnels Setup</u></h4>
-<p><strong>9.</strong> Start by running the first few cells of the notebook to install the necessary dependencies.</p>
-<p><strong>10.</strong> Configure and Run Tunnels: The next cell is for setting up the tunneling service, which exposes the Applio interface to the internet. Choose one from the <code translate="no" v-pre>Tunnel</code> dropdown menu.</p>
 <ul>
+<li>Start by running the first few cells of the notebook to install the necessary dependencies.</li>
+<li>Configure and Run Tunnels: The next cell is for setting up the tunneling service, which exposes the Applio interface to the internet. Choose one from the <code translate="no" v-pre>Tunnel</code> dropdown menu.</li>
 <li><strong>Ngrok (Recommended &amp; Default method):</strong> Requires a free account and an authentication token. Paste your token into the <code translate="no" v-pre>ngrok_authtoken</code> field, select &quot;Ngrok&quot;, and run the cell.</li>
 <li><strong>Gradio + LocalTunnel (No Account &amp; Password Protected):</strong> Uses Gradio&#x27;s built-in tunnel for the main Applio interface and LocalTunnel for Tensorboard. Select this, run the cell, and use the provided password for LocalTunnel links.</li>
 <li><strong>LocalTunnel (No Account, Password Protected):</strong> Generates a unique URL protected by a password. Select this, run the cell, and copy the <code translate="no" v-pre>LocalTunnels Password</code> from the output.</li>
 <li><strong>Horizon (Fast, Requires Account &amp; ID):</strong> Requires a free account and a personal ID. Go to the <a href="https://hrzn.run/dashboard/">Horizon Dashboard</a>, copy your ID, paste it into <code translate="no" v-pre>horizon_id</code>, and run the cell.</li>
+<li>Once configured, run the cell. The output will print public URLs for Applio, Tensorboard, and the Filebrowser. Click the Applio link to open the Web UI.</li>
 </ul>
-<p><strong>11.</strong> Once configured, run the cell. The output will print public URLs for Applio, Tensorboard, and the Filebrowser. Click the Applio link to open the Web UI.</p>
 <hr>
 <div class="content-center"><h3 id="lightningai">Lightning.AI</h3>
 </div>
@@ -466,7 +452,7 @@
 </div>
 <h4 id="create-an-account"><u>Create an Account</u></h4>
 <ul>
-<li>First make an account with <a href="https://lightning.ai">Lightning Ai</a>.</li>
+<li>First, make an account with <a href="https://lightning.ai">Lightning Ai</a>.</li>
 </ul>
 <img src="/img/cloud-services/lightning-ai-img/signup.png" alt="LightningAI Signup" width="300">
 <ul>
@@ -492,11 +478,17 @@
 </div>
 <hr>
 <h4 id="studio-setup--installation"><u>Studio Setup &amp; Installation</u></h4>
-<p><strong>3.</strong> After creating your Lightning.AI account, open the <a href="https://lightning.ai/nick088/studios/applio-ui?view=public&amp;section=featured">Applio Notebook Studio</a> and Clone it.</p>
+<ul>
+<li>After creating your Lightning.AI account, open the <a href="https://lightning.ai/nick088/studios/applio-ui?view=public&amp;section=featured">Applio Notebook Studio</a> and Clone it.</li>
+</ul>
 <img src="/img/cloud-services/lightning-ai-img/lightning-ai-clone-studio.png" alt="LightningAI Clone Studio" width="300">
-<p><strong>4.</strong> Activate/Switch GPU: If you aren&#x27;t on a GPU environment by default, you must switch to a GPU environment. On the right-hand lateral menu, click on <strong>Studio Environment</strong> (the processor icon).</p>
+<ul>
+<li>Activate/Switch GPU: If you aren&#x27;t on a GPU environment by default, you must switch to a GPU environment. On the right-hand lateral menu, click on <strong>Studio Environment</strong> (the processor icon).</li>
+</ul>
 <img src="/img/cloud-services/lightning-ai-img/gpu-setting.png" alt="LightningAI GPU Setting" width="500">
-<p><strong>5.</strong> Click <strong>Switch To GPU</strong>, select an available GPU, and wait for the environment to restart.</p>
+<ul>
+<li>Click <strong>Switch To GPU</strong>, select an available GPU, and wait for the environment to restart.</li>
+</ul>
 <img src="/img/cloud-services/lightning-ai-img/gpus-list.png" alt="LightningAI GPUs List" width="500">
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-info"></div>
@@ -520,44 +512,33 @@
         </div>
     </div>
 </div>
-<p><strong>6.</strong> Run the first code cell to download the latest version of Applio and install necessary dependencies. It will print &quot;Installed!&quot; when finished.</p>
+<ul>
+<li>Run the first code cell to download the latest version of Applio and install necessary dependencies. It will print &quot;Installed!&quot; when finished.</li>
+</ul>
 <hr>
 <h4 id="tunnels--server-setup"><u>Tunnels &amp; Server Setup</u></h4>
-<p><strong>7.</strong> Launch the Server via Tunnels: Navigate to the third code cell, titled &quot;Start Server <strong>using Tunnels</strong>&quot;. Choose one from the <code translate="no" v-pre>Tunnel</code> code menu in the code cell.</p>
 <ul>
+<li>Launch the Server via Tunnels: Navigate to the third code cell, titled &quot;Start Server <strong>using Tunnels</strong>&quot;. Choose one from the <code translate="no" v-pre>Tunnel</code> code menu in the code cell.</li>
 <li><strong>Port Viewer (Recommended &amp; Default method):</strong> A built-in Lightning.AI feature. Select &quot;Port Viewer&quot;. Click the <code translate="no" v-pre>+</code> at the bottom of the right tab, click on Web Apps and install Port Viewer. Run the cell. In the right-hand sidebar, click the <strong>Web Apps</strong> tab, click Port Viewer -&gt; Add a new port. Enter <code translate="no" v-pre>18888</code> and click your Port to open it.</li>
 <li><strong>Gradio (Fast, Popular &amp; Reliable):</strong> Select &quot;Gradio&quot; and run the cell. Click the <code translate="no" v-pre>.gradio.live</code> link in the output.</li>
 <li><strong>Ngrok (Fast, Popular &amp; Reliable):</strong> Get your <a href="https://dashboard.ngrok.com/get-started/your-authtoken">Ngrok authtoken</a>, paste it into the <code translate="no" v-pre>Token</code> field, and run the cell.</li>
 <li><strong>Cloudflare (Easy, No Account Needed):</strong> Select &quot;Cloudflare&quot; and run the cell. A <code translate="no" v-pre>.trycloudflare.com</code> link will appear.</li>
 <li><strong>LocalTunnel (No Account, Password Protected):</strong> Select &quot;LocalTunnel&quot; and run the cell. Copy the <code translate="no" v-pre>Local Tunnel Password</code> and use it on the generated link.</li>
 <li><strong>Horizon (Fast, Requires Account &amp; ID):</strong> Go to the <a href="https://hrzn.run/dashboard/">Horizon Dashboard</a>, copy your ID, paste it into the <code translate="no" v-pre>Token</code> field, and run the cell.</li>
+<li>Accessing Files manually: Find the <strong>Teamspace Drive</strong> button on the right sidebar and click it. The path to Applio is <code translate="no" v-pre>Studio &gt; this_studio &gt; Applio &gt; Applio</code>. You can drag, drop, and download files directly from here.</li>
 </ul>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-danger"></div>
-    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="block text-callout-danger" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M21.71 6.15L15.85.29c-.19-.18-.44-.29-.71-.29H6.86c-.27 0-.52.11-.71.29L.29 6.15c-.18.19-.29.44-.29.71v8.28c0 .27.11.52.29.71l5.86 5.86c.19.18.44.29.71.29h8.28c.27 0 .52-.11.71-.29l5.86-5.86a.99.99 0 00.29-.71V6.86c0-.27-.11-.52-.29-.71zM20 14.73L14.73 20H7.27L2 14.73V7.27L7.27 2h7.45L20 7.27v7.46z"></path>
-                    <path d="M11 12c.55 0 1-.45 1-1V7c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .55.45 1 1 1zM11.01 14c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-            <h5>Note:</h5>
-<p>The server runs in the foreground. If you stop the cell or close the Lightning.AI site, the server will shut down. Keep the cell running to use the program.</p>
-        </div>
-    </div>
-</div>
-<p><strong>8.</strong> Accessing Files manually: Find the <strong>Teamspace Drive</strong> button on the right sidebar and click it. The path to Applio is <code translate="no" v-pre>Studio &gt; this_studio &gt; Applio &gt; Applio</code>. You can drag, drop, and download files directly from here.</p>
 <img src="/img/cloud-services/lightning-ai-img/teamspace-drive.png" alt="LightningAI Teamspace Drive" width="500">
-<p><strong>9.</strong> Opening the TensorBoard: Find the TensorBoard icon on the right sidebar, click it, and start it to monitor your training visually.</p>
+<ul>
+<li>Opening the TensorBoard: Find the TensorBoard icon on the right sidebar, click it, and start it to monitor your training visually.</li>
+</ul>
 <img src="/img/cloud-services/lightning-ai-img/tensorboard.png" alt="LightningAI TensorBoard" width="500">
-<p><strong>10.</strong> Opening the notebook: If you want to go back to the code view, simply click on the <code translate="no" v-pre>Jupyter</code> icon on the right sidebar.</p>
+<ul>
+<li>Opening the notebook: If you want to go back to the code view, simply click on the <code translate="no" v-pre>Jupyter</code> icon on the right sidebar.</li>
+</ul>
 <img src="/img/cloud-services/lightning-ai-img/jupyter.png" alt="LightningAI Jupyter" width="500">
-***
-#### <u>Maintenance</u>
-<p><strong>11.</strong> Deleting Everything: If you need to update Applio or start fresh, you can run the final cell in the notebook, &quot;Delete everything&quot;. This will remove all downloaded files and configurations from your persistent storage, allowing for a clean installation by re-following the notebook with perhaps a changed branch variable.</p>
+<ul>
+<li><strong>Maintenance:</strong> If you need to update the Program or start fresh, you can run the final cell in the notebook, &quot;Delete everything&quot;. This will remove all downloaded files and configurations from your persistent storage, allowing for a clean installation by re-following the notebook with perhaps a changed branch variable.</li>
+</ul>
 <hr>
 <div class="content-center"><h3 id="huggingface-space">HuggingFace Space</h3>
 </div>
@@ -615,8 +596,12 @@
         </div>
     </div>
 </div>
-<p><strong>1.</strong> Open the <a href="https://huggingface.co/spaces/IAHispano/ApplioX">ApplioX HuggingFace Space</a>.</p>
-<p><strong>2.</strong> The Web UI will load directly in your browser without any installation required.</p>
+<ul>
+<li><p>Open the <a href="https://huggingface.co/spaces/IAHispano/ApplioX">ApplioX HuggingFace Space</a>.</p>
+</li>
+<li><p>The Web UI will load directly in your browser without any installation required.</p>
+</li>
+</ul>
 <hr>
 <div class="content-center"><h2 id="web-ui-usage">Web UI Usage</h2>
 </div>
@@ -647,7 +632,9 @@
         </div>
     </div>
 </div>
-<p><strong>1.</strong> Open the <a href="https://colab.research.google.com/github/IAHispano/Applio/blob/main/assets/Applio_NoUI.ipynb">Applio No UI Colab</a> and run the <code translate="no" v-pre>Installation</code> cell.</p>
+<ul>
+<li>Open the <a href="https://colab.research.google.com/github/IAHispano/Applio/blob/main/assets/Applio_NoUI.ipynb">Applio No UI Colab</a> and run the <code translate="no" v-pre>Installation</code> cell.</li>
+</ul>
 <img src="../applio-cloud-img/google-colab-no-ui-img/installation-cell.png" alt="Installation Cell" width="600">
 <p><strong>2. Preprocess Dataset:</strong> Name your model, upload your dataset to Google Drive, paste the path in <code translate="no" v-pre>dataset_path</code>, select your sample rate, and run the cell.</p>
 <img src="../applio-cloud-img/google-colab-no-ui-img/preprocess-cell.png" alt="Preprocess Cell" width="800">
