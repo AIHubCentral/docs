@@ -25,4 +25,4 @@ Join our communities to get help, share models, and discuss AI:
 The tools and guides provided are for educational purposes and ethical fun only. **We strictly prohibit the use of our guides for illegal activities, scamming, catfishing, or fraud.** Users are responsible for ensuring they have necessary copyright permissions.
 
 ## License
-This project is licensed under a[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/) CC BY-NC-SA 4.0.
+This project is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/) CC BY-NC-SA 4.0.

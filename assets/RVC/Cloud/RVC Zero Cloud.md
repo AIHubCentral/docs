@@ -1,6 +1,6 @@
 ---
-icon: chevron-right
-order: 3000
+icon: ":o:"
+order: 2000
 ---
 
 ``Last update: March 24, 2026``
@@ -18,94 +18,24 @@ This demo is provided for educational and research purposes only. The authors an
 !!!
 
 
+{{ include "cloud-services/start-decision.md" }}
+{{ include "cloud-services/grid-cards/google-colab-card.md" }}
+{{ include "cloud-services/grid-cards/huggingface-space-card.md" }}
+{{ include "cloud-services/end-decision.md" }}
+
+
 ***
 :::content-center
-## Choose your Cloud Service
+### HuggingFace Space
 :::
-Set up the program using your preferred cloud service guide. Once configured, use the Public Tunnel URL to open the interface and continue with the next steps
 
-
-<style>
-  /* Local styling that only affects this page */
-  .cloud-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    justify-content: center;
-    margin: 2rem 0;
-  }
-  .cloud-card {
-    flex: 1 1 220px;       /* Allows cards to shrink/grow, base width 220px */
-    max-width: 280px;      /* Prevents cards from getting comically wide */
-    padding: 1.5rem;
-    border: 1px solid rgba(150, 150, 150, 0.2); /* Subtle border for light/dark mode */
-    border-radius: 12px;
-    text-align: center;
-    text-decoration: none !important;
-    color: inherit !important;
-    background: rgba(128, 128, 128, 0.03); /* Barely visible background */
-    transition: all 0.2s ease;
-  }
-  .cloud-card:hover {
-    transform: translateY(-4px);
-    border-color: rgba(150, 150, 150, 0.6);
-    background: rgba(128, 128, 128, 0.08);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-  }
-  .cloud-card img {
-    width: 54px;
-    height: 54px;
-    margin-bottom: 1rem;
-    object-fit: contain;
-  }
-  .cloud-card h3 {
-    margin: 0 0 0.5rem 0 !important;
-    font-size: 1.25rem;
-    border-bottom: none !important; /* Overrides Retype's default header lines */
-  }
-  .cloud-card p {
-    font-size: 0.9rem;
-    opacity: 0.7; /* Makes description text slightly muted */
-    margin: 0;
-    line-height: 1.4;
-  }
-</style>
-
-<div class="cloud-grid">
-    <!-- ZeroGPU -->
-    <a href="#zerogpu-huggingface-space" class="cloud-card">
-        <img src="/img/huggingface-icon.svg" alt="HuggingFace">
-        <h3>ZeroGPU Space</h3>
-        <p>Best for quick, no-install inference directly in your browser.</p>
-    </a>
-    <!-- Google Colab -->
-    <a href="#google-colab" class="cloud-card">
-        <img src="/img/google-colaboratory-logo.svg" alt="Colab">
-        <h3>Google Colab</h3>
-        <p>Reliable performance and full control for power users.</p>
-    </a>
-</div>
-
-<br><br>
-
-***
-:::content-center
-### ZeroGPU HuggingFace Space
-
-!!!danger HuggingFace Space Service
-**Check the [HuggingFace Space Glossary](https://docs.aihub.gg/extra/glossary/#huggingface-space) for more info on Free Tier, Limits, Quotas and other things.**
-!!!
+{{ include "cloud-services/warnings/huggingface-space.md" }}
 
 !!!danger RVC Zero HuggingFace Space Limits
 - The RVC Zero HuggingFace Space is made only for **Inference**. Training is not supported.
-- The Space runs on ZeroGPU. For the current GPU hardware used by ZeroGPU, check the [ZeroGPU Technical Specifications](https://huggingface.co/docs/hub/spaces-zerogpu#technical-specifications).
 !!!
 
-!!!danger RVC HuggingFace Spaces Pausing Issue
-**Please be aware that HuggingFace has recently been pausing RVC-related Spaces without providing any reason.**
-!!!
-
-:::
+{{ include "cloud-services/warnings/rvc-huggingface-spaces-paused.md" }}
 
 #### <u>Accessing the Space</u>
 
@@ -117,12 +47,9 @@ Once you're in the space, the rest of the process is **identical** to what's des
 ***
 :::content-center
 ### Google Colab
-
-!!!danger Google Colab Service
-**Check the [Google Colab Glossary](https://docs.aihub.gg/extra/glossary/#google-colab) for more info on Free Tier, Limits, Verification, Pricing and other things.**
-!!!
-
 :::
+
+{{ include "cloud-services/warnings/google-colab.md" }}
 
 #### <u>Setting Up</u>
 
@@ -130,11 +57,11 @@ Once you're in the space, the rest of the process is **identical** to what's des
 
 **2.** Run the **"Run the RVC ⚡ ZERO App"** cell by clicking the play button on its left.
 
-   <img src="../rvc-zero-img/colab-cells.png" alt="Google Colab run cell" width="600" height="auto">
+   <img src="../rvc-zero-cloud-img/colab-cells.png" alt="Google Colab run cell" width="600" height="auto">
 
 **3.** The installation will begin automatically. It will take approximately **7 minutes**, wait for it to complete.
 
-   <img src="../rvc-zero-img/colab-output.png" alt="Colab installation output" width="600" height="auto">
+   <img src="../rvc-zero-cloud-img/colab-output.png" alt="Colab installation output" width="600" height="auto">
 
 **4.** Once finished, a **public URL** will appear in the cell output. Click it to open the RVC Zero interface.
 
@@ -157,7 +84,7 @@ Both the HuggingFace Space and the Google Colab version share the exact same RVC
 
 The space features a really clean, single-page layout:
 
-   <img src="../rvc-zero-img/interface.png" alt="RVC Zero main interface" width="1000" height="auto">
+   <img src="../rvc-zero-cloud-img/interface.png" alt="RVC Zero main interface" width="1000" height="auto">
 
 - `TTS (toggle)`: Enable Text-to-Speech mode so you can generate audio directly from text instead of uploading a file.
 - `Audio files`: Upload the vocal audio you want to convert.
@@ -178,7 +105,7 @@ The space features a really clean, single-page layout:
 
 **b.** **Upload your model:** In the "Model file" drop zone, upload your `.pth` RVC model file. For the best accent accuracy, you can also upload the matching `.index` file in the "Index file" drop zone.
 
-   <img src="../rvc-zero-img/interface.png" alt="Model and Index file upload, Inference button and Result area" width="1000" height="auto">
+   <img src="../rvc-zero-cloud-img/interface.png" alt="Model and Index file upload, Inference button and Result area" width="1000" height="auto">
 
 **c.** **Run Inference:** Click that pink **Inference** button. Once it finishes, your converted audio will appear right in the **Result** section. Just click the download icon to save it!
 
@@ -188,7 +115,7 @@ The space features a really clean, single-page layout:
 
 If you'd rather not upload a `.pth` model file manually, you can load a model directly from a URL. Just flip the **URL-to-Model** toggle on, and an input field will pop up.
 
-   <img src="../rvc-zero-img/url-to-model.png" alt="URL-to-Model toggle expanded" width="1000" height="auto">
+   <img src="../rvc-zero-cloud-img/url-to-model.png" alt="URL-to-Model toggle expanded" width="1000" height="auto">
 
 The field accepts two URL formats:
 
@@ -210,7 +137,7 @@ To get a direct HuggingFace download link, go to the model's **Files and version
 
 If you don't have an audio file, you can generate one from text directly inside the space. Toggle **TTS** on at the top of the page and the TTS panel will expand.
 
-   <img src="../rvc-zero-img/tts.png" alt="TTS toggle expanded showing Text field, tts voice dropdown and Process TTS button" width="1000" height="auto">
+   <img src="../rvc-zero-cloud-img/tts.png" alt="TTS toggle expanded showing Text field, tts voice dropdown and Process TTS button" width="1000" height="auto">
 
 **a.** In the **Text** field, write the text you want spoken.
 
@@ -229,7 +156,7 @@ Then upload your model and click **Inference** as normal.
 
 You can expand the **Advanced settings** menu in the interface to fine-tune your conversion. Here is a breakdown of what each setting does:
 
-   <img src="../rvc-zero-img/advanced-settings.png" alt="Advanced settings and Examples table" width="1000" height="auto">
+   <img src="../rvc-zero-cloud-img/advanced-settings.png" alt="Advanced settings and Examples table" width="1000" height="auto">
 
 - `Pitch algorithm`: The algorithm used to detect and shift the pitch. `rmvpe+` is our recommended default and usually gives the best results.
 
@@ -275,9 +202,7 @@ Because ZeroGPU is shared across a lot of different Spaces, it might be temporar
 There's an upload size limit for your model and audio files. If you run into this, try using a smaller model or compress your audio file before uploading it.
 ===
 
-==- *Cannot connect to GPU backend (Google Colab only)*
-You have used up the [GPU runtime](https://docs.aihub.gg/rvc/extra/glossary/#google-colab) provided by Colab. You will need to wait for it to reset or upgrade your plan.
-===
+{{ include "troubleshooting/cloud-gpu-time.md" }}
 
 {{ include "troubleshooting/report-missing-issue.md" }}
 

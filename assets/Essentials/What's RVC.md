@@ -33,9 +33,7 @@ visibility:
     ###### ‎    
     {.list-icon}
     - #### :icon-repo-forked: [Applio](https://applio.org/)
-        - ##### :icon-cloud: [Applio Colab](https://colab.research.google.com/github/iahispano/applio/blob/master/assets/Applio.ipynb)
-        - ##### :icon-cloud: [Applio Kaggle](https://www.kaggle.com/code/deiant/applio)
-        - ##### :icon-cloud: [Applio Lightning Ai](https://lightning.ai/guilhermecardoso1/studios/applio-latest?section=all&query=applio)
+        - ##### :icon-cloud: [Applio Cloud](https://docs.aihub.gg/rvc/cloud/applio-cloud)
 
         
     ###### ‎  

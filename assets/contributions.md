@@ -39,7 +39,7 @@ We use **[Retype](https://retype.com/)** for building our docs. It's simply Mark
 **Cons:** Limited free time per month.
 
 1. Navigate to our [GitHub Repository](https://github.com/AIHubCentral/docs) and Fork it.
-2. Go to[GitHub Codespaces](https://github.com/codespaces), click **New codespace**, select your forked repo, and click **Create Codespace**.
+2. Go to [GitHub Codespaces](https://github.com/codespaces), click **New codespace**, select your forked repo, and click **Create Codespace**.
 3. Create a new branch for your edits: `git checkout -b your-branch-name`
 4. In the Terminal, insert: `npm install retypeapp --global`
 5. In the `retype.yml` file, insert a `#` before the docs link in `url: `, so it looks like `url: # https://docs.aihub.gg/`. *(This allows local previews to route correctly).*
@@ -82,6 +82,8 @@ Looking for something to work on? Here is our current roadmap of things we need 
 - Update TTS Section constantly with new tools. The GPT-SoVITS Guide is included.
 - Add more to the Image Gen Section.
 - Add and update other AI stuff, such as LLMs.
+- Add Use Via API instructions for RVC Zero Cloud and ApplioX HuggingFace Spaces (not needed, developers only).
+- See if I can unify the tunnels setup in cloud guides through Retype include template.
 - Adapt all guides in the #guides discord channel to the Docs, to replace that channel.
 - Remove/Archive Weights.gg/.com related things after its shutdown on March 31st 2026.
 

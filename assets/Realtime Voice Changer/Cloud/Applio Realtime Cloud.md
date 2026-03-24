@@ -11,12 +11,12 @@ order: 4000
 ## Introduction
 :::
 
-Some of the Applio's Cloud versions support the **Realtime** tab. This allows users without a powerful local GPU to perform live voice conversion using cloud-hosted hardware.
+Some of the Applio Cloud versions support the **Realtime** tab. This allows users without a powerful local GPU to perform live voice conversion using cloud-hosted hardware.
 
 
 ***
 ## Choose Your Cloud Service
-Set up the program using your preferred cloud service guide. Once configured, use the Public Tunnel URL to open the interface and continue with the next steps
+Set up the program using your preferred cloud service guide. Once configured, use the Public Tunnel URL to open the interface and continue with the next steps.
 
 
 <style>
@@ -67,19 +67,19 @@ Set up the program using your preferred cloud service guide. Once configured, us
 
 <div class="cloud-grid">
     <!-- Google Colab -->
-    <a href="https://docs.aihub.gg/rvc/cloud/applio-colab" class="cloud-card">
+    <a href="https://docs.aihub.gg/rvc/cloud/applio-cloud/#google-colab" class="cloud-card">
         <img src="/img/google-colaboratory-logo.svg" alt="Colab">
         <h3>Google Colab</h3>
-        <p>Reliable performance and full control for power users.</p>
+        <p>Reliable performance and easiest setup for standard use.</p>
     </a>
     <!-- Kaggle -->
-    <a href="https://docs.aihub.gg/rvc/cloud/applio-kaggle" class="cloud-card">
+    <a href="https://docs.aihub.gg/rvc/cloud/applio-cloud/#kaggle" class="cloud-card">
         <img src="/img/kaggle-icon.svg" alt="Kaggle">
         <h3>Kaggle</h3>
         <p>Generous free GPU quotas. Great alternative if Colab is limited.</p>
     </a>
     <!-- Lightning.AI -->
-    <a href="https://docs.aihub.gg/rvc/cloud/applio-lightning-ai" class="cloud-card">
+    <a href="https://docs.aihub.gg/rvc/cloud/applio-cloud/#lightningai" class="cloud-card">
         <img src="/img/lightning-ai-logo.svg" alt="Lightning AI">
         <h3>Lightning.AI</h3>
         <p>Persistent cloud storage and powerful compute environments.</p>
@@ -89,9 +89,9 @@ Set up the program using your preferred cloud service guide. Once configured, us
 ***
 
 ### Realtime Setup on Cloud
-Once you have the Applio WebUI open from your cloud provider:
+Once you have the Applio WebUI running and accessible via your tunnel link from your chosen cloud provider, the usage steps are exactly the same as the local version.
 
-[!button text="Continue with the Local Guide" icon="arrow-right" target="blank"](https://docs.aihub.gg/realtime-voice-changer/local/applio-realtime/)
+Click below to learn how to configure your inputs and outputs for live voice changing.[!button text="Continue with the Local Realtime Guide" icon="arrow-right" target="blank"](https://docs.aihub.gg/realtime-voice-changer/local/applio-realtime/)
 
 ***
 

@@ -158,6 +158,7 @@ order: 1000
 ***
 ### <img src="/img/huggingface-icon.svg" style="width: 28px; height: 28px; vertical-align: middle; margin-right: 12px;"> HuggingFace Space
 - A [cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based) hosting platform for machine learning demos and apps directly accessible via a web browser.
+- Some Spaces use ZeroGPU, For the current GPU hardware used by ZeroGPU, check the [ZeroGPU Technical Specifications](https://huggingface.co/docs/hub/spaces-zerogpu#technical-specifications).
 
 #### Pros & Cons :icon-tasklist:
 ==- *Learn more*
