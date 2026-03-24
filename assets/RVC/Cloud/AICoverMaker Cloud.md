@@ -26,7 +26,7 @@ order: 3000
 
 #### <u>Installation & Setup</u> :icon-book:
 
-**1.** Go to the [AICoverMaker Colab](https://colab.research.google.com/github/Eddycrack864/RVC-AI-Cover-Maker-UI/blob/main/assets/RVCAICoverMakerUI.ipynb) and run the first cell. 
+- Go to the [AICoverMaker Colab](https://colab.research.google.com/github/Eddycrack864/RVC-AI-Cover-Maker-UI/blob/main/assets/RVCAICoverMakerUI.ipynb) and run the first cell. 
 
    <img src="../aicovermaker-cloud-img/1.png" alt="image" width="200" height="">
 
@@ -36,19 +36,19 @@ order: 3000
 Installation may take a couple of minutes, be patient.
 !!! 
 
-**2.** Next go to the second cell and put your ngrok token in the text box and run it. If you dont have a ngrok acount sign up [here](https://ngrok.com/) and you can authenticate your ngrok tunnel agent [here](https://dashboard.ngrok.com/get-started/your-authtoken). 
+- Next go to the second cell and put your ngrok token in the text box and run it. If you dont have a ngrok acount sign up [here](https://ngrok.com/) and you can authenticate your ngrok tunnel agent [here](https://dashboard.ngrok.com/get-started/your-authtoken). 
 
    <img src="../aicovermaker-cloud-img/2.png" alt="image" width="400" height="">
 
 ‎
 
-**3.** (Optional) You can choose not to use Ngrok if you desire to by running the third cell.
+- (Optional) You can choose not to use Ngrok if you desire to by running the third cell.
 
    <img src="../aicovermaker-cloud-img/3.png" alt="image" width="400" height="">
 
 ‎
 
-**4.** Once you've run either the cell with or without ngrok a link under the cell will apear, click it and it will take you the WebUI.
+- Once you've run either the cell with or without ngrok a link under the cell will apear, click it and it will take you the WebUI.
 
 
 ***
@@ -64,13 +64,13 @@ Installation may take a couple of minutes, be patient.
 
 #### <u>Installation & Setup</u> :icon-book:
 
-**1.** Go to the [AICoverMaker Kaggle notebook](https://www.kaggle.com/code/eddycrack864/rvc-ai-cover-maker-ui) and click `Copy & Edit` on the top right. 
+- Go to the [AICoverMaker Kaggle notebook](https://www.kaggle.com/code/eddycrack864/rvc-ai-cover-maker-ui) and click `Copy & Edit` on the top right. 
 
    <img src="../aicovermaker-cloud-img/8.png" alt="image" width="900" height="">
 
 ‎ 
 
-**2.** Once you're in the notebook run the first installation cell. Once it's done it will output `Requirements installed`.
+- Once you're in the notebook run the first installation cell. Once it's done it will output `Requirements installed`.
 
    <img src="../aicovermaker-cloud-img/9.png" alt="image" width="800" height="">
 
@@ -80,11 +80,11 @@ Installation may take a couple of minutes, be patient.
 Installation may take a couple of minutes, be patient.
 !!!
 
-**3.** Next go to the second cell and put your Ngrok token in the `TOKEN HERE` spot and run it. If you dont have a Ngrok acount sign up [here](https://ngrok.com/) and you can authenticate your ngrok tunnel agent [here](https://dashboard.ngrok.com/get-started/your-authtoken). 
+- Next go to the second cell and put your Ngrok token in the `TOKEN HERE` spot and run it. If you dont have a Ngrok acount sign up [here](https://ngrok.com/) and you can authenticate your ngrok tunnel agent [here](https://dashboard.ngrok.com/get-started/your-authtoken). 
 
    <img src="../aicovermaker-cloud-img/10.png" alt="image" width="900" height="">
 
-**4.** Once you've run the final cell a ngrok link will appear under the cell, click it and it will take you the WebUI.
+- Once you've run the final cell a ngrok link will appear under the cell, click it and it will take you the WebUI.
 
 ***
 ## <u>Downloading Music & Models</u>
@@ -92,13 +92,13 @@ Installation may take a couple of minutes, be patient.
 
 #### Music Download
 
-**1.** When in the UI look at the top left and look for the tab named `Download Music` and click it.
+- When in the UI look at the top left and look for the tab named `Download Music` and click it.
 
    <img src="../aicovermaker-cloud-img/5.png" alt="image" width="600" height="">
 
 ‎ 
 
-**2.** Then put the song you want to download in the text box and click download.
+- Then put the song you want to download in the text box and click download.
 
 
    <img src="../aicovermaker-cloud-img/6.png" alt="image" width="1000" height="">
@@ -107,20 +107,20 @@ Installation may take a couple of minutes, be patient.
 
 #### Model Download
 
-**1.** In the UI look at the top left and look for the tab named `Download Model` and click it.
+- In the UI look at the top left and look for the tab named `Download Model` and click it.
 
    <img src="../aicovermaker-cloud-img/4.png" alt="image" width="600" height="">
 
 ‎ 
 
-**2.** Then put the model you want to download in the text box and click download.
+- Then put the model you want to download in the text box and click download.
 
 
    <img src="../aicovermaker-cloud-img/7.png" alt="image" width="1000" height="">
 
 ‎
 
-**3.** You can also drag and drop your model in the `Drop files` box to upload them directly.
+- You can also drag and drop your model in the `Drop files` box to upload them directly.
 
 ***
 

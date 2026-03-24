@@ -98,6 +98,7 @@ order: 1000
 ### :icon-chevron-down:Cloud-based
 - Any software or application that's stored, managed, and available through the provider's virtual servers, and is accessed through a web browser.
 - Used by users with a weak [GPU](https://docs.aihub.gg/extra/glossary/#gpu), which can't do [local running](https://docs.aihub.gg/extra/glossary/#local-running).
+- Remember to not close the Cloud Service Site after accessing the Program's Web UI and to shut down the session when you are finished.
 - The opposite of [local running](https://docs.aihub.gg/extra/glossary/#local-running).       
 
 

@@ -53,17 +53,17 @@ Once you're in the space, the rest of the process is **identical** to what's des
 
 #### <u>Setting Up</u>
 
-**1.** Access the Colab notebook [here](https://colab.research.google.com/github/r3gm/rvc_zero/blob/main/colab_notebook.ipynb) and log in to your Google account.
+- Access the Colab notebook [here](https://colab.research.google.com/github/r3gm/rvc_zero/blob/main/colab_notebook.ipynb) and log in to your Google account.
 
-**2.** Run the **"Run the RVC ⚡ ZERO App"** cell by clicking the play button on its left.
+- Run the **"Run the RVC ⚡ ZERO App"** cell by clicking the play button on its left.
 
    <img src="../rvc-zero-cloud-img/colab-cells.png" alt="Google Colab run cell" width="600" height="auto">
 
-**3.** The installation will begin automatically. It will take approximately **7 minutes**, wait for it to complete.
+- The installation will begin automatically. It will take approximately **7 minutes**, wait for it to complete.
 
    <img src="../rvc-zero-cloud-img/colab-output.png" alt="Colab installation output" width="600" height="auto">
 
-**4.** Once finished, a **public URL** will appear in the cell output. Click it to open the RVC Zero interface.
+- Once finished, a **public URL** will appear in the cell output. Click it to open the RVC Zero interface.
 
 !!!warning
 Don't close Google Colab until you're done using it, or the session will stop working.

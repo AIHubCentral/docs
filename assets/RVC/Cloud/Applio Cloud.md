@@ -34,9 +34,9 @@ order: 4000
 
 #### <u>Setting Up</u> :icon-download:
 
-**1.** Access the Colab space [here](https://colab.research.google.com/github/iahispano/applio/blob/master/assets/Applio.ipynb). Then log in to your Google account.
+- Access the Colab space [here](https://colab.research.google.com/github/iahispano/applio/blob/master/assets/Applio.ipynb). Then log in to your Google account.
 
-**2.** Execute the **Install Applio** cells section. This will take around 2 minutes and will require you to grant permission to use Google Drive to save your models.
+- Execute the **Install Applio** cells section. This will take around 2 minutes and will require you to grant permission to use Google Drive to save your models.
 
 <img src="../applio-cloud-img/google-colab-web-ui-img/install-applio-cell-section.png" alt="Install Applio Cell Section" width="400">
 
@@ -46,13 +46,13 @@ order: 4000
 
 ***
 ###### ‎
-**3.** Sync with Google Drive to automatically save or load models.
+- Sync with Google Drive to automatically save or load models.
 
 <img src="../applio-cloud-img/google-colab-web-ui-img/sync-google-drive-cell.png" alt="Sync with Google Drive" width="500">
 
 ***
 ###### ‎
-**4.** Select a Sharing method and Run the Server, using a tunnel that securely exposes the application running in your private cloud environment to the public internet. The notebook gives you 3 different services to do this. Choose one from the `method` dropdown menu in the code cell.
+- Select a Sharing method and Run the Server, using a tunnel that securely exposes the application running in your private cloud environment to the public internet. The notebook gives you 3 different services to do this. Choose one from the `method` dropdown menu in the code cell.
 
 - **Gradio (Fast, Popular, Reliable & Default)**
     - **How it works:** This is a built-in [Gradio](https://docs.aihub.gg/extra/glossary/#gradio) feature. It's one of the most straightforward methods as it doesn't require any external accounts or tokens.
@@ -79,10 +79,6 @@ order: 4000
 
 <img src="../applio-cloud-img/google-colab-web-ui-img/start-server-cell.png" alt="Start Server Cell" width="550">
 
-!!!warning 
-Don't close Google Colab until you're done using it, or it will stop working.     
-!!! 
-
 
 ***
 :::content-center
@@ -96,41 +92,37 @@ Don't close Google Colab until you're done using it, or it will stop working.
 ***
 #### <u>Notebook Creation & Setup</u>
 
-**3.** Go to [Kaggle](https://www.kaggle.com) and click **Create** then **New Notebook** at the top left. 
+- Go to [Kaggle](https://www.kaggle.com) and click **Create** then **New Notebook** at the top left. 
 
 <img src="/img/cloud-services/kaggle-img/new.png" alt="New Notebook" width="400">
 
-**4.** Under your session's name click **File** then **Import Notebook**.
+- Under your session's name click **File** then **Import Notebook**.
 
 <img src="/img/cloud-services/kaggle-img/import.png" alt="Import Notebook" width="450">
 
-**5.** In the new window, click the **Link** tab and paste the following URL into the box: `https://github.com/IAHispano/Applio/blob/main/assets/Applio_Kaggle.ipynb`. Click **Import** on the bottom right once you've done this.
+- In the new window, click the **Link** tab and paste the following URL into the box: `https://github.com/IAHispano/Applio/blob/main/assets/Applio_Kaggle.ipynb`. Click **Import** on the bottom right once you've done this.
 
 <img src="/img/cloud-services/kaggle-img/link.png" alt="Link Tab" width="700">
 
-**6.** In the sidebar on the right, under "Session options", turn on the **Internet** switch. Make sure persistence is set to **Files and variables**.
+- In the sidebar on the right, under "Session options", turn on the **Internet** switch. Make sure persistence is set to **Files and variables**.
 
 <img src="/img/cloud-services/kaggle-img/kaggle-internet.png" alt="Kaggle Internet Toggle" width="250"> 
 
-**7.** Under "Accelerator", select the **T4 x2** GPU.
+- Under "Accelerator", select the **T4 x2** GPU.
 
 <img src="/img/cloud-services/kaggle-img/kaggle-gpu.png" alt="Kaggle GPU Toggle" width="250">
 
-**8.** *(Optional)* To ensure your session doesn't time out during long training processes, you can enable "Save version". Go to the top right, click **Save version**, and choose **Save & Run All (Commit)** from the dropdown. In the advanced settings, select **Always save output** for the notebook.
+- *(Optional)* To ensure your session doesn't time out during long training processes, you can enable "Save version". Go to the top right, click **Save version**, and choose **Save & Run All (Commit)** from the dropdown. In the advanced settings, select **Always save output** for the notebook.
 
 <img src="/img/cloud-services/kaggle-img/kaggle-pers.png" alt="Kaggle Persistence" width="250">
 
-!!!warning Warning
-Your GPU quota will continue to be used as long as the session is active with this option. Remember to shut down the session when you are finished.
-!!!
 
 ***
-
 #### <u>Installation & Tunnels Setup</u>
 
-**9.** Start by running the first few cells of the notebook to install the necessary dependencies.
+- Start by running the first few cells of the notebook to install the necessary dependencies.
 
-**10.** Configure and Run Tunnels: The next cell is for setting up the tunneling service, which exposes the Applio interface to the internet. Choose one from the `Tunnel` dropdown menu.
+- Configure and Run Tunnels: The next cell is for setting up the tunneling service, which exposes the Applio interface to the internet. Choose one from the `Tunnel` dropdown menu.
 
 
 - **Ngrok (Recommended & Default method):** Requires a free account and an authentication token. Paste your token into the `ngrok_authtoken` field, select "Ngrok", and run the cell.
@@ -138,7 +130,7 @@ Your GPU quota will continue to be used as long as the session is active with th
 - **LocalTunnel (No Account, Password Protected):** Generates a unique URL protected by a password. Select this, run the cell, and copy the `LocalTunnels Password` from the output.
 - **Horizon (Fast, Requires Account & ID):** Requires a free account and a personal ID. Go to the [Horizon Dashboard](https://hrzn.run/dashboard/), copy your ID, paste it into `horizon_id`, and run the cell.
 
-**11.** Once configured, run the cell. The output will print public URLs for Applio, Tensorboard, and the Filebrowser. Click the Applio link to open the Web UI.
+- Once configured, run the cell. The output will print public URLs for Applio, Tensorboard, and the Filebrowser. Click the Applio link to open the Web UI.
 
 
 ***
@@ -153,15 +145,15 @@ Your GPU quota will continue to be used as long as the session is active with th
 ***
 #### <u>Studio Setup & Installation</u>
 
-**3.** After creating your Lightning.AI account, open the [Applio Notebook Studio](https://lightning.ai/nick088/studios/applio-ui?view=public&section=featured) and Clone it.
+- After creating your Lightning.AI account, open the [Applio Notebook Studio](https://lightning.ai/nick088/studios/applio-ui?view=public&section=featured) and Clone it.
 
 <img src="/img/cloud-services/lightning-ai-img/lightning-ai-clone-studio.png" alt="LightningAI Clone Studio" width="300">
 
-**4.** Activate/Switch GPU: If you aren't on a GPU environment by default, you must switch to a GPU environment. On the right-hand lateral menu, click on **Studio Environment** (the processor icon).
+- Activate/Switch GPU: If you aren't on a GPU environment by default, you must switch to a GPU environment. On the right-hand lateral menu, click on **Studio Environment** (the processor icon).
 
 <img src="/img/cloud-services/lightning-ai-img/gpu-setting.png" alt="LightningAI GPU Setting" width="500">
 
-**5.** Click **Switch To GPU**, select an available GPU, and wait for the environment to restart.
+- Click **Switch To GPU**, select an available GPU, and wait for the environment to restart.
 
 <img src="/img/cloud-services/lightning-ai-img/gpus-list.png" alt="LightningAI GPUs List" width="500">
 
@@ -171,13 +163,13 @@ Your GPU quota will continue to be used as long as the session is active with th
 - 15 hours monthly of L40 48gb
 !!!
 
-**6.** Run the first code cell to download the latest version of Applio and install necessary dependencies. It will print "Installed!" when finished.
+- Run the first code cell to download the latest version of Applio and install necessary dependencies. It will print "Installed!" when finished.
 
 ***
 
 #### <u>Tunnels & Server Setup</u>
 
-**7.** Launch the Server via Tunnels: Navigate to the third code cell, titled "Start Server **using Tunnels**". Choose one from the `Tunnel` code menu in the code cell.
+- Launch the Server via Tunnels: Navigate to the third code cell, titled "Start Server **using Tunnels**". Choose one from the `Tunnel` code menu in the code cell.
 
 - **Port Viewer (Recommended & Default method):** A built-in Lightning.AI feature. Select "Port Viewer". Click the `+` at the bottom of the right tab, click on Web Apps and install Port Viewer. Run the cell. In the right-hand sidebar, click the **Web Apps** tab, click Port Viewer -> Add a new port. Enter `18888` and click your Port to open it.
 - **Gradio (Fast, Popular & Reliable):** Select "Gradio" and run the cell. Click the `.gradio.live` link in the output.
@@ -186,25 +178,20 @@ Your GPU quota will continue to be used as long as the session is active with th
 - **LocalTunnel (No Account, Password Protected):** Select "LocalTunnel" and run the cell. Copy the `Local Tunnel Password` and use it on the generated link.
 - **Horizon (Fast, Requires Account & ID):** Go to the [Horizon Dashboard](https://hrzn.run/dashboard/), copy your ID, paste it into the `Token` field, and run the cell.
 
-!!!danger Note:
-The server runs in the foreground. If you stop the cell or close the Lightning.AI site, the server will shut down. Keep the cell running to use the program.
-!!!
 
-**8.** Accessing Files manually: Find the **Teamspace Drive** button on the right sidebar and click it. The path to Applio is `Studio > this_studio > Applio > Applio`. You can drag, drop, and download files directly from here.
+- Accessing Files manually: Find the **Teamspace Drive** button on the right sidebar and click it. The path to Applio is `Studio > this_studio > Applio > Applio`. You can drag, drop, and download files directly from here.
 
 <img src="/img/cloud-services/lightning-ai-img/teamspace-drive.png" alt="LightningAI Teamspace Drive" width="500">
 
-**9.** Opening the TensorBoard: Find the TensorBoard icon on the right sidebar, click it, and start it to monitor your training visually.
+- Opening the TensorBoard: Find the TensorBoard icon on the right sidebar, click it, and start it to monitor your training visually.
 
 <img src="/img/cloud-services/lightning-ai-img/tensorboard.png" alt="LightningAI TensorBoard" width="500">
 
-**10.** Opening the notebook: If you want to go back to the code view, simply click on the `Jupyter` icon on the right sidebar.
+- Opening the notebook: If you want to go back to the code view, simply click on the `Jupyter` icon on the right sidebar.
 
 <img src="/img/cloud-services/lightning-ai-img/jupyter.png" alt="LightningAI Jupyter" width="500">
-***
-#### <u>Maintenance</u>
 
-**11.** Deleting Everything: If you need to update Applio or start fresh, you can run the final cell in the notebook, "Delete everything". This will remove all downloaded files and configurations from your persistent storage, allowing for a clean installation by re-following the notebook with perhaps a changed branch variable.
+- **Maintenance:** If you need to update the Program or start fresh, you can run the final cell in the notebook, "Delete everything". This will remove all downloaded files and configurations from your persistent storage, allowing for a clean installation by re-following the notebook with perhaps a changed branch variable.
 
 
 ***
@@ -221,9 +208,9 @@ The server runs in the foreground. If you stop the cell or close the Lightning.A
 
 {{ include "cloud-services/warnings/rvc-huggingface-spaces-paused.md" }}
 
-**1.** Open the [ApplioX HuggingFace Space](https://huggingface.co/spaces/IAHispano/ApplioX).
+- Open the [ApplioX HuggingFace Space](https://huggingface.co/spaces/IAHispano/ApplioX).
 
-**2.** The Web UI will load directly in your browser without any installation required.
+- The Web UI will load directly in your browser without any installation required.
 
 
 ***
@@ -248,7 +235,7 @@ This is a strictly code-based workflow for users who want to maximize Colab reso
 Because this workflow relies directly on executing notebook cells rather than a stable Web UI, the notebook's structure and variable names might change frequently between updates. 
 !!!
 
-**1.** Open the [Applio No UI Colab](https://colab.research.google.com/github/IAHispano/Applio/blob/main/assets/Applio_NoUI.ipynb) and run the `Installation` cell.
+- Open the [Applio No UI Colab](https://colab.research.google.com/github/IAHispano/Applio/blob/main/assets/Applio_NoUI.ipynb) and run the `Installation` cell.
 
 <img src="../applio-cloud-img/google-colab-no-ui-img/installation-cell.png" alt="Installation Cell" width="600">
 

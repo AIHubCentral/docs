@@ -1,5 +1,6 @@
 #### <u>Create an Account</u>
-- First make an account with [Lightning Ai](https://lightning.ai).
+
+- First, make an account with [Lightning Ai](https://lightning.ai).
 
 <img src="/img/cloud-services/lightning-ai-img/signup.png" alt="LightningAI Signup" width="300">
 
