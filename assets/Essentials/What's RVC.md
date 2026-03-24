@@ -30,8 +30,6 @@ visibility:
 
     {.list-icon}
     - #### :icon-chevron-right: [Mainline](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI) (Original RVC)
-        - ##### :icon-cloud: <u> [Mainline Kaggle](https://www.kaggle.com/code/hinabl/mainline)
-         - ##### :icon-cloud: [Mainline Colab](https://colab.research.google.com/github/hinabl/RVC-Online/blob/main/Mainline_Colab_Full.ipynb)
     ###### ‎    
     {.list-icon}
     - #### :icon-repo-forked: [Applio](https://applio.org/)

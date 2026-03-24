@@ -1,6 +1,6 @@
 ---
 icon: /img/weights-icon.svg
-order: 10000
+order: 1000
 ---
 
 `Last update: March 24, 2026` 
