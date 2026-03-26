@@ -2,7 +2,7 @@
 icon: chevron-right
 order: 3000
 ---
-``Last update: March 24, 2026``
+``Last update: March 26, 2026``
 ***
 :::content-center
 ## Introduction
@@ -67,10 +67,6 @@ and
 ***
 ##### For GPU-conversion
 
-TLDR: Make sure you have Nvidia RTX 20xx better. GTX 900 Series  will also work, but may run into issues with games and higher delay. If you have an iGPU (mostly AMD Radeon Graphics or Vega) use Wokada Deiteris Fork Cloud instead.
-
- Long answer:
-
 `Minimum:`
 
 - A dedicated graphics card: Nvidia GeForce GTX 900 Series or later.
@@ -120,7 +116,7 @@ Use Cloud if you:
 !!!
 
 ***
-### Precompiled Setup NVIDIA on Windows
+### Precompiled Setup for Nvidia GPUs on Windows
 
 !!!tip Why it's recommended:
 - Easier.
@@ -133,7 +129,7 @@ Use Cloud if you:
 - After downloading, extract the zip file.
 
 ***
-### Manual Setup NVIDIA on Windows
+### Manual Setup for Nvidia GPUs on Windows
 
 - Go to Vonovox's [Github Repository](https://github.com/dr87/Vonovox/releases) and download the Latest Stable Release Source Code.
 

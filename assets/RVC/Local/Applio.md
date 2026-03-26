@@ -3,7 +3,7 @@ icon: chevron-right
 order: 4000
 ---
 
-``Last update: March 24, 2026``
+``Last update: March 26, 2026``
 
 ***
 :::content-center
@@ -48,7 +48,7 @@ Also, **HuggingFace has a [Security Scanner](https://huggingface.co/docs/hub/sec
 - TensorBoard included
 - Extra features: (plugins, model fusion, etc)
 ||| ❌ **CONS** 
-- None :smile:
+- Doesn't support: Intel GPUs, ARM64 CPUs, NPUs.
 |||
 ===
 ***

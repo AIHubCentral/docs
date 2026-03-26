@@ -2,7 +2,7 @@
 icon: chevron-right
 order: 4000
 ---
-``Last update: March 14, 2026``
+``Last update: March 26, 2026``
 ***
 :::content-center
 ## Introduction
@@ -34,7 +34,7 @@ Also, **HuggingFace has a [Security Scanner](https://huggingface.co/docs/hub/sec
 ||| ✔️ **PROS** 
 - Currently stable
 - Good Performance
-- Has great support for Nvidia, AMD, Intel, Linux, Windows
+- Supports: Nvidia GPUs, AMD GPUs, Intel GPUs on Windows, Apple Silicon Mac, x86_64 CPUs, Linux, Windows
 - Uses a Web User Interface, meaning it can be run on the Cloud
 - Uses FP16 Inference by default, and let's you choose to use FP32 for better quality/precision
 - Has Audio Effects
@@ -45,8 +45,7 @@ Also, **HuggingFace has a [Security Scanner](https://huggingface.co/docs/hub/sec
 ||| ❌ **CONS** 
 - Uses a Web User Interface, having issues on some browsers.
 - Doesn't have a very active development recently, it's more of a personal public fork with some Quality Of Life updates of the Wokada Deiteris' Fork, please don't have too much expectations and don't disturb the developer about it
-- Doesn't have any Intel MacOS version.
-- Discontinued for Apple Silicon MacOS after version b2364.
+- Doesn't support: Intel GPUs on Linux, ARM64 CPUs, NPUs, Intel Mac, discontinued for Apple Silicon MacOS after version b2364.
 - Has Cut Off Issues Using an Extra superior to 2.7
 |||
 ===
@@ -60,7 +59,7 @@ Also, **HuggingFace has a [Security Scanner](https://huggingface.co/docs/hub/sec
 ***
 
 - Windows 10 or Later
-- macOS 12 Monterey or later. With Apple Silicon CPU
+- macOS 12 Monterey or later. With Apple Silicon CPU.
 - Any Linux Distro
 
 and
@@ -71,20 +70,15 @@ and
 ***
 ##### For GPU-conversion
 
-TLDR: Make sure you have Nvidia RTX 20xx or AMD Radeon RX 5xxx or better. GTX 10xx or RX 580 will also work, but may run into issues with games and higher delay. If you have an iGPU (mostly AMD Radeon Graphics or Vega) use online hosted alternative instead.
-
-
- Long answer:
-
 `Minimum:`
 
 - An integrated graphics card: AMD Radeon Vega 7 (with AMD Ryzen 5 5600G) or later; with 2GB VRAM (in FP32 mode), ~1GB VRAM (in FP16 mode, if supported). But this is NOT recommended at all and we will most likely not recommend you to download the realtime voice changer with iGPUs.
 
-- A dedicated graphics card: Nvidia GeForce GTX 900 Series or later, or AMD Radeon RX 400 series or later, or Intel Arc A300 series or later.
+- A dedicated graphics card: Nvidia GeForce GTX 900 Series or later, or AMD Radeon RX 400 series or later, or Intel Arc A300 series or later (Windows Only).
 
 `Recommended:`
 
-- A dedicated graphics card Nvidia GeForce RTX 20 Series or later, or AMD Radeon RX 5000 series or later, or Intel Arc A500 series or later.
+- A dedicated graphics card Nvidia GeForce RTX 20 Series or later, or AMD Radeon RX 5000 series or later, or Intel Arc A500 series or later (Windows Only).
 
 ***
 ##### For CPU-conversion
@@ -151,12 +145,12 @@ sudo pacman -Syu portaudio
 - On the release page, find the "Assets" section and download the files based on your GPU.
 
 !!!
-To check your GPU, open Task Manager (Ctrl+Shift+Esc), go to the "Performance" tab, and look at the GPU names. If you have an NVIDIA card, use the NVIDIA (CUDA) version.
+To check your GPU, open Task Manager (Ctrl+Shift+Esc), go to the "Performance" tab, and look at the GPU names. If you have an Nvidia card, use the Nvidia (CUDA) version.
 !!!
 
 ***
 
-### Download NVIDIA on Windows
+### Download for Nvidia GPUs on Windows
 
 - Download all of the `voice-changer-windows-amd64-cuda` files. This will include multiple files, likely ending in `.zip.001`, `.zip.002`, etc.
 - Make sure all downloaded parts are in the same folder before extracting.
@@ -165,9 +159,10 @@ To check your GPU, open Task Manager (Ctrl+Shift+Esc), go to the "Performance" t
 If you have a GTX 700 series card or older, the CUDA version may not work. Use the AMD/Intel (DML) version instead.
 !!!
 
-### Download AMD, INTEL and CPU on Windows
+### Download AMD, INTEL GPUs and x86_64 CPUs on Windows
 
-- Download the single file named `voice-changer-windows-amd64-dml.zip`.
+- Download the single file named `voice-changer-windows-amd64-dml.zip`. DirectML should work for any modern DirectX 12 compatible GPU.
+
 - If you don't have a dedicated GPU or the `dml` version doesn't work, download `voice-changer-windows-amd64-cpu.zip`.
 
 !!!danger
@@ -180,7 +175,7 @@ Some integrated graphics like Intel UHD may not be compatible. If it fails, you 
 
 - Make sure you have [7-Zip](https://www.7-zip.org/) or [WinRAR](https://www.win-rar.com/download.html) installed to extract the files.
 - To extract:
-    - **For the NVIDIA version:** Right-click on the file ending in `.zip.001` (the first part of the archive) and choose to extract it. Your archiving program will automatically find the other parts and combine them.
+    - **For the Nvidia version:** Right-click on the file ending in `.zip.001` (the first part of the archive) and choose to extract it. Your archiving program will automatically find the other parts and combine them.
     - **For the AMD/Intel or CPU version:** Right-click the single `.zip` file and extract it.
 - Open the newly created `MMVCServerSIO` folder and run the `MMVCServerSIO.exe` application.
 
@@ -227,28 +222,29 @@ For example, if you extracted the realtime voice changer to your desktop, the co
 If nothing opens, then open a browser and type in `http://127.0.0.1:18888/`. This is a local URL, it runs on the WebUI.
 !!!
 
+
 ***
 ## Linux
 
 - First, go to the latest release page: [Latest Release (click here to go to Github)](https://github.com/tg-develop/voice-changer/releases/latest)
 - On the release page, find the "Assets" section and download the file(s) corresponding to your hardware.
 
-***
 
-### Download for NVIDIA on Linux
+***
+### Download for Nvidia GPUs on Linux
 
 - Download all files that start with `voice-changer-linux-amd64-cuda.tar.gz` (e.g., `.tar.gz.aa`, `.tar.gz.ab`).
 
-### Download for AMD on Linux
+### Download for AMD GPUs on Linux
 
 - Download all files that start with `voice-changer-linux-amd64-rocm.tar.gz` (e.g., `.tar.gz.aa`, `.tar.gz.ab`).
 
-### Download for CPU on Linux
+### Download for x86_64 CPUs on Linux
 
 - Download the single file named `voice-changer-linux-amd64-cpu.tar.gz`.
 
-***
 
+***
 ### Opening on Linux
 
 - Make sure all downloaded parts for your version are in the same directory.
@@ -256,7 +252,7 @@ If nothing opens, then open a browser and type in `http://127.0.0.1:18888/`. Thi
 - Use the `cat` command to combine and extract the multi-part archives. For the single-file CPU version, use `tar`.
 
   ```bash
-  # For NVIDIA
+  # For Nvidia
   cat voice-changer-linux-amd64-cuda.tar.gz.* | tar xzf -
 
   # For AMD
@@ -640,8 +636,8 @@ If your perf value is red, the realtime voice changer is unstable. Increase Chun
 This fork is a lot better for AMD GPU's compared to the original w-okada. On the original it requires converting models to onnx models which is annoying, requires more CPU and GPU resources, has a lot more delay and other little inconveniences/bugs.
 !!!
 
-!!! Which is better for NVIDIA users?
-This fork is better for NVIDIA users who normally use the prebuilt w-okada version, because this version uses GPU accelerated extra compared to the original which uses CPU.
+!!! Which is better for Nvidia users?
+This fork is better for Nvidia users who normally use the prebuilt w-okada version, because this version uses GPU accelerated extra compared to the original which uses CPU.
 
 For the RTX GPUs the delay performance differences are minimal, but quality performance is better. For older cards like GTX or MX, this fork performs better in all aspects.
 !!!

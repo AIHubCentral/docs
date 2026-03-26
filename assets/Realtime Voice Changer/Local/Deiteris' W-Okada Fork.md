@@ -2,7 +2,7 @@
 icon: chevron-right
 order: 1000
 ---
-``Last update: March 14,2026``
+``Last update: March 26,2026``
 ***
 :::content-center
 ## Introduction
@@ -33,7 +33,7 @@ Also, **HuggingFace has a [Security Scanner](https://huggingface.co/docs/hub/sec
 ||| ✔️ **PROS** 
 - Currently stable
 - Good Performance
-- Has great support for Nvidia, AMD, Intel, Mac, Linux, Windows
+- Supports: Nvidia GPUs, AMD GPUs, Intel GPUs on Windows, Intel Mac, Apple Silicon Mac, x86_64 CPUs, Linux, Windows
 - Uses a Web User Interface, meaning it can be run on the Cloud
 - Uses FP16 Inference by default, and let's you choose to use FP32 for better quality/precision
 ||| ❌ **CONS** 
@@ -41,6 +41,7 @@ Also, **HuggingFace has a [Security Scanner](https://huggingface.co/docs/hub/sec
 - Doesn't have an active development recently
 - Has Cut Off Issues Using an Extra superior to 2.7
 - Doesn't let you choose the embedder, using only RVC models trained on contentvec (the majority)
+- Doesn't support: Intel GPUs on Linux, ARM64 CPUs, NPUs.
 |||
 ===
 ***
@@ -53,7 +54,7 @@ Also, **HuggingFace has a [Security Scanner](https://huggingface.co/docs/hub/sec
 ***
 
 - Windows 10 or Later
-- macOS 12 Monterey or later. With Apple Silicon or Intel CPU
+- macOS 12 Monterey or later. With Apple Silicon or Intel CPU.
 - Any Linux Distro
 
 and
@@ -64,20 +65,16 @@ and
 ***
 ##### For GPU-conversion
 
-TLDR: Make sure you have Nvidia RTX 20xx or AMD Radeon RX 5xxx or better. GTX 10xx or RX 580 will also work, but may run into issues with games and higher delay. If you have an iGPU (mostly AMD Radeon Graphics or Vega) use online hosted alternative instead.
-
-
- Long answer:
 
 `Minimum:`
 
 - An integrated graphics card: AMD Radeon Vega 7 (with AMD Ryzen 5 5600G) or later; with 2GB VRAM (in FP32 mode), ~1GB VRAM (in FP16 mode, if supported). But this is NOT recommended at all and we will most likely not recommend you to download the realtime voice changer with iGPUs.
 
-- A dedicated graphics card: Nvidia GeForce GTX 900 Series or later, or AMD Radeon RX 400 series or later, or Intel Arc A300 series or later.
+- A dedicated graphics card: Nvidia GeForce GTX 900 Series or later, or AMD Radeon RX 400 series or later, or Intel Arc A300 series or later (Windows Only).
 
 `Recommended:`
 
-- A dedicated graphics card Nvidia GeForce RTX 20 Series or later, or AMD Radeon RX 5000 series or later, or Intel Arc A500 series or later.
+- A dedicated graphics card Nvidia GeForce RTX 20 Series or later, or AMD Radeon RX 5000 series or later, or Intel Arc A500 series or later (Windows Only).
 
 ***
 ##### For CPU-conversion
@@ -94,39 +91,8 @@ TLDR: don't bother. You can't run games, discord usage might be the only thing t
 If you plan on playing games at the same, do not use CPU-conversion. With CPU, the delay will be massive and your PC will not run smoothly at all. If you have a higher-end CPU you can make it work, but those that have higher end CPUs most likely also have higher end GPUs, so you should be using your GPU if possible.
 !!!
 
-***
-
-
-## Online Alternatives [Colab/Kaggle]
-
-#### Kaggle
-
-!!!danger
-It's free, but you will need a phone number verification.
-!!!
-
-[Read the Tutorial HERE](https://docs.aihub.gg/realtime-voice-changer/cloud/deiteris-w-okada-fork-kaggle/)
 
 ***
-#### Lightning.AI
-
-!!!danger
-It has free credits, but you will need a phone number verification.
-!!!
-
-[Read the Tutorial HERE](https://docs.aihub.gg/realtime-voice-changer/cloud/deiteris-w-okada-fork-lightning-ai/)
-
-***
-#### Google Colab
-
-!!!danger
-You need the Google Colab Paid Tier to run this, as it uses a Web User Interface, else you could risk getting disconnected or getting banned off Colab.
-!!!
-
-[Read the tutorial HERE](https://docs.aihub.gg/realtime-voice-changer/cloud/deiteris-w-okada-fork-colab/)
-
-***
-
 ## Virtual Audio Cable
 
 #### A Virtual Audio Cable (VAC) is what you need to use the realtime voice changer on Discord & Games.
@@ -181,7 +147,7 @@ Use Online Hosted if you have an integrated GPU (AMD Radeon Graphics ; AMD Radeo
 !!!
 ***
 
-### Download NVIDIA on Windows
+### Download for Nvidia GPUs on Windows
 
 - The latest version as of December 7th 2024 is: [nvidia-b2332 (click here to download)](https://huggingface.co/Shadicti/deiteris-Fork/blob/main/voice-changer-windows-nvidia-b2332.zip)
 
@@ -190,18 +156,18 @@ If you have a GTX 700 card or below, use AMD/Intel version instead.
 !!!
 
 ***
-### Download NVIDIA RTX 5000-series on Windows
+### Download for Nvidia RTX 5000-series GPUs on Windows
 
-- NVIDIA RTX-5000 series, the newest release of GPU's, require a separate download. You do not need it if you have an older GPU, follow the normal Nvidia link in that case. [nvidia-5000-Series (click here to download)](https://github.com/IllIlIlIllIl/voice-changer/releases/tag/b2335)
+- Nvidia RTX-5000 series, the newest release of GPU's, require a separate download. You do not need it if you have an older GPU, follow the normal Nvidia link in that case. [nvidia-5000-Series (click here to download)](https://github.com/IllIlIlIllIl/voice-changer/releases/tag/b2335)
 
 !!!danger
 Download all 3 files, then extract the .zip file, it will automatically extract ALL 3 FILES into one. Then open the `MMVCServerSIO` folder and run `MMVCServerSIO.exe` (or called `MMVCServerSIO` if you don't have extensions activated).
 !!!
 
 ***
-### Download AMD, INTEL and CPU on Windows
+### Download for AMD, INTEL GPUs and x86_64 CPUs on Windows
 
-- The latest version as of December 7th 2024 is: [dml-b2332 (click here to download)](https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-windows-amd64-dml.zip)
+- The latest version as of December 7th 2024 is: [dml-b2332 (click here to download)](https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-windows-amd64-dml.zip).  DirectML should work for any modern DirectX 12 compatible GPU.
 
 !!!danger
 Intel UHD Graphics do NOT work at this point in time. Use Online Alternative.
@@ -223,12 +189,12 @@ If nothing opens, then open a browser and type in `http://127.0.0.1:18888/`. Thi
 
 
 ***
-### Download Mac Silicon
+### Download for Mac Silicon
 
 - The latest version as of December 7th 2024 is: [arm-b2332 (click here to download)](https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-macos-arm64-cpu.tar.gz)
 
 ***
-### Download Mac Intel
+### Download for Mac Intel
 
 - The latest version as of December 7th 2024 is: [macos-amd-b2332 (click here to download)](https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-macos-amd64-cpu.tar.gz)
 
@@ -262,7 +228,7 @@ If nothing opens, then open a browser and type in `http://127.0.0.1:18888/`. Thi
 Installation of CUDA Toolkit or AMD **HIP SDK is NOT REQUIRED**. All other necessary libraries are bundled with the application.
 
 
-### Download on Nvidia on Linux
+### Download for Nvidia GPUs on Linux
 
 you need to download both these files:
 
@@ -270,7 +236,7 @@ https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-
 
 https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-linux-amd64-cuda.tar.gz.ab
 
-### Download on AMD on Linux
+### Download for AMD GPUs on Linux
 
 you need to download all these files:
 
@@ -281,7 +247,7 @@ https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-
 https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-linux-amd64-rocm.tar.gz.ac
 
 
-### Download on CPU on Linux
+### Download for x86_64 CPUs on Linux
 
 you need only this file:
 
@@ -520,7 +486,7 @@ If you run into issues, you will need to lower quality and limit your FPS, or in
 It is recommended to go up to Finding my own settings after you are comfortable with the program
 !!!
 
-+++ NVIDIA
++++ Nvidia
 
 ||| GPU
 :::content-left
@@ -722,12 +688,12 @@ This fork is a lot better for AMD GPU's compared to the original w-okada. On the
 Example: AMD RX 6650 XT lowest latency is 298 ms chunk on original w-okada. On this fork lowest latency is around 60 - 80 ms chunk
 !!!
 
-!!! Which is better for NVIDIA original w-okada or Deiteris' fork?
-Deiteris' fork is better for NVIDIA users who normally use the prebuilt w-okada version, because this version uses GPU accelerated extra compared to the original which uses CPU.
+!!! Which is better for Nvidia original w-okada or Deiteris' fork?
+Deiteris' fork is better for Nvidia users who normally use the prebuilt w-okada version, because this version uses GPU accelerated extra compared to the original which uses CPU.
 
 For the RTX GPUs the delay performance differences are minimal, but quality performance is better. For older cards like GTX or MX, this fork performs better in all aspects.
 
-Example: NVIDIA RTX 3070 on prebuilt w-okada reaches 170 - 213 ms chunk latency. On manually set up environment of w-okada reaches 42 ms chunk latency. On this fork it can reach 30 - 38 ms chunk latency, depending on the extra set. Keep in mind these are settings tested to the max, without a video game or intense operations running in the background
+Example: Nvidia RTX 3070 on prebuilt w-okada reaches 170 - 213 ms chunk latency. On manually set up environment of w-okada reaches 42 ms chunk latency. On this fork it can reach 30 - 38 ms chunk latency, depending on the extra set. Keep in mind these are settings tested to the max, without a video game or intense operations running in the background
 !!!
 
 ***

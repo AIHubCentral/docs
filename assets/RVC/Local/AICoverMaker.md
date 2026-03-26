@@ -3,7 +3,7 @@ icon: chevron-right
 order: 2000
 ---
 
-``Last update: March 14, 2026``
+``Last update: March 26, 2026``
 
 ***
 :::content-center
@@ -36,13 +36,13 @@ Also, **HuggingFace has a [Security Scanner](https://huggingface.co/docs/hub/sec
 ||| ✔️ **PROS** 
 - Automatically separates instrumentals and mixes them with converted ones
 - Currently stable
-- Faster interface
+- Supports: Nvidia GPUs, Linux, Windows
 - Automatic model upload
 - User-friendly UI
 ||| ❌ **CONS** 
 - Can't Train models
 - No Precompiled versions for Non-Windows Users
-- Doesn't support Mac nor any NON-Nvidia GPUs
+- Doesn't support: Intel GPUs, AMD GPUs, Intel Mac, Apple Silicon Mac, x86_64 CPUs, ARM64 CPUs, NPUs, Mac.
 |||
 ===
 ***
