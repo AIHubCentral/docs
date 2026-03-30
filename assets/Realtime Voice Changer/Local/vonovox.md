@@ -1,8 +1,8 @@
 ---
-icon: chevron-right
+icon: device-desktop
 order: 3000
 ---
-``Last update: March 26, 2026``
+``Last update: March 30, 2026``
 ***
 :::content-center
 ## Introduction
@@ -15,15 +15,10 @@ order: 3000
 - RVC does **NOT** mean realtime voice changer. RVC means Retrieval-based-Voice-Conversion.
 
 
-***
-#### Is Vonovox Safe?
+{{ include "rvc-safety.md" }}
 
-RVC Models are PyTorch Models, a Python library used for AI.
-PyTorch uses serialization via Pythons' Pickle Module, converting the model to a file.
-Since pickle can execute arbitrary code when loading a model, it could be theoretically used for malware, but Vonovox has a **built-in feature to prevent code execution along the model.**
-Also, **HuggingFace has a [Security Scanner](https://huggingface.co/docs/hub/security-pickle#hubs-security-scanner)** which scans for any unsafe pickle exploits and uses also ClamAV for scanning dangerous files.
-***
 
+***
 ‎      
 #### Pros & Cons :icon-tasklist:
 ==- *Learn more*
@@ -662,7 +657,6 @@ Having Multiple EQ bands provides the flexibility to precisely shape and refine 
 </div>
 
 
-***
 ###### ‎
 :::content-center
 #### `You have reached the end.`

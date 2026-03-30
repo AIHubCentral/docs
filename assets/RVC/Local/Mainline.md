@@ -1,5 +1,5 @@
 ---
-icon: chevron-right
+icon: archive
 order: 3000
 ---
 
@@ -359,7 +359,6 @@ If the training finished but the model still needed training, you don't have to 
 {{ include "troubleshooting/report-missing-issue.md" }}
 
 
-***
 ###### ‎
 :::content-center
 #### `You have reached the end.`

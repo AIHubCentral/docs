@@ -97,7 +97,6 @@ Hold down the option key on your keyboard then click the sound icon in the upper
 - It's the same thing for game too, go into its audio settings and set its input to the VAC. 
 
 
-***
 ###### ‎   ‎
 :::content-center
 #### `You have reached the end.`

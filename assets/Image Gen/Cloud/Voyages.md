@@ -287,7 +287,6 @@ Limits and features are subject to change. Always check the [**Voyages.weights.c
 </div>
 
 
-***
 ######
 :::content-center
 #### `You have reached the end.`

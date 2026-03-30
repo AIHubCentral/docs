@@ -1,5 +1,5 @@
 ---
-icon: chevron-right
+icon: ":musical_note:"
 order: 2000
 ---
 
@@ -19,15 +19,11 @@ order: 2000
 
 - It's liked for its great **UI** & **Automated AI Cover Process**, making it the easiest way to make AI Covers, as it automatically separates instrumentals & vocals, and mixes them back with the converted vocals.
 
-***
-#### Are RVC Models Safe?
 
-RVC Models are PyTorch Models, a Python library used for AI.
-PyTorch uses serialization via Pythons' Pickle Module, converting the model to a file.
-Since pickle can execute arbitrary code when loading a model, it could be theoretically used for malware, but this fork has a **built-in feature to prevent code execution along the model.**
-Also, **HuggingFace has a [Security Scanner](https://huggingface.co/docs/hub/security-pickle#hubs-security-scanner)** which scans for any unsafe pickle exploits and uses also ClamAV for scanning dangerous files.
-***
+{{ include "rvc-safety.md" }}
 
+
+***
 ‎      
 #### Pros & Cons :icon-tasklist:
 ==- *Learn more*
@@ -206,9 +202,4 @@ B. Download the latest precompiled the next time a new version comes out and rep
 {{ include "troubleshooting/report-missing-issue.md" }}
 
 
-###### ‎
-:::content-center
-#### `You have reached the end.`
-
-[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.aihub.gg/contributions/)
-:::
+{{ include "end-badge.md" }}

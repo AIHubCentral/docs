@@ -460,7 +460,6 @@ python3.10 -m venv my_praat_env && source my_praat_env/bin/activate && pip insta
 {{ include "troubleshooting/report-missing-issue.md" }}
 
 
-***
 ###### ‎
 :::content-center
 #### `You have reached the end.`

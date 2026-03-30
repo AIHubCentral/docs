@@ -1,5 +1,5 @@
 ---
-icon: chevron-right
+icon: ":green_apple:"
 order: 4000
 ---
 
@@ -23,15 +23,10 @@ order: 4000
 - Applio has [it's own Applio Docs](https://docs.applio.org/), which may have more info about the tool.
 
 
-***
-#### Are RVC Models Safe?
+{{ include "rvc-safety.md" }}
 
-RVC Models are PyTorch Models, a Python library used for AI.
-PyTorch uses serialization via Pythons' Pickle Module, converting the model to a file.
-Since pickle can execute arbitrary code when loading a model, it could be theoretically used for malware, but this fork has a **built-in feature to prevent code execution along the model.**
-Also, **HuggingFace has a [Security Scanner](https://huggingface.co/docs/hub/security-pickle#hubs-security-scanner)** which scans for any unsafe pickle exploits and uses also ClamAV for scanning dangerous files.
-***
 
+***
 ‎      
 #### Pros & Cons :icon-tasklist:
 ==- *Learn more*
@@ -858,10 +853,4 @@ Then you'll be able to see the plugin in the **Plugins** tab.
 </div>
 
 
-***
-###### ‎
-:::content-center
-#### `You have reached the end.`
-
-[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.aihub.gg/contributions/)
-:::
+{{ include "end-badge.md" }}

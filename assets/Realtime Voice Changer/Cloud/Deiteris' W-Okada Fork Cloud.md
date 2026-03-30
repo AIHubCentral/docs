@@ -1,5 +1,5 @@
 ---
-icon: ":gear:"
+icon: archive
 order: 1000
 ---
 

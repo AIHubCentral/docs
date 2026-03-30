@@ -253,7 +253,6 @@ order: 100
 - Doing it this way is faster too.
 
 
-***
 ###### ‎
 :::content-center
 #### `You have reached the end.`

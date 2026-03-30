@@ -1,8 +1,8 @@
 ---
-icon: chevron-right
+icon: ":rocket:"
 order: 4000
 ---
-``Last update: March 26, 2026``
+``Last update: March 30, 2026``
 ***
 :::content-center
 ## Introduction
@@ -16,16 +16,11 @@ order: 4000
 
 - RVC does **NOT** mean realtime voice changer. RVC means Retrieval-based-Voice-Conversion.
 
-***
-#### Is The W-Okada Tg-Develop's Fork Safe?
 
-RVC Models are PyTorch Models, a Python library used for AI.
-PyTorch uses serialization via Pythons' Pickle Module, converting the model to a file.
-Since pickle can execute arbitrary code when loading a model, it could be theoretically used for malware, but Wokada Tg-Develop's Fork has a **built-in feature to prevent code execution along the model.**
-Also, **HuggingFace has a [Security Scanner](https://huggingface.co/docs/hub/security-pickle#hubs-security-scanner)** which scans for any unsafe pickle exploits and uses also ClamAV for scanning dangerous files.
+{{ include "rvc-safety.md" }}
+
 
 ***
-
 ‎      
 #### Pros & Cons :icon-tasklist:
 ==- *Learn more*
@@ -811,15 +806,9 @@ If you see a warning that client audio is unavailable or that you must select a 
 
 Because it uses a Web User Interface (WebUI) coded in JavaScript & TypeScript, the majority of (Open Source) AI programs are designed to run on the browser (even tho usually using things like Gradio) since it can be used both on cloud and locally. The original wokada also ran on a WebUI, just that it made it's own window.
 
-***
-### What browser should I use?
+{{ include "faq/choosing-web-browsers.md" }}
 
-It's better you try and test, some people had issues on Chrome, some others on Firefox, it might depend on the settings you use and also Java/Type Script having issues. The browser that usually is reported by most people to have issues is OperaGX, which is why we don't suggest it much.
-
-***
-### Why are most YouTube (Video) Tutorials old? Is there going to be an updated one?
-
-YouTube Tutorials take way more time to make, and get outdated easily in this case, as AI progresses fast and continues to change in better, with more different settings and versions. Written guides are easier to update, since you don't have to remake an entire video. It's unknown if we will ever release a video since they easily get outdated, but if we will, it will be linked inside of this guide.
+{{ include "faq/old-video-tutorials.md" }}
 
 ***
 ### Do I need an extremely expensive mic for good quality?
@@ -832,7 +821,6 @@ RVC works by downsampling your audio voice to 16khz because f0 estimators only w
 RVC Voice Models need to be trained on something, so the models themselves can't be unique, but you can use the [Merge Lab](https://docs.aihub.gg/realtime-voice-changer/local/tg-develops-w-okada-fork/#merging-models-merge-lab) to create a new unique merged model.
 
 
-***
 ###### ‎
 :::content-center
 #### `You have reached the end.`

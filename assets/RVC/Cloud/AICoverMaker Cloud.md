@@ -130,9 +130,5 @@ Please use our [Inference Settings guide](https://docs.aihub.gg/rvc/resources/in
 
 **TTA** - results in longer separation time, it gives a little better SDR score but hard to tell if it's really audible in most cases". it “means "test time augmentation", it will do 3 passes on the audio file instead of 1. 1 pass with be with original audio. 1 will be with inverted stereo (L becomes R, R become L). 1 will be with phase inverted and then results are averaged for final output. 
 
-***
-:::content-center
-#### `You have reached the end.
 
-`[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.aihub.gg/contributions/)
-:::
+{{ include "end-badge.md" }}

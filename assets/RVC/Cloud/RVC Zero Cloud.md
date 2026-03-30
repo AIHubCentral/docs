@@ -206,7 +206,6 @@ There's an upload size limit for your model and audio files. If you run into thi
 
 {{ include "troubleshooting/report-missing-issue.md" }}
 
-***
 
 ###### ‎   ‎
 :::content-center

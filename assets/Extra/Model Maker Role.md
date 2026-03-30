@@ -183,7 +183,6 @@ You can attach more samples when you repost the model to ``#voice-models``.
 
 - If your model gets approved, you can then repost the model (& future models) to the ``#voice-models`` forum.
 
-***
 ###### ‎
 :::content-center
 #### `You have reached the end.`

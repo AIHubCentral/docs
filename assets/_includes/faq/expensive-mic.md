@@ -1,0 +1,7 @@
+### Do I need an extremely expensive mic for good quality?
+
+No. As discussed in our [AI Hub Discord server](https://discord.com/channels/1159260121998827560/1159290161683767298/1352325982689951765) (and [here](https://discord.com/channels/1159260121998827560/1159290161683767298/1356265862704926907)), RVC works by downsampling your input audio to 16kHz because pitch (f0) estimators only operate at that sample rate. After that, the model outputs the results using its original trained sample rate (without any upscaling).
+
+Because of this 16kHz bottleneck during inference, the subtle nuances captured by a very expensive microphone are largely discarded. A decent, standard microphone will do the job perfectly well.
+
+Furthermore, spending excessive amounts on audio peripherals often yields diminishing returns. For example, a [scientific analysis featured on Tom's Hardware](https://www.tomshardware.com/pc-components/sound-cards/comparison-of-usd4-000-boutique-audio-cable-to-usd7-amazon-basics-cable-shows-audiophiles-waste-a-lot-of-money-scientific-audio-equipment-analysis-with-analyzer-shows-no-difference-in-quality) showed no measurable difference in audio quality between a $4,000 boutique audio cable and a $7 Amazon Basics cable. Focus on finding a quiet environment rather than buying boutique gear!

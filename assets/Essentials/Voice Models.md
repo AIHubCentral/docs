@@ -330,7 +330,7 @@ c. Tap on `Commit changes to main` & the model will begin to upload.
 
     <img src="../hfupload-img/5.png" alt="image" width="610" height="auto">
            
-***
+
 ###### ‎
 :::content-center
 #### `You have reached the end.`

@@ -272,7 +272,6 @@ Because this workflow relies directly on executing notebook cells rather than a 
 
 {{ include "troubleshooting/report-missing-issue.md" }}
 
-***
 
 ###### ‎   ‎
 :::content-center
