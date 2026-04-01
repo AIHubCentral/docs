@@ -3,7 +3,7 @@ icon: archive
 order: 1000
 ---
 
-``Last update: March 24, 2026``
+``Last update: April 1, 2026``
 
 ***
 :::content-center
@@ -120,7 +120,15 @@ Now that you have the Web UI running, the rest of the process is **identical to 
 
 ***
 :::content-center
-#### `You have reached the end.`
-
-[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.aihub.gg/contributions/)
+## Troubleshooting
 :::
+
+{{ include "troubleshooting/wokada-cloud-logs.md" }}
+
+!!!info General Troubleshooting
+Because the web interface and core server function the exact same way, most common errorsare identical to the local version.
+
+[!button text="View Local General Troubleshooting" icon="tools" variant="secondary"](https://docs.aihub.gg/realtime-voice-changer/local/tg-develops-w-okada-fork/#troubleshooting)
+!!!
+
+{{ include "end-badge.md" }}

@@ -2,7 +2,7 @@
 icon: archive
 order: 1000
 ---
-``Last update: March 30,2026``
+``Last update: April 1,2026``
 ***
 :::content-center
 ## Introduction
@@ -809,6 +809,8 @@ You did not match the sample rate of your virtual audio cable to your microphone
 :::
 
 {{ include "troubleshooting/hags-warning.md" }}
+
+{{ include "troubleshooting/wokada-local-logs.md" }}
 
 ==- :icon-download: Failed to download or verify
 - After you start the program for the first time and it finished downloading files, but you have slow/unstable internet connection it might say Failed to download or verify: ... followed by "Press Enter to continue" at the end, then the pretrain download failed. You have 2 methods to fix it.
