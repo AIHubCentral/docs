@@ -77,6 +77,8 @@ When submitting a pull request, please ensure:
 ## Current To-Do List :icon-checklist:
 Looking for something to work on? Here is our current roadmap of things we need help adding or fixing:
 - General Revamps
+- Remove/Archive Weights.gg/.com related things after its shutdown on March 31st 2026.
+- Add Troubleshooting for Obscure Wokadas Issue with other Audio Related Software like the Traktor Kontrol Pro 4 software suite.
 - Add some useful r3gm tools like: AICoverGen [CPU](https://huggingface.co/spaces/r3gm/AICoverGen_old_stable_cpu)/[ZeroGPU](https://huggingface.co/spaces/r3gm/AICoverGen)/[Colab](https://github.com/R3gm/AICoverGen?tab=readme-ov-file#aicovergen), [UltimateVocalRemoverWebUI CPU](https://huggingface.co/spaces/r3gm/Ultimate-Vocal-Remover-WebUI), Audio Separator [ZeroGPU](https://huggingface.co/spaces/r3gm/Audio_separator)/[Colab](https://github.com/R3gm/Audio_separator_ui?tab=readme-ov-file#audio-separator), [RVC Voice Model Finder](https://huggingface.co/spaces/r3gm/Model_Voice_Finder). Need to check which is still working.
 - Add the other [Mainline Download methods](<https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI/blob/main/docs/en/README.en.md>) (AMD/Intel Windows, AMD Linux, Intel Linux) and more info https://discord.com/channels/1159260121998827560/1159290096458149938/1403086698895638570, https://discord.com/channels/1159260121998827560/1159290096458149938/1419361265314431067.
 - Add [Dione Launcher](https://getdione.app/explore), especially as an alternative way to install Applio.
@@ -86,7 +88,6 @@ Looking for something to work on? Here is our current roadmap of things we need 
 - Add Use Via API instructions for RVC Zero Cloud and ApplioX HuggingFace Spaces (not needed, developers only).
 - See if I can unify the tunnels setup in cloud guides through Retype include template.
 - Adapt all guides in the #guides discord channel to the Docs, to replace that channel.
-- Remove/Archive Weights.gg/.com related things after its shutdown on March 31st 2026.
 
 ---
 
@@ -96,8 +97,5 @@ We value open and transparent communication.
 - **Discord:** [AI HUB](https://discord.gg/aihub)
 - **Twitter:**[@AiHubCentral](https://twitter.com/AiHubCentral)
 
-***
-###### ‎
-:::content-center
-#### `You have reached the end.`
-:::
+
+{{ include "end-badge.md" }}
