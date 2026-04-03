@@ -3,7 +3,7 @@ icon: ":green_apple:"
 order: 4000
 ---
 
-``Last update: March 26, 2026``
+``Last update: April 4, 2026``
 
 ***
 :::content-center
@@ -12,7 +12,7 @@ order: 4000
 :::
 
 :::content-center
-## Introduction ‎
+## Introduction
 :::
 - Applio is a [Fork</u>](https://docs.aihub.gg/essentials/whats-rvc/#forks) of [Original/Mainline RVC](https://docs.aihub.gg/rvc/local/mainline/), developed by the [IA Hispano</u>](https://github.com/IAHispano) team.
 
@@ -27,7 +27,6 @@ order: 4000
 
 
 ***
-‎      
 #### Pros & Cons :icon-tasklist:
 ==- *Learn more*
 !!! *The pros & cons are subjective to your necessities.*        
@@ -53,18 +52,10 @@ order: 4000
 
 Check if you meet the [requirements](https://docs.aihub.gg/essentials/whats-rvc/#what-are-the-requirements-for-rvc-locally/) to run it locally.
 
-If you don't meet the requirements, there are 4 Cloud Versions:
-- [Applio UI Kaggle](https://docs.aihub.gg/rvc/cloud/applio-kaggle/)
-- [Applio UI Google Colab](https://docs.aihub.gg/rvc/cloud/applio-colab/)
-- [Applio NO UI Google Colab](https://docs.aihub.gg/rvc/cloud/applio-no-ui-colab/)
-- [Applio UI Lightning.AI](https://docs.aihub.gg/rvc/cloud/applio-lightning-ai/)
 
-
-###### ‎
 :::content-center
 ## Download & Installation :icon-download:
 :::
-###### ‎
 !!!warning Before Downloading:
 - Don't put it in a folder with privileged access.
 - Don't run the run-install.bat as an administrator.
