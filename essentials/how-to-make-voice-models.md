@@ -1,0 +1,43 @@
+# :icon-dependabot:  How to Make Voice Models
+
+``Last update: July 17, 2025``
+
+#### - *Simple model training tutorial, using [RVC](https://docs.aihub.gg/essentials/whats-rvc/)* -
+***
+###### ‎ 
+### 1. Prepare dataset
+- ***In the context of RVC***, the dataset is an **audio** file containing the **voice** the model will replicate. It can be either speaking or singing.
+
+- For the best results, having a **clean** dataset is crucial, so take the time to remove any undesired noises.
+       
+- #### [Learn how</u>](https://docs.aihub.gg/rvc/resources/dataset-isolation/).
+***
+###### ‎ 
+### 2. Set up RVC
+- With your dataset ready, it's time to set up RVC to train the model.   
+
+- There are plenty of versions of RVC, but these are the **best** ones for beginners. Pick according to your needs:
+
+    #### :icon-device-desktop: ‎ [Locally](https://docs.aihub.gg/rvc/local/applio/)
+
+    #### :icon-cloud: ‎ [On the cloud](https://docs.aihub.gg/rvc/cloud/applio-colab/)
+###### ‎
+!!!warning
+For local users, first ensure you meet the [local minimum requirements](https://docs.aihub.gg/essentials/whats-rvc/#what-are-the-requirements-for-rvc-locally).
+!!!
+***
+###### ‎ 
+### 3. Train the model
+- Before you start training, we inform you that the training guides are oriented around using [TensorBoard](https://docs.aihub.gg/rvc/resources/training/#tensorboard). Read about it & install it after setting up RVC.
+
+- Good luck & remember to be patient! As this won't be an instant process.
+
+***
+ ‎
+:::content-center
+#### `You have reached the end.`
+
+[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.aihub.gg/contributions/)
+::: 
+‎  
+***

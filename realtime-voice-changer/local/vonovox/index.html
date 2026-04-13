@@ -7,10 +7,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.4.0.828538668217">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.3.829389434285">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.4.0">
+    <meta name="generator" content="Retype 4.5.3">
 
     <!-- Primary Meta Tags -->
     <title>Vonovox</title>
@@ -19,6 +19,7 @@
 
     <!-- Canonical -->
     <link rel="canonical" href="https://docs.aihub.gg/realtime-voice-changer/local/vonovox/">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://docs.aihub.gg/sitemap.xml">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
@@ -34,15 +35,18 @@
     <meta name="twitter:title" content="Vonovox">
     <meta name="twitter:description" content="Last update: March 30, 2026">
 
+    <!-- Alternate Markdown -->
+    <link rel="alternate" type="text/markdown" href="https://docs.aihub.gg/realtime-voice-changer/local/vonovox.md">
+
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../../img/aihub-favicon.png" />
-    <link href="../../../resources/css/retype.css?v=4.4.0.828538668217" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=4.5.3.829389434285" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.4.0.828538668217" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../../resources/js/retype.js?v=4.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.4.0.828538668217" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=4.4.0.828538668217" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.5.3.829389434285" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/retype.js?v=4.5.3" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.5.3.829389434285" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=4.5.3.829389434285" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -90,7 +94,7 @@
                         <li class="mr-6">
                             <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://github.com/AIHubCentral/docs">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0 mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
-                                    <path d="M10.303 16.652c-2.837-.344-4.835-2.385-4.835-5.028 0-1.074.387-2.235 1.031-3.008-.279-.709-.236-2.214.086-2.837.86-.107 2.02.344 2.708.967.816-.258 1.676-.386 2.728-.386 1.053 0 1.913.128 2.686.365.666-.602 1.848-1.053 2.708-.946.3.581.344 2.085.064 2.815.688.817 1.053 1.913 1.053 3.03 0 2.643-1.998 4.641-4.877 5.006.73.473 1.224 1.504 1.224 2.686v2.235c0 .644.537 1.01 1.182.752 3.889-1.483 6.94-5.372 6.94-10.185 0-6.081-4.942-11.044-11.022-11.044-6.081 0-10.98 4.963-10.98 11.044a10.84 10.84 0 0 0 7.112 10.206c.58.215 1.139-.172 1.139-.752v-1.719a2.768 2.768 0 0 1-1.032.215c-1.418 0-2.256-.773-2.857-2.213-.237-.58-.495-.924-.989-.988-.258-.022-.344-.129-.344-.258 0-.258.43-.451.86-.451.623 0 1.16.386 1.719 1.181.43.623.881.903 1.418.903.537 0 .881-.194 1.375-.688.365-.365.645-.687.903-.902Z"/>
+                                    <path d="M10.226 17.284c-2.965-.36-5.054-2.493-5.054-5.256 0-1.123.404-2.336 1.078-3.144-.292-.741-.247-2.314.09-2.965.898-.112 2.111.36 2.83 1.01.853-.269 1.752-.404 2.853-.404 1.1 0 1.999.135 2.807.382.696-.629 1.932-1.1 2.83-.988.315.606.36 2.179.067 2.942.72.854 1.101 2 1.101 3.167 0 2.763-2.089 4.852-5.098 5.234.763.494 1.28 1.572 1.28 2.807v2.336c0 .674.561 1.056 1.235.786 4.066-1.55 7.255-5.615 7.255-10.646C23.5 6.188 18.334 1 11.978 1 5.62 1 .5 6.188.5 12.545c0 4.986 3.167 9.12 7.435 10.669.606.225 1.19-.18 1.19-.786V20.63a2.9 2.9 0 0 1-1.078.224c-1.483 0-2.359-.808-2.987-2.313-.247-.607-.517-.966-1.034-1.033-.27-.023-.359-.135-.359-.27 0-.27.45-.471.898-.471.652 0 1.213.404 1.797 1.235.45.651.921.943 1.483.943.561 0 .92-.202 1.437-.719.382-.381.674-.718.944-.943"/>
                                 </svg>
                                 <span>GitHub</span>
                             </a>
@@ -163,7 +167,7 @@
                                 <li class="mr-6">
                                     <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://github.com/AIHubCentral/docs">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0 mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
-                                            <path d="M10.303 16.652c-2.837-.344-4.835-2.385-4.835-5.028 0-1.074.387-2.235 1.031-3.008-.279-.709-.236-2.214.086-2.837.86-.107 2.02.344 2.708.967.816-.258 1.676-.386 2.728-.386 1.053 0 1.913.128 2.686.365.666-.602 1.848-1.053 2.708-.946.3.581.344 2.085.064 2.815.688.817 1.053 1.913 1.053 3.03 0 2.643-1.998 4.641-4.877 5.006.73.473 1.224 1.504 1.224 2.686v2.235c0 .644.537 1.01 1.182.752 3.889-1.483 6.94-5.372 6.94-10.185 0-6.081-4.942-11.044-11.022-11.044-6.081 0-10.98 4.963-10.98 11.044a10.84 10.84 0 0 0 7.112 10.206c.58.215 1.139-.172 1.139-.752v-1.719a2.768 2.768 0 0 1-1.032.215c-1.418 0-2.256-.773-2.857-2.213-.237-.58-.495-.924-.989-.988-.258-.022-.344-.129-.344-.258 0-.258.43-.451.86-.451.623 0 1.16.386 1.719 1.181.43.623.881.903 1.418.903.537 0 .881-.194 1.375-.688.365-.365.645-.687.903-.902Z"/>
+                                            <path d="M10.226 17.284c-2.965-.36-5.054-2.493-5.054-5.256 0-1.123.404-2.336 1.078-3.144-.292-.741-.247-2.314.09-2.965.898-.112 2.111.36 2.83 1.01.853-.269 1.752-.404 2.853-.404 1.1 0 1.999.135 2.807.382.696-.629 1.932-1.1 2.83-.988.315.606.36 2.179.067 2.942.72.854 1.101 2 1.101 3.167 0 2.763-2.089 4.852-5.098 5.234.763.494 1.28 1.572 1.28 2.807v2.336c0 .674.561 1.056 1.235.786 4.066-1.55 7.255-5.615 7.255-10.646C23.5 6.188 18.334 1 11.978 1 5.62 1 .5 6.188.5 12.545c0 4.986 3.167 9.12 7.435 10.669.606.225 1.19-.18 1.19-.786V20.63a2.9 2.9 0 0 1-1.078.224c-1.483 0-2.359-.808-2.987-2.313-.247-.607-.517-.966-1.034-1.033-.27-.023-.359-.135-.359-.27 0-.27.45-.471.898-.471.652 0 1.213.404 1.797 1.235.45.651.921.943 1.483.943.561 0 .92-.202 1.437-.719.382-.381.674-.718.944-.943"/>
                                         </svg>
                                         <span>GitHub</span>
                                     </a>
@@ -186,9 +190,11 @@
 <div class="flex">
     <div id="retype-main" class="min-w-0 p-4 grow md:px-16">
         <main class="relative pb-12 lg:pt-2">
-            <div class="retype-markdown" id="retype-content">
+            <div class="relative retype-markdown" id="retype-content">
                 <!-- Rendered if sidebar right is enabled -->
                 <div id="retype-sidebar-right-toggle"></div>
+                <doc-page-actions></doc-page-actions>
+
                 <!-- Page content  -->
 <h1 id="vonovox">Vonovox</h1>
 <p><code translate="no" v-pre>Last update: March 30, 2026</code></p>
@@ -196,11 +202,14 @@
 <div class="content-center"><h2 id="introduction">Introduction</h2>
 </div>
 <ul>
-<li><p>Vonovox is a realtime voice changer that uses RVC for its conversion.</p>
+<li>
+<p>Vonovox is a realtime voice changer that uses RVC for its conversion.</p>
 </li>
-<li><p>Vonovox was developed by dr87.</p>
+<li>
+<p>Vonovox was developed by dr87.</p>
 </li>
-<li><p>RVC does <strong>NOT</strong> mean realtime voice changer. RVC means Retrieval-based-Voice-Conversion.</p>
+<li>
+<p>RVC does <strong>NOT</strong> mean realtime voice changer. RVC means Retrieval-based-Voice-Conversion.</p>
 </li>
 </ul>
 <hr>
@@ -312,9 +321,11 @@ Also, <strong>HuggingFace has a <a href="https://huggingface.co/docs/hub/securit
     </div>
 </div>
 <ul>
-<li><p>Run <code translate="no" v-pre>setup64</code>, not 64a, after extracting the zip to a new folder</p>
+<li>
+<p>Run <code translate="no" v-pre>setup64</code>, not 64a, after extracting the zip to a new folder</p>
 </li>
-<li><p>After installing the Virtual Cable, it changes your default audio system. Click <strong>Yes</strong> when it asks you to open the audio device settings (or press WIN+R, type &quot;mmsys.cpl&quot; if you closed it already), and change your <strong>Recording</strong> and <strong>Playback</strong> devices back to your usual devices. Same for communications device aswell (right click -&gt; set as default communication device)</p>
+<li>
+<p>After installing the Virtual Cable, it changes your default audio system. Click <strong>Yes</strong> when it asks you to open the audio device settings (or press WIN+R, type &quot;mmsys.cpl&quot; if you closed it already), and change your <strong>Recording</strong> and <strong>Playback</strong> devices back to your usual devices. Same for communications device aswell (right click -&gt; set as default communication device)</p>
 </li>
 </ul>
 <hr>
@@ -360,9 +371,11 @@ Also, <strong>HuggingFace has a <a href="https://huggingface.co/docs/hub/securit
         <div class="pr-5 ml-3 w-full">
             <h5>Before Downloading:</h5>
 <ul>
-<li><p>Make sure you have the <a href="https://aka.ms/vs/16/release/vc_redist.x64.exe">Microsoft Visual C++ Redistributable Package</a>, if you don&#x27;t already.</p>
+<li>
+<p>Make sure you have the <a href="https://aka.ms/vs/16/release/vc_redist.x64.exe">Microsoft Visual C++ Redistributable Package</a>, if you don&#x27;t already.</p>
 </li>
-<li><p>It&#x27;s suggested to use <a href="https://www.7-zip.org/">7zip</a> or <a href="https://www.win-rar.com/download.html">WinRAR</a> for extracting / unzipping such large files.</p>
+<li>
+<p>It&#x27;s suggested to use <a href="https://www.7-zip.org/">7zip</a> or <a href="https://www.win-rar.com/download.html">WinRAR</a> for extracting / unzipping such large files.</p>
 </li>
 </ul>
         </div>
@@ -391,23 +404,30 @@ Also, <strong>HuggingFace has a <a href="https://huggingface.co/docs/hub/securit
     </div>
 </div>
 <ul>
-<li><p>Download the Latest <a href="https://huggingface.co/dr87/vonovox/tree/main/">Precompiled Version of Vonovox</a>. Be aware that there could be also some Free Beta Versions there.</p>
+<li>
+<p>Download the Latest <a href="https://huggingface.co/dr87/vonovox/tree/main/">Precompiled Version of Vonovox</a>. Be aware that there could be also some Free Beta Versions there.</p>
 </li>
-<li><p>After downloading, extract the zip file.</p>
+<li>
+<p>After downloading, extract the zip file.</p>
 </li>
 </ul>
 <hr>
 <h3 id="manual-setup-for-nvidia-gpus-on-windows">Manual Setup for Nvidia GPUs on Windows</h3>
 <ul>
-<li><p>Go to Vonovox&#x27;s <a href="https://github.com/dr87/Vonovox/releases">Github Repository</a> and download the Latest Stable Release Source Code.</p>
+<li>
+<p>Go to Vonovox&#x27;s <a href="https://github.com/dr87/Vonovox/releases">Github Repository</a> and download the Latest Stable Release Source Code.</p>
 </li>
-<li><p>You could also <em>optionally</em> get access to <em>Beta</em> / Early Access versions via <a href="https://www.patreon.com/dr87/membership">Becoming a Vonovox Supporter (and also gaining Premium Effects)</a> or checking for any Free Versions in the <a href="https://discord.gg/c9mbMGxEbR">Vonovox Official Discord Server</a>. They may have bugs, fixes or settings/options not explained in the guide yet.</p>
+<li>
+<p>You could also <em>optionally</em> get access to <em>Beta</em> / Early Access versions via <a href="https://www.patreon.com/dr87/membership">Becoming a Vonovox Supporter (and also gaining Premium Effects)</a> or checking for any Free Versions in the <a href="https://discord.gg/c9mbMGxEbR">Vonovox Official Discord Server</a>. They may have bugs, fixes or settings/options not explained in the guide yet.</p>
 </li>
-<li><p>After downloading, extract the zip file. Open the folder and run <code translate="no" v-pre>setup.bat</code>.</p>
+<li>
+<p>After downloading, extract the zip file. Open the folder and run <code translate="no" v-pre>setup.bat</code>.</p>
 </li>
-<li><p>Vonovox will start downloading everything it needs to run. Be patient as it can take up to some minutes to download everything it needs depending on your internet speed.</p>
+<li>
+<p>Vonovox will start downloading everything it needs to run. Be patient as it can take up to some minutes to download everything it needs depending on your internet speed.</p>
 </li>
-<li><p>Once it&#x27;s done downloading everything it will display <code translate="no" v-pre>Setup complete!</code> in the command line.</p>
+<li>
+<p>Once it&#x27;s done downloading everything it will display <code translate="no" v-pre>Setup complete!</code> in the command line.</p>
 </li>
 </ul>
 <hr>
@@ -496,37 +516,51 @@ runtime\python.exe -m pip install torch torchaudio torchvision --index-url https
 <hr>
 <h4 id="per-model-settings"><code translate="no" v-pre>Per Model Settings:</code></h4>
 <ul>
-<li><p><code translate="no" v-pre>Embedder:</code> Select between contentvec or spin trained models. Most current models are trained on contentvec. Make sure you read the model&#x27;s description to find out what embedder it uses. Spin has kinda better breaths, more robust to noise, has some training related differences, but it&#x27;s less used and newer.</p>
+<li>
+<p><code translate="no" v-pre>Embedder:</code> Select between contentvec or spin trained models. Most current models are trained on contentvec. Make sure you read the model&#x27;s description to find out what embedder it uses. Spin has kinda better breaths, more robust to noise, has some training related differences, but it&#x27;s less used and newer.</p>
 </li>
-<li><p><code translate="no" v-pre>Index File:</code> Toggle and select/remove an index file (which in RVC&#x27;s context, it contains the Trained Model Accent) to apply a specific trained accent to the model.</p>
+<li>
+<p><code translate="no" v-pre>Index File:</code> Toggle and select/remove an index file (which in RVC&#x27;s context, it contains the Trained Model Accent) to apply a specific trained accent to the model.</p>
 </li>
-<li><p><code translate="no" v-pre>Output volume:</code> Controls how loud the output volume is.</p>
+<li>
+<p><code translate="no" v-pre>Output volume:</code> Controls how loud the output volume is.</p>
 </li>
-<li><p><code translate="no" v-pre>Pitch:</code> This is the pitch. Going into negative will make it lower pitch (masculine), going higher will make it higher pitch (feminine). If you have a male voice using a female voice, aim for 10 - 14, this depends on your voice, try around those numbers until you find a sweet spot.</p>
+<li>
+<p><code translate="no" v-pre>Pitch:</code> This is the pitch. Going into negative will make it lower pitch (masculine), going higher will make it higher pitch (feminine). If you have a male voice using a female voice, aim for 10 - 14, this depends on your voice, try around those numbers until you find a sweet spot.</p>
 </li>
-<li><p><code translate="no" v-pre>Formant:</code> Alters harmonic frequencies and changes the voice timbre without affecting the pitch (AKA Formant Shift).</p>
+<li>
+<p><code translate="no" v-pre>Formant:</code> Alters harmonic frequencies and changes the voice timbre without affecting the pitch (AKA Formant Shift).</p>
 </li>
-<li><p><code translate="no" v-pre>Index Rate:</code> This controls the accent of the voice model. In most cases, using Index on Realtime Voice Changer can add realism if you speak the language the model was trained in. If you have a heavy foreign accent, you may use this at a low rate. Beware, this increases CPU usage.</p>
+<li>
+<p><code translate="no" v-pre>Index Rate:</code> This controls the accent of the voice model. In most cases, using Index on Realtime Voice Changer can add realism if you speak the language the model was trained in. If you have a heavy foreign accent, you may use this at a low rate. Beware, this increases CPU usage.</p>
 </li>
 </ul>
 <hr>
 <h4 id="audio-device-settings"><code translate="no" v-pre>Audio Device Settings:</code></h4>
 <ul>
-<li><p><code translate="no" v-pre>Audio Backend:</code> Use WASAPI unless you have an ASIO interface and know what you&#x27;re doing.</p>
+<li>
+<p><code translate="no" v-pre>Audio Backend:</code> Use WASAPI unless you have an ASIO interface and know what you&#x27;re doing.</p>
 </li>
-<li><p><code translate="no" v-pre>Exclusive Mode:</code> WASAPI exclusive mode. It has much lower latency but the issue is if you don&#x27;t lock your gpu clocks with something like msi afterburner, it will pop nonstop, because it needs something like a ~45-50ms gpu delay max to function.</p>
+<li>
+<p><code translate="no" v-pre>Exclusive Mode:</code> WASAPI exclusive mode. It has much lower latency but the issue is if you don&#x27;t lock your gpu clocks with something like msi afterburner, it will pop nonstop, because it needs something like a ~45-50ms gpu delay max to function.</p>
 </li>
-<li><p><code translate="no" v-pre>Input/Output Device:</code> Select your physical microphone as Input and your Virtual Audio Cable (or desired output) as Output.</p>
+<li>
+<p><code translate="no" v-pre>Input/Output Device:</code> Select your physical microphone as Input and your Virtual Audio Cable (or desired output) as Output.</p>
 </li>
-<li><p><code translate="no" v-pre>Sample Rate:</code> Only 48000Hz is available. This is only the outgoing sample rate that matches your VAC line - It is compatible with 32000, 40000, or 48000 models.</p>
+<li>
+<p><code translate="no" v-pre>Sample Rate:</code> Only 48000Hz is available. This is only the outgoing sample rate that matches your VAC line - It is compatible with 32000, 40000, or 48000 models.</p>
 </li>
-<li><p><code translate="no" v-pre>F0 Method:</code> Pitch extraction algorithm. Both RMVPE (for the best precision and robustness) and FCPE (for less precision &amp; robustness but lower delay) are good options. There&#x27;s a recently new Swift option which might be more precise than RMVPE.</p>
+<li>
+<p><code translate="no" v-pre>F0 Method:</code> Pitch extraction algorithm. Both RMVPE (for the best precision and robustness) and FCPE (for less precision &amp; robustness but lower delay) are good options. There&#x27;s a recently new Swift option which might be more precise than RMVPE.</p>
 </li>
-<li><p><code translate="no" v-pre>Pitch Smoothing Factor:</code> Pitch smoothing will dampen pitch changes. It still follows the exact curve of the f0 predictor allowing it to maintain 100% accuracy, just to a lower magnitude. This allows normal speaking voices to have better stability.</p>
+<li>
+<p><code translate="no" v-pre>Pitch Smoothing Factor:</code> Pitch smoothing will dampen pitch changes. It still follows the exact curve of the f0 predictor allowing it to maintain 100% accuracy, just to a lower magnitude. This allows normal speaking voices to have better stability.</p>
 </li>
-<li><p><code translate="no" v-pre>GPU Delay:</code> Displays the current processing latency in milliseconds.</p>
+<li>
+<p><code translate="no" v-pre>GPU Delay:</code> Displays the current processing latency in milliseconds.</p>
 </li>
-<li><p><code translate="no" v-pre>Input volume:</code> Controls how loud the input volume is.</p>
+<li>
+<p><code translate="no" v-pre>Input volume:</code> Controls how loud the input volume is.</p>
 </li>
 </ul>
 <hr>
@@ -564,21 +598,27 @@ runtime\python.exe -m pip install torch torchaudio torchvision --index-url https
     </div>
 </div>
 <ul>
-<li><p><code translate="no" v-pre>Smart SINE:</code> It works by not processing noise like a filter, it&#x27;s best to leave it on. This feature replaces the old Silero VAD. Smart SINE is a smart algorithm that will disable the SINE generator&#x27;s ability to translate noise to speech.</p>
+<li>
+<p><code translate="no" v-pre>Smart SINE:</code> It works by not processing noise like a filter, it&#x27;s best to leave it on. This feature replaces the old Silero VAD. Smart SINE is a smart algorithm that will disable the SINE generator&#x27;s ability to translate noise to speech.</p>
 </li>
-<li><p><code translate="no" v-pre>RNNoise Reduction:</code> Greatly filters input background noise for very minimum latency. This can mitigate the chances of Vonovox trying to infer on noise.</p>
+<li>
+<p><code translate="no" v-pre>RNNoise Reduction:</code> Greatly filters input background noise for very minimum latency. This can mitigate the chances of Vonovox trying to infer on noise.</p>
 </li>
-<li><p><code translate="no" v-pre>AP-BWE 48k Upscaler:</code> This is an upscaler that extends the bandwidth of speech by adding missing frequency information up to 48k.</p>
+<li>
+<p><code translate="no" v-pre>AP-BWE 48k Upscaler:</code> This is an upscaler that extends the bandwidth of speech by adding missing frequency information up to 48k.</p>
 </li>
 </ul>
 <hr>
 <h4 id="voice-settings"><code translate="no" v-pre>Voice Settings:</code></h4>
 <ul>
-<li><p><code translate="no" v-pre>Block Size:</code> Critical setting. The optimal block size is the lowest you can get without audio being choppy. Listen to your output. Use the GPU Delay to adjust it.</p>
+<li>
+<p><code translate="no" v-pre>Block Size:</code> Critical setting. The optimal block size is the lowest you can get without audio being choppy. Listen to your output. Use the GPU Delay to adjust it.</p>
 </li>
-<li><p><code translate="no" v-pre>Extra Time:</code> Gives the model more or less context to work with. Recommended 2.0 for best quality/latency ratio.</p>
+<li>
+<p><code translate="no" v-pre>Extra Time:</code> Gives the model more or less context to work with. Recommended 2.0 for best quality/latency ratio.</p>
 </li>
-<li><p><code translate="no" v-pre>Crossfade Duration:</code> Controls how smoothly the AI stitches different processed parts &quot;chunks&quot; of your voice back together. 0.08-0.1 for fastest voice, 0.15 for improved quality.</p>
+<li>
+<p><code translate="no" v-pre>Crossfade Duration:</code> Controls how smoothly the AI stitches different processed parts &quot;chunks&quot; of your voice back together. 0.08-0.1 for fastest voice, 0.15 for improved quality.</p>
 </li>
 </ul>
 <h2 id="dual-pc-setup-via-sonobus-cross-os">Dual-PC Setup via SonoBus (Cross-OS)</h2>
@@ -690,9 +730,11 @@ Or via Flatpak: <code translate="no" v-pre>flatpak install flathub net.sonobus.S
     </div>
 </div>
 <ul>
-<li><p>Run <code translate="no" v-pre>setup64</code>, not 64a, after extracting the zip to a new folder</p>
+<li>
+<p>Run <code translate="no" v-pre>setup64</code>, not 64a, after extracting the zip to a new folder</p>
 </li>
-<li><p>After installing the VAC Lite, it changes your default audio system. Click <strong>Yes</strong> when it asks you to open the audio device settings (or press WIN+R, type &quot;mmsys.cpl&quot; if you closed it already), and change your <strong>Recording</strong> and <strong>Playback</strong> devices back to your usual devices. Same for communications device aswell (right click -&gt; set as default communication device)</p>
+<li>
+<p>After installing the VAC Lite, it changes your default audio system. Click <strong>Yes</strong> when it asks you to open the audio device settings (or press WIN+R, type &quot;mmsys.cpl&quot; if you closed it already), and change your <strong>Recording</strong> and <strong>Playback</strong> devices back to your usual devices. Same for communications device aswell (right click -&gt; set as default communication device)</p>
 </li>
 </ul>
 <div class="flex mb-6">
@@ -859,9 +901,11 @@ or
 <h2 id="effects">Effects</h2>
 <hr>
 <ul>
-<li><p>Most of the default values are already decent.</p>
+<li>
+<p>Most of the default values are already decent.</p>
 </li>
-<li><p>Processing from all effects, premium and free, are done directly in the pipeline as the output voice is being produced, making them extremely low latency. Many effects can greatly enhance voice quality if used properly, while some are just for fun.</p>
+<li>
+<p>Processing from all effects, premium and free, are done directly in the pipeline as the output voice is being produced, making them extremely low latency. Many effects can greatly enhance voice quality if used properly, while some are just for fun.</p>
 </li>
 </ul>
 <div class="flex mb-6">
@@ -883,14 +927,17 @@ or
 </div>
 <h3 id="basic-effects">Basic Effects</h3>
 <ul>
-<li><p>Those are the Free Effects.</p>
+<li>
+<p>Those are the Free Effects.</p>
 </li>
-<li><p><code translate="no" v-pre>Noise Gate:</code> A simple noise gate so the application doesn&#x27;t try to process low background noise that made it past RNNoise.</p>
+<li>
+<p><code translate="no" v-pre>Noise Gate:</code> A simple noise gate so the application doesn&#x27;t try to process low background noise that made it past RNNoise.</p>
 <ul>
 <li><code translate="no" v-pre>Threshold (dB):</code> The volume level at which the gate opens or closes.</li>
 </ul>
 </li>
-<li><p><code translate="no" v-pre>EQ Band (1 &amp; 2):</code> Boosts or cuts specific frequency ranges of your voice to shape its overall tone.</p>
+<li>
+<p><code translate="no" v-pre>EQ Band (1 &amp; 2):</code> Boosts or cuts specific frequency ranges of your voice to shape its overall tone.</p>
 <ul>
 <li><code translate="no" v-pre>Frequency (Hz):</code> Selects the center of the frequency range you want to adjust.</li>
 <li><code translate="no" v-pre>Gain (dB):</code> Sets how much to raise or lower the volume of the selected frequency.</li>
@@ -900,16 +947,19 @@ or
 </ul>
 <h3 id="premium-effects">Premium Effects</h3>
 <ul>
-<li><p>Those are the Paid Effects, you can learn how to get them by clicking &quot;Manage License&quot; -&gt; &quot;How To Purchase&quot;.</p>
+<li>
+<p>Those are the Paid Effects, you can learn how to get them by clicking &quot;Manage License&quot; -&gt; &quot;How To Purchase&quot;.</p>
 </li>
-<li><p><code translate="no" v-pre>Low Quality Mic:</code> Simulates the sound of a bad microphone or a telephone call.</p>
+<li>
+<p><code translate="no" v-pre>Low Quality Mic:</code> Simulates the sound of a bad microphone or a telephone call.</p>
 <ul>
 <li><code translate="no" v-pre>Strength:</code> Controls the overall intensity of the low-quality sound effect.</li>
 <li><code translate="no" v-pre>Telephone Effect:</code> Narrows the frequency range to mimic the sound of a phone line.</li>
 <li><code translate="no" v-pre>Add Static:</code> Overlays crackling static noise for a more distorted effect.</li>
 </ul>
 </li>
-<li><p><code translate="no" v-pre>Compressor:</code> Evens out your voice&#x27;s volume, preventing sudden loud peaks and making quieter sounds more audible.</p>
+<li>
+<p><code translate="no" v-pre>Compressor:</code> Evens out your voice&#x27;s volume, preventing sudden loud peaks and making quieter sounds more audible.</p>
 <ul>
 <li><code translate="no" v-pre>Threshold (dB):</code> The volume your voice must reach before the effect starts turning it down.</li>
 <li><code translate="no" v-pre>Ratio:</code> How much the volume is turned down after crossing the threshold.</li>
@@ -917,26 +967,30 @@ or
 <li><code translate="no" v-pre>Release (ms):</code> How quickly the compressor stops after the sound is no longer loud.</li>
 </ul>
 </li>
-<li><p><code translate="no" v-pre>Low Pass Filter (24 dB/oct):</code> Cuts high frequencies, making the voice sound more muffled or distant.</p>
+<li>
+<p><code translate="no" v-pre>Low Pass Filter (24 dB/oct):</code> Cuts high frequencies, making the voice sound more muffled or distant.</p>
 <ul>
 <li><code translate="no" v-pre>Cutoff (Hz):</code> The frequency above which sounds will be removed.</li>
 <li><code translate="no" v-pre>Resonance:</code> Adds a slight boost to frequencies right at the cutoff point for emphasis.</li>
 </ul>
 </li>
-<li><p><code translate="no" v-pre>High Pass Filter (12 dB/oct):</code> Cuts low frequencies, which can remove low-end rumble and make a voice sound thinner.</p>
+<li>
+<p><code translate="no" v-pre>High Pass Filter (12 dB/oct):</code> Cuts low frequencies, which can remove low-end rumble and make a voice sound thinner.</p>
 <ul>
 <li><code translate="no" v-pre>Cutoff (Hz):</code> The frequency below which sounds will be removed.</li>
 <li><code translate="no" v-pre>Resonance:</code> Adds a slight boost to frequencies right at the cutoff point for emphasis.</li>
 </ul>
 </li>
-<li><p><code translate="no" v-pre>EQ Band (3 &amp; 4):</code> Boosts or cuts specific frequency ranges of your voice to shape its overall tone.</p>
+<li>
+<p><code translate="no" v-pre>EQ Band (3 &amp; 4):</code> Boosts or cuts specific frequency ranges of your voice to shape its overall tone.</p>
 <ul>
 <li><code translate="no" v-pre>Frequency (Hz):</code> Selects the center of the frequency range you want to adjust.</li>
 <li><code translate="no" v-pre>Gain (dB):</code> Sets how much to raise or lower the volume of the selected frequency.</li>
 <li><code translate="no" v-pre>Q:</code> Adjusts the width of the frequency band. A low Q affects a wide range of frequencies, while a high Q is more narrow and precise.</li>
 </ul>
 </li>
-<li><p><code translate="no" v-pre>Reverb:</code> Simulates the sound of being in a physical space by adding echoes and reflections.</p>
+<li>
+<p><code translate="no" v-pre>Reverb:</code> Simulates the sound of being in a physical space by adding echoes and reflections.</p>
 <ul>
 <li><code translate="no" v-pre>Room Size:</code> Controls the perceived size of the simulated room, from a small closet to a large hall.</li>
 <li><code translate="no" v-pre>Damping:</code> Absorbs high frequencies in the echoes, making the reverb sound warmer or darker.</li>
@@ -944,7 +998,8 @@ or
 <li><code translate="no" v-pre>Dry Level:</code> Adjusts the volume of your original, unprocessed voice.</li>
 </ul>
 </li>
-<li><p><code translate="no" v-pre>Chorus:</code> Makes a single voice sound like multiple voices by adding slightly detuned and delayed copies.</p>
+<li>
+<p><code translate="no" v-pre>Chorus:</code> Makes a single voice sound like multiple voices by adding slightly detuned and delayed copies.</p>
 <ul>
 <li><code translate="no" v-pre>Rate (Hz):</code> Controls the speed of the subtle pitch variations in the chorus effect.</li>
 <li><code translate="no" v-pre>Depth:</code> Determines the intensity of the pitch variations.</li>
@@ -959,7 +1014,8 @@ or
 <hr>
 <p>To Update Vonovox, you can either:</p>
 <ol type="A" start="1">
-<li><p>Click the Update Check Symbol at the bottom right of the program.</p>
+<li>
+<p>Click the Update Check Symbol at the bottom right of the program.</p>
  <img src="../vonovox-img/vonovox-update.png" alt="Update Vonovox Button" width="480" height="auto">
 </li>
 </ol>
@@ -1134,7 +1190,7 @@ The benefits are:</p>
                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                             <span>
                                 <span class="block text-xs font-normal text-base-text-muted">Previous</span>
-                                <span class="block mt-1">Tg Develop's W Okada Fork</span>
+                                <span class="block mt-1">Tg Develop&#39;s W Okada Fork</span>
                             </span>
                         </a>
                     </div>
@@ -1187,6 +1243,6 @@ The benefits are:</p>
 
     <div id="retype-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Vonovox", level: 3, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+        <script data-cfasync="false">window.__DOCS__ = { "title": "Vonovox", level: 3, icon: "file", hasPrism: true, hasInstagram: false, hasMermaid: false, hasMath: false, tocDepth: 23, "md": "/realtime-voice-changer/local/vonovox.md" }</script>
 </body>
 </html>

@@ -1,0 +1,292 @@
+``Last update: March 14, 2026``
+***
+:::content-center
+
+#### *List of smaller keywords.* 
+:::
+‎
+:::
+### :icon-chevron-down:Backing vocals
+- Vocal lines that contribute to the sound of the lead vocals in a song.      
+
+***
+### :icon-chevron-down:Bit depth
+- In the field of digital audio, it defines the dynamic range of each sample.
+
+- This determines the difference between the quietest & loudest sound. 
+
+- Basically, higher bit depths represent more accurately the loudness of an audio.     
+
+***
+### :icon-chevron-down:Bitrate
+- The amount of data processed per certain unit of time, usually in kilobits per second (KBPS).
+
+- Higher bitrate equals a higher quality.
+
+- You can think of it as video resolution (240, 480, 1080, etc.).     
+
+***
+### :icon-chevron-down:DAW
+- It stands for **Digital Audio Workstation**, and it's any software used for making and mixing music.    
+
+- For **basic** audio editing, we recommend [Audacity](https://www.audacityteam.org/).     
+
+- For **professional** mixing, [FL Studio](https://www.image-line.com/fl-studio-download/).
+
+***
+### :icon-chevron-down:Checkpoints
+
+- In RVC, these are files of a model that generate over the course of training, that can be very useful.        
+
+- The rate at which they're saved is determined by the **save frequency** value (or save rate or similar names). **For newbies, it's recommended use a value of `15`.**      
+
+- **They are divided by two types:**  
+    - **Weights:**    
+        - These are actual models.
+        - They're organized with this format: **modelname_epoch_step.pth**
+        - Example: `Tyler_e60_s120.pth`    
+    - **G and D:**
+        - Named **G_** and **D_**, followed by the step number & **.pth**.
+        - Example: `G_70.pth` and `D_70.pth` 
+        - These allow you to resume training, if G and D's numbers match.
+
+***
+### :icon-chevron-down:GPU
+- It stands for Graphics Processing Unit. It's designed to rapidly manipulate and alter memory to accelerate creation of images.
+- In AI training, is used for quick parallel independent computations, which increases the speed substantially.     
+- Basically the speed at which RVC/UVR will work will depend on how good your GPU is.       
+
+***
+### :icon-chevron-down:HAGS (Hardware-Accelerated GPU Scheduling)
+- A **Windows 10/11 feature** designed to reduce latency in video games by offloading scheduling tasks from the CPU directly to the GPU. 
+- **For LOCAL AI workloads, HAGS should usually be disabled.** 
+- Because **local** deep learning apps (like RVC, W-Okada, and Vonovox) require precise control over VRAM, HAGS heavily interferes with them. Here's some cases:
+    - **In Local Training:** It causes VRAM to aggressively spill over into slower system RAM, drastically slowing down training speeds. 
+    - **In Local Realtime Voice Changers:** It prioritizes foreground games, starving the background AI voice changer of resources and causing robotic, lagging audio or massive game stutters.
+- *Community Proof:* Many users report significant performance boosts and bug fixes after disabling it:
+
+  <img src="../glossary-img/disabled-hags-proof-1.png" alt="HAGS Discord Proof 1" width="450">
+  <img src="../glossary-img/disabled-hags-proof-2.png" alt="HAGS Discord Proof 2" width="450">
+
+!!! How to Disable HAGS:
+1. Open Windows **Settings** > **System** > **Display** > **Graphics**.
+2. Click **Advanced Graphic Settings**.
+3. Toggle **Hardware-accelerated GPU scheduling** to **Off**.
+4. Restart your PC.
+!!!
+
+***
+### :icon-chevron-down:Local running
+- Running locally is a process that involves running apps in your own machine, using its resources.
+- Done by users with a powerful [GPU](https://docs.aihub.gg/extra/glossary/#gpu).
+- The opposite of [cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based).
+
+***
+### :icon-chevron-down:Cloud-based
+- Any software or application that's stored, managed, and available through the provider's virtual servers, and is accessed through a web browser.
+- Used by users with a weak [GPU](https://docs.aihub.gg/extra/glossary/#gpu), which can't do [local running](https://docs.aihub.gg/extra/glossary/#local-running).
+- Remember to not close the Cloud Service Site after accessing the Program's Web UI and to shut down the session when you are finished.
+- The opposite of [local running](https://docs.aihub.gg/extra/glossary/#local-running).       
+
+***
+### :icon-chevron-down:CUDA
+- A technology developed by NVIDIA, that uses the power of graphics cards to perform calculations that require great processing power.
+- It's especially useful for AI tools, such as RVC and UVR, which greatly optimizes the process.
+- CUDA is downloaded automatically as a part of the NVIDIA driver.
+- Which Nvidia driver you use might affect performance, Studio Drivers can help AI, but this is mostly for other types of AIs such as Stable Diffusion, rather than RVC.    
+
+***
+### :icon-chevron-down:Fine-tuning
+- Further improving an AI model, training it with a another dataset.
+
+***
+### :icon-chevron-down:Fork
+- It's a copy of a main GitHub project. It aims to make a different version of the project with improvements, changes & new features.       
+
+***
+### :icon-chevron-down:Gradio
+- Gradio is an open-source Python packag that makes it easy for developers to create user-friendly web interfaces for machine learning models and other applications, such as RVC.
+  
+- It deploys the program on a Local URL, which is the one running locally on the machine, and a Public Share Link, which is a tunnel that exposes the Local URL. The Public Share Link is used, for example, in Google Colabs, powered by their Share API. Sometimes, the Share API goes down, you can check its [status](https://status.gradio.app/).
+
+***
+### :icon-chevron-down:Jupyter Notebook
+- An interactive, web-based document that lets you combine runnable code, explanatory text, and media (like images and charts) into a single file.
+- It's organized into individual **cells**. Code cells can be run one by one to perform tasks, while text cells (using Markdown) are used for documentation and instructions.
+- This cell-based format is perfect for creating step-by-step guides and running AI applications, which is why it's the standard interface for platforms like **Google Colab**, **Kaggle**, and **Lightning.AI**.
+- Jupyter Notebook files are saved with the `.ipynb` file extension.
+
+***
+### <img src="/img/google-colaboratory-logo.svg" style="width: 28px; height: 28px; vertical-align: middle; margin-right: 12px;"> Google Colab
+- Google Colaboratory, also known as Google Colab or just Colab, is a [cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based) platform by Google to run [Jupyter Notebooks](https://docs.aihub.gg/extra/glossary/#jupyter-notebook).
+- Learn how to bypass their limitations [here](https://rentry.co/googlecolabworkarounds).
+
+#### Pros & Cons :icon-tasklist:
+==- *Learn more*
+!!! *The pros & cons are subjective to your necessities.*        
+!!! 
+||| ✔️ **PROS** 
+- Free access to T4 GPU and v5e-1 TPU.
+- No phone number verification required.
+||| ❌ **CONS** 
+- Strict usage limit for free users: max ~4 hours/day, with around 12-24 hour reload.
+- It requires a Google Account.
+- Random disconnects if left unsupervised.
+- No persistent storage (files are deleted when disconnected).
+- Risk of ban when running WebUI on the free tier.
+||| 
+===
+
+***
+### <img src="/img/huggingface-icon.svg" style="width: 28px; height: 28px; vertical-align: middle; margin-right: 12px;"> HuggingFace Space
+- A [cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based) hosting platform for machine learning demos and apps directly accessible via a web browser.
+- Some Spaces use ZeroGPU, For the current GPU hardware used by ZeroGPU, check the [ZeroGPU Technical Specifications](https://huggingface.co/docs/hub/spaces-zerogpu#technical-specifications).
+
+#### Pros & Cons :icon-tasklist:
+==- *Learn more*
+!!! *The pros & cons are subjective to your necessities.*        
+!!! 
+||| ✔️ **PROS** 
+- Extremely easy to use; runs directly in the browser with no installation.
+- No phone number verification required.
+||| ❌ **CONS** 
+- Strict GPU quotas and maximum inference time limits.
+- It requires a HuggingFace Account.
+- Hardware depends on the Space creator, which is shared and may cause queues.
+- Not made for training or realtime things, just simple inference.
+- **RVC-related Spaces Paused:** HuggingFace Staff has recently been pausing RVC-related spaces (like [Applio Old](https://huggingface.co/spaces/IAHispano/Applio-Old) and [Ilaria RVC Zero](https://huggingface.co/spaces/TheStinger/Ilaria_RVC)) without providing a reason.
+||| 
+===
+
+***
+### <img src="/img/kaggle-icon.svg" style="width: 28px; height: 28px; vertical-align: middle; margin-right: 10px;"> Kaggle
+- A [cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based) platform by Google to run [Jupyter Notebooks](https://docs.aihub.gg/extra/glossary/#jupyter-notebook).
+- It's focused on data science and machine learning.
+- You can check [this article](https://medium.com/@anagha.srivasa/nvidia-t4-x2-v-s-p100-gpu-when-to-choose-which-one-87cf1c55f386) for some general AI technical comparisons between the P100 and T4x2 GPUs.
+- If you have trouble verifying your phone number, [Contact Kaggle](https://www.kaggle.com/contact).
+
+#### Pros & Cons :icon-tasklist:
+==- *Learn more*
+!!! *The pros & cons are subjective to your necessities.*        
+!!! 
+||| ✔️ **PROS** 
+- Access to powerful GPUs (T4x2, P100).
+- Includes 30 hours of free GPU usage per week.
+- You can leave training unsupervised.
+||| ❌ **CONS** 
+- Initial setup takes some time.
+- Requires a Kaggle account and Phone Number Verification.
+- Risk of ban when running WebUI on the free tier.
+||| 
+===
+
+***
+### <img src="/img/lightning-ai-logo.svg" style="width: 28px; height: 28px; vertical-align: middle; margin-right: 10px;"> Lightning.AI
+- A [cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based) platform designed for developing and running AI applications in persistent environments called "Studios.", and one of the options is via (but not limited to) running [Jupyter Notebooks](https://docs.aihub.gg/extra/glossary/#jupyter-notebook).
+- In Free tier you can change GPU/CPUs at any time, but if you used all free 15 credits **monthly** only on a specific computing, you'd have:     
+    - **GPUs (Powerful, Recommended):**   
+        - **T4** (16GB VRAM): **75 hours**
+        - **L4** (24GB VRAM): **31 hours**
+        - **L40S** (48GB VRAM): **15 hours**
+    - **CPUs:**
+        - **Default (CPU)** (4 cores, 16GB RAM): **unlimited** (first 4 hours are free and you'd need to restart, or keep paying, and if you pay you'd have **45 hours** monthly)
+        - **Large (CPU)**: (8 cores, 32GB RAM): **29 hours**
+        - **X-Large (CPU)**: (16 cores, 64GB RAM): **15 hours**
+- You can check the [pricing](https://lightning.ai/pricing) for more info.
+
+#### Pros & Cons :icon-tasklist:
+==- *Learn more*
+!!! *The pros & cons are subjective to your necessities.*        
+!!! 
+||| ✔️ **PROS** 
+- Has excellent GPUs with lots of VRAM.
+- Free tier users get free 15 monthly credits that can be used on CPUs or GPUs. Be sure to monitor your usage and stop the Studio when not in use.
+- "free studios" are considerated the free *CPU* studios, which have a 4 hour limit session, after that they will become paid CPU studios using your credits unless you restart them. Unlike GPU Studios which directly use credits.
+- You can leave training unsupervised.
+- Features persistent storage (files are saved between sessions).
+- Web UI allowed on free tier without ban risk.
+||| ❌ **CONS** 
+- Takes some time to set up.
+- Needs an Account and Phone Number for Verification (2-3 day wait time).
+- Limited GPU time based on monthly credits.
+- Studios Auto Sleep (stop running) after 10 minutes of inactivity (such as closing the site or not running anything in the background) in the Free tier.
+- Users inactive for a 6 month period and do not have an active paid subscription will be scheduled for deletion. Users will be notified 30 days before the scheduled deletion, with several reminders sent during this period.
+||| 
+===
+
+***
+### :icon-chevron-down:Inference
+- In the context of AI, it's using an AI model to complete any task. 
+
+- For this, using the GPU is more convenient as it's faster. Though normally you can still use CPU, which takes longer.
+
+- For example, in RVC is when a voice model is used to transform an audio, to make it sound like the model.       
+
+***
+### :icon-chevron-down:Lossless Formats
+- Audio formats that **don't compress** (lose) the original quality.        
+- They're recommended for RVC, as the more quality an audio has, the more accurate results they'll offer.       
+- The main ones are **WAV & FLAC**:     
+    - **FLAC:**   
+        - Its algorithm compresses the data without losing quality. 
+        - It's recommended over WAV since it's space-efficient.          
+    - **WAV:**
+        - Doesn't do any kind of compression. It's purely the original data.
+        - Therefore it has a much bigger file size.
+        - It's more accurate to describe it as an *uncompressed* format
+        
+!!!
+Both formats give the same results & don't have an audible difference.      
+Converting a lossy audio to a lossless one won't restore the lost quality.
+!!!
+
+***
+### :icon-chevron-down:Lossy Formats
+
+- Audio formats that **compress** (lose) the original quality. They're built to be space-efficient.
+
+- So by getting rid of some data (in this case, quality), they achieve a smaller file size.       
+
+- Common lossy formats are **MP3**, OGG, OPUS, M4A, etc.
+
+***
+### :icon-chevron-down:Localtunnel
+
+- Localtunnel is a tunnel made to expose a local url (like http://localhost:3000).
+
+- It's used in Google Colabs to **expose the Local URL** so that users on Cloud can access the program.
+
+***
+### :icon-chevron-down:Model training
+- In the field of AI, is the process where an AI model is fed with its dataset & learns from it.
+
+***
+### :icon-chevron-down:Specs
+- It refers to a computer's specifications. Hardware like [GPU](https://docs.aihub.gg/extra/glossary/#gpu), CPU, RAM, etc.     
+
+- The performance of the hardware of a computer directly correlates to the performance of all its software.
+
+***
+### :icon-chevron-down:0 Shot Training
+- Doing [inference](https://docs.aihub.gg/rvc/extra/glossary/#inference) on an AI model without explicitly training on it. 
+
+- It's faster but with less quality, and you won't be able to save the model.
+
+- For example, in TTS you do inference by cloning a voice with an audio, a data it hasn't seen before.
+
+- Different from making a dataset & doing the long training process, based on lots of criteria such as [epochs](https://docs.aihub.gg/rvc/resources/epochs--tensorboard/). 
+
+- In some cases you can do it on GPU, some in CPU.
+
+***
+### :icon-chevron-down:Optim
+- It is a shorter way to say optimizer.
+
+- A optimizer is an algorithm used to minimize the loss function during the training of neural networks. It helps adjust the model's weights and biases.
+
+***
+:::content-center
+#### `You have reached the end.`
+
+[!badge variant="info" size="xl" corners="pill" icon="paper-airplane" iconAlign="right" text="Report Issues"](https://docs.aihub.gg/contributions/)
+:::
