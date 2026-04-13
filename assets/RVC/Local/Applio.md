@@ -3,7 +3,7 @@ icon: ":green_apple:"
 order: 4000
 ---
 
-``Last update: April 4, 2026``
+``Last update: April 13, 2026``
 
 ***
 :::content-center
@@ -140,31 +140,30 @@ chmod +x run-applio.sh
 
 ### AMD on Windows (Precompiled Fix)
 
-!!!info "Unofficial Method"
-These guides are for AMD GPU users on Windows using Zluda to enable CUDA compatibility. Select the tab corresponding to your driver version.
+!!!info "AMD Compatibility Note"
+AMD drivers update frequently and often break Zluda (the CUDA bridge). 
+- If you are on very new drivers (Adrenalin 25.5.1+), you must use the latest available HIP SDK.
+- If your setup breaks after a driver update, check the [AI HUB Discord](https://discord.gg/aihub) or the [Applio Assets repo](https://github.com/IAHispano/Applio/tree/main/assets/zluda) for updated patch scripts.
 !!!
 
 +++ Adrenalin 25.5.1+ (Newer)
 **For Adrenalin 25.5.1 driver or newer**
 
-1. Download a compiled version of Applio **v3.5.0 or newer** from the [Hugging Face repo](https://huggingface.co/IAHispano/Applio/tree/main/Compiled), and unzip it to your desired folder.
+1. Download a compiled version of Applio **v3.5.0 or newer** from the [Hugging Face repo](https://huggingface.co/IAHispano/Applio/tree/main/Compiled), and unzip it.
 
-2. Download **HIP SDK 6.2.4** from the [AMD ROCm Hub](https://www.amd.com/en/developer/resources/rocm-hub/hip-sdk.html).
-    - Run the installer.
-    - **Important:** Install the components but **exclude/deselect the video driver** at the bottom of the installer list.
+2. Download and install the **latest stable HIP SDK** from the [AMD ROCm Hub](https://www.amd.com/en/developer/resources/rocm-hub/hip-sdk.html).
+    - **Important:** Install components but **exclude/deselect the video driver** at the bottom of the installer list.
 
-3. Add the following path to your System Environment Variables (Path):
-   `C:\Program Files\AMD\ROCm\6.2\bin`
+3. Add the `bin` folder of your installed HIP SDK to your System Environment Variables (Path):
+   `C:\Program Files\AMD\ROCm\<YOUR_VERSION>\bin`
 
-4. Open a command line (CMD) inside the Applio folder and run the following commands to update PyTorch:
+4. Open a command line (CMD) inside the Applio folder and run:
    ```bash
    env\python -m pip uninstall torch torchvision torchaudio
    env\python -m pip install torch torchvision torchaudio --upgrade --index-url https://download.pytorch.org/whl/cu118
    ```
 
-5. Download the necessary patch files into your Applio root folder:
-    - [patch-zluda-hip62.bat](https://github.com/IAHispano/Applio/blob/main/assets/zluda/patch-zluda-hip62.bat)
-    - [run-applio-amd.bat](https://github.com/IAHispano/Applio/blob/main/assets/zluda/run-applio-amd.bat)
+5. Download the patch file corresponding to your installed HIP SDK version from the [Applio Assets repo](https://github.com/IAHispano/Applio/tree/main/assets/zluda) and `run-applio-amd.bat`.
 
 6. Edit the file located at `rvc/lib/zluda.py`. Replace the content with the following:
    ```python
@@ -178,19 +177,17 @@ These guides are for AMD GPU users on Windows using Zluda to enable CUDA compati
        torch.backends.cuda.enable_mem_efficient_sdp(False)
    ```
 
-7. Run `patch-zluda-hip62.bat`.
-
-8. Run `run-applio-amd.bat` to start Applio.
+7. Run your downloaded patch script, then run `run-applio-amd.bat`.
 
 +++ Older Drivers / Legacy
 1. Download and install the [VC++ Runtime](https://aka.ms/vs/17/release/vc_redist.x64.exe).
 
 ***
 
-2. First, check the official [System Requirements](https://rocm.docs.amd.com/projects/install-on-windows/en/develop/reference/system-requirements.html) on the AMD ROCm™ documentation site. In the "Windows-supported GPUs" section, determine which steps to follow below.
+2. First, check the official [System Requirements](https://rocm.docs.amd.com/projects/install-on-windows/en/develop/reference/system-requirements.html) on the AMD ROCm™ documentation site. 
 
 ==- GPU has a green check in the HIP SDK column
-- Install either v6.1.2 or v5.7.1 HIP SDK from the [AMD ROCm Hub](https://www.amd.com/en/developer/resources/rocm-hub/hip-sdk.html).
+- Install the HIP SDK version recommended in your documentation from the [AMD ROCm Hub](https://www.amd.com/en/developer/resources/rocm-hub/hip-sdk.html).
 ===
 ==- GPU is RX 6600, 6600XT, 6650XT, 6700, 6700XT, or 6750XT
 1. Install **v5.7.1** HIP SDK from the [AMD ROCm Hub](https://www.amd.com/en/developer/resources/rocm-hub/hip-sdk.html).
@@ -202,26 +199,24 @@ These guides are for AMD GPU users on Windows using Zluda to enable CUDA compati
 5. Unzip the content of the archive you downloaded into this new `library` folder.
 ===
 ==- All other AMD GPUs
-1. Find your GPU's `gfxNNNN` value. You can do this by searching "techpowerup *your_gpu_name*" (e.g., "techpowerup RX 7900 XTX") and finding the "Shader ISA" on the specifications page.
+1. Find your GPU's `gfxNNNN` value (search "techpowerup *your_gpu_name*" and check "Shader ISA").
 2. Follow the steps for your corresponding `gfx` value:
 
     +++ `gfx803, gfx900, gfx906, gfx1010, gfx1011, gfx1012, gfx1030, gfx1100, gfx1101, gfx1102`
-    1. Install **v5.7.1** HIP SDK from the [AMD ROCm Hub](https://www.amd.com/en/developer/resources/rocm-hub/hip-sdk.html).
+    1. Install **v5.7.1** HIP SDK.
     2. Download [this archive](https://github.com/brknsoul/ROCmLibs/raw/main/ROCmLibs.7z).
     3. Navigate to `C:\Program Files\AMD\ROCm\5.7\bin\rocblas\` and rename the `library` folder to `library.old`.
     4. Unzip the content of the archive directly into the `C:\Program Files\AMD\ROCm\5.7\bin\rocblas\` folder.
     +++ Other GPUs
-    - Visit [this repository](https://github.com/likelovewant/ROCmLibs-for-gfx1103-AMD780M-APU) and follow the specific instructions provided there.
+    - Visit [this repository](https://github.com/likelovewant/ROCmLibs-for-gfx1103-AMD780M-APU) and follow the instructions.
     +++
 ===
 
 ***
 
-3. Download a [compiled version of Applio](https://huggingface.co/IAHispano/Applio/tree/main/Compiled) (v3.2.5 or higher) and unzip it to your desired folder.
+3. Download a [compiled version of Applio](https://huggingface.co/IAHispano/Applio/tree/main/Compiled) (v3.2.5 or higher).
 
-    <img src="..\applio-img\2-localappliodl.png" alt="image" width="400">
-
-4. Open a Command Prompt in the Applio folder (type `CMD` in the address bar and press Enter). Run the following commands to install the correct version of PyTorch for Zluda.
+4. Open a Command Prompt in the Applio folder. Run the following to install the correct PyTorch version:
    ```bash
    env\python -m pip uninstall torch torchvision torchaudio
    env\python -m pip install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 --upgrade --index-url https://download.pytorch.org/whl/cu118
@@ -231,25 +226,19 @@ These guides are for AMD GPU users on Windows using Zluda to enable CUDA compati
 
 5. Navigate to the `assets\zluda` folder inside your Applio directory.
 6. Move all `.bat` files from this folder to the main (root) Applio folder.
-7. Run the patch file that corresponds to your HIP SDK version:
-    - **For HIP SDK 5.7:** Run `patch_zluda_hip57.bat`.
-    - **For HIP SDK 6.1:** Run `patch_zluda_hip61.bat`.
-8. Add the `bin` directory of your HIP SDK installation to your system's Path environment variables.
-    - For HIP SDK 5.7: `C:\Program Files\AMD\ROCm\5.7\bin`
-    - For HIP SDK 6.1: `C:\Program Files\AMD\ROCm\6.1\bin`
+7. Run the patch file that corresponds to your installed HIP SDK version.
+8. Add your HIP SDK `bin` directory to your Path environment variable.
 
-***
-
-9.  Run `run-applio-amd.bat` to start Applio.
+9.  Run `run-applio-amd.bat`.
 +++
 
 
 !!!warning "Check your GPU Index"
-It's assumed your primary AMD GPU has an index of **0**. If you have an iGPU that is listed first in Device Manager (under 'Display Adapters'), you must edit the `run-applio-amd.bat` file and change the value from `"0"` to `"1"`.
+It's assumed your primary AMD GPU has an index of **0**. If you have an iGPU listed first in Device Manager, edit `run-applio-amd.bat` and change the index from `"0"` to `"1"`.
 !!!
 
 !!!info "Initial Compilation Will Be Slow"
-The very first time you run a task (like inference or training), Applio may appear to freeze for **15-20 minutes**. This is normal. Zluda is compiling the necessary kernel code in the background. Subsequent runs will be fast.
+The first time you run a task, Applio may appear to freeze for **15-20 minutes**. This is normal. Zluda is compiling kernels.
 !!!
 
 
