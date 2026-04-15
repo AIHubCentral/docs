@@ -1,7 +1,7 @@
 ==- :icon-bug: Silent Crash / XHR Poll Error (Pro Audio & DJ Hardware)
 If in a Wokada Fork, you click "Start Server" and the command-line window closes instantly without an error, followed by `[SIO] rconnection failed Error: xhr poll error` pop-ups in the browser:
 
-- **Possible Cause:** You have Professional Audio or DJ **hardware drivers** installed (e.g., Native Instruments Traktor Kontrol). When the voice changer uses `PortAudio` to scan for audio devices on startup, querying an ASIO/hardware driver while its physical device is **unplugged** causes a fatal low-level C crash. This kills the server instantly and silently.
+- **Possible Cause:** You have Professional Audio or DJ **hardware drivers** installed (e.g., Native Instruments Traktor Kontrol). When the voice changer uses `PortAudio` to scan for audio devices on startup, querying an ASIO/hardware driver while its physical device is **unplugged** causes a fatal low-level C crash. This kills the server instantly and silently. This was found at https://discord.com/channels/1159260121998827560/1488310350603616476
 
 !!!info DAW Software is Safe
 You do **not** need to uninstall your DAW (Traktor Pro 4, FL Studio, Ableton, etc.). The issue is strictly caused by the hardware drivers, not the music software itself.
