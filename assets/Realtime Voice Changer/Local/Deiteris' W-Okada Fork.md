@@ -2,7 +2,7 @@
 icon: archive
 order: 1000
 ---
-``Last update: April 1,2026``
+``Last update: April 15,2026``
 ***
 :::content-center
 ## Introduction
@@ -848,6 +848,8 @@ You did not match the sample rate of your virtual audio cable to your microphone
 - Ensure you have selected an RVC model in the UI *before* clicking "Start Server".
 - Ensure your model name and folder path contain **no spaces or special characters**.
 ===
+
+{{ include "troubleshooting/wokada-crash-dj-hardware.md" }}
 
 {{ include "troubleshooting/report-missing-issue.md" }}
 

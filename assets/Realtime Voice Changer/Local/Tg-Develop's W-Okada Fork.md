@@ -2,7 +2,7 @@
 icon: ":rocket:"
 order: 4000
 ---
-``Last update: April 1, 2026``
+``Last update: April 15, 2026``
 ***
 :::content-center
 ## Introduction
@@ -797,6 +797,8 @@ If you see a warning that client audio is unavailable or that you must select a 
 - **Browser Compatibility:** If the issue persists, try a different browser or a different version of your current browser.
 - **Refresh Device:** Under the "Client Audio Processing" tab, switch your input/output devices to a temporary option (like your default speakers/mic) and then switch them back to your target audio devices to force a re-initialization.
 ===
+
+{{ include "troubleshooting/wokada-crash-dj-hardware.md" }}
 
 {{ include "troubleshooting/report-missing-issue.md" }}
 
