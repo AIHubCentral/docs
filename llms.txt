@@ -39,10 +39,10 @@
 
 ### Local
 
-- [Tg Develop's W Okada Fork](https://docs.aihub.gg/realtime-voice-changer/local/tg-develops-w-okada-fork.md): Last update: April 1, 2026
+- [Tg Develop's W Okada Fork](https://docs.aihub.gg/realtime-voice-changer/local/tg-develops-w-okada-fork.md): Last update: April 15, 2026
 - [Vonovox](https://docs.aihub.gg/realtime-voice-changer/local/vonovox.md): Last update: March 30, 2026
 - [Applio Realtime](https://docs.aihub.gg/realtime-voice-changer/local/applio-realtime.md): Last update: March 30, 2026
-- [Deiteris' W Okada Fork](https://docs.aihub.gg/realtime-voice-changer/local/deiteris-w-okada-fork.md): Last update: April 1,2026
+- [Deiteris' W Okada Fork](https://docs.aihub.gg/realtime-voice-changer/local/deiteris-w-okada-fork.md): Last update: April 15,2026
 
 ### Cloud
 
