@@ -72,7 +72,7 @@ Set up the program using your preferred cloud service guide. Once configured, us
     <a href="#kaggle" class="cloud-card">
         <img src="/img/kaggle-icon.svg" alt="Kaggle">
         <h3>Kaggle</h3>
-        <p>Generous free GPU quotas. Great alternative if Colab is limited.</p>
+        <p>Generous free GPU quotas. Great alternative if Google Colab is limited.</p>
     </a>
     
     <a href="#lightningai" class="cloud-card">
@@ -103,6 +103,8 @@ Set up the program using your preferred cloud service guide. Once configured, us
 
 !!!danger Google Colab Service
 **Check the [Google Colab Glossary](https://docs.aihub.gg/extra/glossary/#google-colab) for more info on Free Tier, Limits, Verification, Pricing and other things.**
+
+**Disallowed Activities:** **Running Web UIs on the Google Colab Free Tier is a violation of Google's Terms of Service**. Please be aware that Google’s detection systems operate mid-run, not just at startup; even if you bypass the initial "Disallowed Code" check through encryption, your session remains at risk. Persistent violations can lead to a progressive penalty: starting with reduced GPU availability and potentially escalating to a permanent restriction of your Google account's ability to execute Colab notebooks. See [Google's official policy](https://research.google.com/colaboratory/faq.html#disallowed-activities) for more information.
 !!!
 
 #### <u>Setting Up</u> :icon-download:
