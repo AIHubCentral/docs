@@ -1,5 +1,5 @@
 # :icon-home-fill: Home
-``Last update: March 24, 2026``
+``Last update: April 19, 2026``
 ***
 :::content-center
 <img src=".\img\aihub-logo.png" alt="image" width="345" height="auto">
@@ -111,14 +111,6 @@
     <a href="https://discord.gg/aihub" class="social-card">
         <img src="/img/discord-logo.svg" alt="Discord">
         <span>AI HUB's Discord</span>
-    </a>
-    <a href="https://discord.gg/weights" class="social-card">
-        <img src="/img/discord-logo.svg" alt="Discord">
-        <span>Weights' Discord</span>
-    </a>
-    <a href="https://www.reddit.com/r/weights/" class="social-card">
-        <img src="/img/reddit-logo-fullcolor.svg" alt="Reddit">
-        <span>Weights' Reddit</span>
     </a>
 </div>
 

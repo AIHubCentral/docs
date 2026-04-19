@@ -1,6 +1,6 @@
 # :icon-dependabot: Voice Models
 
-``Last update: February 23, 2026``        
+``Last update: April 19, 2026``        
 
 ***
 
@@ -37,88 +37,9 @@ As people sometimes upload them incorrectly.
 ###### ‎
 :::content-center
 ## How to Search Voice Models
-#### *``Five methods to find one online.``*
+#### *``Methods to find one online.``*
 :::
 ###### ‎  
-
-+++ weights.com   
-:::content-center  
-<img src="/img/weights-logo.png" alt="Weights Logo" width="300" height="auto">
-:::  
-
-- This a website where people can upload voice models.
-- Models uploaded in **AI Hub** get automatically stored here too.  
-- Users can read/share feedback about the models through comments & likes.     
-***
-
-!!!danger
-# Goodbye to Weights
-
-After much reflection, we’ve made the difficult decision to shut down Weights, Voyages, and our family of apps on **March 31st, 2026**.
-
-# What to Know
-
-**Before March 31st, 2026:**
-- Download any content, models, or creations you want to keep
-- Request a full data export from your account settings
-- Active subscriptions will be canceled automatically
-- Credits can be used until the shutdown date
-
-**After March 31st, 2026:**
-- The website, apps, and all services will be permanently offline
-- Content and accounts will no longer be accessible
-- Support for Weights, Voyages, and other products will end
-
-#  Replay
-
-[Replay](https://www.weights.com/replay) is not affected by this shutdown. It will remain available and usable, though no new updates will be released. **NOTE:** Since Replay needs to download required files, it might not work if you didn't set it up before the shutdown.
-
-# ❤️ Thank You
-
-Thank you for being part of the Weights community. We’ve loved seeing what you built and how you pushed the boundaries of AI creativity. This platform wouldn’t have existed without you.
-
-# ❓ Questions
-If you need help with exports, subscriptions, or anything else, contact us at support@weights.com or here on the Discord server. We'll be here until the end.
-
-!!!
-***
-
-###### ‎
-#### 1. Log in 
-- Access the website [here</u>](https://weights.com/models) & login by clicking the icon on the top right corner.
-***
-###### ‎
-#### 2. Search
-- Type the name of the model in the ``Search`` bar & click a result.     
-      
-    <img src="../searchrvcmodels-img/2.png" alt="image" width="260" height="auto"> ‎    
-‎   
-
-!!!
-If you get models from different years, remember, the person's voice changes overtime.
-!!!
-***
-###### ‎
-#### 3. Evaluate model (optional)      
-- Check the description, likes, comments, & audio sample. Feedback can help you know how great the model is.        
-- The sample of the gender & vocal style according to the model gives the most accurate representation.     
-- This step is specially useful if you get multiple results of the same model.   
-
-    <img src="../searchrvcmodels-img/3.png" alt="image" width="400" height="auto">
-
-!!!success
-If you're curious about the epochs, [learn more here](https://docs.aihub.gg/rvc/resources/training/#tensorboard).
-!!!
-***
-###### ‎
-#### 4. Download       
-- Tap the three dots & ``Download model``. It will download a .ZIP file of it.     
-‎  
-<img src="../searchrvcmodels-img/4.png" alt="image" width="600" height="auto">‎                          
-‎   
-- If you need a link for it, use the other methods.     
-
-- If it only exists in weights.com, download the .ZIP & [upload it to HF](https://docs.aihub.gg/essentials/voice-models/#uploading-to-hugging-face).  
 
 +++ Voice Models channel     
 :::content-center
@@ -147,43 +68,6 @@ If you're curious about the epochs, [learn more here](https://docs.aihub.gg/rvc/
 - You can listen to the audio sample to get a preview of the it.
 
     <img src="../searchrvcmodels-img/6.png" alt="image" width="480" height="auto"> 
-
-+++ Weights.com Bot
-:::content-center
-<img src="/img/weights-logo.png" alt="Weights Logo" width="300" height="auto">
-:::
-‎   
-- This is a Discord bot developed by the Weights.com team.
-- It searches the models uploaded on Weights.com/AI Hub Discord server.
-- There's also its [web version](https://www.weights.com/models).
-***
-
-###### ‎
-#### 1. Enter the channel     
-- If you haven't already, join AI Hub [here</u>](https://discord.gg/aihub).        
-- Head over to the [``#find-models``](https://discord.com/channels/1159260121998827560/1163592055830880266) channel.
-***
-###### ‎
-#### 2. Type command        
-- #### In the chat:
-    1. Type ``/find``
-    2. Select the **Weights** command
-    3. Type the model
-    4. Send the message      
-
-    ‎   
-
-    <img src="../searchrvcmodels-img/weights-find-bot-command.png" alt="image" width="340" height="auto"> 
-
-***     
-###### ‎
-#### 3. Download
-‎ ‎ ‎ ‎ ‎ ‎ <img src="../searchrvcmodels-img/weights-find-bot-result.png" alt="image" width="500" height="auto"> ‎     
-- 🔗‎ Click ``Use Model`` to **Use** it on Weights.com.        
-
-- 📤‎ Click ``View Model`` to **View** it, and by being logged in, you can click the 3 dots and **Download** it.        
-
-- 👀‎ If there are **multiple** models, click the ``View other models...`` bar to see the others.     
 
 +++ Hugging Face search
 :::content-center
@@ -221,47 +105,6 @@ Download the [correct files](https://docs.aihub.gg/essentials/voice-models/#voic
 - [Make the model yourself](https://docs.aihub.gg/essentials/how-to-make-voice-models/)
 - Pick a different one.
 - Request a **free** model via [AI HUB](https://discord.gg/aihub)'s [``#request-models``](https://discord.com/channels/1159260121998827560/1159289738314919936) forum channel. Be aware that **we don't allow paid commissions**
-
-##### ‎
-***
-:::content-center
-## Uploading to Weights.com
-:::
-‎
-:   ‎
-
-#### 1. Zip the model        
-- Select the correct [.PTH & .INDEX](https://docs.aihub.gg/essentials/voice-models/#voice-model-files) & [zip</u>](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-8d28fa72-f2f9-712f-67df-f80cf89fd4e5) them into a **.ZIP** file.       
-
-- Ensure it's .ZIP & not .RAR or .7ZIP.
-
-***
-###### ‎ 
-#### 2. Log in
-- If you haven't already, [create an account</u>](https://weights.com/signup) & log in.
-***
-###### ‎  
-#### 3. Upload the Model
-a. Once logged in, go to  [`Upload a Voice Model`](https://www.weights.com/share) in the `train models` tab.       
-
-    <img src="../weightscomupload-img/weights-upload-model.png" alt="image" width="600" height="auto">
-
-    ‎
-
-b.  In `Model name` you name the model.   
-
-c.  Describe the model in `Model Description`. 
-
-d.  Select a `Tag`, such as English, Anime, etc.
-
-e. Upload an `Image` for the model, like the character's image.
-
-f. Upload the `Model Zip` containing the .PTH and .INDEX file.
-
-g. You're done!
-
-***
-###### ‎ 
 
 ##### ‎
 ***
