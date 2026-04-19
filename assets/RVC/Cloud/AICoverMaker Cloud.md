@@ -1,6 +1,6 @@
 ---
 icon: ":musical_note:"
-order: 3000
+order: 2000
 ---
 
 ``Last update: March 24, 2026``
@@ -12,7 +12,7 @@ order: 3000
 
 
 {{ include "cloud-services/start-decision.md" }}
-{{ include "cloud-services/grid-cards/google-colab-card.md" }}
+{{ include "cloud-services/grid-cards/google-colab-web-ui-card.md" }}
 {{ include "cloud-services/grid-cards/kaggle-card.md" }}
 {{ include "cloud-services/end-decision.md" }}
 

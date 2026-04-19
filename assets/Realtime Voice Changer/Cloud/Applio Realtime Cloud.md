@@ -66,10 +66,10 @@ Set up the program using your preferred cloud service guide. Once configured, us
 </style>
 
 <div class="cloud-grid">
-    <!-- Google Colab -->
+    <!-- Google Colab Web UI -->
     <a href="https://docs.aihub.gg/rvc/cloud/applio-cloud/#google-colab" class="cloud-card">
-        <img src="/img/google-colaboratory-logo.svg" alt="Colab">
-        <h3>Google Colab</h3>
+        <img src="/img/google-colaboratory-logo.svg" alt="Google Colab">
+        <h3>Google Colab Web UI</h3>
         <p>Reliable performance and easiest setup for standard use.</p>
     </a>
     <!-- Kaggle -->

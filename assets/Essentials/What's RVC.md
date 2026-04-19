@@ -39,7 +39,7 @@ visibility:
     ###### ‎  
     {.list-icon} 
     - #### :icon-repo-forked: [RVC-AI-Cover-Maker-UI](https://github.com/Eddycrack864/RVC-AI-Cover-Maker-UI)     
-        - ##### :icon-cloud: [RVC-AI-Cover-Maker-UI Colab](https://colab.research.google.com/github/Eddycrack864/RVC-AI-Cover-Maker-UI/blob/main/assets/RVCAICoverMakerUI.ipynb)
+        - ##### :icon-cloud: [RVC-AI-Cover-Maker-UI Google Colab](https://colab.research.google.com/github/Eddycrack864/RVC-AI-Cover-Maker-UI/blob/main/assets/RVCAICoverMakerUI.ipynb)
         - ##### :icon-cloud: [RVC-AI-Cover-Maker-UI Kaggle](https://www.kaggle.com/code/eddycrack864/rvc-ai-cover-maker-ui)     
     ‎       
 ***
@@ -50,7 +50,7 @@ visibility:
 ==- *What's the best fork?*
 ###### ‎       
 - As explained before, it depends on your needs. It's best to try them yourself.
-- For **local** users, [Applio](https://docs.aihub.gg/rvc/local/applio/) is a great starting point. For **cloud** users you can use either the [Applio Colab](https://docs.aihub.gg/rvc/cloud/applio-colab/) or [applio kaggle](https://docs.aihub.gg/rvc/cloud/applio-kaggle/).
+- For **local** users, [Applio](https://docs.aihub.gg/rvc/local/applio/) is a great starting point. For **cloud** users you can use either the [Applio Google Colab](https://docs.aihub.gg/rvc/cloud/applio-colab/) or [applio kaggle](https://docs.aihub.gg/rvc/cloud/applio-kaggle/).
 ===
 
 ==- *What are the requirements for RVC locally?*

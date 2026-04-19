@@ -16,7 +16,7 @@ order: 3000
 {{ include "cloud-services/setups/virtual-audio-cable.md" }}
 
 {{ include "cloud-services/start-decision.md" }}
-{{ include "cloud-services/grid-cards/google-colab-card.md" }}
+{{ include "cloud-services/grid-cards/google-colab-web-ui-card.md" }}
 {{ include "cloud-services/grid-cards/kaggle-card.md" }}
 {{ include "cloud-services/grid-cards/lightning-ai-card.md" }}
 {{ include "cloud-services/end-decision.md" }}

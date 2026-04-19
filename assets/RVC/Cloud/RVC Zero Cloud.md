@@ -1,6 +1,6 @@
 ---
 icon: ":o:"
-order: 2000
+order: 1000
 ---
 
 ``Last update: March 24, 2026``
@@ -19,7 +19,7 @@ This demo is provided for educational and research purposes only. The authors an
 
 
 {{ include "cloud-services/start-decision.md" }}
-{{ include "cloud-services/grid-cards/google-colab-card.md" }}
+{{ include "cloud-services/grid-cards/google-colab-web-ui-card.md" }}
 {{ include "cloud-services/grid-cards/huggingface-space-card.md" }}
 {{ include "cloud-services/end-decision.md" }}
 

@@ -138,7 +138,10 @@ order: 1000
 ***
 ### <img src="/img/google-colaboratory-logo.svg" style="width: 28px; height: 28px; vertical-align: middle; margin-right: 12px;"> Google Colab
 - Google Colaboratory, also known as Google Colab or just Colab, is a [cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based) platform by Google to run [Jupyter Notebooks](https://docs.aihub.gg/extra/glossary/#jupyter-notebook).
-- Learn how to bypass their limitations [here](https://rentry.co/googlecolabworkarounds).
+- **Disallowed Activities:** **Running Web UIs on the Google Colab Free Tier is a violation of Google's Terms of Service**. Please be aware that Google’s detection systems operate mid-run, not just at startup; even if you bypass the initial "Disallowed Code" check through encryption, your session remains at risk. Persistent violations can lead to a progressive penalty: starting with reduced GPU availability and potentially escalating to a permanent restriction of your Google account's ability to execute Colab notebooks. See [Google's official policy](https://research.google.com/colaboratory/faq.html#disallowed-activities) for more information.
+<img src="../glossary-img/google-colab-restriction.png" alt="Google Colab Restriction Error" width="500">
+
+- Learn how to bypass some limitations [here](https://rentry.co/googlecolabworkarounds).
 
 #### Pros & Cons :icon-tasklist:
 ==- *Learn more*
