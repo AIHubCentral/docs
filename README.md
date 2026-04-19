@@ -18,8 +18,6 @@
 ## Communities
 Join our communities to get help, share models, and discuss AI:
 - [AI HUB Discord](https://discord.gg/aihub)
-- [Weights Discord](https://discord.gg/weights)
-- [Weights Reddit](https://www.reddit.com/r/weights/)
 
 ## Disclaimer
 The tools and guides provided are for educational purposes and ethical fun only. **We strictly prohibit the use of our guides for illegal activities, scamming, catfishing, or fraud.** Users are responsible for ensuring they have necessary copyright permissions.

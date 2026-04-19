@@ -27,7 +27,7 @@ To upload your Voice Models in the [AI HUB Discord Server](https://discord.gg/ai
 - Model's **.INDEX** file.      
 - General information about the model.
 - General information about its training process.      
-- A Hugging Face or weights.com account.     
+- A Hugging Face account.     
 - At least 1 raw audio sample of the model **<u>WITH NO MUSIC</u>**.     
 |||
 :::
@@ -155,7 +155,7 @@ To upload your Voice Models in the [AI HUB Discord Server](https://discord.gg/ai
 :     The [Pretrain](https://docs.aihub.gg/rvc/resources/training/#pretrains) you used.
 
 **Model Link**
-:     Its download link from Hugging Face (right click and copy link the download icon of the model zip, for example https://huggingface.co/Nick088/TADC_Bubble/resolve/main/TADC_Bubble.zip?download=true) or Weights.
+:     Its download link from Hugging Face (right click and copy link the download icon of the model zip, for example https://huggingface.co/Nick088/TADC_Bubble/resolve/main/TADC_Bubble.zip?download=true).
 
 **Sample File**
 :     An audio sample of it talking/singing.
