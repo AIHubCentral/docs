@@ -143,7 +143,7 @@ chmod +x run-applio.sh
 !!!info "AMD Compatibility Note"
 AMD drivers update frequently and often break Zluda (the CUDA bridge). 
 - If you are on very new drivers (Adrenalin 25.5.1+), you must use the latest available HIP SDK.
-- If your setup breaks after a driver update, check the [AI HUB Discord](https://discord.gg/aihub) or the [Applio Assets repo](https://github.com/IAHispano/Applio/tree/main/assets/zluda) for updated patch scripts.
+- If your setup breaks after a driver update, check the [AI HUB Discord](https://discord.gg/mmRR2TUJF5) or the [Applio Assets repo](https://github.com/IAHispano/Applio/tree/main/assets/zluda) for updated patch scripts.
 !!!
 
 +++ Adrenalin 25.5.1+ (Newer)
@@ -822,7 +822,7 @@ Then you'll be able to see the plugin in the **Plugins** tab.
 </style>
 
 <div class="social-grid">
-    <a href="https://discord.gg/aihub" class="social-card">
+    <a href="https://discord.gg/mmRR2TUJF5" class="social-card">
         <img src="/img/discord-logo.svg" alt="Discord">
         <span>AI HUB's Discord</span>
     </a>

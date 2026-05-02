@@ -642,7 +642,7 @@ Having Multiple EQ bands provides the flexibility to precisely shape and refine 
 </style>
 
 <div class="social-grid">
-    <a href="https://discord.gg/aihub" class="social-card">
+    <a href="https://discord.gg/mmRR2TUJF5" class="social-card">
         <img src="/img/discord-logo.svg" alt="Discord">
         <span>AI HUB's Discord</span>
     </a>

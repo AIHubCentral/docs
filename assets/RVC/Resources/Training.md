@@ -84,7 +84,7 @@ Pretrains are an integral part of making a model, they are basically models that
 ###### ‎ 
 ### Where do I find Pretrains?       
 
-You can find all of the community made custom pretrains in the [`pretrain-models`](https://discord.com/channels/1159260121998827560/1235952130855010365) channel in [AI HUB](https://discord.gg/aihub) if you are interested in experimenting. 
+You can find all of the community made custom pretrains in the [`pretrain-models`](https://discord.com/channels/1159260121998827560/1235952130855010365) channel in [AI HUB](https://discord.gg/mmRR2TUJF5) if you are interested in experimenting. 
 
 !!!warning Keep in mind
 In many cases, the original (og) base RVC pretrain could work better than custom ones. Custom pretrains can be somewhat confusing for new users, so sticking to the defaults is generally the safest and best route unless you are looking to experiment.
