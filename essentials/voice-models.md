@@ -52,7 +52,7 @@ As people sometimes upload them incorrectly.
 ***
 ###### ‎   
 #### 1. Enter the channel   
-- If you haven't already, join AI Hub [here</u>](https://discord.gg/aihub).         
+- If you haven't already, join AI Hub [here</u>](https://discord.gg/mmRR2TUJF5).         
 - Then go to the [``#voice-models``](https://discord.com/channels/1159260121998827560/1175430844685484042) forum channel.       
        
 <img src="../searchrvcmodels-img/5.png" alt="image" width="480" height="auto"> 
@@ -104,7 +104,7 @@ Download the [correct files](https://docs.aihub.gg/essentials/voice-models/#voic
 #### If you couldn't find one, you have 3 options:   
 - [Make the model yourself](https://docs.aihub.gg/essentials/how-to-make-voice-models/)
 - Pick a different one.
-- Request a **free** model via [AI HUB](https://discord.gg/aihub)'s [``#request-models``](https://discord.com/channels/1159260121998827560/1159289738314919936) forum channel. Be aware that **we don't allow paid commissions**
+- Request a **free** model via [AI HUB](https://discord.gg/mmRR2TUJF5)'s [``#request-models``](https://discord.com/channels/1159260121998827560/1159289738314919936) forum channel. Be aware that **we don't allow paid commissions**
 
 ##### ‎
 ***

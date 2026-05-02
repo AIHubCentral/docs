@@ -5,7 +5,7 @@
 :::content-center
 ## Introduction ‎
 :::
-To upload your Voice Models in the [AI HUB Discord Server](https://discord.gg/aihub)'s [``#voice-models``](https://discord.com/channels/1159260121998827560/1175430844685484042) forum channel, you need to pass a Quality Control (QC) check to be sure that you post good voice models.
+To upload your Voice Models in the [AI HUB Discord Server](https://discord.gg/mmRR2TUJF5)'s [``#voice-models``](https://discord.com/channels/1159260121998827560/1175430844685484042) forum channel, you need to pass a Quality Control (QC) check to be sure that you post good voice models.
 
 ***
 
@@ -88,7 +88,7 @@ To upload your Voice Models in the [AI HUB Discord Server](https://discord.gg/ai
 :::
 
 #### Step 1: Prepare the submission.
-- Once your model is ready, head over to the [AI HUB](https://discord.gg/aihub)'s [`#model-maker-role`](https://discord.com/channels/1159260121998827560/1305524365810470963) channel.  
+- Once your model is ready, head over to the [AI HUB](https://discord.gg/mmRR2TUJF5)'s [`#model-maker-role`](https://discord.com/channels/1159260121998827560/1305524365810470963) channel.  
 
 - Click the `Submit Model` button.    
 

@@ -46,7 +46,7 @@
 ###### ‎  
 
 ## Contributions :icon-code-of-conduct:
-- We'll appreciate any **feedback**, big or small. You can directly **contact us** in [AI Hub](https://discord.gg/aihub): **@eddycrack864**
+- We'll appreciate any **feedback**, big or small. You can directly **contact us** in [AI Hub](https://discord.gg/mmRR2TUJF5): **@eddycrack864**
 - Leave **suggestions** in the [#suggestions](https://discord.com/channels/1159260121998827560/1159516963014451302) channel. To **report issues**, use [#ai-help-forum](https://discord.com/channels/1159260121998827560/1192011222023950368).
 
 - You can also send an issue/pull request to our [GitHub Docs Repository](https://github.com/AIHubCentral/docs).
@@ -108,7 +108,7 @@
 </style>
 
 <div class="social-grid">
-    <a href="https://discord.gg/aihub" class="social-card">
+    <a href="https://discord.gg/mmRR2TUJF5" class="social-card">
         <img src="/img/discord-logo.svg" alt="Discord">
         <span>AI HUB's Discord</span>
     </a>

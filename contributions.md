@@ -21,7 +21,7 @@ AI HUB follows a strict **[Code of Conduct](https://github.com/AIHubCentral/docs
 If you don't want to write code/markdown but still want to help, we appreciate any feedback!
 - **Suggestions:** Leave suggestions in the [#suggestions](https://discord.com/channels/1159260121998827560/1159516963014451302) channel. 
 - **Report Issues/Bugs:** Use the [#ai-help-forum](https://discord.com/channels/1159260121998827560/1192011222023950368) or open an Issue on our [GitHub Repository](https://github.com/AIHubCentral/docs/issues).
-- **Direct Contact:** Reach out to **@eddycrack864** in the [AI Hub Discord](https://discord.gg/aihub).
+- **Direct Contact:** Reach out to **@eddycrack864** in the [AI Hub Discord](https://discord.gg/mmRR2TUJF5).
 
 ---
 
@@ -87,7 +87,7 @@ Looking for something to work on? Here is our current roadmap of things we need 
 ## Communication :icon-people:
 We value open and transparent communication. 
 - **Website:** [docs.aihub.gg](https://docs.aihub.gg)
-- **Discord:** [AI HUB](https://discord.gg/aihub)
+- **Discord:** [AI HUB](https://discord.gg/mmRR2TUJF5)
 - **Twitter:**[@AiHubCentral](https://twitter.com/AiHubCentral)
 
 ***
