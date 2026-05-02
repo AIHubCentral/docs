@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.3.829931295979">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.3.831061385348">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.5.3">
@@ -41,11 +41,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../img/aihub-favicon.png" />
-    <link href="../../resources/css/retype.css?v=4.5.3.829931295979" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.5.3.831061385348" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.5.3.829931295979" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.5.3.831061385348" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.5.3" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.5.3.829931295979" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.5.3.831061385348" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -798,5 +798,105 @@ Converting a lossy audio to a lossless one won&#x27;t restore the lost quality.<
     <div id="retype-overlay-target"></div>
 
         <script data-cfasync="false">window.__DOCS__ = { "title": "Glossary", level: 2, icon: "file", hasPrism: false, hasInstagram: false, hasMermaid: false, hasMath: false, tocDepth: 23, "md": "/extra/glossary.md" }</script>
+
+    <div id="security-alert-banner">
+      <div id="security-alert-inner">
+        <div class="security-alert-icon">⚠️</div>
+        <div class="security-alert-content">
+          <strong class="security-alert-title">SECURITY ALERT: COMMUNITY SAFETY NOTICE</strong>
+          <ol class="security-alert-list">
+            <li>
+              <strong>Discord Vanity Hijack:</strong> AI HUB official vanity <code>discord.gg/aihub</code> was hijacked on April 30, 2026. <strong>Do not join it, it's a malicious clone server.</strong> Please use our official permanent invite: <a href="https://discord.gg/mmRR2TUJF5" target="_blank" rel="noopener">discord.gg/mmRR2TUJF5</a>.
+            </li>
+            <li>
+              <strong>Weights.gg Vanity (At Risk):</strong> We are aware of actors targeting AI HUB's Former Partner Weights.gg's vanity <code>discord.gg/weights</code>. To ensure you remain on the legitimate server, please use our permanent invite: <a href="https://discord.gg/CHGgVRCHvm" target="_blank" rel="noopener">discord.gg/CHGgVRCHvm</a>. Be aware that Weights.gg's Discord Server is semi closed since the shutdown on April 1st 2026.
+            </li>
+            <li>
+              <strong>"W8ights" Phishing Scam:</strong> Malicious actors are impersonating AI HUB's former partner, <strong>Weights.gg</strong>. These "W8ights" sites are scams. We have no affiliation with them and are currently investigating into them.
+            </li>
+          </ol>
+        </div>
+        <button id="security-alert-close" aria-label="Dismiss alert">✕</button>
+      </div>
+    </div>
+
+    <style>
+      #security-alert-banner {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 9999;
+        background-color: #450a0a;
+        color: #fecaca;
+        border-bottom: 2px solid #dc2626;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+        font-size: 0.875rem;
+        line-height: 1.5;
+      }
+      #security-alert-inner {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 12px 16px;
+      }
+      .security-alert-icon { font-size: 1.25rem; flex-shrink: 0; padding-top: 2px; }
+      .security-alert-content { flex: 1; }
+      .security-alert-title {
+        display: block;
+        color: #f87171;
+        font-size: 0.8rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 6px;
+      }
+      .security-alert-list { margin: 0; padding-left: 1.25rem; color: #fecaca; }
+      .security-alert-list li { margin-bottom: 4px; }
+      .security-alert-list li:last-child { margin-bottom: 0; }
+      .security-alert-list a { color: #fca5a5; text-decoration: underline; }
+      .security-alert-list a:hover { color: #ffffff; }
+      .security-alert-list code {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 1px 5px;
+        border-radius: 4px;
+        font-size: 0.85em;
+        color: #fde68a;
+      }
+      #security-alert-close {
+        background: transparent;
+        border: 1px solid #dc2626;
+        color: #f87171;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 0.8rem;
+        padding: 2px 7px;
+        flex-shrink: 0;
+        margin-top: 2px;
+        transition: background 0.15s;
+      }
+      #security-alert-close:hover { background: rgba(220, 38, 38, 0.2); color: #ffffff; }
+    </style>
+
+    <script>
+      (function () {
+        var banner = document.getElementById('security-alert-banner');
+        var closeBtn = document.getElementById('security-alert-close');
+        if (sessionStorage.getItem('securityAlertDismissed')) {
+          banner.style.display = 'none';
+        } else {
+          requestAnimationFrame(function () {
+            document.body.style.paddingTop = banner.offsetHeight + 'px';
+          });
+        }
+        closeBtn.addEventListener('click', function () {
+          banner.style.display = 'none';
+          document.body.style.paddingTop = '0px';
+          sessionStorage.setItem('securityAlertDismissed', '1');
+        });
+      })();
+    </script>
 </body>
 </html>
