@@ -843,11 +843,7 @@ You did not match the sample rate of your virtual audio cable to your microphone
 2. Run `reset_gpu_clocks.bat` when you are finished using the app to return to normal GPU behavior.
 ===
 
-==- :icon-alert: Pipeline not initialized
-- Ensure you are on the latest OS version and GPU drivers.
-- Ensure you have selected an RVC model in the UI *before* clicking "Start Server".
-- Ensure your model name and folder path contain **no spaces or special characters**.
-===
+{{ include "troubleshooting/wokada-pipeline-not-initialized.md" }}
 
 {{ include "troubleshooting/wokada-crash-dj-hardware.md" }}
 
