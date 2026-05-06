@@ -812,6 +812,7 @@ By default, the server runs on the `info` log level. While the server also suppo
 - Ensure you are on the latest OS version and GPU drivers.
 - Ensure you have selected an RVC model in the UI *before* clicking "Start Server".
 - Ensure your model name and folder path contain **no spaces or special characters**.
+- Try re-installing the program in case some files weren't correctly downloaded.
 ===
 
 ==- :icon-broadcast: Client Audio Processing Errors
