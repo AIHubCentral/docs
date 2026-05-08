@@ -3,7 +3,7 @@
 > Last update: April 19, 2026
 
 - [ Home](https://docs.aihub.gg/welcome.md):  Home
-- [Contributions ](https://docs.aihub.gg/contributions.md): Last update: April 19, 2026
+- [Contributions ](https://docs.aihub.gg/contributions.md): Last update: May 8, 2026
 - [License](https://docs.aihub.gg/license.md): This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
 
 ## Essentials
