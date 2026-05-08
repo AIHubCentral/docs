@@ -3,7 +3,7 @@ icon: code-of-conduct
 order: 90
 ---
 
-``Last update: April 19, 2026``  
+``Last update: May 8, 2026``  
 
 # Contributions :icon-code-of-conduct:
 
@@ -80,6 +80,7 @@ Looking for something to work on? Here is our current roadmap of things we need 
 - Add some useful r3gm tools like: AICoverGen [CPU](https://huggingface.co/spaces/r3gm/AICoverGen_old_stable_cpu)/[ZeroGPU](https://huggingface.co/spaces/r3gm/AICoverGen)/[Colab](https://github.com/R3gm/AICoverGen?tab=readme-ov-file#aicovergen), [UltimateVocalRemoverWebUI CPU](https://huggingface.co/spaces/r3gm/Ultimate-Vocal-Remover-WebUI), Audio Separator [ZeroGPU](https://huggingface.co/spaces/r3gm/Audio_separator)/[Colab](https://github.com/R3gm/Audio_separator_ui?tab=readme-ov-file#audio-separator), [RVC Voice Model Finder](https://huggingface.co/spaces/r3gm/Model_Voice_Finder). Need to check which is still working.
 - Add the other [Mainline Download methods](<https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI/blob/main/docs/en/README.en.md>) (AMD/Intel Windows, AMD Linux, Intel Linux) and more info https://discord.com/channels/1159260121998827560/1159290096458149938/1403086698895638570, https://discord.com/channels/1159260121998827560/1159290096458149938/1419361265314431067.
 - Possibly add Applio ZeroGPU HuggingFace Spaces made by community forks such as https://huggingface.co/spaces/mosiofather/Applio3 and https://huggingface.co/spaces/redradios/RVC_HF. They might run on older versions though.
+- Find a proper fix for the Wokada Forks Linux AMD GPU ROCm Builds.
 - Update TTS Section constantly with new tools. The GPT-SoVITS Guide is included.
 - Add more to the Image Gen Section.
 - Add and update other AI stuff, such as LLMs.
