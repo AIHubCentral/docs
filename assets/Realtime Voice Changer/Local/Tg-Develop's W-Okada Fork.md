@@ -234,6 +234,10 @@ If nothing opens, then open a browser and type in `http://127.0.0.1:18888/`. Thi
 
 - Download all files that start with `voice-changer-linux-amd64-rocm.tar.gz` (e.g., `.tar.gz.aa`, `.tar.gz.ab`).
 
+!!!danger The Prebuilt ROCm Release is Bugged
+Currently, the prebuilt ROCm Linux release accidentally bundles Nvidia/CUDA libraries instead of AMD/ROCm libraries. If you only see "CPU" in the UI after installing this, or experience `execstack` errors, you **must build it from source using Docker**. Refer to the [Troubleshooting section at the bottom of this page](http://docs.aihub.gg/realtime-voice-changer/local/tg-develops-w-okada-fork/#amd-gpu-on-linux-only-showing-cpu-docker-fix) for the fix.
+!!!
+
 ### Download for x86_64 CPUs on Linux
 
 - Download the single file named `voice-changer-linux-amd64-cpu.tar.gz`.
@@ -792,6 +796,119 @@ If you see a warning that client audio is unavailable or that you must select a 
 - **Select Device:** Confirm the correct microphone is selected in the browser's permission prompt.
 - **Browser Compatibility:** If the issue persists, try a different browser or a different version of your current browser.
 - **Refresh Device:** Under the "Client Audio Processing" tab, switch your input/output devices to a temporary option (like your default speakers/mic) and then switch them back to your target audio devices to force a re-initialization.
+===
+
+==- :icon-container: AMD GPU on Linux only showing CPU (Docker Fix)
+Due to a PyInstaller bundling error in the prebuilt Linux releases, the ROCm version includes the wrong PyTorch libraries (CUDA instead of HIP), causing it to fall back to CPU. Furthermore, modern Linux distros like CachyOS or Arch may block the execution of the bundled ONNX libraries due to hardened `execstack` security policies.
+
+This fix was found out by https://discord.com/channels/1159260121998827560/1159290139609137264/1501726776051761312 using GPT Plus, on CachyOS with an AMD Radeon RX 6800 XT.
+
+To fix this, you can run the source version of the voice changer in a Docker container specifically configured for ROCm.
+
+**1. Install Docker**
+Ensure Docker is installed and your user is part of the `video`, `render`, and `docker` groups:
+```bash
+sudo pacman -S docker # Use apt for Debian/Ubuntu or dnf for Fedora
+sudo systemctl enable --now docker
+sudo usermod -aG video,render,docker "$USER"
+```
+*(You may need to log out and log back in for group changes to take effect).*
+
+**2. Clone the Repository & Create the Dockerfile**
+```bash
+git clone https://github.com/tg-develop/voice-changer.git
+cd voice-changer
+```
+
+Create a new file named `Dockerfile.rocm64` inside the `voice-changer` folder and paste the following:
+
+```dockerfile
+FROM rocm/onnxruntime:rocm6.4.1_ub24.04_ort1.21_torch2.6.0
+
+ENV DEBIAN_FRONTEND=noninteractive
+ENV ROCM_PATH=/opt/rocm
+ENV HIP_PATH=/opt/rocm
+ENV HIP_VISIBLE_DEVICES=0
+ENV ROCR_VISIBLE_DEVICES=0
+
+RUN apt update && apt install -y \
+    git wget curl gcc g++ make unzip ffmpeg \
+    libportaudio2 portaudio19-dev libasound2t64 \
+    libasound2-dev libsndfile1 alsa-utils python3-pip \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /tmp/build
+
+COPY server/requirements-common.txt /tmp/requirements-common.txt
+COPY server/requirements-rocm.txt /tmp/requirements-rocm.txt
+
+RUN python3 -m pip install --break-system-packages --upgrade pip wheel setuptools
+
+# Common voice-changer deps
+RUN python3 -m pip install --break-system-packages -r /tmp/requirements-common.txt
+
+# Install ROCm requirements, but skip torch/onnxruntime to manually install them correctly
+RUN awk '\
+    /^[[:space:]]*($|#)/ { next } \
+    /--index-url|--extra-index-url|--find-links/ { next } \
+    /onnxruntime/ { next } \
+    /^torch==/ { next } \
+    /^torchaudio==/ { next } \
+    /^torchvision==/ { next } \
+    { print }' /tmp/requirements-rocm.txt > /tmp/requirements-rocm-filtered.txt && \
+    python3 -m pip install --break-system-packages -r /tmp/requirements-rocm-filtered.txt
+
+# Remove any accidental CUDA torch pulls
+RUN python3 -m pip uninstall -y torch torchaudio torchvision triton pytorch-triton pytorch-triton-rocm || true
+
+# Install ROCm PyTorch explicitly
+RUN python3 -m pip install --break-system-packages \
+    --index-url https://download.pytorch.org/whl/rocm6.4 \
+    'torch==2.9.1+rocm6.4' 'torchaudio==2.9.1+rocm6.4'
+
+CMD ["bash"]
+```
+
+**3. Build the Image**
+```bash
+docker build -f Dockerfile.rocm64 -t tg-vc-rocm64 .
+```
+
+**4. Create Data Folders & Run the Container**
+Create folders on your host to save your models and settings permanently:
+```bash
+mkdir -p rvc-data/model_dir
+mkdir -p rvc-data/sound_dir
+```
+
+Run the container. **Note for RX 6000 series users:** Leave the `HSA_OVERRIDE_GFX_VERSION=10.3.0` flag as written below. If you are using an RX 7000 series GPU, change it to `11.0.0` or remove it if your GPU is officially supported.
+
+```bash
+docker run --rm -it \
+  --device=/dev/kfd \
+  --device=/dev/dri \
+  --device=/dev/snd \
+  --group-add video \
+  --group-add render \
+  --group-add audio \
+  --ipc=host \
+  --network=host \
+  --security-opt seccomp=unconfined \
+  -e HSA_OVERRIDE_GFX_VERSION=10.3.0 \
+  -e HIP_VISIBLE_DEVICES=0 \
+  -e ROCR_VISIBLE_DEVICES=0 \
+  -v $(pwd):/workspace/voice-changer \
+  -v $(pwd)/rvc-data:/data \
+  tg-vc-rocm64
+```
+
+**5. Start the Server**
+Once inside the container's terminal, start the voice changer:
+```bash
+cd /workspace/voice-changer/server
+python3 main.py
+```
+You can now access the interface from your browser, and it will properly utilize your AMD GPU.
 ===
 
 {{ include "troubleshooting/wokada-crash-dj-hardware.md" }}

@@ -2,7 +2,7 @@
 icon: archive
 order: 1000
 ---
-``Last update: April 15,2026``
+``Last update: May 8,2026``
 ***
 :::content-center
 ## Introduction
@@ -241,6 +241,10 @@ https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-
 https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-linux-amd64-rocm.tar.gz.ab
 
 https://github.com/deiteris/voice-changer/releases/download/b2332/voice-changer-linux-amd64-rocm.tar.gz.ac
+
+
+!!!danger The Prebuilt ROCm Release is Bugged
+Currently, the prebuilt ROCm Linux release accidentally bundles Nvidia/CUDA libraries instead of AMD/ROCm libraries. If you only see "CPU" in the UI after installing this, or experience `execstack` errors, you **must build it from source using Docker**. Refer to the [Troubleshooting section at the bottom of the Wokada Tg-Develop Fork](http://docs.aihub.gg/realtime-voice-changer/local/tg-develops-w-okada-fork/#amd-gpu-on-linux-only-showing-cpu-docker-fix) for the fix.
 
 
 ### Download for x86_64 CPUs on Linux
