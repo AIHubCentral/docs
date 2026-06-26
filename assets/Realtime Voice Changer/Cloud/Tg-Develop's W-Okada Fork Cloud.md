@@ -3,7 +3,7 @@ icon: ":rocket:"
 order: 3000
 ---
 
-``Last update: April 1, 2026``
+``Last update: June 26, 2026``
 
 ***
 :::content-center
@@ -133,6 +133,8 @@ Now that you have the Web UI running, the rest of the process is **identical to 
 :::
 
 {{ include "troubleshooting/wokada-cloud-logs.md" }}
+
+{{ include "troubleshooting/safetensors-pytorch-converter.md" }}
 
 !!!info General Troubleshooting
 Because the web interface and core server function the exact same way, most common errorsare identical to the local version.

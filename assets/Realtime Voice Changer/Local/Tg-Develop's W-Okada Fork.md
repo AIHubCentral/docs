@@ -2,7 +2,7 @@
 icon: ":rocket:"
 order: 4000
 ---
-``Last update: April 15, 2026``
+``Last update: June 26, 2026``
 ***
 :::content-center
 ## Introduction
@@ -912,6 +912,8 @@ You can now access the interface from your browser, and it will properly utilize
 ===
 
 {{ include "troubleshooting/wokada-crash-dj-hardware.md" }}
+
+{{ include "troubleshooting/safetensors-pytorch-converter.md" }}
 
 {{ include "troubleshooting/report-missing-issue.md" }}
 

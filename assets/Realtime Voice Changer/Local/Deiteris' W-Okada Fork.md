@@ -2,7 +2,7 @@
 icon: archive
 order: 1000
 ---
-``Last update: May 8,2026``
+``Last update: June 26, 2026``
 ***
 :::content-center
 ## Introduction
@@ -848,6 +848,8 @@ You did not match the sample rate of your virtual audio cable to your microphone
 ===
 
 {{ include "troubleshooting/wokada-pipeline-not-initialized.md" }}
+
+{{ include "troubleshooting/safetensors-pytorch-converter.md" }}
 
 {{ include "troubleshooting/wokada-crash-dj-hardware.md" }}
 
