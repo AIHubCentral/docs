@@ -7,10 +7,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.3.831762870879">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.835815370465">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.5.3">
+    <meta name="generator" content="Retype 4.6.0">
 
     <!-- Primary Meta Tags -->
     <title>RVC Termux Android</title>
@@ -41,12 +41,12 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../../img/aihub-favicon.png" />
-    <link href="../../../resources/css/retype.css?v=4.5.3.831762870879" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=4.6.0.835815370465" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.5.3.831762870879" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../../resources/js/retype.js?v=4.5.3" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.5.3.831762870879" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=4.5.3.831762870879" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.6.0.835815370465" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.6.0.835815370465" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=4.6.0.835815370465" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -236,6 +236,12 @@
 <hr>
 <div class="content-center"><h2 id="requirements">Requirements</h2>
 </div>
+<retype-table copy-text="| Requirement | Minimum | Recommended |
+|---|---|---|
+| **Storage** | ~6 GB + model storage | More depending on models/usage |
+| **RAM** | 6 GB | 8 GB+ |
+| **OS** | Android 5.0 | Android 10+ |
+| **CPU Architecture** | aarch32 / armv7-a | aarch64 / arm64 |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -269,6 +275,7 @@
 </tbody>
 </table>
 </div>
+</retype-table>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-info"></div>
     <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
@@ -541,6 +548,11 @@ rm -rf Applio</code></pre>
 <doc-panel id="see-benchmarks" collapsed>
     <template #title><em>See benchmarks</em></template>
 <p><strong>Applio v3.2.7 on Ubuntu 24.04 (Noble)</strong></p>
+<retype-table copy-text="| Device | Audio Length | Conversion Time | Notes |
+|---|---|---|---|
+| Honor 90 Lite | 8 seconds | 69.08 seconds | None |
+| Pixel 6 Pro (12 GB RAM) | 13 seconds | ~109 seconds | rmvpe + contentvec, EX kernel manager |
+| Galaxy A9 2018 (6 GB RAM) | 10 seconds | ~147 seconds | Longer audio causes crash |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -573,8 +585,12 @@ rm -rf Applio</code></pre>
 </tbody>
 </table>
 </div>
+</retype-table>
 <img src="..\rvc-termux-android-img\appliov327-honor90lite-first-inference.png" alt="Proof of First Inference time on Applio V3.2.7 on Honor 90 Lite" width="300">
 <p><strong>Applio v3.6.2 on Ubuntu 25.10 (Questing) on Termux v0.118.3 with proot-distro v4.38.0</strong></p>
+<retype-table copy-text="| Device | Audio Length | Conversion Time | Notes |
+|---|---|---|---|
+| Honor 90 Lite | 8 seconds | 58.39 seconds | None |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -595,6 +611,7 @@ rm -rf Applio</code></pre>
 </tbody>
 </table>
 </div>
+</retype-table>
 <img src="..\rvc-termux-android-img\appliov362-honor90lite-first-inference.jpg" alt="Proof of First Inference time on Applio V3.6.2 on Honor 90 Lite" width="300">
 </doc-panel>
 <hr>

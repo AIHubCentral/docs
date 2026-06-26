@@ -38,16 +38,16 @@
 
 ### Local
 
-- [Tg Develop's W Okada Fork](https://docs.aihub.gg/realtime-voice-changer/local/tg-develops-w-okada-fork.md): Last update: April 15, 2026
+- [Tg Develop's W Okada Fork](https://docs.aihub.gg/realtime-voice-changer/local/tg-develops-w-okada-fork.md): Last update: June 26, 2026
 - [Vonovox](https://docs.aihub.gg/realtime-voice-changer/local/vonovox.md): Last update: March 30, 2026
 - [Applio Realtime](https://docs.aihub.gg/realtime-voice-changer/local/applio-realtime.md): Last update: March 30, 2026
-- [Deiteris' W Okada Fork](https://docs.aihub.gg/realtime-voice-changer/local/deiteris-w-okada-fork.md): Last update: May 8,2026
+- [Deiteris' W Okada Fork](https://docs.aihub.gg/realtime-voice-changer/local/deiteris-w-okada-fork.md): Last update: June 26, 2026
 
 ### Cloud
 
-- [Tg Develop's W Okada Fork Cloud](https://docs.aihub.gg/realtime-voice-changer/cloud/tg-develops-w-okada-fork-cloud.md): Last update: April 1, 2026
+- [Tg Develop's W Okada Fork Cloud](https://docs.aihub.gg/realtime-voice-changer/cloud/tg-develops-w-okada-fork-cloud.md): Last update: June 26, 2026
 - [Applio Realtime Cloud](https://docs.aihub.gg/realtime-voice-changer/cloud/applio-realtime-cloud.md): Last update: March 24, 2026
-- [Deiteris' W Okada Fork Cloud](https://docs.aihub.gg/realtime-voice-changer/cloud/deiteris-w-okada-fork-cloud.md): Last update: April 1, 2026
+- [Deiteris' W Okada Fork Cloud](https://docs.aihub.gg/realtime-voice-changer/cloud/deiteris-w-okada-fork-cloud.md): Last update: June 26, 2026
 
 ## Image Gen
 

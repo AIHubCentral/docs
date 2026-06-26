@@ -7,10 +7,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.3.831762870879">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.835815370465">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.5.3">
+    <meta name="generator" content="Retype 4.6.0">
 
     <!-- Primary Meta Tags -->
     <title>What&#39;s RVC</title>
@@ -41,11 +41,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../img/aihub-favicon.png" />
-    <link href="../../resources/css/retype.css?v=4.5.3.831762870879" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.835815370465" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.5.3.831762870879" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../resources/js/retype.js?v=4.5.3" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.5.3.831762870879" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.835815370465" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.835815370465" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -280,6 +280,11 @@
 <doc-tabs>
 <doc-tab v-cloak id="training">
 <template #title>Training</template>
+<retype-table copy-text="**SPEC** | **MINIMUM REQUIREMENT** | 
+:---: | :---: | :---: |
+GPU | NVIDIA GTX 900 Series / AMD RX580 (Mac isn't supported) | 
+RAM | 6GB
+Storage | 30 GB">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -304,6 +309,13 @@
 </tbody>
 </table>
 </div>
+</retype-table>
+<retype-table copy-text="**SPEC** | **SUGGESTED REQUIREMENT** | 
+:---: | :---: | :---: |
+GPU | NVIDIA RTX 20 Series or later / AMD Radeon RX 5xxx or later (Mac isn't supported) | 
+VRAM | 8GB
+RAM | 8GB
+Storage | 30 GB">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -332,9 +344,14 @@
 </tbody>
 </table>
 </div>
+</retype-table>
 </doc-tab>
 <doc-tab v-cloak id="inference">
 <template #title>Inference</template>
+<retype-table copy-text="**SPEC** | **MINIMUM REQUIREMENT** | 
+:---: | :---: | :---: | 
+RAM | 6GB
+Storage | 6 GB">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -355,6 +372,12 @@
 </tbody>
 </table>
 </div>
+</retype-table>
+<retype-table copy-text="**SPEC** | **SUGGESTED REQUIREMENT** | 
+:---: | :---: | :---: | 
+GPU | NVIDIA RTX 20 Series or later / AMD Radeon RX 5xxx or later / Apple M3 | 
+RAM | 6GB
+Storage | 6 GB">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -379,6 +402,7 @@
 </tbody>
 </table>
 </div>
+</retype-table>
 </doc-tab>
 </doc-tabs>
 <div class="flex mb-6">

@@ -7,10 +7,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.3.831762870879">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.835815370465">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.5.3">
+    <meta name="generator" content="Retype 4.6.0">
 
     <!-- Primary Meta Tags -->
     <title>Dataset &amp; Isolation</title>
@@ -41,11 +41,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../../img/aihub-favicon.png" />
-    <link href="../../../resources/css/retype.css?v=4.5.3.831762870879" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=4.6.0.835815370465" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.5.3.831762870879" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../../resources/js/retype.js?v=4.5.3" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.5.3.831762870879" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.6.0.835815370465" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.6.0.835815370465" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -507,6 +507,14 @@ We recommend picking <code translate="no" v-pre>FLAC</code>. Learn why <a href="
 <p>‎</p>
 <h4 id="best-models-for-uvr">Best models for UVR:</h4>
 <p>Note: most actually are all MelBand Roformer models, but there isn&#x27;t a proper list yet for them</p>
+<retype-table copy-text="Extraction | Process Method | Model
+:---: | :---: | :---:
+Vocals | MDX-Net | Gabox's `voc_fv4`
+Instrumental | MDX-Net | Instrumental | Unwa's `Inst V1 Plus` or `Inst V1 (E) Plus` (the e is emphasis for fullness, making the output sound full but possibly raising noise and lowering bleedlessness, so it might sound less clean)
+De-Reverb | MDX-Net | Anvuew's `mel_dereverb_v2` or `room_mono_v1`
+Extract Leading Vocals | MDX-Net | `bs roformer karaoke by anvuew`
+De-Noise | MDX-Net | `Mel denoiser v2`
+De-Echo  | MDX-Net | `uvr de-echo` and `uvr de-echo aggressive` (use aggressive only if there's still some echo left after the first model, their output has a cutoff around 15–16 kHz)">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -557,6 +565,7 @@ We recommend picking <code translate="no" v-pre>FLAC</code>. Learn why <a href="
 </tbody>
 </table>
 </div>
+</retype-table>
 <p>‎</p>
 <h3 id="troubleshooting">Troubleshooting <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M7.875 2.292a.114.114 0 0 0-.032.018A7.239 7.239 0 0 0 4.75 8.25a7.248 7.248 0 0 0 3.654 6.297c.57.327.982.955.941 1.682v.002l-.317 6.058a.75.75 0 1 1-1.498-.078l.317-6.062v-.004c.006-.09-.047-.215-.188-.296A8.749 8.749 0 0 1 3.25 8.25a8.738 8.738 0 0 1 3.732-7.169 1.547 1.547 0 0 1 1.709-.064c.484.292.809.835.809 1.46v4.714a.25.25 0 0 0 .119.213l2.25 1.385c.08.05.182.05.262 0l2.25-1.385a.25.25 0 0 0 .119-.213V2.478c0-.626.325-1.169.81-1.461a1.547 1.547 0 0 1 1.708.064 8.741 8.741 0 0 1 3.732 7.17 8.747 8.747 0 0 1-4.41 7.598c-.14.081-.193.206-.188.296v.004l.318 6.062a.75.75 0 1 1-1.498.078l-.317-6.058v-.002c-.041-.727.37-1.355.94-1.682A7.247 7.247 0 0 0 19.25 8.25a7.239 7.239 0 0 0-3.093-5.94.114.114 0 0 0-.032-.018l-.01-.001c-.003 0-.014 0-.031.01-.036.022-.084.079-.084.177V7.19c0 .608-.315 1.172-.833 1.49l-2.25 1.385a1.75 1.75 0 0 1-1.834 0l-2.25-1.384A1.752 1.752 0 0 1 8 7.192V2.477c0-.098-.048-.155-.084-.176a.068.068 0 0 0-.031-.011l-.01.001Z"/></g></g></svg></h3>
 <hr>
@@ -638,6 +647,13 @@ We recommend picking <code translate="no" v-pre>FLAC</code>. Learn why <a href="
 </li>
 </ol>
 <h3 id="best-models-for-local-eddy-uvr5-ui">Best Models for Local Eddy UVR5 UI</h3>
+<retype-table copy-text="Extraction | Model
+:---: | :---:
+Vocals | `MelBand Roformer | Vocals FV4 by Gabox`
+Instrumental | `MelBand Roformer Kim | Inst V1 Plus by Unwa` or `MelBand Roformer Kim | Inst V1 (E) Plus by Unwa` (the e is emphasis for fullness, making the output sound full but possibly raising noise and lowering bleedlessness, so it might sound less clean)
+De-Reverb | `MelBand Roformer | De-Reverb v2 by anvuew`
+Extract Leading Vocals | `MelBand Roformer | Karaoke by becruily`
+De-Noise | `MelBand Roformer | Denoise by Aufr33 (Aggressive)`">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -670,6 +686,7 @@ We recommend picking <code translate="no" v-pre>FLAC</code>. Learn why <a href="
 </tbody>
 </table>
 </div>
+</retype-table>
 <hr>
 <h3 id="troubleshooting-1">Troubleshooting <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M7.875 2.292a.114.114 0 0 0-.032.018A7.239 7.239 0 0 0 4.75 8.25a7.248 7.248 0 0 0 3.654 6.297c.57.327.982.955.941 1.682v.002l-.317 6.058a.75.75 0 1 1-1.498-.078l.317-6.062v-.004c.006-.09-.047-.215-.188-.296A8.749 8.749 0 0 1 3.25 8.25a8.738 8.738 0 0 1 3.732-7.169 1.547 1.547 0 0 1 1.709-.064c.484.292.809.835.809 1.46v4.714a.25.25 0 0 0 .119.213l2.25 1.385c.08.05.182.05.262 0l2.25-1.385a.25.25 0 0 0 .119-.213V2.478c0-.626.325-1.169.81-1.461a1.547 1.547 0 0 1 1.708.064 8.741 8.741 0 0 1 3.732 7.17 8.747 8.747 0 0 1-4.41 7.598c-.14.081-.193.206-.188.296v.004l.318 6.062a.75.75 0 1 1-1.498.078l-.317-6.058v-.002c-.041-.727.37-1.355.94-1.682A7.247 7.247 0 0 0 19.25 8.25a7.239 7.239 0 0 0-3.093-5.94.114.114 0 0 0-.032-.018l-.01-.001c-.003 0-.014 0-.031.01-.036.022-.084.079-.084.177V7.19c0 .608-.315 1.172-.833 1.49l-2.25 1.385a1.75 1.75 0 0 1-1.834 0l-2.25-1.384A1.752 1.752 0 0 1 8 7.192V2.477c0-.098-.048-.155-.084-.176a.068.068 0 0 0-.031-.011l-.01.001Z"/></g></g></svg></h3>
 <hr>
@@ -725,6 +742,13 @@ We recommend picking <code translate="no" v-pre>FLAC</code>. Learn why <a href="
 </li>
 </ol>
 <h3 id="best-models-for-uvr5-ui-hf">Best Models for UVR5-UI-HF</h3>
+<retype-table copy-text="Extraction | Model
+:---: | :---:
+Vocals | `MelBand Roformer | Vocals FV4 by Gabox`
+Instrumental | `MelBand Roformer Kim | Inst V1 Plus by Unwa` or `MelBand Roformer Kim | Inst V1 (E) Plus by Unwa` (the e is emphasis for fullness, making the output sound full but possibly raising noise and lowering bleedlessness, so it might sound less clean)
+De-Reverb | `MelBand Roformer | De-Reverb v2 by anvuew`
+Extract Leading Vocals | `MelBand Roformer | Karaoke by becruily`
+De-Noise | `MelBand Roformer | Denoise by Aufr33 (Aggressive)`">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -757,6 +781,7 @@ We recommend picking <code translate="no" v-pre>FLAC</code>. Learn why <a href="
 </tbody>
 </table>
 </div>
+</retype-table>
 <hr>
 <h3 id="troubleshooting-2">Troubleshooting <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M7.875 2.292a.114.114 0 0 0-.032.018A7.239 7.239 0 0 0 4.75 8.25a7.248 7.248 0 0 0 3.654 6.297c.57.327.982.955.941 1.682v.002l-.317 6.058a.75.75 0 1 1-1.498-.078l.317-6.062v-.004c.006-.09-.047-.215-.188-.296A8.749 8.749 0 0 1 3.25 8.25a8.738 8.738 0 0 1 3.732-7.169 1.547 1.547 0 0 1 1.709-.064c.484.292.809.835.809 1.46v4.714a.25.25 0 0 0 .119.213l2.25 1.385c.08.05.182.05.262 0l2.25-1.385a.25.25 0 0 0 .119-.213V2.478c0-.626.325-1.169.81-1.461a1.547 1.547 0 0 1 1.708.064 8.741 8.741 0 0 1 3.732 7.17 8.747 8.747 0 0 1-4.41 7.598c-.14.081-.193.206-.188.296v.004l.318 6.062a.75.75 0 1 1-1.498.078l-.317-6.058v-.002c-.041-.727.37-1.355.94-1.682A7.247 7.247 0 0 0 19.25 8.25a7.239 7.239 0 0 0-3.093-5.94.114.114 0 0 0-.032-.018l-.01-.001c-.003 0-.014 0-.031.01-.036.022-.084.079-.084.177V7.19c0 .608-.315 1.172-.833 1.49l-2.25 1.385a1.75 1.75 0 0 1-1.834 0l-2.25-1.384A1.752 1.752 0 0 1 8 7.192V2.477c0-.098-.048-.155-.084-.176a.068.068 0 0 0-.031-.011l-.01.001Z"/></g></g></svg></h3>
 <hr>
@@ -818,6 +843,13 @@ We recommend picking <code translate="no" v-pre>FLAC</code>. Learn why <a href="
 </ul>
 <hr>
 <h3 id="best-models-for-uvr5-ui-colab">Best Models for UVR5-UI-Colab</h3>
+<retype-table copy-text="Extraction | Model
+:---: | :---:
+Vocals | `MelBand Roformer | Vocals FV4 by Gabox`
+Instrumental | `MelBand Roformer Kim | Inst V1 Plus by Unwa` or `MelBand Roformer Kim | Inst V1 (E) Plus by Unwa` (the e is emphasis for fullness, making the output sound full but possibly raising noise and lowering bleedlessness, so it might sound less clean)
+De-Reverb | `MelBand Roformer | De-Reverb v2 by anvuew`
+Extract Leading Vocals | `MelBand Roformer | Karaoke by becruily`
+De-Noise | `MelBand Roformer | Denoise by Aufr33 (Aggressive)`">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -850,6 +882,7 @@ We recommend picking <code translate="no" v-pre>FLAC</code>. Learn why <a href="
 </tbody>
 </table>
 </div>
+</retype-table>
 <hr>
 <h3 id="troubleshooting-3">Troubleshooting <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M7.875 2.292a.114.114 0 0 0-.032.018A7.239 7.239 0 0 0 4.75 8.25a7.248 7.248 0 0 0 3.654 6.297c.57.327.982.955.941 1.682v.002l-.317 6.058a.75.75 0 1 1-1.498-.078l.317-6.062v-.004c.006-.09-.047-.215-.188-.296A8.749 8.749 0 0 1 3.25 8.25a8.738 8.738 0 0 1 3.732-7.169 1.547 1.547 0 0 1 1.709-.064c.484.292.809.835.809 1.46v4.714a.25.25 0 0 0 .119.213l2.25 1.385c.08.05.182.05.262 0l2.25-1.385a.25.25 0 0 0 .119-.213V2.478c0-.626.325-1.169.81-1.461a1.547 1.547 0 0 1 1.708.064 8.741 8.741 0 0 1 3.732 7.17 8.747 8.747 0 0 1-4.41 7.598c-.14.081-.193.206-.188.296v.004l.318 6.062a.75.75 0 1 1-1.498.078l-.317-6.058v-.002c-.041-.727.37-1.355.94-1.682A7.247 7.247 0 0 0 19.25 8.25a7.239 7.239 0 0 0-3.093-5.94.114.114 0 0 0-.032-.018l-.01-.001c-.003 0-.014 0-.031.01-.036.022-.084.079-.084.177V7.19c0 .608-.315 1.172-.833 1.49l-2.25 1.385a1.75 1.75 0 0 1-1.834 0l-2.25-1.384A1.752 1.752 0 0 1 8 7.192V2.477c0-.098-.048-.155-.084-.176a.068.068 0 0 0-.031-.011l-.01.001Z"/></g></g></svg></h3>
 <hr>
@@ -945,6 +978,13 @@ We recommend picking <code translate="no" v-pre>FLAC</code>. Learn why <a href="
 </ol>
 <hr>
 <h4 id="best-models-for-msst">Best models for MSST:</h4>
+<retype-table copy-text="Extraction | Model
+:---: | :---:
+Vocals | Gabox's `voc_fv4`
+Instrumental | `inst_v1_plus (by unwa)` or `inst_v1e_plus (by unwa)` (the e is emphasis for fullness, making the output sound full but possibly raising noise and lowering bleedlessness, so it might sound less clean)
+De-Reverb | Anvuew's `mel_dereverb_v2`
+Extract Leading Vocals | `bs_roformer_karaoke_frazer_becruily`
+De-Noise | `DENOISE-MelBand-Roformer-2 (by aufr33)`">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -977,6 +1017,7 @@ We recommend picking <code translate="no" v-pre>FLAC</code>. Learn why <a href="
 </tbody>
 </table>
 </div>
+</retype-table>
 <p>‎</p>
 <h3 id="troubleshooting-4">Troubleshooting <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M7.875 2.292a.114.114 0 0 0-.032.018A7.239 7.239 0 0 0 4.75 8.25a7.248 7.248 0 0 0 3.654 6.297c.57.327.982.955.941 1.682v.002l-.317 6.058a.75.75 0 1 1-1.498-.078l.317-6.062v-.004c.006-.09-.047-.215-.188-.296A8.749 8.749 0 0 1 3.25 8.25a8.738 8.738 0 0 1 3.732-7.169 1.547 1.547 0 0 1 1.709-.064c.484.292.809.835.809 1.46v4.714a.25.25 0 0 0 .119.213l2.25 1.385c.08.05.182.05.262 0l2.25-1.385a.25.25 0 0 0 .119-.213V2.478c0-.626.325-1.169.81-1.461a1.547 1.547 0 0 1 1.708.064 8.741 8.741 0 0 1 3.732 7.17 8.747 8.747 0 0 1-4.41 7.598c-.14.081-.193.206-.188.296v.004l.318 6.062a.75.75 0 1 1-1.498.078l-.317-6.058v-.002c-.041-.727.37-1.355.94-1.682A7.247 7.247 0 0 0 19.25 8.25a7.239 7.239 0 0 0-3.093-5.94.114.114 0 0 0-.032-.018l-.01-.001c-.003 0-.014 0-.031.01-.036.022-.084.079-.084.177V7.19c0 .608-.315 1.172-.833 1.49l-2.25 1.385a1.75 1.75 0 0 1-1.834 0l-2.25-1.384A1.752 1.752 0 0 1 8 7.192V2.477c0-.098-.048-.155-.084-.176a.068.068 0 0 0-.031-.011l-.01.001Z"/></g></g></svg></h3>
 <hr>
@@ -1104,6 +1145,13 @@ We recommend selecting FLAC from now on. Learn more <a href="https://docs.aihub.
 </ol>
 <hr>
 <h4 id="best-models-for-mvsep">Best Models for MVSEP:</h4>
+<retype-table copy-text="Extraction | Separation Type | Model
+:---: | :---: | :---:
+Vocals | MelBand Roformer | `BS-Roformer 2025.07`
+Instrumental | MelBand Roformer | `BS-Roformer 2025.07`
+De-Reverb | Reverb Removal | `Sucial V2` (MelRoformer) or `Anvuew V2` (MelRoformer)
+Extract Backing Vocals | MVSep Karaoke | BS Roformer by MVSep Team (SDR: 10.41)
+De-Noise | DeNoise by aufr33 | `Aggressive`">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -1142,6 +1190,7 @@ We recommend selecting FLAC from now on. Learn more <a href="https://docs.aihub.
 </tbody>
 </table>
 </div>
+</retype-table>
 <hr>
 <h3 id="troubleshooting-5">Troubleshooting <svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M7.875 2.292a.114.114 0 0 0-.032.018A7.239 7.239 0 0 0 4.75 8.25a7.248 7.248 0 0 0 3.654 6.297c.57.327.982.955.941 1.682v.002l-.317 6.058a.75.75 0 1 1-1.498-.078l.317-6.062v-.004c.006-.09-.047-.215-.188-.296A8.749 8.749 0 0 1 3.25 8.25a8.738 8.738 0 0 1 3.732-7.169 1.547 1.547 0 0 1 1.709-.064c.484.292.809.835.809 1.46v4.714a.25.25 0 0 0 .119.213l2.25 1.385c.08.05.182.05.262 0l2.25-1.385a.25.25 0 0 0 .119-.213V2.478c0-.626.325-1.169.81-1.461a1.547 1.547 0 0 1 1.708.064 8.741 8.741 0 0 1 3.732 7.17 8.747 8.747 0 0 1-4.41 7.598c-.14.081-.193.206-.188.296v.004l.318 6.062a.75.75 0 1 1-1.498.078l-.317-6.058v-.002c-.041-.727.37-1.355.94-1.682A7.247 7.247 0 0 0 19.25 8.25a7.239 7.239 0 0 0-3.093-5.94.114.114 0 0 0-.032-.018l-.01-.001c-.003 0-.014 0-.031.01-.036.022-.084.079-.084.177V7.19c0 .608-.315 1.172-.833 1.49l-2.25 1.385a1.75 1.75 0 0 1-1.834 0l-2.25-1.384A1.752 1.752 0 0 1 8 7.192V2.477c0-.098-.048-.155-.084-.176a.068.068 0 0 0-.031-.011l-.01.001Z"/></g></g></svg></h3>
 <hr>
@@ -1209,6 +1258,13 @@ This determines the depth of the extraction.</p>
 <h4 id="best-models-for-x-minus">Best models for X-Minus:</h4>
 </li>
 </ul>
+<retype-table copy-text="Extraction | Model
+:---: | :---: 
+Vocals/Instrumental | `Mel-RoFormer by Gabox Fv7z`
+De-Echo / De-Reverb | `De-reverb &amp; De-echo by Sucial v2`
+Extract backing Vocals | Mel-RoFormer Lead/Back A.K.A mel_roformer_lv_bv_chain1 (the only one, visible in the site's code)
+De-Noise (found in Restoration) | `Mel Roformer De-Noise`
+Restoration | `Apollo Universal by Lew` (to enhance mp3 and other low quality files)">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -1241,6 +1297,7 @@ This determines the depth of the extraction.</p>
 </tbody>
 </table>
 </div>
+</retype-table>
 </doc-tab>
 <doc-tab v-cloak id="rx11">
 <template #title>RX11</template>
