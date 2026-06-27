@@ -1,4 +1,5 @@
 # :icon-home-fill: Home
+
 ``Last update: April 19, 2026``
 ***
 :::content-center
@@ -106,12 +107,8 @@
     font-size: 0.95rem;
   }
 </style>
-
 <div class="social-grid">
-    <a href="https://discord.gg/mmRR2TUJF5" class="social-card">
-        <img src="/img/discord-logo.svg" alt="Discord">
-        <span>AI HUB's Discord</span>
-    </a>
+    [UNRESOLVED PARTIAL]
 </div>
 
 ***

@@ -629,20 +629,19 @@ Having Multiple EQ bands provides the flexibility to precisely shape and refine 
     font-size: 0.95rem;
   }
 </style>
-
 <div class="social-grid">
     <a href="https://discord.gg/mmRR2TUJF5" class="social-card">
-        <img src="/img/discord-logo.svg" alt="Discord">
-        <span>AI HUB's Discord</span>
-    </a>
+    <img src="/img/discord-logo.svg" alt="Discord">
+    <span>AI HUB's Discord</span>
+</a>
     <a href="https://discord.gg/c9mbMGxEbR" class="social-card">
-        <img src="/img/discord-logo.svg" alt="Discord">
-        <span>dr87 Vonovox's Discord</span>
-    </a>
+    <img src="/img/discord-logo.svg" alt="Discord">
+    <span>dr87 Vonovox's Discord</span>
+</a>
     <a href="https://www.patreon.com/dr87/membership" class="social-card">
-        <img src="/img/patreon-icon.svg" alt="Patreon">
-        <span>dr87's Patreon</span>
-    </a>
+    <img src="/img/patreon-icon.svg" alt="Patreon">
+    <span>dr87's Patreon</span>
+</a>
 </div>
 
 ###### ‎

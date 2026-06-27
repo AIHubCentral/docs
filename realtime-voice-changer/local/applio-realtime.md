@@ -1,4 +1,4 @@
-``Last update: March 30, 2026``
+``Last update: June 27, 2026``
 
 ***
 
@@ -11,6 +11,13 @@
 - This guide focuses on the Applio Realtime interface, for Realtime Voice Changing. It will link to the guides to setup Applio.
 
 - RVC does **NOT** mean Realtime Voice Changer. RVC means Retrieval-based-Voice-Conversion.
+
+!!!warning Official Applio Discord Moved
+The original **IA Hispano (Applio)** Discord server has transitioned ownership and has been rebranded to **AI Maxxing**. 
+- It is **no longer affiliated** with the original Applio development team or its open-source creators.
+- To receive official Applio updates, support, and community discussions, please use their new official server link:
+- 👉 **[Join the Official Applio Discord Community](https://discord.gg/wY7gmqTyEV)**
+!!!
 
 ***
 #### Is this Program Safe?
@@ -204,6 +211,57 @@ RVC works by downsampling your audio voice to 16khz because f0 estimators only w
 ***
 ### Are there unique Voice Models?
 RVC Voice Models need to be trained on something, so the models themselves can't be unique, but you can use the [Voice Blender](https://docs.aihub.gg/rvc/local/applio/#voice-blender) to create a new unique merged model.
+
+***
+:::content-center
+## Communities :icon-people:
+:::
+
+<style>
+  .social-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin: 1.5rem 0;
+  }
+  .social-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0.8rem 1.2rem;
+    min-width: 240px;
+    border: 1px solid rgba(150, 150, 150, 0.2);
+    border-radius: 10px;
+    text-decoration: none !important;
+    color: inherit !important;
+    background: rgba(128, 128, 128, 0.05);
+    transition: all 0.2s ease;
+  }
+  .social-card:hover {
+    transform: translateY(-2px);
+    background: rgba(128, 128, 128, 0.12);
+    border-color: rgba(150, 150, 150, 0.5);
+  }
+  .social-card img {
+    width: 24px;
+    height: 24px;
+  }
+  .social-card span {
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+</style>
+<div class="social-grid">
+    <a href="https://discord.gg/mmRR2TUJF5" class="social-card">
+    <img src="/img/discord-logo.svg" alt="Discord">
+    <span>AI HUB's Discord</span>
+</a>
+    <a href="https://discord.gg/wY7gmqTyEV" class="social-card">
+    <img src="/img/discord-logo.svg" alt="Discord">
+    <span>IA Hispano (Applio)' Discord</span>
+</a>
+</div>
 
 ***
 ###### ‎

@@ -1,4 +1,4 @@
-``Last update: April 13, 2026``
+``Last update: June 27, 2026``
 
 ***
 :::content-center
@@ -16,6 +16,13 @@
 - Because of its user-friendly experience & active development, it's considered to be one of the best forks.     
 
 - Applio has [it's own Applio Docs](https://docs.applio.org/), which may have more info about the tool.
+
+!!!warning Official Applio Discord Moved
+The original **IA Hispano (Applio)** Discord server has transitioned ownership and has been rebranded to **AI Maxxing**. 
+- It is **no longer affiliated** with the original Applio development team or its open-source creators.
+- To receive official Applio updates, support, and community discussions, please use their new official server link:
+- 👉 **[Join the Official Applio Discord Community](https://discord.gg/wY7gmqTyEV)**
+!!!
 
 ***
 #### Is this Program Safe?
@@ -460,7 +467,7 @@ It'll finish when it says `extracted successfully`.
 - Download Custom Pretrained Models (Optional):
     - Go to the **Download** tab, go to the download custom pretrain, and select the community made ones like TITAN and for which sample rate you need.
     - To use a pretrained model that you downloaded from the **Download** tab, simply check the `Pretrained` box.
-    - If you can't find the pretrain you want, you can check [AI HUB](https://discord.gg/invite/aihub)'s [`#pretrain-models`](https://discord.com/channels/1159260121998827560/1235952130855010365) or [here](https://docs.aihub.gg/rvc/resources/training/#where-do-i-find-pretrains)
+    - If you can't find the pretrain you want, you can check [AI HUB](https://discord.gg/mmRR2TUJF5)'s [`#pretrain-models`](https://discord.com/channels/1159260121998827560/1235952130855010365) or [here](https://docs.aihub.gg/rvc/resources/training/#where-do-i-find-pretrains)
 - Use Custom Pretrained Models (Optional):
     - Check the `Custom Pretrained` box to use your own files. This will open the `Pretrained Custom Settings` section.
 
@@ -806,16 +813,15 @@ If you are experiencing lag, stuttering, or slow training speeds, **disable HAGS
     font-size: 0.95rem;
   }
 </style>
-
 <div class="social-grid">
     <a href="https://discord.gg/mmRR2TUJF5" class="social-card">
-        <img src="/img/discord-logo.svg" alt="Discord">
-        <span>AI HUB's Discord</span>
-    </a>
-    <a href="https://discord.gg/urxFjYmYYh" class="social-card">
-        <img src="/img/discord-logo.svg" alt="Discord">
-        <span>IA Hispano (Applio)' Discord</span>
-    </a>
+    <img src="/img/discord-logo.svg" alt="Discord">
+    <span>AI HUB's Discord</span>
+</a>
+    <a href="https://discord.gg/wY7gmqTyEV" class="social-card">
+    <img src="/img/discord-logo.svg" alt="Discord">
+    <span>IA Hispano (Applio)' Discord</span>
+</a>
 </div>
 
 ***

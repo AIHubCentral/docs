@@ -1061,16 +1061,15 @@ applio/assets/datasets/your-model-name/
     font-size: 0.95rem;
   }
 </style>
-
 <div class="social-grid">
     <a href="https://discord.gg/mmRR2TUJF5" class="social-card">
-        <img src="/img/discord-logo.svg" alt="Discord">
-        <span>AI HUB's Discord</span>
-    </a>
+    <img src="/img/discord-logo.svg" alt="Discord">
+    <span>AI HUB's Discord</span>
+</a>
     <a href="https://discord.gg/ZPtAU5R6rP" class="social-card">
-        <img src="/img/discord-logo.svg" alt="Discord">
-        <span>Audio Separation's Discord</span>
-    </a>
+    <img src="/img/discord-logo.svg" alt="Discord">
+    <span>Audio Separation's Discord</span>
+</a>
 </div>
 
 ***

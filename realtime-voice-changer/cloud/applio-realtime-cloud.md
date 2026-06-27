@@ -1,4 +1,4 @@
-``Last update: March 24, 2026``
+``Last update: June 27, 2026``
 
 ***
 :::content-center
@@ -7,9 +7,18 @@
 
 Some of the Applio Cloud versions support the **Realtime** tab. This allows users without a powerful local GPU to perform live voice conversion using cloud-hosted hardware.
 
+!!!warning Official Applio Discord Moved
+The original **IA Hispano (Applio)** Discord server has transitioned ownership and has been rebranded to **AI Maxxing**. 
+- It is **no longer affiliated** with the original Applio development team or its open-source creators.
+- To receive official Applio updates, support, and community discussions, please use their new official server link:
+- 👉 **[Join the Official Applio Discord Community](https://discord.gg/wY7gmqTyEV)**
+!!!
+
 ***
-## Choose Your Cloud Service
-Set up the program using your preferred cloud service guide. Once configured, use the Public Tunnel URL to open the interface and continue with the next steps.
+:::content-center
+## Choose your Cloud Service
+:::
+Set up the program using your preferred cloud service guide. Once configured, use the Public Tunnel URL to open the interface and continue with the next steps
 
 <style>
   /* Local styling that only affects this page */
@@ -78,6 +87,8 @@ Set up the program using your preferred cloud service guide. Once configured, us
     </a>
 </div>
 
+<br><br>
+
 ***
 
 ### Realtime Setup on Cloud
@@ -86,7 +97,58 @@ Once you have the Applio WebUI running and accessible via your tunnel link from 
 Click below to learn how to configure your inputs and outputs for live voice changing.[!button text="Continue with the Local Realtime Guide" icon="arrow-right" target="blank"](https://docs.aihub.gg/realtime-voice-changer/local/applio-realtime/)
 
 ***
+:::content-center
+## Communities :icon-people:
+:::
 
+<style>
+  .social-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin: 1.5rem 0;
+  }
+  .social-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0.8rem 1.2rem;
+    min-width: 240px;
+    border: 1px solid rgba(150, 150, 150, 0.2);
+    border-radius: 10px;
+    text-decoration: none !important;
+    color: inherit !important;
+    background: rgba(128, 128, 128, 0.05);
+    transition: all 0.2s ease;
+  }
+  .social-card:hover {
+    transform: translateY(-2px);
+    background: rgba(128, 128, 128, 0.12);
+    border-color: rgba(150, 150, 150, 0.5);
+  }
+  .social-card img {
+    width: 24px;
+    height: 24px;
+  }
+  .social-card span {
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+</style>
+<div class="social-grid">
+    <a href="https://discord.gg/mmRR2TUJF5" class="social-card">
+    <img src="/img/discord-logo.svg" alt="Discord">
+    <span>AI HUB's Discord</span>
+</a>
+    <a href="https://discord.gg/wY7gmqTyEV" class="social-card">
+    <img src="/img/discord-logo.svg" alt="Discord">
+    <span>IA Hispano (Applio)' Discord</span>
+</a>
+</div>
+
+***
+###### ‎
 :::content-center
 #### `You have reached the end.`
 

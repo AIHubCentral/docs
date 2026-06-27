@@ -17,14 +17,14 @@
 
 ### Local
 
-- [Applio](https://docs.aihub.gg/rvc/local/applio.md): Last update: April 13, 2026
+- [Applio](https://docs.aihub.gg/rvc/local/applio.md): Last update: June 27, 2026
 - [Mainline](https://docs.aihub.gg/rvc/local/mainline.md): Last update: March 14, 2026
 - [AICoverMaker](https://docs.aihub.gg/rvc/local/aicovermaker.md): Last update: March 26, 2026
 - [RVC Termux Android](https://docs.aihub.gg/rvc/local/rvc-termux-android.md): Last update: March 17, 2026
 
 ### Cloud
 
-- [Applio Cloud](https://docs.aihub.gg/rvc/cloud/applio-cloud.md): Last update: March 24, 2026
+- [Applio Cloud](https://docs.aihub.gg/rvc/cloud/applio-cloud.md): Last update: June 27, 2026
 - [AICoverMaker Cloud](https://docs.aihub.gg/rvc/cloud/aicovermaker-cloud.md): Last update: March 24, 2026
 - [RVC Zero Cloud](https://docs.aihub.gg/rvc/cloud/rvc-zero-cloud.md): Last update: March 24, 2026
 
@@ -40,13 +40,13 @@
 
 - [Tg Develop's W Okada Fork](https://docs.aihub.gg/realtime-voice-changer/local/tg-develops-w-okada-fork.md): Last update: June 26, 2026
 - [Vonovox](https://docs.aihub.gg/realtime-voice-changer/local/vonovox.md): Last update: March 30, 2026
-- [Applio Realtime](https://docs.aihub.gg/realtime-voice-changer/local/applio-realtime.md): Last update: March 30, 2026
+- [Applio Realtime](https://docs.aihub.gg/realtime-voice-changer/local/applio-realtime.md): Last update: June 27, 2026
 - [Deiteris' W Okada Fork](https://docs.aihub.gg/realtime-voice-changer/local/deiteris-w-okada-fork.md): Last update: June 26, 2026
 
 ### Cloud
 
 - [Tg Develop's W Okada Fork Cloud](https://docs.aihub.gg/realtime-voice-changer/cloud/tg-develops-w-okada-fork-cloud.md): Last update: June 26, 2026
-- [Applio Realtime Cloud](https://docs.aihub.gg/realtime-voice-changer/cloud/applio-realtime-cloud.md): Last update: March 24, 2026
+- [Applio Realtime Cloud](https://docs.aihub.gg/realtime-voice-changer/cloud/applio-realtime-cloud.md): Last update: June 27, 2026
 - [Deiteris' W Okada Fork Cloud](https://docs.aihub.gg/realtime-voice-changer/cloud/deiteris-w-okada-fork-cloud.md): Last update: June 26, 2026
 
 ## Image Gen
