@@ -74,7 +74,7 @@ icon: home-fill
 
 {{ include "social/social-header.md" }}
 <div class="social-grid">
-    {{ include "social/grid-cards/aihub-card.md" }}
+    {{ include "social/grid-cards/aihub-discord-card.md" }}
 </div>
 
 ***
