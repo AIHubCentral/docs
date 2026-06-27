@@ -3,7 +3,7 @@ icon: ":green_apple:"
 order: 3000
 ---
 
-``Last update: March 24, 2026``
+``Last update: June 27, 2026``
 
 ***
 :::content-center
@@ -14,6 +14,9 @@ order: 3000
 :::
 - This is a [cloud-based](https://docs.aihub.gg/extra/glossary/#cloud-based) alternative to run [Applio](https://docs.aihub.gg/rvc/local/applio/), an RVC Fork, for users who do not have a powerful local PC GPU. 
 - Most of these options provide the exact same Web UI as the local version. 
+
+
+{{ include "social/warnings/applio-discord-migration.md" }}
 
 
 {{ include "cloud-services/start-decision.md" }}
@@ -271,6 +274,13 @@ Because this workflow relies directly on executing notebook cells rather than a 
 ===
 
 {{ include "troubleshooting/report-missing-issue.md" }}
+
+
+{{ include "social/social-header.md" }}
+<div class="social-grid">
+    {{ include "social/grid-cards/aihub-discord-card.md" }}
+    {{ include "social/grid-cards/applio-discord-card.md" }}
+</div>
 
 
 ###### ‎   ‎

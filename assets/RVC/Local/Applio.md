@@ -3,7 +3,7 @@ icon: ":green_apple:"
 order: 4000
 ---
 
-``Last update: April 13, 2026``
+``Last update: June 27, 2026``
 
 ***
 :::content-center
@@ -21,6 +21,9 @@ order: 4000
 - Because of its user-friendly experience & active development, it's considered to be one of the best forks.     
 
 - Applio has [it's own Applio Docs](https://docs.applio.org/), which may have more info about the tool.
+
+
+{{ include "social/warnings/applio-discord-migration.md" }}
 
 
 {{ include "rvc-safety.md" }}
@@ -472,7 +475,7 @@ It'll finish when it says `extracted successfully`.
 - Download Custom Pretrained Models (Optional):
     - Go to the **Download** tab, go to the download custom pretrain, and select the community made ones like TITAN and for which sample rate you need.
     - To use a pretrained model that you downloaded from the **Download** tab, simply check the `Pretrained` box.
-    - If you can't find the pretrain you want, you can check [AI HUB](https://discord.gg/invite/aihub)'s [`#pretrain-models`](https://discord.com/channels/1159260121998827560/1235952130855010365) or [here](https://docs.aihub.gg/rvc/resources/training/#where-do-i-find-pretrains)
+    - If you can't find the pretrain you want, you can check [AI HUB](https://discord.gg/mmRR2TUJF5)'s [`#pretrain-models`](https://discord.com/channels/1159260121998827560/1235952130855010365) or [here](https://docs.aihub.gg/rvc/resources/training/#where-do-i-find-pretrains)
 - Use Custom Pretrained Models (Optional):
     - Check the `Custom Pretrained` box to use your own files. This will open the `Pretrained Custom Settings` section.
 
@@ -780,56 +783,10 @@ Then you'll be able to see the plugin in the **Plugins** tab.
 {{ include "troubleshooting/report-missing-issue.md" }}
 
 
-***
-:::content-center
-## Communities :icon-people:
-:::
-
-<style>
-  .social-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-    margin: 1.5rem 0;
-  }
-  .social-card {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 0.8rem 1.2rem;
-    min-width: 240px;
-    border: 1px solid rgba(150, 150, 150, 0.2);
-    border-radius: 10px;
-    text-decoration: none !important;
-    color: inherit !important;
-    background: rgba(128, 128, 128, 0.05);
-    transition: all 0.2s ease;
-  }
-  .social-card:hover {
-    transform: translateY(-2px);
-    background: rgba(128, 128, 128, 0.12);
-    border-color: rgba(150, 150, 150, 0.5);
-  }
-  .social-card img {
-    width: 24px;
-    height: 24px;
-  }
-  .social-card span {
-    font-weight: 600;
-    font-size: 0.95rem;
-  }
-</style>
-
+{{ include "social/social-header.md" }}
 <div class="social-grid">
-    <a href="https://discord.gg/mmRR2TUJF5" class="social-card">
-        <img src="/img/discord-logo.svg" alt="Discord">
-        <span>AI HUB's Discord</span>
-    </a>
-    <a href="https://discord.gg/urxFjYmYYh" class="social-card">
-        <img src="/img/discord-logo.svg" alt="Discord">
-        <span>IA Hispano (Applio)' Discord</span>
-    </a>
+    {{ include "social/grid-cards/aihub-discord-card.md" }}
+    {{ include "social/grid-cards/applio-discord-card.md" }}
 </div>
 
 

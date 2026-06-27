@@ -3,7 +3,7 @@ icon: ":green_apple:"
 order: 2000
 ---
 
-``Last update: March 30, 2026``
+``Last update: June 27, 2026``
 
 ***
 
@@ -16,6 +16,9 @@ order: 2000
 - This guide focuses on the Applio Realtime interface, for Realtime Voice Changing. It will link to the guides to setup Applio.
 
 - RVC does **NOT** mean Realtime Voice Changer. RVC means Retrieval-based-Voice-Conversion.
+
+
+{{ include "social/warnings/applio-discord-migration.md" }}
 
 
 {{ include "rvc-safety.md" }}
@@ -199,6 +202,13 @@ RVC works by downsampling your audio voice to 16khz because f0 estimators only w
 ***
 ### Are there unique Voice Models?
 RVC Voice Models need to be trained on something, so the models themselves can't be unique, but you can use the [Voice Blender](https://docs.aihub.gg/rvc/local/applio/#voice-blender) to create a new unique merged model.
+
+
+{{ include "social/social-header.md" }}
+<div class="social-grid">
+    {{ include "social/grid-cards/aihub-discord-card.md" }}
+    {{ include "social/grid-cards/applio-discord-card.md" }}
+</div>
 
 
 {{ include "end-badge.md" }}

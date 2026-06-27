@@ -600,60 +600,11 @@ The benefits are:
 Having Multiple EQ bands provides the flexibility to precisely shape and refine the tone of your voice far more effectively than a single band ever could. It's made so you can adjust multiple parts of your voice range with each.
 
 
-***
-:::content-center
-## Communities :icon-people:
-:::
-
-<style>
-  .social-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-    margin: 1.5rem 0;
-  }
-  .social-card {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 0.8rem 1.2rem;
-    min-width: 240px;
-    border: 1px solid rgba(150, 150, 150, 0.2);
-    border-radius: 10px;
-    text-decoration: none !important;
-    color: inherit !important;
-    background: rgba(128, 128, 128, 0.05);
-    transition: all 0.2s ease;
-  }
-  .social-card:hover {
-    transform: translateY(-2px);
-    background: rgba(128, 128, 128, 0.12);
-    border-color: rgba(150, 150, 150, 0.5);
-  }
-  .social-card img {
-    width: 24px;
-    height: 24px;
-  }
-  .social-card span {
-    font-weight: 600;
-    font-size: 0.95rem;
-  }
-</style>
-
+{{ include "social/social-header.md" }}
 <div class="social-grid">
-    <a href="https://discord.gg/mmRR2TUJF5" class="social-card">
-        <img src="/img/discord-logo.svg" alt="Discord">
-        <span>AI HUB's Discord</span>
-    </a>
-    <a href="https://discord.gg/c9mbMGxEbR" class="social-card">
-        <img src="/img/discord-logo.svg" alt="Discord">
-        <span>dr87 Vonovox's Discord</span>
-    </a>
-    <a href="https://www.patreon.com/dr87/membership" class="social-card">
-        <img src="/img/patreon-icon.svg" alt="Patreon">
-        <span>dr87's Patreon</span>
-    </a>
+    {{ include "social/grid-cards/aihub-discord-card.md" }}
+    {{ include "social/grid-cards/vonovox-discord-card.md" }}
+    {{ include "social/grid-cards/vonovox-patreon-card.md" }}
 </div>
 
 
