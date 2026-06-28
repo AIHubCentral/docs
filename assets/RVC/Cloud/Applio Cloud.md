@@ -3,7 +3,7 @@ icon: ":green_apple:"
 order: 3000
 ---
 
-``Last update: June 27, 2026``
+``Last update: June 28, 2026``
 
 ***
 :::content-center
@@ -166,23 +166,28 @@ order: 3000
 - 15 hours monthly of L40 48gb
 !!!
 
-- Run the first code cell to download the latest version of Applio and install necessary dependencies. It will print "Installed!" when finished.
+- **(Optional) Branch Selection:** In the first code cell, you can specify which branch or version of Applio to install by modifying the `branch` variable:
+  - `"latest-stable"` (Default): Automatically retrieves and clones the latest stable release from GitHub.
+  - `"main"`: Clones the latest experimental updates.
+  - A specific tag: Enter a designated stable version, such as `"3.6.2"`.
+
+- Run the first code cell to download Applio and install the required dependencies. It will print `Installed Applio (selected_branch)!` when completed.
 
 ***
 
 #### <u>Tunnels & Server Setup</u>
 
-- Launch the Server via Tunnels: Navigate to the third code cell, titled "Start Server **using Tunnels**". Choose one from the `Tunnel` code menu in the code cell.
+- Launch the Server via Tunnels: Scroll down to the code cell titled **Run UI**. Select your preferred tunneling service from the `Tunnel` dropdown menu.
 
-- **Port Viewer (Recommended & Default method):** A built-in Lightning.AI feature. Select "Port Viewer". Click the `+` at the bottom of the right tab, click on Web Apps and install Port Viewer. Run the cell. In the right-hand sidebar, click the **Web Apps** tab, click Port Viewer -> Add a new port. Enter `18888` and click your Port to open it.
-- **Gradio (Fast, Popular & Reliable):** Select "Gradio" and run the cell. Click the `.gradio.live` link in the output.
-- **Ngrok (Fast, Popular & Reliable):** Get your [Ngrok authtoken](https://dashboard.ngrok.com/get-started/your-authtoken), paste it into the `Token` field, and run the cell.
-- **Cloudflare (Easy, No Account Needed):** Select "Cloudflare" and run the cell. A `.trycloudflare.com` link will appear.
-- **LocalTunnel (No Account, Password Protected):** Select "LocalTunnel" and run the cell. Copy the `Local Tunnel Password` and use it on the generated link.
-- **Horizon (Fast, Requires Account & ID):** Go to the [Horizon Dashboard](https://hrzn.run/dashboard/), copy your ID, paste it into the `Token` field, and run the cell.
+- **Gradio (Default method, Fast, Popular & Reliable):** Select "Gradio" and run the cell. Click the `.gradio.live` link generated in the output once the server is active.
+- **Port Viewer (Recommended alternative):** A persistent, integrated Lightning.AI feature. Select "Port Viewer" in the notebook. In the right-hand sidebar of Lightning.AI, click the `+` icon at the bottom, select **Web Apps**, and install **Port Viewer**. Run the code cell, open Port Viewer from your sidebar, click **Add a new port**, enter `6969` as the port number, and optionally name it. Double-click the added port to launch the UI.
+- **Ngrok (Fast, Popular & Reliable):** Paste your free authentication token into the `Token` field. Select "Ngrok", choose your nearest geographical `Region` to reduce latency (Default is `ap - Asia/Pacific (Singapore)`), and run the cell to access the printed public URL.
+- **Cloudflare (Easy, No Account Needed):** Select "Cloudflare", run the cell, and open the generated `.trycloudflare.com` public URL.
+- **LocalTunnel (No Account, Password Protected):** Select "LocalTunnel" and run the cell. Copy the `Local Tunnel Password` (the IP shown in the output) and paste it into the generated `loca.lt` link page.
+- **Horizon (Fast, Requires Account & ID):** Visit the [Horizon Dashboard](https://hrzn.run/dashboard/). Copy your CLI token request ID from step 2, paste it into the `Token` field, and run the cell. Click the authorization URL in the output to approve, and then open the generated `.hrzn.run` public URL.
 
 
-- Accessing Files manually: Find the **Teamspace Drive** button on the right sidebar and click it. The path to Applio is `Studio > this_studio > Applio > Applio`. You can drag, drop, and download files directly from here.
+- Accessing Files manually: Click the **Teamspace Drive** button on the right sidebar. The installation directory is located at `Studio > this_studio > Applio`. You can directly drag, drop, upload, or download your assets from here.
 
 <img src="/img/cloud-services/lightning-ai-img/teamspace-drive.png" alt="LightningAI Teamspace Drive" width="500">
 
@@ -194,7 +199,7 @@ order: 3000
 
 <img src="/img/cloud-services/lightning-ai-img/jupyter.png" alt="LightningAI Jupyter" width="500">
 
-- **Maintenance:** If you need to update the Program or start fresh, you can run the final cell in the notebook, "Delete everything". This will remove all downloaded files and configurations from your persistent storage, allowing for a clean installation by re-following the notebook with perhaps a changed branch variable.
+- **Maintenance:** Since Lightning.AI sessions utilize persistent storage, you can run the final code cell ("Delete everything") if you wish to wipe the Applio directory, clear temporary tunnel caches, and start a fresh installation.
 
 
 ***
