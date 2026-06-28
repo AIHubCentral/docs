@@ -24,7 +24,7 @@
 
 ### Cloud
 
-- [Applio Cloud](https://docs.aihub.gg/rvc/cloud/applio-cloud.md): Last update: June 27, 2026
+- [Applio Cloud](https://docs.aihub.gg/rvc/cloud/applio-cloud.md): Last update: June 28, 2026
 - [AICoverMaker Cloud](https://docs.aihub.gg/rvc/cloud/aicovermaker-cloud.md): Last update: March 24, 2026
 - [RVC Zero Cloud](https://docs.aihub.gg/rvc/cloud/rvc-zero-cloud.md): Last update: March 24, 2026
 

@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.835900501636">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.835989932724">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -15,7 +15,7 @@
     <!-- Primary Meta Tags -->
     <title>Applio Cloud</title>
     <meta name="title" content="Applio Cloud">
-    <meta name="description" content="Last update: June 27, 2026">
+    <meta name="description" content="Last update: June 28, 2026">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://docs.aihub.gg/rvc/cloud/applio-cloud/">
@@ -25,7 +25,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.aihub.gg/rvc/cloud/applio-cloud/">
     <meta property="og:title" content="Applio Cloud">
-    <meta property="og:description" content="Last update: June 27, 2026">
+    <meta property="og:description" content="Last update: June 28, 2026">
     <meta property="og:site_name" content="">
     <meta property="og:locale" content="en_US">
 
@@ -33,7 +33,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://docs.aihub.gg/rvc/cloud/applio-cloud/">
     <meta name="twitter:title" content="Applio Cloud">
-    <meta name="twitter:description" content="Last update: June 27, 2026">
+    <meta name="twitter:description" content="Last update: June 28, 2026">
 
     <!-- Alternate Markdown -->
     <link rel="alternate" type="text/markdown" href="https://docs.aihub.gg/rvc/cloud/applio-cloud.md">
@@ -41,11 +41,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../../img/aihub-favicon.png" />
-    <link href="../../../resources/css/retype.css?v=4.6.0.835900501636" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=4.6.0.835989932724" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.6.0.835900501636" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.6.0.835989932724" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.6.0.835900501636" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.6.0.835989932724" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -196,7 +196,7 @@
 
                 <!-- Page content  -->
 <h1 id="applio-cloud">Applio Cloud</h1>
-<p><code translate="no" v-pre>Last update: June 27, 2026</code></p>
+<p><code translate="no" v-pre>Last update: June 28, 2026</code></p>
 <hr>
 <div class="content-center"><img src="/img/applio-banner.png" alt="Applio Banner" width="600">
 <h2 id="introduction">Introduction</h2>
@@ -563,34 +563,44 @@
     </div>
 </div>
 <ul>
-<li>Run the first code cell to download the latest version of Applio and install necessary dependencies. It will print &quot;Installed!&quot; when finished.</li>
+<li>
+<p><strong>(Optional) Branch Selection:</strong> In the first code cell, you can specify which branch or version of Applio to install by modifying the <code translate="no" v-pre>branch</code> variable:</p>
+<ul>
+<li><code translate="no" v-pre>&quot;latest-stable&quot;</code> (Default): Automatically retrieves and clones the latest stable release from GitHub.</li>
+<li><code translate="no" v-pre>&quot;main&quot;</code>: Clones the latest experimental updates.</li>
+<li>A specific tag: Enter a designated stable version, such as <code translate="no" v-pre>&quot;3.6.2&quot;</code>.</li>
+</ul>
+</li>
+<li>
+<p>Run the first code cell to download Applio and install the required dependencies. It will print <code translate="no" v-pre>Installed Applio (selected_branch)!</code> when completed.</p>
+</li>
 </ul>
 <hr>
 <h4 id="tunnels--server-setup"><u>Tunnels &amp; Server Setup</u></h4>
 <ul>
 <li>
-<p>Launch the Server via Tunnels: Navigate to the third code cell, titled &quot;Start Server <strong>using Tunnels</strong>&quot;. Choose one from the <code translate="no" v-pre>Tunnel</code> code menu in the code cell.</p>
+<p>Launch the Server via Tunnels: Scroll down to the code cell titled <strong>Run UI</strong>. Select your preferred tunneling service from the <code translate="no" v-pre>Tunnel</code> dropdown menu.</p>
 </li>
 <li>
-<p><strong>Port Viewer (Recommended &amp; Default method):</strong> A built-in Lightning.AI feature. Select &quot;Port Viewer&quot;. Click the <code translate="no" v-pre>+</code> at the bottom of the right tab, click on Web Apps and install Port Viewer. Run the cell. In the right-hand sidebar, click the <strong>Web Apps</strong> tab, click Port Viewer -&gt; Add a new port. Enter <code translate="no" v-pre>18888</code> and click your Port to open it.</p>
+<p><strong>Gradio (Default method, Fast, Popular &amp; Reliable):</strong> Select &quot;Gradio&quot; and run the cell. Click the <code translate="no" v-pre>.gradio.live</code> link generated in the output once the server is active.</p>
 </li>
 <li>
-<p><strong>Gradio (Fast, Popular &amp; Reliable):</strong> Select &quot;Gradio&quot; and run the cell. Click the <code translate="no" v-pre>.gradio.live</code> link in the output.</p>
+<p><strong>Port Viewer (Recommended alternative):</strong> A persistent, integrated Lightning.AI feature. Select &quot;Port Viewer&quot; in the notebook. In the right-hand sidebar of Lightning.AI, click the <code translate="no" v-pre>+</code> icon at the bottom, select <strong>Web Apps</strong>, and install <strong>Port Viewer</strong>. Run the code cell, open Port Viewer from your sidebar, click <strong>Add a new port</strong>, enter <code translate="no" v-pre>6969</code> as the port number, and optionally name it. Double-click the added port to launch the UI.</p>
 </li>
 <li>
-<p><strong>Ngrok (Fast, Popular &amp; Reliable):</strong> Get your <a href="https://dashboard.ngrok.com/get-started/your-authtoken">Ngrok authtoken</a>, paste it into the <code translate="no" v-pre>Token</code> field, and run the cell.</p>
+<p><strong>Ngrok (Fast, Popular &amp; Reliable):</strong> Paste your free authentication token into the <code translate="no" v-pre>Token</code> field. Select &quot;Ngrok&quot;, choose your nearest geographical <code translate="no" v-pre>Region</code> to reduce latency (Default is <code translate="no" v-pre>ap - Asia/Pacific (Singapore)</code>), and run the cell to access the printed public URL.</p>
 </li>
 <li>
-<p><strong>Cloudflare (Easy, No Account Needed):</strong> Select &quot;Cloudflare&quot; and run the cell. A <code translate="no" v-pre>.trycloudflare.com</code> link will appear.</p>
+<p><strong>Cloudflare (Easy, No Account Needed):</strong> Select &quot;Cloudflare&quot;, run the cell, and open the generated <code translate="no" v-pre>.trycloudflare.com</code> public URL.</p>
 </li>
 <li>
-<p><strong>LocalTunnel (No Account, Password Protected):</strong> Select &quot;LocalTunnel&quot; and run the cell. Copy the <code translate="no" v-pre>Local Tunnel Password</code> and use it on the generated link.</p>
+<p><strong>LocalTunnel (No Account, Password Protected):</strong> Select &quot;LocalTunnel&quot; and run the cell. Copy the <code translate="no" v-pre>Local Tunnel Password</code> (the IP shown in the output) and paste it into the generated <code translate="no" v-pre>loca.lt</code> link page.</p>
 </li>
 <li>
-<p><strong>Horizon (Fast, Requires Account &amp; ID):</strong> Go to the <a href="https://hrzn.run/dashboard/">Horizon Dashboard</a>, copy your ID, paste it into the <code translate="no" v-pre>Token</code> field, and run the cell.</p>
+<p><strong>Horizon (Fast, Requires Account &amp; ID):</strong> Visit the <a href="https://hrzn.run/dashboard/">Horizon Dashboard</a>. Copy your CLI token request ID from step 2, paste it into the <code translate="no" v-pre>Token</code> field, and run the cell. Click the authorization URL in the output to approve, and then open the generated <code translate="no" v-pre>.hrzn.run</code> public URL.</p>
 </li>
 <li>
-<p>Accessing Files manually: Find the <strong>Teamspace Drive</strong> button on the right sidebar and click it. The path to Applio is <code translate="no" v-pre>Studio &gt; this_studio &gt; Applio &gt; Applio</code>. You can drag, drop, and download files directly from here.</p>
+<p>Accessing Files manually: Click the <strong>Teamspace Drive</strong> button on the right sidebar. The installation directory is located at <code translate="no" v-pre>Studio &gt; this_studio &gt; Applio</code>. You can directly drag, drop, upload, or download your assets from here.</p>
 </li>
 </ul>
 <img src="/img/cloud-services/lightning-ai-img/teamspace-drive.png" alt="LightningAI Teamspace Drive" width="500">
@@ -603,7 +613,7 @@
 </ul>
 <img src="/img/cloud-services/lightning-ai-img/jupyter.png" alt="LightningAI Jupyter" width="500">
 <ul>
-<li><strong>Maintenance:</strong> If you need to update the Program or start fresh, you can run the final cell in the notebook, &quot;Delete everything&quot;. This will remove all downloaded files and configurations from your persistent storage, allowing for a clean installation by re-following the notebook with perhaps a changed branch variable.</li>
+<li><strong>Maintenance:</strong> Since Lightning.AI sessions utilize persistent storage, you can run the final code cell (&quot;Delete everything&quot;) if you wish to wipe the Applio directory, clear temporary tunnel caches, and start a fresh installation.</li>
 </ul>
 <hr>
 <div class="content-center"><h3 id="huggingface-space">HuggingFace Space</h3>
